@@ -10,7 +10,7 @@ Welcome to decore Project!
    :maxdepth: 2
    :caption: Contents:
 
-   decore Base <base>
+   decore Base <base/index>
 
 
 Indices and tables

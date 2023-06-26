@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="../_static/favicon.ico" rel="icon" type="image/x-icon">
-    <title>Decorator reference &#8212; decore Project  documentation</title>
+    <title>Fields &#8212; decore Project  documentation</title>
   
   
   
@@ -41,11 +41,10 @@
     <script src="../_static/sphinx_highlight.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'base/decore';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'base/fields';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Fields" href="fields.html" />
-    <link rel="prev" title="decore Base | UI fastly" href="index.html" />
+    <link rel="prev" title="Decorator reference" href="decore.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -254,8 +253,8 @@ document.write(`
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Decorator reference</a></li>
-<li class="toctree-l1"><a class="reference internal" href="fields.html">Fields</a></li>
+<li class="toctree-l1"><a class="reference internal" href="decore.html">Decorator reference</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Fields</a></li>
 </ul>
 </div>
 </nav></div>
@@ -296,7 +295,7 @@ document.write(`
     
     <li class="breadcrumb-item"><a href="index.html" class="nav-link">decore Base | UI fastly</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page">Decorator reference</li>
+    <li class="breadcrumb-item active" aria-current="page">Fields</li>
   </ul>
 </nav>
 </div>
@@ -313,18 +312,32 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section id="module-decore_base.decore">
-<span id="decorator-reference"></span><h1>Decorator reference<a class="headerlink" href="#module-decore_base.decore" title="Permalink to this heading">#</a></h1>
+  <section id="module-decore_base.classes.decore_fields">
+<span id="fields"></span><h1>Fields<a class="headerlink" href="#module-decore_base.classes.decore_fields" title="Permalink to this heading">#</a></h1>
 <dl class="py class">
-<dt class="sig sig-object py" id="decore_base.decore.Decore">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">decore_base.decore.</span></span><span class="sig-name descname"><span class="pre">Decore</span></span><a class="headerlink" href="#decore_base.decore.Decore" title="Permalink to this definition">#</a></dt>
-<dd><p>Test</p>
-<dl class="py method">
-<dt class="sig sig-object py" id="decore_base.decore.Decore.app">
-<span class="sig-name descname"><span class="pre">app</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">title</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#decore_base.decore.Decore.app" title="Permalink to this definition">#</a></dt>
-<dd><p>Decorator for app registration</p>
-</dd></dl>
-
+<dt class="sig sig-object py" id="decore_base.classes.decore_fields.BackRefMetaField">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">decore_base.classes.decore_fields.</span></span><span class="sig-name descname"><span class="pre">BackRefMetaField</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">null</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">help_text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">verbose_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filter_fields</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#decore_base.classes.decore_fields.BackRefMetaField" title="Permalink to this definition">#</a></dt>
+<dd><div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The BackRefMetaField’s name must match the name of the specified backref in the ForeignKey or ManyToMany field in the reference model.</p>
+</div>
+<p>The BackRefMetaField is used by the user to represent relationships in the <strong>decore Front</strong> application. For example, it can be assigned to the filter or to a form. It is a MetaField and does not get a column in the database.</p>
+<p>Parameters:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">null</span></code> - If True, the field is allowed to be null. Defaults to False.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">default</span></code> - The default value for the field.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">help_text</span></code> - Additional text to be displayed in <strong>decore Front</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">verbose_name</span></code> - A human-readable name for the field.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">filter_fields</span></code> - A List of type string. Only the speciefied fields will be displayed in the filter. If None, all fields will be displayed.</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Account</span><span class="p">(</span><span class="n">Conform_model</span><span class="p">):</span>
+    <span class="n">users</span> <span class="o">=</span> <span class="n">ManyToManyField</span><span class="p">(</span><span class="n">User</span><span class="p">,</span> <span class="n">backref</span><span class="o">=</span><span class="s1">&#39;accounts&#39;</span><span class="p">,</span> <span class="n">null</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">verbose_name</span><span class="o">=</span><span class="s1">&#39;Users&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">User</span><span class="p">(</span><span class="n">Conform_model</span><span class="p">):</span>
+    <span class="n">accounts</span> <span class="o">=</span> <span class="n">BackRefMetaField</span><span class="p">(</span><span class="n">null</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">verbose_name</span><span class="o">=</span><span class="s1">&#39;Accounts&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
 </dd></dl>
 
 </section>
@@ -341,22 +354,13 @@ document.write(`
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="index.html"
+       href="decore.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">decore Base | UI fastly</p>
+        <p class="prev-next-title">Decorator reference</p>
       </div>
-    </a>
-    <a class="right-next"
-       href="fields.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Fields</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div></div>
   
@@ -376,16 +380,13 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#decore_base.decore.Decore"><code class="docutils literal notranslate"><span class="pre">Decore</span></code></a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#decore_base.decore.Decore.app"><code class="docutils literal notranslate"><span class="pre">Decore.app()</span></code></a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#decore_base.classes.decore_fields.BackRefMetaField"><code class="docutils literal notranslate"><span class="pre">BackRefMetaField</span></code></a></li>
 </ul>
   </nav></div>
 
   <div class="sidebar-secondary-item">
   <div class="tocsection sourcelink">
-    <a href="../_sources/base/decore.rst.txt">
+    <a href="../_sources/base/fields.rst.txt">
       <i class="fa-solid fa-file-lines"></i> Show Source
     </a>
   </div>

@@ -1,4 +1,4 @@
-.. include:: ../../decore_Base/README.rst
+.. include:: ../../../decore_Base/README.rst
 
 .. toctree::
    :maxdepth: 2
