@@ -36,6 +36,8 @@ autodoc_member_order = 'bysource'
 
 html_extra_path = ['_files']
 
+html_directory_suffix = '/'
+
 html_theme = 'pydata_sphinx_theme'
 
 html_theme_options = {
