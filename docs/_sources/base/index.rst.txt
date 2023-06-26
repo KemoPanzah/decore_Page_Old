@@ -1,8 +1,6 @@
 .. include:: ../../../decore_Base/README.rst
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+   :maxdepth: 1
    
-   decore
-   fields
+   api

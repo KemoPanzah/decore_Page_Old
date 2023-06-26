@@ -45,7 +45,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Fields" href="fields.html" />
-    <link rel="prev" title="decore Base | UI fastly" href="index.html" />
+    <link rel="prev" title="Api Reference" href="api.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -56,6 +56,17 @@
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+
+<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+<script>
+    kofiWidgetOverlay.draw('decore_base', {
+        'type': 'floating-chat',
+        'floating-chat.donateButton.text': 'Support Dev',
+        'floating-chat.donateButton.background-color': '#075767',
+        'floating-chat.donateButton.text-color': '#fff'
+    });
+</script>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -252,10 +263,12 @@ document.write(`
         <div class="sidebar-primary-item"><nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Decorator reference</a></li>
-<li class="toctree-l1"><a class="reference internal" href="fields.html">Fields</a></li>
+  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="api.html">Api Reference</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Decorator reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fields.html">Fields</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </nav></div>
@@ -295,6 +308,9 @@ document.write(`
     </li>
     
     <li class="breadcrumb-item"><a href="index.html" class="nav-link">decore Base | UI fastly</a></li>
+    
+    
+    <li class="breadcrumb-item"><a href="api.html" class="nav-link">Api Reference</a></li>
     
     <li class="breadcrumb-item active" aria-current="page">Decorator reference</li>
   </ul>
@@ -341,12 +357,12 @@ document.write(`
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="index.html"
+       href="api.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">decore Base | UI fastly</p>
+        <p class="prev-next-title">Api Reference</p>
       </div>
     </a>
     <a class="right-next"
@@ -407,10 +423,13 @@ document.write(`
   <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
 <script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
 
+
+
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
   
-    <div class="footer-items__start">
+  
+    <div class="footer-items__end">
       
         <div class="footer-item">
   <p class="copyright">
@@ -420,22 +439,6 @@ document.write(`
     
   </p>
 </div>
-      
-        <div class="footer-item">
-  <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.0.1.
-    <br/>
-  </p>
-</div>
-      
-    </div>
-  
-  
-    <div class="footer-items__end">
-      
-        <div class="footer-item"><p class="theme-version">
-  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.13.3.
-</p></div>
       
     </div>
   

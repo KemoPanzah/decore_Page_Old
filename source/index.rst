@@ -7,7 +7,7 @@ Welcome to decore Project!
 ==========================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Contents:
 
    decore Base <base/index>

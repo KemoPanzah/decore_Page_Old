@@ -43,7 +43,9 @@ html_theme_options = {
    "navbar_align": "right",
    "logo": {
         "text": "decore Project",
-        }
+        },
+    "footer_start": None,
+    "footer_end": ["copyright"],
 }
 
 html_static_path = ['_static']
