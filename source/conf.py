@@ -16,7 +16,7 @@ def setup(app):
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'decore Project'
+project = 'decore People'
 copyright = '2023, Jean Rohark'
 author = 'Jean Rohark'
 
