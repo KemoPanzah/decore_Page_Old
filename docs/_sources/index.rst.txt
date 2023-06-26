@@ -20,6 +20,8 @@ decore Front | UI defined
 
 a closed-source project that uses the meta-information defined with decore Base to generate a UI. This UI is then able to visualize and manipulate the data.
 
+decore Front is a compiled part of the decore Base python package. It is not possible to use decore Front without decore Base.
+
 .. toctree::
    :hidden:
    :maxdepth: 1
