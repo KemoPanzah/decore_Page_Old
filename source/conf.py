@@ -1,12 +1,15 @@
 import os, sys
+from pathlib import Path
 
-decore_Base_path = os.path.abspath('../../decore_Base/')
 
+decore_Base_path = os.path.abspath('../../')
 sys.path.append(decore_Base_path)
 
 def setup(app):
+    from decore_Page.helper import split_rst_file
     print ('DECORE_BASE_PATH: '+ decore_Base_path)
     print("Hello World!")
+    split_rst_file(Path('../decore_base').joinpath('README.rst'), Path('source').joinpath('base').joinpath('readme'), ['notes'])
 
 # Configuration file for the Sphinx documentation builder.
 #
@@ -28,6 +31,7 @@ extensions = ['sphinx.ext.autodoc', 'sphinx_copybutton', 'sphinx_favicon']
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
+add_module_names = False
 autodoc_member_order = 'bysource'
 
 
@@ -48,6 +52,7 @@ html_theme_options = {
         },
     "footer_start": None,
     "footer_end": ["copyright"],
+    "show_prev_next": False,
 }
 
 html_static_path = ['_static']
@@ -55,6 +60,8 @@ html_static_path = ['_static']
 html_css_files = [
     'styles/custom.css',
 ]
+
+html_show_sourcelink = False
 
 html_logo = "_static/logo.png"
 

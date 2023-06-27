@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to decore People!
+Welcome to decore Project!
 ==========================
 
 Hey guys welcome to the decore website. Here you will find everything you need to get informed and participate.
@@ -14,6 +14,8 @@ decore Base | UI fastly
 -----------------------
 
 An out-of-the-box "Python to Vue.js" data application dashboard that helps you go from idea to view in a few simple steps. It is aimed at those who want to focus on the results of their algorithms, do scientific work or perform teaching and learning functions.
+
+`Learn more about decore Base <base>`_
 
 decore Front | UI defined
 -------------------------

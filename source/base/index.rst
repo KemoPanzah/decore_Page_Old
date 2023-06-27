@@ -1,6 +1,10 @@
-.. include:: ../../../decore_Base/README.rst
+.. include:: readme/decorebaseuifastly.rst
 
 .. toctree::
+   :hidden:
    :maxdepth: 1
    
-   api
+   readme/contribution
+   readme/getstarted
+   readme/sampleapplication
+   api/index

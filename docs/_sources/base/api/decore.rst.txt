@@ -1,5 +1,5 @@
 Decorator reference
 --------------------
 
-.. automodule:: decore_base.decore
+.. automodule:: decore_Base.decore_base.decore
    :members:
