@@ -1,7 +1,7 @@
-/* h1 {
-    display: none;
-} */
+.navbar-brand p {
+    margin-bottom: 3px;
+}
 
 .bd-header .navbar-nav {
-    padding-right: 16px;
+    padding-left: 64px;
 }
