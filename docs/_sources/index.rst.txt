@@ -6,9 +6,11 @@
 Welcome to decore Project!
 ==========================
 
-Hello and welcome to the website of the decore project.
+Hello and welcome to the decore project website. This landing page is currently under construction. Please visit the website of the decore Base project.
 
 .. grid:: 1 1 1 1
+   :class-container: decore-grid
+   :gutter: 1
 
    .. grid-item-card:: decore Base | UI fastly
          :link: base
