@@ -46,7 +46,7 @@ html_theme = 'pydata_sphinx_theme'
 
 html_theme_options = {
    "show_toc_level": 3,
-   "navbar_align": "content",
+   "navbar_align": "right",
    "logo": {
         "text": "decore Project",
         },
