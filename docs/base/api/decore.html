@@ -45,6 +45,7 @@
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/design-tabs.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'base/api/decore';</script>
+    <link rel="canonical" href="https://decore.dev/base/api/decore.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Fields" href="fields.html" />
@@ -340,11 +341,39 @@ document.write(`
 <dl class="py class">
 <dt class="sig sig-object py" id="decore_Base.decore_base.decore.Decore">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Decore</span></span><a class="headerlink" href="#decore_Base.decore_base.decore.Decore" title="Permalink to this definition">#</a></dt>
-<dd><p>Test</p>
+<dd><p>This class provides all the necessary functions to define a decore app and passes the collected information to the pool. It also holds the routes for communication with decore Front.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="decore_Base.decore_base.decore.Decore.app">
 <span class="sig-name descname"><span class="pre">app</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">title</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#decore_Base.decore_base.decore.Decore.app" title="Permalink to this definition">#</a></dt>
-<dd><p>Decorator for app registration</p>
+<dd><p>A function for opening an app. It is used as a decorator.</p>
+<p>Parameters:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">title</span></code> - The title of the app.</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nd">@decore</span><span class="o">.</span><span class="n">app</span><span class="p">(</span><span class="s1">&#39;My App&#39;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="k">pass</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="decore_Base.decore_base.decore.Decore.base">
+<span class="sig-name descname"><span class="pre">base</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">icon=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">desc=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model=&lt;Model:</span> <span class="pre">Decore_model&gt;</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#decore_Base.decore_base.decore.Decore.base" title="Permalink to this definition">#</a></dt>
+<dd><p>A function for opening a base. It is used as a decorator.</p>
+<p>The base is the carrier of the views and forms the data source in the frontend.</p>
+<p>Parameters:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">icon</span></code> - The icon of the base.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">title</span></code> - The title of the base.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">desc</span></code> - The description of the base.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">model</span></code> - The data model of the Base. It forms a kind of context for all child elements of the base.</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nd">@decore</span><span class="o">.</span><span class="n">base</span><span class="p">(</span><span class="s1">&#39;mdi mdi-account&#39;</span><span class="p">,</span> <span class="s1">&#39;Person&#39;</span><span class="p">,</span> <span class="s1">&#39;A basis for managing personal data&#39;</span><span class="p">,</span> <span class="n">Person</span><span class="p">)</span>
+<span class="k">class</span> <span class="nc">Person_base</span><span class="p">:</span>
+    <span class="k">pass</span>
+</pre></div>
+</div>
 </dd></dl>
 
 </dd></dl>
@@ -370,6 +399,7 @@ document.write(`
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#decore_Base.decore_base.decore.Decore"><code class="docutils literal notranslate"><span class="pre">Decore</span></code></a><ul class="visible nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#decore_Base.decore_base.decore.Decore.app"><code class="docutils literal notranslate"><span class="pre">Decore.app()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#decore_Base.decore_base.decore.Decore.base"><code class="docutils literal notranslate"><span class="pre">Decore.base()</span></code></a></li>
 </ul>
 </li>
 </ul>

@@ -26,7 +26,7 @@ author = 'Jean Rohark'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ['sphinx.ext.autodoc', 'sphinx_copybutton', 'sphinx_favicon', "sphinx_design"]
+extensions = ['sphinx.ext.autodoc', 'sphinx_copybutton', 'sphinx_favicon', "sphinx_design", 'sphinx_sitemap']
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
@@ -68,3 +68,8 @@ html_logo = "_static/logo.png"
 favicons = [
     {"href": "favicon.ico"},
 ]
+
+
+html_baseurl = 'https://decore.dev/'
+sitemap_filename = 'sitemap.xml'
+sitemap_url_scheme = "{link}"
