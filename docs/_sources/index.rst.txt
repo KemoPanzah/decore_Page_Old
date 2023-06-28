@@ -6,24 +6,17 @@
 Welcome to decore Project!
 ==========================
 
-Hey guys welcome to the decore website. Here you will find everything you need to get informed and participate.
+Hello and welcome to the website of the decore project.
 
-decore is currently divided into 2 main paths:
+.. grid:: 1 1 1 1
 
-decore Base | UI fastly
------------------------
-
-An out-of-the-box "Python to Vue.js" data application dashboard that helps you go from idea to view in a few simple steps. It is aimed at those who want to focus on the results of their algorithms, do scientific work or perform teaching and learning functions.
-
-`Learn more about decore Base <base>`_
-
-decore Front | UI defined
--------------------------
-
-a closed-source project that uses the meta-information defined with decore Base to generate a UI. This UI is then able to visualize and manipulate the data.
-
-decore Front is a compiled part of the decore Base python package. It is not possible to use decore Front without decore Base.
-
+   .. grid-item-card:: decore Base | UI fastly
+         :link: base
+         
+         .. include:: base/readme/decorebaseuifastly.rst
+            :start-line: 2
+            :end-line: 4
+            
 .. toctree::
    :hidden:
    :maxdepth: 1
@@ -31,9 +24,9 @@ decore Front is a compiled part of the decore Base python package. It is not pos
    decore Base <base/index>
 
 
-Indices and tables
-------------------
+.. Indices and tables
+.. ------------------
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+.. * :ref:`genindex`
+.. * :ref:`modindex`
+.. * :ref:`search`
