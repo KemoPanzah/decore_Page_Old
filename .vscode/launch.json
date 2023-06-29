@@ -5,7 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Sphinx Make Dubug",
+            "name": "Sphinx Make Debug",
             "type": "python",
             "request": "launch",
             "cwd": "${workspaceFolder}",

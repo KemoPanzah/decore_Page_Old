@@ -346,11 +346,12 @@ document.write(`
 <dt class="sig sig-object py" id="decore_Base.decore_base.decore.Decore.app">
 <span class="sig-name descname"><span class="pre">app</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">title</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#decore_Base.decore_base.decore.Decore.app" title="Permalink to this definition">#</a></dt>
 <dd><p>A function for opening an app. It is used as a decorator.</p>
-<p>Parameters:</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">title</span></code> - The title of the app.</p></li>
-</ul>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nd">@decore</span><span class="o">.</span><span class="n">app</span><span class="p">(</span><span class="s1">&#39;My App&#39;</span><span class="p">)</span>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>title</strong> (<em>str</em>) – The title of the app.</p>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nd">@decore</span><span class="o">.</span><span class="n">app</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;My App&#39;</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
     <span class="k">pass</span>
 </pre></div>
@@ -361,16 +362,105 @@ document.write(`
 <dt class="sig sig-object py" id="decore_Base.decore_base.decore.Decore.base">
 <span class="sig-name descname"><span class="pre">base</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">icon=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">desc=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model=&lt;Model:</span> <span class="pre">Decore_model&gt;</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#decore_Base.decore_base.decore.Decore.base" title="Permalink to this definition">#</a></dt>
 <dd><p>A function for opening a base. It is used as a decorator.</p>
-<p>The base is the carrier of the views and forms the data source in the frontend.</p>
-<p>Parameters:</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">icon</span></code> - The icon of the base.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">title</span></code> - The title of the base.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">desc</span></code> - The description of the base.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">model</span></code> - The data model of the Base. It forms a kind of context for all child elements of the base.</p></li>
+<blockquote>
+<div><p>The base is the carrier element for the view and the template for the data source.</p>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>icon</strong> (<em>str</em>) – The icon of the base.</p></li>
+<li><p><strong>title</strong> (<em>str</em>) – The title of the base.</p></li>
+<li><p><strong>desc</strong> (<em>str</em>) – The description of the base.</p></li>
+<li><p><strong>model</strong> (<em>Model</em>) – The data model of the base. It forms a kind of context for all child elements of the base.</p></li>
 </ul>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nd">@decore</span><span class="o">.</span><span class="n">base</span><span class="p">(</span><span class="s1">&#39;mdi mdi-account&#39;</span><span class="p">,</span> <span class="s1">&#39;Person&#39;</span><span class="p">,</span> <span class="s1">&#39;A basis for managing personal data&#39;</span><span class="p">,</span> <span class="n">Person</span><span class="p">)</span>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nd">@decore</span><span class="o">.</span><span class="n">base</span><span class="p">(</span><span class="n">icon</span><span class="o">=</span><span class="s1">&#39;mdi-account&#39;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Person&#39;</span><span class="p">,</span> <span class="n">desc</span><span class="o">=</span><span class="s1">&#39;A basis for managing personal data&#39;</span><span class="p">,</span> <span class="n">model</span><span class="o">=</span><span class="n">Person</span><span class="p">)</span>
 <span class="k">class</span> <span class="nc">Person_base</span><span class="p">:</span>
+    <span class="k">pass</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="decore_Base.decore_base.decore.Decore.view">
+<span class="sig-name descname"><span class="pre">view</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">icon</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">desc</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="s"><span class="pre">'table'</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'table'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fields</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filters</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">query</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pag_type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="s"><span class="pre">'client'</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'client'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pag_recs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">16</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#decore_Base.decore_base.decore.Decore.view" title="Permalink to this definition">#</a></dt>
+<dd><p>A function to register a view. It is used as a decorator.</p>
+<blockquote>
+<div><p>A view is a container for displaying data.</p>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>parent_id</strong> (<em>str</em>) – The ID of the parent element. Only to be set if the view is to be rendered in another base.</p></li>
+<li><p><strong>icon</strong> (<em>str</em>) – The icon of the view.</p></li>
+<li><p><strong>title</strong> (<em>str</em>) – The title of the view.</p></li>
+<li><p><strong>desc</strong> (<em>str</em>) – The description of the view.</p></li>
+<li><p><strong>type</strong> (<em>str</em>) – The type of the view.</p></li>
+<li><p><strong>fields</strong> (<em>list</em>) – The active fields of the view.</p></li>
+<li><p><strong>filters</strong> (<em>list</em>) – The fields that are used in filter.</p></li>
+<li><p><strong>query</strong> (<em>dict</em>) – The default query of the view.</p></li>
+<li><p><strong>pag_type</strong> (<em>str</em>) – The pagination type of the view.</p></li>
+<li><p><strong>pag_recs</strong> (<em>int</em>) – The pagination records of the view.</p></li>
+</ul>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nd">@decore</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="n">icon</span><span class="o">=</span><span class="s1">&#39;mdi-account&#39;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Person&#39;</span><span class="p">,</span> <span class="n">desc</span><span class="o">=</span><span class="s1">&#39;A view for managing personal data&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;table&#39;</span><span class="p">,</span> <span class="n">fields</span><span class="o">=</span><span class="p">[</span><span class="n">Person</span><span class="o">.</span><span class="n">id</span><span class="p">,</span> <span class="n">Person</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">Person</span><span class="o">.</span><span class="n">age</span><span class="p">],</span> <span class="n">filters</span><span class="o">=</span><span class="p">[</span><span class="n">Person</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">Person</span><span class="o">.</span><span class="n">age</span><span class="p">],</span> <span class="n">query</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;name__eq&#39;</span><span class="p">:</span> <span class="s1">&#39;Kemo&#39;</span><span class="p">},</span> <span class="n">pag_type</span><span class="o">=</span><span class="s1">&#39;client&#39;</span><span class="p">,</span> <span class="n">pag_recs</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">person_view</span><span class="p">():</span>
+    <span class="k">pass</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="decore_Base.decore_base.decore.Decore.dialog">
+<span class="sig-name descname"><span class="pre">dialog</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">icon</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">desc</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="s"><span class="pre">'standard'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'tabs'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'stepper'</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'standard'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">display</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="s"><span class="pre">'modal'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'drawer'</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'drawer'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">activator</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="s"><span class="pre">'none'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'default-menu'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'item-menu'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'item-click'</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'none'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#decore_Base.decore_base.decore.Decore.dialog" title="Permalink to this definition">#</a></dt>
+<dd><p>A function to register a dialog. It is used as a decorator.</p>
+<blockquote>
+<div><p>A dialog is a carrier for widgets.</p>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>parent_id</strong> (<em>str</em>) – The ID of the parent element. Only to be set if the dialog is to be rendered in a view of another base.</p></li>
+<li><p><strong>icon</strong> (<em>str</em>) – The icon of the dialog.</p></li>
+<li><p><strong>title</strong> (<em>str</em>) – The title of the dialog.</p></li>
+<li><p><strong>desc</strong> (<em>str</em>) – The description of the dialog.</p></li>
+<li><p><strong>type</strong> (<em>str</em>) – The type of the dialog.</p></li>
+<li><p><strong>display</strong> (<em>str</em>) – The display type of the dialog.</p></li>
+<li><p><strong>activator</strong> (<em>str</em>) – The activator type of the dialog.</p></li>
+</ul>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nd">@decore</span><span class="o">.</span><span class="n">dialog</span><span class="p">(</span><span class="n">icon</span><span class="o">=</span><span class="s1">&#39;mdi-account&#39;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Person&#39;</span><span class="p">,</span> <span class="n">desc</span><span class="o">=</span><span class="s1">&#39;A dialog for managing personal data&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;standard&#39;</span><span class="p">,</span> <span class="n">display</span><span class="o">=</span><span class="s1">&#39;drawer&#39;</span><span class="p">,</span> <span class="n">activator</span><span class="o">=</span><span class="s1">&#39;default-menu&#39;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">person_dialog</span><span class="p">():</span>
+    <span class="k">pass</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="decore_Base.decore_base.decore.Decore.widget">
+<span class="sig-name descname"><span class="pre">widget</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">icon</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">desc</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="s"><span class="pre">'default'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'info'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'form'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'table'</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'default'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">layout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'cera'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fields</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[]</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#decore_Base.decore_base.decore.Decore.widget" title="Permalink to this definition">#</a></dt>
+<dd><p>A function to register a widget. It is used as a decorator.</p>
+<blockquote>
+<div><p>A widget is an element for displaying or editing a single item from the data.</p>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>parent_id</strong> (<em>str</em>) – The ID of the parent element. Only to be set if the widget is to be rendered in a dialog of another base.</p></li>
+<li><p><strong>icon</strong> (<em>str</em>) – The icon of the widget.</p></li>
+<li><p><strong>title</strong> (<em>str</em>) – The title of the widget.</p></li>
+<li><p><strong>desc</strong> (<em>str</em>) – The description of the widget.</p></li>
+<li><p><strong>type</strong> (<em>str</em>) – The type of the widget.</p></li>
+<li><p><strong>layout</strong> (<em>str</em>) – The layout of the widget.</p></li>
+<li><p><strong>fields</strong> (<em>list</em>) – The active fields of the widget.</p></li>
+</ul>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nd">@decore</span><span class="o">.</span><span class="n">widget</span><span class="p">(</span><span class="n">icon</span><span class="o">=</span><span class="s1">&#39;mdi-account&#39;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Person&#39;</span><span class="p">,</span> <span class="n">desc</span><span class="o">=</span><span class="s1">&#39;A widget for managing personal data&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;form&#39;</span><span class="p">,</span> <span class="n">layout</span><span class="o">=</span><span class="s1">&#39;cera&#39;</span><span class="p">,</span> <span class="n">fields</span><span class="o">=</span><span class="p">[</span><span class="n">Person</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">Person</span><span class="o">.</span><span class="n">age</span><span class="p">])</span>
+<span class="k">def</span> <span class="nf">person_widget</span><span class="p">():</span>
     <span class="k">pass</span>
 </pre></div>
 </div>
@@ -400,6 +490,9 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#decore_Base.decore_base.decore.Decore"><code class="docutils literal notranslate"><span class="pre">Decore</span></code></a><ul class="visible nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#decore_Base.decore_base.decore.Decore.app"><code class="docutils literal notranslate"><span class="pre">Decore.app()</span></code></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#decore_Base.decore_base.decore.Decore.base"><code class="docutils literal notranslate"><span class="pre">Decore.base()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#decore_Base.decore_base.decore.Decore.view"><code class="docutils literal notranslate"><span class="pre">Decore.view()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#decore_Base.decore_base.decore.Decore.dialog"><code class="docutils literal notranslate"><span class="pre">Decore.dialog()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#decore_Base.decore_base.decore.Decore.widget"><code class="docutils literal notranslate"><span class="pre">Decore.widget()</span></code></a></li>
 </ul>
 </li>
 </ul>
