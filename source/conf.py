@@ -73,3 +73,5 @@ favicons = [
 html_baseurl = 'https://decore.dev/'
 sitemap_filename = 'sitemap.xml'
 sitemap_url_scheme = "{link}"
+
+html_use_mod_rewrite = False
