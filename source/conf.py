@@ -69,9 +69,7 @@ favicons = [
     {"href": "favicon.ico"},
 ]
 
-
-html_baseurl = 'https://decore.dev/'
+html_baseurl = 'https://www.decore.dev/'
+html_use_mod_rewrite = False
 sitemap_filename = 'sitemap.xml'
 sitemap_url_scheme = "{link}"
-
-html_use_mod_rewrite = False
