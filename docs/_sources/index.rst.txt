@@ -1,3 +1,9 @@
+.. meta::
+   :title: decore Project
+   :description: create webapps with python fastly
+   :keywords: webapp, python, UI, fastly, decore, Base, Front
+   :robots: index, follow
+
 .. decore Project documentation master file, created by
    sphinx-quickstart on Thu Jun 22 20:24:27 2023.
    You can adapt this file completely to your liking, but it should at least
