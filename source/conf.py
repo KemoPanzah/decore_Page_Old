@@ -53,6 +53,9 @@ html_theme_options = {
     "footer_start": None,
     "footer_end": ["copyright"],
     "show_prev_next": False,
+    "external_links": [
+      {"name": "GitHub", "url": "https://github.com/KemoPanzah/decore_Base"},
+  ]
 }
 
 html_static_path = ['_static']
