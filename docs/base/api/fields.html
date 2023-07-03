@@ -345,14 +345,17 @@ document.write(`
 <p>The BackRefMetaField’s name must match the name of the specified backref in the ForeignKey or ManyToMany field in the reference model.</p>
 </div>
 <p>The BackRefMetaField is used by the user to represent relationships in the <strong>decore Front</strong> application. For example, it can be assigned to the filter or to a form. It is a MetaField and does not get a column in the database.</p>
-<p>Parameters:</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">null</span></code> - If True, the field is allowed to be null. Defaults to False.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">default</span></code> - The default value for the field.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">help_text</span></code> - Additional text to be displayed in <strong>decore Front</strong>.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">verbose_name</span></code> - A human-readable name for the field.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">filter_fields</span></code> - A List of type string. Only the speciefied fields will be displayed in the filter. If None, all fields will be displayed.</p></li>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>null</strong> – If True, the field is allowed to be null. Defaults to False.</p></li>
+<li><p><strong>default</strong> – The default value for the field.</p></li>
+<li><p><strong>help_text</strong> – Additional text to be displayed in <strong>decore Front</strong>.</p></li>
+<li><p><strong>verbose_name</strong> – A human-readable name for the field.</p></li>
+<li><p><strong>filter_fields</strong> – A List of type string. Only the speciefied fields will be displayed in the filter. If None, all fields will be displayed.</p></li>
 </ul>
+</dd>
+</dl>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Account</span><span class="p">(</span><span class="n">Conform_model</span><span class="p">):</span>
     <span class="n">users</span> <span class="o">=</span> <span class="n">ManyToManyField</span><span class="p">(</span><span class="n">User</span><span class="p">,</span> <span class="n">backref</span><span class="o">=</span><span class="s1">&#39;accounts&#39;</span><span class="p">,</span> <span class="n">null</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">verbose_name</span><span class="o">=</span><span class="s1">&#39;Users&#39;</span><span class="p">)</span>
 </pre></div>
