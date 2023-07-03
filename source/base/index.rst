@@ -1,6 +1,7 @@
 .. meta::
    :title: decore Base | UI fastly
    :description: decore Base is a Python library that gives you a ready-to-use user interface for your data application.
+   :keywords: decore, Base, python, user interface, data application
 
 decore Base | UI fastly
 =======================
