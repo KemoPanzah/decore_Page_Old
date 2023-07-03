@@ -9,7 +9,7 @@ def setup(app):
     from decore_Page.helper import split_rst_file
     print ('DECORE_BASE_PATH: '+ decore_Base_path)
     print("Hello World!")
-    split_rst_file(Path('../decore_base').joinpath('README.rst'), Path('source').joinpath('base').joinpath('readme'), ['notes'])
+    split_rst_file(Path('../decore_base').joinpath('README.rst'), Path('source').joinpath('base'), ['notes'])
 
 # Configuration file for the Sphinx documentation builder.
 #

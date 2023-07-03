@@ -16,7 +16,7 @@ Hello and welcome to the decore project website. This landing page is currently 
    .. grid-item-card:: decore Base | UI fastly
          :link: base
          
-         .. include:: base/readme/introduction.rst
+         .. include:: base/introduction.rst
             :start-line: 2
             :end-line: 4
             

@@ -11,7 +11,7 @@ a Python library that gives you a ready-to-use user interface for your data appl
    :gutter: 1
 
    .. grid-item-card:: :material-regular:`start` Get startet
-         :link: readme/getstarted.html
+         :link: getstarted.html
          
          start directly on the practical example
    
@@ -21,7 +21,7 @@ a Python library that gives you a ready-to-use user interface for your data appl
          Explore the API documentation and find out how you can use decore Base in your project.
 
    .. grid-item-card:: :material-regular:`fact_check` Sample application
-         :link: readme/sampleapplication.html
+         :link: sampleapplication.html
          
          a sample application that you can try out directly
 
@@ -29,8 +29,8 @@ a Python library that gives you a ready-to-use user interface for your data appl
    :hidden:
    :maxdepth: 1
    
-   readme/introduction
-   readme/contribution
-   readme/getstarted
-   readme/sampleapplication
+   introduction
+   contribution
+   getstarted
+   sampleapplication
    api/index

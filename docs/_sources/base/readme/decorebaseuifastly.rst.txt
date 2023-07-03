@@ -1,2 +1,0 @@
-decore Base | UI fastly
-=======================

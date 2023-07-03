@@ -10,7 +10,9 @@ def split_rst_file(filename:Path, output_dir:Path, exclude:list = []):
     t_section_index = 0
 
     for index , line in enumerate(lines):
-        if '-\n' in line:
+        if '-\n' in line and t_section_index == 0:
+            t_section_index = index-1
+        elif '-\n' in line and t_section_index != 0:
             t_title = (''.join(char for char in lines[t_section_index] if char.isalnum())).lower()
             sections.append({'title': t_title ,'content':''.join(lines[t_section_index:index-1])})
             t_section_index = index-1
@@ -18,7 +20,6 @@ def split_rst_file(filename:Path, output_dir:Path, exclude:list = []):
     t_title = (''.join(char for char in lines[t_section_index] if char.isalnum())).lower()
     sections.append({'title': t_title ,'content':''.join(lines[t_section_index:len(lines)])})
 
-    shutil.rmtree(output_dir, ignore_errors=True)
     output_dir.mkdir(parents=True, exist_ok=True)
 
     for index, section in enumerate(sections):
