@@ -2,12 +2,12 @@ import os, sys
 from pathlib import Path
 
 
-decore_Base_path = os.path.abspath('../../')
-sys.path.append(decore_Base_path)
+projects_path = os.path.abspath('../../')
+sys.path.append(projects_path)
 
 def setup(app):
     from decore_Page.helper import split_rst_file
-    print ('DECORE_BASE_PATH: '+ decore_Base_path)
+    print ('DECORE_BASE_PATH: '+ projects_path)
     print("Hello World!")
     split_rst_file(Path('../decore_base').joinpath('README.rst'), Path('source').joinpath('base'), ['notes'])
 
