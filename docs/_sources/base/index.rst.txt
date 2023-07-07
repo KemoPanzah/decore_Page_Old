@@ -5,7 +5,9 @@
 
 decore Base | UI fastly
 =======================
-a Python library that gives you a ready-to-use user interface for your data application. Pass your ideas directly and fastly into the UI with decore Base.
+
+.. include:: introduction.rst
+      :start-line: 2
 
 .. grid:: 1 1 3 3
    :class-container: de-teaser-grid
@@ -30,7 +32,7 @@ a Python library that gives you a ready-to-use user interface for your data appl
    :hidden:
    :maxdepth: 1
    
-   introduction
+   featuresandintegrations
    contribution
    getstarted
    sampleapplication
