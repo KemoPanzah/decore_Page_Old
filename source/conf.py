@@ -28,6 +28,11 @@ author = 'Jean Rohark'
 
 extensions = ['sphinx.ext.autodoc', 'sphinx_copybutton', 'sphinx_favicon', "sphinx_design", 'sphinx_sitemap']
 
+locale_dirs = ['_locale/']
+gettext_compact = "docs"
+
+language = 'en'
+
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 

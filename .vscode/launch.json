@@ -1,17 +1,35 @@
 {
-    // Verwendet IntelliSense zum Ermitteln möglicher Attribute.
-    // Zeigen Sie auf vorhandene Attribute, um die zugehörigen Beschreibungen anzuzeigen.
-    // Weitere Informationen finden Sie unter https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "Sphinx Make Debug",
-            "type": "python",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "program": ".venv/Scripts/sphinx-build.exe",
-            "args": ["-b", "html", "source", "docs", "-T", "-a", "-E"],
-            "console": "integratedTerminal",
-         }
-    ]
+  // Verwendet IntelliSense zum Ermitteln möglicher Attribute.
+  // Zeigen Sie auf vorhandene Attribute, um die zugehörigen Beschreibungen anzuzeigen.
+  // Weitere Informationen finden Sie unter https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Sphinx Make Gettext",
+      "type": "python",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "program": ".venv/Scripts/sphinx-build.exe",
+      "args": ["-b", "gettext", "source", "source/_text", "-a", "-E"],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Sphinx Internationalize",
+      "type": "python",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "program": ".venv/Scripts/sphinx-intl.exe",
+      "args": ["update", "-p", "source/_text", "-l", "en"],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Sphinx Make Build",
+      "type": "python",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "program": ".venv/Scripts/sphinx-build.exe",
+      "args": ["-b", "html", "source", "docs", "-a", "-E"],
+      "console": "integratedTerminal"
+    }
+  ]
 }
