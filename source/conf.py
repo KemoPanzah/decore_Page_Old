@@ -5,11 +5,11 @@ from pathlib import Path
 projects_path = os.path.abspath('../../')
 sys.path.append(projects_path)
 
-def setup(app):
-    from decore_Page.helper import split_rst_file
-    print ('DECORE_BASE_PATH: '+ projects_path)
-    print("Hello World!")
-    split_rst_file(Path('../decore_base').joinpath('README.rst'), Path('source').joinpath('base'), ['notes'])
+# def setup(app):
+#     from decore_Page.helper import split_rst_file
+#     print ('DECORE_BASE_PATH: '+ projects_path)
+#     print("Hello World!")
+#     split_rst_file(Path('../decore_base').joinpath('README.rst'), Path('source').joinpath('base'), ['notes'])
 
 # Configuration file for the Sphinx documentation builder.
 #
@@ -19,7 +19,7 @@ def setup(app):
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'decore Things'
+project = 'decore Base'
 copyright = '2023, Jean Rohark'
 author = 'Jean Rohark'
 
