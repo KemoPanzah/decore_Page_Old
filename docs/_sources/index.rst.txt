@@ -1,30 +1,19 @@
 .. meta::
-   :title: decore Project
+   :title: decore Base
    :description: create webapps with python fastly
    :keywords: webapp, python, UI, fastly, decore, Base, Front
    :robots: index, follow
 
-Welcome to decore Project!
-==========================
+.. include:: overview.rst
 
-Hello and welcome to the decore project website. This landing page is currently under construction. Please visit the website of the decore Base project.
-
-.. grid:: 1 1 1 1
-   :class-container: decore-grid
-   :gutter: 1
-
-   .. grid-item-card:: decore Base | UI fastly
-         :link: base
-         
-         .. include:: base/introduction.rst
-            :start-line: 2
-            :end-line: 4
-            
 .. toctree::
    :hidden:
    :maxdepth: 1
 
-   decore Base <base/index>
+   Overview <overview>
+   Get started <getstarted>
+   Api documentation <api/index>
+   Sample <sample>
 
 
 .. Indices and tables

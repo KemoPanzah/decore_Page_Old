@@ -222,4 +222,3 @@ Open the browser and type ``http://localhost:5555``.
 Build
 ~~~~~
 To build your application, run ``python app.py --build`` in your project root directory. Use the terminal in vscode.
-
