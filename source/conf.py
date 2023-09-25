@@ -1,16 +1,16 @@
 import os, sys, subprocess
 from pathlib import Path
 
-
 projects_path = os.path.abspath('../../')
 sys.path.append(projects_path)
 
 def on_build_finished(app, exception):
+    from decore_Page.helper import translate
     if not exception:
         if app.builder.name == 'gettext':
             cmd = ['sphinx-intl', 'update', '-p', 'source/_text', '-l', 'en']
             subprocess.run(cmd, cwd=os.path.abspath('.'), check=True)
-            pass
+            translate(Path('source/_locale/en/LC_MESSAGES').joinpath('docs.po'))
 
 def setup(app):
     app.connect('build-finished', on_build_finished)

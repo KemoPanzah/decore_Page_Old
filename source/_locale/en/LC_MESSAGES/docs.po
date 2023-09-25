@@ -7,33 +7,36 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: decore Base \n"
+"Project-Id-Version: decore Base\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-09-25 19:42+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: en\n"
 "Language-Team: en <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.12.1\n"
 
 #: ../api/decore.rst:2
 msgid "Decorator reference"
-msgstr ""
+msgstr "Decorator reference"
 
 #: decore_Base.decore_base.decore.Decore:1 of
 msgid ""
-"This class provides all the necessary functions to define a decore app "
-"and passes the collected information to the pool. It also holds the "
-"routes for communication with decore Front."
+"This class provides all the necessary functions to define a decore app and "
+"passes the collected information to the pool. It also holds the routes for "
+"communication with decore Front."
 msgstr ""
+"This class provides all the necessary functions to define a decore app and "
+"passes the collected information to the pool. It also holds the routes for "
+"communication with decore Front."
 
 #: decore_Base.decore_base.decore.Decore.app:1 of
 msgid "A function for opening an app. It is used as a decorator."
-msgstr ""
+msgstr "A function for opening an app. It is used as a decorator."
 
 #: decore_Base.decore_base.classes.decore_fields.BackrefMetaField
 #: decore_Base.decore_base.classes.decore_fields.BooleanField
@@ -46,185 +49,201 @@ msgstr ""
 #: decore_Base.decore_base.decore.Decore.view
 #: decore_Base.decore_base.decore.Decore.widget of
 msgid "Parameters"
-msgstr ""
+msgstr "Parameters"
 
 #: decore_Base.decore_base.decore.Decore.app:3 of
 msgid "The title of the app."
-msgstr ""
+msgstr "The title of the app."
 
 #: decore_Base.decore_base.decore.Decore.base:1 of
 msgid "A function for opening a base. It is used as a decorator."
-msgstr ""
+msgstr "A function for opening a base. It is used as a decorator."
 
 #: decore_Base.decore_base.decore.Decore.base:3 of
 msgid ""
-"The base is the carrier element for the view and the template for the "
-"data source."
+"The base is the carrier element for the view and the template for the data "
+"source."
 msgstr ""
+"The base is the carrier element for the view and the template for the data "
+"source."
 
 #: decore_Base.decore_base.decore.Decore.base:5 of
 msgid "The icon of the base."
-msgstr ""
+msgstr "The icon of the base."
 
 #: decore_Base.decore_base.decore.Decore.base:6 of
 msgid "The title of the base."
-msgstr ""
+msgstr "The title of the base."
 
 #: decore_Base.decore_base.decore.Decore.base:7 of
 msgid "The description of the base."
-msgstr ""
+msgstr "The description of the base."
 
 #: decore_Base.decore_base.decore.Decore.base:8 of
 msgid ""
 "The data model of the base. It forms a kind of context for all child "
 "elements of the base."
 msgstr ""
+"The data model of the base. It forms a kind of context for all child "
+"elements of the base."
 
 #: decore_Base.decore_base.decore.Decore.view:1 of
 msgid "A function to register a view. It is used as a decorator."
-msgstr ""
+msgstr "A function to register a view. It is used as a decorator."
 
 #: decore_Base.decore_base.decore.Decore.view:3 of
 msgid "A view is a container for displaying data."
-msgstr ""
+msgstr "A view is a container for displaying data."
 
 #: decore_Base.decore_base.decore.Decore.view:5 of
 msgid ""
-"The ID of the parent element. Only to be set if the view is to be "
-"rendered in another base."
+"The ID of the parent element. Only to be set if the view is to be rendered "
+"in another base."
 msgstr ""
+"The ID of the parent element. Only to be set if the view is to be rendered "
+"in another base."
 
 #: decore_Base.decore_base.decore.Decore.view:6 of
 msgid "The icon of the view."
-msgstr ""
+msgstr "The icon of the view."
 
 #: decore_Base.decore_base.decore.Decore.view:7 of
 msgid "The title of the view."
-msgstr ""
+msgstr "The title of the view."
 
 #: decore_Base.decore_base.decore.Decore.view:8 of
 msgid "The description of the view."
-msgstr ""
+msgstr "The description of the view."
 
 #: decore_Base.decore_base.decore.Decore.view:9 of
 msgid "The type of the view."
-msgstr ""
+msgstr "The type of the view."
 
 #: decore_Base.decore_base.decore.Decore.view:10 of
 msgid "The active fields of the view."
-msgstr ""
+msgstr "The active fields of the view."
 
 #: decore_Base.decore_base.decore.Decore.view:11 of
 msgid "The fields that are used in filter."
-msgstr ""
+msgstr "The fields that are used in filter."
 
 #: decore_Base.decore_base.decore.Decore.view:12 of
 msgid "The default query of the view."
-msgstr ""
+msgstr "The default query of the view."
 
 #: decore_Base.decore_base.decore.Decore.view:13 of
 msgid "The pagination type of the view."
-msgstr ""
+msgstr "The pagination type of the view."
 
 #: decore_Base.decore_base.decore.Decore.view:14 of
 msgid "The pagination records of the view."
-msgstr ""
+msgstr "The pagination records of the view."
 
 #: decore_Base.decore_base.decore.Decore.dialog:1 of
 msgid "A function to register a dialog. It is used as a decorator."
-msgstr ""
+msgstr "A function to register a dialog. It is used as a decorator."
 
 #: decore_Base.decore_base.decore.Decore.dialog:3 of
 msgid "A dialog is a carrier for widgets."
-msgstr ""
+msgstr "A dialog is a carrier for widgets."
 
 #: decore_Base.decore_base.decore.Decore.dialog:5 of
 msgid ""
-"The ID of the parent element. Only to be set if the dialog is to be "
-"rendered in a view of another base."
+"The ID of the parent element. Only to be set if the dialog is to be rendered"
+" in a view of another base."
 msgstr ""
+"The ID of the parent element. Only to be set if the dialog is to be rendered"
+" in a view of another base."
 
 #: decore_Base.decore_base.decore.Decore.dialog:6 of
 msgid "The icon of the dialog."
-msgstr ""
+msgstr "The icon of the dialog."
 
 #: decore_Base.decore_base.decore.Decore.dialog:7 of
 msgid "The title of the dialog."
-msgstr ""
+msgstr "The title of the dialog."
 
 #: decore_Base.decore_base.decore.Decore.dialog:8 of
 msgid "The description of the dialog."
-msgstr ""
+msgstr "The description of the dialog."
 
 #: decore_Base.decore_base.decore.Decore.dialog:9 of
 msgid "The type of the dialog."
-msgstr ""
+msgstr "The type of the dialog."
 
 #: decore_Base.decore_base.decore.Decore.dialog:10 of
 msgid "The display type of the dialog."
-msgstr ""
+msgstr "The display type of the dialog."
 
 #: decore_Base.decore_base.decore.Decore.dialog:11 of
 msgid "The activator type of the dialog."
-msgstr ""
+msgstr "The activator type of the dialog."
 
 #: decore_Base.decore_base.decore.Decore.widget:1 of
 msgid "A function to register a widget. It is used as a decorator."
-msgstr ""
+msgstr "A function to register a widget. It is used as a decorator."
 
 #: decore_Base.decore_base.decore.Decore.widget:3 of
 msgid ""
 "A widget is an element for displaying or editing a single item from the "
 "data."
 msgstr ""
+"A widget is an element for displaying or editing a single item from the "
+"data."
 
 #: decore_Base.decore_base.decore.Decore.widget:5 of
 msgid ""
-"The ID of the parent element. Only to be set if the widget is to be "
-"rendered in a dialog of another base."
+"The ID of the parent element. Only to be set if the widget is to be rendered"
+" in a dialog of another base."
 msgstr ""
+"The ID of the parent element. Only to be set if the widget is to be rendered"
+" in a dialog of another base."
 
 #: decore_Base.decore_base.decore.Decore.widget:6 of
 msgid "The icon of the widget."
-msgstr ""
+msgstr "The icon of the widget."
 
 #: decore_Base.decore_base.decore.Decore.widget:7 of
 msgid "The title of the widget."
-msgstr ""
+msgstr "The title of the widget."
 
 #: decore_Base.decore_base.decore.Decore.widget:8 of
 msgid "The description of the widget."
-msgstr ""
+msgstr "The description of the widget."
 
 #: decore_Base.decore_base.decore.Decore.widget:9 of
 msgid "The type of the widget."
-msgstr ""
+msgstr "The type of the widget."
 
 #: decore_Base.decore_base.decore.Decore.widget:10 of
 msgid "The layout of the widget."
-msgstr ""
+msgstr "The layout of the widget."
 
 #: decore_Base.decore_base.decore.Decore.widget:11 of
 msgid "The active fields of the widget."
-msgstr ""
+msgstr "The active fields of the widget."
 
 #: ../api/fields.rst:2
 msgid "Fields"
-msgstr ""
+msgstr "Fields"
 
 #: decore_Base.decore_base.classes.decore_fields.BackrefMetaField:1 of
 msgid ""
-"The BackRefMetaField's name must match the name of the specified backref "
-"in the ForeignKey or ManyToMany field in the reference model."
+"The BackRefMetaField's name must match the name of the specified backref in "
+"the ForeignKey or ManyToMany field in the reference model."
 msgstr ""
+"The BackRefMetaField's name must match the name of the specified backref in "
+"the ForeignKey or ManyToMany field in the reference model."
 
 #: decore_Base.decore_base.classes.decore_fields.BackrefMetaField:3 of
 msgid ""
-"The BackRefMetaField is used by the user to represent relationships in "
-"the **decore Front** application. For example, it can be assigned to the "
-"filter or to a form. It is a MetaField and does not get a column in the "
-"database."
+"The BackRefMetaField is used by the user to represent relationships in the "
+"**decore Front** application. For example, it can be assigned to the filter "
+"or to a form. It is a MetaField and does not get a column in the database."
 msgstr ""
+"The BackRefMetaField is used by the user to represent relationships in the "
+"**decore Front** application. For example, it can be assigned to the filter "
+"or to a form. It is a MetaField and does not get a column in the database."
 
 #: decore_Base.decore_base.classes.decore_fields.BackrefMetaField:5
 #: decore_Base.decore_base.classes.decore_fields.BooleanField:6
@@ -232,7 +251,7 @@ msgstr ""
 #: decore_Base.decore_base.classes.decore_fields.ManyToManyField:6
 #: decore_Base.decore_base.classes.decore_fields.PasswordField:8 of
 msgid "A human-readable name for the field."
-msgstr ""
+msgstr "A human-readable name for the field."
 
 #: decore_Base.decore_base.classes.decore_fields.BackrefMetaField:6
 #: decore_Base.decore_base.classes.decore_fields.BooleanField:5
@@ -240,329 +259,414 @@ msgstr ""
 #: decore_Base.decore_base.classes.decore_fields.ManyToManyField:7
 #: decore_Base.decore_base.classes.decore_fields.PasswordField:7 of
 msgid "Additional text to be displayed in **decore Front**."
-msgstr ""
+msgstr "Additional text to be displayed in **decore Front**."
 
 #: decore_Base.decore_base.classes.decore_fields.BackrefMetaField:7
 #: decore_Base.decore_base.classes.decore_fields.ManyToManyField:8 of
 msgid ""
-"A List of type string. Only the speciefied fields will be displayed in "
-"the filter. If None, all fields will be displayed."
+"A List of type string. Only the speciefied fields will be displayed in the "
+"filter. If None, all fields will be displayed."
 msgstr ""
+"A List of type string. Only the speciefied fields will be displayed in the "
+"filter. If None, all fields will be displayed."
 
 #: decore_Base.decore_base.classes.decore_fields.BackrefMetaField:8 of
 msgid ""
 "A dictonary containing a query to be used when querying options (e.g. in "
-"selection fields in the frontend). The query always refers to the "
-"reference model."
+"selection fields in the frontend). The query always refers to the reference "
+"model."
 msgstr ""
+"A dictonary containing a query to be used when querying options (e.g. in "
+"selection fields in the frontend). The query always refers to the reference "
+"model."
 
 #: decore_Base.decore_base.classes.decore_fields.BooleanField:1 of
 msgid "A field to store boolean values."
-msgstr ""
+msgstr "A field to store boolean values."
 
 #: decore_Base.decore_base.classes.decore_fields.BooleanField:3
 #: decore_Base.decore_base.classes.decore_fields.CharField:3
 #: decore_Base.decore_base.classes.decore_fields.ManyToManyField:5
 #: decore_Base.decore_base.classes.decore_fields.PasswordField:6 of
 msgid "If True, the field is allowed to be null. Defaults to False."
-msgstr ""
+msgstr "If True, the field is allowed to be null. Defaults to False."
 
 #: decore_Base.decore_base.classes.decore_fields.BooleanField:4
 #: decore_Base.decore_base.classes.decore_fields.CharField:4 of
 msgid "The default value for the field. Defaults to None."
-msgstr ""
+msgstr "The default value for the field. Defaults to None."
 
 #: decore_Base.decore_base.classes.decore_fields.CharField:1 of
 msgid "A field to store char values."
-msgstr ""
+msgstr "A field to store char values."
 
 #: decore_Base.decore_base.classes.decore_fields.ManyToManyField:1 of
 msgid ""
-"A field to represent a many-to-many relationship between two models. It "
-"is a MetaField and does not get a column in the database. However, a "
-"through model is created by decore Base, which represents the "
-"relationship between the two models."
+"A field to represent a many-to-many relationship between two models. It is a"
+" MetaField and does not get a column in the database. However, a through "
+"model is created by decore Base, which represents the relationship between "
+"the two models."
 msgstr ""
+"A field to represent a many-to-many relationship between two models. It is a"
+" MetaField and does not get a column in the database. However, a through "
+"model is created by decore Base, which represents the relationship between "
+"the two models."
 
 #: decore_Base.decore_base.classes.decore_fields.ManyToManyField:3 of
 msgid "The model to which the relationship is to be established."
-msgstr ""
+msgstr "The model to which the relationship is to be established."
 
 #: decore_Base.decore_base.classes.decore_fields.ManyToManyField:4 of
 msgid ""
 "The name of the field in the reference model that represents the "
 "relationship to the model."
 msgstr ""
+"The name of the field in the reference model that represents the "
+"relationship to the model."
 
 #: decore_Base.decore_base.classes.decore_fields.ManyToManyField:9 of
 msgid ""
 "A dictonary containing a query to be used when querying choices (e.g. in "
-"selection fields in the frontend). The query always refers to the "
-"reference model."
+"selection fields in the frontend). The query always refers to the reference "
+"model."
 msgstr ""
+"A dictonary containing a query to be used when querying choices (e.g. in "
+"selection fields in the frontend). The query always refers to the reference "
+"model."
 
 #: decore_Base.decore_base.classes.decore_fields.PasswordField:2 of
 msgid ""
-"The keybase is a KeePass file and should be protected by setting the "
-"correct access rights (ACL)."
+"The keybase is a KeePass file and should be protected by setting the correct"
+" access rights (ACL)."
 msgstr ""
+"The keybase is a KeePass file and should be protected by setting the correct"
+" access rights (ACL)."
 
 #: decore_Base.decore_base.classes.decore_fields.PasswordField:4 of
 msgid "A field to store passwords in the keybase and to use them again."
-msgstr ""
+msgstr "A field to store passwords in the keybase and to use them again."
 
 #: ../api/index.rst:4
 msgid "Contents:"
-msgstr ""
+msgstr "Contents:"
 
 #: ../api/index.rst:2
 msgid "Api Reference"
-msgstr ""
+msgstr "Api Reference"
 
 #: ../getstarted.rst:2 ../index.rst:9
 msgid "Get started"
-msgstr ""
+msgstr "Get started"
 
 #: ../getstarted.rst:3
 msgid ""
-"Um die Anwendungserstellung mit decore Base zu veranschaulichen, werden "
-"wir nun gemeinsam eine kleine Webanwendung erstellen."
+"Um die Anwendungserstellung mit decore Base zu veranschaulichen, werden wir "
+"nun gemeinsam eine kleine Webanwendung erstellen."
 msgstr ""
+"To illustrate application creation with decore Base, we will now create a "
+"small web application together."
 
 #: ../getstarted.rst:5
 msgid ""
-"Die Dekoratoren dienen in erster Linie der Erstellung von "
-"Metainformationen für die spätere Auswertung im Frontend der Anwendung "
-"und sind nichts wovor man sich fürchten muss."
+"Die Dekoratoren dienen in erster Linie der Erstellung von Metainformationen "
+"für die spätere Auswertung im Frontend der Anwendung und sind nichts wovor "
+"man sich fürchten muss."
 msgstr ""
+"The decorators are primarily used to create meta-information for later "
+"evaluation in the front-end of the application and are nothing to be afraid "
+"of."
 
 #: ../getstarted.rst:7
 msgid "*Es ist wirklich einfach, bitte folgen Sie mir!*"
-msgstr ""
+msgstr "*It's really simple, please follow me!*"
 
 #: ../getstarted.rst:10
 msgid "Installation"
-msgstr ""
+msgstr "Installation"
 
 #: ../getstarted.rst:11
 msgid "Let's first create an empty Python project in your desired directory."
-msgstr ""
+msgstr "Let's first create an empty Python project in your desired directory."
 
 #: ../getstarted.rst:13
 msgid ""
 "To install decore Base, we run the following command in the project root "
 "directory. Let's use the terminal in vscode."
 msgstr ""
+"To install decore Base, we run the following command in the project root "
+"directory. Let's use the terminal in vscode."
 
 #: ../getstarted.rst:19
 msgid ""
-"This requires an enabled Python environment! To learn more about this, "
-"visit `Python environments in VS Code "
+"This requires an enabled Python environment! To learn more about this, visit"
+" `Python environments in VS Code "
 "<https://code.visualstudio.com/docs/python/environments>`_."
 msgstr ""
+"This requires an enabled Python environment! To learn more about this, visit"
+" `Python environments in VS Code "
+"<https://code.visualstudio.com/docs/python/environments>`_."
 
 #: ../getstarted.rst:22
 msgid "Preperation"
-msgstr ""
+msgstr "Preperation"
 
 #: ../getstarted.rst:23
 msgid ""
-"Now let's create a new file named **app.py** in the project root "
-"directory."
+"Now let's create a new file named **app.py** in the project root directory."
 msgstr ""
+"Now let's create a new file named **app.py** in the project root directory."
 
 #: ../getstarted.rst:25
 msgid "To use decore Base, we first import it into the module **app.py**."
-msgstr ""
+msgstr "To use decore Base, we first import it into the module **app.py**."
 
 #: ../getstarted.rst:31
 msgid ""
-"Then we use the **prepare** command to create all the necessary auxiliary"
-" files in the project root directory."
+"Then we use the **prepare** command to create all the necessary auxiliary "
+"files in the project root directory."
 msgstr ""
+"Then we use the **prepare** command to create all the necessary auxiliary "
+"files in the project root directory."
 
 #: ../getstarted.rst:33
 msgid ""
-"Now, to actually prepare the application, we run the command ``python "
-"app.py --prepare`` in the terminal. The path must be in the project root "
+"Now, to actually prepare the application, we run the command ``python app.py"
+" --prepare`` in the terminal. The path must be in the project root "
 "directory, i.e. where the **app.py** is located."
 msgstr ""
+"Now, to actually prepare the application, we run the command ``python app.py"
+" --prepare`` in the terminal. The path must be in the project root "
+"directory, i.e. where the **app.py** is located."
 
 #: ../getstarted.rst:36
 msgid "Usage"
-msgstr ""
+msgstr "Usage"
 
 #: ../getstarted.rst:37
 msgid ""
-"To allow the Python interpreter to process the future base classes, we "
-"add the following import."
+"To allow the Python interpreter to process the future base classes, we add "
+"the following import."
 msgstr ""
+"To allow the Python interpreter to process the future base classes, we add "
+"the following import."
 
 #: ../getstarted.rst:43
 msgid ""
-"Typically, a Python main module contains a query that checks if it is the"
-" main module so that we can call the ``main`` function afterwards."
+"Typically, a Python main module contains a query that checks if it is the "
+"main module so that we can call the ``main`` function afterwards."
 msgstr ""
+"Typically, a Python main module contains a query that checks if it is the "
+"main module so that we can call the ``main`` function afterwards."
 
 #: ../getstarted.rst:45
 msgid ""
 "Next, we create a line ``if __name__ == '__main__':`` in the **app.py** "
 "file."
 msgstr ""
+"Next, we create a line ``if __name__ == '__main__':`` in the **app.py** "
+"file."
 
 #: ../getstarted.rst:47
 msgid ""
 "To create a new Decore application instance, we use a ``@decore.app`` "
-"decorated ``main()`` function in the **app.py** file, just below the "
-"line: ``if __name__ == '__main__':``."
+"decorated ``main()`` function in the **app.py** file, just below the line: "
+"``if __name__ == '__main__':``."
 msgstr ""
+"To create a new Decore application instance, we use a ``@decore.app`` "
+"decorated ``main()`` function in the **app.py** file, just below the line: "
+"``if __name__ == '__main__':``."
 
 #: ../getstarted.rst:60
 msgid "Model"
-msgstr ""
+msgstr "Model"
 
 #: ../getstarted.rst:61
 msgid ""
-"In a model we define the data fields that are needed for the later "
-"assigned base. It serves as a database interface to the database drivers "
-"such as SQLite, MySQL, PostgreSQL, etc."
+"In a model we define the data fields that are needed for the later assigned "
+"base. It serves as a database interface to the database drivers such as "
+"SQLite, MySQL, PostgreSQL, etc."
 msgstr ""
+"In a model we define the data fields that are needed for the later assigned "
+"base. It serves as a database interface to the database drivers such as "
+"SQLite, MySQL, PostgreSQL, etc."
 
 #: ../getstarted.rst:63
 msgid ""
-"We now create the file first_model.py in the directory **models** and "
-"insert the following code:"
+"We now create the file first_model.py in the directory **models** and insert"
+" the following code:"
 msgstr ""
+"We now create the file first_model.py in the directory **models** and insert"
+" the following code:"
 
 #: ../getstarted.rst:66
 msgid ""
-"To avoid possible circular imports we create the model classes in a "
-"separate directory **models** in our project root directory. The "
-"directory **models** was created by the previously executed command "
-"``python app.py --prepare``."
+"To avoid possible circular imports we create the model classes in a separate"
+" directory **models** in our project root directory. The directory "
+"**models** was created by the previously executed command ``python app.py "
+"--prepare``."
 msgstr ""
+"To avoid possible circular imports we create the model classes in a separate"
+" directory **models** in our project root directory. The directory "
+"**models** was created by the previously executed command ``python app.py "
+"--prepare``."
 
 #: ../getstarted.rst:78
 msgid ""
 "In the example shown here, we import, from the **uniform library**, the "
 "Conform_model class and extend it with the firstname and lastname fields."
 msgstr ""
+"In the example shown here, we import, from the **uniform library**, the "
+"Conform_model class and extend it with the firstname and lastname fields."
 
 #: ../getstarted.rst:80
 msgid ""
-"The models in **decore Base** are based on the great Peewee ORM. To learn"
-" more about Peewee, visit `Peewee ORM <http://docs.peewee-"
+"The models in **decore Base** are based on the great Peewee ORM. To learn "
+"more about Peewee, visit `Peewee ORM <http://docs.peewee-"
 "orm.com/en/latest/>`_."
 msgstr ""
+"The models in **decore Base** are based on the great Peewee ORM. To learn "
+"more about Peewee, visit `Peewee ORM <http://docs.peewee-"
+"orm.com/en/latest/>`_."
 
 #: ../getstarted.rst:83
 msgid ""
 "When importing please note that we import everything (*) from the "
 "conform_model namespace to get the field classes as well."
 msgstr ""
+"When importing please note that we import everything (*) from the "
+"conform_model namespace to get the field classes as well."
 
 #: ../getstarted.rst:86
 msgid "Base"
-msgstr ""
+msgstr "Base"
 
 #: ../getstarted.rst:87
 msgid ""
-"These base classes serve the decore application as a carrier element for "
-"the view components, maintain the data model and are thus also considered"
-" the data source for evaluation in the **decore Front** web application."
+"These base classes serve the decore application as a carrier element for the"
+" view components, maintain the data model and are thus also considered the "
+"data source for evaluation in the **decore Front** web application."
 msgstr ""
+"These base classes serve the decore application as a carrier element for the"
+" view components, maintain the data model and are thus also considered the "
+"data source for evaluation in the **decore Front** web application."
 
 #: ../getstarted.rst:89
 msgid ""
 "Now we need to create a new Python module containing a base class, for "
-"example: **first_base.py**, in the **bases** directory in our project "
-"root directory. The **bases** directory was co-created by the ``python "
-"app.py --prepare`` command executed earlier."
+"example: **first_base.py**, in the **bases** directory in our project root "
+"directory. The **bases** directory was co-created by the ``python app.py "
+"--prepare`` command executed earlier."
 msgstr ""
+"Now we need to create a new Python module containing a base class, for "
+"example: **first_base.py**, in the **bases** directory in our project root "
+"directory. The **bases** directory was co-created by the ``python app.py "
+"--prepare`` command executed earlier."
 
 #: ../getstarted.rst:102
 msgid ""
-"To use the previously created model, we import it into the Base class and"
-" pass it to the ``model`` parameter."
+"To use the previously created model, we import it into the Base class and "
+"pass it to the ``model`` parameter."
 msgstr ""
+"To use the previously created model, we import it into the Base class and "
+"pass it to the ``model`` parameter."
 
 #: ../getstarted.rst:105
 msgid ""
-"In order for the Python interpreter to be able to process the base "
-"classes, we have to import them into the __init__.py file in the "
-"**bases** directory. The order of the individual imports also determines "
-"the order in **decore Front**."
+"In order for the Python interpreter to be able to process the base classes, "
+"we have to import them into the __init__.py file in the **bases** directory."
+" The order of the individual imports also determines the order in **decore "
+"Front**."
 msgstr ""
+"In order for the Python interpreter to be able to process the base classes, "
+"we have to import them into the __init__.py file in the **bases** directory."
+" The order of the individual imports also determines the order in **decore "
+"Front**."
 
 #: ../getstarted.rst:107
 msgid "We edit the **__init__.py** file and insert the following code:"
-msgstr ""
+msgstr "We edit the **__init__.py** file and insert the following code:"
 
 #: ../getstarted.rst:114
 msgid "View"
-msgstr ""
+msgstr "View"
 
 #: ../getstarted.rst:115
 msgid ""
 "Views are used by the decore application to present the data sets in the "
 "**decore Front** web application."
 msgstr ""
+"Views are used by the decore application to present the data sets in the "
+"**decore Front** web application."
 
 #: ../getstarted.rst:117
 msgid ""
-"With the view decorator we can now create a view component and link it to"
-" the previously created base class."
+"With the view decorator we can now create a view component and link it to "
+"the previously created base class."
 msgstr ""
+"With the view decorator we can now create a view component and link it to "
+"the previously created base class."
 
 #: ../getstarted.rst:119
 msgid ""
-"We now edit the **first_base.py** file again and extend the code as "
-"follows:"
+"We now edit the **first_base.py** file again and extend the code as follows:"
 msgstr ""
+"We now edit the **first_base.py** file again and extend the code as follows:"
 
 #: ../getstarted.rst:133
 msgid "Dialog"
-msgstr ""
+msgstr "Dialog"
 
 #: ../getstarted.rst:134
 msgid ""
-"Dialogs are the supporting elements for widgets in the **decore Front** "
-"web application. They can only be added to views and control the "
-"visibility and display style of child elements. Dialogs also get control "
-"over the submit functions of the widgets."
+"Dialogs are the supporting elements for widgets in the **decore Front** web "
+"application. They can only be added to views and control the visibility and "
+"display style of child elements. Dialogs also get control over the submit "
+"functions of the widgets."
 msgstr ""
+"Dialogs are the supporting elements for widgets in the **decore Front** web "
+"application. They can only be added to views and control the visibility and "
+"display style of child elements. Dialogs also get control over the submit "
+"functions of the widgets."
 
 #: ../getstarted.rst:136
 msgid ""
-"In our case, we create a diaolg to create a new person with first name "
-"and last name."
+"In our case, we create a diaolg to create a new person with first name and "
+"last name."
 msgstr ""
+"In our case, we create a diaolg to create a new person with first name and "
+"last name."
 
 #: ../getstarted.rst:138
 msgid ""
 "Here we go ... again the file **first_base.py** and extend the code as "
 "follows:"
 msgstr ""
+"Here we go ... again the file **first_base.py** and extend the code as "
+"follows:"
 
 #: ../getstarted.rst:154
 msgid "Widget"
-msgstr ""
+msgstr "Widget"
 
 #: ../getstarted.rst:155
 msgid ""
-"Widgets are components with which we can perform interactions on the "
-"single record. They can only be added to dialogs and are stackable."
+"Widgets are components with which we can perform interactions on the single "
+"record. They can only be added to dialogs and are stackable."
 msgstr ""
+"Widgets are components with which we can perform interactions on the single "
+"record. They can only be added to dialogs and are stackable."
 
 #: ../getstarted.rst:157
 msgid ""
-"What we need now is to create an input form to enter the data for the new"
-" person."
+"What we need now is to create an input form to enter the data for the new "
+"person."
 msgstr ""
+"What we need now is to create an input form to enter the data for the new "
+"person."
 
 #: ../getstarted.rst:175
 msgid "Action"
-msgstr ""
+msgstr "Action"
 
 #: ../getstarted.rst:176
 msgid ""
@@ -570,156 +674,189 @@ msgid ""
 "**decore Base**. They can be added to views and widgets and are the only "
 "real class methods in the meta kit."
 msgstr ""
+"Actions are methods with which **decore Front** can communicate with "
+"**decore Base**. They can be added to views and widgets and are the only "
+"real class methods in the meta kit."
 
 #: ../getstarted.rst:178
 msgid ""
 "We now need an action to store the data of the new person and extend the "
 "code in **first_base.py** as follows:"
 msgstr ""
+"We now need an action to store the data of the new person and extend the "
+"code in **first_base.py** as follows:"
 
 #: ../getstarted.rst:203
 msgid ""
-"To create a record with decore Base, we need to create an instance of the"
-" model. In our case **First_model**. The instance is filled with the data"
-" from the form and then saved."
+"To create a record with decore Base, we need to create an instance of the "
+"model. In our case **First_model**. The instance is filled with the data "
+"from the form and then saved."
 msgstr ""
+"To create a record with decore Base, we need to create an instance of the "
+"model. In our case **First_model**. The instance is filled with the data "
+"from the form and then saved."
 
 #: ../getstarted.rst:205
 msgid ""
-"The ID in the form of a UUID is generated automatically and does not have"
-" to be specified separately."
+"The ID in the form of a UUID is generated automatically and does not have to"
+" be specified separately."
 msgstr ""
+"The ID in the form of a UUID is generated automatically and does not have to"
+" be specified separately."
 
 #: ../getstarted.rst:208
 msgid ""
-"The field **title** was inherited from the class **Deform_model** and "
-"must be used for each record creation. Otherwise the item will fail the "
+"The field **title** was inherited from the class **Deform_model** and must "
+"be used for each record creation. Otherwise the item will fail the "
 "validation."
 msgstr ""
+"The field **title** was inherited from the class **Deform_model** and must "
+"be used for each record creation. Otherwise the item will fail the "
+"validation."
 
 #: ../getstarted.rst:211
 msgid "Run, Development and Build"
-msgstr ""
+msgstr "Run, Development and Build"
 
 #: ../getstarted.rst:212
 msgid ""
-"To start only your application, run ``python app.py`` in your project "
-"root directory. Use the terminal in vscode."
+"To start only your application, run ``python app.py`` in your project root "
+"directory. Use the terminal in vscode."
 msgstr ""
+"To start only your application, run ``python app.py`` in your project root "
+"directory. Use the terminal in vscode."
 
 #: ../getstarted.rst:214 ../getstarted.rst:220
 msgid "Open the browser and type ``http://localhost:5555``."
-msgstr ""
+msgstr "Open the browser and type ``http://localhost:5555``."
 
 #: ../getstarted.rst:217
 msgid "Development"
-msgstr ""
+msgstr "Development"
 
 #: ../getstarted.rst:218
 msgid ""
-"To develop your application, use your debugger with the ``[dev] decore "
-"base development`` profile in vscode."
+"To develop your application, use your debugger with the ``[dev] decore base "
+"development`` profile in vscode."
 msgstr ""
+"To develop your application, use your debugger with the ``[dev] decore base "
+"development`` profile in vscode."
 
 #: ../getstarted.rst:223
 msgid "Build"
-msgstr ""
+msgstr "Build"
 
 #: ../getstarted.rst:224
 msgid ""
 "To build your application, run ``python app.py --build`` in your project "
 "root directory. Use the terminal in vscode."
 msgstr ""
+"To build your application, run ``python app.py --build`` in your project "
+"root directory. Use the terminal in vscode."
 
 #: ../index.rst:9
 msgid "Overview"
-msgstr ""
+msgstr "Overview"
 
 #: ../index.rst:9
 msgid "Sample"
-msgstr ""
+msgstr "Sample"
 
 #: ../index.rst:9
 msgid "Api documentation"
-msgstr ""
+msgstr "Bees documentation"
 
 #: ../index.rst:-1
 msgid "decore Base"
-msgstr ""
+msgstr "decore Base"
 
 #: ../index.rst:-1
 msgid "create webapps with python fastly"
-msgstr ""
+msgstr "create webapps with python fastly"
 
 #: ../index.rst:-1
 msgid "webapp, python, UI, fastly, decore, Base, Front"
-msgstr ""
+msgstr "webapp, python, UI, fastly, decore, Base, Front"
 
 #: ../index.rst:-1
 msgid "index, follow"
-msgstr ""
+msgstr "index, follow"
 
 #: ../overview.rst:2
 msgid "decore Base | UI fastly"
-msgstr ""
+msgstr "decore Base | UI fastly"
 
 #: ../overview.rst:4
 msgid "Introduction"
-msgstr ""
+msgstr "Introduction"
 
 #: ../overview.rst:5
 msgid ""
 "decore Base ist ein out-of-the-box \"Python to Vue.js\" Datenanwendungs-"
-"Dashboard, das Ihnen hilft, in wenigen einfachen Schritten von der Idee "
-"zur Ansicht zu gelangen. Es richtet sich an diejenigen, die sich auf die "
-"Ergebnisse ihrer Algorithmen konzentrieren wollen, wissenschaftliche "
-"Arbeit leisten oder Lehr- und Lernfunktionen ausführen wollen."
+"Dashboard, das Ihnen hilft, in wenigen einfachen Schritten von der Idee zur "
+"Ansicht zu gelangen. Es richtet sich an diejenigen, die sich auf die "
+"Ergebnisse ihrer Algorithmen konzentrieren wollen, wissenschaftliche Arbeit "
+"leisten oder Lehr- und Lernfunktionen ausführen wollen."
 msgstr ""
+"decore Base is an out-of-the-box \"Python to Vue.js\" data application "
+"dashboard that helps you go from idea to view in a few simple steps. It is "
+"aimed at those who want to focus on the results of their algorithms, do "
+"scientific work, or perform teaching and learning functions."
 
 #: ../overview.rst:8
 msgid "Funktionen und Integrationen"
-msgstr ""
+msgstr "Functions and integrations"
 
 #: ../overview.rst:9
 msgid ""
-"Fertige SPA (Single Page Application) mit Vue.js unter Verwendung des "
-"Quasar Frameworks (https://github.com/quasarframework/quasar)"
+"Fertige SPA (Single Page Application) mit Vue.js unter Verwendung des Quasar"
+" Frameworks (https://github.com/quasarframework/quasar)"
 msgstr ""
+"Finished SPA (Single Page Application) with Vue.js using the Quasar "
+"Framework (https://github.com/quasarframework/quasar)"
 
 #: ../overview.rst:10
 msgid ""
 "Vordefinierte Webapi für Metadaten und Aktionen mit Flask "
 "(https://github.com/pallets/flask)"
 msgstr ""
+"Predefined webapi for metadata and actions with Flask "
+"(https://github.com/pallets/flask)"
 
 #: ../overview.rst:11
 msgid ""
-"Integriertes ORM für Datenmanagement und Datenbankschnittstellen (SQLite)"
-" powered by the great Peewee (https://github.com/coleifer/peewee)"
+"Integriertes ORM für Datenmanagement und Datenbankschnittstellen (SQLite) "
+"powered by the great Peewee (https://github.com/coleifer/peewee)"
 msgstr ""
+"Integrated ORM for data management and database interfaces (SQLite) powered "
+"by the great Peewee (https://github.com/coleifer/peewee)"
 
 #: ../overview.rst:12
 msgid "Datenüberprüfung mit Cerberus (https://github.com/pyeve/cerberus)"
-msgstr ""
+msgstr "Data verification with Cerberus (https://github.com/pyeve/cerberus)"
 
 #: ../overview.rst:13
-msgid "Passwortverwaltung mit pykeepass (https://github.com/libkeepass/pykeepass)"
+msgid ""
+"Passwortverwaltung mit pykeepass (https://github.com/libkeepass/pykeepass)"
 msgstr ""
+"Password management with pykeepass (https://github.com/libkeepass/pykeepass)"
 
 #: ../overview.rst:15
 msgid "Bitte unterstützen Sie diese großartigen Projekte!"
-msgstr ""
+msgstr "Please support these great projects!"
 
 #: ../overview.rst:18
 msgid "Contribution"
-msgstr ""
+msgstr "Contribution"
 
 #: ../overview.rst:19
 msgid ""
-"Die größte Hilfe, die ich im Moment bekommen kann, ist, wenn Sie einen "
-"Blick auf das Projekt werfen und mir sagen, was Sie davon halten. Ich bin"
-" für jede Kritik dankbar."
+"Die größte Hilfe, die ich im Moment bekommen kann, ist, wenn Sie einen Blick"
+" auf das Projekt werfen und mir sagen, was Sie davon halten. Ich bin für "
+"jede Kritik dankbar."
 msgstr ""
+"The biggest help I can get right now is if you take a look at the project "
+"and tell me what you think. I am grateful for any criticism."
 
 #: ../overview.rst:21
 msgid ""
@@ -728,39 +865,50 @@ msgid ""
 "dazu den Problembereich im Repository. "
 "`<https://github.com/KemoPanzah/decore_Base/issues>`_"
 msgstr ""
+"If you find something in the documentation related to features, bugs or "
+"ambiguities, please let me know. Please use the problem area in the "
+"repository to do so. `<https://github.com/KemoPanzah/decore_Base/issues>`_"
 
 #: ../overview.rst:24
 msgid "Notes"
-msgstr ""
+msgstr "Notes"
 
 #: ../overview.rst:25
 msgid ""
 "**decore Base ist derzeit in Arbeit, nur lokal bereitstellbar, nur für "
 "Windows verfügbar und noch nicht produktionsbereit**."
 msgstr ""
+"**decore Base is currently a work in progress, only locally deployable, only"
+" available for Windows and not yet production ready**."
 
 #: ../overview.rst:27
 msgid ""
 "Die empfohlene IDE ist Visual Studio Code und alle meine Kommentare und "
 "Dokumentationen hier beziehen sich auch nur auf vscode."
 msgstr ""
+"The recommended IDE is Visual Studio Code and all my comments and "
+"documentation here also refer to vscode only."
 
 #: ../overview.rst:29
-msgid "Diese Dokumentation wurde mit Deepl vom Deutschen ins Englische übersetzt."
+msgid ""
+"Diese Dokumentation wurde mit Deepl vom Deutschen ins Englische übersetzt."
 msgstr ""
+"This documentation was translated from German into English with Deepl."
 
 #: ../sample.rst:2
 msgid "Sample application"
-msgstr ""
+msgstr "Sample application"
 
 #: ../sample.rst:3
 msgid ""
-"To better understand how decore base works, it is best to look at the "
-"sample application. The application represents my continuous development "
-"of decore base."
+"To better understand how decore base works, it is best to look at the sample"
+" application. The application represents my continuous development of decore"
+" base."
 msgstr ""
+"To better understand how decore base works, it is best to look at the sample"
+" application. The application represents my continuous development of decore"
+" base."
 
 #: ../sample.rst:5
 msgid "https://github.com/KemoPanzah/decore_Sample"
-msgstr ""
-
+msgstr "https://github.com/KemoPanzah/decore_Sample"
