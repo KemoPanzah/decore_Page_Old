@@ -12,10 +12,9 @@
 
    Overview <overview>
    Get started <getstarted>
-   Api documentation <api/index>
    Sample <sample>
-
-
+   Api documentation <api/index>
+   
 .. Indices and tables
 .. ------------------
 

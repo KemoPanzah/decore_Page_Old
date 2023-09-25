@@ -1,15 +1,24 @@
-import os, sys
+import os, sys, subprocess
 from pathlib import Path
 
 
 projects_path = os.path.abspath('../../')
 sys.path.append(projects_path)
 
-# def setup(app):
+def on_build_finished(app, exception):
+    if not exception:
+        if app.builder.name == 'gettext':
+            cmd = ['sphinx-intl', 'update', '-p', 'source/_text', '-l', 'en']
+            subprocess.run(cmd, cwd=os.path.abspath('.'), check=True)
+            pass
+
+def setup(app):
+    app.connect('build-finished', on_build_finished)
 #     from decore_Page.helper import split_rst_file
 #     print ('DECORE_BASE_PATH: '+ projects_path)
 #     print("Hello World!")
 #     split_rst_file(Path('../decore_base').joinpath('README.rst'), Path('source').joinpath('base'), ['notes'])
+
 
 # Configuration file for the Sphinx documentation builder.
 #
@@ -26,7 +35,7 @@ author = 'Jean Rohark'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ['sphinx.ext.autodoc', 'sphinx_copybutton', 'sphinx_favicon', "sphinx_design", 'sphinx_sitemap']
+extensions = ['sphinx.ext.autodoc', 'sphinx_copybutton', 'sphinx_favicon', "sphinx_design", 'sphinx_sitemap', 'sphinx_rst_builder']
 
 locale_dirs = ['_locale/']
 gettext_compact = "docs"

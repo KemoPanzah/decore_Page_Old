@@ -5,7 +5,7 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Sphinx Make Gettext",
+      "name": "Sphinx Make Translate",
       "type": "python",
       "request": "launch",
       "cwd": "${workspaceFolder}",
@@ -14,21 +14,21 @@
       "console": "integratedTerminal"
     },
     {
-      "name": "Sphinx Internationalize",
-      "type": "python",
-      "request": "launch",
-      "cwd": "${workspaceFolder}",
-      "program": ".venv/Scripts/sphinx-intl.exe",
-      "args": ["update", "-p", "source/_text", "-l", "en"],
-      "console": "integratedTerminal"
-    },
-    {
-      "name": "Sphinx Make Build",
+      "name": "Sphinx Make Page",
       "type": "python",
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "program": ".venv/Scripts/sphinx-build.exe",
       "args": ["-b", "html", "source", "docs", "-a", "-E"],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Sphinx Make Readme",
+      "type": "python",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "program": ".venv/Scripts/sphinx-build.exe",
+      "args": ["-b", "rst", "source", "readme", "-a", "-E"],
       "console": "integratedTerminal"
     }
   ]

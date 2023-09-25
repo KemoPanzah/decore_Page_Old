@@ -1,0 +1,1 @@
+".venv/Scripts/sphinx-build.exe" -b gettext source source\_text -a -E

@@ -1,10 +1,10 @@
 Get started
 -----------
-To illustrate application creation with decore Base, we will now create a small web application together.
+Um die Anwendungserstellung mit decore Base zu veranschaulichen, werden wir nun gemeinsam eine kleine Webanwendung erstellen.
 
-The decoartorators are primarily used to create meta-information for later evaluation in the **decore Front** web application and are nothing to be afraid of.
+Die Dekoratoren dienen in erster Linie der Erstellung von Metainformationen für die spätere Auswertung im Frontend der Anwendung und sind nichts wovor man sich fürchten muss.
 
-*It's really simple, please follow me!*
+*Es ist wirklich einfach, bitte folgen Sie mir!*
 
 Installation
 ############
