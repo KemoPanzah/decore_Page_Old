@@ -389,8 +389,8 @@ document.write(`
         <span class="k">pass</span>
 </pre></div>
 </div>
-<section id="modell">
-<h3>Model<a class="headerlink" href="#modell" title="Permalink to this heading">#</a></h3>
+<section id="model">
+<h3>Model<a class="headerlink" href="#model" title="Permalink to this heading">#</a></h3>
 <p>In a Model, we define the data fields that must later be assigned to a Base. It serves as a database interface to the database drivers like SQLite, MySQL, PostgreSQL, etc.</p>
 <p>We now create the file first_model.py in the directory <strong>models</strong> and insert the following code:</p>
 <div class="admonition warning">
@@ -418,8 +418,8 @@ document.write(`
 <p>When importing, note that we import everything (*) from the conform_model namespace to get the field classes as well.</p>
 </div>
 </section>
-<section id="basis">
-<h3>Base<a class="headerlink" href="#basis" title="Permalink to this heading">#</a></h3>
+<section id="base">
+<h3>Base<a class="headerlink" href="#base" title="Permalink to this heading">#</a></h3>
 <p>The base classes serve the decore application as a carrier element for the view components, maintain the data model and are thus also considered the data source for evaluation in the dashboard frontend.</p>
 <p>Now we need to create a new Python module containing, for example, a base class: <strong>first_base.py</strong>, in the <strong>bases</strong> directory in our project root directory. The <strong>bases</strong> directory was co-created by the <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">app.py</span> <span class="pre">--prepare</span></code> command executed earlier.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">decore_base</span> <span class="kn">import</span> <span class="n">decore</span>
@@ -445,104 +445,107 @@ document.write(`
 </section>
 <section id="view">
 <h3>View<a class="headerlink" href="#view" title="Permalink to this heading">#</a></h3>
-<p>Views are used by the decore application to present the data sets in the <strong>decore Front</strong> web application.</p>
-<p>With the view decorator we can now create a view component and link it to the previously created base class.</p>
+<p>Views are used by the decore application to present the data sets in the front end of the web application.</p>
+<p>Using the View decorator, we can now create a View component and mount it, under the base class we created earlier.</p>
 <p>We now edit the <strong>first_base.py</strong> file again and extend the code as follows:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">decore_base</span> <span class="kn">import</span> <span class="n">decore</span>
-<span class="kn">from</span> <span class="nn">models.first_model</span> <span class="kn">import</span> <span class="n">First_model</span>
-
-<span class="nd">@decore</span><span class="o">.</span><span class="n">base</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;First Base&#39;</span><span class="p">,</span> <span class="n">icon</span><span class="o">=</span><span class="s1">&#39;mdi-home&#39;</span><span class="p">,</span> <span class="n">model</span><span class="o">=</span><span class="n">First_model</span><span class="p">)</span>
-<span class="k">class</span> <span class="nc">First_base</span><span class="p">:</span>
-   <span class="nd">@decore</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;First View&#39;</span><span class="p">,</span> <span class="n">icon</span><span class="o">=</span><span class="s1">&#39;mdi-home&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;table&#39;</span><span class="p">,</span> <span class="n">fields</span><span class="o">=</span><span class="p">[</span><span class="n">First_model</span><span class="o">.</span><span class="n">firstname</span><span class="p">,</span> <span class="n">First_model</span><span class="o">.</span><span class="n">lastname</span><span class="p">])</span>
-   <span class="k">def</span> <span class="nf">first_view</span><span class="p">():</span>
-      <span class="k">pass</span>
-</pre></div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kn">from</span> <span class="nn">decore_base</span> <span class="kn">import</span> <span class="n">decore</span>
+<span class="linenos">2</span><span class="kn">from</span> <span class="nn">models.first_model</span> <span class="kn">import</span> <span class="n">First_model</span>
+<span class="linenos">3</span>
+<span class="linenos">4</span><span class="nd">@decore</span><span class="o">.</span><span class="n">base</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;First Base&#39;</span><span class="p">,</span> <span class="n">icon</span><span class="o">=</span><span class="s1">&#39;mdi-home&#39;</span><span class="p">,</span> <span class="n">model</span><span class="o">=</span><span class="n">First_model</span><span class="p">)</span>
+<span class="linenos">5</span><span class="k">class</span> <span class="nc">First_base</span><span class="p">:</span>
+<span class="hll"><span class="linenos">6</span>   <span class="nd">@decore</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;First View&#39;</span><span class="p">,</span> <span class="n">icon</span><span class="o">=</span><span class="s1">&#39;mdi-home&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;table&#39;</span><span class="p">,</span> <span class="n">fields</span><span class="o">=</span><span class="p">[</span><span class="n">First_model</span><span class="o">.</span><span class="n">firstname</span><span class="p">,</span> <span class="n">First_model</span><span class="o">.</span><span class="n">lastname</span><span class="p">])</span>
+</span><span class="hll"><span class="linenos">7</span>   <span class="k">def</span> <span class="nf">first_view</span><span class="p">():</span>
+</span><span class="hll"><span class="linenos">8</span>      <span class="k">pass</span>
+</span></pre></div>
 </div>
 </section>
 <section id="dialog">
 <h3>Dialog<a class="headerlink" href="#dialog" title="Permalink to this heading">#</a></h3>
-<p>Dialogs are the supporting elements for widgets in the <strong>decore Front</strong> web application. They can only be added to views and control the visibility and display style of child elements. Dialogs also get control over the submit functions of the widgets.</p>
-<p>In our case, we create a diaolg to create a new person with first name and last name.</p>
+<p>Dialogs are the supporting elements for widgets in the front end of the web application. They can be added to views but also to child widgets and control the visibility and display style of child elements. Dialogs also get control over the sending functions of the widgets.</p>
+<p>In our case, we create a dialog to create a new person with first name and last name.</p>
 <p>Here we go … again the file <strong>first_base.py</strong> and extend the code as follows:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">decore_base</span> <span class="kn">import</span> <span class="n">decore</span>
-<span class="kn">from</span> <span class="nn">models.first_model</span> <span class="kn">import</span> <span class="n">First_model</span>
-
-<span class="nd">@decore</span><span class="o">.</span><span class="n">base</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;My First Base&#39;</span><span class="p">,</span> <span class="n">icon</span><span class="o">=</span><span class="s1">&#39;mdi-home&#39;</span><span class="p">,</span> <span class="n">model</span><span class="o">=</span><span class="n">First_model</span><span class="p">)</span>
-<span class="k">class</span> <span class="nc">First_base</span><span class="p">:</span>
-   <span class="nd">@decore</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Person&#39;</span><span class="p">,</span> <span class="n">icon</span><span class="o">=</span><span class="s1">&#39;mdi-account&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;table&#39;</span><span class="p">,</span> <span class="n">fields</span><span class="o">=</span><span class="p">[</span><span class="n">First_model</span><span class="o">.</span><span class="n">firstname</span><span class="p">,</span> <span class="n">First_model</span><span class="o">.</span><span class="n">lastname</span><span class="p">])</span>
-   <span class="k">def</span> <span class="nf">first_view</span><span class="p">():</span>
-      <span class="nd">@decore</span><span class="o">.</span><span class="n">dialog</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Add Person&#39;</span><span class="p">,</span> <span class="n">icon</span><span class="o">=</span><span class="s1">&#39;mdi-plus&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;standard&#39;</span><span class="p">,</span> <span class="n">display</span><span class="o">=</span><span class="s1">&#39;drawer&#39;</span><span class="p">,</span> <span class="n">activator</span><span class="o">=</span><span class="s1">&#39;default-menu&#39;</span><span class="p">)</span>
-      <span class="k">def</span> <span class="nf">first_dialog</span><span class="p">():</span>
-         <span class="k">pass</span>
-</pre></div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="kn">from</span> <span class="nn">decore_base</span> <span class="kn">import</span> <span class="n">decore</span>
+<span class="linenos"> 2</span><span class="kn">from</span> <span class="nn">models.first_model</span> <span class="kn">import</span> <span class="n">First_model</span>
+<span class="linenos"> 3</span>
+<span class="linenos"> 4</span><span class="nd">@decore</span><span class="o">.</span><span class="n">base</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;My First Base&#39;</span><span class="p">,</span> <span class="n">icon</span><span class="o">=</span><span class="s1">&#39;mdi-home&#39;</span><span class="p">,</span> <span class="n">model</span><span class="o">=</span><span class="n">First_model</span><span class="p">)</span>
+<span class="linenos"> 5</span><span class="k">class</span> <span class="nc">First_base</span><span class="p">:</span>
+<span class="linenos"> 6</span>   <span class="nd">@decore</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Person&#39;</span><span class="p">,</span> <span class="n">icon</span><span class="o">=</span><span class="s1">&#39;mdi-account&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;table&#39;</span><span class="p">,</span> <span class="n">fields</span><span class="o">=</span><span class="p">[</span><span class="n">First_model</span><span class="o">.</span><span class="n">firstname</span><span class="p">,</span> <span class="n">First_model</span><span class="o">.</span><span class="n">lastname</span><span class="p">])</span>
+<span class="linenos"> 7</span>   <span class="k">def</span> <span class="nf">first_view</span><span class="p">():</span>
+<span class="hll"><span class="linenos"> 8</span>      <span class="nd">@decore</span><span class="o">.</span><span class="n">dialog</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Add Person&#39;</span><span class="p">,</span> <span class="n">icon</span><span class="o">=</span><span class="s1">&#39;mdi-plus&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;standard&#39;</span><span class="p">,</span> <span class="n">display</span><span class="o">=</span><span class="s1">&#39;drawer&#39;</span><span class="p">,</span> <span class="n">activator</span><span class="o">=</span><span class="s1">&#39;default-menu&#39;</span><span class="p">)</span>
+</span><span class="hll"><span class="linenos"> 9</span>      <span class="k">def</span> <span class="nf">first_dialog</span><span class="p">():</span>
+</span><span class="hll"><span class="linenos">10</span>         <span class="k">pass</span>
+</span></pre></div>
 </div>
 </section>
 <section id="widget">
 <h3>Widget<a class="headerlink" href="#widget" title="Permalink to this heading">#</a></h3>
-<p>Widgets are components with which we can perform interactions on the single record. They can only be added to dialogs and are stackable.</p>
-<p>What we need now is to create an input form to enter the data for the new person.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">decore_base</span> <span class="kn">import</span> <span class="n">decore</span>
-<span class="kn">from</span> <span class="nn">models.first_model</span> <span class="kn">import</span> <span class="n">First_model</span>
-
-<span class="nd">@decore</span><span class="o">.</span><span class="n">base</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;My First Base&#39;</span><span class="p">,</span> <span class="n">icon</span><span class="o">=</span><span class="s1">&#39;mdi-home&#39;</span><span class="p">,</span> <span class="n">model</span><span class="o">=</span><span class="n">First_model</span><span class="p">)</span>
-<span class="k">class</span> <span class="nc">First_base</span><span class="p">:</span>
-   <span class="nd">@decore</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Person&#39;</span><span class="p">,</span> <span class="n">icon</span><span class="o">=</span><span class="s1">&#39;mdi-account&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;table&#39;</span><span class="p">,</span> <span class="n">fields</span><span class="o">=</span><span class="p">[</span><span class="n">First_model</span><span class="o">.</span><span class="n">firstname</span><span class="p">,</span> <span class="n">First_model</span><span class="o">.</span><span class="n">lastname</span><span class="p">])</span>
-   <span class="k">def</span> <span class="nf">first_view</span><span class="p">():</span>
-      <span class="nd">@decore</span><span class="o">.</span><span class="n">dialog</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Add Person&#39;</span><span class="p">,</span> <span class="n">icon</span><span class="o">=</span><span class="s1">&#39;mdi-plus&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;standard&#39;</span><span class="p">,</span> <span class="n">display</span><span class="o">=</span><span class="s1">&#39;drawer&#39;</span><span class="p">,</span> <span class="n">activator</span><span class="o">=</span><span class="s1">&#39;default-menu&#39;</span><span class="p">)</span>
-      <span class="k">def</span> <span class="nf">first_dialog</span><span class="p">():</span>
-         <span class="nd">@decore</span><span class="o">.</span><span class="n">widget</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Add Person Form&#39;</span><span class="p">,</span> <span class="n">icon</span><span class="o">=</span><span class="s1">&#39;mdi-account&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;form&#39;</span><span class="p">,</span> <span class="n">fields</span><span class="o">=</span><span class="p">[</span><span class="n">First_model</span><span class="o">.</span><span class="n">firstname</span><span class="p">,</span> <span class="n">First_model</span><span class="o">.</span><span class="n">lastname</span><span class="p">])</span>
-         <span class="k">def</span> <span class="nf">first_widget</span><span class="p">():</span>
-            <span class="k">pass</span>
-</pre></div>
+<p>Widgets are components that allow us to perform interactions with the single record. They can only be added to dialogs and are stackable.</p>
+<p>What we need now is an input form to enter the data for the new person.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="kn">from</span> <span class="nn">decore_base</span> <span class="kn">import</span> <span class="n">decore</span>
+<span class="linenos"> 2</span><span class="kn">from</span> <span class="nn">models.first_model</span> <span class="kn">import</span> <span class="n">First_model</span>
+<span class="linenos"> 3</span>
+<span class="linenos"> 4</span><span class="nd">@decore</span><span class="o">.</span><span class="n">base</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;My First Base&#39;</span><span class="p">,</span> <span class="n">icon</span><span class="o">=</span><span class="s1">&#39;mdi-home&#39;</span><span class="p">,</span> <span class="n">model</span><span class="o">=</span><span class="n">First_model</span><span class="p">)</span>
+<span class="linenos"> 5</span><span class="k">class</span> <span class="nc">First_base</span><span class="p">:</span>
+<span class="linenos"> 6</span>   <span class="nd">@decore</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Person&#39;</span><span class="p">,</span> <span class="n">icon</span><span class="o">=</span><span class="s1">&#39;mdi-account&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;table&#39;</span><span class="p">,</span> <span class="n">fields</span><span class="o">=</span><span class="p">[</span><span class="n">First_model</span><span class="o">.</span><span class="n">firstname</span><span class="p">,</span> <span class="n">First_model</span><span class="o">.</span><span class="n">lastname</span><span class="p">])</span>
+<span class="linenos"> 7</span>   <span class="k">def</span> <span class="nf">first_view</span><span class="p">():</span>
+<span class="linenos"> 8</span>      <span class="nd">@decore</span><span class="o">.</span><span class="n">dialog</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Add Person&#39;</span><span class="p">,</span> <span class="n">icon</span><span class="o">=</span><span class="s1">&#39;mdi-plus&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;standard&#39;</span><span class="p">,</span> <span class="n">display</span><span class="o">=</span><span class="s1">&#39;drawer&#39;</span><span class="p">,</span> <span class="n">activator</span><span class="o">=</span><span class="s1">&#39;default-menu&#39;</span><span class="p">)</span>
+<span class="linenos"> 9</span>      <span class="k">def</span> <span class="nf">first_dialog</span><span class="p">():</span>
+<span class="hll"><span class="linenos">10</span>         <span class="nd">@decore</span><span class="o">.</span><span class="n">widget</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Add Person Form&#39;</span><span class="p">,</span> <span class="n">icon</span><span class="o">=</span><span class="s1">&#39;mdi-account&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;form&#39;</span><span class="p">,</span> <span class="n">fields</span><span class="o">=</span><span class="p">[</span><span class="n">First_model</span><span class="o">.</span><span class="n">firstname</span><span class="p">,</span> <span class="n">First_model</span><span class="o">.</span><span class="n">lastname</span><span class="p">])</span>
+</span><span class="hll"><span class="linenos">11</span>         <span class="k">def</span> <span class="nf">first_widget</span><span class="p">():</span>
+</span><span class="hll"><span class="linenos">12</span>            <span class="k">pass</span>
+</span></pre></div>
 </div>
 </section>
 <section id="action">
 <h3>Action<a class="headerlink" href="#action" title="Permalink to this heading">#</a></h3>
-<p>Actions are methods with which <strong>decore Front</strong> can communicate with <strong>decore Base</strong>. They can be added to views and widgets and are the only real class methods in the meta kit.</p>
+<p>Actions are methods that allow the frontend to communicate with <strong>decore Base</strong>. They can be added to view and widgets and are the only real class methods and are called directly in Base.</p>
 <p>We now need an action to store the data of the new person and extend the code in <strong>first_base.py</strong> as follows:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">decore_base</span> <span class="kn">import</span> <span class="n">decore</span>
-<span class="kn">from</span> <span class="nn">models.first_model</span> <span class="kn">import</span> <span class="n">First_model</span>
-
-<span class="nd">@decore</span><span class="o">.</span><span class="n">base</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;My First Base&#39;</span><span class="p">,</span> <span class="n">icon</span><span class="o">=</span><span class="s1">&#39;mdi-home&#39;</span><span class="p">,</span> <span class="n">model</span><span class="o">=</span><span class="n">First_model</span><span class="p">)</span>
-<span class="k">class</span> <span class="nc">First_base</span><span class="p">:</span>
-   <span class="nd">@decore</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Person&#39;</span><span class="p">,</span> <span class="n">icon</span><span class="o">=</span><span class="s1">&#39;mdi-account&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;table&#39;</span><span class="p">,</span> <span class="n">fields</span><span class="o">=</span><span class="p">[</span><span class="n">First_model</span><span class="o">.</span><span class="n">firstname</span><span class="p">,</span> <span class="n">First_model</span><span class="o">.</span><span class="n">lastname</span><span class="p">])</span>
-   <span class="k">def</span> <span class="nf">first_view</span><span class="p">():</span>
-      <span class="nd">@decore</span><span class="o">.</span><span class="n">dialog</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Add Person&#39;</span><span class="p">,</span> <span class="n">icon</span><span class="o">=</span><span class="s1">&#39;mdi-plus&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;standard&#39;</span><span class="p">,</span> <span class="n">display</span><span class="o">=</span><span class="s1">&#39;drawer&#39;</span><span class="p">,</span> <span class="n">activator</span><span class="o">=</span><span class="s1">&#39;default-menu&#39;</span><span class="p">)</span>
-      <span class="k">def</span> <span class="nf">first_dialog</span><span class="p">():</span>
-         <span class="nd">@decore</span><span class="o">.</span><span class="n">widget</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Add Person Form&#39;</span><span class="p">,</span> <span class="n">icon</span><span class="o">=</span><span class="s1">&#39;mdi-account&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;form&#39;</span><span class="p">,</span> <span class="n">fields</span><span class="o">=</span><span class="p">[</span><span class="n">First_model</span><span class="o">.</span><span class="n">firstname</span><span class="p">,</span> <span class="n">First_model</span><span class="o">.</span><span class="n">lastname</span><span class="p">])</span>
-         <span class="k">def</span> <span class="nf">first_widget</span><span class="p">():</span>
-            <span class="nd">@decore</span><span class="o">.</span><span class="n">action</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Save Person&#39;</span><span class="p">,</span> <span class="n">icon</span><span class="o">=</span><span class="s1">&#39;mdi-content-save&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;submit&#39;</span><span class="p">)</span>
-            <span class="k">def</span> <span class="nf">first_action</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
-               <span class="n">item</span> <span class="o">=</span> <span class="n">First_model</span><span class="p">(</span><span class="o">**</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;item&#39;</span><span class="p">])</span>
-               <span class="n">item</span><span class="o">.</span><span class="n">title</span> <span class="o">=</span> <span class="n">item</span><span class="o">.</span><span class="n">firstname</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="n">item</span><span class="o">.</span><span class="n">lastname</span>
-               <span class="k">if</span> <span class="n">item</span><span class="o">.</span><span class="n">save</span><span class="p">():</span>
-                  <span class="k">return</span> <span class="kc">True</span><span class="p">,</span> <span class="n">item</span><span class="o">.</span><span class="n">title</span> <span class="o">+</span> <span class="s1">&#39; saved successfully&#39;</span>
-               <span class="k">else</span><span class="p">:</span>
-                  <span class="k">return</span> <span class="kc">False</span><span class="p">,</span> <span class="s1">&#39;Error while saving &#39;</span> <span class="o">+</span> <span class="n">item</span><span class="o">.</span><span class="n">title</span>
-</pre></div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span>   <span class="kn">from</span> <span class="nn">decore_base</span> <span class="kn">import</span> <span class="n">decore</span>
+<span class="linenos"> 2</span>   <span class="kn">from</span> <span class="nn">models.first_model</span> <span class="kn">import</span> <span class="n">First_model</span>
+<span class="linenos"> 3</span>
+<span class="linenos"> 4</span>   <span class="nd">@decore</span><span class="o">.</span><span class="n">base</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;My First Base&#39;</span><span class="p">,</span> <span class="n">icon</span><span class="o">=</span><span class="s1">&#39;mdi-home&#39;</span><span class="p">,</span> <span class="n">model</span><span class="o">=</span><span class="n">First_model</span><span class="p">)</span>
+<span class="linenos"> 5</span>   <span class="k">class</span> <span class="nc">First_base</span><span class="p">:</span>
+<span class="linenos"> 6</span>      <span class="nd">@decore</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Person&#39;</span><span class="p">,</span> <span class="n">icon</span><span class="o">=</span><span class="s1">&#39;mdi-account&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;table&#39;</span><span class="p">,</span> <span class="n">fields</span><span class="o">=</span><span class="p">[</span><span class="n">First_model</span><span class="o">.</span><span class="n">firstname</span><span class="p">,</span> <span class="n">First_model</span><span class="o">.</span><span class="n">lastname</span><span class="p">])</span>
+<span class="linenos"> 7</span>      <span class="k">def</span> <span class="nf">first_view</span><span class="p">():</span>
+<span class="linenos"> 8</span>         <span class="nd">@decore</span><span class="o">.</span><span class="n">dialog</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Add Person&#39;</span><span class="p">,</span> <span class="n">icon</span><span class="o">=</span><span class="s1">&#39;mdi-plus&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;standard&#39;</span><span class="p">,</span> <span class="n">display</span><span class="o">=</span><span class="s1">&#39;drawer&#39;</span><span class="p">,</span> <span class="n">activator</span><span class="o">=</span><span class="s1">&#39;default-menu&#39;</span><span class="p">)</span>
+<span class="linenos"> 9</span>         <span class="k">def</span> <span class="nf">first_dialog</span><span class="p">():</span>
+<span class="linenos">10</span>            <span class="nd">@decore</span><span class="o">.</span><span class="n">widget</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Add Person Form&#39;</span><span class="p">,</span> <span class="n">icon</span><span class="o">=</span><span class="s1">&#39;mdi-account&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;form&#39;</span><span class="p">,</span> <span class="n">fields</span><span class="o">=</span><span class="p">[</span><span class="n">First_model</span><span class="o">.</span><span class="n">firstname</span><span class="p">,</span> <span class="n">First_model</span><span class="o">.</span><span class="n">lastname</span><span class="p">])</span>
+<span class="linenos">11</span>            <span class="k">def</span> <span class="nf">first_widget</span><span class="p">():</span>
+<span class="hll"><span class="linenos">12</span>               <span class="nd">@decore</span><span class="o">.</span><span class="n">action</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Save Person&#39;</span><span class="p">,</span> <span class="n">icon</span><span class="o">=</span><span class="s1">&#39;mdi-content-save&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;submit&#39;</span><span class="p">)</span>
+</span><span class="hll"><span class="linenos">13</span>               <span class="k">def</span> <span class="nf">first_action</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+</span><span class="hll"><span class="linenos">14</span>                  <span class="n">item</span> <span class="o">=</span> <span class="n">First_model</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+</span><span class="hll"><span class="linenos">15</span>                  <span class="n">item</span><span class="o">.</span><span class="n">title</span> <span class="o">=</span> <span class="n">item</span><span class="o">.</span><span class="n">firstname</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="n">item</span><span class="o">.</span><span class="n">lastname</span>
+</span><span class="hll"><span class="linenos">16</span>                  <span class="k">if</span> <span class="n">item</span><span class="o">.</span><span class="n">save</span><span class="p">():</span>
+</span><span class="hll"><span class="linenos">17</span>                     <span class="k">return</span> <span class="kc">True</span><span class="p">,</span> <span class="n">item</span><span class="o">.</span><span class="n">title</span> <span class="o">+</span> <span class="s1">&#39; saved successfully&#39;</span>
+</span><span class="hll"><span class="linenos">18</span>                  <span class="k">else</span><span class="p">:</span>
+</span><span class="hll"><span class="linenos">19</span>                     <span class="k">return</span> <span class="kc">False</span><span class="p">,</span> <span class="s1">&#39;Error while saving &#39;</span> <span class="o">+</span> <span class="n">item</span><span class="o">.</span><span class="n">title</span>
+</span></pre></div>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>To create a record with decore Base, we need to create an instance of the model. In our case <strong>First_model</strong>. The instance is filled with the data from the form and then saved.</p>
-<p>The ID in the form of a UUID is generated automatically and does not have to be specified separately.</p>
+<p>To build a dataset with decore Base, we need to create an instance of the Model. In our case <strong>First_model</strong>. The instance is filled with the data from the form and then saved.</p>
+<p>The ID, in the form of a UUID in text format, is generated automatically and does not need to be specified separately.</p>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>The field <strong>title</strong> was inherited from the class <strong>Deform_model</strong> and must be used for each record creation. Otherwise the item will fail the validation.</p>
+<p>The <strong>title</strong> field must be used for each record creation. Otherwise the element will not pass the validation. It should also always be unique, i.e. there should be no identical titles in the database.</p>
 </div>
 </section>
 </section>
-<section id="run-development-and-build">
-<h2>Run, Development and Build<a class="headerlink" href="#run-development-and-build" title="Permalink to this heading">#</a></h2>
-<p>To start only your application, run <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">app.py</span></code> in your project root directory. Use the terminal in vscode.</p>
+<section id="ausfuhrung-entwicklung-und-erstellung">
+<h2>Run, development and build<a class="headerlink" href="#ausfuhrung-entwicklung-und-erstellung" title="Permalink to this heading">#</a></h2>
+<section id="ausfuhrung">
+<h3>Run<a class="headerlink" href="#ausfuhrung" title="Permalink to this heading">#</a></h3>
+<p>To start your application, run <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">app.py</span></code> in your project root directory. Use the terminal in vscode.</p>
 <p>Open the browser and type <code class="docutils literal notranslate"><span class="pre">http://localhost:5555</span></code>.</p>
-<section id="development">
-<h3>Development<a class="headerlink" href="#development" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="entwicklung">
+<h3>Development<a class="headerlink" href="#entwicklung" title="Permalink to this heading">#</a></h3>
 <p>To develop your application, use your debugger with the <code class="docutils literal notranslate"><span class="pre">[dev]</span> <span class="pre">decore</span> <span class="pre">base</span> <span class="pre">development</span></code> profile in vscode.</p>
 <p>Open the browser and type <code class="docutils literal notranslate"><span class="pre">http://localhost:5555</span></code>.</p>
 </section>
-<section id="build">
-<h3>Build<a class="headerlink" href="#build" title="Permalink to this heading">#</a></h3>
+<section id="erstellung">
+<h3>Build<a class="headerlink" href="#erstellung" title="Permalink to this heading">#</a></h3>
 <p>To build your application, run <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">app.py</span> <span class="pre">--build</span></code> in your project root directory. Use the terminal in vscode.</p>
 </section>
 </section>
@@ -568,17 +571,18 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation">Installation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vorbereitung">Preparation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verwendung">Usage</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modell">Model</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#basis">Base</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#model">Model</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#base">Base</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#view">View</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dialog">Dialog</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#widget">Widget</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#action">Action</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#run-development-and-build">Run, Development and Build</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#development">Development</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#build">Build</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ausfuhrung-entwicklung-und-erstellung">Run, development and build</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ausfuhrung">Run</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#entwicklung">Development</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#erstellung">Build</a></li>
 </ul>
 </li>
 </ul>

@@ -11,6 +11,11 @@ entries = {
     'Gui': 'gui',
     'Modell': 'Model',
     'schnell': 'fast',
+    'Ansicht': 'View',
+    'Ausführung, Entwicklung und Erstellung': 'Run, development and build',
+    'Ausführung': 'Run',
+    'Entwicklung': 'Development',
+    'Erstellung': 'Build',
     }
 
 my_glossary = translator.create_glossary(

@@ -64,8 +64,8 @@ Um eine neue "decore" Anwendungsinstanz zu erstellen, benutzen wir eine mit ``@d
        def main():
            pass
 
-Modell
-~~~~~~
+Model
+~~~~~
 In einem Modell legen wir die Datenfelder fest, die später einer Basis zugeordnet werden muss. Es dient als Datenbankschnittstelle zu den Datenbanktreibern wie SQLite, MySQL, PostgreSQL, etc.
 
 Wir erstellen nun die Datei first_model.py im Verzeichnis **models** und fügen den folgenden Code ein:
@@ -93,8 +93,8 @@ Wir erstellen nun die Datei first_model.py im Verzeichnis **models** und fügen 
 .. warning::
    Beim Importieren ist zu beachten, dass wir alles (*) aus dem conform_model Namespace importieren, um auch die Feldklassen zu erhalten.
 
-Basis
-~~~~~
+Base
+~~~~
 Die Basisklassen dienen der decore-Anwendung als Trägerelement für die View-Komponenten, pflegen das Datenmodell ein und gelten damit auch als Datenquelle für die Auswertung im Frontend des Dashboards.
 
 Nun müssen wir ein neues Python-Modul erstellen, das z.B. eine Basisklasse enthält: **first_base.py**, im Verzeichnis **bases** in unserem Projektstammverzeichnis.
@@ -123,13 +123,15 @@ Das Verzeichnis **bases** wurde durch den zuvor ausgeführten Befehl ``python ap
 
 View
 ~~~~
-Views are used by the decore application to present the data sets in the **decore Front** web application.
+Views werden von der decore-Anwendung verwendet, um die Datensätze im Frontend der Webanwendung zu präsentieren.
 
-With the view decorator we can now create a view component and link it to the previously created base class.
+Mit dem View-Decorator können wir nun eine Ansichts-Komponente erstellen und sie, unter der zuvor erstellten Basisklasse, einhängen.
 
-We now edit the **first_base.py** file again and extend the code as follows:
+Wir bearbeiten nun die Datei **first_base.py** erneut und erweitern den Code wie folgt:
 
 .. code-block:: python
+   :linenos:
+   :emphasize-lines: 6-8
    
    from decore_base import decore
    from models.first_model import First_model
@@ -142,13 +144,15 @@ We now edit the **first_base.py** file again and extend the code as follows:
 
 Dialog
 ~~~~~~
-Dialogs are the supporting elements for widgets in the **decore Front** web application. They can only be added to views and control the visibility and display style of child elements. Dialogs also get control over the submit functions of the widgets.
+Dialoge sind die unterstützenden Elemente für Widgets im Frontend der Webanwendung. Sie können Ansichten aber auch untergeordneten Widgets hinzugefügt werden und steuern die Sichtbarkeit und den Anzeigestil von Kindelementen. Dialoge erhalten auch die Kontrolle über die Sendefunktionen der Widgets.
 
-In our case, we create a diaolg to create a new person with first name and last name.
+In unserem Fall erstellen wir einen Dialog, um eine neue Person mit Vornamen und Nachnamen anzulegen.
 
-Here we go ... again the file **first_base.py** and extend the code as follows:
+Hier gehen wir ... wieder die Datei **first_base.py** und erweitern den Code wie folgt:
 
 .. code-block:: python
+   :linenos:
+   :emphasize-lines: 8-10
    
    from decore_base import decore
    from models.first_model import First_model
@@ -163,11 +167,13 @@ Here we go ... again the file **first_base.py** and extend the code as follows:
 
 Widget
 ~~~~~~
-Widgets are components with which we can perform interactions on the single record. They can only be added to dialogs and are stackable.
+Widgets sind Komponenten, mit denen wir Interaktionen mit dem einzelnen Datensatz durchführen können. Sie können nur zu Dialogen hinzugefügt werden und sind stapelbar.
 
-What we need now is to create an input form to enter the data for the new person.
+Was wir jetzt brauchen, ist ein Eingabeformular, um die Daten für die neue Person einzugeben.
 
 .. code-block:: python
+   :linenos:
+   :emphasize-lines: 10-12
    
    from decore_base import decore
    from models.first_model import First_model
@@ -184,11 +190,13 @@ What we need now is to create an input form to enter the data for the new person
 
 Action
 ~~~~~~
-Actions are methods with which **decore Front** can communicate with **decore Base**. They can be added to views and widgets and are the only real class methods in the meta kit.
+Actions sind Methoden, mit das Frontend mit **decore Base** kommunizieren kann. Sie können zu View und Widgets hinzugefügt werden und sind die einzigen echten Klassenmethoden und werden direkt in der Basis aufgerufen.
 
-We now need an action to store the data of the new person and extend the code in **first_base.py** as follows:
+Wir brauchen nun eine Aktion, um die Daten der neuen Person zu speichern und erweitern den Code in **first_base.py** wie folgt:
 
 .. code-block:: python
+   :linenos:
+   :emphasize-lines: 12-19
       
       from decore_base import decore
       from models.first_model import First_model
@@ -203,7 +211,7 @@ We now need an action to store the data of the new person and extend the code in
                def first_widget():
                   @decore.action(title='Save Person', icon='mdi-content-save', type='submit')
                   def first_action(self, data):
-                     item = First_model(**data['item'])
+                     item = First_model(item, **kwargs)
                      item.title = item.firstname + ' ' + item.lastname
                      if item.save():
                         return True, item.title + ' saved successfully'
@@ -211,25 +219,27 @@ We now need an action to store the data of the new person and extend the code in
                         return False, 'Error while saving ' + item.title
 
 .. note::
-   To create a record with decore Base, we need to create an instance of the model. In our case **First_model**. The instance is filled with the data from the form and then saved.
+   Um einen Datensatz mit decore Base zu erstellen, müssen wir eine Instanz des Modells erstellen. In unserem Fall **First_model**. Die Instanz wird mit den Daten aus dem Formular gefüllt und dann gespeichert.
 
-   The ID in the form of a UUID is generated automatically and does not have to be specified separately.
+   Die ID, in Form einer UUID im Textformat, wird automatisch generiert und muss nicht gesondert angegeben werden.
 
 .. warning::
-   The field **title** was inherited from the class **Deform_model** and must be used for each record creation. Otherwise the item will fail the validation.
+   Das Feld **titel** muss bei jeder Datensatzerstellung verwendet werden. Andernfalls wird das Element die Validierung nicht bestehen. Es sollte ausserdem immer eindeutig sein, also keine gleichen Titel in der Datenbank geben.
 
-Run, Development and Build
-##########################
-To start only your application, run ``python app.py`` in your project root directory. Use the terminal in vscode.
+Ausführung, Entwicklung und Erstellung
+######################################
+Ausführung
+~~~~~~~~~~
+Um Ihre Anwendung zu starten, führen Sie ``python app.py`` in Ihrem Projekt-Stammverzeichnis aus. Verwenden Sie das Terminal in vscode.
 
-Open the browser and type ``http://localhost:5555``.
+Öffnen Sie den Browser und geben Sie ``http://localhost:5555`` ein.
 
-Development
+Entwicklung
 ~~~~~~~~~~~
-To develop your application, use your debugger with the ``[dev] decore base development`` profile in vscode.
+Um Ihre Anwendung zu entwickeln, verwenden Sie Ihren Debugger mit dem Profil ``[dev] decore base development`` in vscode.
 
-Open the browser and type ``http://localhost:5555``.
+Öffnen Sie den Browser und geben Sie ``http://localhost:5555`` ein.
 
-Build
-~~~~~
-To build your application, run ``python app.py --build`` in your project root directory. Use the terminal in vscode.
+Erstellung
+~~~~~~~~~~
+Um Ihre Anwendung zu erstellen, führen Sie ``python app.py --build`` in Ihrem Projekt-Stammverzeichnis aus. Verwenden Sie das Terminal in vscode.

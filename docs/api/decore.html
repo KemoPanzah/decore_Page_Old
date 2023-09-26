@@ -361,14 +361,14 @@ document.write(`
 <dl class="py class">
 <dt class="sig sig-object py" id="decore_Base.decore_base.decore.Decore">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Decore</span></span><a class="headerlink" href="#decore_Base.decore_base.decore.Decore" title="Permalink to this definition">#</a></dt>
-<dd><p>This class provides all the necessary functions to define a decore app and passes the collected information to the pool. It also holds the routes for communication with decore Front.</p>
+<dd><p>This class provides all the necessary functions to define a decore app and passes the collected information to the pool. It also contains the routes for communication with decore Front.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="decore_Base.decore_base.decore.Decore.app">
 <span class="sig-name descname"><span class="pre">app</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">title</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#decore_Base.decore_base.decore.Decore.app" title="Permalink to this definition">#</a></dt>
-<dd><p>A function for opening an app. It is used as a decorator.</p>
+<dd><p>A function for opening an app. It is used as a “decorator”.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>title</strong> (<em>str</em>) – The title of the app.</p>
+<dd class="field-odd"><p><strong>title</strong> (<em>str</em>) – The title of the application.</p>
 </dd>
 </dl>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nd">@decore</span><span class="o">.</span><span class="n">app</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;My App&#39;</span><span class="p">)</span>
@@ -381,17 +381,15 @@ document.write(`
 <dl class="py method">
 <dt class="sig sig-object py" id="decore_Base.decore_base.decore.Decore.base">
 <span class="sig-name descname"><span class="pre">base</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">icon=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">desc=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model=&lt;Model:</span> <span class="pre">Decore_model&gt;</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#decore_Base.decore_base.decore.Decore.base" title="Permalink to this definition">#</a></dt>
-<dd><p>A function for opening a base. It is used as a decorator.</p>
-<blockquote>
-<div><p>The base is the carrier element for the view and the template for the data source.</p>
-</div></blockquote>
+<dd><p>A function for opening a Base. It is used as a “decorator”.</p>
+<p>The Base is the support element for the View and the template for the data source.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>icon</strong> (<em>str</em>) – The icon of the base.</p></li>
-<li><p><strong>title</strong> (<em>str</em>) – The title of the base.</p></li>
-<li><p><strong>desc</strong> (<em>str</em>) – The description of the base.</p></li>
-<li><p><strong>model</strong> (<em>Model</em>) – The data model of the base. It forms a kind of context for all child elements of the base.</p></li>
+<li><p><strong>icon</strong> (<em>str</em>) – The symbol of the Base.</p></li>
+<li><p><strong>title</strong> (<em>str</em>) – The title of the Base.</p></li>
+<li><p><strong>desc</strong> (<em>str</em>) – The description of the Base.</p></li>
+<li><p><strong>model</strong> (<em>Model</em>) – The data model of the Base. It forms a kind of context and data source for all child elements of the Base.</p></li>
 </ul>
 </dd>
 </dl>
