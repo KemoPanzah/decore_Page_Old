@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: decore Base\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-26 14:37+0200\n"
+"POT-Creation-Date: 2023-09-26 14:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -810,19 +810,19 @@ msgstr ""
 "To build your application, run ``python app.py --build`` in your project "
 "root directory. Use the terminal in vscode."
 
-#: ../index.rst:9
+#: ../index.rst:13
 msgid "Get started"
 msgstr "Get started"
 
-#: ../index.rst:9
+#: ../index.rst:13
 msgid "Sample"
 msgstr "Sample"
 
-#: ../index.rst:9
+#: ../index.rst:13
 msgid "Api documentation"
 msgstr "Api documentation"
 
-#: ../index.rst:-1 ../overview.rst:2
+#: ../index.rst:-1 ../index.rst:8
 msgid "decore Base | UI fastly"
 msgstr "decore Base | UI fastly"
 
@@ -830,11 +830,15 @@ msgstr "decore Base | UI fastly"
 msgid "index, follow"
 msgstr "index, follow"
 
-#: ../overview.rst:4
+#: ../index.rst:9
+msgid "Erstellen sie GUI-Dashboard-Anwendungen in Python schnell und einfach."
+msgstr "Build GUI dashboard applications in Python fast and easy."
+
+#: ../overview.rst:2
 msgid "Introduction"
 msgstr "Introduction"
 
-#: ../overview.rst:5
+#: ../overview.rst:3
 msgid ""
 "decore Base ist ein out-of-the-box \"Python to Vue.js\" Datenanwendungs-"
 "Dashboard, das Ihnen hilft, in wenigen einfachen Schritten von der Idee zur "
@@ -847,11 +851,11 @@ msgstr ""
 "aimed at those who want to focus on the results of their algorithms, do "
 "scientific work, or perform teaching and learning functions."
 
-#: ../overview.rst:8
+#: ../overview.rst:6
 msgid "Funktionen und Integrationen"
 msgstr "Functions and integrations"
 
-#: ../overview.rst:9
+#: ../overview.rst:7
 msgid ""
 "Fertige SPA (Single Page Application) mit Vue.js unter Verwendung des Quasar"
 " Frameworks (https://github.com/quasarframework/quasar)"
@@ -859,7 +863,7 @@ msgstr ""
 "Finished SPA (Single Page Application) with Vue.js using the Quasar "
 "Framework (https://github.com/quasarframework/quasar)"
 
-#: ../overview.rst:10
+#: ../overview.rst:8
 msgid ""
 "Vordefinierte Webapi für Metadaten und Aktionen mit Flask "
 "(https://github.com/pallets/flask)"
@@ -867,7 +871,7 @@ msgstr ""
 "Predefined webapi for metadata and actions with Flask "
 "(https://github.com/pallets/flask)"
 
-#: ../overview.rst:11
+#: ../overview.rst:9
 msgid ""
 "Integriertes ORM für Datenmanagement und Datenbankschnittstellen (SQLite) "
 "powered by the great Peewee (https://github.com/coleifer/peewee)"
@@ -875,25 +879,25 @@ msgstr ""
 "Integrated ORM for data management and database interfaces (SQLite) powered "
 "by the great Peewee (https://github.com/coleifer/peewee)"
 
-#: ../overview.rst:12
+#: ../overview.rst:10
 msgid "Datenüberprüfung mit Cerberus (https://github.com/pyeve/cerberus)"
 msgstr "Data verification with Cerberus (https://github.com/pyeve/cerberus)"
 
-#: ../overview.rst:13
+#: ../overview.rst:11
 msgid ""
 "Passwortverwaltung mit pykeepass (https://github.com/libkeepass/pykeepass)"
 msgstr ""
 "Password management with pykeepass (https://github.com/libkeepass/pykeepass)"
 
-#: ../overview.rst:15
+#: ../overview.rst:13
 msgid "Bitte unterstützen Sie diese großartigen Projekte!"
 msgstr "Please support these great projects!"
 
-#: ../overview.rst:18
+#: ../overview.rst:16
 msgid "Contribution"
 msgstr "Contribution"
 
-#: ../overview.rst:19
+#: ../overview.rst:17
 msgid ""
 "Die größte Hilfe, die ich im Moment bekommen kann, ist, wenn Sie einen Blick"
 " auf das Projekt werfen und mir sagen, was Sie davon halten. Ich bin für "
@@ -902,7 +906,7 @@ msgstr ""
 "The biggest help I can get right now is if you take a look at the project "
 "and tell me what you think. I am grateful for any criticism."
 
-#: ../overview.rst:21
+#: ../overview.rst:19
 msgid ""
 "Wenn Sie etwas in der Dokumentation in Bezug auf Funktionen, Fehler oder "
 "Unklarheiten finden, lassen Sie es mich bitte wissen. Bitte benutzen Sie "
@@ -913,11 +917,11 @@ msgstr ""
 "ambiguities, please let me know. Please use the problem area in the "
 "repository to do so. `<https://github.com/KemoPanzah/decore_Base/issues>`_"
 
-#: ../overview.rst:24
+#: ../overview.rst:22
 msgid "Notes"
 msgstr "Notes"
 
-#: ../overview.rst:25
+#: ../overview.rst:23
 msgid ""
 "**decore Base ist derzeit in Arbeit, nur lokal bereitstellbar, nur für "
 "Windows verfügbar und noch nicht produktionsbereit**."
@@ -925,7 +929,7 @@ msgstr ""
 "**decore Base is currently a work in progress, only locally deployable, only"
 " available for Windows and not yet production ready**."
 
-#: ../overview.rst:27
+#: ../overview.rst:25
 msgid ""
 "Die empfohlene IDE ist Visual Studio Code und alle meine Kommentare und "
 "Dokumentationen hier beziehen sich auch nur auf vscode."
@@ -933,7 +937,7 @@ msgstr ""
 "The recommended IDE is Visual Studio Code and all my comments and "
 "documentation here also refer to vscode only."
 
-#: ../overview.rst:29
+#: ../overview.rst:27
 msgid ""
 "Diese Dokumentation wurde mit Deepl vom Deutschen ins Englische übersetzt."
 msgstr ""
