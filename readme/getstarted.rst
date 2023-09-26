@@ -2,9 +2,9 @@
 Get started
 ***********
 
-To illustrate application creation with decore Base, we will now create a small web application together.
+To illustrate the fast UI application or dashboard creation, using decore Base in Python, we will now create a small UI together in the form of a web application.
 
-The decorators are primarily used to create meta-information for later evaluation in the front-end of the application and are nothing to be afraid of.
+The decorated functions serve, first and foremost, to create meta-information for later evaluation in the front-end of the application and are nothing to be afraid of.
 
 *It’s really simple, please follow me!*
 
@@ -12,31 +12,33 @@ The decorators are primarily used to create meta-information for later evaluatio
 Installation
 ============
 
-Let’s first create an empty Python project in your desired directory.
+First, create an empty Python project in your desired directory.
 
-To install decore Base, we run the following command in the project root directory. Let’s use the terminal in vscode.
+To install decore Base, we run the following command in the root directory of the project. Let’s use the terminal in vscode.
 
 .. code-block:: python
 
    pip install decore-Base
 
-This requires an enabled Python environment! To learn more about this, visit `Python environments in VS Code <https://code.visualstudio.com/docs/python/environments>`_.
+This requires an enabled Python environment! To learn more, visit `Python Environments in VS Code <https://code.visualstudio.com/docs/python/environments>`_.
 
 
-Preperation
+Preparation
 ===========
 
-Now let’s create a new file named **app.py** in the project root directory.
+In order to get everything we need in terms of paths and settings for our future Python Gui dashboard application, we still need to do the preparation.
 
-To use decore Base, we first import it into the module **app.py**.
+Now let’s create a new file named **app.py** in the root directory of the project.
+
+To use decore, we first import it into the **app.py** module.
 
 .. code-block:: python
 
    from decore_base import decore
 
-Then we use the **prepare** command to create all the necessary auxiliary files in the project root directory.
+Then we use the **prepare** command to create all the necessary auxiliary files in the root directory of the project.
 
-Now, to actually prepare the application, we run the command ``python app.py --prepare`` in the terminal. The path must be in the project root directory, i.e. where the **app.py** is located.
+Now to actually prepare the application, we run the command ``python app.py --prepare`` in the terminal. The path must be in the root directory of the project, i.e. where the **app.py** is located.
 
 
 Usage
@@ -48,11 +50,11 @@ To allow the Python interpreter to process the future base classes, we add the f
 
    from bases import *
 
-Typically, a Python main module contains a query that checks if it is the main module so that we can call the ``main`` function afterwards.
+Normally, a Python main module contains a query that checks if it is the main module so that we can subsequently call the ``main`` function.
 
 Next, we create a line ``if __name__ == '__main__':`` in the **app.py** file.
 
-To create a new Decore application instance, we use a ``@decore.app`` decorated ``main()`` function in the **app.py** file, just below the line: ``if __name__ == '__main__':``.
+To create a new “decore” application instance, we use a ``main()`` function decorated with ``@decore.app`` in the **app.py** file, just below the line: ``if __name__ == '__main__':``.
 
 .. code-block:: python
 
@@ -68,11 +70,13 @@ To create a new Decore application instance, we use a ``@decore.app`` decorated 
 Model
 -----
 
-In a model we define the data fields that are needed for the later assigned base. It serves as a database interface to the database drivers such as SQLite, MySQL, PostgreSQL, etc.
+In a Model, we define the data fields that must later be assigned to a Base. It serves as a database interface to the database drivers like SQLite, MySQL, PostgreSQL, etc.
 
 We now create the file first_model.py in the directory **models** and insert the following code:
 
-Note: To avoid possible circular imports we create the model classes in a separate directory **models** in our project root directory. The directory **models** was created by the previously executed command ``python app.py --prepare``.
+Warning: It is not necessary to create a model for each base, but each model to be used must have a base, which must be imported via the file **__init__.py**. This is the only way to evaluate and display rellations between the models in the frontend.
+
+Note: To avoid possible circular imports, we create the model classes in a separate **models** directory in our project root directory. The **models** directory was created by the previously executed ``python app.py --prepare`` command.
 
 .. code-block:: python
 
@@ -82,18 +86,17 @@ Note: To avoid possible circular imports we create the model classes in a separa
       firstname = CharField(verbose_name='First Name')
       lastname = CharField(verbose_name='Last Name')
 
-Note: In the example shown here, we import, from the **uniform library**, the Conform_model class and extend it with the firstname and lastname fields.The models in **decore Base** are based on the great Peewee ORM. To learn more about Peewee, visit `Peewee ORM <http://docs.peewee-orm.com/en/latest/>`_.
+Note: In the example shown here, we import the Conform_model class from the **uniform library** and extend it with the First Name and Last Name fields.The models in **decore Base** are based on the great Peewee ORM. To learn more about Peewee, visit `Peewee ORM <http://docs.peewee-orm.com/en/latest/>`_.
 
-Warning: When importing please note that we import everything (*) from the conform_model namespace to get the field classes as well.
+Warning: When importing, note that we import everything (*) from the conform_model namespace to get the field classes as well.
 
 
 Base
 ----
 
-These base classes serve the decore application as a carrier element for the view components, maintain the data model and are thus also considered the data source for evaluation in the **decore Front** web application.
+The base classes serve the decore application as a carrier element for the view components, maintain the data model and are thus also considered the data source for evaluation in the dashboard frontend.
 
-Now we need to create a new Python module containing a base class, for example: **first_base.py**, in the **bases** directory in our project root directory.
-The **bases** directory was co-created by the ``python app.py --prepare`` command executed earlier.
+Now we need to create a new Python module containing, for example, a base class: **first_base.py**, in the **bases** directory in our project root directory. The **bases** directory was co-created by the ``python app.py --prepare`` command executed earlier.
 
 .. code-block:: python
 

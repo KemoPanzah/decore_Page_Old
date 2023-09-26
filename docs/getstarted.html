@@ -8,6 +8,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+<meta content="decore Base | UI fastly" name="title" />
+<meta content="create dashbord with python fastly" name="description" />
+<meta content="python gui, decore, python database, python dashboard, python orm, python ui, dashboard creation, python application, ui framework, ui toolkit" name="keywords" />
+<meta content="index, follow" name="robots" />
     <link href="_static/favicon.ico" rel="icon" type="image/x-icon">
     <title>Get started &#8212; decore Base  documentation</title>
   
@@ -49,7 +53,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Sample application" href="sample.html" />
-    <link rel="prev" title="decore Base | UI fastly" href="overview.html" />
+    <link rel="prev" title="decore Base | UI fastly" href="index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -130,7 +134,7 @@
     <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
   
   
-    <p class="title logo__title">decore Base</p>
+    <p class="title logo__title">decore Base | UI fastly</p>
   
 </a></div>
     
@@ -150,13 +154,6 @@
   </p>
   <ul class="bd-navbar-elements navbar-nav">
     
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="overview.html">
-                        Overview
-                      </a>
-                    </li>
-                
-
                     <li class="nav-item current active">
                       <a class="nav-link nav-internal" href="#">
                         Get started
@@ -173,7 +170,7 @@
 
                     <li class="nav-item">
                       <a class="nav-link nav-internal" href="api/index.html">
-                        Bees documentation
+                        Api documentation
                       </a>
                     </li>
                 
@@ -254,13 +251,6 @@ document.write(`
   </p>
   <ul class="bd-navbar-elements navbar-nav">
     
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="overview.html">
-                        Overview
-                      </a>
-                    </li>
-                
-
                     <li class="nav-item current active">
                       <a class="nav-link nav-internal" href="#">
                         Get started
@@ -277,7 +267,7 @@ document.write(`
 
                     <li class="nav-item">
                       <a class="nav-link nav-internal" href="api/index.html">
-                        Bees documentation
+                        Api documentation
                       </a>
                     </li>
                 
@@ -354,39 +344,43 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section id="get-started">
-<h1>Get started<a class="headerlink" href="#get-started" title="Permalink to this heading">#</a></h1>
-<p>To illustrate application creation with decore Base, we will now create a small web application together.</p>
-<p>The decorators are primarily used to create meta-information for later evaluation in the front-end of the application and are nothing to be afraid of.</p>
+  <section id="erste-schritte">
+<h1>Get started<a class="headerlink" href="#erste-schritte" title="Permalink to this heading">#</a></h1>
+<p>To illustrate the fast UI application or dashboard creation, using decore Base in Python, we will now create a small UI together in the form of a web application.</p>
+<p>The decorated functions serve, first and foremost, to create meta-information for later evaluation in the front-end of the application and are nothing to be afraid of.</p>
 <p><em>It’s really simple, please follow me!</em></p>
 <section id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this heading">#</a></h2>
-<p>Let’s first create an empty Python project in your desired directory.</p>
-<p>To install decore Base, we run the following command in the project root directory. Let’s use the terminal in vscode.</p>
+<p>First, create an empty Python project in your desired directory.</p>
+<p>To install decore Base, we run the following command in the root directory of the project. Let’s use the terminal in vscode.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">decore</span><span class="o">-</span><span class="n">Base</span>
 </pre></div>
 </div>
-<p>This requires an enabled Python environment! To learn more about this, visit <a class="reference external" href="https://code.visualstudio.com/docs/python/environments">Python environments in VS Code</a>.</p>
+<p>This requires an enabled Python environment! To learn more, visit <a class="reference external" href="https://code.visualstudio.com/docs/python/environments">Python Environments in VS Code</a>.</p>
 </section>
-<section id="preperation">
-<h2>Preperation<a class="headerlink" href="#preperation" title="Permalink to this heading">#</a></h2>
-<p>Now let’s create a new file named <strong>app.py</strong> in the project root directory.</p>
-<p>To use decore Base, we first import it into the module <strong>app.py</strong>.</p>
+<section id="vorbereitung">
+<h2>Preparation<a class="headerlink" href="#vorbereitung" title="Permalink to this heading">#</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In order to get everything we need in terms of paths and settings for our future Python GUI dashboard application, we still need to do the preparation.</p>
+</div>
+<p>Now let’s create a new file named <strong>app.py</strong> in the root directory of the project.</p>
+<p>To use decore, we first import it into the <strong>app.py</strong> module.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">decore_base</span> <span class="kn">import</span> <span class="n">decore</span>
 </pre></div>
 </div>
-<p>Then we use the <strong>prepare</strong> command to create all the necessary auxiliary files in the project root directory.</p>
-<p>Now, to actually prepare the application, we run the command <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">app.py</span> <span class="pre">--prepare</span></code> in the terminal. The path must be in the project root directory, i.e. where the <strong>app.py</strong> is located.</p>
+<p>Then we use the <strong>prepare</strong> command to create all the necessary auxiliary files in the root directory of the project.</p>
+<p>Now to actually prepare the application, we run the command <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">app.py</span> <span class="pre">--prepare</span></code> in the terminal. The path must be in the root directory of the project, i.e. where the <strong>app.py</strong> is located.</p>
 </section>
-<section id="usage">
-<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this heading">#</a></h2>
+<section id="verwendung">
+<h2>Usage<a class="headerlink" href="#verwendung" title="Permalink to this heading">#</a></h2>
 <p>To allow the Python interpreter to process the future base classes, we add the following import.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bases</span> <span class="kn">import</span> <span class="o">*</span>
 </pre></div>
 </div>
-<p>Typically, a Python main module contains a query that checks if it is the main module so that we can call the <code class="docutils literal notranslate"><span class="pre">main</span></code> function afterwards.</p>
+<p>Normally, a Python main module contains a query that checks if it is the main module so that we can subsequently call the <code class="docutils literal notranslate"><span class="pre">main</span></code> function.</p>
 <p>Next, we create a line <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">__name__</span> <span class="pre">==</span> <span class="pre">'__main__':</span></code> in the <strong>app.py</strong> file.</p>
-<p>To create a new Decore application instance, we use a <code class="docutils literal notranslate"><span class="pre">&#64;decore.app</span></code> decorated <code class="docutils literal notranslate"><span class="pre">main()</span></code> function in the <strong>app.py</strong> file, just below the line: <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">__name__</span> <span class="pre">==</span> <span class="pre">'__main__':</span></code>.</p>
+<p>To create a new “decore” application instance, we use a <code class="docutils literal notranslate"><span class="pre">main()</span></code> function decorated with <code class="docutils literal notranslate"><span class="pre">&#64;decore.app</span></code> in the <strong>app.py</strong> file, just below the line: <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">__name__</span> <span class="pre">==</span> <span class="pre">'__main__':</span></code>.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">decore_base</span> <span class="kn">import</span> <span class="n">decore</span>
 <span class="kn">from</span> <span class="nn">bases</span> <span class="kn">import</span> <span class="o">*</span>
 
@@ -396,13 +390,17 @@ document.write(`
         <span class="k">pass</span>
 </pre></div>
 </div>
-<section id="model">
-<h3>Model<a class="headerlink" href="#model" title="Permalink to this heading">#</a></h3>
-<p>In a model we define the data fields that are needed for the later assigned base. It serves as a database interface to the database drivers such as SQLite, MySQL, PostgreSQL, etc.</p>
+<section id="modell">
+<h3>Model<a class="headerlink" href="#modell" title="Permalink to this heading">#</a></h3>
+<p>In a Model, we define the data fields that must later be assigned to a Base. It serves as a database interface to the database drivers like SQLite, MySQL, PostgreSQL, etc.</p>
 <p>We now create the file first_model.py in the directory <strong>models</strong> and insert the following code:</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>It is not necessary to create a model for each base, but each model to be used must have a base, which must be imported via the file <strong>__init__.py</strong>. This is the only way to evaluate and display rellations between the models in the frontend.</p>
+</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>To avoid possible circular imports we create the model classes in a separate directory <strong>models</strong> in our project root directory. The directory <strong>models</strong> was created by the previously executed command <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">app.py</span> <span class="pre">--prepare</span></code>.</p>
+<p>To avoid possible circular imports, we create the model classes in a separate <strong>models</strong> directory in our project root directory. The <strong>models</strong> directory was created by the previously executed <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">app.py</span> <span class="pre">--prepare</span></code> command.</p>
 </div>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">decore_base.uniform.conform_model</span> <span class="kn">import</span> <span class="o">*</span>
 
@@ -413,19 +411,18 @@ document.write(`
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>In the example shown here, we import, from the <strong>uniform library</strong>, the Conform_model class and extend it with the firstname and lastname fields.</p>
+<p>In the example shown here, we import the Conform_model class from the <strong>uniform library</strong> and extend it with the First Name and Last Name fields.</p>
 <p>The models in <strong>decore Base</strong> are based on the great Peewee ORM. To learn more about Peewee, visit <a class="reference external" href="http://docs.peewee-orm.com/en/latest/">Peewee ORM</a>.</p>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>When importing please note that we import everything (*) from the conform_model namespace to get the field classes as well.</p>
+<p>When importing, note that we import everything (*) from the conform_model namespace to get the field classes as well.</p>
 </div>
 </section>
-<section id="base">
-<h3>Base<a class="headerlink" href="#base" title="Permalink to this heading">#</a></h3>
-<p>These base classes serve the decore application as a carrier element for the view components, maintain the data model and are thus also considered the data source for evaluation in the <strong>decore Front</strong> web application.</p>
-<p>Now we need to create a new Python module containing a base class, for example: <strong>first_base.py</strong>, in the <strong>bases</strong> directory in our project root directory.
-The <strong>bases</strong> directory was co-created by the <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">app.py</span> <span class="pre">--prepare</span></code> command executed earlier.</p>
+<section id="basis">
+<h3>Base<a class="headerlink" href="#basis" title="Permalink to this heading">#</a></h3>
+<p>The base classes serve the decore application as a carrier element for the view components, maintain the data model and are thus also considered the data source for evaluation in the dashboard frontend.</p>
+<p>Now we need to create a new Python module containing, for example, a base class: <strong>first_base.py</strong>, in the <strong>bases</strong> directory in our project root directory. The <strong>bases</strong> directory was co-created by the <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">app.py</span> <span class="pre">--prepare</span></code> command executed earlier.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">decore_base</span> <span class="kn">import</span> <span class="n">decore</span>
 <span class="kn">from</span> <span class="nn">models.first_model</span> <span class="kn">import</span> <span class="n">First_model</span>
 
@@ -570,10 +567,10 @@ The <strong>bases</strong> directory was co-created by the <code class="docutils
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation">Installation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preperation">Preperation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#usage">Usage</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#model">Model</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#base">Base</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vorbereitung">Preparation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verwendung">Usage</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modell">Model</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#basis">Base</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#view">View</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dialog">Dialog</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#widget">Widget</a></li>

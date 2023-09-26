@@ -1,7 +1,7 @@
 .. meta::
-   :title: decore Base
-   :description: create webapps with python fastly
-   :keywords: webapp, python, UI, fastly, decore, Base, Front
+   :title: decore Base | UI fastly
+   :description: create dashbord with python fastly
+   :keywords: python gui, decore, python database, python dashboard, python orm, python ui, dashboard creation, python application, ui framework, ui toolkit
    :robots: index, follow
 
 .. include:: overview.rst
@@ -10,7 +10,6 @@
    :hidden:
    :maxdepth: 1
 
-   Overview <overview>
    Get started <getstarted>
    Sample <sample>
    Api documentation <api/index>

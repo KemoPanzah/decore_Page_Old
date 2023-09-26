@@ -1,50 +1,59 @@
-Get started
------------
-Um die Anwendungserstellung mit decore Base zu veranschaulichen, werden wir nun gemeinsam eine kleine Webanwendung erstellen.
+.. meta::
+   :title: decore Base | UI fastly
+   :description: create dashbord with python fastly
+   :keywords: python gui, decore, python database, python dashboard, python orm, python ui, dashboard creation, python application, ui framework, ui toolkit
+   :robots: index, follow
 
-Die Dekoratoren dienen in erster Linie der Erstellung von Metainformationen für die spätere Auswertung im Frontend der Anwendung und sind nichts wovor man sich fürchten muss.
+Erste Schritte
+--------------
+Um die schnelle UI-Anwendungs- oder Dashboard-Erstellung, mit decore Base in Python, zu veranschaulichen werden wir nun gemeinsam eine kleine UI in Form einer Webanwendung erstellen.
+
+Die dekorierten Funktionen dienen, in allererster Linie, der Erstellung von Metainformationen für die spätere Auswertung im Frontend der Anwendung und sind nichts, wovor man sich fürchten muss.
 
 *Es ist wirklich einfach, bitte folgen Sie mir!*
 
 Installation
 ############
-Let's first create an empty Python project in your desired directory.
+Erstellen Sie zunächst ein leeres Python-Projekt in Ihrem gewünschten Verzeichnis.
 
-To install decore Base, we run the following command in the project root directory. Let's use the terminal in vscode.
+Um decore Base zu installieren, führen wir den folgenden Befehl im Stammverzeichnis des Projekts aus. Verwenden wir das Terminal in vscode.
 
 .. code-block:: python
    
    pip install decore-Base
 
-This requires an enabled Python environment! To learn more about this, visit `Python environments in VS Code <https://code.visualstudio.com/docs/python/environments>`_.
+Dies erfordert eine aktivierte Python-Umgebung! Um mehr darüber zu erfahren, besuchen Sie `Python-Umgebungen in VS Code <https://code.visualstudio.com/docs/python/environments>`_.
 
-Preperation
-###########
-Now let's create a new file named **app.py** in the project root directory.
+Vorbereitung
+############
+.. note::
+   Um für unsere zukünftige Python GUI-Dashboard-Anwendung alles nötige an Pfaden und Einstellungen zu erhalten, müssen wir noch die Vorbereitung durchführen.
 
-To use decore Base, we first import it into the module **app.py**.
+Erstellen wir nun eine neue Datei mit dem Namen **app.py** im Hauptverzeichnis des Projekts.
+
+Um decore zu verwenden, importieren wir es zunächst in das Modul **app.py**.
 
 .. code-block:: python
    
    from decore_base import decore
 
-Then we use the **prepare** command to create all the necessary auxiliary files in the project root directory.
+Dann verwenden wir den Befehl **prepare**, um alle erforderlichen Hilfsdateien im Stammverzeichnis des Projekts zu erstellen.
 
-Now, to actually prepare the application, we run the command ``python app.py --prepare`` in the terminal. The path must be in the project root directory, i.e. where the **app.py** is located.
+Um nun die Anwendung tatsächlich vorzubereiten, führen wir den Befehl ``python app.py --prepare`` im Terminal aus. Der Pfad muss im Hauptverzeichnis des Projekts liegen, also dort wo sich die **app.py** befindet.
 
-Usage
-#####
-To allow the Python interpreter to process the future base classes, we add the following import.
+Verwendung
+##########
+Damit der Python-Interpreter die zukünftigen Basisklassen verarbeiten kann, fügen wir den folgenden Import hinzu.
 
 .. code-block:: python
    
    from bases import *
 
-Typically, a Python main module contains a query that checks if it is the main module so that we can call the ``main`` function afterwards.
+Normalerweise enthält ein Python-Hauptmodul eine Abfrage, die prüft, ob es das Hauptmodul ist, so dass wir anschließend die Funktion ``main`` aufrufen können.
 
-Next, we create a line ``if __name__ == '__main__':`` in the **app.py** file.
+Als nächstes erstellen wir eine Zeile ``if __name__ == '__main__':`` in der **app.py** Datei.
 
-To create a new Decore application instance, we use a ``@decore.app`` decorated ``main()`` function in the **app.py** file, just below the line: ``if __name__ == '__main__':``.
+Um eine neue "decore" Anwendungsinstanz zu erstellen, benutzen wir eine mit ``@decore.app`` dekorierte ``main()`` Funktion in der **app.py** Datei, direkt unter der Zeile: ``if __name__ == '__main__':``.
 
 .. code-block:: python
    
@@ -56,14 +65,17 @@ To create a new Decore application instance, we use a ``@decore.app`` decorated 
        def main():
            pass
 
-Model
-~~~~~
-In a model we define the data fields that are needed for the later assigned base. It serves as a database interface to the database drivers such as SQLite, MySQL, PostgreSQL, etc.
+Modell
+~~~~~~
+In einem Modell legen wir die Datenfelder fest, die später einer Basis zugeordnet werden muss. Es dient als Datenbankschnittstelle zu den Datenbanktreibern wie SQLite, MySQL, PostgreSQL, etc.
 
-We now create the file first_model.py in the directory **models** and insert the following code:
+Wir erstellen nun die Datei first_model.py im Verzeichnis **models** und fügen den folgenden Code ein:
+
+.. warning::
+   Es muss nicht für jede Basis ein Modell angelegt werden aber es muss jedes zu verwenden Modell eine Basis haben, die über die Datei **__init__.py**, importiert werden muss. Nur so werden Rellationen zwischen den Modellen auch im Frontend ausgewertet und dargestellt.
 
 .. note::
-   To avoid possible circular imports we create the model classes in a separate directory **models** in our project root directory. The directory **models** was created by the previously executed command ``python app.py --prepare``.
+   Um mögliche zirkuläre Importe zu vermeiden, legen wir die Modellklassen in einem eigenen Verzeichnis **models** in unserem Projektstammverzeichnis an. Das Verzeichnis **models** wurde durch den zuvor ausgeführten Befehl ``python app.py --prepare`` erstellt.
 
 .. code-block:: python
    
@@ -75,19 +87,19 @@ We now create the file first_model.py in the directory **models** and insert the
 
 
 .. note::
-   In the example shown here, we import, from the **uniform library**, the Conform_model class and extend it with the firstname and lastname fields.
+   In dem hier gezeigten Beispiel importieren wir aus der **uniform library** die Klasse Conform_model und erweitern sie um die Felder Vorname und Nachname.
 
-   The models in **decore Base** are based on the great Peewee ORM. To learn more about Peewee, visit `Peewee ORM <http://docs.peewee-orm.com/en/latest/>`_.
+   Die Modelle in **decore Base** basieren auf dem großartigen Peewee ORM. Um mehr über Peewee zu erfahren, besuchen Sie `Peewee ORM <http://docs.peewee-orm.com/en/latest/>`_.
 
 .. warning::
-   When importing please note that we import everything (*) from the conform_model namespace to get the field classes as well.
+   Beim Importieren ist zu beachten, dass wir alles (*) aus dem conform_model Namespace importieren, um auch die Feldklassen zu erhalten.
 
-Base
-~~~~
-These base classes serve the decore application as a carrier element for the view components, maintain the data model and are thus also considered the data source for evaluation in the **decore Front** web application.
+Basis
+~~~~~
+Die Basisklassen dienen der decore-Anwendung als Trägerelement für die View-Komponenten, pflegen das Datenmodell ein und gelten damit auch als Datenquelle für die Auswertung im Frontend des Dashboards.
 
-Now we need to create a new Python module containing a base class, for example: **first_base.py**, in the **bases** directory in our project root directory.
-The **bases** directory was co-created by the ``python app.py --prepare`` command executed earlier.
+Nun müssen wir ein neues Python-Modul erstellen, das z.B. eine Basisklasse enthält: **first_base.py**, im Verzeichnis **bases** in unserem Projektstammverzeichnis.
+Das Verzeichnis **bases** wurde durch den zuvor ausgeführten Befehl ``python app.py --prepare`` miterzeugt.
  
 .. code-block:: python
 
@@ -99,7 +111,7 @@ The **bases** directory was co-created by the ``python app.py --prepare`` comman
       pass
 
 .. note::
-   To use the previously created model, we import it into the Base class and pass it to the ``model`` parameter.
+   Um das zuvor erstellte Modell zu verwenden, importieren wir es in die Base-Klasse und übergeben es an den Parameter ``model``.
 
 .. warning::
    In order for the Python interpreter to be able to process the base classes, we have to import them into the __init__.py file in the **bases** directory. The order of the individual imports also determines the order in **decore Front**.

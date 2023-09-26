@@ -62,7 +62,7 @@ html_theme_options = {
    "show_toc_level": 3,
    "navbar_align": "right",
    "logo": {
-        "text": "decore Base",
+        "text": "decore Base | UI fastly",
         },
     "footer_start": None,
     "footer_end": ["copyright"],

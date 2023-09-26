@@ -5,4 +5,6 @@
     "python.analysis.extraPaths": [
         "..\\"
     ],
+    "languageTool.language": "de",
+    "esbonio.sphinx.confDir": "",
 }
