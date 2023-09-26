@@ -52,6 +52,8 @@ autodoc_member_order = 'bysource'
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
+html_title = ''
+
 html_extra_path = ['_files']
 
 html_directory_suffix = '/'
