@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: decore Base\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-27 09:20+0200\n"
+"POT-Creation-Date: 2023-09-27 13:39+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -121,34 +121,36 @@ msgid "Die Beschreibung der Ansicht."
 msgstr "The description of the View."
 
 #: decore_Base.decore_base.decore.Decore.view:9 of
-msgid "Der Typ der Ansicht."
-msgstr "The type of the View."
+msgid ""
+"Gibt an wie die Datensätze angezeigt werden. Der Wert ``table`` stellt die "
+"Datensätze in einer Tabelle dar."
+msgstr ""
+"Specifies how the records are displayed. The value ``table`` represents the "
+"records in a table."
 
-#: decore_Base.decore_base.decore.Decore.view:10 of
+#: decore_Base.decore_base.decore.Decore.view:11 of
 msgid "Die Felder, die in der Ansicht angezeigt werden."
 msgstr "The fields that will be displayed in the View."
 
-#: decore_Base.decore_base.decore.Decore.view:11 of
+#: decore_Base.decore_base.decore.Decore.view:12 of
 msgid "Die Filter, die in der Ansicht angezeigt werden."
 msgstr "The filters that are displayed in the View."
 
-#: decore_Base.decore_base.decore.Decore.view:12 of
+#: decore_Base.decore_base.decore.Decore.view:13 of
 msgid "Die Abfrage, die in der Ansicht angezeigt wird."
 msgstr "The query that will be displayed in the View."
 
-#: decore_Base.decore_base.decore.Decore.view:13 of
+#: decore_Base.decore_base.decore.Decore.view:14 of
 msgid ""
 "Wählt die Methode wie die Datensätze der View geladen werden. Der Wert "
 "``client`` lädt alle Datensätze auf einmal und überlässt den Seitenaufbau "
-"dem Frontend. Der Wert ``server`` **ist noch nicht verfügbar**. Der Wert "
-"``client`` ist die Standardeinstellung."
+"dem Frontend."
 msgstr ""
 "Selects the method how the records of the view are loaded. The value "
 "``client`` loads all records at once and leaves the page building to the "
-"frontend. The value ``server`` **is not yet available**. The value "
-"``client`` is the default setting."
+"frontend."
 
-#: decore_Base.decore_base.decore.Decore.view:14 of
+#: decore_Base.decore_base.decore.Decore.view:16 of
 msgid ""
 "Gibt an wieviele Datensätze auf einer Seite der Ansicht angezeigt werden "
 "sollen. ``16`` ist die Standardeinstellung."
@@ -157,88 +159,135 @@ msgstr ""
 " default setting."
 
 #: decore_Base.decore_base.decore.Decore.dialog:1 of
-msgid "A function to register a dialog. It is used as a decorator."
-msgstr "A function to register a dialog. It is used as a decorator."
+msgid ""
+"Eine Funktion zur Registrierung eines Dialogs. Sie wird als \"Decorator\" "
+"verwendet."
+msgstr "A function for registering a dialog. It is used as a \"decorator\"."
 
 #: decore_Base.decore_base.decore.Decore.dialog:3 of
-msgid "A dialog is a carrier for widgets."
-msgstr "A dialog is a carrier for widgets."
+msgid "Der Dialog ist das Trägerelement für Widgets"
+msgstr "The dialog is the supporting element for widgets"
 
 #: decore_Base.decore_base.decore.Decore.dialog:5 of
 msgid ""
-"The ID of the parent element. Only to be set if the dialog is to be rendered"
-" in a view of another base."
+"Die ID des übergeordneten Elements. Nur zu setzen, wenn der Dialog in einer "
+"Ansicht einer anderen Basis gerendert werden soll."
 msgstr ""
-"The ID of the parent element. Only to be set if the dialog is to be rendered"
-" in a view of another base."
+"The ID of the parent element. To be set only if the dialog is to be rendered"
+" in a View of another Base."
 
 #: decore_Base.decore_base.decore.Decore.dialog:6 of
-msgid "The icon of the dialog."
-msgstr "The icon of the dialog."
+msgid "Das Symbol des Dialogs."
+msgstr "The symbol of dialogue."
 
 #: decore_Base.decore_base.decore.Decore.dialog:7 of
-msgid "The title of the dialog."
-msgstr "The title of the dialog."
+msgid "Der Titel des Dialogs."
+msgstr "The title of the dialogue."
 
 #: decore_Base.decore_base.decore.Decore.dialog:8 of
-msgid "The description of the dialog."
-msgstr "The description of the dialog."
+msgid "Die Beschreibung des Dialogs."
+msgstr "The description of the dialogue."
 
 #: decore_Base.decore_base.decore.Decore.dialog:9 of
-msgid "The type of the dialog."
-msgstr "The type of the dialog."
-
-#: decore_Base.decore_base.decore.Decore.dialog:10 of
-msgid "The display type of the dialog."
-msgstr "The display type of the dialog."
+msgid ""
+"Gibt an wie der Dialog die Widgets darstellen wird. Der Wert ``standard`` "
+"stellt die untergeordneten Widgets und Sub-Widgets untereinander dar."
+msgstr ""
+"Specifies how the dialog will display the widgets. The value ``standard`` "
+"represents the child widgets and sub-widgets one below the other."
 
 #: decore_Base.decore_base.decore.Decore.dialog:11 of
-msgid "The activator type of the dialog."
-msgstr "The activator type of the dialog."
+msgid "Der Anzeigetyp des Dialogs."
+msgstr "The display type of the dialog."
+
+#: decore_Base.decore_base.decore.Decore.dialog:12 of
+msgid ""
+"Der Aktivatortyp des Dialogs. Über den Wert ``none`` wird der Dialog sofort "
+"beim OnLoad Ereignis der View angezeigt. Der Wert ``default`` stellt den "
+"Dialog im Top-Menu der View dar. Der Wert ``context`` stellt den Dialog im "
+"Kontextmenü eines Items der View dar. Der Wert ``click`` zeigt den Dialog "
+"dann an wenn man einen Datensatz anklickt."
+msgstr ""
+"The activator type of the dialog. The value ``none`` displays the dialog "
+"immediately at the view's OnLoad event. The value ``default`` represents the"
+" dialog in the top menu of the view. The value ``context`` represents the "
+"dialog in the context menu of an item of the view. The value ``click`` "
+"displays the dialog when a record is clicked."
 
 #: decore_Base.decore_base.decore.Decore.widget:1 of
-msgid "A function to register a widget. It is used as a decorator."
-msgstr "A function to register a widget. It is used as a decorator."
+msgid ""
+"Eine Funktion zur Registrierung eines Widgets. Sie wird als \"Decorator\" "
+"verwendet."
+msgstr "A function for registering a widget. It is used as a \"decorator\"."
 
 #: decore_Base.decore_base.decore.Decore.widget:3 of
 msgid ""
-"A widget is an element for displaying or editing a single item from the "
-"data."
+"Ein Widget dient zur Darstellung und Interaktion mit dem Datensatz. Es "
+"erhält die Daten, die der Dialog-Aktivator vorgibt. Der Wert ``none`` "
+"übergibt den letzten Datensatz der Datenbanktabelle. Der Wert ``default`` "
+"übergibt einen nur mit Default-Werten gefüllten Datensatz. Beim Wert "
+"``context`` übergibt es den Datensatz, der im Kontextmenü der Ansicht "
+"ausgewählt wurde. Und ``click`` übergibt den Datensatz, der angeklickt "
+"wurde."
 msgstr ""
-"A widget is an element for displaying or editing a single item from the "
-"data."
+"A widget is used to display and interact with the dataset. It receives the "
+"data that the dialog activator specifies. The value ``none`` passes the last"
+" record of the database table. The value ``default`` passes a dataset filled"
+" only with default values. The value ``context`` passes the record selected "
+"in the context menu of the View. And ``click`` passes the record that was "
+"clicked."
 
 #: decore_Base.decore_base.decore.Decore.widget:5 of
 msgid ""
-"The ID of the parent element. Only to be set if the widget is to be rendered"
-" in a dialog of another base."
+"Widgets, welche aus einer fremden Basis einem Dialog zugeordnet werden, "
+"ergänzen die relationalen Felder eines Default-Items der fremden Datenquelle"
+" mit den Daten des aktivierten Items. (Der Satz ist Scheiße zu verstehen, "
+"aber er trifft genau das, was es tut). In der Sample Anwendung verwende ich "
+"das beim Zuweisen von \"Contracts\" zu einer \"Person\"."
 msgstr ""
-"The ID of the parent element. Only to be set if the widget is to be rendered"
-" in a dialog of another base."
-
-#: decore_Base.decore_base.decore.Decore.widget:6 of
-msgid "The icon of the widget."
-msgstr "The icon of the widget."
+"Widgets, which are assigned to a dialog from a foreign Base, supplement the "
+"relational fields of a default item of the foreign data source with the data"
+" of the activated item. (That sentence is crap to understand, but it hits "
+"exactly what it does). In the Sample application, I use this when assigning "
+"\"Contracts\" to a \"Person\"."
 
 #: decore_Base.decore_base.decore.Decore.widget:7 of
-msgid "The title of the widget."
-msgstr "The title of the widget."
-
-#: decore_Base.decore_base.decore.Decore.widget:8 of
-msgid "The description of the widget."
-msgstr "The description of the widget."
+msgid ""
+"Es gibt aber auch Widgets, die mehrere Datensätze darstellen können, wie im "
+"Beispiel davor werden hier auch die Relationen verwendet, um nur Daten "
+"abzubilden, die etwas mit dem gewählten Item zu tun haben."
+msgstr ""
+"But there are also widgets that can display multiple data sets, as in the "
+"example before, the relations are used here to display only data that has "
+"something to do with the selected item."
 
 #: decore_Base.decore_base.decore.Decore.widget:9 of
-msgid "The type of the widget."
-msgstr "The type of the widget."
+msgid ""
+"Die ID des übergeordneten Elements. Nur zu setzen, wenn das Widget in einem "
+"Dialog einer anderen Basis gerendert werden soll."
+msgstr ""
+"The ID of the parent element. To be set only if the widget is to be rendered"
+" in a dialog of another Base."
 
 #: decore_Base.decore_base.decore.Decore.widget:10 of
-msgid "The layout of the widget."
-msgstr "The layout of the widget."
+msgid "Das Symbol des Widgets."
+msgstr "The icon of the widget."
 
 #: decore_Base.decore_base.decore.Decore.widget:11 of
-msgid "The active fields of the widget."
-msgstr "The active fields of the widget."
+msgid "Der Titel des Widgets."
+msgstr "The title of the widget."
+
+#: decore_Base.decore_base.decore.Decore.widget:12 of
+msgid "Die Beschreibung des Widgets."
+msgstr "The description of the widget."
+
+#: decore_Base.decore_base.decore.Decore.widget:13 of
+msgid "Gibt an wie das Widget die Daten darstellen wird."
+msgstr "Specifies how the widget will display the data."
+
+#: decore_Base.decore_base.decore.Decore.widget:15 of
+msgid "Die Felder, die in dem Widget angezeigt werden."
+msgstr "The fields that will be displayed in the widget."
 
 #: ../docs/docs.rst:4
 msgid "Contents:"
@@ -1314,3 +1363,72 @@ msgstr "https://github.com/KemoPanzah/decore_Sample"
 
 #~ msgid "Api Reference"
 #~ msgstr "Api Reference"
+
+#~ msgid "A function to register a dialog. It is used as a decorator."
+#~ msgstr "A function to register a dialog. It is used as a decorator."
+
+#~ msgid ""
+#~ "The ID of the parent element. Only to be set if the dialog is to be rendered"
+#~ " in a view of another base."
+#~ msgstr ""
+#~ "The ID of the parent element. Only to be set if the dialog is to be rendered"
+#~ " in a view of another base."
+
+#~ msgid "The icon of the dialog."
+#~ msgstr "The icon of the dialog."
+
+#~ msgid "The title of the dialog."
+#~ msgstr "The title of the dialog."
+
+#~ msgid "The description of the dialog."
+#~ msgstr "The description of the dialog."
+
+#~ msgid "The type of the dialog."
+#~ msgstr "The type of the dialog."
+
+#~ msgid "The display type of the dialog."
+#~ msgstr "The display type of the dialog."
+
+#~ msgid "The activator type of the dialog."
+#~ msgstr "The activator type of the dialog."
+
+#~ msgid "Der Typ der Ansicht."
+#~ msgstr "The type of the View."
+
+#~ msgid "Der Typ des Dialogs."
+#~ msgstr "The type of dialogue."
+
+#~ msgid "A function to register a widget. It is used as a decorator."
+#~ msgstr "A function to register a widget. It is used as a decorator."
+
+#~ msgid ""
+#~ "A widget is an element for displaying or editing a single item from the "
+#~ "data."
+#~ msgstr ""
+#~ "A widget is an element for displaying or editing a single item from the "
+#~ "data."
+
+#~ msgid ""
+#~ "The ID of the parent element. Only to be set if the widget is to be rendered"
+#~ " in a dialog of another base."
+#~ msgstr ""
+#~ "The ID of the parent element. Only to be set if the widget is to be rendered"
+#~ " in a dialog of another base."
+
+#~ msgid "The icon of the widget."
+#~ msgstr "The icon of the widget."
+
+#~ msgid "The title of the widget."
+#~ msgstr "The title of the widget."
+
+#~ msgid "The description of the widget."
+#~ msgstr "The description of the widget."
+
+#~ msgid "The type of the widget."
+#~ msgstr "The type of the widget."
+
+#~ msgid "The layout of the widget."
+#~ msgstr "The layout of the widget."
+
+#~ msgid "The active fields of the widget."
+#~ msgstr "The active fields of the widget."
