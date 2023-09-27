@@ -35,7 +35,7 @@ Um decore zu verwenden, importieren wir es zunächst in das Modul **app.py**.
    
    from decore_base import decore
 
-Dann verwenden wir den Befehl **prepare**, um alle erforderlichen Hilfsdateien im Stammverzeichnis des Projekts zu erstellen.
+Dann verwenden wir den Befehl ``prepare``, um alle erforderlichen Hilfsdateien im Stammverzeichnis des Projekts zu erstellen.
 
 Um nun die Anwendung tatsächlich vorzubereiten, führen wir den Befehl ``python app.py --prepare`` im Terminal aus. Der Pfad muss im Hauptverzeichnis des Projekts liegen, also dort wo sich die **app.py** befindet.
 

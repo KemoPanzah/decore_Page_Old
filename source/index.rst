@@ -16,7 +16,7 @@ Erstellen sie GUI-Dashboard-Anwendungen in Python schnell und einfach.
 
    Get started <getstarted>
    Sample <sample>
-   Api documentation <api/index>
+   Docs <docs/docs>
    
 .. Indices and tables
 .. ------------------

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: decore Base\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-27 05:40+0200\n"
+"POT-Creation-Date: 2023-09-27 09:20+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -20,23 +20,26 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.12.1\n"
 
-#: ../api/decore.rst:2
-msgid "Decorator reference"
-msgstr "Decorator reference"
+#: ../docs/decore.rst:2
+msgid "Decorators"
+msgstr "Decorators"
 
 #: decore_Base.decore_base.decore.Decore:1 of
 msgid ""
-"Diese Klasse bietet alle notwendigen Funktionen, um eine decore-App zu "
-"definieren und übergibt die gesammelten Informationen an den Pool. Sie "
-"enthält auch die Routen für die Kommunikation mit decore Front."
+"Diese Klasse stellt alle notwendigen Funktionen zur Verfügung, um eine "
+"decore Anwendung zu definieren. Sie hält auch die Routen für die "
+"Kommunikation mit dem Frontend."
 msgstr ""
-"This class provides all the necessary functions to define a decore app and "
-"passes the collected information to the pool. It also contains the routes "
-"for communication with decore Front."
+"This class provides all the necessary functions to define a decore "
+"application. It also holds the routes for communication with the frontend."
 
 #: decore_Base.decore_base.decore.Decore.app:1 of
-msgid "Eine Funktion zum Öffnen einer App. Sie wird als \"Decorator\" verwendet."
-msgstr "A function for opening an app. It is used as a \"decorator\"."
+msgid ""
+"Eine Funktion zum eröffnen einer GUI-Dashboard-Anwendung. Sie wird als "
+"\"Decorator\" verwendet."
+msgstr ""
+"A function to open a GUI dashboard application. It is used as a "
+"\"decorator\"."
 
 #: decore_Base.decore_base.classes.decore_fields.BackrefMetaField
 #: decore_Base.decore_base.classes.decore_fields.BooleanField
@@ -52,22 +55,24 @@ msgid "Parameters"
 msgstr "Parameters"
 
 #: decore_Base.decore_base.decore.Decore.app:3 of
-msgid "Der Titel der Anwendung."
-msgstr "The title of the application."
+msgid "Der Titel der App."
+msgstr "The title of the app."
 
 #: decore_Base.decore_base.decore.Decore.base:1 of
 msgid ""
-"Eine Funktion zum eröffnen einer Basis. Sie wird als \"Decorator\" "
-"verwendet."
-msgstr "A function for opening a Base. It is used as a \"decorator\"."
+"Eine Funktion zum registrieren einer Basis in der GUI-Dashboard-Anwendung. "
+"Sie wird als \"Decorator\" verwendet."
+msgstr ""
+"A function to register a Base in the GUI dashboard application. It is used "
+"as a \"decorator\"."
 
 #: decore_Base.decore_base.decore.Decore.base:3 of
 msgid ""
 "Die Basis ist das Trägerelement für die Ansicht und die Vorlage für die "
-"Datenquelle."
+"Datenquelle im Frontend."
 msgstr ""
 "The Base is the support element for the View and the template for the data "
-"source."
+"source in the frontend."
 
 #: decore_Base.decore_base.decore.Decore.base:5 of
 msgid "Das Symbol der Basis."
@@ -82,64 +87,74 @@ msgid "Die Beschreibung der Basis."
 msgstr "The description of the Base."
 
 #: decore_Base.decore_base.decore.Decore.base:8 of
-msgid ""
-"Das Datenmodell der Basis. Es bildet eine Art Kontext und Datenquelle für "
-"alle untergeordneten Elemente der Basis."
-msgstr ""
-"The data model of the Base. It forms a kind of context and data source for "
-"all child elements of the Base."
+msgid "Das Datenmodell der Basis."
+msgstr "The Base data model."
 
 #: decore_Base.decore_base.decore.Decore.view:1 of
-msgid "A function to register a view. It is used as a decorator."
-msgstr "A function to register a view. It is used as a decorator."
+msgid ""
+"Eine Funktion zur Registrierung einer Ansicht. Sie wird als \"Decorator\" "
+"verwendet."
+msgstr "A function for registering a View. It is used as a \"decorator\"."
 
 #: decore_Base.decore_base.decore.Decore.view:3 of
-msgid "A view is a container for displaying data."
-msgstr "A view is a container for displaying data."
+msgid "Eine Ansicht ist ein Container für die Anzeige von Daten."
+msgstr "A View is a container for displaying data."
 
 #: decore_Base.decore_base.decore.Decore.view:5 of
 msgid ""
-"The ID of the parent element. Only to be set if the view is to be rendered "
-"in another base."
+"Die ID des übergeordneten Elements. Nur zu setzen, wenn die Ansicht in einer"
+" anderen Basis gerendert werden soll."
 msgstr ""
-"The ID of the parent element. Only to be set if the view is to be rendered "
-"in another base."
+"The ID of the parent element. Only to be set if the View is to be rendered "
+"in a different Base."
 
 #: decore_Base.decore_base.decore.Decore.view:6 of
-msgid "The icon of the view."
-msgstr "The icon of the view."
+msgid "Das Symbol der Ansicht."
+msgstr "The icon of the View."
 
 #: decore_Base.decore_base.decore.Decore.view:7 of
-msgid "The title of the view."
-msgstr "The title of the view."
+msgid "Der Titel der Ansicht."
+msgstr "The title of the View."
 
 #: decore_Base.decore_base.decore.Decore.view:8 of
-msgid "The description of the view."
-msgstr "The description of the view."
+msgid "Die Beschreibung der Ansicht."
+msgstr "The description of the View."
 
 #: decore_Base.decore_base.decore.Decore.view:9 of
-msgid "The type of the view."
-msgstr "The type of the view."
+msgid "Der Typ der Ansicht."
+msgstr "The type of the View."
 
 #: decore_Base.decore_base.decore.Decore.view:10 of
-msgid "The active fields of the view."
-msgstr "The active fields of the view."
+msgid "Die Felder, die in der Ansicht angezeigt werden."
+msgstr "The fields that will be displayed in the View."
 
 #: decore_Base.decore_base.decore.Decore.view:11 of
-msgid "The fields that are used in filter."
-msgstr "The fields that are used in filter."
+msgid "Die Filter, die in der Ansicht angezeigt werden."
+msgstr "The filters that are displayed in the View."
 
 #: decore_Base.decore_base.decore.Decore.view:12 of
-msgid "The default query of the view."
-msgstr "The default query of the view."
+msgid "Die Abfrage, die in der Ansicht angezeigt wird."
+msgstr "The query that will be displayed in the View."
 
 #: decore_Base.decore_base.decore.Decore.view:13 of
-msgid "The pagination type of the view."
-msgstr "The pagination type of the view."
+msgid ""
+"Wählt die Methode wie die Datensätze der View geladen werden. Der Wert "
+"``client`` lädt alle Datensätze auf einmal und überlässt den Seitenaufbau "
+"dem Frontend. Der Wert ``server`` **ist noch nicht verfügbar**. Der Wert "
+"``client`` ist die Standardeinstellung."
+msgstr ""
+"Selects the method how the records of the view are loaded. The value "
+"``client`` loads all records at once and leaves the page building to the "
+"frontend. The value ``server`` **is not yet available**. The value "
+"``client`` is the default setting."
 
 #: decore_Base.decore_base.decore.Decore.view:14 of
-msgid "The pagination records of the view."
-msgstr "The pagination records of the view."
+msgid ""
+"Gibt an wieviele Datensätze auf einer Seite der Ansicht angezeigt werden "
+"sollen. ``16`` ist die Standardeinstellung."
+msgstr ""
+"Specifies how many records to display on one page of the View. ``16`` is the"
+" default setting."
 
 #: decore_Base.decore_base.decore.Decore.dialog:1 of
 msgid "A function to register a dialog. It is used as a decorator."
@@ -225,8 +240,16 @@ msgstr "The layout of the widget."
 msgid "The active fields of the widget."
 msgstr "The active fields of the widget."
 
-#: ../api/fields.rst:2
-msgid "Fields"
+#: ../docs/docs.rst:4
+msgid "Contents:"
+msgstr "Contents:"
+
+#: ../docs/docs.rst:2
+msgid "Dokumentation"
+msgstr "Documentation"
+
+#: ../docs/fields.rst:2
+msgid "Felder"
 msgstr "Fields"
 
 #: decore_Base.decore_base.classes.decore_fields.BackrefMetaField:1 of
@@ -348,14 +371,6 @@ msgstr ""
 msgid "A field to store passwords in the keybase and to use them again."
 msgstr "A field to store passwords in the keybase and to use them again."
 
-#: ../api/index.rst:4
-msgid "Contents:"
-msgstr "Contents:"
-
-#: ../api/index.rst:2
-msgid "Api Reference"
-msgstr "Api Reference"
-
 #: ../getstarted.rst:-1 ../index.rst:-1
 msgid "create dashbord with python fastly"
 msgstr "create dashbord with python fastly"
@@ -452,10 +467,10 @@ msgstr "To use decore, we first import it into the **app.py** module."
 
 #: ../getstarted.rst:38
 msgid ""
-"Dann verwenden wir den Befehl **prepare**, um alle erforderlichen "
+"Dann verwenden wir den Befehl ``prepare``, um alle erforderlichen "
 "Hilfsdateien im Stammverzeichnis des Projekts zu erstellen."
 msgstr ""
-"Then we use the **prepare** command to create all the necessary auxiliary "
+"Then we use the ``prepare`` command to build all the necessary auxiliary "
 "files in the root directory of the project."
 
 #: ../getstarted.rst:40
@@ -815,8 +830,8 @@ msgid "Sample"
 msgstr "Sample"
 
 #: ../index.rst:13
-msgid "Api documentation"
-msgstr "Api documentation"
+msgid "Docs"
+msgstr "Docs"
 
 #: ../index.rst:-1 ../index.rst:8
 msgid "decore Base | UI fastly"
@@ -1243,3 +1258,59 @@ msgstr "https://github.com/KemoPanzah/decore_Sample"
 
 #~ msgid "decore Base | Get started"
 #~ msgstr "decore Base | Get started"
+
+#~ msgid "Eine Funktion zum Öffnen einer App. Sie wird als \"Decorator\" verwendet."
+#~ msgstr "A function for opening an app. It is used as a \"decorator\"."
+
+#~ msgid "Der Titel der Anwendung."
+#~ msgstr "The title of the application."
+
+#~ msgid ""
+#~ "Das Datenmodell der Basis. Es bildet eine Art Kontext und Datenquelle für "
+#~ "alle untergeordneten Elemente der Basis."
+#~ msgstr ""
+#~ "The data model of the Base. It forms a kind of context and data source for "
+#~ "all child elements of the Base."
+
+#~ msgid "A function to register a view. It is used as a decorator."
+#~ msgstr "A function to register a view. It is used as a decorator."
+
+#~ msgid ""
+#~ "The ID of the parent element. Only to be set if the view is to be rendered "
+#~ "in another base."
+#~ msgstr ""
+#~ "The ID of the parent element. Only to be set if the view is to be rendered "
+#~ "in another base."
+
+#~ msgid "The icon of the view."
+#~ msgstr "The icon of the view."
+
+#~ msgid "The title of the view."
+#~ msgstr "The title of the view."
+
+#~ msgid "The description of the view."
+#~ msgstr "The description of the view."
+
+#~ msgid "The type of the view."
+#~ msgstr "The type of the view."
+
+#~ msgid "The active fields of the view."
+#~ msgstr "The active fields of the view."
+
+#~ msgid "The fields that are used in filter."
+#~ msgstr "The fields that are used in filter."
+
+#~ msgid "The default query of the view."
+#~ msgstr "The default query of the view."
+
+#~ msgid "The pagination type of the view."
+#~ msgstr "The pagination type of the view."
+
+#~ msgid "The pagination records of the view."
+#~ msgstr "The pagination records of the view."
+
+#~ msgid "Api documentation"
+#~ msgstr "Api documentation"
+
+#~ msgid "Api Reference"
+#~ msgstr "Api Reference"
