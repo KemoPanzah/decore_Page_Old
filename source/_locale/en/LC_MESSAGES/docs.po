@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: decore Base\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-27 13:39+0200\n"
+"POT-Creation-Date: 2023-09-27 15:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -46,9 +46,11 @@ msgstr ""
 #: decore_Base.decore_base.classes.decore_fields.CharField
 #: decore_Base.decore_base.classes.decore_fields.ManyToManyField
 #: decore_Base.decore_base.classes.decore_fields.PasswordField
+#: decore_Base.decore_base.decore.Decore.action
 #: decore_Base.decore_base.decore.Decore.app
 #: decore_Base.decore_base.decore.Decore.base
 #: decore_Base.decore_base.decore.Decore.dialog
+#: decore_Base.decore_base.decore.Decore.function
 #: decore_Base.decore_base.decore.Decore.view
 #: decore_Base.decore_base.decore.Decore.widget of
 msgid "Parameters"
@@ -288,6 +290,92 @@ msgstr "Specifies how the widget will display the data."
 #: decore_Base.decore_base.decore.Decore.widget:15 of
 msgid "Die Felder, die in dem Widget angezeigt werden."
 msgstr "The fields that will be displayed in the widget."
+
+#: decore_Base.decore_base.decore.Decore.action:1 of
+msgid ""
+"Eine Funktion zur Registrierung einer Aktion. Sie wird als \"Decorator\" "
+"verwendet."
+msgstr "A function for registering an action. It is used as a \"decorator\"."
+
+#: decore_Base.decore_base.decore.Decore.action:3 of
+msgid ""
+"Eine Aktion ist die tatsächliche Interaktion zwischen dem Benutzer und dem "
+"Backend."
+msgstr "An action is the actual interaction between the user and the backend."
+
+#: decore_Base.decore_base.decore.Decore.action:5 of
+msgid ""
+"Die ID des übergeordneten Elements. Nur zu setzen, wenn die Aktion in einem "
+"Widget einer anderen Basis gerendert werden soll."
+msgstr ""
+"The ID of the parent element. To be set only if the action is to be rendered"
+" in a widget of another Base."
+
+#: decore_Base.decore_base.decore.Decore.action:6 of
+msgid "Das Symbol der Aktion."
+msgstr "The symbol of action."
+
+#: decore_Base.decore_base.decore.Decore.action:7 of
+msgid "Der Titel der Aktion."
+msgstr "The title of the action."
+
+#: decore_Base.decore_base.decore.Decore.action:8 of
+msgid "Die Beschreibung der Aktion."
+msgstr "The description of the action."
+
+#: decore_Base.decore_base.decore.Decore.action:9 of
+msgid "Gibt an was die Aktion kann."
+msgstr "Indicates what the action can do."
+
+#: decore_Base.decore_base.decore.Decore.action:11 of
+msgid "Gib an, wie die Aktion ausgelöst wird."
+msgstr "Specify how the action is triggered."
+
+#: decore_Base.decore_base.decore.Decore.action:20 of
+msgid ""
+"Die Aktionen durchlaufen ein Modul, welches die erhaltenen Daten aufbereitet"
+" und als Keyword-Parameter an die dekorierte Funktion übergibt. Es ist alles"
+" in den ``kwargs`` zu finden und man macht sich diese einfach verfügbar. Der"
+" Parameter ``item`` ist ein Beispiel dafür und repräsentiert den vom "
+"Frontend zurückgegebenen Datensatz. Um herauszufinden, was alles noch in den"
+" ``kwargs`` steckt, bitte den Debugger benutzen."
+msgstr ""
+"The actions pass through a module that prepares the received data and passes"
+" it as keyword parameters to the decorated function. It is all found in the "
+"``kwargs`` and you just make them available. The ``item`` parameter is an "
+"example of this and represents the dataset returned by the frontend. To find"
+" out what else is in the ``kwargs`` please use the debugger."
+
+#: decore_Base.decore_base.decore.Decore.function:1 of
+msgid ""
+"Eine Funktion zur Registrierung einer Funktion in der übergeordneten Base. "
+"Sie wird als \"Decorator\" verwendet."
+msgstr ""
+"A function to register a function in the parent base. It is used as a "
+"\"decorator\"."
+
+#: decore_Base.decore_base.decore.Decore.function:3 of
+msgid ""
+"Eine Funktion wird direkt nach der Zusammenstellung des Metadaten-Pool "
+"ausgeführt. Mit Funktionen kann man die Logik erweitern, Dinge vorbereiten "
+"oder Hintergrundaufgaben erledigen. sie agieren als Instanzmethoden der "
+"Basis und erhalten damit den objektorientierten Ansatz."
+msgstr ""
+"A function is executed directly after the metadata pool is compiled. "
+"Functions can be used to extend the logic, prepare things or do background "
+"tasks. they act as instance methods of the Base and thus maintain the "
+"object-oriented approach."
+
+#: decore_Base.decore_base.decore.Decore.function:5 of
+msgid ""
+"Gibt an wie eine Funktion ausgeführt wird. Mit dem Wert ``shot`` wird sie "
+"nur einmal ausgeführt. Der Wert ``work`` wird in einem Thread ausgeführt und"
+" kann somit Schleifen abarbeiten die niemals enden bis der Main-Thread "
+"endet."
+msgstr ""
+"Specifies how a function is run. With the value ``shot`` it will be executed"
+" only once. The value ``work`` is executed in a thread and can therefore run"
+" loops that never end until the main thread ends."
 
 #: ../docs/docs.rst:4
 msgid "Contents:"
