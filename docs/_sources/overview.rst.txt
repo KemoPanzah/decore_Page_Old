@@ -7,7 +7,7 @@ Funktionen und Integrationen
 - Fertige SPA (Single Page Application) mit Vue.js unter Verwendung des Quasar Frameworks (https://github.com/quasarframework/quasar)
 - Vordefinierte Webapi für Metadaten und Aktionen mit Flask (https://github.com/pallets/flask)
 - Integriertes ORM für Datenmanagement und Datenbankschnittstellen (SQLite) powered by the great Peewee (https://github.com/coleifer/peewee)
-- Datenüberprüfung mit Cerberus (https://github.com/pyeve/cerberus)
+- Datensatz-Validierung mit Cerberus (https://github.com/pyeve/cerberus)
 - Passwortverwaltung mit pykeepass (https://github.com/libkeepass/pykeepass)
 
 Bitte unterstützen Sie diese großartigen Projekte!
