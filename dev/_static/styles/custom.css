@@ -1,0 +1,29 @@
+.navbar-brand p {
+    margin-bottom: 3px;
+}
+
+.bd-header .navbar-nav {
+    padding-right: 32px;
+}
+
+.de-teaser-grid{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.de-teaser-grid .sd-card{
+    color: white;
+    background-color: #075767;
+}
+
+.de-teaser-grid p{
+    color: white;
+}
+
+.de-teaser-grid .sd-material-icon{
+    font-size: 24px;
+}
+
+.de-teaser-grid .sd-card-title{
+    font-size: 18px;
+}
