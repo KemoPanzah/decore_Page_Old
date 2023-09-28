@@ -1,0 +1,693 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Jean Rohark
+# This file is distributed under the same license as the decore Base package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: decore Base \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-27 15:46+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../docs/decore.rst:2
+msgid "Decorators"
+msgstr ""
+
+#: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore:1
+msgid "Diese Klasse stellt alle notwendigen Funktionen zur Verfügung, um eine decore Anwendung zu definieren. Sie hält auch die Routen für die Kommunikation mit dem Frontend."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.app:1
+msgid "Eine Funktion zum eröffnen einer GUI-Dashboard-Anwendung. Sie wird als \"Decorator\" verwendet."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.BackrefMetaField:0
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.BooleanField:0
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.CharField:0
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.ManyToManyField:0
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.PasswordField:0
+#: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.action:0
+#: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.app:0
+#: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.base:0
+#: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.dialog:0
+#: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.function:0
+#: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.view:0
+#: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.widget:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.app:3
+msgid "Der Titel der App."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.base:1
+msgid "Eine Funktion zum registrieren einer Basis in der GUI-Dashboard-Anwendung. Sie wird als \"Decorator\" verwendet."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.base:3
+msgid "Die Basis ist das Trägerelement für die Ansicht und die Vorlage für die Datenquelle im Frontend."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.base:5
+msgid "Das Symbol der Basis."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.base:6
+msgid "Der Titel der Basis."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.base:7
+msgid "Die Beschreibung der Basis."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.base:8
+msgid "Das Datenmodell der Basis."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.view:1
+msgid "Eine Funktion zur Registrierung einer Ansicht. Sie wird als \"Decorator\" verwendet."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.view:3
+msgid "Eine Ansicht ist ein Container für die Anzeige von Daten."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.view:5
+msgid "Die ID des übergeordneten Elements. Nur zu setzen, wenn die Ansicht in einer anderen Basis gerendert werden soll."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.view:6
+msgid "Das Symbol der Ansicht."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.view:7
+msgid "Der Titel der Ansicht."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.view:8
+msgid "Die Beschreibung der Ansicht."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.view:9
+msgid "Gibt an wie die Datensätze angezeigt werden. Der Wert ``table`` stellt die Datensätze in einer Tabelle dar."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.view:11
+msgid "Die Felder, die in der Ansicht angezeigt werden."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.view:12
+msgid "Die Filter, die in der Ansicht angezeigt werden."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.view:13
+msgid "Die Abfrage, die in der Ansicht angezeigt wird."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.view:14
+msgid "Wählt die Methode wie die Datensätze der View geladen werden. Der Wert ``client`` lädt alle Datensätze auf einmal und überlässt den Seitenaufbau dem Frontend."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.view:16
+msgid "Gibt an wieviele Datensätze auf einer Seite der Ansicht angezeigt werden sollen. ``16`` ist die Standardeinstellung."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.dialog:1
+msgid "Eine Funktion zur Registrierung eines Dialogs. Sie wird als \"Decorator\" verwendet."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.dialog:3
+msgid "Der Dialog ist das Trägerelement für Widgets"
+msgstr ""
+
+#: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.dialog:5
+msgid "Die ID des übergeordneten Elements. Nur zu setzen, wenn der Dialog in einer Ansicht einer anderen Basis gerendert werden soll."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.dialog:6
+msgid "Das Symbol des Dialogs."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.dialog:7
+msgid "Der Titel des Dialogs."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.dialog:8
+msgid "Die Beschreibung des Dialogs."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.dialog:9
+msgid "Gibt an wie der Dialog die Widgets darstellen wird. Der Wert ``standard`` stellt die untergeordneten Widgets und Sub-Widgets untereinander dar."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.dialog:11
+msgid "Der Anzeigetyp des Dialogs."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.dialog:12
+msgid "Der Aktivatortyp des Dialogs. Über den Wert ``none`` wird der Dialog sofort beim OnLoad Ereignis der View angezeigt. Der Wert ``default`` stellt den Dialog im Top-Menu der View dar. Der Wert ``context`` stellt den Dialog im Kontextmenü eines Items der View dar. Der Wert ``click`` zeigt den Dialog dann an wenn man einen Datensatz anklickt."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.widget:1
+msgid "Eine Funktion zur Registrierung eines Widgets. Sie wird als \"Decorator\" verwendet."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.widget:3
+msgid "Ein Widget dient zur Darstellung und Interaktion mit dem Datensatz. Es erhält die Daten, die der Dialog-Aktivator vorgibt. Der Wert ``none`` übergibt den letzten Datensatz der Datenbanktabelle. Der Wert ``default`` übergibt einen nur mit Default-Werten gefüllten Datensatz. Beim Wert ``context`` übergibt es den Datensatz, der im Kontextmenü der Ansicht ausgewählt wurde. Und ``click`` übergibt den Datensatz, der angeklickt wurde."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.widget:5
+msgid "Widgets, welche aus einer fremden Basis einem Dialog zugeordnet werden, ergänzen die relationalen Felder eines Default-Items der fremden Datenquelle mit den Daten des aktivierten Items. (Der Satz ist Scheiße zu verstehen, aber er trifft genau das, was es tut). In der Sample Anwendung verwende ich das beim Zuweisen von \"Contracts\" zu einer \"Person\"."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.widget:7
+msgid "Es gibt aber auch Widgets, die mehrere Datensätze darstellen können, wie im Beispiel davor werden hier auch die Relationen verwendet, um nur Daten abzubilden, die etwas mit dem gewählten Item zu tun haben."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.widget:9
+msgid "Die ID des übergeordneten Elements. Nur zu setzen, wenn das Widget in einem Dialog einer anderen Basis gerendert werden soll."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.widget:10
+msgid "Das Symbol des Widgets."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.widget:11
+msgid "Der Titel des Widgets."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.widget:12
+msgid "Die Beschreibung des Widgets."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.widget:13
+msgid "Gibt an wie das Widget die Daten darstellen wird."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.widget:15
+msgid "Die Felder, die in dem Widget angezeigt werden."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.action:1
+msgid "Eine Funktion zur Registrierung einer Aktion. Sie wird als \"Decorator\" verwendet."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.action:3
+msgid "Eine Aktion ist die tatsächliche Interaktion zwischen dem Benutzer und dem Backend."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.action:5
+msgid "Die ID des übergeordneten Elements. Nur zu setzen, wenn die Aktion in einem Widget einer anderen Basis gerendert werden soll."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.action:6
+msgid "Das Symbol der Aktion."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.action:7
+msgid "Der Titel der Aktion."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.action:8
+msgid "Die Beschreibung der Aktion."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.action:9
+msgid "Gibt an was die Aktion kann."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.action:11
+msgid "Gib an, wie die Aktion ausgelöst wird."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.action:20
+msgid "Die Aktionen durchlaufen ein Modul, welches die erhaltenen Daten aufbereitet und als Keyword-Parameter an die dekorierte Funktion übergibt. Es ist alles in den ``kwargs`` zu finden und man macht sich diese einfach verfügbar. Der Parameter ``item`` ist ein Beispiel dafür und repräsentiert den vom Frontend zurückgegebenen Datensatz. Um herauszufinden, was alles noch in den ``kwargs`` steckt, bitte den Debugger benutzen."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.function:1
+msgid "Eine Funktion zur Registrierung einer Funktion in der übergeordneten Base. Sie wird als \"Decorator\" verwendet."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.function:3
+msgid "Eine Funktion wird direkt nach der Zusammenstellung des Metadaten-Pool ausgeführt. Mit Funktionen kann man die Logik erweitern, Dinge vorbereiten oder Hintergrundaufgaben erledigen. sie agieren als Instanzmethoden der Basis und erhalten damit den objektorientierten Ansatz."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.function:5
+msgid "Gibt an wie eine Funktion ausgeführt wird. Mit dem Wert ``shot`` wird sie nur einmal ausgeführt. Der Wert ``work`` wird in einem Thread ausgeführt und kann somit Schleifen abarbeiten die niemals enden bis der Main-Thread endet."
+msgstr ""
+
+#: ../docs/docs.rst:4
+msgid "Contents:"
+msgstr ""
+
+#: ../docs/docs.rst:2
+msgid "Dokumentation"
+msgstr ""
+
+#: ../docs/fields.rst:2
+msgid "Felder"
+msgstr ""
+
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.BackrefMetaField:1
+msgid "The BackRefMetaField's name must match the name of the specified backref in the ForeignKey or ManyToMany field in the reference model."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.BackrefMetaField:3
+msgid "The BackRefMetaField is used by the user to represent relationships in the **decore Front** application. For example, it can be assigned to the filter or to a form. It is a MetaField and does not get a column in the database."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.BackrefMetaField:5
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.BooleanField:6
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.CharField:6
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.ManyToManyField:6
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.PasswordField:8
+msgid "A human-readable name for the field."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.BackrefMetaField:6
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.BooleanField:5
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.CharField:5
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.ManyToManyField:7
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.PasswordField:7
+msgid "Additional text to be displayed in **decore Front**."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.BackrefMetaField:7
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.ManyToManyField:8
+msgid "A List of type string. Only the speciefied fields will be displayed in the filter. If None, all fields will be displayed."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.BackrefMetaField:8
+msgid "A dictonary containing a query to be used when querying options (e.g. in selection fields in the frontend). The query always refers to the reference model."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.BooleanField:1
+msgid "A field to store boolean values."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.BooleanField:3
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.CharField:3
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.ManyToManyField:5
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.PasswordField:6
+msgid "If True, the field is allowed to be null. Defaults to False."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.BooleanField:4
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.CharField:4
+msgid "The default value for the field. Defaults to None."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.CharField:1
+msgid "A field to store char values."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.ManyToManyField:1
+msgid "A field to represent a many-to-many relationship between two models. It is a MetaField and does not get a column in the database. However, a through model is created by decore Base, which represents the relationship between the two models."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.ManyToManyField:3
+msgid "The model to which the relationship is to be established."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.ManyToManyField:4
+msgid "The name of the field in the reference model that represents the relationship to the model."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.ManyToManyField:9
+msgid "A dictonary containing a query to be used when querying choices (e.g. in selection fields in the frontend). The query always refers to the reference model."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.PasswordField:2
+msgid "The keybase is a KeePass file and should be protected by setting the correct access rights (ACL)."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.PasswordField:4
+msgid "A field to store passwords in the keybase and to use them again."
+msgstr ""
+
+#: ../getstarted.rst:-1
+#: ../index.rst:-1
+msgid "create dashbord with python fastly"
+msgstr ""
+
+#: ../getstarted.rst:-1
+#: ../index.rst:-1
+msgid "python gui, decore, python database, python dashboard, python orm, python ui, dashboard creation, python application, ui framework, ui toolkit"
+msgstr ""
+
+#: ../getstarted.rst:6
+msgid "Erste Schritte"
+msgstr ""
+
+#: ../getstarted.rst:7
+msgid "Um die schnelle GUI-Dashboard-Erstellung, mit decore Base in Python, zu veranschaulichen werden wir nun gemeinsam eine kleine UI in Form einer Webanwendung erstellen."
+msgstr ""
+
+#: ../getstarted.rst:9
+msgid "Die dekorierten Funktionen dienen, in allererster Linie, der Erstellung von Metainformationen für die spätere Auswertung im Frontend der Anwendung und sind nichts, wovor man sich fürchten muss."
+msgstr ""
+
+#: ../getstarted.rst:11
+msgid "*Es ist wirklich einfach, bitte folgen Sie mir!*"
+msgstr ""
+
+#: ../getstarted.rst:14
+msgid "Installation"
+msgstr ""
+
+#: ../getstarted.rst:15
+msgid "Erstellen Sie zunächst ein leeres Python-Projekt in Ihrem gewünschten Verzeichnis."
+msgstr ""
+
+#: ../getstarted.rst:17
+msgid "Um decore Base zu installieren, führen wir den folgenden Befehl im Stammverzeichnis des Projekts aus. Verwenden wir das Terminal in vscode."
+msgstr ""
+
+#: ../getstarted.rst:23
+msgid "Dies erfordert eine aktivierte Python-Umgebung! Um mehr darüber zu erfahren, besuchen Sie `Python-Umgebungen in VS Code <https://code.visualstudio.com/docs/python/environments>`_."
+msgstr ""
+
+#: ../getstarted.rst:26
+msgid "Vorbereitung"
+msgstr ""
+
+#: ../getstarted.rst:28
+msgid "Um für unsere zukünftige Python GUI-Dashboard-Anwendung alles nötige an Pfaden und Einstellungen zu erhalten, müssen wir noch die Vorbereitung durchführen."
+msgstr ""
+
+#: ../getstarted.rst:30
+msgid "Erstellen wir nun eine neue Datei mit dem Namen **app.py** im Hauptverzeichnis des Projekts."
+msgstr ""
+
+#: ../getstarted.rst:32
+msgid "Um decore zu verwenden, importieren wir es zunächst in das Modul **app.py**."
+msgstr ""
+
+#: ../getstarted.rst:38
+msgid "Dann verwenden wir den Befehl ``prepare``, um alle erforderlichen Hilfsdateien im Stammverzeichnis des Projekts zu erstellen."
+msgstr ""
+
+#: ../getstarted.rst:40
+msgid "Um nun die Anwendung tatsächlich vorzubereiten, führen wir den Befehl ``python app.py --prepare`` im Terminal aus. Der Pfad muss im Hauptverzeichnis des Projekts liegen, also dort wo sich die **app.py** befindet."
+msgstr ""
+
+#: ../getstarted.rst:43
+msgid "Verwendung"
+msgstr ""
+
+#: ../getstarted.rst:44
+msgid "Damit der Python-Interpreter die zukünftigen Basisklassen verarbeiten kann, fügen wir den folgenden Import hinzu."
+msgstr ""
+
+#: ../getstarted.rst:50
+msgid "Normalerweise enthält ein Python-Hauptmodul eine Abfrage, die prüft, ob es das Hauptmodul ist, so dass wir anschließend die Funktion ``main`` aufrufen können."
+msgstr ""
+
+#: ../getstarted.rst:52
+msgid "Als nächstes erstellen wir eine Zeile ``if __name__ == '__main__':`` in der **app.py** Datei."
+msgstr ""
+
+#: ../getstarted.rst:54
+msgid "Um eine neue \"decore\" Anwendungsinstanz zu erstellen, benutzen wir eine mit ``@decore.app`` dekorierte ``main()`` Funktion in der **app.py** Datei, direkt unter der Zeile: ``if __name__ == '__main__':``."
+msgstr ""
+
+#: ../getstarted.rst:67
+msgid "Model"
+msgstr ""
+
+#: ../getstarted.rst:68
+msgid "In einem Modell legen wir die Datenfelder fest, die später einer Basis zugeordnet werden muss. Es dient als Datenbankschnittstelle zu den Datenbanktreibern wie SQLite, MySQL, PostgreSQL, etc."
+msgstr ""
+
+#: ../getstarted.rst:70
+msgid "Wir erstellen nun die Datei first_model.py im Verzeichnis **models** und fügen den folgenden Code ein:"
+msgstr ""
+
+#: ../getstarted.rst:73
+msgid "Es muss nicht für jede Basis ein Modell angelegt werden aber es muss jedes zu verwenden Modell eine Basis haben, die über die Datei **__init__.py**, importiert werden muss. Nur so werden Rellationen zwischen den Modellen auch im Frontend ausgewertet und dargestellt."
+msgstr ""
+
+#: ../getstarted.rst:76
+msgid "Um mögliche zirkuläre Importe zu vermeiden, legen wir die Modellklassen in einem eigenen Verzeichnis **models** in unserem Projektstammverzeichnis an. Das Verzeichnis **models** wurde durch den zuvor ausgeführten Befehl ``python app.py --prepare`` erstellt."
+msgstr ""
+
+#: ../getstarted.rst:88
+msgid "In dem hier gezeigten Beispiel importieren wir aus der **uniform library** die Klasse Conform_model und erweitern sie um die Felder Vorname und Nachname."
+msgstr ""
+
+#: ../getstarted.rst:90
+msgid "Die Modelle in **decore Base** basieren auf dem großartigen Peewee ORM. Um mehr über Peewee zu erfahren, besuchen Sie `Peewee ORM <http://docs.peewee-orm.com/en/latest/>`_."
+msgstr ""
+
+#: ../getstarted.rst:93
+msgid "Beim Importieren ist zu beachten, dass wir alles (*) aus dem conform_model Namespace importieren, um auch die Feldklassen zu erhalten."
+msgstr ""
+
+#: ../getstarted.rst:96
+msgid "Base"
+msgstr ""
+
+#: ../getstarted.rst:97
+msgid "Die Basisklassen dienen der decore-Anwendung als Trägerelement für die View-Komponenten, pflegen das Datenmodell ein und gelten damit auch als Datenquelle für die Auswertung im Frontend des Dashboards."
+msgstr ""
+
+#: ../getstarted.rst:99
+msgid "Nun müssen wir ein neues Python-Modul erstellen, das z.B. eine Basisklasse enthält: **first_base.py**, im Verzeichnis **bases** in unserem Projektstammverzeichnis. Das Verzeichnis **bases** wurde durch den zuvor ausgeführten Befehl ``python app.py --prepare`` miterzeugt."
+msgstr ""
+
+#: ../getstarted.rst:112
+msgid "Um das zuvor erstellte Modell zu verwenden, importieren wir es in die Base-Klasse und übergeben es an den Parameter ``model``."
+msgstr ""
+
+#: ../getstarted.rst:115
+msgid "In order for the Python interpreter to be able to process the base classes, we have to import them into the __init__.py file in the **bases** directory. The order of the individual imports also determines the order in **decore Front**."
+msgstr ""
+
+#: ../getstarted.rst:117
+msgid "We edit the **__init__.py** file and insert the following code:"
+msgstr ""
+
+#: ../getstarted.rst:124
+msgid "View"
+msgstr ""
+
+#: ../getstarted.rst:125
+msgid "Views werden von der decore-Anwendung verwendet, um die Datensätze im Frontend der Webanwendung zu präsentieren."
+msgstr ""
+
+#: ../getstarted.rst:127
+msgid "Mit dem View-Decorator können wir nun eine Ansichts-Komponente erstellen und sie, unter der zuvor erstellten Basisklasse, einhängen."
+msgstr ""
+
+#: ../getstarted.rst:129
+msgid "Wir bearbeiten nun die Datei **first_base.py** erneut und erweitern den Code wie folgt:"
+msgstr ""
+
+#: ../getstarted.rst:145
+msgid "Dialog"
+msgstr ""
+
+#: ../getstarted.rst:146
+msgid "Dialoge sind die unterstützenden Elemente für Widgets im Frontend der Webanwendung. Sie können Ansichten aber auch untergeordneten Widgets hinzugefügt werden und steuern die Sichtbarkeit und den Anzeigestil von Kindelementen. Dialoge erhalten auch die Kontrolle über die Sendefunktionen der Widgets."
+msgstr ""
+
+#: ../getstarted.rst:148
+msgid "In unserem Fall erstellen wir einen Dialog, um eine neue Person mit Vornamen und Nachnamen anzulegen."
+msgstr ""
+
+#: ../getstarted.rst:150
+msgid "Hier gehen wir ... wieder die Datei **first_base.py** und erweitern den Code wie folgt:"
+msgstr ""
+
+#: ../getstarted.rst:168
+msgid "Widget"
+msgstr ""
+
+#: ../getstarted.rst:169
+msgid "Widgets sind Komponenten, mit denen wir Interaktionen mit dem einzelnen Datensatz durchführen können. Sie können nur zu Dialogen hinzugefügt werden und sind stapelbar."
+msgstr ""
+
+#: ../getstarted.rst:171
+msgid "Was wir jetzt brauchen, ist ein Eingabeformular, um die Daten für die neue Person einzugeben."
+msgstr ""
+
+#: ../getstarted.rst:191
+msgid "Action"
+msgstr ""
+
+#: ../getstarted.rst:192
+msgid "Actions sind Methoden, mit das Frontend mit **decore Base** kommunizieren kann. Sie können zu View und Widgets hinzugefügt werden und sind die einzigen echten Klassenmethoden und werden direkt in der Basis aufgerufen."
+msgstr ""
+
+#: ../getstarted.rst:194
+msgid "Wir brauchen nun eine Aktion, um die Daten der neuen Person zu speichern und erweitern den Code in **first_base.py** wie folgt:"
+msgstr ""
+
+#: ../getstarted.rst:221
+msgid "Um einen Datensatz mit decore Base zu erstellen, müssen wir eine Instanz des Modells erstellen. In unserem Fall **First_model**. Die Instanz wird mit den Daten aus dem Formular gefüllt und dann gespeichert."
+msgstr ""
+
+#: ../getstarted.rst:223
+msgid "Die ID, in Form einer UUID im Textformat, wird automatisch generiert und muss nicht gesondert angegeben werden."
+msgstr ""
+
+#: ../getstarted.rst:226
+msgid "Das Feld **titel** muss bei jeder Datensatzerstellung verwendet werden. Andernfalls wird das Element die Validierung nicht bestehen. Es sollte ausserdem immer eindeutig sein, also keine gleichen Titel in der Datenbank geben."
+msgstr ""
+
+#: ../getstarted.rst:229
+msgid "Ausführung, Entwicklung und Erstellung"
+msgstr ""
+
+#: ../getstarted.rst:231
+msgid "Ausführung"
+msgstr ""
+
+#: ../getstarted.rst:232
+msgid "Um Ihre Anwendung zu starten, führen Sie ``python app.py`` in Ihrem Projekt-Stammverzeichnis aus. Verwenden Sie das Terminal in vscode."
+msgstr ""
+
+#: ../getstarted.rst:234
+#: ../getstarted.rst:240
+msgid "Öffnen Sie den Browser und geben Sie ``http://localhost:5555`` ein."
+msgstr ""
+
+#: ../getstarted.rst:237
+msgid "Entwicklung"
+msgstr ""
+
+#: ../getstarted.rst:238
+msgid "Um Ihre Anwendung zu entwickeln, verwenden Sie Ihren Debugger mit dem Profil ``[dev] decore base development`` in vscode."
+msgstr ""
+
+#: ../getstarted.rst:243
+msgid "Erstellung"
+msgstr ""
+
+#: ../getstarted.rst:244
+msgid "Um Ihre Anwendung zu erstellen, führen Sie ``python app.py --build`` in Ihrem Projekt-Stammverzeichnis aus. Verwenden Sie das Terminal in vscode."
+msgstr ""
+
+#: ../index.rst:13
+msgid "Get started"
+msgstr ""
+
+#: ../index.rst:13
+msgid "Sample"
+msgstr ""
+
+#: ../index.rst:13
+msgid "Docs"
+msgstr ""
+
+#: ../index.rst:-1
+#: ../index.rst:8
+msgid "decore Base | UI fastly"
+msgstr ""
+
+#: ../index.rst:-1
+msgid "index, follow"
+msgstr ""
+
+#: ../index.rst:9
+msgid "Erstellen sie GUI-Dashboard-Anwendungen in Python schnell und einfach."
+msgstr ""
+
+#: ../overview.rst:2
+#: ../overview.rst:2
+msgid "Introduction"
+msgstr ""
+
+#: ../overview.rst:3
+#: ../overview.rst:3
+msgid "decore Base ist ein out-of-the-box \"Python to Vue.js\" Datenanwendungs-Dashboard, das Ihnen hilft, in wenigen einfachen Schritten von der Idee zur Ansicht zu gelangen. Es richtet sich an diejenigen, die sich auf die Ergebnisse ihrer Algorithmen konzentrieren wollen, wissenschaftliche Arbeit leisten oder Lehr- und Lernfunktionen ausführen wollen."
+msgstr ""
+
+#: ../overview.rst:6
+#: ../overview.rst:6
+msgid "Funktionen und Integrationen"
+msgstr ""
+
+#: ../overview.rst:7
+#: ../overview.rst:7
+msgid "Fertige SPA (Single Page Application) mit Vue.js unter Verwendung des Quasar Frameworks (https://github.com/quasarframework/quasar)"
+msgstr ""
+
+#: ../overview.rst:8
+#: ../overview.rst:8
+msgid "Vordefinierte Webapi für Metadaten und Aktionen mit Flask (https://github.com/pallets/flask)"
+msgstr ""
+
+#: ../overview.rst:9
+#: ../overview.rst:9
+msgid "Integriertes ORM für Datenmanagement und Datenbankschnittstellen (SQLite) powered by the great Peewee (https://github.com/coleifer/peewee)"
+msgstr ""
+
+#: ../overview.rst:10
+#: ../overview.rst:10
+msgid "Datensatz-Validierung mit Cerberus (https://github.com/pyeve/cerberus)"
+msgstr ""
+
+#: ../overview.rst:11
+#: ../overview.rst:11
+msgid "Passwortverwaltung mit pykeepass (https://github.com/libkeepass/pykeepass)"
+msgstr ""
+
+#: ../overview.rst:13
+#: ../overview.rst:13
+msgid "Bitte unterstützen Sie diese großartigen Projekte!"
+msgstr ""
+
+#: ../overview.rst:16
+#: ../overview.rst:16
+msgid "Contribution"
+msgstr ""
+
+#: ../overview.rst:17
+#: ../overview.rst:17
+msgid "Die größte Hilfe, die ich im Moment bekommen kann, ist, wenn Sie einen Blick auf das Projekt werfen und mir sagen, was Sie davon halten. Ich bin für jede Kritik dankbar."
+msgstr ""
+
+#: ../overview.rst:19
+#: ../overview.rst:19
+msgid "Wenn Sie etwas in der Dokumentation in Bezug auf Funktionen, Fehler oder Unklarheiten finden, lassen Sie es mich bitte wissen. Bitte benutzen Sie dazu den Problembereich im Repository. `<https://github.com/KemoPanzah/decore_Base/issues>`_"
+msgstr ""
+
+#: ../overview.rst:22
+#: ../overview.rst:22
+msgid "Notes"
+msgstr ""
+
+#: ../overview.rst:23
+#: ../overview.rst:23
+msgid "**decore Base ist derzeit in Arbeit, nur lokal bereitstellbar, nur für Windows verfügbar und noch nicht produktionsbereit**."
+msgstr ""
+
+#: ../overview.rst:25
+#: ../overview.rst:25
+msgid "Die empfohlene IDE ist Visual Studio Code und alle meine Kommentare und Dokumentationen hier beziehen sich auch nur auf vscode."
+msgstr ""
+
+#: ../overview.rst:27
+#: ../overview.rst:27
+msgid "Diese Dokumentation wurde mit Deepl vom Deutschen ins Englische übersetzt."
+msgstr ""
+
+#: ../sample.rst:2
+msgid "Sample application"
+msgstr ""
+
+#: ../sample.rst:3
+msgid "To better understand how decore base works, it is best to look at the sample application. The application represents my continuous development of decore base."
+msgstr ""
+
+#: ../sample.rst:5
+msgid "https://github.com/KemoPanzah/decore_Sample"
+msgstr ""
