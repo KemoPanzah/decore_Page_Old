@@ -7,4 +7,5 @@
     ],
     "languageTool.language": "de",
     "esbonio.sphinx.confDir": "",
+    "html.format.enable": true,
 }

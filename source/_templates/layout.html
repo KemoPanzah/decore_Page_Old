@@ -1,16 +1,23 @@
 {% extends "pydata_sphinx_theme/layout.html" %}
-
 {% block content %}
-
-<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+<script src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"></script>
 <script>
-    kofiWidgetOverlay.draw('decore_base', {
-        'type': 'floating-chat',
-        'floating-chat.donateButton.text': 'Support Dev',
-        'floating-chat.donateButton.background-color': '#075767',
-        'floating-chat.donateButton.text-color': '#fff'
+    kofiWidgetOverlay.draw("decore_base", {
+        type: "floating-chat",
+        "floating-chat.donateButton.text": "Support Dev",
+        "floating-chat.donateButton.background-color": "#075767",
+        "floating-chat.donateButton.text-color": "#fff",
     });
 </script>
 {{ super() }}
+{% endblock %}
 
+{% block docs_main %}
+{% if pagename == root_doc + "HIDE" %}
+<div class="jumbotron">
+    {{ get_number }}
+</div>
+{% endif %}
+
+{{ super() }}
 {% endblock %}
