@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: decore Base \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-28 05:20+0200\n"
+"POT-Creation-Date: 2023-09-28 11:05+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -575,20 +575,19 @@ msgstr ""
 msgid "Um Ihre Anwendung zu erstellen, führen Sie ``python app.py --build`` in Ihrem Projekt-Stammverzeichnis aus. Verwenden Sie das Terminal in vscode."
 msgstr ""
 
-#: ../index.rst:13
+#: ../index.rst:42
 msgid "Get started"
 msgstr ""
 
-#: ../index.rst:13
+#: ../index.rst:42
 msgid "Sample"
 msgstr ""
 
-#: ../index.rst:13
+#: ../index.rst:42
 msgid "Docs"
 msgstr ""
 
 #: ../index.rst:-1
-#: ../index.rst:8
 msgid "decore Base | UI fastly"
 msgstr ""
 
@@ -596,87 +595,75 @@ msgstr ""
 msgid "index, follow"
 msgstr ""
 
-#: ../index.rst:9
+#: ../index.rst:8
 msgid "Erstellen sie GUI-Dashboard-Anwendungen in Python schnell und einfach."
 msgstr ""
 
-#: ../overview.rst:2
-#: ../overview.rst:2
+#: ../index.rst:-1
+msgid "decore base python ui dashboard application"
+msgstr ""
+
+#: ../index.rst:15
 msgid "Introduction"
 msgstr ""
 
-#: ../overview.rst:3
-#: ../overview.rst:3
+#: ../index.rst:16
 msgid "decore Base ist ein out-of-the-box \"Python to Vue.js\" Datenanwendungs-Dashboard, das Ihnen hilft, in wenigen einfachen Schritten von der Idee zur Ansicht zu gelangen. Es richtet sich an diejenigen, die sich auf die Ergebnisse ihrer Algorithmen konzentrieren wollen, wissenschaftliche Arbeit leisten oder Lehr- und Lernfunktionen ausführen wollen."
 msgstr ""
 
-#: ../overview.rst:6
-#: ../overview.rst:6
+#: ../index.rst:19
 msgid "Funktionen und Integrationen"
 msgstr ""
 
-#: ../overview.rst:7
-#: ../overview.rst:7
+#: ../index.rst:20
 msgid "Fertige SPA (Single Page Application) mit Vue.js unter Verwendung des Quasar Frameworks (https://github.com/quasarframework/quasar)"
 msgstr ""
 
-#: ../overview.rst:8
-#: ../overview.rst:8
+#: ../index.rst:21
 msgid "Vordefinierte Webapi für Metadaten und Aktionen mit Flask (https://github.com/pallets/flask)"
 msgstr ""
 
-#: ../overview.rst:9
-#: ../overview.rst:9
+#: ../index.rst:22
 msgid "Integriertes ORM für Datenmanagement und Datenbankschnittstellen (SQLite) powered by the great Peewee (https://github.com/coleifer/peewee)"
 msgstr ""
 
-#: ../overview.rst:10
-#: ../overview.rst:10
+#: ../index.rst:23
 msgid "Datensatz-Validierung mit Cerberus (https://github.com/pyeve/cerberus)"
 msgstr ""
 
-#: ../overview.rst:11
-#: ../overview.rst:11
+#: ../index.rst:24
 msgid "Passwortverwaltung mit pykeepass (https://github.com/libkeepass/pykeepass)"
 msgstr ""
 
-#: ../overview.rst:13
-#: ../overview.rst:13
+#: ../index.rst:26
 msgid "Bitte unterstützen Sie diese großartigen Projekte!"
 msgstr ""
 
-#: ../overview.rst:16
-#: ../overview.rst:16
+#: ../index.rst:29
 msgid "Contribution"
 msgstr ""
 
-#: ../overview.rst:17
-#: ../overview.rst:17
+#: ../index.rst:30
 msgid "Die größte Hilfe, die ich im Moment bekommen kann, ist, wenn Sie einen Blick auf das Projekt werfen und mir sagen, was Sie davon halten. Ich bin für jede Kritik dankbar."
 msgstr ""
 
-#: ../overview.rst:19
-#: ../overview.rst:19
+#: ../index.rst:32
 msgid "Wenn Sie etwas in der Dokumentation in Bezug auf Funktionen, Fehler oder Unklarheiten finden, lassen Sie es mich bitte wissen. Bitte benutzen Sie dazu den Problembereich im Repository. `<https://github.com/KemoPanzah/decore_Base/issues>`_"
 msgstr ""
 
-#: ../overview.rst:22
-#: ../overview.rst:22
+#: ../index.rst:35
 msgid "Notes"
 msgstr ""
 
-#: ../overview.rst:23
-#: ../overview.rst:23
+#: ../index.rst:36
 msgid "**decore Base ist derzeit in Arbeit, nur lokal bereitstellbar, nur für Windows verfügbar und noch nicht produktionsbereit**."
 msgstr ""
 
-#: ../overview.rst:25
-#: ../overview.rst:25
+#: ../index.rst:38
 msgid "Die empfohlene IDE ist Visual Studio Code und alle meine Kommentare und Dokumentationen hier beziehen sich auch nur auf vscode."
 msgstr ""
 
-#: ../overview.rst:27
-#: ../overview.rst:27
+#: ../index.rst:40
 msgid "Diese Dokumentation wurde mit Deepl vom Deutschen ins Englische übersetzt."
 msgstr ""
 
