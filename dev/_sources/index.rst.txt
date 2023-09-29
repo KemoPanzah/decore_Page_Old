@@ -7,12 +7,25 @@
 Erstellen sie GUI-Dashboard-Anwendungen in Python schnell und einfach.
 ======================================================================
 
-.. image:: _images/decore-base-python-ui-dashboard-application.jpg
-   :alt: decore base python ui dashboard application
-   :align: center
+.. raw:: html
 
-Introduction
-------------
+   <!-- Button trigger modal -->
+   <div style="padding:16px">
+      <img class="border" src="_static/images/decore-base-python-ui-dashboard-application.jpg" alt="My Image" data-bs-toggle="modal" data-bs-target="#exampleModal">
+   </div>
+   <!-- Modal -->
+   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered" style="max-width: fit-content;">
+      <div class="modal-content">
+         <div class="modal-body" style="padding:32px;">
+         <img src="_static/images/decore-base-python-ui-dashboard-application.jpg" alt="My Image">
+         <button type="button" class="btn-close btn-light btn-outline-secondary position-absolute" data-bs-dismiss="modal" aria-label="Close" style="top:8px; right:8px"></button>
+         </div>
+      </div>
+   </div>
+   </div>
+   </br>
+
 decore Base ist ein out-of-the-box "Python to Vue.js" Datenanwendungs-Dashboard, das Ihnen hilft, in wenigen einfachen Schritten von der Idee zur Ansicht zu gelangen. Es richtet sich an diejenigen, die sich auf die Ergebnisse ihrer Algorithmen konzentrieren wollen, wissenschaftliche Arbeit leisten oder Lehr- und Lernfunktionen ausführen wollen.
 
 Funktionen und Integrationen
