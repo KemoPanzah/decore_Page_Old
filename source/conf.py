@@ -35,7 +35,7 @@ author = 'Jean Rohark'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ['sphinx.ext.autodoc', 'sphinx_copybutton', 'sphinx_favicon', "sphinx_design", 'sphinx_sitemap', 'sphinx_rst_builder']
+extensions = ['sphinx.ext.autodoc', 'sphinx_copybutton', 'sphinx_favicon', "sphinx_design", 'sphinx_sitemap', 'sphinx_rst_builder', 'sphinxcontrib.mermaid']
 
 locale_dirs = ['_locale/']
 gettext_compact = "docs"

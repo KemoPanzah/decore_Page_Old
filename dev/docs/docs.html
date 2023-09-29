@@ -44,6 +44,8 @@
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <script src="../_static/design-tabs.js"></script>
+    <script src="https://unpkg.com/mermaid@10.2.0/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'docs/docs';</script>
     <link rel="canonical" href="https://www.decore.dev/docs/docs.html" />
     <link rel="index" title="Index" href="../genindex.html" />
@@ -217,6 +219,10 @@ document.write(`
   
 
   
+    <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fa-solid fa-outdent"></span>
+    </label>
+  
 </div>
 
     </nav>
@@ -290,8 +296,7 @@ document.write(`
         <div class="sidebar-primary-item"><nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul class="nav bd-sidenav">
+  <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="decore.html">Decorators</a></li>
 <li class="toctree-l1"><a class="reference internal" href="fields.html">Fields</a></li>
 </ul>
@@ -352,13 +357,24 @@ document.write(`
                   
   <section id="dokumentation">
 <h1>Documentation<a class="headerlink" href="#dokumentation" title="Permalink to this heading">#</a></h1>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="decore.html">Decorators</a></li>
-<li class="toctree-l1"><a class="reference internal" href="fields.html">Fields</a></li>
-</ul>
+<section id="abarbeitungsreihenfolge">
+<h2>Processing sequence<a class="headerlink" href="#abarbeitungsreihenfolge" title="Permalink to this heading">#</a></h2>
+<p>This small overview shows how the frontend processes the individual meta components.</p>
+<div class="mermaid">
+            graph LR;
+ App--&gt;Base;
+ Base--&gt;View;
+ View--&gt;Dialog;
+ View--&gt;Action;
+ Dialog--&gt;Widget;
+ Widget--&gt;Action;
+ Widget--&gt;Sub-Widget;
+ Sub-Widget--&gt;Action
+ Widget--&gt;Sub-Dialog;
+ Sub-Dialog--&gt;Widget;
+        </div><div class="toctree-wrapper compound">
 </div>
+</section>
 </section>
 
 
@@ -369,6 +385,20 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#abarbeitungsreihenfolge">Processing sequence</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

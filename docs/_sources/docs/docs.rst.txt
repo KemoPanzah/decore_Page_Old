@@ -1,6 +1,15 @@
 Dokumentation
 =============
 
+Verarbeitung von Komponenten
+----------------------------
+
+.. mermaid::
+
+   graphLR
+      A[Application] --> B[Base]
+      B --> C[View]
+
 .. toctree::
    :maxdepth: 1
    :caption: Contents:
