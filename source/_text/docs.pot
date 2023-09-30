@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: decore Base \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-29 20:35+0200\n"
+"POT-Creation-Date: 2023-09-30 05:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -243,10 +243,6 @@ msgstr ""
 msgid "Gibt an wie eine Funktion ausgeführt wird. Mit dem Wert ``shot`` wird sie nur einmal ausgeführt. Der Wert ``work`` wird in einem Thread ausgeführt und kann somit Schleifen abarbeiten die niemals enden bis der Main-Thread endet."
 msgstr ""
 
-#: ../docs/docs.rst:23
-msgid "Contents:"
-msgstr ""
-
 #: ../docs/docs.rst:2
 msgid "Dokumentation"
 msgstr ""
@@ -256,7 +252,7 @@ msgid "Abarbeitungsreihenfolge"
 msgstr ""
 
 #: ../docs/docs.rst:7
-msgid "Diese kleine Übersicht stell dar wie das Frontend die einzelnen Meta-Komponenten abarbeitet."
+msgid "Diese kleine Übersicht stellt dar wie das Frontend die einzelnen Meta-Komponenten abarbeitet."
 msgstr ""
 
 #: ../docs/fields.rst:2

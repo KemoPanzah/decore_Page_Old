@@ -4,7 +4,7 @@ Dokumentation
 Abarbeitungsreihenfolge
 -----------------------
 
-Diese kleine Übersicht stell dar wie das Frontend die einzelnen Meta-Komponenten abarbeitet.
+Diese kleine Übersicht stellt dar wie das Frontend die einzelnen Meta-Komponenten abarbeitet.
 
 .. mermaid::
 

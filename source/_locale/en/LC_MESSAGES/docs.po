@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: decore Base\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-29 20:35+0200\n"
+"POT-Creation-Date: 2023-09-30 05:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -377,10 +377,6 @@ msgstr ""
 " only once. The value ``work`` is executed in a thread and can therefore run"
 " loops that never end until the main thread ends."
 
-#: ../docs/docs.rst:23
-msgid "Contents:"
-msgstr "Contents:"
-
 #: ../docs/docs.rst:2
 msgid "Dokumentation"
 msgstr "Documentation"
@@ -391,7 +387,7 @@ msgstr "Processing sequence"
 
 #: ../docs/docs.rst:7
 msgid ""
-"Diese kleine Übersicht stell dar wie das Frontend die einzelnen Meta-"
+"Diese kleine Übersicht stellt dar wie das Frontend die einzelnen Meta-"
 "Komponenten abarbeitet."
 msgstr ""
 "This small overview shows how the frontend processes the individual meta "
@@ -1537,3 +1533,6 @@ msgstr "https://github.com/KemoPanzah/decore_Sample"
 
 #~ msgid "Introduction"
 #~ msgstr "Introduction"
+
+#~ msgid "Contents:"
+#~ msgstr "Contents:"
