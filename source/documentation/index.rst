@@ -63,8 +63,8 @@ Die Function-Instanz liefert die Metadaten für Funktionen die nach dem Init des
 **Darstellung im Frontend**
    - Funktionen werden nicht im Frontend dargestellt oder aufgearbeitet.
 
-Abarbeitungsreihenfolge
------------------------
+Abarbeitungsreihenfolge im Frontend
+-----------------------------------
 Nach dem Öffnen einer Anwendung, dem Anlegen der Base und dem Anlegen weiterer Childs laufen alle Pfade auf die Action zu, die schließlich wieder mit dem Backend kommuniziert, um die Manipulation der Daten zu ermöglichen. Nicht jedes Komponentenobjekt kann einem anderen beliebig zugeordnet werden. Das Frontend arbeitet die einzelnen Objekte nur in einer festen Reihenfolge ab.
 
 Diese Übersicht stellt den Prozess dieser Abarbeitung dar.

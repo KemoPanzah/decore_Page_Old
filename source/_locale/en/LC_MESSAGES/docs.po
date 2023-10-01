@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: decore Base\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-01 20:19+0200\n"
+"POT-Creation-Date: 2023-10-01 20:30+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -752,8 +752,8 @@ msgid "Funktionen werden nicht im Frontend dargestellt oder aufgearbeitet."
 msgstr "Functions are not displayed or processed in the frontend."
 
 #: ../documentation/index.rst:67
-msgid "Abarbeitungsreihenfolge"
-msgstr "Processing sequence"
+msgid "Abarbeitungsreihenfolge im Frontend"
+msgstr "Processing sequence in the frontend"
 
 #: ../documentation/index.rst:68
 msgid ""
