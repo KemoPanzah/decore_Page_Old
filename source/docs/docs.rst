@@ -11,7 +11,8 @@ Diese Übersicht stellt den Prozess dieser Abarbeitung dar.
    :align: center
 
    flowchart TD;
-      AppBase-->View;
+      App-->Base;
+      Base-->View;
       View-->Action;
       View-->Dialog;
       Dialog -->Widget;
@@ -19,10 +20,6 @@ Diese Übersicht stellt den Prozess dieser Abarbeitung dar.
       Widget-->Sub-Dialog;
       Sub-Dialog-->Sub-Widget;
       Sub-Widget-->Action;
-
-   subgraph AppBase;
-      App-->Base;
-   end   
 
    subgraph Dialog;
       First-Dialog-->Tabbed-Dialog;
