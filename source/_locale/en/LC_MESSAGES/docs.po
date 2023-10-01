@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: decore Base\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-30 20:26+0200\n"
+"POT-Creation-Date: 2023-10-01 19:43+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -381,11 +381,197 @@ msgstr ""
 msgid "Dokumentation"
 msgstr "Documentation"
 
-#: ../docs/docs.rst:5
+#: ../docs/docs.rst:3
+msgid ""
+"Um mit decore Base eine lauffähige GUI-Dashboard-Anwendung zu erstellen, "
+"sind vergleichsweise wenige Schritte notwendig. Im Wesentlichen besteht der "
+"Aufbau aus der Definition der Meta-Instanzen und der Definition des "
+"Datenmodells. Die Metadaten werden vom Interpreter durch Einlesen von "
+"dekorierten Funktionen zusammengestellt und als Instanzen im Pool "
+"gespeichert."
+msgstr ""
+"To build an executable GUI dashboard application with decore Base, "
+"comparatively few steps are required. Essentially, the setup consists of the"
+" definition of the meta instances and the definition of the data model. The "
+"metadata is compiled by the interpreter by reading in decorated functions "
+"and stored as instances in the pool."
+
+#: ../docs/docs.rst:6
+msgid "Beschreibung der Meta-Instanzen"
+msgstr "Description of the meta instances"
+
+#: ../docs/docs.rst:7
+msgid ""
+"Meta-Instanzen entahlten die benötigten Typen und Attribute für die "
+"Erstellung der GUI-Elemente. Die Meta-Instanzen werden in der Regel durch "
+"dekorierte Funktionen erstellt. Einen ersten Eindruck bekommen sie im "
+"Abschnitt :doc:`Erste Schritte<../getstarted>`"
+msgstr ""
+"Meta instances contain the required types and attributes for the build of "
+"the GUI elements. The meta-instances are usually built by decorated "
+"functions. You can get a first impression in the section :doc:`First "
+"Steps<../getstarted>`."
+
+#: ../docs/docs.rst:10
+msgid "App"
+msgstr "App"
+
+#: ../docs/docs.rst:11
+msgid ""
+"Die Application-Instanz liefert die Metadaten für den Anwendung. Sie ist die"
+" Wurzel für alles kommende und nimmt nur Basen auf. Die App-Instanz wird "
+"durch den \"Decorator\" :meth:`app "
+"<decore_Base.decore_base.decore.Decore.app>` erstellt."
+msgstr ""
+"The application instance provides the metadata for the application. It is "
+"the root for everything to come and only takes bases. The App instance is "
+"created by the \"decorator\" :meth:`app "
+"<decore_Base.decore_base.decore.Decore.app>`."
+
+#: ../docs/docs.rst:14 ../getstarted.rst:96
+msgid "Base"
+msgstr "Base"
+
+#: ../docs/docs.rst:15
+msgid ""
+"Die Base-Instanz liefert die Metadaten für die Basis. Sie ist das "
+"Trägerelement für die Ansichten. Die Base-Instanz wird durch den "
+"\"Decorator\" :meth:`base <decore_Base.decore_base.decore.Decore.base>` "
+"erstellt."
+msgstr ""
+"The Base instance provides the metadata for the Base. It is the carrier "
+"element for the Views. The base instance is created by the \"decorator\" "
+":meth:`base <decore_Base.decore.Decore.base>`."
+
+#: ../docs/docs.rst:19 ../docs/docs.rst:29 ../docs/docs.rst:39
+#: ../docs/docs.rst:48
+msgid "**Darstellung im Frontend**"
+msgstr "**Display in frontend**"
+
+#: ../docs/docs.rst:18
+msgid ""
+"Die Basis ist im Grunde die freie Fläche die für die Ansichten zur Verfügung"
+" steht."
+msgstr "The Base is basically the free area available for the Views."
+
+#: ../docs/docs.rst:19
+msgid ""
+"In der Navigation wird sie direkt unter Wurzel gelistet sobald sie mehr als "
+"eine Ansicht erhält."
+msgstr ""
+"In the navigation it will be listed directly under Root as soon as it gets "
+"more than one View."
+
+#: ../docs/docs.rst:22 ../getstarted.rst:124
+msgid "View"
+msgstr "View"
+
+#: ../docs/docs.rst:23
+msgid ""
+"Die View-Instanz liefert die Metadaten für die Ansicht. Ihr können Aktionen "
+"und Dialoge untergeordnet werden. Die View-Instanz wird durch den "
+"\"Decorator\" :meth:`view <decore_Base.decore_base.decore.Decore.view>` "
+"erstellt."
+msgstr ""
+"The View instance provides the metadata for the View. Actions and dialogs "
+"can be subordinated to it. The view instance is created by the \"decorator\""
+" :meth:`view <decore_Base.decore.decore.view>`."
+
+#: ../docs/docs.rst:25
+msgid ""
+"Die unterschiedlichen Ansichts-Typen werden im Bereich :doc:`Typen<types>` "
+"näher beschrieben."
+msgstr ""
+"The different View types are described in more detail in the "
+":doc:`types<types>` section."
+
+#: ../docs/docs.rst:28
+msgid "Die Ansicht wird in der Navigation unter der Basis gelistet."
+msgstr "The View is listed under the Base in the navigation."
+
+#: ../docs/docs.rst:29
+msgid "Die Ansicht wird im Ansichtsbereich der Basis gerendert."
+msgstr "The View is rendered in the View area of the Base."
+
+#: ../docs/docs.rst:32 ../getstarted.rst:145
+msgid "Dialog"
+msgstr "Dialog"
+
+#: ../docs/docs.rst:33
+msgid ""
+"Die Dialog-Instanz liefert die Metadaten für den Dialog. Ihr können weiter "
+"Dialog untergeordnet werden die dann in Tabs dargetellt werden. "
+"Hauptsächlich dienen diese aber zum tragen der Widgets. Die Dialog-Instanz "
+"wird durch den \"Decorator\" :meth:`dialog "
+"<decore_Base.decore_base.decore.Decore.dialog>` erstellt."
+msgstr ""
+"The dialog instance provides the metadata for the dialog. Further dialogs "
+"can be subordinated to it, which are then displayed in tabs. Mainly, "
+"however, these serve to carry the widgets. The dialog instance is created by"
+" the \"Decorator\" :meth:`dialog "
+"<decore_Base.decore_base.decore.Decore.dialog>`."
+
+#: ../docs/docs.rst:35
+msgid ""
+"Auch hier gibt es verschiedene Dialog-Typen die im Bereich "
+":doc:`Typen<types>` näher beschrieben werden."
+msgstr ""
+"Here, too, there are different dialog types which are described in more "
+"detail in the :doc:`types<types>` section."
+
+#: ../docs/docs.rst:38
+msgid ""
+"Der Dialog kann in unterschiedlichen Display-Modis dargestellt werden. Zum "
+"Beispiel als Side-Drawer oder als modales Fenster."
+msgstr ""
+"The dialog can be shown in different display modes. For example, as a side-"
+"drawer or as a modal window."
+
+#: ../docs/docs.rst:39
+msgid ""
+"Dieser wird durch die mit dem Aktivator-Attribut bestimmten Postionen oder "
+"Ereignisse aufgerufen."
+msgstr ""
+"This is called by the items or events determined with the activator "
+"attribute."
+
+#: ../docs/docs.rst:42 ../getstarted.rst:168
+msgid "Widget"
+msgstr "Widget"
+
+#: ../docs/docs.rst:43
+msgid ""
+"Die Widget-Instanz liefert die Metadaten für das Widget. Ihr können weitere "
+"Widgets untergeordnet werden die dann gestapelt dargetellt werden. Ein "
+"Widget wird für die Manipulation des Datensatzes oder Datensätze benötigt. "
+"Die Widget-Instanz wird durch den \"Decorator\" :meth:`widget "
+"<decore_Base.decore_base.decore.Decore.widget>` erstellt."
+msgstr ""
+"The widget instance provides the metadata for the widget. It can be "
+"subordinated to other widgets which are then displayed in a stacked manner. "
+"A widget is needed for the manipulation of the dataset or datasets. The "
+"widget instance is created by the \"decorator\" :meth:`widget "
+"<decore_Base.decore_base.decore.Decore.widget>`."
+
+#: ../docs/docs.rst:45
+msgid ""
+"Widgets können beispielsweise ein Editor ein Viewer, Listen, oder Diagramme "
+"sein. Die unterschiedlichen Widget-Typen werden im Bereich "
+":doc:`Typen<types>` näher beschrieben."
+msgstr ""
+"Widgets can be, for example, an editor, a viewer, lists, or diagrams. The "
+"different widget types are described in more detail in the "
+":doc:`types<types>` section."
+
+#: ../docs/docs.rst:48
+msgid "Das Widget wird im Content-Bereich des Dialoges dargestellt."
+msgstr "The widget is displayed in the content area of the dialog."
+
+#: ../docs/docs.rst:51
 msgid "Abarbeitungsreihenfolge"
 msgstr "Processing sequence"
 
-#: ../docs/docs.rst:6
+#: ../docs/docs.rst:52
 msgid ""
 "Nach dem Öffnen einer Anwendung, dem Anlegen der Base und dem Anlegen "
 "weiterer Childs laufen alle Pfade auf die Action zu, die schließlich wieder "
@@ -400,7 +586,7 @@ msgstr ""
 " arbitrarily assigned to another. The frontend processes the individual "
 "objects only in a fixed order."
 
-#: ../docs/docs.rst:8
+#: ../docs/docs.rst:54
 msgid "Diese Übersicht stellt den Prozess dieser Abarbeitung dar."
 msgstr "This overview represents the process of this execution."
 
@@ -526,6 +712,10 @@ msgstr ""
 #: decore_Base.decore_base.classes.decore_fields.PasswordField:4 of
 msgid "A field to store passwords in the keybase and to use them again."
 msgstr "A field to store passwords in the keybase and to use them again."
+
+#: ../docs/types.rst:2
+msgid "Typen"
+msgstr "Types"
 
 #: ../getstarted.rst:-1 ../index.rst:-1
 msgid "create dashbord with python fastly"
@@ -752,10 +942,6 @@ msgstr ""
 "When importing, note that we import everything (*) from the conform_model "
 "namespace to get the field classes as well."
 
-#: ../getstarted.rst:96
-msgid "Base"
-msgstr "Base"
-
 #: ../getstarted.rst:97
 msgid ""
 "Die Basisklassen dienen der decore-Anwendung als Trägerelement für die View-"
@@ -802,10 +988,6 @@ msgstr ""
 msgid "We edit the **__init__.py** file and insert the following code:"
 msgstr "We edit the **__init__.py** file and insert the following code:"
 
-#: ../getstarted.rst:124
-msgid "View"
-msgstr "View"
-
 #: ../getstarted.rst:125
 msgid ""
 "Views werden von der decore-Anwendung verwendet, um die Datensätze im "
@@ -828,10 +1010,6 @@ msgid ""
 " wie folgt:"
 msgstr ""
 "We now edit the **first_base.py** file again and extend the code as follows:"
-
-#: ../getstarted.rst:145
-msgid "Dialog"
-msgstr "Dialog"
 
 #: ../getstarted.rst:146
 msgid ""
@@ -861,10 +1039,6 @@ msgid ""
 msgstr ""
 "Here we go ... again the file **first_base.py** and extend the code as "
 "follows:"
-
-#: ../getstarted.rst:168
-msgid "Widget"
-msgstr "Widget"
 
 #: ../getstarted.rst:169
 msgid ""
@@ -1547,3 +1721,10 @@ msgstr "https://github.com/KemoPanzah/decore_Sample"
 
 #~ msgid "Contents:"
 #~ msgstr "Contents:"
+
+#~ msgid ""
+#~ "**Darstellung im Frontend** - Die Ansicht wird in der Navigation unter der "
+#~ "Basis gelistet. - Die Ansicht wird im Ansichtsbereich der Basis gerendert."
+#~ msgstr ""
+#~ "**Display in frontend** - The View is listed below the Base in the "
+#~ "navigation. - The View is rendered in the View area of the Base."

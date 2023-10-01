@@ -299,6 +299,7 @@ document.write(`
   <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="decore.html">Decorators</a></li>
 <li class="toctree-l1"><a class="reference internal" href="fields.html">Fields</a></li>
+<li class="toctree-l1"><a class="reference internal" href="types.html">Types</a></li>
 </ul>
 </div>
 </nav></div>
@@ -357,6 +358,61 @@ document.write(`
                   
   <section id="dokumentation">
 <h1>Documentation<a class="headerlink" href="#dokumentation" title="Permalink to this heading">#</a></h1>
+<p>To build an executable GUI dashboard application with decore Base, comparatively few steps are required. Essentially, the setup consists of the definition of the meta instances and the definition of the data model. The metadata is compiled by the interpreter by reading in decorated functions and stored as instances in the pool.</p>
+<section id="beschreibung-der-meta-instanzen">
+<h2>Description of the meta instances<a class="headerlink" href="#beschreibung-der-meta-instanzen" title="Permalink to this heading">#</a></h2>
+<p>Meta instances contain the required types and attributes for the build of the GUI elements. The meta-instances are usually built by decorated functions. You can get a first impression in the section <a class="reference internal" href="../getstarted.html"><span class="doc">First Steps</span></a>.</p>
+<section id="app">
+<h3>App<a class="headerlink" href="#app" title="Permalink to this heading">#</a></h3>
+<p>The application instance provides the metadata for the application. It is the root for everything to come and only takes bases. The App instance is created by the “decorator” <a class="reference internal" href="decore.html#decore_Base.decore_base.decore.Decore.app" title="decore_Base.decore_base.decore.Decore.app"><code class="xref py py-meth docutils literal notranslate"><span class="pre">app</span></code></a>.</p>
+</section>
+<section id="base">
+<h3>Base<a class="headerlink" href="#base" title="Permalink to this heading">#</a></h3>
+<p>The Base instance provides the metadata for the Base. It is the carrier element for the Views. The base instance is created by the “decorator” <code class="xref py py-meth docutils literal notranslate"><span class="pre">base</span></code>.</p>
+<dl class="simple">
+<dt><strong>Display in frontend</strong></dt><dd><ul class="simple">
+<li><p>The Base is basically the free area available for the Views.</p></li>
+<li><p>In the navigation it will be listed directly under Root as soon as it gets more than one View.</p></li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="view">
+<h3>View<a class="headerlink" href="#view" title="Permalink to this heading">#</a></h3>
+<p>The View instance provides the metadata for the View. Actions and dialogs can be subordinated to it. The view instance is created by the “decorator” <code class="xref py py-meth docutils literal notranslate"><span class="pre">view</span></code>.</p>
+<p>The different View types are described in more detail in the <a class="reference internal" href="types.html"><span class="doc">types</span></a> section.</p>
+<dl class="simple">
+<dt><strong>Display in frontend</strong></dt><dd><ul class="simple">
+<li><p>The View is listed under the Base in the navigation.</p></li>
+<li><p>The View is rendered in the View area of the Base.</p></li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="dialog">
+<h3>Dialog<a class="headerlink" href="#dialog" title="Permalink to this heading">#</a></h3>
+<p>The dialog instance provides the metadata for the dialog. Further dialogs can be subordinated to it, which are then displayed in tabs. Mainly, however, these serve to carry the widgets. The dialog instance is created by the “Decorator” <a class="reference internal" href="decore.html#decore_Base.decore_base.decore.Decore.dialog" title="decore_Base.decore_base.decore.Decore.dialog"><code class="xref py py-meth docutils literal notranslate"><span class="pre">dialog</span></code></a>.</p>
+<p>Here, too, there are different dialog types which are described in more detail in the <a class="reference internal" href="types.html"><span class="doc">types</span></a> section.</p>
+<dl class="simple">
+<dt><strong>Display in frontend</strong></dt><dd><ul class="simple">
+<li><p>The dialog can be shown in different display modes. For example, as a side-drawer or as a modal window.</p></li>
+<li><p>This is called by the items or events determined with the activator attribute.</p></li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="widget">
+<h3>Widget<a class="headerlink" href="#widget" title="Permalink to this heading">#</a></h3>
+<p>The widget instance provides the metadata for the widget. It can be subordinated to other widgets which are then displayed in a stacked manner. A widget is needed for the manipulation of the dataset or datasets. The widget instance is created by the “decorator” <a class="reference internal" href="decore.html#decore_Base.decore_base.decore.Decore.widget" title="decore_Base.decore_base.decore.Decore.widget"><code class="xref py py-meth docutils literal notranslate"><span class="pre">widget</span></code></a>.</p>
+<p>Widgets can be, for example, an editor, a viewer, lists, or diagrams. The different widget types are described in more detail in the <a class="reference internal" href="types.html"><span class="doc">types</span></a> section.</p>
+<dl class="simple">
+<dt><strong>Display in frontend</strong></dt><dd><ul class="simple">
+<li><p>The widget is displayed in the content area of the dialog.</p></li>
+</ul>
+</dd>
+</dl>
+</section>
+</section>
 <section id="abarbeitungsreihenfolge">
 <h2>Processing sequence<a class="headerlink" href="#abarbeitungsreihenfolge" title="Permalink to this heading">#</a></h2>
 <p>After opening an application, creating the base, and creating more childs, all paths run to the action, which eventually communicates back to the backend to allow manipulation of the data. Not every component object can be arbitrarily assigned to another. The frontend processes the individual objects only in a fixed order.</p>
@@ -411,6 +467,14 @@ end
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#beschreibung-der-meta-instanzen">Description of the meta instances</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#app">App</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#base">Base</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#view">View</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dialog">Dialog</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#widget">Widget</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#abarbeitungsreihenfolge">Processing sequence</a></li>
 </ul>
   </nav></div>
