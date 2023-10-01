@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: decore Base\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-30 05:15+0200\n"
+"POT-Creation-Date: 2023-09-30 20:26+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -385,13 +385,24 @@ msgstr "Documentation"
 msgid "Abarbeitungsreihenfolge"
 msgstr "Processing sequence"
 
-#: ../docs/docs.rst:7
+#: ../docs/docs.rst:6
 msgid ""
-"Diese kleine Übersicht stellt dar wie das Frontend die einzelnen Meta-"
-"Komponenten abarbeitet."
+"Nach dem Öffnen einer Anwendung, dem Anlegen der Base und dem Anlegen "
+"weiterer Childs laufen alle Pfade auf die Action zu, die schließlich wieder "
+"mit dem Backend kommuniziert, um die Manipulation der Daten zu ermöglichen. "
+"Nicht jedes Komponentenobjekt kann einem anderen beliebig zugeordnet werden."
+" Das Frontend arbeitet die einzelnen Objekte nur in einer festen Reihenfolge"
+" ab."
 msgstr ""
-"This small overview shows how the frontend processes the individual meta "
-"components."
+"After opening an application, creating the base, and creating more childs, "
+"all paths run to the action, which eventually communicates back to the "
+"backend to allow manipulation of the data. Not every component object can be"
+" arbitrarily assigned to another. The frontend processes the individual "
+"objects only in a fixed order."
+
+#: ../docs/docs.rst:8
+msgid "Diese Übersicht stellt den Prozess dieser Abarbeitung dar."
+msgstr "This overview represents the process of this execution."
 
 #: ../docs/fields.rst:2
 msgid "Felder"

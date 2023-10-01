@@ -359,20 +359,40 @@ document.write(`
 <h1>Documentation<a class="headerlink" href="#dokumentation" title="Permalink to this heading">#</a></h1>
 <section id="abarbeitungsreihenfolge">
 <h2>Processing sequence<a class="headerlink" href="#abarbeitungsreihenfolge" title="Permalink to this heading">#</a></h2>
-<p>This small overview shows how the frontend processes the individual meta components.</p>
-<div class="mermaid">
-            graph LR;
- App--&gt;Base;
- Base--&gt;View;
- View--&gt;Dialog;
- View--&gt;Action;
- Dialog--&gt;Widget;
- Widget--&gt;Action;
- Widget--&gt;Sub-Widget;
- Sub-Widget--&gt;Action
- Widget--&gt;Sub-Dialog;
- Sub-Dialog--&gt;Widget;
-        </div><div class="toctree-wrapper compound">
+<p>After opening an application, creating the base, and creating more childs, all paths run to the action, which eventually communicates back to the backend to allow manipulation of the data. Not every component object can be arbitrarily assigned to another. The frontend processes the individual objects only in a fixed order.</p>
+<p>This overview represents the process of this execution.</p>
+<div align="center" class="mermaid align-center">
+            flowchart TD;
+   AppBase--&gt;View;
+   View--&gt;Action;
+   View--&gt;Dialog;
+   Dialog --&gt;Widget;
+   Widget--&gt;Action;
+   Widget--&gt;Sub-Dialog;
+   Sub-Dialog--&gt;Sub-Widget;
+   Sub-Widget--&gt;Action;
+
+subgraph AppBase;
+   App--&gt;Base;
+end
+
+subgraph Dialog;
+   First-Dialog--&gt;Tabbed-Dialog;
+end
+
+subgraph Sub-Dialog;
+   First-Sub-Dialog--&gt;Tabbed-Sub-Dialog;
+end
+
+subgraph Widget;
+   First-Widget--&gt;Stacked-Widget;
+end
+
+subgraph Sub-Widget;
+   First-Sub-Widget--&gt;Stacked-Sub-Widget;
+end
+        </div>
+        <div class="toctree-wrapper compound">
 </div>
 </section>
 </section>

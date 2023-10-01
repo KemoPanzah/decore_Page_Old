@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: decore Base \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-30 05:15+0200\n"
+"POT-Creation-Date: 2023-09-30 20:26+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -251,8 +251,12 @@ msgstr ""
 msgid "Abarbeitungsreihenfolge"
 msgstr ""
 
-#: ../docs/docs.rst:7
-msgid "Diese kleine Übersicht stellt dar wie das Frontend die einzelnen Meta-Komponenten abarbeitet."
+#: ../docs/docs.rst:6
+msgid "Nach dem Öffnen einer Anwendung, dem Anlegen der Base und dem Anlegen weiterer Childs laufen alle Pfade auf die Action zu, die schließlich wieder mit dem Backend kommuniziert, um die Manipulation der Daten zu ermöglichen. Nicht jedes Komponentenobjekt kann einem anderen beliebig zugeordnet werden. Das Frontend arbeitet die einzelnen Objekte nur in einer festen Reihenfolge ab."
+msgstr ""
+
+#: ../docs/docs.rst:8
+msgid "Diese Übersicht stellt den Prozess dieser Abarbeitung dar."
 msgstr ""
 
 #: ../docs/fields.rst:2
