@@ -8,11 +8,11 @@ Meta-Instanzen entahlten die benötigten Typen und Attribute für die Erstellung
 
 App
 ~~~
-Die Application-Instanz liefert die Metadaten für den Anwendung. Sie ist die Wurzel für alles kommende und nimmt nur Basen auf. Die App-Instanz wird durch den "Decorator" :meth:`app <decore_Base.decore_base.decore.Decore.app>` erstellt.
+Die Application-Instanz liefert die Metadaten für den Anwendung. Sie ist die Wurzel für alles kommende und nimmt nur Basen auf. Die App-Instanz wird durch den "Decorator" :meth:`app() <decore_Base.decore_base.decore.Decore.app>` erstellt.
 
 Base
 ~~~~
-Die Base-Instanz liefert die Metadaten für die Basis. Sie ist das Trägerelement für die Ansichten. Die Base-Instanz wird durch den "Decorator" :meth:`base <decore_Base.decore_base.decore.Decore.base>` erstellt.
+Die Base-Instanz liefert die Metadaten für die Basis. Sie ist das Trägerelement für die Ansichten. Die Base-Instanz wird durch den "Decorator" :meth:`base() <decore_Base.decore_base.decore.Decore.base>` erstellt.
 
 **Darstellung im Frontend**
    - Die Basis ist im Grunde die freie Fläche die für die Ansichten zur Verfügung steht.
@@ -20,7 +20,7 @@ Die Base-Instanz liefert die Metadaten für die Basis. Sie ist das Trägerelemen
 
 View
 ~~~~
-Die View-Instanz liefert die Metadaten für die Ansicht. Ihr können Aktionen und Dialoge untergeordnet werden. Die View-Instanz wird durch den "Decorator" :meth:`view <decore_Base.decore_base.decore.Decore.view>` erstellt.
+Die View-Instanz liefert die Metadaten für die Ansicht. Ihr können Aktionen und Dialoge untergeordnet werden. Die View-Instanz wird durch den "Decorator" :meth:`view() <decore_Base.decore_base.decore.Decore.view>` erstellt.
 
 Die unterschiedlichen Ansichts-Typen werden im Bereich :doc:`Typen<types>` näher beschrieben.
 
@@ -30,7 +30,7 @@ Die unterschiedlichen Ansichts-Typen werden im Bereich :doc:`Typen<types>` nähe
 
 Dialog
 ~~~~~~
-Die Dialog-Instanz liefert die Metadaten für den Dialog. Ihr können weiter Dialog untergeordnet werden die dann in Tabs dargetellt werden. Hauptsächlich dienen diese aber zum tragen der Widgets. Die Dialog-Instanz wird durch den "Decorator" :meth:`dialog <decore_Base.decore_base.decore.Decore.dialog>` erstellt.
+Die Dialog-Instanz liefert die Metadaten für den Dialog. Ihr können weiter Dialog untergeordnet werden die dann in Tabs dargetellt werden. Hauptsächlich dienen diese aber zum tragen der Widgets. Die Dialog-Instanz wird durch den "Decorator" :meth:`dialog() <decore_Base.decore_base.decore.Decore.dialog>` erstellt.
 
 Auch hier gibt es verschiedene Dialog-Typen die im Bereich :doc:`Typen<types>` näher beschrieben werden.
 
@@ -40,12 +40,28 @@ Auch hier gibt es verschiedene Dialog-Typen die im Bereich :doc:`Typen<types>` n
 
 Widget
 ~~~~~~
-Die Widget-Instanz liefert die Metadaten für das Widget. Ihr können weitere Widgets untergeordnet werden die dann gestapelt dargetellt werden. Ein Widget wird für die Manipulation des Datensatzes oder Datensätze benötigt. Die Widget-Instanz wird durch den "Decorator" :meth:`widget <decore_Base.decore_base.decore.Decore.widget>` erstellt.
+Die Widget-Instanz liefert die Metadaten für das Widget. Ihr können weitere Widgets untergeordnet werden die dann gestapelt dargetellt werden. Ein Widget wird für die Manipulation des Datensatzes oder Datensätze benötigt. Die Widget-Instanz wird durch den "Decorator" :meth:`widget() <decore_Base.decore_base.decore.Decore.widget>` erstellt.
 
 Widgets können beispielsweise ein Editor ein Viewer, Listen, oder Diagramme sein. Die unterschiedlichen Widget-Typen werden im Bereich :doc:`Typen<types>` näher beschrieben. 
 
 **Darstellung im Frontend**
    - Das Widget wird im Content-Bereich des Dialoges dargestellt.
+
+Action
+~~~~~~
+Die Action-Instanz liefert die Metadaten für die Aktion. Sie ist das Schlußlicht in der Prozesskette der Meta-Abarbeitung und dient zum übermitteln der Manipulationen und der Ausführung von Aktionen im Backend. Die Action-Instanz wird durch den "Decorator" :meth:`action() <decore_Base.decore_base.decore.Decore.action>` erstellt.
+
+Auch Aktionen haben Typen die im Bereich :doc:`Typen<types>` näher beschrieben werden. Ein Besispiel wäre der Typ ``submit`` der bestimmte Daten (z.B. Item, Selektierte Items oder Strukturen) an das Backend übermittelt.
+
+**Darstellung im Frontend**
+   - Aktionen können durch das Aktivator-Attribut an unterschiedlichen Stellen im Frontend positioniert werden, haben aber keine tatächliche Darstellung sondern nur Schaltflächen- oder Ereignisgesteuerte Trigger.
+
+Function
+~~~~~~~~
+Die Function-Instanz liefert die Metadaten für Funktionen die nach dem Init des Pools direkt in der Base als Instanz-Methoden ausgeführt werden. Die Function-Instanz wird durch den "Decorator" :meth:`function() <decore_Base.decore_base.decore.Decore.function>` erstellt.
+
+**Darstellung im Frontend**
+   - Funktionen werden nicht im Frontend dargestellt oder aufgearbeitet.
 
 Abarbeitungsreihenfolge
 -----------------------
