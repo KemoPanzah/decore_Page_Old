@@ -58,7 +58,7 @@ Diese Dokumentation wurde mit Deepl vom Deutschen ins Englische übersetzt.
 
    Get started <getstarted>
    Sample <sample>
-   Docs <docs/docs>
+   Documentation <documentation/index>
    
 .. Indices and tables
 .. ------------------

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: decore Base\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-01 20:08+0200\n"
+"POT-Creation-Date: 2023-10-01 20:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.12.1\n"
 
-#: ../docs/decore.rst:2
+#: ../documentation/decore.rst:2
 msgid "Decorators"
 msgstr "Decorators"
 
@@ -377,280 +377,7 @@ msgstr ""
 " only once. The value ``work`` is executed in a thread and can therefore run"
 " loops that never end until the main thread ends."
 
-#: ../docs/docs.rst:2
-msgid "Dokumentation"
-msgstr "Documentation"
-
-#: ../docs/docs.rst:3
-msgid ""
-"Um mit decore Base eine lauffähige GUI-Dashboard-Anwendung zu erstellen, "
-"sind vergleichsweise wenige Schritte notwendig. Im Wesentlichen besteht der "
-"Aufbau aus der Definition der Meta-Instanzen und der Definition des "
-"Datenmodells. Die Metadaten werden vom Interpreter durch Einlesen von "
-"dekorierten Funktionen zusammengestellt und als Instanzen im Pool "
-"gespeichert."
-msgstr ""
-"To build an executable GUI dashboard application with decore Base, "
-"comparatively few steps are required. Essentially, the setup consists of the"
-" definition of the meta instances and the definition of the data model. The "
-"metadata is compiled by the interpreter by reading in decorated functions "
-"and stored as instances in the pool."
-
-#: ../docs/docs.rst:6
-msgid "Beschreibung der Meta-Instanzen"
-msgstr "Description of the meta instances"
-
-#: ../docs/docs.rst:7
-msgid ""
-"Meta-Instanzen entahlten die benötigten Typen und Attribute für die "
-"Erstellung der GUI-Elemente. Die Meta-Instanzen werden in der Regel durch "
-"dekorierte Funktionen erstellt. Einen ersten Eindruck bekommen sie im "
-"Abschnitt :doc:`Erste Schritte<../getstarted>`"
-msgstr ""
-"Meta instances contain the required types and attributes for the build of "
-"the GUI elements. The meta-instances are usually built by decorated "
-"functions. You can get a first impression in the section :doc:`First "
-"Steps<../getstarted>`."
-
-#: ../docs/docs.rst:10
-msgid "App"
-msgstr "App"
-
-#: ../docs/docs.rst:11
-msgid ""
-"Die Application-Instanz liefert die Metadaten für den Anwendung. Sie ist die"
-" Wurzel für alles kommende und nimmt nur Basen auf. Die App-Instanz wird "
-"durch den \"Decorator\" :meth:`app() "
-"<decore_Base.decore_base.decore.Decore.app>` erstellt."
-msgstr ""
-"The application instance provides the metadata for the application. It is "
-"the root for everything to come and only takes bases. The App instance is "
-"created by the \"Decorator\" :meth:`app() "
-"<decore_Base.decore_base.decore.Decore.app>`."
-
-#: ../docs/docs.rst:14 ../getstarted.rst:96
-msgid "Base"
-msgstr "Base"
-
-#: ../docs/docs.rst:15
-msgid ""
-"Die Base-Instanz liefert die Metadaten für die Basis. Sie ist das "
-"Trägerelement für die Ansichten. Die Base-Instanz wird durch den "
-"\"Decorator\" :meth:`base() <decore_Base.decore_base.decore.Decore.base>` "
-"erstellt."
-msgstr ""
-"The Base instance provides the metadata for the Base. It is the carrier "
-"element for the Views. The base instance is created by the \"decorator\" "
-":meth:`base() <decore_Base.decore_base.decore.Decore.base>`."
-
-#: ../docs/docs.rst:19 ../docs/docs.rst:29 ../docs/docs.rst:39
-#: ../docs/docs.rst:48 ../docs/docs.rst:57 ../docs/docs.rst:64
-msgid "**Darstellung im Frontend**"
-msgstr "**Display in frontend**"
-
-#: ../docs/docs.rst:18
-msgid ""
-"Die Basis ist im Grunde die freie Fläche die für die Ansichten zur Verfügung"
-" steht."
-msgstr "The Base is basically the free area available for the Views."
-
-#: ../docs/docs.rst:19
-msgid ""
-"In der Navigation wird sie direkt unter Wurzel gelistet sobald sie mehr als "
-"eine Ansicht erhält."
-msgstr ""
-"In the navigation it will be listed directly under Root as soon as it gets "
-"more than one View."
-
-#: ../docs/docs.rst:22 ../getstarted.rst:124
-msgid "View"
-msgstr "View"
-
-#: ../docs/docs.rst:23
-msgid ""
-"Die View-Instanz liefert die Metadaten für die Ansicht. Ihr können Aktionen "
-"und Dialoge untergeordnet werden. Die View-Instanz wird durch den "
-"\"Decorator\" :meth:`view() <decore_Base.decore_base.decore.Decore.view>` "
-"erstellt."
-msgstr ""
-"The View instance provides the metadata for the View. Actions and dialogs "
-"can be subordinated to it. The view instance is created by the \"Decorator\""
-" :meth:`view() <decore_Base.decore_base.decore.Decore.view>`."
-
-#: ../docs/docs.rst:25
-msgid ""
-"Die unterschiedlichen Ansichts-Typen werden im Bereich :doc:`Typen<types>` "
-"näher beschrieben."
-msgstr ""
-"The different View types are described in more detail in the "
-":doc:`types<types>` section."
-
-#: ../docs/docs.rst:28
-msgid "Die Ansicht wird in der Navigation unter der Basis gelistet."
-msgstr "The View is listed under the Base in the navigation."
-
-#: ../docs/docs.rst:29
-msgid "Die Ansicht wird im Ansichtsbereich der Basis gerendert."
-msgstr "The View is rendered in the View area of the Base."
-
-#: ../docs/docs.rst:32 ../getstarted.rst:145
-msgid "Dialog"
-msgstr "Dialog"
-
-#: ../docs/docs.rst:33
-msgid ""
-"Die Dialog-Instanz liefert die Metadaten für den Dialog. Ihr können weiter "
-"Dialog untergeordnet werden die dann in Tabs dargetellt werden. "
-"Hauptsächlich dienen diese aber zum tragen der Widgets. Die Dialog-Instanz "
-"wird durch den \"Decorator\" :meth:`dialog() "
-"<decore_Base.decore_base.decore.Decore.dialog>` erstellt."
-msgstr ""
-"The dialog instance provides the metadata for the dialog. Further dialogs "
-"can be subordinated to it, which are then displayed in tabs. Mainly, "
-"however, these serve to carry the widgets. The dialog instance is built by "
-"the \"Decorator\" :meth:`dialog() "
-"<decore_Base.decore_base.decore.Decore.dialog>`."
-
-#: ../docs/docs.rst:35
-msgid ""
-"Auch hier gibt es verschiedene Dialog-Typen die im Bereich "
-":doc:`Typen<types>` näher beschrieben werden."
-msgstr ""
-"Here, too, there are different dialog types which are described in more "
-"detail in the :doc:`types<types>` section."
-
-#: ../docs/docs.rst:38
-msgid ""
-"Der Dialog kann in unterschiedlichen Display-Modis dargestellt werden. Zum "
-"Beispiel als Side-Drawer oder als modales Fenster."
-msgstr ""
-"The dialog can be shown in different display modes. For example, as a side-"
-"drawer or as a modal window."
-
-#: ../docs/docs.rst:39
-msgid ""
-"Dieser wird durch die mit dem Aktivator-Attribut bestimmten Postionen oder "
-"Ereignisse aufgerufen."
-msgstr ""
-"This is called by the items or events determined with the activator "
-"attribute."
-
-#: ../docs/docs.rst:42 ../getstarted.rst:168
-msgid "Widget"
-msgstr "Widget"
-
-#: ../docs/docs.rst:43
-msgid ""
-"Die Widget-Instanz liefert die Metadaten für das Widget. Ihr können weitere "
-"Widgets untergeordnet werden die dann gestapelt dargetellt werden. Ein "
-"Widget wird für die Manipulation des Datensatzes oder Datensätze benötigt. "
-"Die Widget-Instanz wird durch den \"Decorator\" :meth:`widget() "
-"<decore_Base.decore_base.decore.Decore.widget>` erstellt."
-msgstr ""
-"The widget instance provides the metadata for the widget. It can be "
-"subordinated to other widgets which are then displayed in a stacked manner. "
-"A widget is needed for the manipulation of the dataset or datasets. The "
-"widget instance is built by the \"Decorator\" :meth:`widget() "
-"<decore_Base.decore_base.decore.Decore.widget>`."
-
-#: ../docs/docs.rst:45
-msgid ""
-"Widgets können beispielsweise ein Editor ein Viewer, Listen, oder Diagramme "
-"sein. Die unterschiedlichen Widget-Typen werden im Bereich "
-":doc:`Typen<types>` näher beschrieben."
-msgstr ""
-"Widgets can be, for example, an editor, a viewer, lists, or diagrams. The "
-"different widget types are described in more detail in the "
-":doc:`types<types>` section."
-
-#: ../docs/docs.rst:48
-msgid "Das Widget wird im Content-Bereich des Dialoges dargestellt."
-msgstr "The widget is displayed in the content area of the dialog."
-
-#: ../docs/docs.rst:51 ../getstarted.rst:191
-msgid "Action"
-msgstr "Action"
-
-#: ../docs/docs.rst:52
-msgid ""
-"Die Action-Instanz liefert die Metadaten für die Aktion. Sie ist das "
-"Schlußlicht in der Prozesskette der Meta-Abarbeitung und dient zum "
-"übermitteln der Manipulationen und der Ausführung von Aktionen im Backend. "
-"Die Action-Instanz wird durch den \"Decorator\" :meth:`action() "
-"<decore_Base.decore_base.decore.Decore.action>` erstellt."
-msgstr ""
-"The action instance provides the metadata for the action. It is the final "
-"link in the meta processing chain and is used to convey the manipulations "
-"and runs of actions in the backend. The action instance is built by the "
-"\"decorator\" :meth:`action() "
-"<decore_Base.decore_base.decore.Decore.action>`."
-
-#: ../docs/docs.rst:54
-msgid ""
-"Auch Aktionen haben Typen die im Bereich :doc:`Typen<types>` näher "
-"beschrieben werden. Ein Besispiel wäre der Typ ``submit`` der bestimmte "
-"Daten (z.B. Item, Selektierte Items oder Strukturen) an das Backend "
-"übermittelt."
-msgstr ""
-"Actions also have types which are described in more detail in the "
-":doc:`types<types>` section. An example would be the type ``submit`` which "
-"transmits certain data (e.g. item, selected items or structures) to the "
-"backend."
-
-#: ../docs/docs.rst:57
-msgid ""
-"Aktionen können durch das Aktivator-Attribut an unterschiedlichen Stellen im"
-" Frontend positioniert werden, haben aber keine tatächliche Darstellung "
-"sondern nur Schaltflächen- oder Ereignisgesteuerte Trigger."
-msgstr ""
-"Actions can be positioned at different places in the frontend by the "
-"activator attribute, but have no actual representation, only button or event"
-" driven triggers."
-
-#: ../docs/docs.rst:60
-msgid "Function"
-msgstr "Function"
-
-#: ../docs/docs.rst:61
-msgid ""
-"Die Function-Instanz liefert die Metadaten für Funktionen die nach dem Init "
-"des Pools direkt in der Base als Instanz-Methoden ausgeführt werden. Die "
-"Function-Instanz wird durch den \"Decorator\" :meth:`function() "
-"<decore_Base.decore_base.decore.Decore.function>` erstellt."
-msgstr ""
-"The Function instance provides the metadata for functions that are run "
-"directly in Base as instance methods after the pool is initiated. The "
-"Function instance is built by the \"Decorator\" :meth:`function() "
-"<decore_Base.decore_base.decore.Decore.function>`."
-
-#: ../docs/docs.rst:64
-msgid "Funktionen werden nicht im Frontend dargestellt oder aufgearbeitet."
-msgstr "Functions are not displayed or processed in the frontend."
-
-#: ../docs/docs.rst:67
-msgid "Abarbeitungsreihenfolge"
-msgstr "Processing sequence"
-
-#: ../docs/docs.rst:68
-msgid ""
-"Nach dem Öffnen einer Anwendung, dem Anlegen der Base und dem Anlegen "
-"weiterer Childs laufen alle Pfade auf die Action zu, die schließlich wieder "
-"mit dem Backend kommuniziert, um die Manipulation der Daten zu ermöglichen. "
-"Nicht jedes Komponentenobjekt kann einem anderen beliebig zugeordnet werden."
-" Das Frontend arbeitet die einzelnen Objekte nur in einer festen Reihenfolge"
-" ab."
-msgstr ""
-"After opening an application, creating the base, and creating more childs, "
-"all paths run to the action, which eventually communicates back to the "
-"backend to allow manipulation of the data. Not every component object can be"
-" arbitrarily assigned to another. The frontend processes the individual "
-"objects only in a fixed order."
-
-#: ../docs/docs.rst:70
-msgid "Diese Übersicht stellt den Prozess dieser Abarbeitung dar."
-msgstr "This overview represents the process of this execution."
-
-#: ../docs/fields.rst:2
+#: ../documentation/fields.rst:2
 msgid "Felder"
 msgstr "Fields"
 
@@ -773,7 +500,281 @@ msgstr ""
 msgid "A field to store passwords in the keybase and to use them again."
 msgstr "A field to store passwords in the keybase and to use them again."
 
-#: ../docs/types.rst:2
+#: ../documentation/index.rst:2
+msgid "Dokumentation"
+msgstr "Documentation"
+
+#: ../documentation/index.rst:3
+msgid ""
+"Um mit decore Base eine lauffähige GUI-Dashboard-Anwendung zu erstellen, "
+"sind vergleichsweise wenige Schritte notwendig. Im Wesentlichen besteht der "
+"Aufbau aus der Definition der Meta-Instanzen und der Definition des "
+"Datenmodells. Die Metadaten werden vom Interpreter durch Einlesen von "
+"dekorierten Funktionen zusammengestellt und als Instanzen im Pool "
+"gespeichert."
+msgstr ""
+"To build an executable GUI dashboard application with decore Base, "
+"comparatively few steps are required. Essentially, the setup consists of the"
+" definition of the meta instances and the definition of the data model. The "
+"metadata is compiled by the interpreter by reading in decorated functions "
+"and stored as instances in the pool."
+
+#: ../documentation/index.rst:6
+msgid "Beschreibung der Meta-Instanzen"
+msgstr "Description of the meta instances"
+
+#: ../documentation/index.rst:7
+msgid ""
+"Meta-Instanzen entahlten die benötigten Typen und Attribute für die "
+"Erstellung der GUI-Elemente. Die Meta-Instanzen werden in der Regel durch "
+"dekorierte Funktionen erstellt. Einen ersten Eindruck bekommen sie im "
+"Abschnitt :doc:`Erste Schritte<../getstarted>`"
+msgstr ""
+"Meta instances contain the required types and attributes for the build of "
+"the GUI elements. The meta-instances are usually built by decorated "
+"functions. You can get a first impression in the section :doc:`First "
+"Steps<../getstarted>`."
+
+#: ../documentation/index.rst:10
+msgid "App"
+msgstr "App"
+
+#: ../documentation/index.rst:11
+msgid ""
+"Die Application-Instanz liefert die Metadaten für den Anwendung. Sie ist die"
+" Wurzel für alles kommende und nimmt nur Basen auf. Die App-Instanz wird "
+"durch den \"Decorator\" :meth:`app() "
+"<decore_Base.decore_base.decore.Decore.app>` erstellt."
+msgstr ""
+"The application instance provides the metadata for the application. It is "
+"the root for everything to come and only takes bases. The App instance is "
+"created by the \"Decorator\" :meth:`app() "
+"<decore_Base.decore_base.decore.Decore.app>`."
+
+#: ../documentation/index.rst:14 ../getstarted.rst:96
+msgid "Base"
+msgstr "Base"
+
+#: ../documentation/index.rst:15
+msgid ""
+"Die Base-Instanz liefert die Metadaten für die Basis. Sie ist das "
+"Trägerelement für die Ansichten. Die Base-Instanz wird durch den "
+"\"Decorator\" :meth:`base() <decore_Base.decore_base.decore.Decore.base>` "
+"erstellt."
+msgstr ""
+"The Base instance provides the metadata for the Base. It is the carrier "
+"element for the Views. The base instance is created by the \"decorator\" "
+":meth:`base() <decore_Base.decore_base.decore.Decore.base>`."
+
+#: ../documentation/index.rst:19 ../documentation/index.rst:29
+#: ../documentation/index.rst:39 ../documentation/index.rst:48
+#: ../documentation/index.rst:57 ../documentation/index.rst:64
+msgid "**Darstellung im Frontend**"
+msgstr "**Display in frontend**"
+
+#: ../documentation/index.rst:18
+msgid ""
+"Die Basis ist im Grunde die freie Fläche die für die Ansichten zur Verfügung"
+" steht."
+msgstr "The Base is basically the free area available for the Views."
+
+#: ../documentation/index.rst:19
+msgid ""
+"In der Navigation wird sie direkt unter Wurzel gelistet sobald sie mehr als "
+"eine Ansicht erhält."
+msgstr ""
+"In the navigation it will be listed directly under Root as soon as it gets "
+"more than one View."
+
+#: ../documentation/index.rst:22 ../getstarted.rst:124
+msgid "View"
+msgstr "View"
+
+#: ../documentation/index.rst:23
+msgid ""
+"Die View-Instanz liefert die Metadaten für die Ansicht. Ihr können Aktionen "
+"und Dialoge untergeordnet werden. Die View-Instanz wird durch den "
+"\"Decorator\" :meth:`view() <decore_Base.decore_base.decore.Decore.view>` "
+"erstellt."
+msgstr ""
+"The View instance provides the metadata for the View. Actions and dialogs "
+"can be subordinated to it. The view instance is created by the \"Decorator\""
+" :meth:`view() <decore_Base.decore_base.decore.Decore.view>`."
+
+#: ../documentation/index.rst:25
+msgid ""
+"Die unterschiedlichen Ansichts-Typen werden im Bereich :doc:`Typen<types>` "
+"näher beschrieben."
+msgstr ""
+"The different View types are described in more detail in the "
+":doc:`types<types>` section."
+
+#: ../documentation/index.rst:28
+msgid "Die Ansicht wird in der Navigation unter der Basis gelistet."
+msgstr "The View is listed under the Base in the navigation."
+
+#: ../documentation/index.rst:29
+msgid "Die Ansicht wird im Ansichtsbereich der Basis gerendert."
+msgstr "The View is rendered in the View area of the Base."
+
+#: ../documentation/index.rst:32 ../getstarted.rst:145
+msgid "Dialog"
+msgstr "Dialog"
+
+#: ../documentation/index.rst:33
+msgid ""
+"Die Dialog-Instanz liefert die Metadaten für den Dialog. Ihr können weiter "
+"Dialog untergeordnet werden die dann in Tabs dargetellt werden. "
+"Hauptsächlich dienen diese aber zum tragen der Widgets. Die Dialog-Instanz "
+"wird durch den \"Decorator\" :meth:`dialog() "
+"<decore_Base.decore_base.decore.Decore.dialog>` erstellt."
+msgstr ""
+"The dialog instance provides the metadata for the dialog. Further dialogs "
+"can be subordinated to it, which are then displayed in tabs. Mainly, "
+"however, these serve to carry the widgets. The dialog instance is built by "
+"the \"Decorator\" :meth:`dialog() "
+"<decore_Base.decore_base.decore.Decore.dialog>`."
+
+#: ../documentation/index.rst:35
+msgid ""
+"Auch hier gibt es verschiedene Dialog-Typen die im Bereich "
+":doc:`Typen<types>` näher beschrieben werden."
+msgstr ""
+"Here, too, there are different dialog types which are described in more "
+"detail in the :doc:`types<types>` section."
+
+#: ../documentation/index.rst:38
+msgid ""
+"Der Dialog kann in unterschiedlichen Display-Modis dargestellt werden. Zum "
+"Beispiel als Side-Drawer oder als modales Fenster."
+msgstr ""
+"The dialog can be shown in different display modes. For example, as a side-"
+"drawer or as a modal window."
+
+#: ../documentation/index.rst:39
+msgid ""
+"Dieser wird durch die mit dem Aktivator-Attribut bestimmten Postionen oder "
+"Ereignisse aufgerufen."
+msgstr ""
+"This is called by the items or events determined with the activator "
+"attribute."
+
+#: ../documentation/index.rst:42 ../getstarted.rst:168
+msgid "Widget"
+msgstr "Widget"
+
+#: ../documentation/index.rst:43
+msgid ""
+"Die Widget-Instanz liefert die Metadaten für das Widget. Ihr können weitere "
+"Widgets untergeordnet werden die dann gestapelt dargetellt werden. Ein "
+"Widget wird für die Manipulation des Datensatzes oder Datensätze benötigt. "
+"Die Widget-Instanz wird durch den \"Decorator\" :meth:`widget() "
+"<decore_Base.decore_base.decore.Decore.widget>` erstellt."
+msgstr ""
+"The widget instance provides the metadata for the widget. It can be "
+"subordinated to other widgets which are then displayed in a stacked manner. "
+"A widget is needed for the manipulation of the dataset or datasets. The "
+"widget instance is built by the \"Decorator\" :meth:`widget() "
+"<decore_Base.decore_base.decore.Decore.widget>`."
+
+#: ../documentation/index.rst:45
+msgid ""
+"Widgets können beispielsweise ein Editor ein Viewer, Listen, oder Diagramme "
+"sein. Die unterschiedlichen Widget-Typen werden im Bereich "
+":doc:`Typen<types>` näher beschrieben."
+msgstr ""
+"Widgets can be, for example, an editor, a viewer, lists, or diagrams. The "
+"different widget types are described in more detail in the "
+":doc:`types<types>` section."
+
+#: ../documentation/index.rst:48
+msgid "Das Widget wird im Content-Bereich des Dialoges dargestellt."
+msgstr "The widget is displayed in the content area of the dialog."
+
+#: ../documentation/index.rst:51 ../getstarted.rst:191
+msgid "Action"
+msgstr "Action"
+
+#: ../documentation/index.rst:52
+msgid ""
+"Die Action-Instanz liefert die Metadaten für die Aktion. Sie ist das "
+"Schlußlicht in der Prozesskette der Meta-Abarbeitung und dient zum "
+"übermitteln der Manipulationen und der Ausführung von Aktionen im Backend. "
+"Die Action-Instanz wird durch den \"Decorator\" :meth:`action() "
+"<decore_Base.decore_base.decore.Decore.action>` erstellt."
+msgstr ""
+"The action instance provides the metadata for the action. It is the final "
+"link in the meta processing chain and is used to convey the manipulations "
+"and runs of actions in the backend. The action instance is built by the "
+"\"decorator\" :meth:`action() "
+"<decore_Base.decore_base.decore.Decore.action>`."
+
+#: ../documentation/index.rst:54
+msgid ""
+"Auch Aktionen haben Typen die im Bereich :doc:`Typen<types>` näher "
+"beschrieben werden. Ein Besispiel wäre der Typ ``submit`` der bestimmte "
+"Daten (z.B. Item, Selektierte Items oder Strukturen) an das Backend "
+"übermittelt."
+msgstr ""
+"Actions also have types which are described in more detail in the "
+":doc:`types<types>` section. An example would be the type ``submit`` which "
+"transmits certain data (e.g. item, selected items or structures) to the "
+"backend."
+
+#: ../documentation/index.rst:57
+msgid ""
+"Aktionen können durch das Aktivator-Attribut an unterschiedlichen Stellen im"
+" Frontend positioniert werden, haben aber keine tatächliche Darstellung "
+"sondern nur Schaltflächen- oder Ereignisgesteuerte Trigger."
+msgstr ""
+"Actions can be positioned at different places in the frontend by the "
+"activator attribute, but have no actual representation, only button or event"
+" driven triggers."
+
+#: ../documentation/index.rst:60
+msgid "Function"
+msgstr "Function"
+
+#: ../documentation/index.rst:61
+msgid ""
+"Die Function-Instanz liefert die Metadaten für Funktionen die nach dem Init "
+"des Pools direkt in der Base als Instanz-Methoden ausgeführt werden. Die "
+"Function-Instanz wird durch den \"Decorator\" :meth:`function() "
+"<decore_Base.decore_base.decore.Decore.function>` erstellt."
+msgstr ""
+"The Function instance provides the metadata for functions that are run "
+"directly in Base as instance methods after the pool is initiated. The "
+"Function instance is built by the \"Decorator\" :meth:`function() "
+"<decore_Base.decore_base.decore.Decore.function>`."
+
+#: ../documentation/index.rst:64
+msgid "Funktionen werden nicht im Frontend dargestellt oder aufgearbeitet."
+msgstr "Functions are not displayed or processed in the frontend."
+
+#: ../documentation/index.rst:67
+msgid "Abarbeitungsreihenfolge"
+msgstr "Processing sequence"
+
+#: ../documentation/index.rst:68
+msgid ""
+"Nach dem Öffnen einer Anwendung, dem Anlegen der Base und dem Anlegen "
+"weiterer Childs laufen alle Pfade auf die Action zu, die schließlich wieder "
+"mit dem Backend kommuniziert, um die Manipulation der Daten zu ermöglichen. "
+"Nicht jedes Komponentenobjekt kann einem anderen beliebig zugeordnet werden."
+" Das Frontend arbeitet die einzelnen Objekte nur in einer festen Reihenfolge"
+" ab."
+msgstr ""
+"After opening an application, creating the base, and creating more childs, "
+"all paths run to the action, which eventually communicates back to the "
+"backend to allow manipulation of the data. Not every component object can be"
+" arbitrarily assigned to another. The frontend processes the individual "
+"objects only in a fixed order."
+
+#: ../documentation/index.rst:70
+msgid "Diese Übersicht stellt den Prozess dieser Abarbeitung dar."
+msgstr "This overview represents the process of this execution."
+
+#: ../documentation/types.rst:2
 msgid "Typen"
 msgstr "Types"
 
@@ -1216,8 +1217,8 @@ msgid "Sample"
 msgstr "Sample"
 
 #: ../index.rst:55
-msgid "Docs"
-msgstr "Docs"
+msgid "Documentation"
+msgstr "Documentation"
 
 #: ../index.rst:-1
 msgid "decore Base | UI fastly"
@@ -1784,3 +1785,6 @@ msgstr "https://github.com/KemoPanzah/decore_Sample"
 #~ msgstr ""
 #~ "**Display in frontend** - The View is listed below the Base in the "
 #~ "navigation. - The View is rendered in the View area of the Base."
+
+#~ msgid "Docs"
+#~ msgstr "Docs"
