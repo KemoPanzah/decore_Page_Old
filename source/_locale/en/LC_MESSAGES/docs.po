@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: decore Base\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-03 09:44+0200\n"
+"POT-Creation-Date: 2023-10-03 13:16+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -44,8 +44,14 @@ msgstr ""
 #: decore_Base.decore_base.classes.decore_fields.BackrefMetaField
 #: decore_Base.decore_base.classes.decore_fields.BooleanField
 #: decore_Base.decore_base.classes.decore_fields.CharField
+#: decore_Base.decore_base.classes.decore_fields.DateField
+#: decore_Base.decore_base.classes.decore_fields.DateTimeField
+#: decore_Base.decore_base.classes.decore_fields.FloatField
+#: decore_Base.decore_base.classes.decore_fields.ForeignKeyField
+#: decore_Base.decore_base.classes.decore_fields.IntegerField
 #: decore_Base.decore_base.classes.decore_fields.ManyToManyField
 #: decore_Base.decore_base.classes.decore_fields.PasswordField
+#: decore_Base.decore_base.classes.decore_fields.TextField
 #: decore_Base.decore_base.decore.Decore.action
 #: decore_Base.decore_base.decore.Decore.app
 #: decore_Base.decore_base.decore.Decore.base
@@ -402,20 +408,33 @@ msgstr ""
 #: decore_Base.decore_base.classes.decore_fields.BackrefMetaField:5
 #: decore_Base.decore_base.classes.decore_fields.BooleanField:6
 #: decore_Base.decore_base.classes.decore_fields.CharField:6
+#: decore_Base.decore_base.classes.decore_fields.DateField:6
+#: decore_Base.decore_base.classes.decore_fields.DateTimeField:6
+#: decore_Base.decore_base.classes.decore_fields.FloatField:6
+#: decore_Base.decore_base.classes.decore_fields.ForeignKeyField:6
+#: decore_Base.decore_base.classes.decore_fields.IntegerField:6
 #: decore_Base.decore_base.classes.decore_fields.ManyToManyField:6
-#: decore_Base.decore_base.classes.decore_fields.PasswordField:8 of
+#: decore_Base.decore_base.classes.decore_fields.PasswordField:8
+#: decore_Base.decore_base.classes.decore_fields.TextField:6 of
 msgid "A human-readable name for the field."
 msgstr "A human-readable name for the field."
 
 #: decore_Base.decore_base.classes.decore_fields.BackrefMetaField:6
 #: decore_Base.decore_base.classes.decore_fields.BooleanField:5
 #: decore_Base.decore_base.classes.decore_fields.CharField:5
+#: decore_Base.decore_base.classes.decore_fields.DateField:5
+#: decore_Base.decore_base.classes.decore_fields.DateTimeField:5
+#: decore_Base.decore_base.classes.decore_fields.FloatField:5
+#: decore_Base.decore_base.classes.decore_fields.ForeignKeyField:7
+#: decore_Base.decore_base.classes.decore_fields.IntegerField:5
 #: decore_Base.decore_base.classes.decore_fields.ManyToManyField:7
-#: decore_Base.decore_base.classes.decore_fields.PasswordField:7 of
+#: decore_Base.decore_base.classes.decore_fields.PasswordField:7
+#: decore_Base.decore_base.classes.decore_fields.TextField:5 of
 msgid "Additional text to be displayed in **decore Front**."
 msgstr "Additional text to be displayed in **decore Front**."
 
 #: decore_Base.decore_base.classes.decore_fields.BackrefMetaField:7
+#: decore_Base.decore_base.classes.decore_fields.ForeignKeyField:8
 #: decore_Base.decore_base.classes.decore_fields.ManyToManyField:8 of
 msgid ""
 "A List of type string. Only the speciefied fields will be displayed in the "
@@ -440,19 +459,75 @@ msgstr "A field to store boolean values."
 
 #: decore_Base.decore_base.classes.decore_fields.BooleanField:3
 #: decore_Base.decore_base.classes.decore_fields.CharField:3
+#: decore_Base.decore_base.classes.decore_fields.DateField:3
+#: decore_Base.decore_base.classes.decore_fields.DateTimeField:3
+#: decore_Base.decore_base.classes.decore_fields.FloatField:3
+#: decore_Base.decore_base.classes.decore_fields.ForeignKeyField:5
+#: decore_Base.decore_base.classes.decore_fields.IntegerField:3
 #: decore_Base.decore_base.classes.decore_fields.ManyToManyField:5
-#: decore_Base.decore_base.classes.decore_fields.PasswordField:6 of
+#: decore_Base.decore_base.classes.decore_fields.PasswordField:6
+#: decore_Base.decore_base.classes.decore_fields.TextField:3 of
 msgid "If True, the field is allowed to be null. Defaults to False."
 msgstr "If True, the field is allowed to be null. Defaults to False."
 
 #: decore_Base.decore_base.classes.decore_fields.BooleanField:4
-#: decore_Base.decore_base.classes.decore_fields.CharField:4 of
+#: decore_Base.decore_base.classes.decore_fields.CharField:4
+#: decore_Base.decore_base.classes.decore_fields.DateField:4
+#: decore_Base.decore_base.classes.decore_fields.DateTimeField:4
+#: decore_Base.decore_base.classes.decore_fields.FloatField:4
+#: decore_Base.decore_base.classes.decore_fields.IntegerField:4
+#: decore_Base.decore_base.classes.decore_fields.TextField:4 of
 msgid "The default value for the field. Defaults to None."
 msgstr "The default value for the field. Defaults to None."
 
 #: decore_Base.decore_base.classes.decore_fields.CharField:1 of
 msgid "A field to store char values."
 msgstr "A field to store char values."
+
+#: decore_Base.decore_base.classes.decore_fields.DateField:1 of
+msgid "A field to store date values."
+msgstr "A field to store date values."
+
+#: decore_Base.decore_base.classes.decore_fields.DateTimeField:1 of
+msgid "A field to store datetime values."
+msgstr "A field to store datetime values."
+
+#: decore_Base.decore_base.classes.decore_fields.FloatField:1 of
+msgid "A field to store float values."
+msgstr "A field to store float values."
+
+#: decore_Base.decore_base.classes.decore_fields.ForeignKeyField:1 of
+msgid "A field to represent a one-to-many relationship between two models."
+msgstr "A field to represent a one-to-many relationship between two models."
+
+#: decore_Base.decore_base.classes.decore_fields.ForeignKeyField:3
+#: decore_Base.decore_base.classes.decore_fields.ManyToManyField:3 of
+msgid "The model to which the relationship is to be established."
+msgstr "The model to which the relationship is to be established."
+
+#: decore_Base.decore_base.classes.decore_fields.ForeignKeyField:4
+#: decore_Base.decore_base.classes.decore_fields.ManyToManyField:4 of
+msgid ""
+"The name of the field in the reference model that represents the "
+"relationship to the model."
+msgstr ""
+"The name of the field in the reference model that represents the "
+"relationship to the model."
+
+#: decore_Base.decore_base.classes.decore_fields.ForeignKeyField:9
+#: decore_Base.decore_base.classes.decore_fields.ManyToManyField:9 of
+msgid ""
+"A dictonary containing a query to be used when querying choices (e.g. in "
+"selection fields in the frontend). The query always refers to the reference "
+"model."
+msgstr ""
+"A dictonary containing a query to be used when querying choices (e.g. in "
+"selection fields in the frontend). The query always refers to the reference "
+"model."
+
+#: decore_Base.decore_base.classes.decore_fields.IntegerField:1 of
+msgid "A field to store integer values."
+msgstr "A field to store integer values."
 
 #: decore_Base.decore_base.classes.decore_fields.ManyToManyField:1 of
 msgid ""
@@ -466,28 +541,6 @@ msgstr ""
 "model is created by decore Base, which represents the relationship between "
 "the two models."
 
-#: decore_Base.decore_base.classes.decore_fields.ManyToManyField:3 of
-msgid "The model to which the relationship is to be established."
-msgstr "The model to which the relationship is to be established."
-
-#: decore_Base.decore_base.classes.decore_fields.ManyToManyField:4 of
-msgid ""
-"The name of the field in the reference model that represents the "
-"relationship to the model."
-msgstr ""
-"The name of the field in the reference model that represents the "
-"relationship to the model."
-
-#: decore_Base.decore_base.classes.decore_fields.ManyToManyField:9 of
-msgid ""
-"A dictonary containing a query to be used when querying choices (e.g. in "
-"selection fields in the frontend). The query always refers to the reference "
-"model."
-msgstr ""
-"A dictonary containing a query to be used when querying choices (e.g. in "
-"selection fields in the frontend). The query always refers to the reference "
-"model."
-
 #: decore_Base.decore_base.classes.decore_fields.PasswordField:2 of
 msgid ""
 "The keybase is a KeePass file and should be protected by setting the correct"
@@ -499,6 +552,10 @@ msgstr ""
 #: decore_Base.decore_base.classes.decore_fields.PasswordField:4 of
 msgid "A field to store passwords in the keybase and to use them again."
 msgstr "A field to store passwords in the keybase and to use them again."
+
+#: decore_Base.decore_base.classes.decore_fields.TextField:1 of
+msgid "A field to store text values."
+msgstr "A field to store text values."
 
 #: ../documentation/index.rst:2
 msgid "Dokumentation"
@@ -532,7 +589,8 @@ msgid ""
 msgstr ""
 "Meta instances contain the required types and attributes for the build of "
 "the GUI elements. The meta-instances are usually built by decorated "
-"functions. You can get a first impression in the section :doc:`Get started<../getstarted>`."
+"functions. You can get a first impression in the section :doc:`Get "
+"started<../getstarted>`."
 
 #: ../documentation/index.rst:10
 msgid "App"

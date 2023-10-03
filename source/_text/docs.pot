@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: decore Base \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-03 09:44+0200\n"
+"POT-Creation-Date: 2023-10-03 13:16+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,8 +31,14 @@ msgstr ""
 #: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.BackrefMetaField:0
 #: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.BooleanField:0
 #: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.CharField:0
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.DateField:0
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.DateTimeField:0
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.FloatField:0
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.ForeignKeyField:0
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.IntegerField:0
 #: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.ManyToManyField:0
 #: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.PasswordField:0
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.TextField:0
 #: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.action:0
 #: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.app:0
 #: ../../../decore_Base/decore_base/decore.py:docstring of decore_Base.decore_base.decore.Decore.base:0
@@ -258,20 +264,33 @@ msgstr ""
 #: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.BackrefMetaField:5
 #: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.BooleanField:6
 #: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.CharField:6
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.DateField:6
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.DateTimeField:6
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.FloatField:6
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.ForeignKeyField:6
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.IntegerField:6
 #: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.ManyToManyField:6
 #: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.PasswordField:8
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.TextField:6
 msgid "A human-readable name for the field."
 msgstr ""
 
 #: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.BackrefMetaField:6
 #: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.BooleanField:5
 #: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.CharField:5
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.DateField:5
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.DateTimeField:5
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.FloatField:5
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.ForeignKeyField:7
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.IntegerField:5
 #: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.ManyToManyField:7
 #: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.PasswordField:7
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.TextField:5
 msgid "Additional text to be displayed in **decore Front**."
 msgstr ""
 
 #: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.BackrefMetaField:7
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.ForeignKeyField:8
 #: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.ManyToManyField:8
 msgid "A List of type string. Only the speciefied fields will be displayed in the filter. If None, all fields will be displayed."
 msgstr ""
@@ -286,13 +305,24 @@ msgstr ""
 
 #: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.BooleanField:3
 #: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.CharField:3
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.DateField:3
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.DateTimeField:3
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.FloatField:3
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.ForeignKeyField:5
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.IntegerField:3
 #: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.ManyToManyField:5
 #: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.PasswordField:6
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.TextField:3
 msgid "If True, the field is allowed to be null. Defaults to False."
 msgstr ""
 
 #: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.BooleanField:4
 #: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.CharField:4
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.DateField:4
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.DateTimeField:4
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.FloatField:4
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.IntegerField:4
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.TextField:4
 msgid "The default value for the field. Defaults to None."
 msgstr ""
 
@@ -300,20 +330,43 @@ msgstr ""
 msgid "A field to store char values."
 msgstr ""
 
-#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.ManyToManyField:1
-msgid "A field to represent a many-to-many relationship between two models. It is a MetaField and does not get a column in the database. However, a through model is created by decore Base, which represents the relationship between the two models."
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.DateField:1
+msgid "A field to store date values."
 msgstr ""
 
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.DateTimeField:1
+msgid "A field to store datetime values."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.FloatField:1
+msgid "A field to store float values."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.ForeignKeyField:1
+msgid "A field to represent a one-to-many relationship between two models."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.ForeignKeyField:3
 #: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.ManyToManyField:3
 msgid "The model to which the relationship is to be established."
 msgstr ""
 
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.ForeignKeyField:4
 #: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.ManyToManyField:4
 msgid "The name of the field in the reference model that represents the relationship to the model."
 msgstr ""
 
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.ForeignKeyField:9
 #: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.ManyToManyField:9
 msgid "A dictonary containing a query to be used when querying choices (e.g. in selection fields in the frontend). The query always refers to the reference model."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.IntegerField:1
+msgid "A field to store integer values."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.ManyToManyField:1
+msgid "A field to represent a many-to-many relationship between two models. It is a MetaField and does not get a column in the database. However, a through model is created by decore Base, which represents the relationship between the two models."
 msgstr ""
 
 #: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.PasswordField:2
@@ -322,6 +375,10 @@ msgstr ""
 
 #: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.PasswordField:4
 msgid "A field to store passwords in the keybase and to use them again."
+msgstr ""
+
+#: ../../../decore_Base/decore_base/classes/decore_fields.py:docstring of decore_Base.decore_base.classes.decore_fields.TextField:1
+msgid "A field to store text values."
 msgstr ""
 
 #: ../documentation/index.rst:2
