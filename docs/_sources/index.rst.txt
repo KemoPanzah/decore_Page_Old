@@ -4,7 +4,7 @@
    :keywords: python gui, decore, python database, python dashboard, python orm, python ui, dashboard creation, python application, ui framework, ui toolkit
    :robots: index, follow
 
-Erstellen sie GUI-Dashboard-Anwendungen in Python schnell und einfach.
+GUI-Dashboard-Anwendungen in Python schnell und einfach.
 ======================================================================
 
 .. raw:: html

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: decore Base\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-01 20:30+0200\n"
+"POT-Creation-Date: 2023-10-03 09:44+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -1229,8 +1229,8 @@ msgid "index, follow"
 msgstr "index, follow"
 
 #: ../index.rst:8
-msgid "Erstellen sie GUI-Dashboard-Anwendungen in Python schnell und einfach."
-msgstr "Build GUI dashboard applications in Python fast and easy."
+msgid "GUI-Dashboard-Anwendungen in Python schnell und einfach."
+msgstr "GUI dashboard applications in Python fast and easy."
 
 #: ../index.rst:29
 msgid ""
