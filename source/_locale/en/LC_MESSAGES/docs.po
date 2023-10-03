@@ -532,8 +532,8 @@ msgid ""
 msgstr ""
 "Meta instances contain the required types and attributes for the build of "
 "the GUI elements. The meta-instances are usually built by decorated "
-"functions. You can get a first impression in the section :doc:`First "
-"Steps<../getstarted>`."
+"functions. You can get a first impression in the section :doc:`Get "
+"started<../getstarted>`."
 
 #: ../documentation/index.rst:10
 msgid "App"
