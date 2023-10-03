@@ -4,6 +4,10 @@ from pathlib import Path
 projects_path = os.path.abspath('../../')
 sys.path.append(projects_path)
 
+# fmt: off
+from decore_Page.source._directives import *
+# fmt: on
+
 def on_build_finished(app, exception):
     from decore_Page.helper import translate
     if not exception:
@@ -13,6 +17,7 @@ def on_build_finished(app, exception):
             translate(Path('source/_locale/en/LC_MESSAGES').joinpath('docs.po'))
 
 def setup(app):
+    app.add_directive('html-modal-image', Html_modal_image)
     app.connect('build-finished', on_build_finished)
 #     from decore_Page.helper import split_rst_file
 #     print ('DECORE_BASE_PATH: '+ projects_path)
@@ -91,4 +96,9 @@ sitemap_url_scheme = "{link}"
 
 html_context = {
     'get_number': 100,
+}
+
+html5_polyglot_doctype = True
+html5_extra_attrs = {
+    '*': ['data-bs-toggle', 'data-bs-target']
 }
