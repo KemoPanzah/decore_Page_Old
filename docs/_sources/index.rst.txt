@@ -11,6 +11,10 @@ GUI-Dashboard-Anwendungen in Python schnell und einfach.
 
 decore Base ist ein out-of-the-box "Python to Vue.js" Datenanwendungs-Dashboard, das Ihnen hilft, in wenigen einfachen Schritten von der Idee zur Ansicht zu gelangen. Es richtet sich an diejenigen, die sich auf die Ergebnisse ihrer Algorithmen konzentrieren wollen, wissenschaftliche Arbeit leisten oder Lehr- und Lernfunktionen ausführen wollen.
 
+Aktuell in Arbeit
+-----------------
+- Einheitliche, navigierbare Dialogsteuerung und Erstellung des relationalen Datensatzes im Widget. (in Arbeit)
+
 Funktionen und Integrationen
 ----------------------------
 - Fertige SPA (Single Page Application) mit Vue.js unter Verwendung des Quasar Frameworks (https://github.com/quasarframework/quasar)

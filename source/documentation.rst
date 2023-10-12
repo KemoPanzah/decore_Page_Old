@@ -83,14 +83,6 @@ Diese Übersicht stellt den Prozess dieser Abarbeitung dar.
       Sub-Dialog-->Sub-Widget;
       Sub-Widget-->Action;
 
-   subgraph Dialog;
-      First-Dialog-->Tabbed-Dialog;
-   end
-
-   subgraph Sub-Dialog;
-      First-Sub-Dialog-->Tabbed-Sub-Dialog;
-   end
-
    subgraph Widget;
       First-Widget-->Stacked-Widget;
    end
