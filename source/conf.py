@@ -98,7 +98,7 @@ html_context = {
     'get_number': 100,
 }
 
-html5_polyglot_doctype = True
-html5_extra_attrs = {
-    '*': ['data-bs-toggle', 'data-bs-target']
-}
+# html5_polyglot_doctype = True
+# html5_extra_attrs = {
+#     '*': ['data-bs-toggle', 'data-bs-target']
+# }

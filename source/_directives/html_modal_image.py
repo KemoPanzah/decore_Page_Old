@@ -7,20 +7,24 @@ from .._classes import Imagic
 class Html_modal_image(Directive):
     has_content = True
     required_arguments = 1
-    optional_arguments = 2
+    optional_arguments = 5
     def run(self):
         # Get the path to the image file
         image_path = None
+        image_path_relative = None
         image_url = None
 
         for index, argument in enumerate(self.arguments):
             if index == 0:
-                t_image_path = argument
+                image_path = argument
             
+            if argument == ':relative:':
+                image_path_relative = self.arguments[index + 1]
+
             if argument == ':url:':
                 image_url = self.arguments[index + 1]
 
-        image = Imagic(t_image_path, image_url)
+        image = Imagic(image_path, p_relative=image_path_relative , p_url=image_url)
 
         root_container = nodes.container()
         html = f'''
