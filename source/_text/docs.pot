@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: decore Base \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-15 12:20+0200\n"
+"POT-Creation-Date: 2023-10-15 12:26+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -374,7 +374,7 @@ msgid "Die nun folgenden Feature- und Änderungs-Aufzählungen sind in decore Ba
 msgstr ""
 
 #: ../features.rst:24
-msgid "Managment & Backend-Anwendung"
+msgid "Management & Backend-Anwendung"
 msgstr ""
 
 #: ../features.rst:25
