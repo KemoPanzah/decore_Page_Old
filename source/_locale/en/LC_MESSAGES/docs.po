@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: decore Base\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-13 15:32+0200\n"
+"POT-Creation-Date: 2023-10-15 12:20+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -297,365 +297,6 @@ msgstr "This overview represents the process of this execution."
 msgid "Decorators"
 msgstr "Decorators"
 
-#: decore_Base.decore_base.decore.Decore:1 of
-msgid ""
-"Diese Klasse stellt alle notwendigen Funktionen zur Verfügung, um eine "
-"decore Anwendung zu definieren. Sie hält auch die Routen für die "
-"Kommunikation mit dem Frontend."
-msgstr ""
-"This class provides all the necessary functions to define a decore "
-"application. It also holds the routes for communication with the frontend."
-
-#: decore_Base.decore_base.decore.Decore.app:1 of
-msgid ""
-"Eine Funktion zum eröffnen einer GUI-Dashboard-Anwendung. Sie wird als "
-"\"Decorator\" verwendet."
-msgstr ""
-"A function to open a GUI dashboard application. It is used as a "
-"\"decorator\"."
-
-#: decore_Base.decore_base.classes.decore_fields.BackrefMetaField
-#: decore_Base.decore_base.classes.decore_fields.BooleanField
-#: decore_Base.decore_base.classes.decore_fields.CharField
-#: decore_Base.decore_base.classes.decore_fields.DateField
-#: decore_Base.decore_base.classes.decore_fields.DateTimeField
-#: decore_Base.decore_base.classes.decore_fields.FloatField
-#: decore_Base.decore_base.classes.decore_fields.ForeignKeyField
-#: decore_Base.decore_base.classes.decore_fields.IntegerField
-#: decore_Base.decore_base.classes.decore_fields.ManyToManyField
-#: decore_Base.decore_base.classes.decore_fields.PasswordField
-#: decore_Base.decore_base.classes.decore_fields.TextField
-#: decore_Base.decore_base.decore.Decore.action
-#: decore_Base.decore_base.decore.Decore.app
-#: decore_Base.decore_base.decore.Decore.base
-#: decore_Base.decore_base.decore.Decore.dialog
-#: decore_Base.decore_base.decore.Decore.function
-#: decore_Base.decore_base.decore.Decore.view
-#: decore_Base.decore_base.decore.Decore.widget of
-msgid "Parameters"
-msgstr "Parameters"
-
-#: decore_Base.decore_base.decore.Decore.app:3 of
-msgid "Der Titel der App."
-msgstr "The title of the app."
-
-#: decore_Base.decore_base.decore.Decore.base:1 of
-msgid ""
-"Eine Funktion zum registrieren einer Basis in der GUI-Dashboard-Anwendung. "
-"Sie wird als \"Decorator\" verwendet."
-msgstr ""
-"A function to register a Base in the GUI dashboard application. It is used "
-"as a \"decorator\"."
-
-#: decore_Base.decore_base.decore.Decore.base:3 of
-msgid ""
-"Die Basis ist das Trägerelement für die Ansicht und die Vorlage für die "
-"Datenquelle im Frontend."
-msgstr ""
-"The Base is the support element for the View and the template for the data "
-"source in the frontend."
-
-#: decore_Base.decore_base.decore.Decore.base:5 of
-msgid "Das Symbol der Basis."
-msgstr "The symbol of the Base."
-
-#: decore_Base.decore_base.decore.Decore.base:6 of
-msgid "Der Titel der Basis."
-msgstr "The title of the Base."
-
-#: decore_Base.decore_base.decore.Decore.base:7 of
-msgid "Die Beschreibung der Basis."
-msgstr "The description of the Base."
-
-#: decore_Base.decore_base.decore.Decore.base:8 of
-msgid "Das Datenmodell der Basis."
-msgstr "The Base data model."
-
-#: decore_Base.decore_base.decore.Decore.view:1 of
-msgid ""
-"Eine Funktion zur Registrierung einer Ansicht. Sie wird als \"Decorator\" "
-"verwendet."
-msgstr "A function for registering a View. It is used as a \"decorator\"."
-
-#: decore_Base.decore_base.decore.Decore.view:3 of
-msgid "Eine Ansicht ist ein Container für die Anzeige von Daten."
-msgstr "A View is a container for displaying data."
-
-#: decore_Base.decore_base.decore.Decore.view:5 of
-msgid ""
-"Die ID des übergeordneten Elements. Nur zu setzen, wenn die Ansicht in einer"
-" anderen Basis gerendert werden soll."
-msgstr ""
-"The ID of the parent element. Only to be set if the View is to be rendered "
-"in a different Base."
-
-#: decore_Base.decore_base.decore.Decore.view:6 of
-msgid "Das Symbol der Ansicht."
-msgstr "The icon of the View."
-
-#: decore_Base.decore_base.decore.Decore.view:7 of
-msgid "Der Titel der Ansicht."
-msgstr "The title of the View."
-
-#: decore_Base.decore_base.decore.Decore.view:8 of
-msgid "Die Beschreibung der Ansicht."
-msgstr "The description of the View."
-
-#: decore_Base.decore_base.decore.Decore.view:9 of
-msgid ""
-"Gibt an wie die Datensätze angezeigt werden. Der Wert ``table`` stellt die "
-"Datensätze in einer Tabelle dar."
-msgstr ""
-"Specifies how the records are displayed. The value ``table`` represents the "
-"records in a table."
-
-#: decore_Base.decore_base.decore.Decore.view:11 of
-msgid "Die Felder, die in der Ansicht angezeigt werden."
-msgstr "The fields that will be displayed in the View."
-
-#: decore_Base.decore_base.decore.Decore.view:12 of
-msgid "Die Filter, die in der Ansicht angezeigt werden."
-msgstr "The filters that are displayed in the View."
-
-#: decore_Base.decore_base.decore.Decore.view:13 of
-msgid "Die Abfrage, die in der Ansicht angezeigt wird."
-msgstr "The query that will be displayed in the View."
-
-#: decore_Base.decore_base.decore.Decore.view:14 of
-msgid ""
-"Wählt die Methode wie die Datensätze der View geladen werden. Der Wert "
-"``client`` lädt alle Datensätze auf einmal und überlässt den Seitenaufbau "
-"dem Frontend."
-msgstr ""
-"Selects the method how the records of the view are loaded. The value "
-"``client`` loads all records at once and leaves the page building to the "
-"frontend."
-
-#: decore_Base.decore_base.decore.Decore.view:16 of
-msgid ""
-"Gibt an wieviele Datensätze auf einer Seite der Ansicht angezeigt werden "
-"sollen. ``16`` ist die Standardeinstellung."
-msgstr ""
-"Specifies how many records to display on one page of the View. ``16`` is the"
-" default setting."
-
-#: decore_Base.decore_base.decore.Decore.dialog:1 of
-msgid ""
-"Eine Funktion zur Registrierung eines Dialogs. Sie wird als \"Decorator\" "
-"verwendet."
-msgstr "A function for registering a dialog. It is used as a \"decorator\"."
-
-#: decore_Base.decore_base.decore.Decore.dialog:3 of
-msgid "Der Dialog ist das Trägerelement für Widgets"
-msgstr "The dialog is the supporting element for widgets"
-
-#: decore_Base.decore_base.decore.Decore.dialog:5 of
-msgid ""
-"Die ID des übergeordneten Elements. Nur zu setzen, wenn der Dialog in einer "
-"Ansicht einer anderen Basis gerendert werden soll."
-msgstr ""
-"The ID of the parent element. To be set only if the dialog is to be rendered"
-" in a View of another Base."
-
-#: decore_Base.decore_base.decore.Decore.dialog:6 of
-msgid "Das Symbol des Dialogs."
-msgstr "The symbol of dialogue."
-
-#: decore_Base.decore_base.decore.Decore.dialog:7 of
-msgid "Der Titel des Dialogs."
-msgstr "The title of the dialogue."
-
-#: decore_Base.decore_base.decore.Decore.dialog:8 of
-msgid "Die Beschreibung des Dialogs."
-msgstr "The description of the dialogue."
-
-#: decore_Base.decore_base.decore.Decore.dialog:9 of
-msgid ""
-"Gibt an wie der Dialog die Widgets darstellen wird. Der Wert ``standard`` "
-"stellt die untergeordneten Widgets und Sub-Widgets untereinander dar."
-msgstr ""
-"Specifies how the dialog will display the widgets. The value ``standard`` "
-"represents the child widgets and sub-widgets one below the other."
-
-#: decore_Base.decore_base.decore.Decore.dialog:11 of
-msgid "Der Anzeigetyp des Dialogs."
-msgstr "The display type of the dialog."
-
-#: decore_Base.decore_base.decore.Decore.dialog:12 of
-msgid ""
-"Der Aktivatortyp des Dialogs. Über den Wert ``none`` wird der Dialog sofort "
-"beim OnLoad Ereignis der View angezeigt. Der Wert ``default`` stellt den "
-"Dialog im Top-Menu der View dar. Der Wert ``context`` stellt den Dialog im "
-"Kontextmenü eines Items der View dar. Der Wert ``click`` zeigt den Dialog "
-"dann an wenn man einen Datensatz anklickt."
-msgstr ""
-"The activator type of the dialog. The value ``none`` displays the dialog "
-"immediately at the view's OnLoad event. The value ``default`` represents the"
-" dialog in the top menu of the view. The value ``context`` represents the "
-"dialog in the context menu of an item of the view. The value ``click`` "
-"displays the dialog when a record is clicked."
-
-#: decore_Base.decore_base.decore.Decore.widget:1 of
-msgid ""
-"Eine Funktion zur Registrierung eines Widgets. Sie wird als \"Decorator\" "
-"verwendet."
-msgstr "A function for registering a widget. It is used as a \"decorator\"."
-
-#: decore_Base.decore_base.decore.Decore.widget:3 of
-msgid ""
-"Ein Widget dient zur Darstellung und Interaktion mit dem Datensatz. Es "
-"erhält die Daten, die der Dialog-Aktivator vorgibt. Der Wert ``none`` "
-"übergibt den letzten Datensatz der Datenbanktabelle. Der Wert ``default`` "
-"übergibt einen nur mit Default-Werten gefüllten Datensatz. Beim Wert "
-"``context`` übergibt es den Datensatz, der im Kontextmenü der Ansicht "
-"ausgewählt wurde. Und ``click`` übergibt den Datensatz, der angeklickt "
-"wurde."
-msgstr ""
-"A widget is used to display and interact with the dataset. It receives the "
-"data that the dialog activator specifies. The value ``none`` passes the last"
-" record of the database table. The value ``default`` passes a dataset filled"
-" only with default values. The value ``context`` passes the record selected "
-"in the context menu of the View. And ``click`` passes the record that was "
-"clicked."
-
-#: decore_Base.decore_base.decore.Decore.widget:5 of
-msgid ""
-"Widgets, welche aus einer fremden Basis einem Dialog zugeordnet werden, "
-"ergänzen die relationalen Felder eines Default-Items der fremden Datenquelle"
-" mit den Daten des aktivierten Items. (Der Satz ist Scheiße zu verstehen, "
-"aber er trifft genau das, was es tut). In der Sample Anwendung verwende ich "
-"das beim Zuweisen von \"Contracts\" zu einer \"Person\"."
-msgstr ""
-"Widgets, which are assigned to a dialog from a foreign Base, supplement the "
-"relational fields of a default item of the foreign data source with the data"
-" of the activated item. (That sentence is crap to understand, but it hits "
-"exactly what it does). In the Sample application, I use this when assigning "
-"\"Contracts\" to a \"Person\"."
-
-#: decore_Base.decore_base.decore.Decore.widget:7 of
-msgid ""
-"Es gibt aber auch Widgets, die mehrere Datensätze darstellen können, wie im "
-"Beispiel davor werden hier auch die Relationen verwendet, um nur Daten "
-"abzubilden, die etwas mit dem gewählten Item zu tun haben."
-msgstr ""
-"But there are also widgets that can display multiple data sets, as in the "
-"example before, the relations are used here to display only data that has "
-"something to do with the selected item."
-
-#: decore_Base.decore_base.decore.Decore.widget:9 of
-msgid ""
-"Die ID des übergeordneten Elements. Nur zu setzen, wenn das Widget in einem "
-"Dialog einer anderen Basis gerendert werden soll."
-msgstr ""
-"The ID of the parent element. To be set only if the widget is to be rendered"
-" in a dialog of another Base."
-
-#: decore_Base.decore_base.decore.Decore.widget:10 of
-msgid "Das Symbol des Widgets."
-msgstr "The icon of the widget."
-
-#: decore_Base.decore_base.decore.Decore.widget:11 of
-msgid "Der Titel des Widgets."
-msgstr "The title of the widget."
-
-#: decore_Base.decore_base.decore.Decore.widget:12 of
-msgid "Die Beschreibung des Widgets."
-msgstr "The description of the widget."
-
-#: decore_Base.decore_base.decore.Decore.widget:13 of
-msgid "Gibt an wie das Widget die Daten darstellen wird."
-msgstr "Specifies how the widget will display the data."
-
-#: decore_Base.decore_base.decore.Decore.widget:15 of
-msgid "Die Felder, die in dem Widget angezeigt werden."
-msgstr "The fields that will be displayed in the widget."
-
-#: decore_Base.decore_base.decore.Decore.action:1 of
-msgid ""
-"Eine Funktion zur Registrierung einer Aktion. Sie wird als \"Decorator\" "
-"verwendet."
-msgstr "A function for registering an action. It is used as a \"decorator\"."
-
-#: decore_Base.decore_base.decore.Decore.action:3 of
-msgid ""
-"Eine Aktion ist die tatsächliche Interaktion zwischen dem Benutzer und dem "
-"Backend."
-msgstr "An action is the actual interaction between the user and the backend."
-
-#: decore_Base.decore_base.decore.Decore.action:5 of
-msgid ""
-"Die ID des übergeordneten Elements. Nur zu setzen, wenn die Aktion in einem "
-"Widget einer anderen Basis gerendert werden soll."
-msgstr ""
-"The ID of the parent element. To be set only if the action is to be rendered"
-" in a widget of another Base."
-
-#: decore_Base.decore_base.decore.Decore.action:6 of
-msgid "Das Symbol der Aktion."
-msgstr "The symbol of action."
-
-#: decore_Base.decore_base.decore.Decore.action:7 of
-msgid "Der Titel der Aktion."
-msgstr "The title of the action."
-
-#: decore_Base.decore_base.decore.Decore.action:8 of
-msgid "Die Beschreibung der Aktion."
-msgstr "The description of the action."
-
-#: decore_Base.decore_base.decore.Decore.action:9 of
-msgid "Gibt an was die Aktion kann."
-msgstr "Indicates what the action can do."
-
-#: decore_Base.decore_base.decore.Decore.action:11 of
-msgid "Gib an, wie die Aktion ausgelöst wird."
-msgstr "Specify how the action is triggered."
-
-#: decore_Base.decore_base.decore.Decore.action:20 of
-msgid ""
-"Die Aktionen durchlaufen ein Modul, welches die erhaltenen Daten aufbereitet"
-" und als Keyword-Parameter an die dekorierte Funktion übergibt. Es ist alles"
-" in den ``kwargs`` zu finden und man macht sich diese einfach verfügbar. Der"
-" Parameter ``item`` ist ein Beispiel dafür und repräsentiert den vom "
-"Frontend zurückgegebenen Datensatz. Um herauszufinden, was alles noch in den"
-" ``kwargs`` steckt, bitte den Debugger benutzen."
-msgstr ""
-"The actions pass through a module that prepares the received data and passes"
-" it as keyword parameters to the decorated function. It is all found in the "
-"``kwargs`` and you just make them available. The ``item`` parameter is an "
-"example of this and represents the dataset returned by the frontend. To find"
-" out what else is in the ``kwargs`` please use the debugger."
-
-#: decore_Base.decore_base.decore.Decore.function:1 of
-msgid ""
-"Eine Funktion zur Registrierung einer Funktion in der übergeordneten Base. "
-"Sie wird als \"Decorator\" verwendet."
-msgstr ""
-"A function to register a function in the parent base. It is used as a "
-"\"decorator\"."
-
-#: decore_Base.decore_base.decore.Decore.function:3 of
-msgid ""
-"Eine Funktion wird direkt nach der Zusammenstellung des Metadaten-Pool "
-"ausgeführt. Mit Funktionen kann man die Logik erweitern, Dinge vorbereiten "
-"oder Hintergrundaufgaben erledigen. Sie agieren als Instanzmethoden der "
-"Basis und erhalten damit den objektorientierten Ansatz."
-msgstr ""
-"A function is executed directly after the metadata pool is compiled. "
-"Functions can be used to extend the logic, prepare things or do background "
-"tasks. They act as instance methods of the Base and thus maintain the "
-"object-oriented approach."
-
-#: decore_Base.decore_base.decore.Decore.function:5 of
-msgid ""
-"Gibt an wie eine Funktion ausgeführt wird. Mit dem Wert ``shot`` wird sie "
-"nur einmal ausgeführt. Der Wert ``work`` wird in einem Thread ausgeführt und"
-" kann somit Schleifen abarbeiten die niemals enden bis der Main-Thread "
-"endet."
-msgstr ""
-"Specifies how a function is run. With the value ``shot`` it will be executed"
-" only once. The value ``work`` is executed in a thread and can therefore run"
-" loops that never end until the main thread ends."
-
 #: ../documentation/fields.rst:2
 msgid "Felder"
 msgstr "Fields"
@@ -677,6 +318,20 @@ msgstr ""
 "The BackRefMetaField is used by the user to represent relationships in the "
 "**decore Front** application. For example, it can be assigned to the filter "
 "or to a form. It is a MetaField and does not get a column in the database."
+
+#: decore_Base.decore_base.classes.decore_fields.BackrefMetaField
+#: decore_Base.decore_base.classes.decore_fields.BooleanField
+#: decore_Base.decore_base.classes.decore_fields.CharField
+#: decore_Base.decore_base.classes.decore_fields.DateField
+#: decore_Base.decore_base.classes.decore_fields.DateTimeField
+#: decore_Base.decore_base.classes.decore_fields.FloatField
+#: decore_Base.decore_base.classes.decore_fields.ForeignKeyField
+#: decore_Base.decore_base.classes.decore_fields.IntegerField
+#: decore_Base.decore_base.classes.decore_fields.ManyToManyField
+#: decore_Base.decore_base.classes.decore_fields.PasswordField
+#: decore_Base.decore_base.classes.decore_fields.TextField of
+msgid "Parameters"
+msgstr "Parameters"
 
 #: decore_Base.decore_base.classes.decore_fields.BackrefMetaField:5
 #: decore_Base.decore_base.classes.decore_fields.BooleanField:6
@@ -842,10 +497,191 @@ msgstr "View"
 msgid "Tabelle"
 msgstr "Table"
 
-#: ../documentation/types.rst:10
+#: ../documentation/types.rst:11
 msgid ""
 "Der Ansichtstyp Tabelle dient der tabellarischen Darstellung von Daten."
 msgstr "The Table view type is used to display data in tabular form."
+
+#: ../features.rst:2 ../index.rst:43
+msgid "Features"
+msgstr "Features"
+
+#: ../features.rst:4
+msgid ""
+"Decore ist eine Biblitothek zur Erstellung von Gui-Dashboard-Anwendungen in "
+"Python die ein vielzahl an Eigenschaften hervorbringt und auch in zukunft "
+"stetig erweitert wird."
+msgstr ""
+"Decore is a library for building gui dashboard applications in Python that "
+"produces a variety of features and will continue to expand in the future."
+
+#: ../features.rst:6
+msgid ""
+"Durch die Verbindung einiger wirklich guter Python-Pakete war die Arbeit an "
+"decore überhaupt erst möglich. Daher möchte ich mich an dieser Stelle bei "
+"den Entwicklern der folgenden Pakete bedanken:"
+msgstr ""
+"By connecting some really good Python packages the work on decore was "
+"possible at all. Therefore, I would like to take this opportunity to thank "
+"the developers of the following packages:"
+
+#: ../features.rst:8
+msgid ""
+"**Peewee** - Ein einfaches, aber leistungsstarkes ORM, das eine flexible "
+"Datenbankanbindung für Python bietet. http://docs.peewee-"
+"orm.com/en/latest/index.html"
+msgstr ""
+"**Peewee** - A simple but powerful ORM that provides flexible database "
+"connectivity for Python. http://docs.peewee-orm.com/en/latest/index.html"
+
+#: ../features.rst:9
+msgid ""
+"**Flask** - Ein Microframework für Python basierend auf Werkzeug, Jinja 2 "
+"und guter Absichten. http://flask.pocoo.org/"
+msgstr ""
+"**Flask** - A microframework for Python based on tool, Jinja 2 and good "
+"intentions. http://flask.pocoo.org/"
+
+#: ../features.rst:10
+msgid ""
+"**Quasar** - Ein Vue.js basiertes Frontend-Framework. https://quasar-"
+"framework.org/"
+msgstr ""
+"**Quasar** - A Vue.js based frontend framework. https://quasar-"
+"framework.org/"
+
+#: ../features.rst:11
+msgid ""
+"**Vue.js** - Ein progressiver, inkrementeller JavaScript-Framework für die "
+"Entwicklung von Benutzeroberflächen. https://vuejs.org/"
+msgstr ""
+"**Vue.js** - A progressive, incremental JavaScript framework for user "
+"interface development. https://vuejs.org/"
+
+#: ../features.rst:12
+msgid ""
+"**Cerberus** - Eine Validierungs-Bibliothek für Python-Datenstrukturen. "
+"http://docs.python-cerberus.org/en/stable/"
+msgstr ""
+"**Cerberus** - A validation library for Python data structures. "
+"http://docs.python-cerberus.org/en/stable/"
+
+#: ../features.rst:13
+msgid ""
+"**pykeepass** - Eine Bibliothek zum interagieren von KeePass 1.x und 2.x "
+"Datenbanken. http://pykeepass.readthedocs.io/en/latest/"
+msgstr ""
+"**pykeepass** - A library to interact KeePass 1.x and 2.x databases. "
+"http://pykeepass.readthedocs.io/en/latest/"
+
+#: ../features.rst:21
+msgid ""
+"Die nun folgenden Feature- und Änderungs-Aufzählungen sind in decore Base "
+"enthalten."
+msgstr ""
+"The feature and change enumerations that now follow are included in decore "
+"Base."
+
+#: ../features.rst:24
+msgid "Managment & Backend-Anwendung"
+msgstr "Managment & Backend Application"
+
+#: ../features.rst:25
+msgid ""
+"schnelle und einfache GUI-Dashboard-Anwendungs Entwicklung mittels Python "
+"Decorators."
+msgstr ""
+"Fast and easy GUI dashboard application development using Python decorators."
+
+#: ../features.rst:26
+msgid ""
+"Erhaltung des Objekt-Orientierten Programmierstils in den Basisklassen, "
+"durch Aktionsufruf als Instanzmethoden."
+msgstr ""
+"Preservation of the object-oriented programming style in the base classes, "
+"through action calls as instance methods."
+
+#: ../features.rst:27
+msgid ""
+"Speichung von wiederverwendbaren Kennwörtern (**keine Benutzerkennwörter**) "
+"in einer KeePass-Datenbank (**Hier wird noch ein Sicherheitsleitfaden "
+"erstellt**)."
+msgstr ""
+"Storage of reusable passwords (**not user passwords**) in a KeePass database"
+" (**still building a security guide**)."
+
+#: ../features.rst:28
+msgid "Fortschrittsmitteilung an das Frontend durch das Actor-Modul."
+msgstr "Progress notification to the frontend by the Actor module."
+
+#: ../features.rst:31
+msgid "ORM Erweiterung & Datenbankanbindung"
+msgstr "ORM extension & database connection"
+
+#: ../features.rst:32
+msgid ""
+"Einfache Datensatzereugung mit angepasster aber vereinfachter Peewee-"
+"Integration."
+msgstr ""
+"Simple record rejection with customized but simplified Peewee integration."
+
+#: ../features.rst:33
+msgid ""
+"Derzeit Mögliche Datenbank-Schnittstellen: SQLite ... (**Hier kommt schon "
+"bald mehr** )."
+msgstr ""
+"Currently Possible Database Interfaces: SQLite ... (**More to come here "
+"soon** )."
+
+#: ../features.rst:34
+msgid ""
+"Relationale Datenbank-Abfragen mit einer eigenen ``query`` Methode in im "
+"decore Model."
+msgstr ""
+"Relational database queries with a custom ``query`` method in the decore "
+"model."
+
+#: ../features.rst:35
+msgid ""
+"Semi-Automatische Datensatzerstellung bei Aktionsverwendung durch das Actor-"
+"Modul."
+msgstr "Semi-automatic record creation on action usage by the Actor module."
+
+#: ../features.rst:36
+msgid ""
+"Intergrierte Feldattribut definierte Standard-Validierung beim speichern "
+"eines Datensatzes."
+msgstr ""
+"Integrated field attribute defined default validation when saving a record."
+
+#: ../features.rst:39
+msgid "Webanwendung (SPA)"
+msgstr "Web application (SPA)"
+
+#: ../features.rst:40
+msgid ""
+"Automatische und generische Erzeugung der GUI-Dashboard-Komponenten anhand "
+"der erfassten Metadaten."
+msgstr ""
+"Automatic and generic generation of GUI dashboard components based on "
+"captured metadata."
+
+#: ../features.rst:41
+msgid ""
+"Vorgefertigtes Layout, reagierende Navigationsleiste und Basisbreich für die"
+" Ansicht-Komponenten."
+msgstr ""
+"Pre-built layout, responsive navigation bar and base range for View "
+"components."
+
+#: ../features.rst:42
+msgid "Dialogsteuerung durch URL-Navigation"
+msgstr "Dialog control through URL navigation"
+
+#: ../features.rst:43
+msgid ""
+"Erzeugung eines relationalen Datensatzes für die weiterverwenung im Widget."
+msgstr "Creation of a relational data set for further use in the widget."
 
 #: ../getstarted.rst:-1 ../index.rst:-1
 msgid "create dashbord with python fastly"
@@ -1320,11 +1156,11 @@ msgstr "Currently in work"
 
 #: ../index.rst:17
 msgid ""
-"Einheitliche, navigierbare Dialogsteuerung und Erstellung des relationalen "
-"Datensatzes im Widget. (in Arbeit)"
+"Sessionsystem, Benutzeranmeldung, Integrierte Benutzer und Rollen und "
+"Berechtigungsgesteuerte Aktionsausführung sowie Komponentenerzeugung"
 msgstr ""
-"Unified, navigable dialog control and build of the relational dataset in the"
-" widget. (in progress)"
+"Session system, user logon, integrated users and roles, and permission-"
+"driven action execution and component generation."
 
 #: ../index.rst:20
 msgid "Funktionen und Integrationen"
@@ -1887,3 +1723,296 @@ msgstr "https://github.com/KemoPanzah/decore_Sample"
 
 #~ msgid "**pip install decore-base**"
 #~ msgstr "**pip install decore-base**"
+
+#~ msgid ""
+#~ "Diese Klasse stellt alle notwendigen Funktionen zur Verfügung, um eine "
+#~ "decore Anwendung zu definieren. Sie hält auch die Routen für die "
+#~ "Kommunikation mit dem Frontend."
+#~ msgstr ""
+#~ "This class provides all the necessary functions to define a decore "
+#~ "application. It also holds the routes for communication with the frontend."
+
+#~ msgid ""
+#~ "Eine Funktion zum eröffnen einer GUI-Dashboard-Anwendung. Sie wird als "
+#~ "\"Decorator\" verwendet."
+#~ msgstr ""
+#~ "A function to open a GUI dashboard application. It is used as a "
+#~ "\"decorator\"."
+
+#~ msgid "Der Titel der App."
+#~ msgstr "The title of the app."
+
+#~ msgid ""
+#~ "Eine Funktion zum registrieren einer Basis in der GUI-Dashboard-Anwendung. "
+#~ "Sie wird als \"Decorator\" verwendet."
+#~ msgstr ""
+#~ "A function to register a Base in the GUI dashboard application. It is used "
+#~ "as a \"decorator\"."
+
+#~ msgid ""
+#~ "Die Basis ist das Trägerelement für die Ansicht und die Vorlage für die "
+#~ "Datenquelle im Frontend."
+#~ msgstr ""
+#~ "The Base is the support element for the View and the template for the data "
+#~ "source in the frontend."
+
+#~ msgid "Das Symbol der Basis."
+#~ msgstr "The symbol of the Base."
+
+#~ msgid "Der Titel der Basis."
+#~ msgstr "The title of the Base."
+
+#~ msgid "Die Beschreibung der Basis."
+#~ msgstr "The description of the Base."
+
+#~ msgid "Das Datenmodell der Basis."
+#~ msgstr "The Base data model."
+
+#~ msgid ""
+#~ "Eine Funktion zur Registrierung einer Ansicht. Sie wird als \"Decorator\" "
+#~ "verwendet."
+#~ msgstr "A function for registering a View. It is used as a \"decorator\"."
+
+#~ msgid "Eine Ansicht ist ein Container für die Anzeige von Daten."
+#~ msgstr "A View is a container for displaying data."
+
+#~ msgid ""
+#~ "Die ID des übergeordneten Elements. Nur zu setzen, wenn die Ansicht in einer"
+#~ " anderen Basis gerendert werden soll."
+#~ msgstr ""
+#~ "The ID of the parent element. Only to be set if the View is to be rendered "
+#~ "in a different Base."
+
+#~ msgid "Das Symbol der Ansicht."
+#~ msgstr "The icon of the View."
+
+#~ msgid "Der Titel der Ansicht."
+#~ msgstr "The title of the View."
+
+#~ msgid "Die Beschreibung der Ansicht."
+#~ msgstr "The description of the View."
+
+#~ msgid ""
+#~ "Gibt an wie die Datensätze angezeigt werden. Der Wert ``table`` stellt die "
+#~ "Datensätze in einer Tabelle dar."
+#~ msgstr ""
+#~ "Specifies how the records are displayed. The value ``table`` represents the "
+#~ "records in a table."
+
+#~ msgid "Die Felder, die in der Ansicht angezeigt werden."
+#~ msgstr "The fields that will be displayed in the View."
+
+#~ msgid "Die Filter, die in der Ansicht angezeigt werden."
+#~ msgstr "The filters that are displayed in the View."
+
+#~ msgid "Die Abfrage, die in der Ansicht angezeigt wird."
+#~ msgstr "The query that will be displayed in the View."
+
+#~ msgid ""
+#~ "Wählt die Methode wie die Datensätze der View geladen werden. Der Wert "
+#~ "``client`` lädt alle Datensätze auf einmal und überlässt den Seitenaufbau "
+#~ "dem Frontend."
+#~ msgstr ""
+#~ "Selects the method how the records of the view are loaded. The value "
+#~ "``client`` loads all records at once and leaves the page building to the "
+#~ "frontend."
+
+#~ msgid ""
+#~ "Gibt an wieviele Datensätze auf einer Seite der Ansicht angezeigt werden "
+#~ "sollen. ``16`` ist die Standardeinstellung."
+#~ msgstr ""
+#~ "Specifies how many records to display on one page of the View. ``16`` is the"
+#~ " default setting."
+
+#~ msgid ""
+#~ "Eine Funktion zur Registrierung eines Dialogs. Sie wird als \"Decorator\" "
+#~ "verwendet."
+#~ msgstr "A function for registering a dialog. It is used as a \"decorator\"."
+
+#~ msgid "Der Dialog ist das Trägerelement für Widgets"
+#~ msgstr "The dialog is the supporting element for widgets"
+
+#~ msgid ""
+#~ "Die ID des übergeordneten Elements. Nur zu setzen, wenn der Dialog in einer "
+#~ "Ansicht einer anderen Basis gerendert werden soll."
+#~ msgstr ""
+#~ "The ID of the parent element. To be set only if the dialog is to be rendered"
+#~ " in a View of another Base."
+
+#~ msgid "Das Symbol des Dialogs."
+#~ msgstr "The symbol of dialogue."
+
+#~ msgid "Der Titel des Dialogs."
+#~ msgstr "The title of the dialogue."
+
+#~ msgid "Die Beschreibung des Dialogs."
+#~ msgstr "The description of the dialogue."
+
+#~ msgid ""
+#~ "Gibt an wie der Dialog die Widgets darstellen wird. Der Wert ``standard`` "
+#~ "stellt die untergeordneten Widgets und Sub-Widgets untereinander dar."
+#~ msgstr ""
+#~ "Specifies how the dialog will display the widgets. The value ``standard`` "
+#~ "represents the child widgets and sub-widgets one below the other."
+
+#~ msgid "Der Anzeigetyp des Dialogs."
+#~ msgstr "The display type of the dialog."
+
+#~ msgid ""
+#~ "Der Aktivatortyp des Dialogs. Über den Wert ``none`` wird der Dialog sofort "
+#~ "beim OnLoad Ereignis der View angezeigt. Der Wert ``default`` stellt den "
+#~ "Dialog im Top-Menu der View dar. Der Wert ``context`` stellt den Dialog im "
+#~ "Kontextmenü eines Items der View dar. Der Wert ``click`` zeigt den Dialog "
+#~ "dann an wenn man einen Datensatz anklickt."
+#~ msgstr ""
+#~ "The activator type of the dialog. The value ``none`` displays the dialog "
+#~ "immediately at the view's OnLoad event. The value ``default`` represents the"
+#~ " dialog in the top menu of the view. The value ``context`` represents the "
+#~ "dialog in the context menu of an item of the view. The value ``click`` "
+#~ "displays the dialog when a record is clicked."
+
+#~ msgid ""
+#~ "Eine Funktion zur Registrierung eines Widgets. Sie wird als \"Decorator\" "
+#~ "verwendet."
+#~ msgstr "A function for registering a widget. It is used as a \"decorator\"."
+
+#~ msgid ""
+#~ "Ein Widget dient zur Darstellung und Interaktion mit dem Datensatz. Es "
+#~ "erhält die Daten, die der Dialog-Aktivator vorgibt. Der Wert ``none`` "
+#~ "übergibt den letzten Datensatz der Datenbanktabelle. Der Wert ``default`` "
+#~ "übergibt einen nur mit Default-Werten gefüllten Datensatz. Beim Wert "
+#~ "``context`` übergibt es den Datensatz, der im Kontextmenü der Ansicht "
+#~ "ausgewählt wurde. Und ``click`` übergibt den Datensatz, der angeklickt "
+#~ "wurde."
+#~ msgstr ""
+#~ "A widget is used to display and interact with the dataset. It receives the "
+#~ "data that the dialog activator specifies. The value ``none`` passes the last"
+#~ " record of the database table. The value ``default`` passes a dataset filled"
+#~ " only with default values. The value ``context`` passes the record selected "
+#~ "in the context menu of the View. And ``click`` passes the record that was "
+#~ "clicked."
+
+#~ msgid ""
+#~ "Widgets, welche aus einer fremden Basis einem Dialog zugeordnet werden, "
+#~ "ergänzen die relationalen Felder eines Default-Items der fremden Datenquelle"
+#~ " mit den Daten des aktivierten Items. (Der Satz ist Scheiße zu verstehen, "
+#~ "aber er trifft genau das, was es tut). In der Sample Anwendung verwende ich "
+#~ "das beim Zuweisen von \"Contracts\" zu einer \"Person\"."
+#~ msgstr ""
+#~ "Widgets, which are assigned to a dialog from a foreign Base, supplement the "
+#~ "relational fields of a default item of the foreign data source with the data"
+#~ " of the activated item. (That sentence is crap to understand, but it hits "
+#~ "exactly what it does). In the Sample application, I use this when assigning "
+#~ "\"Contracts\" to a \"Person\"."
+
+#~ msgid ""
+#~ "Es gibt aber auch Widgets, die mehrere Datensätze darstellen können, wie im "
+#~ "Beispiel davor werden hier auch die Relationen verwendet, um nur Daten "
+#~ "abzubilden, die etwas mit dem gewählten Item zu tun haben."
+#~ msgstr ""
+#~ "But there are also widgets that can display multiple data sets, as in the "
+#~ "example before, the relations are used here to display only data that has "
+#~ "something to do with the selected item."
+
+#~ msgid ""
+#~ "Die ID des übergeordneten Elements. Nur zu setzen, wenn das Widget in einem "
+#~ "Dialog einer anderen Basis gerendert werden soll."
+#~ msgstr ""
+#~ "The ID of the parent element. To be set only if the widget is to be rendered"
+#~ " in a dialog of another Base."
+
+#~ msgid "Das Symbol des Widgets."
+#~ msgstr "The icon of the widget."
+
+#~ msgid "Der Titel des Widgets."
+#~ msgstr "The title of the widget."
+
+#~ msgid "Die Beschreibung des Widgets."
+#~ msgstr "The description of the widget."
+
+#~ msgid "Gibt an wie das Widget die Daten darstellen wird."
+#~ msgstr "Specifies how the widget will display the data."
+
+#~ msgid "Die Felder, die in dem Widget angezeigt werden."
+#~ msgstr "The fields that will be displayed in the widget."
+
+#~ msgid ""
+#~ "Eine Funktion zur Registrierung einer Aktion. Sie wird als \"Decorator\" "
+#~ "verwendet."
+#~ msgstr "A function for registering an action. It is used as a \"decorator\"."
+
+#~ msgid ""
+#~ "Eine Aktion ist die tatsächliche Interaktion zwischen dem Benutzer und dem "
+#~ "Backend."
+#~ msgstr "An action is the actual interaction between the user and the backend."
+
+#~ msgid ""
+#~ "Die ID des übergeordneten Elements. Nur zu setzen, wenn die Aktion in einem "
+#~ "Widget einer anderen Basis gerendert werden soll."
+#~ msgstr ""
+#~ "The ID of the parent element. To be set only if the action is to be rendered"
+#~ " in a widget of another Base."
+
+#~ msgid "Das Symbol der Aktion."
+#~ msgstr "The symbol of action."
+
+#~ msgid "Der Titel der Aktion."
+#~ msgstr "The title of the action."
+
+#~ msgid "Die Beschreibung der Aktion."
+#~ msgstr "The description of the action."
+
+#~ msgid "Gibt an was die Aktion kann."
+#~ msgstr "Indicates what the action can do."
+
+#~ msgid "Gib an, wie die Aktion ausgelöst wird."
+#~ msgstr "Specify how the action is triggered."
+
+#~ msgid ""
+#~ "Die Aktionen durchlaufen ein Modul, welches die erhaltenen Daten aufbereitet"
+#~ " und als Keyword-Parameter an die dekorierte Funktion übergibt. Es ist alles"
+#~ " in den ``kwargs`` zu finden und man macht sich diese einfach verfügbar. Der"
+#~ " Parameter ``item`` ist ein Beispiel dafür und repräsentiert den vom "
+#~ "Frontend zurückgegebenen Datensatz. Um herauszufinden, was alles noch in den"
+#~ " ``kwargs`` steckt, bitte den Debugger benutzen."
+#~ msgstr ""
+#~ "The actions pass through a module that prepares the received data and passes"
+#~ " it as keyword parameters to the decorated function. It is all found in the "
+#~ "``kwargs`` and you just make them available. The ``item`` parameter is an "
+#~ "example of this and represents the dataset returned by the frontend. To find"
+#~ " out what else is in the ``kwargs`` please use the debugger."
+
+#~ msgid ""
+#~ "Eine Funktion zur Registrierung einer Funktion in der übergeordneten Base. "
+#~ "Sie wird als \"Decorator\" verwendet."
+#~ msgstr ""
+#~ "A function to register a function in the parent base. It is used as a "
+#~ "\"decorator\"."
+
+#~ msgid ""
+#~ "Eine Funktion wird direkt nach der Zusammenstellung des Metadaten-Pool "
+#~ "ausgeführt. Mit Funktionen kann man die Logik erweitern, Dinge vorbereiten "
+#~ "oder Hintergrundaufgaben erledigen. Sie agieren als Instanzmethoden der "
+#~ "Basis und erhalten damit den objektorientierten Ansatz."
+#~ msgstr ""
+#~ "A function is executed directly after the metadata pool is compiled. "
+#~ "Functions can be used to extend the logic, prepare things or do background "
+#~ "tasks. They act as instance methods of the Base and thus maintain the "
+#~ "object-oriented approach."
+
+#~ msgid ""
+#~ "Gibt an wie eine Funktion ausgeführt wird. Mit dem Wert ``shot`` wird sie "
+#~ "nur einmal ausgeführt. Der Wert ``work`` wird in einem Thread ausgeführt und"
+#~ " kann somit Schleifen abarbeiten die niemals enden bis der Main-Thread "
+#~ "endet."
+#~ msgstr ""
+#~ "Specifies how a function is run. With the value ``shot`` it will be executed"
+#~ " only once. The value ``work`` is executed in a thread and can therefore run"
+#~ " loops that never end until the main thread ends."
+
+#~ msgid ""
+#~ "Einheitliche, navigierbare Dialogsteuerung und Erstellung des relationalen "
+#~ "Datensatzes im Widget. (in Arbeit)"
+#~ msgstr ""
+#~ "Unified, navigable dialog control and build of the relational dataset in the"
+#~ " widget. (in progress)"

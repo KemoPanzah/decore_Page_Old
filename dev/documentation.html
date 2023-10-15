@@ -159,6 +159,13 @@
                 
 
                     <li class="nav-item">
+                      <a class="nav-link nav-internal" href="features.html">
+                        Features
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
                       <a class="nav-link nav-internal" href="sample.html">
                         Sample
                       </a>
@@ -251,6 +258,13 @@ document.write(`
                     <li class="nav-item">
                       <a class="nav-link nav-internal" href="getstarted.html">
                         Get started
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="features.html">
+                        Features
                       </a>
                     </li>
                 
@@ -364,11 +378,11 @@ document.write(`
 <p>Meta instances contain the required types and attributes for the build of the GUI elements. The meta-instances are usually built by decorated functions. You can get a first impression in the section <a class="reference internal" href="getstarted.html"><span class="doc">Get started</span></a>.</p>
 <section id="app">
 <h3>App<a class="headerlink" href="#app" title="Permalink to this heading">#</a></h3>
-<p>The application instance provides the metadata for the application. It is the root for everything to come and only takes bases. The App instance is created by the “Decorator” <a class="reference internal" href="documentation/decore.html#decore_Base.decore_base.decore.Decore.app" title="decore_Base.decore_base.decore.Decore.app"><code class="xref py py-meth docutils literal notranslate"><span class="pre">app()</span></code></a>.</p>
+<p>The application instance provides the metadata for the application. It is the root for everything to come and only takes bases. The App instance is created by the “Decorator” <code class="xref py py-meth docutils literal notranslate"><span class="pre">app()</span></code>.</p>
 </section>
 <section id="base">
 <h3>Base<a class="headerlink" href="#base" title="Permalink to this heading">#</a></h3>
-<p>The Base instance provides the metadata for the Base. It is the carrier element for the Views. The base instance is created by the “decorator” <a class="reference internal" href="documentation/decore.html#decore_Base.decore_base.decore.Decore.base" title="decore_Base.decore_base.decore.Decore.base"><code class="xref py py-meth docutils literal notranslate"><span class="pre">base()</span></code></a>.</p>
+<p>The Base instance provides the metadata for the Base. It is the carrier element for the Views. The base instance is created by the “decorator” <code class="xref py py-meth docutils literal notranslate"><span class="pre">base()</span></code>.</p>
 <dl class="simple">
 <dt><strong>Display in frontend</strong></dt><dd><ul class="simple">
 <li><p>The Base is basically the free area available for the Views.</p></li>
@@ -379,7 +393,7 @@ document.write(`
 </section>
 <section id="view">
 <h3>View<a class="headerlink" href="#view" title="Permalink to this heading">#</a></h3>
-<p>The View instance provides the metadata for the View. Actions and dialogs can be subordinated to it. The view instance is created by the “Decorator” <a class="reference internal" href="documentation/decore.html#decore_Base.decore_base.decore.Decore.view" title="decore_Base.decore_base.decore.Decore.view"><code class="xref py py-meth docutils literal notranslate"><span class="pre">view()</span></code></a>.</p>
+<p>The View instance provides the metadata for the View. Actions and dialogs can be subordinated to it. The view instance is created by the “Decorator” <code class="xref py py-meth docutils literal notranslate"><span class="pre">view()</span></code>.</p>
 <p>The different View types are described in more detail in the <a class="reference internal" href="documentation/types.html"><span class="doc">types</span></a> section.</p>
 <dl class="simple">
 <dt><strong>Display in frontend</strong></dt><dd><ul class="simple">
@@ -391,7 +405,7 @@ document.write(`
 </section>
 <section id="dialog">
 <h3>Dialog<a class="headerlink" href="#dialog" title="Permalink to this heading">#</a></h3>
-<p>The dialog instance provides the metadata for the dialog. Further dialogs can be subordinated to it, which are then displayed in tabs. Mainly, however, these serve to carry the widgets. The dialog instance is built by the “Decorator” <a class="reference internal" href="documentation/decore.html#decore_Base.decore_base.decore.Decore.dialog" title="decore_Base.decore_base.decore.Decore.dialog"><code class="xref py py-meth docutils literal notranslate"><span class="pre">dialog()</span></code></a>.</p>
+<p>The dialog instance provides the metadata for the dialog. Further dialogs can be subordinated to it, which are then displayed in tabs. Mainly, however, these serve to carry the widgets. The dialog instance is built by the “Decorator” <code class="xref py py-meth docutils literal notranslate"><span class="pre">dialog()</span></code>.</p>
 <p>Again, there are different dialog types which are described in more detail in the <a class="reference internal" href="documentation/types.html"><span class="doc">types</span></a> section.</p>
 <dl class="simple">
 <dt><strong>Display in frontend</strong></dt><dd><ul class="simple">
@@ -403,7 +417,7 @@ document.write(`
 </section>
 <section id="widget">
 <h3>Widget<a class="headerlink" href="#widget" title="Permalink to this heading">#</a></h3>
-<p>The widget instance provides the metadata for the widget. It can be subordinated to other widgets which are then displayed in a stacked manner. A widget is needed for the manipulation of the dataset or datasets. The widget instance is built by the “Decorator” <a class="reference internal" href="documentation/decore.html#decore_Base.decore_base.decore.Decore.widget" title="decore_Base.decore_base.decore.Decore.widget"><code class="xref py py-meth docutils literal notranslate"><span class="pre">widget()</span></code></a>.</p>
+<p>The widget instance provides the metadata for the widget. It can be subordinated to other widgets which are then displayed in a stacked manner. A widget is needed for the manipulation of the dataset or datasets. The widget instance is built by the “Decorator” <code class="xref py py-meth docutils literal notranslate"><span class="pre">widget()</span></code>.</p>
 <p>Widgets can be, for example, an editor, a viewer, lists, or diagrams. The different widget types are described in more detail in the <a class="reference internal" href="documentation/types.html"><span class="doc">types</span></a> section.</p>
 <dl class="simple">
 <dt><strong>Display in frontend</strong></dt><dd><ul class="simple">
@@ -414,7 +428,7 @@ document.write(`
 </section>
 <section id="action">
 <h3>Action<a class="headerlink" href="#action" title="Permalink to this heading">#</a></h3>
-<p>The action instance provides the metadata for the action. It is the final link in the meta processing chain and is used to convey the manipulations and runs of actions in the backend. The action instance is built by the “decorator” <a class="reference internal" href="documentation/decore.html#decore_Base.decore_base.decore.Decore.action" title="decore_Base.decore_base.decore.Decore.action"><code class="xref py py-meth docutils literal notranslate"><span class="pre">action()</span></code></a>.</p>
+<p>The action instance provides the metadata for the action. It is the final link in the meta processing chain and is used to convey the manipulations and runs of actions in the backend. The action instance is built by the “decorator” <code class="xref py py-meth docutils literal notranslate"><span class="pre">action()</span></code>.</p>
 <p>Actions also have types which are described in more detail in the <a class="reference internal" href="documentation/types.html"><span class="doc">types</span></a> section. An example would be the type <code class="docutils literal notranslate"><span class="pre">submit</span></code> which transmits certain data (e.g. item, selected items or structures) to the backend.</p>
 <dl class="simple">
 <dt><strong>Display in frontend</strong></dt><dd><ul class="simple">
@@ -425,7 +439,7 @@ document.write(`
 </section>
 <section id="function">
 <h3>Function<a class="headerlink" href="#function" title="Permalink to this heading">#</a></h3>
-<p>The Function instance provides the metadata for functions that are run directly in Base as instance methods after the pool is initiated. The Function instance is built by the “Decorator” <a class="reference internal" href="documentation/decore.html#decore_Base.decore_base.decore.Decore.function" title="decore_Base.decore_base.decore.Decore.function"><code class="xref py py-meth docutils literal notranslate"><span class="pre">function()</span></code></a>.</p>
+<p>The Function instance provides the metadata for functions that are run directly in Base as instance methods after the pool is initiated. The Function instance is built by the “Decorator” <code class="xref py py-meth docutils literal notranslate"><span class="pre">function()</span></code>.</p>
 <dl class="simple">
 <dt><strong>Display in frontend</strong></dt><dd><ul class="simple">
 <li><p>Functions are not displayed or processed in the frontend.</p></li>

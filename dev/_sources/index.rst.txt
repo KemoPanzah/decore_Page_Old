@@ -14,7 +14,7 @@ decore Base ist ein out-of-the-box "Python to Vue.js" Datenanwendungs-Dashboard,
 
 Aktuell in Arbeit
 -----------------
-- Einheitliche, navigierbare Dialogsteuerung und Erstellung des relationalen Datensatzes im Widget. (in Arbeit)
+* Sessionsystem, Benutzeranmeldung, Integrierte Benutzer und Rollen und Berechtigungsgesteuerte Aktionsausführung sowie Komponentenerzeugung
 
 Funktionen und Integrationen
 ----------------------------
@@ -45,6 +45,7 @@ Diese Dokumentation wurde mit Deepl vom Deutschen ins Englische übersetzt.
    :maxdepth: 1
 
    Get started <getstarted>
+   Features <features>
    Sample <sample>
    Documentation <documentation>
    
