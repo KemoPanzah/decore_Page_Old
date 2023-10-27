@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: decore Base\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-15 12:26+0200\n"
+"POT-Creation-Date: 2023-10-27 13:26+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -142,8 +142,8 @@ msgstr "Dialog"
 
 #: ../documentation.rst:33
 msgid ""
-"Die Dialog-Instanz liefert die Metadaten für den Dialog. Ihr können weiter "
-"Dialog untergeordnet werden die dann in Tabs dargetellt werden. "
+"Die Dialog-Instanz liefert die Metadaten für den Dialog. Ihr können weitere "
+"Dialoge untergeordnet werden die dann in Tabs dargetellt werden. "
 "Hauptsächlich dienen diese aber zum tragen der Widgets. Die Dialog-Instanz "
 "wird durch den \"Decorator\" :meth:`dialog() "
 "<decore_Base.decore_base.decore.Decore.dialog>` erstellt."
@@ -335,7 +335,7 @@ msgstr "Parameters"
 
 #: decore_Base.decore_base.classes.decore_fields.BackrefMetaField:5
 #: decore_Base.decore_base.classes.decore_fields.BooleanField:6
-#: decore_Base.decore_base.classes.decore_fields.CharField:6
+#: decore_Base.decore_base.classes.decore_fields.CharField:7
 #: decore_Base.decore_base.classes.decore_fields.DateField:6
 #: decore_Base.decore_base.classes.decore_fields.DateTimeField:6
 #: decore_Base.decore_base.classes.decore_fields.FloatField:6
@@ -349,7 +349,7 @@ msgstr "A human-readable name for the field."
 
 #: decore_Base.decore_base.classes.decore_fields.BackrefMetaField:6
 #: decore_Base.decore_base.classes.decore_fields.BooleanField:5
-#: decore_Base.decore_base.classes.decore_fields.CharField:5
+#: decore_Base.decore_base.classes.decore_fields.CharField:6
 #: decore_Base.decore_base.classes.decore_fields.DateField:5
 #: decore_Base.decore_base.classes.decore_fields.DateTimeField:5
 #: decore_Base.decore_base.classes.decore_fields.FloatField:5
@@ -399,7 +399,7 @@ msgid "If True, the field is allowed to be null. Defaults to False."
 msgstr "If True, the field is allowed to be null. Defaults to False."
 
 #: decore_Base.decore_base.classes.decore_fields.BooleanField:4
-#: decore_Base.decore_base.classes.decore_fields.CharField:4
+#: decore_Base.decore_base.classes.decore_fields.CharField:5
 #: decore_Base.decore_base.classes.decore_fields.DateField:4
 #: decore_Base.decore_base.classes.decore_fields.DateTimeField:4
 #: decore_Base.decore_base.classes.decore_fields.FloatField:4
@@ -411,6 +411,12 @@ msgstr "The default value for the field. Defaults to None."
 #: decore_Base.decore_base.classes.decore_fields.CharField:1 of
 msgid "A field to store char values."
 msgstr "A field to store char values."
+
+#: decore_Base.decore_base.classes.decore_fields.CharField:4 of
+msgid ""
+"If True, the field must be unique in database table. Defaults to False."
+msgstr ""
+"If True, the field must be unique in database table. Defaults to False."
 
 #: decore_Base.decore_base.classes.decore_fields.DateField:1 of
 msgid "A field to store date values."

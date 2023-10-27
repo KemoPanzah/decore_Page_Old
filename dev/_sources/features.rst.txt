@@ -20,8 +20,8 @@ Durch die Verbindung einiger wirklich guter Python-Pakete war die Arbeit an deco
 
 Die nun folgenden Feature- und Änderungs-Aufzählungen sind in decore Base enthalten.
 
-Managment & Backend-Anwendung
------------------------------
+Management & Backend-Anwendung
+------------------------------
 - schnelle und einfache GUI-Dashboard-Anwendungs Entwicklung mittels Python Decorators.
 - Erhaltung des Objekt-Orientierten Programmierstils in den Basisklassen, durch Aktionsufruf als Instanzmethoden.
 - Speichung von wiederverwendbaren Kennwörtern (**keine Benutzerkennwörter**) in einer KeePass-Datenbank (**Hier wird noch ein Sicherheitsleitfaden erstellt**).

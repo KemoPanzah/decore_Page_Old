@@ -74,6 +74,7 @@ Diese Übersicht stellt den Prozess dieser Abarbeitung dar.
 
    flowchart TD;
       App-->Base;
+      App-->Dialog;
       Base-->View;
       View-->Action;
       View-->Dialog;

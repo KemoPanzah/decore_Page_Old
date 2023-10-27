@@ -30,7 +30,7 @@ Die unterschiedlichen Ansichts-Typen werden im Bereich :doc:`Typen<documentation
 
 Dialog
 ~~~~~~
-Die Dialog-Instanz liefert die Metadaten für den Dialog. Ihr können weiter Dialog untergeordnet werden die dann in Tabs dargetellt werden. Hauptsächlich dienen diese aber zum tragen der Widgets. Die Dialog-Instanz wird durch den "Decorator" :meth:`dialog() <decore_Base.decore_base.decore.Decore.dialog>` erstellt.
+Die Dialog-Instanz liefert die Metadaten für den Dialog. Ihr können weitere Dialoge untergeordnet werden die dann in Tabs dargetellt werden. Hauptsächlich dienen diese aber zum tragen der Widgets. Die Dialog-Instanz wird durch den "Decorator" :meth:`dialog() <decore_Base.decore_base.decore.Decore.dialog>` erstellt.
 
 Auch hier gibt es verschiedene Dialog-Typen die im Bereich :doc:`Typen<documentation/types>` näher beschrieben werden.
 
@@ -74,6 +74,7 @@ Diese Übersicht stellt den Prozess dieser Abarbeitung dar.
 
    flowchart TD;
       App-->Base;
+      App-->Dialog;
       Base-->View;
       View-->Action;
       View-->Dialog;
