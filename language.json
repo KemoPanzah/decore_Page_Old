@@ -14,5 +14,9 @@
     "Parent path": {
         "en": "Parent path",
         "de": "\u00fcbergeordneter Pfad"
+    },
+    "Owner ID": {
+        "en": "Owner ID",
+        "de": "Eigent\u00fcmer-ID"
     }
 }

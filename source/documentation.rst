@@ -92,6 +92,59 @@ Diese Übersicht stellt den Prozess dieser Abarbeitung dar.
       First-Sub-Widget-->Stacked-Sub-Widget;
    end
 
+Relationale Datenverarbeitung im Widget
+---------------------------------------
+Die Datenverarbeitung und Datensatzgenerierung in den Widgets ist ein wichtiger Bestandteil der Anwendung und wird hier als Relationale-Datenverarbeitung bezeichnet. Diese Generierung des bearbeitbaren Datensatzes, wird erstens durch den Aktivator und zweitens durch die Datenquelle der Ansicht in Beziehung zur Datenquelle des Widgets gesteuert. Damit wird ermöglicht, einen Dialog mit weiter im Kontext der eigentlichen Selektion zu erweitern und detailreicher zu gestalten.
+
+Folgender Chart beschreibt diesen Prozess.
+
+Legende:
+   - **Item**
+      - empty = ein leerer Datensatz wird generiert. (keine Default-Werte).
+      - first = der erste Datensatz der Widget-Quelle wird als Datensatz geladen.
+      - last = der letzte Datensatz der Widget-Quelle wird als Datensatz geladen.
+      - default = ein neuer Datensatz mit Default-Werten der Widget-Quelle wird als Datensatz geladen.
+      - item_by_id = ein Datensatz mit einer definierten ID aus der Widget-Quelle wird als Datensatz geladen.
+
+   - **Query**
+      - True = Alle vorkommenden Backref-Namen und die ID des selektierten Datensatzes der Ansichts-Quelle wird genutzt, um die Query des Widgets zu erweitern.
+      - False = Die ID des selektierten Datensatzes wird nicht als Query-Attribut für den Datenabruf verwendet.
+
+   - **Auto-Fill**
+      - True = automatische Befüllung der relationalen Felder des Ziel-Datensatzes, mit Daten, die zu den Backref-Namen des Ansichts-Datensatzes passen.
+      - False = keine automatische Befüllung des Datensatzes.
+
+
+.. mermaid::
+   :align: center
+   
+   flowchart LR;
+      Dialog --> Activator{activator}
+      
+      Activator -->|empty| B1{Source}
+      B1 --> |== view source| R1[Item: empty\nQuery: None\nAuto-Fill: False]
+      B1 --> |!= view source| R2[Item: empty\nQuery: None\nAuto-Fill: False]
+      
+      Activator -->|first| B2{Source}
+      B2 --> |== view source| R3[Item: first\nQuery: False\nAuto-Fill: False]
+      B2 --> |!= view source| R4[Item: first\nQuery: True\nAuto-Fill: True]
+
+      Activator -->|last| B3{Source}
+      B3 --> |== view source| R5[Item: last\nQuery: False\nAuto-Fill: False]
+      B3 --> |!= view source| R6[Item: last\nQuery: True\nAuto-Fill: True]
+
+      Activator -->|default| B4{Source}
+      B4 --> |== view source| R7[Item: default\nQuery: False\nAuto-Fill: False]
+      B4 --> |!= view source| R8[Item: default\nQuery: True\nAuto-Fill: True]
+
+      Activator -->|click| B5{Source}
+      B5 --> |== view source| R9[Item: item_by_id\nQuery: False\nAuto-Fill: False]
+      B5 --> |!= view source| R10[Item: last\nQuery: True\nAuto-Fill: True]
+
+      Activator -->|context| B6{Source}
+      B6 --> |== view source| R11[Item: item_by_id\nQuery: False\nAuto-Fill: False]
+      B6 --> |!= view source| R12[Item: last\nQuery: True\nAuto-Fill: True]
+
 .. toctree::
    :glob:
    :hidden:

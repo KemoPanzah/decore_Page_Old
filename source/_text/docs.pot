@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: decore Base \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-27 13:26+0200\n"
+"POT-Creation-Date: 2023-11-13 13:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -164,6 +164,70 @@ msgstr ""
 
 #: ../documentation.rst:70
 msgid "Diese Übersicht stellt den Prozess dieser Abarbeitung dar."
+msgstr ""
+
+#: ../documentation.rst:96
+msgid "Relationale Datenverarbeitung im Widget"
+msgstr ""
+
+#: ../documentation.rst:97
+msgid "Die Datenverarbeitung und Datensatzgenerierung in den Widgets ist ein wichtiger Bestandteil der Anwendung und wird hier als Relationale-Datenverarbeitung bezeichnet. Diese Generierung des bearbeitbaren Datensatzes, wird erstens durch den Aktivator und zweitens durch die Datenquelle der Ansicht in Beziehung zur Datenquelle des Widgets gesteuert. Damit wird ermöglicht, einen Dialog mit weiter im Kontext der eigentlichen Selektion zu erweitern und detailreicher zu gestalten."
+msgstr ""
+
+#: ../documentation.rst:99
+msgid "Folgender Chart beschreibt diesen Prozess."
+msgstr ""
+
+#: ../documentation.rst:116
+msgid "Legende:"
+msgstr ""
+
+#: ../documentation.rst:107
+msgid "**Item**"
+msgstr ""
+
+#: ../documentation.rst:103
+msgid "empty = ein leerer Datensatz wird generiert. (keine Default-Werte)."
+msgstr ""
+
+#: ../documentation.rst:104
+msgid "first = der erste Datensatz der Widget-Quelle wird als Datensatz geladen."
+msgstr ""
+
+#: ../documentation.rst:105
+msgid "last = der letzte Datensatz der Widget-Quelle wird als Datensatz geladen."
+msgstr ""
+
+#: ../documentation.rst:106
+msgid "default = ein neuer Datensatz mit Default-Werten der Widget-Quelle wird als Datensatz geladen."
+msgstr ""
+
+#: ../documentation.rst:107
+msgid "item_by_id = ein Datensatz mit einer definierten ID aus der Widget-Quelle wird als Datensatz geladen."
+msgstr ""
+
+#: ../documentation.rst:111
+msgid "**Query**"
+msgstr ""
+
+#: ../documentation.rst:110
+msgid "True = Alle vorkommenden Backref-Namen und die ID des selektierten Datensatzes der Ansichts-Quelle wird genutzt, um die Query des Widgets zu erweitern."
+msgstr ""
+
+#: ../documentation.rst:111
+msgid "False = Die ID des selektierten Datensatzes wird nicht als Query-Attribut für den Datenabruf verwendet."
+msgstr ""
+
+#: ../documentation.rst:116
+msgid "**Auto-Fill**"
+msgstr ""
+
+#: ../documentation.rst:114
+msgid "True = automatische Befüllung der relationalen Felder des Ziel-Datensatzes, mit Daten, die zu den Backref-Namen des Ansichts-Datensatzes passen."
+msgstr ""
+
+#: ../documentation.rst:115
+msgid "False = keine automatische Befüllung des Datensatzes."
 msgstr ""
 
 #: ../documentation/decore.rst:2

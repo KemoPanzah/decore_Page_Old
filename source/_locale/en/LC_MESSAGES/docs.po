@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: decore Base\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-27 13:26+0200\n"
+"POT-Creation-Date: 2023-11-13 13:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -292,6 +292,109 @@ msgstr ""
 #: ../documentation.rst:70
 msgid "Diese Übersicht stellt den Prozess dieser Abarbeitung dar."
 msgstr "This overview represents the process of this execution."
+
+#: ../documentation.rst:96
+msgid "Relationale Datenverarbeitung im Widget"
+msgstr "Relational data processing in the widget"
+
+#: ../documentation.rst:97
+msgid ""
+"Die Datenverarbeitung und Datensatzgenerierung in den Widgets ist ein "
+"wichtiger Bestandteil der Anwendung und wird hier als Relationale-"
+"Datenverarbeitung bezeichnet. Diese Generierung des bearbeitbaren "
+"Datensatzes, wird erstens durch den Aktivator und zweitens durch die "
+"Datenquelle der Ansicht in Beziehung zur Datenquelle des Widgets gesteuert. "
+"Damit wird ermöglicht, einen Dialog mit weiter im Kontext der eigentlichen "
+"Selektion zu erweitern und detailreicher zu gestalten."
+msgstr ""
+"Data processing and data set generation in the widgets is an important part "
+"of the application and is referred to here as relational data processing. "
+"This generation of the editable data set is controlled firstly by the "
+"activator and secondly by the data source of the View in relation to the "
+"data source of the widget. This makes it possible to extend a dialog with "
+"further in the context of the actual selection and to make it more detailed."
+
+#: ../documentation.rst:99
+msgid "Folgender Chart beschreibt diesen Prozess."
+msgstr "The following chart describes this process."
+
+#: ../documentation.rst:116
+msgid "Legende:"
+msgstr "Legend:"
+
+#: ../documentation.rst:107
+msgid "**Item**"
+msgstr "**Item**"
+
+#: ../documentation.rst:103
+msgid "empty = ein leerer Datensatz wird generiert. (keine Default-Werte)."
+msgstr "empty = an empty data record is generated. (no default values)."
+
+#: ../documentation.rst:104
+msgid ""
+"first = der erste Datensatz der Widget-Quelle wird als Datensatz geladen."
+msgstr ""
+"first = the first data record of the widget source is loaded as a data "
+"record."
+
+#: ../documentation.rst:105
+msgid ""
+"last = der letzte Datensatz der Widget-Quelle wird als Datensatz geladen."
+msgstr ""
+"last = the last data record of the widget source is loaded as a data record."
+
+#: ../documentation.rst:106
+msgid ""
+"default = ein neuer Datensatz mit Default-Werten der Widget-Quelle wird als "
+"Datensatz geladen."
+msgstr ""
+"default = a new data set with default values from the widget source is "
+"loaded as a data set."
+
+#: ../documentation.rst:107
+msgid ""
+"item_by_id = ein Datensatz mit einer definierten ID aus der Widget-Quelle "
+"wird als Datensatz geladen."
+msgstr ""
+"item_by_id = a data record with a defined ID from the widget source is "
+"loaded as a data record."
+
+#: ../documentation.rst:111
+msgid "**Query**"
+msgstr "**Query**"
+
+#: ../documentation.rst:110
+msgid ""
+"True = Alle vorkommenden Backref-Namen und die ID des selektierten "
+"Datensatzes der Ansichts-Quelle wird genutzt, um die Query des Widgets zu "
+"erweitern."
+msgstr ""
+"True = All occurring backref names and the ID of the selected data set of "
+"the View source are used to expand the widget's query."
+
+#: ../documentation.rst:111
+msgid ""
+"False = Die ID des selektierten Datensatzes wird nicht als Query-Attribut "
+"für den Datenabruf verwendet."
+msgstr ""
+"False = The ID of the selected data record is not used as a query attribute "
+"for the data retrieval."
+
+#: ../documentation.rst:116
+msgid "**Auto-Fill**"
+msgstr "**Auto-Fill**"
+
+#: ../documentation.rst:114
+msgid ""
+"True = automatische Befüllung der relationalen Felder des Ziel-Datensatzes, "
+"mit Daten, die zu den Backref-Namen des Ansichts-Datensatzes passen."
+msgstr ""
+"True = automatic filling of the relational fields of the target data set "
+"with data that matches the backref names of the View data set."
+
+#: ../documentation.rst:115
+msgid "False = keine automatische Befüllung des Datensatzes."
+msgstr "False = no automatic filling of the data record."
 
 #: ../documentation/decore.rst:2
 msgid "Decorators"
