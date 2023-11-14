@@ -110,8 +110,8 @@ Legende:
       - True = Alle vorkommenden Backref-Namen und die ID des selektierten Datensatzes der Ansichts-Quelle wird genutzt, um die Query des Widgets zu erweitern.
       - False = Die ID des selektierten Datensatzes wird nicht als Query-Attribut für den Datenabruf verwendet.
 
-   - **Auto-Fill**
-      - True = automatische Befüllung der relationalen Felder des Ziel-Datensatzes, mit Daten, die zu den Backref-Namen des Ansichts-Datensatzes passen.
+   - **Extend**
+      - True = automatische Befüllung der relationalen Felder des Ziel-Datensatzes, mit dem Ansichts-Datensatz. Zum Beispiel: Ein ForeignKey-Feld des Ziel-Datanstaz wird mit dem Ansichst-Datenstaz befüllt.
       - False = keine automatische Befüllung des Datensatzes.
 
 
@@ -122,28 +122,28 @@ Legende:
       Dialog --> Activator{activator}
       
       Activator -->|empty| B1{Source}
-      B1 --> |== view source| R1[Item: empty\nQuery: None\nAuto-Fill: False]
-      B1 --> |!= view source| R2[Item: empty\nQuery: None\nAuto-Fill: False]
+      B1 --> |== view source| R1[Item: empty\nQuery: None\nExtend: False]
+      B1 --> |!= view source| R2[Item: empty\nQuery: None\nExtend: False]
       
       Activator -->|first| B2{Source}
-      B2 --> |== view source| R3[Item: first\nQuery: False\nAuto-Fill: False]
-      B2 --> |!= view source| R4[Item: first\nQuery: True\nAuto-Fill: True]
+      B2 --> |== view source| R3[Item: first\nQuery: False\nExtend: False]
+      B2 --> |!= view source| R4[Item: first\nQuery: True\nExtend: True]
 
       Activator -->|last| B3{Source}
-      B3 --> |== view source| R5[Item: last\nQuery: False\nAuto-Fill: False]
-      B3 --> |!= view source| R6[Item: last\nQuery: True\nAuto-Fill: True]
+      B3 --> |== view source| R5[Item: last\nQuery: False\nExtend: False]
+      B3 --> |!= view source| R6[Item: last\nQuery: True\nExtend: True]
 
       Activator -->|default| B4{Source}
-      B4 --> |== view source| R7[Item: default\nQuery: False\nAuto-Fill: False]
-      B4 --> |!= view source| R8[Item: default\nQuery: True\nAuto-Fill: True]
+      B4 --> |== view source| R7[Item: default\nQuery: False\nExtend: False]
+      B4 --> |!= view source| R8[Item: default\nQuery: True\nExtend: True]
 
       Activator -->|click| B5{Source}
-      B5 --> |== view source| R9[Item: item_by_id\nQuery: False\nAuto-Fill: False]
-      B5 --> |!= view source| R10[Item: last\nQuery: True\nAuto-Fill: True]
+      B5 --> |== view source| R9[Item: item_by_id\nQuery: False\nExtend: False]
+      B5 --> |!= view source| R10[Item: last\nQuery: True\nExtend: True]
 
       Activator -->|context| B6{Source}
-      B6 --> |== view source| R11[Item: item_by_id\nQuery: False\nAuto-Fill: False]
-      B6 --> |!= view source| R12[Item: last\nQuery: True\nAuto-Fill: True]
+      B6 --> |== view source| R11[Item: item_by_id\nQuery: False\nExtend: False]
+      B6 --> |!= view source| R12[Item: last\nQuery: True\nExtend: True]
 
 .. toctree::
    :glob:
