@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: decore Base \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-13 13:58+0100\n"
+"POT-Creation-Date: 2023-11-15 21:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -219,11 +219,11 @@ msgid "False = Die ID des selektierten Datensatzes wird nicht als Query-Attribut
 msgstr ""
 
 #: ../documentation.rst:116
-msgid "**Auto-Fill**"
+msgid "**Extend**"
 msgstr ""
 
 #: ../documentation.rst:114
-msgid "True = automatische Befüllung der relationalen Felder des Ziel-Datensatzes, mit Daten, die zu den Backref-Namen des Ansichts-Datensatzes passen."
+msgid "True = automatische Befüllung der relationalen Felder des Ziel-Datensatzes, mit dem Ansichts-Datensatz. Zum Beispiel: Ein ForeignKey-Feld des Ziel-Datanstaz wird mit dem Ansichst-Datenstaz befüllt."
 msgstr ""
 
 #: ../documentation.rst:115

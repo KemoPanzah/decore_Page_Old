@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: decore Base\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-13 13:58+0100\n"
+"POT-Creation-Date: 2023-11-15 21:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -381,16 +381,18 @@ msgstr ""
 "for the data retrieval."
 
 #: ../documentation.rst:116
-msgid "**Auto-Fill**"
-msgstr "**Auto-Fill**"
+msgid "**Extend**"
+msgstr "**Extend**"
 
 #: ../documentation.rst:114
 msgid ""
 "True = automatische Befüllung der relationalen Felder des Ziel-Datensatzes, "
-"mit Daten, die zu den Backref-Namen des Ansichts-Datensatzes passen."
+"mit dem Ansichts-Datensatz. Zum Beispiel: Ein ForeignKey-Feld des Ziel-"
+"Datanstaz wird mit dem Ansichst-Datenstaz befüllt."
 msgstr ""
 "True = automatic filling of the relational fields of the target data set "
-"with data that matches the backref names of the View data set."
+"with the View data set. For example: A ForeignKey field of the target "
+"dataset is filled with the view dataset."
 
 #: ../documentation.rst:115
 msgid "False = keine automatische Befüllung des Datensatzes."
@@ -2125,3 +2127,6 @@ msgstr "https://github.com/KemoPanzah/decore_Sample"
 #~ msgstr ""
 #~ "Unified, navigable dialog control and build of the relational dataset in the"
 #~ " widget. (in progress)"
+
+#~ msgid "**Auto-Fill**"
+#~ msgstr "**Auto-Fill**"

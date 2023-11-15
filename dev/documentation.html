@@ -500,8 +500,8 @@ end
 </dl>
 </li>
 <li><dl class="simple">
-<dt><strong>Auto-Fill</strong></dt><dd><ul>
-<li><p>True = automatic filling of the relational fields of the target data set with data that matches the backref names of the View data set.</p></li>
+<dt><strong>Extend</strong></dt><dd><ul>
+<li><p>True = automatic filling of the relational fields of the target data set with the View data set. For example: A ForeignKey field of the target dataset is filled with the view dataset.</p></li>
 <li><p>False = no automatic filling of the data record.</p></li>
 </ul>
 </dd>
@@ -515,28 +515,28 @@ end
    Dialog --&gt; Activator{activator}
 
    Activator --&gt;|empty| B1{Source}
-   B1 --&gt; |== view source| R1[Item: empty\nQuery: None\nAuto-Fill: False]
-   B1 --&gt; |!= view source| R2[Item: empty\nQuery: None\nAuto-Fill: False]
+   B1 --&gt; |== view source| R1[Item: empty\nQuery: None\nExtend: False]
+   B1 --&gt; |!= view source| R2[Item: empty\nQuery: None\nExtend: False]
 
    Activator --&gt;|first| B2{Source}
-   B2 --&gt; |== view source| R3[Item: first\nQuery: False\nAuto-Fill: False]
-   B2 --&gt; |!= view source| R4[Item: first\nQuery: True\nAuto-Fill: True]
+   B2 --&gt; |== view source| R3[Item: first\nQuery: False\nExtend: False]
+   B2 --&gt; |!= view source| R4[Item: first\nQuery: True\nExtend: True]
 
    Activator --&gt;|last| B3{Source}
-   B3 --&gt; |== view source| R5[Item: last\nQuery: False\nAuto-Fill: False]
-   B3 --&gt; |!= view source| R6[Item: last\nQuery: True\nAuto-Fill: True]
+   B3 --&gt; |== view source| R5[Item: last\nQuery: False\nExtend: False]
+   B3 --&gt; |!= view source| R6[Item: last\nQuery: True\nExtend: True]
 
    Activator --&gt;|default| B4{Source}
-   B4 --&gt; |== view source| R7[Item: default\nQuery: False\nAuto-Fill: False]
-   B4 --&gt; |!= view source| R8[Item: default\nQuery: True\nAuto-Fill: True]
+   B4 --&gt; |== view source| R7[Item: default\nQuery: False\nExtend: False]
+   B4 --&gt; |!= view source| R8[Item: default\nQuery: True\nExtend: True]
 
    Activator --&gt;|click| B5{Source}
-   B5 --&gt; |== view source| R9[Item: item_by_id\nQuery: False\nAuto-Fill: False]
-   B5 --&gt; |!= view source| R10[Item: last\nQuery: True\nAuto-Fill: True]
+   B5 --&gt; |== view source| R9[Item: item_by_id\nQuery: False\nExtend: False]
+   B5 --&gt; |!= view source| R10[Item: last\nQuery: True\nExtend: True]
 
    Activator --&gt;|context| B6{Source}
-   B6 --&gt; |== view source| R11[Item: item_by_id\nQuery: False\nAuto-Fill: False]
-   B6 --&gt; |!= view source| R12[Item: last\nQuery: True\nAuto-Fill: True]
+   B6 --&gt; |== view source| R11[Item: item_by_id\nQuery: False\nExtend: False]
+   B6 --&gt; |!= view source| R12[Item: last\nQuery: True\nExtend: True]
         </div>
         <div class="toctree-wrapper compound">
 </div>
