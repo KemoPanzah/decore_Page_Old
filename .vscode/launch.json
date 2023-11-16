@@ -19,7 +19,7 @@
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "program": ".venv/Scripts/sphinx-build.exe",
-      "args": ["-b", "html", "source", "dev", "-a", "-E"],
+      "args": ["-b", "html", "source", "dev_docs", "-a", "-E"],
       "console": "integratedTerminal"
     },
     {

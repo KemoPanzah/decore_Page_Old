@@ -1,6 +1,9 @@
 # Deepl auth_key
 auth_key.json
 
+# Development Page
+dev_docs/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
