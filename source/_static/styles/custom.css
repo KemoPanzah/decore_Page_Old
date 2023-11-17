@@ -1,3 +1,23 @@
+.bd-header {
+    background: #015667 !important;
+}
+
+.bd-header p {
+    color: #ffffff !important;
+}
+
+.bd-header .nav-link {
+    color: #ffffff !important;
+}
+
+.bd-header .search-button {
+    color: #ffffff !important;
+}
+
+.bd-header .theme-switch {
+    color: #ffffff !important;
+}
+
 .navbar-brand p {
     margin-bottom: 3px;
 }
@@ -6,24 +26,38 @@
     padding-right: 32px;
 }
 
-.de-teaser-grid{
+.bd-sub-navigation {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+.bd-sub-navigation .nav-link {
+    color: #ffffff !important;
+}
+
+.bd-sub-navigation ul {
+    display: none;
+}
+
+.de-teaser-grid {
     padding-left: 0px;
     padding-right: 0px;
 }
 
-.de-teaser-grid .sd-card{
+.de-teaser-grid .sd-card {
     color: white;
     background-color: #075767;
 }
 
-.de-teaser-grid p{
+.de-teaser-grid p {
     color: white;
 }
 
-.de-teaser-grid .sd-material-icon{
+.de-teaser-grid .sd-material-icon {
     font-size: 24px;
 }
 
-.de-teaser-grid .sd-card-title{
+.de-teaser-grid .sd-card-title {
     font-size: 18px;
 }

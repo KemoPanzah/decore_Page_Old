@@ -1,0 +1,7 @@
+{% if theme_secondary_sidebar_items -%}
+<div class=".bd-sub-navigation">
+  {% for toc_item in theme_secondary_sidebar_items %}
+  {% include toc_item %}
+  {% endfor %}
+</div>
+{%- endif %}

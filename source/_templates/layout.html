@@ -9,12 +9,77 @@
         "floating-chat.donateButton.text-color": "#fff",
     });
 </script>
+<style>
+    .bd-sub-navbar {
+        position: fixed;
+        z-index: 102;
+        background: rgb(1 86 103 / 75%);
+        width: 100%;
+        top: 64px;
+        height: 48px;
+    }
+
+    .bd-image-parallax {
+        position: fixed;
+        z-index: 101;
+        width: 100%;
+        top: 64px;
+        height: 500px;
+        background-image: url("_static/images/1.jpeg");
+        background-attachment: fixed;
+        background-position: center -1000px;
+        background-repeat: no-repeat;
+        background-size: auto 1920px;
+    }
+
+    .bd-image-parallax-space {
+        height: 500px;
+    }
+
+    .bd-image-sub {
+        position: fixed;
+        z-index: 101;
+        width: 100%;
+        top: 64px;
+        height: 48px;
+        background-image: url("_static/images/9e3744af-c912-4d6e-857f-3c47621c30bd-upscaled.jpeg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .bd-image-sub-space {
+        height: 48px;
+    }
+
+</style>
+<script>
+    window.addEventListener("scroll", function () {
+        var scrollPosition = window.pageYOffset;
+        var image = document.querySelector(".bd-image-parallax");
+        var scrollPosition = window.pageYOffset;
+        image.style.height = Math.max(48, 500 - scrollPosition) + "px";
+        if (scrollPosition <= 452) {
+            image.style.backgroundPosition = "center " + (-1000 + scrollPosition * 0.25) + "px";
+        }
+    });
+</script>
 {{ super() }}
 {% endblock %}
 
-{% block docs_main %}
-<div class="bd-content-parallax">PARALAX</div>
+{% block docs_navbar %}
+{{ super() }}
+<div class="bd-sub-navbar">{% include "subnav.html" %}</div>
 {% if pagename == root_doc%}
+<div class="bd-image-parallax"></div>
+<div class="bd-image-parallax-space"></div>
+{% else %}
+<div class="bd-image-sub"></div>
+<div class="bd-image-sub-space"></div>
 {% endif %}
+{% endblock %}
+
+{% block docs_main %}
 {{ super() }}
 {% endblock %}
