@@ -66,8 +66,8 @@ html_directory_suffix = '/'
 html_theme = 'pydata_sphinx_theme'
 
 html_theme_options = {
-   "show_toc_level": 1,
-   "navbar_align": "right",
+   "show_toc_level": 2,
+#    "navbar_align": "right",
    "logo": {
         "text": "decore Base | UI fastly",
         },

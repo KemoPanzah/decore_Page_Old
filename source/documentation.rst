@@ -150,6 +150,7 @@ Legende:
    :hidden:
    :maxdepth: 1
    
+   documentation/getstarted
    documentation/decore
    documentation/fields
    documentation/types

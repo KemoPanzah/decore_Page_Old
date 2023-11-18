@@ -6,9 +6,6 @@
 
 GUI-Dashboard-Anwendungen in Python schnell und einfach.
 ======================================================================
-
-.. html-modal-image:: _static/images/python-ui-dashboard-application.png
-   :url: http://localhost:5555/Person_base/per_vi1/per_vi1_di1/af24c74c-6819-11ee-b2ca-309c23812330
    
 decore Base ist ein out-of-the-box "Python to Vue.js" Datenanwendungs-Dashboard, das Ihnen hilft, in wenigen einfachen Schritten von der Idee zur Ansicht zu gelangen. Es richtet sich an diejenigen, die sich auf die Ergebnisse ihrer Algorithmen konzentrieren wollen, wissenschaftliche Arbeit leisten oder Lehr- und Lernfunktionen ausführen wollen.
 
@@ -44,7 +41,6 @@ Diese Dokumentation wurde mit Deepl vom Deutschen ins Englische übersetzt.
    :hidden:
    :maxdepth: 1
 
-   Get started <getstarted>
    Features <features>
    Sample <sample>
    Documentation <documentation>
