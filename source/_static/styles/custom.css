@@ -2,6 +2,8 @@ section {
     padding-top: 1px !important;
 }
 
+/* header and nav */
+
 .bd-header {
     background: #075767 !important;
 }
@@ -83,10 +85,32 @@ section {
     font-size: 18px;
 }
 
+/* directives */
+
+.html-inpage-nav .items{
+    height: 64px;
+}
+
+/* TODO - Alle Backgroundbilder in button anpassen und verkleinern */
+.html-inpage-nav .background{
+    background-image: url("../images/button/5.jpeg");
+}
+
+.html-inpage-nav .overlay{
+    background: rgb(1 86 103 / 75%);
+}
+
+/* index*/
+
 #hidden > h1 {
     display: none;
 }
 
+
+
+/* page */
+
 h1 {
     font-size: 32px !important;
 }
+
