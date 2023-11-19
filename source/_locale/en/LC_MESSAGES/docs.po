@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: decore Base\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-15 21:29+0100\n"
+"POT-Creation-Date: 2023-11-18 19:30+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.12.1\n"
 
-#: ../documentation.rst:2
+#: ../documentation.rst:2 ../index.rst:46
 msgid "Dokumentation"
 msgstr "Documentation"
 
@@ -47,13 +47,10 @@ msgstr "Description of the meta instances"
 msgid ""
 "Meta-Instanzen entahlten die benötigten Typen und Attribute für die "
 "Erstellung der GUI-Elemente. Die Meta-Instanzen werden in der Regel durch "
-"dekorierte Funktionen erstellt. Einen ersten Eindruck bekommen sie im "
-"Abschnitt :doc:`Erste Schritte<../getstarted>`"
+"dekorierte Funktionen erstellt."
 msgstr ""
-"Meta instances contain the required types and attributes for the build of "
-"the GUI elements. The meta-instances are usually built by decorated "
-"functions. You can get a first impression in the section :doc:`Get "
-"started<../getstarted>`."
+"Meta instances contain the types and attributes required to Build the GUI "
+"elements. The meta instances are usually built using decorated functions."
 
 #: ../documentation.rst:10
 msgid "App"
@@ -71,7 +68,7 @@ msgstr ""
 "created by the \"Decorator\" :meth:`app() "
 "<decore_Base.decore_base.decore.Decore.app>`."
 
-#: ../documentation.rst:14 ../getstarted.rst:96
+#: ../documentation.rst:14 ../documentation/getstarted.rst:96
 msgid "Base"
 msgstr "Base"
 
@@ -105,7 +102,7 @@ msgstr ""
 "In the navigation it will be listed directly under Root as soon as it gets "
 "more than one View."
 
-#: ../documentation.rst:22 ../getstarted.rst:124
+#: ../documentation.rst:22 ../documentation/getstarted.rst:124
 msgid "View"
 msgstr "View"
 
@@ -136,7 +133,7 @@ msgstr "The View is listed under the Base in the navigation."
 msgid "Die Ansicht wird im Ansichtsbereich der Basis gerendert."
 msgstr "The View is rendered in the View area of the Base."
 
-#: ../documentation.rst:32 ../getstarted.rst:145
+#: ../documentation.rst:32 ../documentation/getstarted.rst:145
 msgid "Dialog"
 msgstr "Dialog"
 
@@ -178,7 +175,7 @@ msgstr ""
 "This is called by the items or events determined with the activator "
 "attribute."
 
-#: ../documentation.rst:42 ../getstarted.rst:168
+#: ../documentation.rst:42 ../documentation/getstarted.rst:168
 msgid "Widget"
 msgstr "Widget"
 
@@ -210,7 +207,7 @@ msgstr ""
 msgid "Das Widget wird im Content-Bereich des Dialoges dargestellt."
 msgstr "The widget is displayed in the content area of the dialog."
 
-#: ../documentation.rst:51 ../getstarted.rst:191
+#: ../documentation.rst:51 ../documentation/getstarted.rst:191
 msgid "Action"
 msgstr "Action"
 
@@ -596,6 +593,436 @@ msgstr "A field to store passwords in the keybase and to use them again."
 msgid "A field to store text values."
 msgstr "A field to store text values."
 
+#: ../documentation/getstarted.rst:-1 ../index.rst:-1
+msgid "create dashbord with python fastly"
+msgstr "create dashbord with python fastly"
+
+#: ../documentation/getstarted.rst:-1 ../index.rst:-1
+msgid ""
+"python gui, decore, python database, python dashboard, python orm, python "
+"ui, dashboard creation, python application, ui framework, ui toolkit"
+msgstr ""
+"python gui, decore, python database, python dashboard, python orm, python "
+"ui, dashboard creation, python application, ui framework, ui toolkit"
+
+#: ../documentation/getstarted.rst:6
+msgid "Erste Schritte"
+msgstr "Get started"
+
+#: ../documentation/getstarted.rst:7
+msgid ""
+"Um die schnelle GUI-Dashboard-Erstellung, mit decore Base in Python, zu "
+"veranschaulichen werden wir nun gemeinsam eine kleine UI in Form einer "
+"Webanwendung erstellen."
+msgstr ""
+"To illustrate the fast GUI dashboard creation, using decore Base in Python, "
+"we will now create a small UI together in the form of a web application."
+
+#: ../documentation/getstarted.rst:9
+msgid ""
+"Die dekorierten Funktionen dienen, in allererster Linie, der Erstellung von "
+"Metainformationen für die spätere Auswertung im Frontend der Anwendung und "
+"sind nichts, wovor man sich fürchten muss."
+msgstr ""
+"The decorated functions serve, first and foremost, to create meta-"
+"information for later evaluation in the front-end of the application and are"
+" nothing to be afraid of."
+
+#: ../documentation/getstarted.rst:11
+msgid "*Es ist wirklich einfach, bitte folgen Sie mir!*"
+msgstr "*It's really simple, please follow me!*"
+
+#: ../documentation/getstarted.rst:14
+msgid "Installation"
+msgstr "Installation"
+
+#: ../documentation/getstarted.rst:15
+msgid ""
+"Erstellen Sie zunächst ein leeres Python-Projekt in Ihrem gewünschten "
+"Verzeichnis."
+msgstr "First, create an empty Python project in your desired directory."
+
+#: ../documentation/getstarted.rst:17
+msgid ""
+"Um decore Base zu installieren, führen wir den folgenden Befehl im "
+"Stammverzeichnis des Projekts aus. Verwenden wir das Terminal in vscode."
+msgstr ""
+"To install decore Base, we run the following command in the root directory "
+"of the project. Let's use the terminal in vscode."
+
+#: ../documentation/getstarted.rst:23
+msgid ""
+"Dies erfordert eine aktivierte Python-Umgebung! Um mehr darüber zu erfahren,"
+" besuchen Sie `Python-Umgebungen in VS Code "
+"<https://code.visualstudio.com/docs/python/environments>`_."
+msgstr ""
+"This requires an enabled Python environment! To learn more, visit `Python "
+"Environments in VS Code "
+"<https://code.visualstudio.com/docs/python/environments>`_."
+
+#: ../documentation/getstarted.rst:26
+msgid "Vorbereitung"
+msgstr "Preparation"
+
+#: ../documentation/getstarted.rst:28
+msgid ""
+"Um für unsere zukünftige Python GUI-Dashboard-Anwendung alles nötige an "
+"Pfaden und Einstellungen zu erhalten, müssen wir noch die Vorbereitung "
+"durchführen."
+msgstr ""
+"In order to get everything we need in terms of paths and settings for our "
+"future Python GUI dashboard application, we still need to do the "
+"preparation."
+
+#: ../documentation/getstarted.rst:30
+msgid ""
+"Erstellen wir nun eine neue Datei mit dem Namen **app.py** im "
+"Hauptverzeichnis des Projekts."
+msgstr ""
+"Now let's create a new file named **app.py** in the root directory of the "
+"project."
+
+#: ../documentation/getstarted.rst:32
+msgid ""
+"Um decore zu verwenden, importieren wir es zunächst in das Modul **app.py**."
+msgstr "To use decore, we first import it into the **app.py** module."
+
+#: ../documentation/getstarted.rst:38
+msgid ""
+"Dann verwenden wir den Befehl ``prepare``, um alle erforderlichen "
+"Hilfsdateien im Stammverzeichnis des Projekts zu erstellen."
+msgstr ""
+"Then we use the ``prepare`` command to build all the necessary auxiliary "
+"files in the root directory of the project."
+
+#: ../documentation/getstarted.rst:40
+msgid ""
+"Um nun die Anwendung tatsächlich vorzubereiten, führen wir den Befehl "
+"``python app.py --prepare`` im Terminal aus. Der Pfad muss im "
+"Hauptverzeichnis des Projekts liegen, also dort wo sich die **app.py** "
+"befindet."
+msgstr ""
+"Now to actually prepare the application, we run the command ``python app.py "
+"--prepare`` in the terminal. The path must be in the root directory of the "
+"project, i.e. where the **app.py** is located."
+
+#: ../documentation/getstarted.rst:43
+msgid "Verwendung"
+msgstr "Usage"
+
+#: ../documentation/getstarted.rst:44
+msgid ""
+"Damit der Python-Interpreter die zukünftigen Basisklassen verarbeiten kann, "
+"fügen wir den folgenden Import hinzu."
+msgstr ""
+"To allow the Python interpreter to process the future base classes, we add "
+"the following import."
+
+#: ../documentation/getstarted.rst:50
+msgid ""
+"Normalerweise enthält ein Python-Hauptmodul eine Abfrage, die prüft, ob es "
+"das Hauptmodul ist, so dass wir anschließend die Funktion ``main`` aufrufen "
+"können."
+msgstr ""
+"Normally, a Python main module contains a query that checks if it is the "
+"main module so that we can subsequently call the ``main`` function."
+
+#: ../documentation/getstarted.rst:52
+msgid ""
+"Als nächstes erstellen wir eine Zeile ``if __name__ == '__main__':`` in der "
+"**app.py** Datei."
+msgstr ""
+"Next, we create a line ``if __name__ == '__main__':`` in the **app.py** "
+"file."
+
+#: ../documentation/getstarted.rst:54
+msgid ""
+"Um eine neue \"decore\" Anwendungsinstanz zu erstellen, benutzen wir eine "
+"mit ``@decore.app`` dekorierte ``main()`` Funktion in der **app.py** Datei, "
+"direkt unter der Zeile: ``if __name__ == '__main__':``."
+msgstr ""
+"To create a new \"decore\" application instance, we use a ``main()`` "
+"function decorated with ``@decore.app`` in the **app.py** file, just below "
+"the line: ``if __name__ == '__main__':``."
+
+#: ../documentation/getstarted.rst:67
+msgid "Model"
+msgstr "Model"
+
+#: ../documentation/getstarted.rst:68
+msgid ""
+"In einem Modell legen wir die Datenfelder fest, die später einer Basis "
+"zugeordnet werden muss. Es dient als Datenbankschnittstelle zu den "
+"Datenbanktreibern wie SQLite, MySQL, PostgreSQL, etc."
+msgstr ""
+"In a Model, we define the data fields that must later be assigned to a Base."
+" It serves as a database interface to the database drivers like SQLite, "
+"MySQL, PostgreSQL, etc."
+
+#: ../documentation/getstarted.rst:70
+msgid ""
+"Wir erstellen nun die Datei first_model.py im Verzeichnis **models** und "
+"fügen den folgenden Code ein:"
+msgstr ""
+"We now create the file first_model.py in the directory **models** and insert"
+" the following code:"
+
+#: ../documentation/getstarted.rst:73
+msgid ""
+"Es muss nicht für jede Basis ein Modell angelegt werden aber es muss jedes "
+"zu verwenden Modell eine Basis haben, die über die Datei **__init__.py**, "
+"importiert werden muss. Nur so werden Rellationen zwischen den Modellen auch"
+" im Frontend ausgewertet und dargestellt."
+msgstr ""
+"It is not necessary to create a model for each base, but each model to be "
+"used must have a base, which must be imported via the file **__init__.py**. "
+"This is the only way to evaluate and display rellations between the models "
+"in the frontend."
+
+#: ../documentation/getstarted.rst:76
+msgid ""
+"Um mögliche zirkuläre Importe zu vermeiden, legen wir die Modellklassen in "
+"einem eigenen Verzeichnis **models** in unserem Projektstammverzeichnis an. "
+"Das Verzeichnis **models** wurde durch den zuvor ausgeführten Befehl "
+"``python app.py --prepare`` erstellt."
+msgstr ""
+"To avoid possible circular imports, we create the model classes in a "
+"separate **models** directory in our project root directory. The **models** "
+"directory was created by the previously executed ``python app.py --prepare``"
+" command."
+
+#: ../documentation/getstarted.rst:88
+msgid ""
+"In dem hier gezeigten Beispiel importieren wir aus der **uniform library** "
+"die Klasse Conform_model und erweitern sie um die Felder Vorname und "
+"Nachname."
+msgstr ""
+"In the example shown here, we import the Conform_model class from the "
+"**uniform library** and extend it with the First Name and Last Name fields."
+
+#: ../documentation/getstarted.rst:90
+msgid ""
+"Die Modelle in **decore Base** basieren auf dem großartigen Peewee ORM. Um "
+"mehr über Peewee zu erfahren, besuchen Sie `Peewee ORM <http://docs.peewee-"
+"orm.com/en/latest/>`_."
+msgstr ""
+"The models in **decore Base** are based on the great Peewee ORM. To learn "
+"more about Peewee, visit `Peewee ORM <http://docs.peewee-"
+"orm.com/en/latest/>`_."
+
+#: ../documentation/getstarted.rst:93
+msgid ""
+"Beim Importieren ist zu beachten, dass wir alles (*) aus dem conform_model "
+"Namespace importieren, um auch die Feldklassen zu erhalten."
+msgstr ""
+"When importing, note that we import everything (*) from the conform_model "
+"namespace to get the field classes as well."
+
+#: ../documentation/getstarted.rst:97
+msgid ""
+"Die Basisklassen dienen der decore-Anwendung als Trägerelement für die View-"
+"Komponenten, pflegen das Datenmodell ein und gelten damit auch als "
+"Datenquelle für die Auswertung im Frontend des Dashboards."
+msgstr ""
+"The base classes serve the decore application as a carrier element for the "
+"view components, maintain the data model and are thus also considered the "
+"data source for evaluation in the dashboard frontend."
+
+#: ../documentation/getstarted.rst:99
+msgid ""
+"Nun müssen wir ein neues Python-Modul erstellen, das z.B. eine Basisklasse "
+"enthält: **first_base.py**, im Verzeichnis **bases** in unserem "
+"Projektstammverzeichnis. Das Verzeichnis **bases** wurde durch den zuvor "
+"ausgeführten Befehl ``python app.py --prepare`` miterzeugt."
+msgstr ""
+"Now we need to create a new Python module containing, for example, a base "
+"class: **first_base.py**, in the **bases** directory in our project root "
+"directory. The **bases** directory was co-created by the ``python app.py "
+"--prepare`` command executed earlier."
+
+#: ../documentation/getstarted.rst:112
+msgid ""
+"Um das zuvor erstellte Modell zu verwenden, importieren wir es in die Base-"
+"Klasse und übergeben es an den Parameter ``model``."
+msgstr ""
+"To use the previously created model, we import it into the Base class and "
+"pass it to the ``model`` parameter."
+
+#: ../documentation/getstarted.rst:115
+msgid ""
+"In order for the Python interpreter to be able to process the base classes, "
+"we have to import them into the __init__.py file in the **bases** directory."
+" The order of the individual imports also determines the order in **decore "
+"Front**."
+msgstr ""
+"In order for the Python interpreter to be able to process the base classes, "
+"we have to import them into the __init__.py file in the **bases** directory."
+" The order of the individual imports also determines the order in **decore "
+"Front**."
+
+#: ../documentation/getstarted.rst:117
+msgid "We edit the **__init__.py** file and insert the following code:"
+msgstr "We edit the **__init__.py** file and insert the following code:"
+
+#: ../documentation/getstarted.rst:125
+msgid ""
+"Views werden von der decore-Anwendung verwendet, um die Datensätze im "
+"Frontend der Webanwendung zu präsentieren."
+msgstr ""
+"Views are used by the decore application to present the data sets in the "
+"front end of the web application."
+
+#: ../documentation/getstarted.rst:127
+msgid ""
+"Mit dem View-Decorator können wir nun eine Ansichts-Komponente erstellen und"
+" sie, unter der zuvor erstellten Basisklasse, einhängen."
+msgstr ""
+"Using the View decorator, we can now create a View component and mount it, "
+"under the base class we created earlier."
+
+#: ../documentation/getstarted.rst:129
+msgid ""
+"Wir bearbeiten nun die Datei **first_base.py** erneut und erweitern den Code"
+" wie folgt:"
+msgstr ""
+"We now edit the **first_base.py** file again and extend the code as follows:"
+
+#: ../documentation/getstarted.rst:146
+msgid ""
+"Dialoge sind die unterstützenden Elemente für Widgets im Frontend der "
+"Webanwendung. Sie können Ansichten aber auch untergeordneten Widgets "
+"hinzugefügt werden und steuern die Sichtbarkeit und den Anzeigestil von "
+"Kindelementen. Dialoge erhalten auch die Kontrolle über die Sendefunktionen "
+"der Widgets."
+msgstr ""
+"Dialogs are the supporting elements for widgets in the front end of the web "
+"application. They can be added to views but also to child widgets and "
+"control the visibility and display style of child elements. Dialogs also get"
+" control over the sending functions of the widgets."
+
+#: ../documentation/getstarted.rst:148
+msgid ""
+"In unserem Fall erstellen wir einen Dialog, um eine neue Person mit Vornamen"
+" und Nachnamen anzulegen."
+msgstr ""
+"In our case, we create a dialog to create a new person with first name and "
+"last name."
+
+#: ../documentation/getstarted.rst:150
+msgid ""
+"Hier gehen wir ... wieder die Datei **first_base.py** und erweitern den Code"
+" wie folgt:"
+msgstr ""
+"Here we go ... again the file **first_base.py** and extend the code as "
+"follows:"
+
+#: ../documentation/getstarted.rst:169
+msgid ""
+"Widgets sind Komponenten, mit denen wir Interaktionen mit dem einzelnen "
+"Datensatz durchführen können. Sie können nur zu Dialogen hinzugefügt werden "
+"und sind stapelbar."
+msgstr ""
+"Widgets are components that allow us to perform interactions with the single"
+" record. They can only be added to dialogs and are stackable."
+
+#: ../documentation/getstarted.rst:171
+msgid ""
+"Was wir jetzt brauchen, ist ein Eingabeformular, um die Daten für die neue "
+"Person einzugeben."
+msgstr ""
+"What we need now is an input form to enter the data for the new person."
+
+#: ../documentation/getstarted.rst:192
+msgid ""
+"Actions sind Methoden, mit das Frontend mit **decore Base** kommunizieren "
+"kann. Sie können zu View und Widgets hinzugefügt werden und sind die "
+"einzigen echten Klassenmethoden und werden direkt in der Basis aufgerufen."
+msgstr ""
+"Actions are methods that allow the frontend to communicate with **decore "
+"Base**. They can be added to view and widgets and are the only real class "
+"methods and are called directly in Base."
+
+#: ../documentation/getstarted.rst:194
+msgid ""
+"Wir brauchen nun eine Aktion, um die Daten der neuen Person zu speichern und"
+" erweitern den Code in **first_base.py** wie folgt:"
+msgstr ""
+"We now need an action to store the data of the new person and extend the "
+"code in **first_base.py** as follows:"
+
+#: ../documentation/getstarted.rst:221
+msgid ""
+"Um einen Datensatz mit decore Base zu erstellen, müssen wir eine Instanz des"
+" Modells erstellen. In unserem Fall **First_model**. Die Instanz wird mit "
+"den Daten aus dem Formular gefüllt und dann gespeichert."
+msgstr ""
+"To build a dataset with decore Base, we need to create an instance of the "
+"Model. In our case **First_model**. The instance is filled with the data "
+"from the form and then saved."
+
+#: ../documentation/getstarted.rst:223
+msgid ""
+"Die ID, in Form einer UUID im Textformat, wird automatisch generiert und "
+"muss nicht gesondert angegeben werden."
+msgstr ""
+"The ID, in the form of a UUID in text format, is generated automatically and"
+" does not need to be specified separately."
+
+#: ../documentation/getstarted.rst:226
+msgid ""
+"Das Feld **titel** muss bei jeder Datensatzerstellung verwendet werden. "
+"Andernfalls wird das Element die Validierung nicht bestehen. Es sollte "
+"ausserdem immer eindeutig sein, also keine gleichen Titel in der Datenbank "
+"geben."
+msgstr ""
+"The **title** field must be used for each record creation. Otherwise the "
+"element will not pass the validation. It should also always be unique, i.e. "
+"there should be no identical titles in the database."
+
+#: ../documentation/getstarted.rst:229
+msgid "Ausführung, Entwicklung und Erstellung"
+msgstr "Run, development and build"
+
+#: ../documentation/getstarted.rst:231
+msgid "Ausführung"
+msgstr "Run"
+
+#: ../documentation/getstarted.rst:232
+msgid ""
+"Um Ihre Anwendung zu starten, führen Sie ``python app.py`` in Ihrem Projekt-"
+"Stammverzeichnis aus. Verwenden Sie das Terminal in vscode."
+msgstr ""
+"To start your application, run ``python app.py`` in your project root "
+"directory. Use the terminal in vscode."
+
+#: ../documentation/getstarted.rst:234 ../documentation/getstarted.rst:240
+msgid "Öffnen Sie den Browser und geben Sie ``http://localhost:5555`` ein."
+msgstr "Open the browser and type ``http://localhost:5555``."
+
+#: ../documentation/getstarted.rst:237
+msgid "Entwicklung"
+msgstr "Development"
+
+#: ../documentation/getstarted.rst:238
+msgid ""
+"Um Ihre Anwendung zu entwickeln, verwenden Sie Ihren Debugger mit dem Profil"
+" ``[dev] decore base development`` in vscode."
+msgstr ""
+"To develop your application, use your debugger with the ``[dev] decore base "
+"development`` profile in vscode."
+
+#: ../documentation/getstarted.rst:243
+msgid "Erstellung"
+msgstr "Build"
+
+#: ../documentation/getstarted.rst:244
+msgid ""
+"Um Ihre Anwendung zu erstellen, führen Sie ``python app.py --build`` in "
+"Ihrem Projekt-Stammverzeichnis aus. Verwenden Sie das Terminal in vscode."
+msgstr ""
+"To build your application, run ``python app.py --build`` in your project "
+"root directory. Use the terminal in vscode."
+
 #: ../documentation/types.rst:2
 msgid "Typen"
 msgstr "Types"
@@ -613,7 +1040,7 @@ msgid ""
 "Der Ansichtstyp Tabelle dient der tabellarischen Darstellung von Daten."
 msgstr "The Table view type is used to display data in tabular form."
 
-#: ../features.rst:2 ../index.rst:43
+#: ../features.rst:2 ../index.rst:46
 msgid "Features"
 msgstr "Features"
 
@@ -794,447 +1221,9 @@ msgid ""
 "Erzeugung eines relationalen Datensatzes für die weiterverwenung im Widget."
 msgstr "Creation of a relational data set for further use in the widget."
 
-#: ../getstarted.rst:-1 ../index.rst:-1
-msgid "create dashbord with python fastly"
-msgstr "create dashbord with python fastly"
-
-#: ../getstarted.rst:-1 ../index.rst:-1
-msgid ""
-"python gui, decore, python database, python dashboard, python orm, python "
-"ui, dashboard creation, python application, ui framework, ui toolkit"
-msgstr ""
-"python gui, decore, python database, python dashboard, python orm, python "
-"ui, dashboard creation, python application, ui framework, ui toolkit"
-
-#: ../getstarted.rst:6
-msgid "Erste Schritte"
-msgstr "Get started"
-
-#: ../getstarted.rst:7
-msgid ""
-"Um die schnelle GUI-Dashboard-Erstellung, mit decore Base in Python, zu "
-"veranschaulichen werden wir nun gemeinsam eine kleine UI in Form einer "
-"Webanwendung erstellen."
-msgstr ""
-"To illustrate the fast GUI dashboard creation, using decore Base in Python, "
-"we will now create a small UI together in the form of a web application."
-
-#: ../getstarted.rst:9
-msgid ""
-"Die dekorierten Funktionen dienen, in allererster Linie, der Erstellung von "
-"Metainformationen für die spätere Auswertung im Frontend der Anwendung und "
-"sind nichts, wovor man sich fürchten muss."
-msgstr ""
-"The decorated functions serve, first and foremost, to create meta-"
-"information for later evaluation in the front-end of the application and are"
-" nothing to be afraid of."
-
-#: ../getstarted.rst:11
-msgid "*Es ist wirklich einfach, bitte folgen Sie mir!*"
-msgstr "*It's really simple, please follow me!*"
-
-#: ../getstarted.rst:14
-msgid "Installation"
-msgstr "Installation"
-
-#: ../getstarted.rst:15
-msgid ""
-"Erstellen Sie zunächst ein leeres Python-Projekt in Ihrem gewünschten "
-"Verzeichnis."
-msgstr "First, create an empty Python project in your desired directory."
-
-#: ../getstarted.rst:17
-msgid ""
-"Um decore Base zu installieren, führen wir den folgenden Befehl im "
-"Stammverzeichnis des Projekts aus. Verwenden wir das Terminal in vscode."
-msgstr ""
-"To install decore Base, we run the following command in the root directory "
-"of the project. Let's use the terminal in vscode."
-
-#: ../getstarted.rst:23
-msgid ""
-"Dies erfordert eine aktivierte Python-Umgebung! Um mehr darüber zu erfahren,"
-" besuchen Sie `Python-Umgebungen in VS Code "
-"<https://code.visualstudio.com/docs/python/environments>`_."
-msgstr ""
-"This requires an enabled Python environment! To learn more, visit `Python "
-"Environments in VS Code "
-"<https://code.visualstudio.com/docs/python/environments>`_."
-
-#: ../getstarted.rst:26
-msgid "Vorbereitung"
-msgstr "Preparation"
-
-#: ../getstarted.rst:28
-msgid ""
-"Um für unsere zukünftige Python GUI-Dashboard-Anwendung alles nötige an "
-"Pfaden und Einstellungen zu erhalten, müssen wir noch die Vorbereitung "
-"durchführen."
-msgstr ""
-"In order to get everything we need in terms of paths and settings for our "
-"future Python GUI dashboard application, we still need to do the "
-"preparation."
-
-#: ../getstarted.rst:30
-msgid ""
-"Erstellen wir nun eine neue Datei mit dem Namen **app.py** im "
-"Hauptverzeichnis des Projekts."
-msgstr ""
-"Now let's create a new file named **app.py** in the root directory of the "
-"project."
-
-#: ../getstarted.rst:32
-msgid ""
-"Um decore zu verwenden, importieren wir es zunächst in das Modul **app.py**."
-msgstr "To use decore, we first import it into the **app.py** module."
-
-#: ../getstarted.rst:38
-msgid ""
-"Dann verwenden wir den Befehl ``prepare``, um alle erforderlichen "
-"Hilfsdateien im Stammverzeichnis des Projekts zu erstellen."
-msgstr ""
-"Then we use the ``prepare`` command to build all the necessary auxiliary "
-"files in the root directory of the project."
-
-#: ../getstarted.rst:40
-msgid ""
-"Um nun die Anwendung tatsächlich vorzubereiten, führen wir den Befehl "
-"``python app.py --prepare`` im Terminal aus. Der Pfad muss im "
-"Hauptverzeichnis des Projekts liegen, also dort wo sich die **app.py** "
-"befindet."
-msgstr ""
-"Now to actually prepare the application, we run the command ``python app.py "
-"--prepare`` in the terminal. The path must be in the root directory of the "
-"project, i.e. where the **app.py** is located."
-
-#: ../getstarted.rst:43
-msgid "Verwendung"
-msgstr "Usage"
-
-#: ../getstarted.rst:44
-msgid ""
-"Damit der Python-Interpreter die zukünftigen Basisklassen verarbeiten kann, "
-"fügen wir den folgenden Import hinzu."
-msgstr ""
-"To allow the Python interpreter to process the future base classes, we add "
-"the following import."
-
-#: ../getstarted.rst:50
-msgid ""
-"Normalerweise enthält ein Python-Hauptmodul eine Abfrage, die prüft, ob es "
-"das Hauptmodul ist, so dass wir anschließend die Funktion ``main`` aufrufen "
-"können."
-msgstr ""
-"Normally, a Python main module contains a query that checks if it is the "
-"main module so that we can subsequently call the ``main`` function."
-
-#: ../getstarted.rst:52
-msgid ""
-"Als nächstes erstellen wir eine Zeile ``if __name__ == '__main__':`` in der "
-"**app.py** Datei."
-msgstr ""
-"Next, we create a line ``if __name__ == '__main__':`` in the **app.py** "
-"file."
-
-#: ../getstarted.rst:54
-msgid ""
-"Um eine neue \"decore\" Anwendungsinstanz zu erstellen, benutzen wir eine "
-"mit ``@decore.app`` dekorierte ``main()`` Funktion in der **app.py** Datei, "
-"direkt unter der Zeile: ``if __name__ == '__main__':``."
-msgstr ""
-"To create a new \"decore\" application instance, we use a ``main()`` "
-"function decorated with ``@decore.app`` in the **app.py** file, just below "
-"the line: ``if __name__ == '__main__':``."
-
-#: ../getstarted.rst:67
-msgid "Model"
-msgstr "Model"
-
-#: ../getstarted.rst:68
-msgid ""
-"In einem Modell legen wir die Datenfelder fest, die später einer Basis "
-"zugeordnet werden muss. Es dient als Datenbankschnittstelle zu den "
-"Datenbanktreibern wie SQLite, MySQL, PostgreSQL, etc."
-msgstr ""
-"In a Model, we define the data fields that must later be assigned to a Base."
-" It serves as a database interface to the database drivers like SQLite, "
-"MySQL, PostgreSQL, etc."
-
-#: ../getstarted.rst:70
-msgid ""
-"Wir erstellen nun die Datei first_model.py im Verzeichnis **models** und "
-"fügen den folgenden Code ein:"
-msgstr ""
-"We now create the file first_model.py in the directory **models** and insert"
-" the following code:"
-
-#: ../getstarted.rst:73
-msgid ""
-"Es muss nicht für jede Basis ein Modell angelegt werden aber es muss jedes "
-"zu verwenden Modell eine Basis haben, die über die Datei **__init__.py**, "
-"importiert werden muss. Nur so werden Rellationen zwischen den Modellen auch"
-" im Frontend ausgewertet und dargestellt."
-msgstr ""
-"It is not necessary to create a model for each base, but each model to be "
-"used must have a base, which must be imported via the file **__init__.py**. "
-"This is the only way to evaluate and display rellations between the models "
-"in the frontend."
-
-#: ../getstarted.rst:76
-msgid ""
-"Um mögliche zirkuläre Importe zu vermeiden, legen wir die Modellklassen in "
-"einem eigenen Verzeichnis **models** in unserem Projektstammverzeichnis an. "
-"Das Verzeichnis **models** wurde durch den zuvor ausgeführten Befehl "
-"``python app.py --prepare`` erstellt."
-msgstr ""
-"To avoid possible circular imports, we create the model classes in a "
-"separate **models** directory in our project root directory. The **models** "
-"directory was created by the previously executed ``python app.py --prepare``"
-" command."
-
-#: ../getstarted.rst:88
-msgid ""
-"In dem hier gezeigten Beispiel importieren wir aus der **uniform library** "
-"die Klasse Conform_model und erweitern sie um die Felder Vorname und "
-"Nachname."
-msgstr ""
-"In the example shown here, we import the Conform_model class from the "
-"**uniform library** and extend it with the First Name and Last Name fields."
-
-#: ../getstarted.rst:90
-msgid ""
-"Die Modelle in **decore Base** basieren auf dem großartigen Peewee ORM. Um "
-"mehr über Peewee zu erfahren, besuchen Sie `Peewee ORM <http://docs.peewee-"
-"orm.com/en/latest/>`_."
-msgstr ""
-"The models in **decore Base** are based on the great Peewee ORM. To learn "
-"more about Peewee, visit `Peewee ORM <http://docs.peewee-"
-"orm.com/en/latest/>`_."
-
-#: ../getstarted.rst:93
-msgid ""
-"Beim Importieren ist zu beachten, dass wir alles (*) aus dem conform_model "
-"Namespace importieren, um auch die Feldklassen zu erhalten."
-msgstr ""
-"When importing, note that we import everything (*) from the conform_model "
-"namespace to get the field classes as well."
-
-#: ../getstarted.rst:97
-msgid ""
-"Die Basisklassen dienen der decore-Anwendung als Trägerelement für die View-"
-"Komponenten, pflegen das Datenmodell ein und gelten damit auch als "
-"Datenquelle für die Auswertung im Frontend des Dashboards."
-msgstr ""
-"The base classes serve the decore application as a carrier element for the "
-"view components, maintain the data model and are thus also considered the "
-"data source for evaluation in the dashboard frontend."
-
-#: ../getstarted.rst:99
-msgid ""
-"Nun müssen wir ein neues Python-Modul erstellen, das z.B. eine Basisklasse "
-"enthält: **first_base.py**, im Verzeichnis **bases** in unserem "
-"Projektstammverzeichnis. Das Verzeichnis **bases** wurde durch den zuvor "
-"ausgeführten Befehl ``python app.py --prepare`` miterzeugt."
-msgstr ""
-"Now we need to create a new Python module containing, for example, a base "
-"class: **first_base.py**, in the **bases** directory in our project root "
-"directory. The **bases** directory was co-created by the ``python app.py "
-"--prepare`` command executed earlier."
-
-#: ../getstarted.rst:112
-msgid ""
-"Um das zuvor erstellte Modell zu verwenden, importieren wir es in die Base-"
-"Klasse und übergeben es an den Parameter ``model``."
-msgstr ""
-"To use the previously created model, we import it into the Base class and "
-"pass it to the ``model`` parameter."
-
-#: ../getstarted.rst:115
-msgid ""
-"In order for the Python interpreter to be able to process the base classes, "
-"we have to import them into the __init__.py file in the **bases** directory."
-" The order of the individual imports also determines the order in **decore "
-"Front**."
-msgstr ""
-"In order for the Python interpreter to be able to process the base classes, "
-"we have to import them into the __init__.py file in the **bases** directory."
-" The order of the individual imports also determines the order in **decore "
-"Front**."
-
-#: ../getstarted.rst:117
-msgid "We edit the **__init__.py** file and insert the following code:"
-msgstr "We edit the **__init__.py** file and insert the following code:"
-
-#: ../getstarted.rst:125
-msgid ""
-"Views werden von der decore-Anwendung verwendet, um die Datensätze im "
-"Frontend der Webanwendung zu präsentieren."
-msgstr ""
-"Views are used by the decore application to present the data sets in the "
-"front end of the web application."
-
-#: ../getstarted.rst:127
-msgid ""
-"Mit dem View-Decorator können wir nun eine Ansichts-Komponente erstellen und"
-" sie, unter der zuvor erstellten Basisklasse, einhängen."
-msgstr ""
-"Using the View decorator, we can now create a View component and mount it, "
-"under the base class we created earlier."
-
-#: ../getstarted.rst:129
-msgid ""
-"Wir bearbeiten nun die Datei **first_base.py** erneut und erweitern den Code"
-" wie folgt:"
-msgstr ""
-"We now edit the **first_base.py** file again and extend the code as follows:"
-
-#: ../getstarted.rst:146
-msgid ""
-"Dialoge sind die unterstützenden Elemente für Widgets im Frontend der "
-"Webanwendung. Sie können Ansichten aber auch untergeordneten Widgets "
-"hinzugefügt werden und steuern die Sichtbarkeit und den Anzeigestil von "
-"Kindelementen. Dialoge erhalten auch die Kontrolle über die Sendefunktionen "
-"der Widgets."
-msgstr ""
-"Dialogs are the supporting elements for widgets in the front end of the web "
-"application. They can be added to views but also to child widgets and "
-"control the visibility and display style of child elements. Dialogs also get"
-" control over the sending functions of the widgets."
-
-#: ../getstarted.rst:148
-msgid ""
-"In unserem Fall erstellen wir einen Dialog, um eine neue Person mit Vornamen"
-" und Nachnamen anzulegen."
-msgstr ""
-"In our case, we create a dialog to create a new person with first name and "
-"last name."
-
-#: ../getstarted.rst:150
-msgid ""
-"Hier gehen wir ... wieder die Datei **first_base.py** und erweitern den Code"
-" wie folgt:"
-msgstr ""
-"Here we go ... again the file **first_base.py** and extend the code as "
-"follows:"
-
-#: ../getstarted.rst:169
-msgid ""
-"Widgets sind Komponenten, mit denen wir Interaktionen mit dem einzelnen "
-"Datensatz durchführen können. Sie können nur zu Dialogen hinzugefügt werden "
-"und sind stapelbar."
-msgstr ""
-"Widgets are components that allow us to perform interactions with the single"
-" record. They can only be added to dialogs and are stackable."
-
-#: ../getstarted.rst:171
-msgid ""
-"Was wir jetzt brauchen, ist ein Eingabeformular, um die Daten für die neue "
-"Person einzugeben."
-msgstr ""
-"What we need now is an input form to enter the data for the new person."
-
-#: ../getstarted.rst:192
-msgid ""
-"Actions sind Methoden, mit das Frontend mit **decore Base** kommunizieren "
-"kann. Sie können zu View und Widgets hinzugefügt werden und sind die "
-"einzigen echten Klassenmethoden und werden direkt in der Basis aufgerufen."
-msgstr ""
-"Actions are methods that allow the frontend to communicate with **decore "
-"Base**. They can be added to view and widgets and are the only real class "
-"methods and are called directly in Base."
-
-#: ../getstarted.rst:194
-msgid ""
-"Wir brauchen nun eine Aktion, um die Daten der neuen Person zu speichern und"
-" erweitern den Code in **first_base.py** wie folgt:"
-msgstr ""
-"We now need an action to store the data of the new person and extend the "
-"code in **first_base.py** as follows:"
-
-#: ../getstarted.rst:221
-msgid ""
-"Um einen Datensatz mit decore Base zu erstellen, müssen wir eine Instanz des"
-" Modells erstellen. In unserem Fall **First_model**. Die Instanz wird mit "
-"den Daten aus dem Formular gefüllt und dann gespeichert."
-msgstr ""
-"To build a dataset with decore Base, we need to create an instance of the "
-"Model. In our case **First_model**. The instance is filled with the data "
-"from the form and then saved."
-
-#: ../getstarted.rst:223
-msgid ""
-"Die ID, in Form einer UUID im Textformat, wird automatisch generiert und "
-"muss nicht gesondert angegeben werden."
-msgstr ""
-"The ID, in the form of a UUID in text format, is generated automatically and"
-" does not need to be specified separately."
-
-#: ../getstarted.rst:226
-msgid ""
-"Das Feld **titel** muss bei jeder Datensatzerstellung verwendet werden. "
-"Andernfalls wird das Element die Validierung nicht bestehen. Es sollte "
-"ausserdem immer eindeutig sein, also keine gleichen Titel in der Datenbank "
-"geben."
-msgstr ""
-"The **title** field must be used for each record creation. Otherwise the "
-"element will not pass the validation. It should also always be unique, i.e. "
-"there should be no identical titles in the database."
-
-#: ../getstarted.rst:229
-msgid "Ausführung, Entwicklung und Erstellung"
-msgstr "Run, development and build"
-
-#: ../getstarted.rst:231
-msgid "Ausführung"
-msgstr "Run"
-
-#: ../getstarted.rst:232
-msgid ""
-"Um Ihre Anwendung zu starten, führen Sie ``python app.py`` in Ihrem Projekt-"
-"Stammverzeichnis aus. Verwenden Sie das Terminal in vscode."
-msgstr ""
-"To start your application, run ``python app.py`` in your project root "
-"directory. Use the terminal in vscode."
-
-#: ../getstarted.rst:234 ../getstarted.rst:240
-msgid "Öffnen Sie den Browser und geben Sie ``http://localhost:5555`` ein."
-msgstr "Open the browser and type ``http://localhost:5555``."
-
-#: ../getstarted.rst:237
-msgid "Entwicklung"
-msgstr "Development"
-
-#: ../getstarted.rst:238
-msgid ""
-"Um Ihre Anwendung zu entwickeln, verwenden Sie Ihren Debugger mit dem Profil"
-" ``[dev] decore base development`` in vscode."
-msgstr ""
-"To develop your application, use your debugger with the ``[dev] decore base "
-"development`` profile in vscode."
-
-#: ../getstarted.rst:243
-msgid "Erstellung"
-msgstr "Build"
-
-#: ../getstarted.rst:244
-msgid ""
-"Um Ihre Anwendung zu erstellen, führen Sie ``python app.py --build`` in "
-"Ihrem Projekt-Stammverzeichnis aus. Verwenden Sie das Terminal in vscode."
-msgstr ""
-"To build your application, run ``python app.py --build`` in your project "
-"root directory. Use the terminal in vscode."
-
-#: ../index.rst:43
-msgid "Get started"
-msgstr "Get started"
-
-#: ../index.rst:43
-msgid "Sample"
-msgstr "Sample"
-
-#: ../index.rst:43
-msgid "Documentation"
-msgstr "Documentation"
+#: ../index.rst:46
+msgid "Beispiel"
+msgstr "Example"
 
 #: ../index.rst:-1
 msgid "decore Base | UI fastly"
@@ -1244,11 +1233,11 @@ msgstr "decore Base | UI fastly"
 msgid "index, follow"
 msgstr "index, follow"
 
-#: ../index.rst:8
-msgid "GUI-Dashboard-Anwendungen in Python schnell und einfach."
-msgstr "GUI dashboard applications in Python fast and easy."
+#: ../index.rst:15
+msgid "Einleitung"
+msgstr "Introduction"
 
-#: ../index.rst:13
+#: ../index.rst:16
 msgid ""
 "decore Base ist ein out-of-the-box \"Python to Vue.js\" Datenanwendungs-"
 "Dashboard, das Ihnen hilft, in wenigen einfachen Schritten von der Idee zur "
@@ -1261,11 +1250,11 @@ msgstr ""
 "aimed at those who want to focus on the results of their algorithms, do "
 "scientific work, or perform teaching and learning functions."
 
-#: ../index.rst:16
+#: ../index.rst:19
 msgid "Aktuell in Arbeit"
 msgstr "Currently in work"
 
-#: ../index.rst:17
+#: ../index.rst:20
 msgid ""
 "Sessionsystem, Benutzeranmeldung, Integrierte Benutzer und Rollen und "
 "Berechtigungsgesteuerte Aktionsausführung sowie Komponentenerzeugung"
@@ -1273,11 +1262,11 @@ msgstr ""
 "Session system, user logon, integrated users and roles, and permission-"
 "driven action execution and component generation."
 
-#: ../index.rst:20
+#: ../index.rst:23
 msgid "Funktionen und Integrationen"
 msgstr "Functions and integrations"
 
-#: ../index.rst:21
+#: ../index.rst:24
 msgid ""
 "Fertige SPA (Single Page Application) mit Vue.js unter Verwendung des Quasar"
 " Frameworks (https://github.com/quasarframework/quasar)"
@@ -1285,7 +1274,7 @@ msgstr ""
 "Finished SPA (Single Page Application) with Vue.js using the Quasar "
 "Framework (https://github.com/quasarframework/quasar)"
 
-#: ../index.rst:22
+#: ../index.rst:25
 msgid ""
 "Vordefinierte Webapi für Metadaten und Aktionen mit Flask "
 "(https://github.com/pallets/flask)"
@@ -1293,7 +1282,7 @@ msgstr ""
 "Predefined webapi for metadata and actions with Flask "
 "(https://github.com/pallets/flask)"
 
-#: ../index.rst:23
+#: ../index.rst:26
 msgid ""
 "Integriertes ORM für Datenmanagement und Datenbankschnittstellen (SQLite) "
 "powered by the great Peewee (https://github.com/coleifer/peewee)"
@@ -1301,25 +1290,25 @@ msgstr ""
 "Integrated ORM for data management and database interfaces (SQLite) powered "
 "by the great Peewee (https://github.com/coleifer/peewee)"
 
-#: ../index.rst:24
+#: ../index.rst:27
 msgid "Datensatz-Validierung mit Cerberus (https://github.com/pyeve/cerberus)"
 msgstr "Data set validation with Cerberus (https://github.com/pyeve/cerberus)"
 
-#: ../index.rst:25
+#: ../index.rst:28
 msgid ""
 "Passwortverwaltung mit pykeepass (https://github.com/libkeepass/pykeepass)"
 msgstr ""
 "Password management with pykeepass (https://github.com/libkeepass/pykeepass)"
 
-#: ../index.rst:27
+#: ../index.rst:30
 msgid "Bitte unterstützen Sie diese großartigen Projekte!"
 msgstr "Please support these great projects!"
 
-#: ../index.rst:30
+#: ../index.rst:33
 msgid "Contribution"
 msgstr "Contribution"
 
-#: ../index.rst:31
+#: ../index.rst:34
 msgid ""
 "Die größte Hilfe, die ich im Moment bekommen kann, ist, wenn Sie einen Blick"
 " auf das Projekt werfen und mir sagen, was Sie davon halten. Ich bin für "
@@ -1328,7 +1317,7 @@ msgstr ""
 "The biggest help I can get right now is if you take a look at the project "
 "and tell me what you think. I am grateful for any criticism."
 
-#: ../index.rst:33
+#: ../index.rst:36
 msgid ""
 "Wenn Sie etwas in der Dokumentation in Bezug auf Funktionen, Fehler oder "
 "Unklarheiten finden, lassen Sie es mich bitte wissen. Bitte benutzen Sie "
@@ -1339,11 +1328,11 @@ msgstr ""
 "ambiguities, please let me know. Please use the problem area in the "
 "repository to do so. `<https://github.com/KemoPanzah/decore_Base/issues>`_"
 
-#: ../index.rst:36
+#: ../index.rst:39
 msgid "Notes"
 msgstr "Notes"
 
-#: ../index.rst:37
+#: ../index.rst:40
 msgid ""
 "**decore Base ist derzeit in Arbeit, nur lokal bereitstellbar, nur für "
 "Windows verfügbar und noch nicht produktionsbereit**."
@@ -1351,7 +1340,7 @@ msgstr ""
 "**decore Base is currently a work in progress, only locally deployable, only"
 " available for Windows and not yet production ready**."
 
-#: ../index.rst:39
+#: ../index.rst:42
 msgid ""
 "Die empfohlene IDE ist Visual Studio Code und alle meine Kommentare und "
 "Dokumentationen hier beziehen sich auch nur auf vscode."
@@ -1359,7 +1348,7 @@ msgstr ""
 "The recommended IDE is Visual Studio Code and all my comments and "
 "documentation here also refer to vscode only."
 
-#: ../index.rst:41
+#: ../index.rst:44
 msgid ""
 "Diese Dokumentation wurde mit Deepl vom Deutschen ins Englische übersetzt."
 msgstr ""
@@ -2130,3 +2119,12 @@ msgstr "https://github.com/KemoPanzah/decore_Sample"
 
 #~ msgid "**Auto-Fill**"
 #~ msgstr "**Auto-Fill**"
+
+#~ msgid "Get started"
+#~ msgstr "Get started"
+
+#~ msgid "GUI-Dashboard-Anwendungen mit Python schnell und einfach."
+#~ msgstr "GUI dashboard applications with Python fast and easy."
+
+#~ msgid "Sample"
+#~ msgstr "Sample"

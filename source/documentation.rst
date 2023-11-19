@@ -4,7 +4,7 @@ Um mit decore Base eine lauffähige GUI-Dashboard-Anwendung zu erstellen, sind v
 
 Beschreibung der Meta-Instanzen
 -------------------------------
-Meta-Instanzen entahlten die benötigten Typen und Attribute für die Erstellung der GUI-Elemente. Die Meta-Instanzen werden in der Regel durch dekorierte Funktionen erstellt. Einen ersten Eindruck bekommen sie im Abschnitt :doc:`Erste Schritte<../getstarted>`
+Meta-Instanzen entahlten die benötigten Typen und Attribute für die Erstellung der GUI-Elemente. Die Meta-Instanzen werden in der Regel durch dekorierte Funktionen erstellt.
 
 App
 ~~~

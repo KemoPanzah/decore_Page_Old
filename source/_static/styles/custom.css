@@ -3,7 +3,7 @@ section {
 }
 
 .bd-header {
-    background: #015667 !important;
+    background: #075767 !important;
 }
 
 .bd-header p {
@@ -22,8 +22,8 @@ section {
     color: #ffffff !important;
 }
 
-.navbar-brand p {
-    margin-bottom: 3px;
+.navbar-brand {
+    text-decoration: none !important;
 }
 
 .bd-header .navbar-nav {
@@ -81,4 +81,12 @@ section {
 
 .de-teaser-grid .sd-card-title {
     font-size: 18px;
+}
+
+#hidden > h1 {
+    display: none;
+}
+
+h1 {
+    font-size: 32px !important;
 }
