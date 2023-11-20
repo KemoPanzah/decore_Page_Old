@@ -102,6 +102,10 @@ section {
     border-radius: 5px;
 }
 
+.html-inpage-nav a {
+    text-decoration: none;
+}
+
 .html-inpage-nav .title{
     color: #ffffff;
 }
