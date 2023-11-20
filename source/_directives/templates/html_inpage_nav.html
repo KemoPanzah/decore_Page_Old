@@ -2,14 +2,14 @@
     <div class="header row">
         <h1>{{ arg[0] }}</h1>
     </div>
-    <div class="items row justify-content-center align-items-center">
+    <div class="items row">
         {% for title in titles %}
         <div class="col col-12 col-md-6 col-lg-4 h-100">
-            <div class="background h-100">
+            <div class="background bg-{{ loop.index }} h-100">
                 <div class="overlay h-100">
                     <a class="link h-100" href="{{ links[loop.index0] }}">
-                        <div class="item row h-100 align-items-center">
-                            <div class="col">
+                        <div class="item row h-100">
+                            <div class="col d-flex justify-content-center align-items-center">
                                 <div class="title">{{ titles[loop.index0] }}</div>
                             </div>
                         </div>

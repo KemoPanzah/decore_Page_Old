@@ -63,7 +63,7 @@ section {
     display: none;
 }
 
-.de-teaser-grid {
+/* .de-teaser-grid {
     padding-left: 0px;
     padding-right: 0px;
 }
@@ -83,21 +83,27 @@ section {
 
 .de-teaser-grid .sd-card-title {
     font-size: 18px;
-}
+} */
 
 /* directives */
 
 .html-inpage-nav .items{
-    height: 64px;
+    height: 48px;
 }
 
 /* TODO - Alle Backgroundbilder in button anpassen und verkleinern */
 .html-inpage-nav .background{
-    background-image: url("../images/button/5.jpeg");
+    background-image: url("../images/button/2.jpg");
+    border-radius: 5px;
 }
 
 .html-inpage-nav .overlay{
     background: rgb(1 86 103 / 75%);
+    border-radius: 5px;
+}
+
+.html-inpage-nav .title{
+    color: #ffffff;
 }
 
 /* index*/
