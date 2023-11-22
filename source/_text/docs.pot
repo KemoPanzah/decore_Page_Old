@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: decore Base \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-18 19:30+0100\n"
+"POT-Creation-Date: 2023-11-22 19:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../documentation.rst:2
-#: ../index.rst:46
+#: ../index.rst:42
 msgid "Dokumentation"
 msgstr ""
 
@@ -625,7 +625,7 @@ msgid "Der Ansichtstyp Tabelle dient der tabellarischen Darstellung von Daten."
 msgstr ""
 
 #: ../features.rst:2
-#: ../index.rst:46
+#: ../index.rst:42
 msgid "Features"
 msgstr ""
 
@@ -729,11 +729,12 @@ msgstr ""
 msgid "Erzeugung eines relationalen Datensatzes für die weiterverwenung im Widget."
 msgstr ""
 
-#: ../index.rst:46
+#: ../index.rst:42
 msgid "Beispiel"
 msgstr ""
 
 #: ../index.rst:-1
+#: ../index.rst:12
 msgid "decore Base | UI fastly"
 msgstr ""
 
@@ -749,12 +750,12 @@ msgstr ""
 msgid "decore Base ist ein out-of-the-box \"Python to Vue.js\" Datenanwendungs-Dashboard, das Ihnen hilft, in wenigen einfachen Schritten von der Idee zur Ansicht zu gelangen. Es richtet sich an diejenigen, die sich auf die Ergebnisse ihrer Algorithmen konzentrieren wollen, wissenschaftliche Arbeit leisten oder Lehr- und Lernfunktionen ausführen wollen."
 msgstr ""
 
-#: ../index.rst:19
-msgid "Aktuell in Arbeit"
+#: ../index.rst:18
+msgid "**decore Base ist derzeit in Arbeit, nur lokal bereitstellbar, nur für Windows verfügbar und noch nicht produktionsbereit**."
 msgstr ""
 
 #: ../index.rst:20
-msgid "Sessionsystem, Benutzeranmeldung, Integrierte Benutzer und Rollen und Berechtigungsgesteuerte Aktionsausführung sowie Komponentenerzeugung"
+msgid "Die empfohlene IDE ist Visual Studio Code und alle meine Kommentare und Dokumentationen hier beziehen sich auch nur auf vscode."
 msgstr ""
 
 #: ../index.rst:23
@@ -802,14 +803,6 @@ msgid "Notes"
 msgstr ""
 
 #: ../index.rst:40
-msgid "**decore Base ist derzeit in Arbeit, nur lokal bereitstellbar, nur für Windows verfügbar und noch nicht produktionsbereit**."
-msgstr ""
-
-#: ../index.rst:42
-msgid "Die empfohlene IDE ist Visual Studio Code und alle meine Kommentare und Dokumentationen hier beziehen sich auch nur auf vscode."
-msgstr ""
-
-#: ../index.rst:44
 msgid "Diese Dokumentation wurde mit Deepl vom Deutschen ins Englische übersetzt."
 msgstr ""
 

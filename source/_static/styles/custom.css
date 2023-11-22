@@ -1,66 +1,132 @@
+/* fonts */
+
+/* quicksand-300 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/quicksand-v31-latin-300.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* quicksand-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/quicksand-v31-latin-regular.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* quicksand-500 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/quicksand-v31-latin-500.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* quicksand-600 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/quicksand-v31-latin-600.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* quicksand-700 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/quicksand-v31-latin-700.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Quicksand';
+  color: #075767;
+}
+
 section {
-    padding-top: 1px !important;
+  padding-top: 1px !important;
 }
 
 /* header and nav */
 
 .bd-header {
-    background: #075767 !important;
+  background: #075767 !important;
 }
 
 .bd-header p {
-    color: #ffffff !important;
+  color: #ffffff !important;
 }
 
 .bd-header .nav-link {
-    color: #ffffff !important;
+  color: #ffffff !important;
 }
 
 .bd-header .search-button {
-    color: #ffffff !important;
+  color: #ffffff !important;
 }
 
 .bd-header .theme-switch {
-    color: #ffffff !important;
+  color: #ffffff !important;
 }
 
 .navbar-brand {
-    text-decoration: none !important;
+  text-decoration: none !important;
 }
 
 .bd-header .navbar-nav {
-    padding-right: 32px;
+  padding-right: 32px;
 }
 
 .bd-sub-navbar {
-    z-index: 102;
-    position: fixed;
-    top: 64px;
-    justify-content: center;
-    width: 100%;
-    height: 48px;
-    background: rgb(1 86 103 / 75%);
+  z-index: 102;
+  position: fixed;
+  top: 64px;
+  justify-content: center;
+  width: 100%;
+  height: 48px;
+  background: rgb(1 86 103 / 75%);
 }
 
 .bd-sub-navigation ul {
-    display: flex;
-    flex-direction: row !important;
-    justify-content: flex-end;
-    padding-right: 16px;
+  display: flex;
+  flex-direction: row !important;
+  justify-content: flex-end;
+  padding-right: 16px;
 }
 
 .bd-sub-navigation .nav-link {
-    color: #ffffff !important;
-    margin-left: 0px !important;
-    border-left: 0px !important;
+  color: #ffffff !important;
+  margin-left: 0px !important;
+  border-left: 0px !important;
 }
 
 .bd-sub-navigation .onthispage {
-    display: none;
+  display: none;
 }
 
 .bd-sub-navigation .toc-h3 {
-    display: none;
+  display: none;
+}
+
+.bd-sub-navigation[class*="documentation"] {
+  display: none;
 }
 
 /* .de-teaser-grid {
@@ -87,40 +153,71 @@ section {
 
 /* directives */
 
-.html-inpage-nav .items{
-    height: 48px;
+.html-inpage-nav {
+  height: 45vh;
 }
 
-/* TODO - Alle Backgroundbilder in button anpassen und verkleinern */
-.html-inpage-nav .background{
-    background-image: url("../images/button/2.jpg");
-    border-radius: 5px;
+.html-inpage-nav .header h1 {
+  margin-top: 8px;
+  margin-bottom: 32px;
+  font-size: 3vh !important;
+  text-align: center;
 }
 
-.html-inpage-nav .overlay{
-    background: rgb(1 86 103 / 75%);
-    border-radius: 5px;
+.html-inpage-nav .ip-btn {
+  height: 48px;
+}
+
+.html-inpage-nav .bg-1 {
+  background-image: url("../images/button/1.jpg");
+  border-radius: 5px;
+  height: 100%;
+}
+
+.html-inpage-nav .bg-2 {
+  background-image: url("../images/button/2.jpg");
+  border-radius: 5px;
+  height: 100%;
+}
+
+.html-inpage-nav .bg-3 {
+  background-image: url("../images/button/3.jpg");
+  border-radius: 5px;
+  height: 100%;
+}
+
+.html-inpage-nav .overlay {
+  background: rgb(1 86 103 / 75%);
+  border-radius: 5px;
+  height: 100%;
 }
 
 .html-inpage-nav a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-.html-inpage-nav .title{
-    color: #ffffff;
+.html-inpage-nav .title {
+  color: #ffffff;
 }
 
 /* index*/
 
-#hidden > h1 {
-    display: none;
+#decore-base-ui-fastly>h1 {
+  display: none;
 }
-
-
 
 /* page */
 
 h1 {
-    font-size: 32px !important;
+  font-size: 32px !important;
 }
 
+/* sidebar-secondary */
+
+@media (min-width: 1200px) {
+
+  .bd-sidebar-secondary.index,
+  .bd-sidebar-secondary.features {
+    display: none;
+  }
+}

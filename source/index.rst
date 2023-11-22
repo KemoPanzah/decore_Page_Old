@@ -4,20 +4,20 @@
    :keywords: python gui, decore, python database, python dashboard, python orm, python ui, dashboard creation, python application, ui framework, ui toolkit
    :robots: index, follow
 
-HIDDEN
-======
-
-.. html-inpage-nav:: Nutze decore Base und erstelle damit interaktive und ansprechende Gui-Dashboard-Anwendungen, die deinen Ideen mehr Freiraum geben.
+.. html-inpage-nav:: Schnell erstellte Gui-Dashboard-Anwendungen mit Python, die deinen Ideen mehr Freiraum geben.
    :titles: Get startet; Beispiel; Dokumentation
    :links: documentation/getstarted.html; sample.html; documentation.html
+
+decore Base | UI fastly
+=======================
 
 Einleitung
 ----------
 decore Base ist ein out-of-the-box "Python to Vue.js" Datenanwendungs-Dashboard, das Ihnen hilft, in wenigen einfachen Schritten von der Idee zur Ansicht zu gelangen. Es richtet sich an diejenigen, die sich auf die Ergebnisse ihrer Algorithmen konzentrieren wollen, wissenschaftliche Arbeit leisten oder Lehr- und Lernfunktionen ausführen wollen.
 
-Aktuell in Arbeit
------------------
-* Sessionsystem, Benutzeranmeldung, Integrierte Benutzer und Rollen und Berechtigungsgesteuerte Aktionsausführung sowie Komponentenerzeugung
+**decore Base ist derzeit in Arbeit, nur lokal bereitstellbar, nur für Windows verfügbar und noch nicht produktionsbereit**.
+
+Die empfohlene IDE ist Visual Studio Code und alle meine Kommentare und Dokumentationen hier beziehen sich auch nur auf vscode.
 
 Funktionen und Integrationen
 ----------------------------
@@ -37,10 +37,6 @@ Wenn Sie etwas in der Dokumentation in Bezug auf Funktionen, Fehler oder Unklarh
 
 Notes
 -----
-**decore Base ist derzeit in Arbeit, nur lokal bereitstellbar, nur für Windows verfügbar und noch nicht produktionsbereit**.
-
-Die empfohlene IDE ist Visual Studio Code und alle meine Kommentare und Dokumentationen hier beziehen sich auch nur auf vscode.
-
 Diese Dokumentation wurde mit Deepl vom Deutschen ins Englische übersetzt.
 
 .. toctree::

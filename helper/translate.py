@@ -6,6 +6,7 @@ translator = deepl.Translator(auth_key)
 
 # Create an German to English glossary with two terms:
 entries = {
+    'decore Base | UI fastly': 'decore Base | UI fastly',
     'Basis': 'Base',
     'Erste Schritte': 'Get started',
     'Gui': 'gui',

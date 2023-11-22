@@ -1,22 +1,23 @@
 <div class="html-inpage-nav">
+
     <div class="header row">
+        {% if arg[0] %}
         <h1>{{ arg[0] }}</h1>
+        {% endif %}
     </div>
-    <div class="items row">
+
+    <div class="row g-2">
         {% for title in titles %}
-        <div class="col col-12 col-md-6 col-lg-4 h-100">
-            <div class="background bg-{{ loop.index }} h-100">
-                <div class="overlay h-100">
-                    <a class="link h-100" href="{{ links[loop.index0] }}">
-                        <div class="item row h-100">
-                            <div class="col d-flex justify-content-center align-items-center">
-                                <div class="title">{{ titles[loop.index0] }}</div>
-                            </div>
-                        </div>
-                    </a>
+        <div class="ip-btn col-12 col-md-4">
+            <a class="h-100" href="{{ links[loop.index0] }}">
+                <div class="bg-{{ loop.index }}">
+                    <div class="overlay d-flex justify-content-center align-items-center">
+                        <div class="title">{{ titles[loop.index0] }}</div>
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
         {% endfor %}
     </div>
+    
 </div>
