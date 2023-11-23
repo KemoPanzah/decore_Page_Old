@@ -19,6 +19,18 @@ decore Base ist ein out-of-the-box "Python to Vue.js" Datenanwendungs-Dashboard,
 
 Die empfohlene IDE ist Visual Studio Code und alle meine Kommentare und Dokumentationen hier beziehen sich auch nur auf vscode.
 
+Phasen einer GUI-Dashboard-Anwendung
+-------------------------------------
+
+decore Base bleibt in stätiger Entwicklung 
+
+.. html-inpage-tab::
+   :labels: Idee & Konzept; Entwicklung & Design; Anpassung & Erweiterung; Sicherheit & Compliance; Bereitstellung & Veröffentlichung; Wartung & Support;
+   :contents: 
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. This is text number one;
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. This is text number two;
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. This is text number three;
+
 Funktionen und Integrationen
 ----------------------------
 - Fertige SPA (Single Page Application) mit Vue.js unter Verwendung des Quasar Frameworks (https://github.com/quasarframework/quasar)
@@ -35,16 +47,16 @@ Die größte Hilfe, die ich im Moment bekommen kann, ist, wenn Sie einen Blick a
 
 Wenn Sie etwas in der Dokumentation in Bezug auf Funktionen, Fehler oder Unklarheiten finden, lassen Sie es mich bitte wissen. Bitte benutzen Sie dazu den Problembereich im Repository. `<https://github.com/KemoPanzah/decore_Base/issues>`_
 
-Notes
------
-Diese Dokumentation wurde mit Deepl vom Deutschen ins Englische übersetzt.
+Wenn Sie einen Fehler finden, können Sie ihn gerne beheben und einen Pull-Request erstellen. 
+
+Bitte beachten Sie, dass ich nicht alle Pull-Requests annehmen kann, da ich das Projekt in eine bestimmte Richtung lenken möchte. Wenn Sie also eine größere Änderung vornehmen möchten, lassen Sie es mich bitte wissen, bevor Sie viel Zeit investieren.
 
 .. toctree::
    :hidden:
    :maxdepth: 1
 
    Features <features>
-   Beispiel <sample>
+   Sample <sample>
    Dokumentation <documentation>
    
 .. Indices and tables
