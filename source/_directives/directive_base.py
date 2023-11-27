@@ -7,27 +7,35 @@ class Directive_base(Directive):
         super().__init__(*args, **kwargs)
         self.language = self.state.document.settings.env.config.language
         self.argument_dict = {}
-        self.parse_arguments()
         self.env = Environment(loader=FileSystemLoader(Path('source/_directives/templates').absolute()))
+        self.parse_arguments()
 
     def parse_arguments(self):
         t_attribute = 'arg'
         t_arg = ''
+
+        if not hasattr(self, 'used_args'):
+            raise Exception('Directive ' + self.__class__.__name__ + ' does not define used_args')
+
+        for arg in self.used_args:
+            self.argument_dict[arg] = []
+
         for index, argument in enumerate(self.arguments):
             
+            if not t_attribute in self.used_args:
+                raise Exception('Argument ' + t_attribute + ' is not defined in directive ' + self.__class__.__name__)
+
             if ';' in argument or index == len(self.arguments) - 1:
                 t_arg = t_arg + argument.replace(';', '')
-                self.argument_dict[t_attribute] = self.argument_dict.get(t_attribute, []) + [t_arg]
-                # if t_attribute in self.translate_args:
-                #     self.argument_dict[t_attribute] = [gettext.gettext(item) for item in self.argument_dict[t_attribute]]
+                if t_arg != '':
+                    self.argument_dict[t_attribute].append(t_arg)
                 t_arg = ''
                 continue
 
             if argument.startswith(':'):
                 t_arg = t_arg[:-1] 
-                self.argument_dict[t_attribute] = self.argument_dict.get(t_attribute, []) + [t_arg]
-                # if t_attribute in self.translate_args:
-                #     self.argument_dict[t_attribute] = [gettext.gettext(item) for item in self.argument_dict[t_attribute]]
+                if t_arg != '':
+                    self.argument_dict[t_attribute].append(t_arg)
                 t_attribute = argument.replace(':', '')
                 t_arg = ''
                 continue

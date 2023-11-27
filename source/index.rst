@@ -14,22 +14,27 @@ decore Base | UI fastly
 Einleitung
 ----------
 decore Base ist ein out-of-the-box "Python to Vue.js" Datenanwendungs-Dashboard, das Ihnen hilft, in wenigen einfachen Schritten von der Idee zur Ansicht zu gelangen. Es richtet sich an diejenigen, die sich auf die Ergebnisse ihrer Algorithmen konzentrieren wollen, wissenschaftliche Arbeit leisten oder Lehr- und Lernfunktionen ausführen wollen.
+.. .. only:: beginner
+..    decore Base ist ein Tool, das dir hilft, schnell und einfach Dashboards zu erstellen, indem es Python und Vue.js verbindet. Es ist perfekt für dich, wenn du schnell Ergebnisse sehen möchtest, ohne dich in technischen Details zu verlieren. Egal, ob du wissenschaftliche Daten analysieren, lehren oder lernen möchtest, decore Base macht es einfach, deine Ideen in die Praxis umzusetzen.
 
-**decore Base ist derzeit in Arbeit, nur lokal bereitstellbar, nur für Windows verfügbar und noch nicht produktionsbereit**.
+.. note::
+   **decore Base ist derzeit in Arbeit, nur lokal bereitstellbar, nur für Windows verfügbar und noch nicht produktionsbereit**.
 
 Die empfohlene IDE ist Visual Studio Code und alle meine Kommentare und Dokumentationen hier beziehen sich auch nur auf vscode.
 
-Phasen einer GUI-Dashboard-Anwendung
--------------------------------------
+Unterstützung der Entwicklungsphasen
+------------------------------------
 
-decore Base bleibt in stätiger Entwicklung 
+decore Base befindet sich in kontinuierlicher Weiterentwicklung und wird künftig noch mehr Funktionen integrieren, um den Entwicklungsprozess eines GUI-Dashboard-Anwendungsprogramms sowie seiner verschiedenen Phasen optimal zu unterstützen.
 
-.. html-inpage-tab::
-   :labels: Idee & Konzept; Entwicklung & Design; Anpassung & Erweiterung; Sicherheit & Compliance; Bereitstellung & Veröffentlichung; Wartung & Support;
+.. page-tabs::
+   :labels: Idee & Konzept; Entwicklung & Design; Anpassung & Erweiterung; Sicherheit & Compliance; Bereitstellung & Veröffentlichung; Wartung & Support
+   :svgs: ./_static/images/livecycle/1.svg;
+   :sources: rukanicon
    :contents: 
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. This is text number one;
+      Um deinen Ideen maximale Freiheit zu geben, ist decore Base im ersten Schritt praktisch sofort einsatzbereit. Du musst dich nicht um die GUI, Datenbankfunktionalitäten, Sicherheitsaspekte oder viele andere Details kümmern. Feinere Anpassungen an Mikroelementen kannst du im nächsten Schritt entsprechend deinen Anforderungen vornehmen. Konzentriere dich vollständig auf deine Ideen und die Umsetzung deiner Algorithmen, indem du Funktionen einfach mittels Python dekorierst.;
       Lorem Ipsum is simply dummy text of the printing and typesetting industry. This is text number two;
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. This is text number three;
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. This is text number three
 
 Funktionen und Integrationen
 ----------------------------

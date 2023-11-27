@@ -12,10 +12,24 @@
     window.addEventListener("scroll", function () {
         let vh = window.innerHeight * 0.01;
         var scrollPosition = window.pageYOffset;
+
         var image = document.querySelector(".bd-image-parallax");
         image.style.height = Math.max(48, (55 * vh - 64) - scrollPosition) + "px";
         if (scrollPosition <= (55 * vh - 64) - 48) {
             image.style.backgroundPosition = "center " + (-1000 + scrollPosition * 0.25) + "px";
+        }
+
+        var sections = document.querySelectorAll('section');
+        var scrollPos = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+        var menuOffset = 112; // Menü-Offset
+
+        for (var i = 0; i < sections.length; i++) {
+            if (sections[i].offsetTop - menuOffset <= scrollPos && sections[i].offsetTop + sections[i].offsetHeight - menuOffset > scrollPos) {
+                // Der derzeit angescrollte Sektor
+                sections[i].classList.add('active');
+            } else {
+                sections[i].classList.remove('active');
+            }
         }
     });
 </script>

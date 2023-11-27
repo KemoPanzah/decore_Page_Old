@@ -61,7 +61,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 section {
-  padding-top: 1px !important;
+  padding-top: 16px !important;
 }
 
 /* header and nav */
@@ -198,6 +198,37 @@ section {
 
 .html-inpage-nav .title {
   color: #ffffff;
+}
+
+.page-tabs .nav{
+  border-bottom: 1px solid #07576780;
+}
+
+.page-tabs .nav-link {
+  color: #075767 !important;
+}
+
+.page-tabs .nav-link:hover {
+  color: #ffffff !important;
+  background-color: #07576780 !important;
+}
+
+.page-tabs .nav-link.active{
+  color: #ffffff !important;
+  background-color: #075767 !important;
+}
+
+.page-tabs svg{
+  width: 150px;
+  height: 150px;
+}
+
+.page-tabs path{
+  fill: #075767;
+}
+
+.page-tabs .tab-content{
+  padding: 16px;  
 }
 
 /* index*/

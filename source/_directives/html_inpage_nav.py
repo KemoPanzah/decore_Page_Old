@@ -6,6 +6,7 @@ class Html_inpage_nav(Directive_base):
     has_content = True
     required_arguments = 1
     optional_arguments = 1000
+    used_args = ['arg', 'titles', 'links']
     translate_args = ['arg', 'titles']
 
     def run(self):
