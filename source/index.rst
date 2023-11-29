@@ -28,13 +28,19 @@ Unterstützung der Entwicklungsphasen
 decore Base befindet sich in kontinuierlicher Weiterentwicklung und wird künftig noch mehr Funktionen integrieren, um den Entwicklungsprozess eines GUI-Dashboard-Anwendungsprogramms sowie seiner verschiedenen Phasen optimal zu unterstützen.
 
 .. page-tabs::
-   :labels: Idee & Konzept; Entwicklung & Design; Anpassung & Erweiterung; Sicherheit & Compliance; Bereitstellung & Veröffentlichung; Wartung & Support
-   :svgs: ./_static/images/livecycle/1.svg;
+   :labels: Idee & Konzept; Entwicklung & Erweiterung; Anpassung & Design; Test & Stabilität; Sicherheit & Compliance; Bereitstellung & Veröffentlichung; Marketing & Monetarisierung;
+   :svgs: ./_static/images/livecycle/1.svg; ./_static/images/livecycle/2.svg; ./_static/images/livecycle/3.svg; ./_static/images/livecycle/4.svg; ./_static/images/livecycle/5.svg; ./_static/images/livecycle/6.svg; ./_static/images/livecycle/7.svg;
    :sources: rukanicon
    :contents: 
-      Um deinen Ideen maximale Freiheit zu geben, ist decore Base im ersten Schritt praktisch sofort einsatzbereit. Du musst dich nicht um die GUI, Datenbankfunktionalitäten, Sicherheitsaspekte oder viele andere Details kümmern. Feinere Anpassungen an Mikroelementen kannst du im nächsten Schritt entsprechend deinen Anforderungen vornehmen. Konzentriere dich vollständig auf deine Ideen und die Umsetzung deiner Algorithmen, indem du Funktionen einfach mittels Python dekorierst.;
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. This is text number two;
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. This is text number three
+      Um deinen Ideen maximale Freiheit zu geben, ist decore Base im ersten Schritt praktisch sofort einsatzbereit. Du musst dich nicht um die GUI, Datenbankfunktionalitäten, Sicherheitsaspekte oder viele andere Details kümmern. Feinere Anpassungen kannst du im nächsten Schritt entsprechend deinen Anforderungen vornehmen. Konzentriere dich vollständig auf deine Ideen und die Umsetzung deiner Algorithmen.;
+      Programmiere deine Anwendung im objektorientierten Stil, denn Benutzer-Aktionen aus dem Frontend werden in deinen Basisinstanzen ausgeführt. Dekoriere einfach Python-Funktionen mit einer klaren Syntax und ermögliche so das organische Wachsen deiner GUI-Anwendung. Erweitere deine Anwendung um neue Funktionen und schöpfe dabei aus dem vollen Potenzial von Python und seinen Bibliotheken.;
+      Entdecke mühelos und zügig den grundlegenden UI-Stil und passe ihn anschließend ganz nach deinen Anforderungen an. Integriere zusätzlich Template-Code**, um sicherzustellen, dass deine Anwendung nicht nur Daten verarbeitet, sondern auch ein individuelles Erscheinungsbild annimmt. Verleihe deiner Benutzeroberfläche deinen persönlichen Stil mithilfe eigener Sheets**.; 
+      Gewährleiste die Stabilität und Qualität deiner Anwendung durch eine sorgfältige Überprüfung ihrer Funktionalitäten mithilfe eingebauter Testmethoden**. Diese Tests ermöglichen es, die erwarteten Ergebnisse sicherzustellen und die Performance der Anwendung zu optimieren.;
+      Nutze das eingebaute Sitzungsmanagement und übertrage Daten verschlüsselt** in deine Anwendung. Implementiere eigene Modelle für die Erfassung sensibler und persönlicher Benutzerdaten. Setze die integrierte Benutzerverwaltung** ein, um Rollen und Besitzrechte zu verwalten.; 
+      Im Augenblick ist es gut zu Wissen das decore Base auch in dieser Phase zukünftig Unterstützen wird. Hier kommen bald Funktionen wie z.B. Electron-Integration** Damit kannst du deine Anwendung als Desktop-App veröffentlichen.;
+      Gewährleiste die Sichtbarkeit und Auffindbarkeit deiner Anwendung durch ein SEO**-freundliches Frontend. Baldinge Implemetierungen berücksichtigen subtile und benutzerfreundliche Werbemöglichkeiten**, die nahtlos in das Anwendererlebnis integriert sind.;
+
+** Einige der hier genannten Funktionen sind derzeit noch in direkter Entwicklung und werden in Kürze verfügbar sein.
 
 Funktionen und Integrationen
 ----------------------------
