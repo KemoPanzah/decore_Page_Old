@@ -14,8 +14,6 @@ decore Base | UI fastly
 Einleitung
 ----------
 decore Base ist ein out-of-the-box "Python to Vue.js" Datenanwendungs-Dashboard, das Ihnen hilft, in wenigen einfachen Schritten von der Idee zur Ansicht zu gelangen. Es richtet sich an diejenigen, die sich auf die Ergebnisse ihrer Algorithmen konzentrieren wollen, wissenschaftliche Arbeit leisten oder Lehr- und Lernfunktionen ausführen wollen.
-.. .. only:: beginner
-..    decore Base ist ein Tool, das dir hilft, schnell und einfach Dashboards zu erstellen, indem es Python und Vue.js verbindet. Es ist perfekt für dich, wenn du schnell Ergebnisse sehen möchtest, ohne dich in technischen Details zu verlieren. Egal, ob du wissenschaftliche Daten analysieren, lehren oder lernen möchtest, decore Base macht es einfach, deine Ideen in die Praxis umzusetzen.
 
 .. note::
    **decore Base ist derzeit in Arbeit, nur lokal bereitstellbar, nur für Windows verfügbar und noch nicht produktionsbereit**.
@@ -37,8 +35,8 @@ decore Base befindet sich in kontinuierlicher Weiterentwicklung und wird künfti
       Entdecke mühelos und zügig den grundlegenden UI-Stil und passe ihn anschließend ganz nach deinen Anforderungen an. Integriere zusätzlich Template-Code**, um sicherzustellen, dass deine Anwendung nicht nur Daten verarbeitet, sondern auch ein individuelles Erscheinungsbild annimmt. Verleihe deiner Benutzeroberfläche deinen persönlichen Stil mithilfe eigener Sheets**.; 
       Gewährleiste die Stabilität und Qualität deiner Anwendung durch eine sorgfältige Überprüfung ihrer Funktionalitäten mithilfe eingebauter Testmethoden**. Diese Tests ermöglichen es, die erwarteten Ergebnisse sicherzustellen und die Performance der Anwendung zu optimieren.;
       Nutze das eingebaute Sitzungsmanagement und übertrage Daten verschlüsselt** in deine Anwendung. Implementiere eigene Modelle für die Erfassung sensibler und persönlicher Benutzerdaten. Setze die integrierte Benutzerverwaltung** ein, um Rollen und Besitzrechte zu verwalten.; 
-      Im Augenblick ist es gut zu Wissen das decore Base auch in dieser Phase zukünftig Unterstützen wird. Hier kommen bald Funktionen wie z.B. Electron-Integration** Damit kannst du deine Anwendung als Desktop-App veröffentlichen.;
-      Gewährleiste die Sichtbarkeit und Auffindbarkeit deiner Anwendung durch ein SEO**-freundliches Frontend. Baldinge Implemetierungen berücksichtigen subtile und benutzerfreundliche Werbemöglichkeiten**, die nahtlos in das Anwendererlebnis integriert sind.;
+      decore Base wird auch in dieser Entwicklungsphase künftig unterstützende Funktionen bieten. Bald werden Features wie die Electron-Integration** verfügbar sein, mit der du deine Anwendung ganz einfach als Desktop-App veröffentlichen kannst.;
+      Gewährleiste die Sichtbarkeit und Auffindbarkeit deiner Anwendung durch ein SEO**-freundliches Frontend. Baldige Implemetierungen berücksichtigen subtile und benutzerfreundliche Werbemöglichkeiten**, die nahtlos in das Anwendererlebnis integriert sind.;
 
 ** Einige der hier genannten Funktionen sind derzeit noch in direkter Entwicklung und werden in Kürze verfügbar sein.
 
