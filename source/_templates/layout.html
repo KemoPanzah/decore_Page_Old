@@ -1,16 +1,17 @@
 {% extends "pydata_sphinx_theme/layout.html" %}
 {% block content %}
-<script src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"></script>
+<!-- <script src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"></script> -->
 <script>
-    kofiWidgetOverlay.draw("decore_base", {
-        type: "floating-chat",
-        "floating-chat.donateButton.text": "Support Dev",
-        "floating-chat.donateButton.background-color": "#075767",
-        "floating-chat.donateButton.text-color": "#fff",
-    });
+    // kofiWidgetOverlay.draw("decore_base", {
+    //     type: "floating-chat",
+    //     "floating-chat.donateButton.text": "Support Dev",
+    //     "floating-chat.donateButton.background-color": "#075767",
+    //     "floating-chat.donateButton.text-color": "#fff",
+    // });
 
     window.addEventListener("scroll", function () {
         let vh = window.innerHeight * 0.01;
+        var totalHeight = document.documentElement.scrollHeight;
         var scrollPosition = window.pageYOffset;
 
         var image = document.querySelector(".bd-image-parallax");
@@ -24,9 +25,8 @@
         var lastSection = document.querySelector('section > section:last-of-type');
         var lastSectionVh = (lastSection.offsetHeight / window.innerHeight) * 100;
 
-        var footer = document.querySelector(".bd-footer-parallax");
+        var footer = document.querySelector(".bd-footer-space");
         footer.style.height = ((100 - lastSectionVh) * vh) - 112 - 59 + "px";
-        footer.style.backgroundPosition = "center " + (scrollPosition * -0.25) + "px";
 
         var sections = document.querySelectorAll('section');
         var scrollPos = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
@@ -49,7 +49,7 @@
         top: 64px;
         width: 100%;
         height: calc(55vh - 64px);
-        background-image: url("_static/images/parallax/6.jpeg");
+        background-image: url("_static/images/parallax/3.jpeg");
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: center -1000px;
@@ -77,15 +77,9 @@
         height: 48px;
     }
 
-    .bd-footer-parallax {
-        z-index: 101;
-        width: 100%;
+    .bd-footer-space {
+        background: #07576740;
         height: 50vh;
-        background-image: url("_static/images/parallax/6.jpeg");
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center;
-        background-size: auto 1920px;
     }
 </style>
 {{ super() }}
@@ -114,6 +108,6 @@
 {% endblock docs_toc %}
 
 {%block footer %}
-<div class="bd-footer-parallax"></div>
+<div class="bd-footer-space"></div>
 {{ super() }}
 {% endblock footer %}
