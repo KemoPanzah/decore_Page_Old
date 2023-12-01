@@ -9,6 +9,12 @@
     //     "floating-chat.donateButton.text-color": "#fff",
     // });
 
+    window.onload = function () {
+        var randomNumber = Math.floor(Math.random() * 5) + 1;  // Generiert eine zufällige Nummer zwischen 1 und 10
+        var imagePath = "_static/images/parallax/" + randomNumber + ".jpeg";  // Fügt die zufällige Nummer zum Bildpfad hinzu
+        document.querySelector('.bd-image-parallax').style.backgroundImage = "url('" + imagePath + "')";  // Setzt das Hintergrundbild auf das zufällige Bild
+    }
+
     window.addEventListener("scroll", function () {
         let vh = window.innerHeight * 0.01;
         var totalHeight = document.documentElement.scrollHeight;
@@ -16,9 +22,9 @@
 
         var image = document.querySelector(".bd-image-parallax");
         if (image) {
-            image.style.height = Math.max(48, (55 * vh - 64) - scrollPosition) + "px";
-            if (scrollPosition <= (55 * vh - 64) - 48) {
-                image.style.backgroundPosition = "center " + (-1000 + scrollPosition * 0.25) + "px";
+            image.style.height = Math.max(48, (60 * vh - 64) - scrollPosition) + "px";
+            if (scrollPosition <= (60 * vh - 64) - 48) {
+                image.style.backgroundPosition = "center " + (-500 + scrollPosition * 0.65) + "px";
             }
         }
 
@@ -28,9 +34,9 @@
         var footer = document.querySelector(".bd-footer-space");
         footer.style.height = ((100 - lastSectionVh) * vh) - 112 - 59 + "px";
 
-        var sections = document.querySelectorAll('section');
+        var sections = document.querySelectorAll('section > section');
         var scrollPos = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
-        var menuOffset = 112; // Menü-Offset
+        var menuOffset = 136; // Menü-Offset
 
         for (var i = 0; i < sections.length; i++) {
             if (sections[i].offsetTop - menuOffset <= scrollPos && sections[i].offsetTop + sections[i].offsetHeight - menuOffset > scrollPos) {
@@ -48,16 +54,16 @@
         position: fixed;
         top: 64px;
         width: 100%;
-        height: calc(55vh - 64px);
-        background-image: url("_static/images/parallax/11.jpeg");
+        height: calc(60vh - 64px);
+        /* background-image: url("_static/images/parallax/2.jpeg"); */
         background-repeat: no-repeat;
         background-attachment: fixed;
-        background-position: center -1000px;
+        background-position: center -500px;
         background-size: auto 1920px;
     }
 
     .bd-image-parallax-space {
-        height: calc(55vh - 64px);
+        height: calc(60vh - 64px);
     }
 
     .bd-image-sub {
@@ -78,7 +84,7 @@
     }
 
     .bd-footer-space {
-        background: #07576740;
+        background: #41808d;
         height: 50vh;
     }
 </style>
@@ -108,6 +114,8 @@
 {% endblock docs_toc %}
 
 {%block footer %}
+{% if "documentation" not in pagename %}
 <div class="bd-footer-space"></div>
+{% endif %}
 {{ super() }}
 {% endblock footer %}

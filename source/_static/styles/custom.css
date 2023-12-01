@@ -178,7 +178,7 @@ section {
 /* directives */
 
 .html-inpage-nav {
-    height: 45vh;
+    height: 40vh;
 }
 
 .html-inpage-nav .header h1 {
@@ -201,7 +201,7 @@ section {
     .html-inpage-nav .header h1 {
         margin-top: 8px;
         margin-bottom: 32px;
-        font-size: 3.5vh !important;
+        font-size: 2.5vh !important;
         text-align: center;
     }
 }
@@ -303,4 +303,15 @@ h1 {
     .bd-sidebar-secondary.features {
         display: none;
     }
+}
+
+/* footer */
+
+.bd-footer {
+    height: 64px;
+    background: #075767 !important;
+}
+
+.bd-footer p {
+    color: #ffffff !important;
 }
