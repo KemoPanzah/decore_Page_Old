@@ -997,7 +997,7 @@ msgstr ""
 
 #: ../documentation/getstarted.rst:11
 msgid "*Es ist wirklich einfach, bitte folgen Sie mir!*"
-msgstr "*It's really simple, please follow me!*"
+msgstr "*It's really simple, please follow me!"
 
 #: ../documentation/getstarted.rst:14
 msgid "Installation"

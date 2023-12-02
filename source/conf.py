@@ -12,9 +12,10 @@ from decore_Page.source._directives import *
 def on_build_finished(app, exception):
     if not exception:
         if app.builder.name == 'gettext':
-            cmd = ['sphinx-intl', 'update', '-p', 'source/_text', '-l', 'en']
+            t_lang = app.config.language
+            cmd = ['sphinx-intl', 'update', '-p', 'source/_text', '-l', t_lang]
             subprocess.run(cmd, cwd=os.path.abspath('.'), check=True)
-            app.config.localizer.translate_po_file(Path('source/_locale/en/LC_MESSAGES').joinpath('docs.po'))
+            app.config.localizer.translate_po_file(Path('source/_locale/'+t_lang+'/LC_MESSAGES').joinpath('docs.po'))
 
 def setup(app):
     app.config['localizer'] = Localizer(app.config.language)
