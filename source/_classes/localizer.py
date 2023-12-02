@@ -16,13 +16,15 @@ entries = {
         'Ausführung': 'Run',
         'Entwicklung': 'Development',
         'Erstellung': 'Build',
-    }
+    },
+    'ES': {
+        'decore Base | UI fastly': 'decore Base | UI fastly',
+    },
 }
 
 
 class Localizer(Translator):
     __data__ = None
-    __file_data__ = {}
     file_path = Path('source/_locale').joinpath('locales.json')
     auth_key = json.load(open('../auth_key.json'))['deepl']
 
@@ -39,21 +41,19 @@ class Localizer(Translator):
             try:
                 with open(cls.file_path, 'r') as t_file:
                     cls.__data__ = json.load(t_file)
-                    cls.__file_data__.update(cls.__data__)
             except FileNotFoundError:
                 cls.__data__ = {}
 
     @classmethod
     def save_data(cls):
-        if not cls.__data__ == cls.__file_data__:
-            with open(cls.file_path, 'w') as t_file:
-                json.dump(cls.__data__, t_file, indent=4)
-                cls.__file_data__.update(cls.__data__)
+        with open(cls.file_path, 'w') as t_file:
+            json.dump(cls.__data__, t_file, indent=4)
 
     def get_lang(self, p_lang_code):
         language_map = {
             'de': 'DE',
             'en': 'EN-US',
+            'es': 'ES',
         }
         return language_map[p_lang_code]
 
@@ -69,7 +69,7 @@ class Localizer(Translator):
                         t_glossary = i_glossary
 
             if not t_glossary:
-                self.glossary = self.create_glossary(
+                t_glossary = self.create_glossary(
                     self.target_lang,
                     source_lang=self.source_lang,
                     target_lang=self.target_lang,
@@ -92,7 +92,7 @@ class Localizer(Translator):
         if not self.target_lang in self.__data__[p_text]:
             if self.source_lang != self.target_lang:
                 self.__data__[p_text][self.target_lang] = self.translate_text_with_glossary(p_text, self.gloss, target_lang=self.target_lang).text
+                self.save_data()
             else:
                 self.__data__[p_text][self.target_lang] = p_text
-            self.save_data()
         return self.__data__[p_text][self.target_lang]

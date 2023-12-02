@@ -1,0 +1,1742 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Jean Rohark
+# This file is distributed under the same license as the decore Base
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: decore Base\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-02 22:00+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: es <LL@li.org>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../documentation.rst:2 ../index.rst:50
+msgid "Dokumentation"
+msgstr "Documentación"
+
+#: ../documentation.rst:3
+msgid ""
+"Um mit decore Base eine lauffähige GUI-Dashboard-Anwendung zu erstellen, "
+"sind vergleichsweise wenige Schritte notwendig. Im Wesentlichen besteht der "
+"Aufbau aus der Definition der Meta-Instanzen und der Definition des "
+"Datenmodells. Die Metadaten werden vom Interpreter durch Einlesen von "
+"dekorierten Funktionen zusammengestellt und als Instanzen im Pool "
+"gespeichert."
+msgstr ""
+"Para crear una aplicación de cuadro de mando GUI ejecutable con decore Base,"
+" son necesarios comparativamente pocos pasos. Esencialmente, la estructura "
+"consiste en definir las meta instancias y definir el modelo de datos. Los "
+"metadatos son compilados por el intérprete mediante la lectura de funciones "
+"decoradas y guardados como instancias en el pool."
+
+#: ../documentation.rst:6
+msgid "Beschreibung der Meta-Instanzen"
+msgstr "Descripción de las metainstancias"
+
+#: ../documentation.rst:7
+msgid ""
+"Meta-Instanzen entahlten die benötigten Typen und Attribute für die "
+"Erstellung der GUI-Elemente. Die Meta-Instanzen werden in der Regel durch "
+"dekorierte Funktionen erstellt."
+msgstr ""
+"Las metainstancias contienen los tipos y atributos necesarios para crear los"
+" elementos GUI. Las metainstancias suelen crearse mediante funciones "
+"decoradas."
+
+#: ../documentation.rst:10
+msgid "App"
+msgstr "Aplicación"
+
+#: ../documentation.rst:11
+msgid ""
+"Die Application-Instanz liefert die Metadaten für den Anwendung. Sie ist die"
+" Wurzel für alles kommende und nimmt nur Basen auf. Die App-Instanz wird "
+"durch den \"Decorator\" :meth:`app() "
+"<decore_Base.decore_base.decore.Decore.app>` erstellt."
+msgstr ""
+"La instancia de aplicación proporciona los metadatos de la aplicación. Es la"
+" raíz de todo lo que vendrá y sólo acepta bases. La instancia de aplicación "
+"se crea mediante el \"Decorator\" :meth:`app() "
+"<decore_Base.decore_base.decore.Decore.app>`."
+
+#: ../documentation.rst:14 ../documentation/getstarted.rst:96
+msgid "Base"
+msgstr "Base"
+
+#: ../documentation.rst:15
+msgid ""
+"Die Base-Instanz liefert die Metadaten für die Basis. Sie ist das "
+"Trägerelement für die Ansichten. Die Base-Instanz wird durch den "
+"\"Decorator\" :meth:`base() <decore_Base.decore_base.decore.Decore.base>` "
+"erstellt."
+msgstr ""
+"La instancia base proporciona los metadatos para la base. Es el elemento "
+"portador de las vistas. La instancia base se crea mediante el \"Decorator\" "
+":meth:`base() <decore_Base.decore_base.decore.Decore.base>`."
+
+#: ../documentation.rst:19 ../documentation.rst:29 ../documentation.rst:39
+#: ../documentation.rst:48 ../documentation.rst:57 ../documentation.rst:64
+msgid "**Darstellung im Frontend**"
+msgstr "**Visualización en la parte frontal**"
+
+#: ../documentation.rst:18
+msgid ""
+"Die Basis ist im Grunde die freie Fläche die für die Ansichten zur Verfügung"
+" steht."
+msgstr ""
+"La base es básicamente la zona libre que queda disponible para las vistas."
+
+#: ../documentation.rst:19
+msgid ""
+"In der Navigation wird sie direkt unter Wurzel gelistet sobald sie mehr als "
+"eine Ansicht erhält."
+msgstr ""
+"Aparece directamente debajo de Raíz en la navegación en cuanto recibe más de"
+" una vista."
+
+#: ../documentation.rst:22 ../documentation/getstarted.rst:124
+msgid "View"
+msgstr "Ver"
+
+#: ../documentation.rst:23
+msgid ""
+"Die View-Instanz liefert die Metadaten für die Ansicht. Ihr können Aktionen "
+"und Dialoge untergeordnet werden. Die View-Instanz wird durch den "
+"\"Decorator\" :meth:`view() <decore_Base.decore_base.decore.Decore.view>` "
+"erstellt."
+msgstr ""
+"La instancia de vista proporciona los metadatos de la vista. A ella se "
+"pueden subordinar acciones y diálogos. La instancia de vista se crea "
+"mediante el \"Decorador\" :meth:`view() "
+"<decore_Base.decore_base.decore.Decore.view>`."
+
+#: ../documentation.rst:25
+msgid ""
+"Die unterschiedlichen Ansichts-Typen werden im Bereich "
+":doc:`Typen<documentation/types>` näher beschrieben."
+msgstr ""
+"Los distintos tipos de vistas se describen con más detalle en la sección "
+":doc:`Tipos<documentación/tipos>`."
+
+#: ../documentation.rst:28
+msgid "Die Ansicht wird in der Navigation unter der Basis gelistet."
+msgstr "La vista aparece en la navegación bajo la base."
+
+#: ../documentation.rst:29
+msgid "Die Ansicht wird im Ansichtsbereich der Basis gerendert."
+msgstr "La vista se renderiza en el área de vista de la base."
+
+#: ../documentation.rst:32 ../documentation/getstarted.rst:145
+msgid "Dialog"
+msgstr "Diálogo"
+
+#: ../documentation.rst:33
+msgid ""
+"Die Dialog-Instanz liefert die Metadaten für den Dialog. Ihr können weitere "
+"Dialoge untergeordnet werden die dann in Tabs dargetellt werden. "
+"Hauptsächlich dienen diese aber zum tragen der Widgets. Die Dialog-Instanz "
+"wird durch den \"Decorator\" :meth:`dialog() "
+"<decore_Base.decore_base.decore.Decore.dialog>` erstellt."
+msgstr ""
+"La instancia de diálogo proporciona los metadatos del diálogo. Se le pueden "
+"subordinar otros diálogos, que se muestran en pestañas. Sin embargo, éstas "
+"se utilizan principalmente para llevar los widgets. La instancia de diálogo "
+"se crea mediante el \"Decorador\" :meth:`dialog() "
+"<decore_Base.decore_base.decore.Decore.dialogue>`."
+
+#: ../documentation.rst:35
+msgid ""
+"Auch hier gibt es verschiedene Dialog-Typen die im Bereich "
+":doc:`Typen<documentation/types>` näher beschrieben werden."
+msgstr ""
+"Aquí también hay varios tipos de diálogo que se describen con más detalle en"
+" la sección :doc:`Tipos<documentación/tipos>`."
+
+#: ../documentation.rst:38
+msgid ""
+"Der Dialog kann in unterschiedlichen Display-Modis dargestellt werden. Zum "
+"Beispiel als Side-Drawer oder als modales Fenster."
+msgstr ""
+"El diálogo puede mostrarse en diferentes modos de visualización. Por "
+"ejemplo, como ventana lateral o como ventana modal."
+
+#: ../documentation.rst:39
+msgid ""
+"Dieser wird durch die mit dem Aktivator-Attribut bestimmten Postionen oder "
+"Ereignisse aufgerufen."
+msgstr ""
+"Es llamado por las posiciones o eventos definidos con el atributo activador."
+
+#: ../documentation.rst:42 ../documentation/getstarted.rst:168
+msgid "Widget"
+msgstr "Widget"
+
+#: ../documentation.rst:43
+msgid ""
+"Die Widget-Instanz liefert die Metadaten für das Widget. Ihr können weitere "
+"Widgets untergeordnet werden die dann gestapelt dargetellt werden. Ein "
+"Widget wird für die Manipulation des Datensatzes oder Datensätze benötigt. "
+"Die Widget-Instanz wird durch den \"Decorator\" :meth:`widget() "
+"<decore_Base.decore_base.decore.Decore.widget>` erstellt."
+msgstr ""
+"La instancia del widget proporciona los metadatos del widget. Se le pueden "
+"subordinar otros widgets, que se mostrarán en una pila. Se necesita un "
+"widget para manipular el conjunto o conjuntos de datos. La instancia de "
+"widget se crea mediante el \"Decorador\" :meth:`widget() "
+"<decore_Base.decore_base.decore.Decore.widget>`."
+
+#: ../documentation.rst:45
+msgid ""
+"Widgets können beispielsweise ein Editor ein Viewer, Listen, oder Diagramme "
+"sein. Die unterschiedlichen Widget-Typen werden im Bereich "
+":doc:`Typen<documentation/types>` näher beschrieben."
+msgstr ""
+"Los widgets pueden ser un editor, un visor, listas o diagramas, por ejemplo."
+" Los distintos tipos de widgets se describen con más detalle en la sección "
+":doc:`Tipos<documentación/tipos>`."
+
+#: ../documentation.rst:48
+msgid "Das Widget wird im Content-Bereich des Dialoges dargestellt."
+msgstr "El widget se muestra en el área de contenido del diálogo."
+
+#: ../documentation.rst:51 ../documentation/getstarted.rst:191
+msgid "Action"
+msgstr "Acción"
+
+#: ../documentation.rst:52
+msgid ""
+"Die Action-Instanz liefert die Metadaten für die Aktion. Sie ist das "
+"Schlußlicht in der Prozesskette der Meta-Abarbeitung und dient zum "
+"übermitteln der Manipulationen und der Ausführung von Aktionen im Backend. "
+"Die Action-Instanz wird durch den \"Decorator\" :meth:`action() "
+"<decore_Base.decore_base.decore.Decore.action>` erstellt."
+msgstr ""
+"La instancia de acción proporciona los metadatos de la acción. Es el último "
+"eslabón de la cadena de metaprocesamiento y se utiliza para transmitir las "
+"manipulaciones y la ejecución de acciones en el backend. La instancia de "
+"acción se crea mediante el \"Decorator\" :meth:`action() "
+"<decore_Base.decore_base.decore.Decore.action>`."
+
+#: ../documentation.rst:54
+msgid ""
+"Auch Aktionen haben Typen die im Bereich :doc:`Typen<documentation/types>` "
+"näher beschrieben werden. Ein Besispiel wäre der Typ ``submit`` der "
+"bestimmte Daten (z.B. Item, Selektierte Items oder Strukturen) an das "
+"Backend übermittelt."
+msgstr ""
+"Las acciones también tienen tipos que se describen con más detalle en la "
+"sección :doc:`Types<documentation/types>`. Un ejemplo sería el tipo "
+"``submit`` que transmite ciertos datos (por ejemplo, elemento, elementos "
+"seleccionados o estructuras) al backend."
+
+#: ../documentation.rst:57
+msgid ""
+"Aktionen können durch das Aktivator-Attribut an unterschiedlichen Stellen im"
+" Frontend positioniert werden, haben aber keine tatächliche Darstellung "
+"sondern nur Schaltflächen- oder Ereignisgesteuerte Trigger."
+msgstr ""
+"Las acciones pueden posicionarse en diferentes lugares del frontend "
+"utilizando el atributo activator, pero no tienen una visualización real, "
+"sólo activadores controlados por botones o eventos."
+
+#: ../documentation.rst:60
+msgid "Function"
+msgstr "Función"
+
+#: ../documentation.rst:61
+msgid ""
+"Die Function-Instanz liefert die Metadaten für Funktionen die nach dem Init "
+"des Pools direkt in der Base als Instanz-Methoden ausgeführt werden. Die "
+"Function-Instanz wird durch den \"Decorator\" :meth:`function() "
+"<decore_Base.decore_base.decore.Decore.function>` erstellt."
+msgstr ""
+"La instancia de función proporciona los metadatos para las funciones que se "
+"ejecutan directamente en la base como métodos de instancia después del pool "
+"init. La instancia de función se crea mediante el \"Decorator\" "
+":meth:`function() <decore_Base.decore_base.decore.Decore.function>`."
+
+#: ../documentation.rst:64
+msgid "Funktionen werden nicht im Frontend dargestellt oder aufgearbeitet."
+msgstr "Las funciones no se visualizan ni se procesan en el front end."
+
+#: ../documentation.rst:67
+msgid "Abarbeitungsreihenfolge im Frontend"
+msgstr "Secuencia de procesamiento en el frontend"
+
+#: ../documentation.rst:68
+msgid ""
+"Nach dem Öffnen einer Anwendung, dem Anlegen der Base und dem Anlegen "
+"weiterer Childs laufen alle Pfade auf die Action zu, die schließlich wieder "
+"mit dem Backend kommuniziert, um die Manipulation der Daten zu ermöglichen. "
+"Nicht jedes Komponentenobjekt kann einem anderen beliebig zugeordnet werden."
+" Das Frontend arbeitet die einzelnen Objekte nur in einer festen Reihenfolge"
+" ab."
+msgstr ""
+"Tras abrir una aplicación, crear la base y crear más hijos, todos los "
+"caminos conducen a la acción, que vuelve a comunicarse con el backend para "
+"permitir la manipulación de los datos. No todos los objetos componentes "
+"pueden asignarse arbitrariamente a otro. El front end sólo procesa los "
+"objetos individuales en un orden fijo."
+
+#: ../documentation.rst:70
+msgid "Diese Übersicht stellt den Prozess dieser Abarbeitung dar."
+msgstr "Este resumen muestra el proceso de este tratamiento."
+
+#: ../documentation.rst:96
+msgid "Relationale Datenverarbeitung im Widget"
+msgstr "Tratamiento relacional de datos en el widget"
+
+#: ../documentation.rst:97
+msgid ""
+"Die Datenverarbeitung und Datensatzgenerierung in den Widgets ist ein "
+"wichtiger Bestandteil der Anwendung und wird hier als Relationale-"
+"Datenverarbeitung bezeichnet. Diese Generierung des bearbeitbaren "
+"Datensatzes, wird erstens durch den Aktivator und zweitens durch die "
+"Datenquelle der Ansicht in Beziehung zur Datenquelle des Widgets gesteuert. "
+"Damit wird ermöglicht, einen Dialog mit weiter im Kontext der eigentlichen "
+"Selektion zu erweitern und detailreicher zu gestalten."
+msgstr ""
+"El tratamiento de datos y la generación de conjuntos de datos en los widgets"
+" es una parte importante de la aplicación y se denomina aquí tratamiento "
+"relacional de datos. Esta generación del conjunto de datos editables está "
+"controlada en primer lugar por el activador y en segundo lugar por la fuente"
+" de datos de la vista en relación con la fuente de datos del widget. Esto "
+"permite ampliar un diálogo con más en el contexto de la selección real y "
+"hacerlo más detallado."
+
+#: ../documentation.rst:99
+msgid "Folgender Chart beschreibt diesen Prozess."
+msgstr "El siguiente cuadro describe este proceso."
+
+#: ../documentation.rst:116
+msgid "Legende:"
+msgstr "Leyenda:"
+
+#: ../documentation.rst:107
+msgid "**Item**"
+msgstr "**Artículo**"
+
+#: ../documentation.rst:103
+msgid "empty = ein leerer Datensatz wird generiert. (keine Default-Werte)."
+msgstr ""
+"empty = se genera un registro de datos vacío. (sin valores por defecto)."
+
+#: ../documentation.rst:104
+msgid ""
+"first = der erste Datensatz der Widget-Quelle wird als Datensatz geladen."
+msgstr ""
+"first = el primer registro de datos de la fuente del widget se carga como un"
+" registro de datos."
+
+#: ../documentation.rst:105
+msgid ""
+"last = der letzte Datensatz der Widget-Quelle wird als Datensatz geladen."
+msgstr ""
+"last = el último registro de datos de la fuente del widget se carga como un "
+"registro de datos."
+
+#: ../documentation.rst:106
+msgid ""
+"default = ein neuer Datensatz mit Default-Werten der Widget-Quelle wird als "
+"Datensatz geladen."
+msgstr ""
+"default = un nuevo conjunto de datos con valores por defecto de la fuente "
+"del widget se carga como un conjunto de datos."
+
+#: ../documentation.rst:107
+msgid ""
+"item_by_id = ein Datensatz mit einer definierten ID aus der Widget-Quelle "
+"wird als Datensatz geladen."
+msgstr ""
+"item_by_id = un registro de datos con un ID definido de la fuente del widget"
+" se carga como un registro de datos."
+
+#: ../documentation.rst:111
+msgid "**Query**"
+msgstr "**Consulta**"
+
+#: ../documentation.rst:110
+msgid ""
+"True = Alle vorkommenden Backref-Namen und die ID des selektierten "
+"Datensatzes der Ansichts-Quelle wird genutzt, um die Query des Widgets zu "
+"erweitern."
+msgstr ""
+"True = Todos los nombres de referencia que aparecen y el ID del registro de "
+"datos seleccionado de la fuente de la vista se utilizan para ampliar la "
+"consulta del widget."
+
+#: ../documentation.rst:111
+msgid ""
+"False = Die ID des selektierten Datensatzes wird nicht als Query-Attribut "
+"für den Datenabruf verwendet."
+msgstr ""
+"Falso = El ID del registro de datos seleccionado no se utiliza como atributo"
+" de consulta para la recuperación de datos."
+
+#: ../documentation.rst:116
+msgid "**Extend**"
+msgstr "**Extender**"
+
+#: ../documentation.rst:114
+msgid ""
+"True = automatische Befüllung der relationalen Felder des Ziel-Datensatzes, "
+"mit dem Ansichts-Datensatz. Zum Beispiel: Ein ForeignKey-Feld des Ziel-"
+"Datanstaz wird mit dem Ansichst-Datenstaz befüllt."
+msgstr ""
+"Verdadero = relleno automático de los campos relacionales del conjunto de "
+"datos de destino con el conjunto de datos de la vista. Por ejemplo: un campo"
+" ForeignKey del conjunto de datos de destino se rellena con el conjunto de "
+"datos de la vista."
+
+#: ../documentation.rst:115
+msgid "False = keine automatische Befüllung des Datensatzes."
+msgstr "Falso = no se rellena automáticamente el registro de datos."
+
+#: ../documentation/decore.rst:2
+msgid "Decorators"
+msgstr "Decoradores"
+
+#: decore_Base.decore_base.decore.Decore:1 of
+msgid ""
+"Objekt der Klasse Decore ist die Hauptklasse des Frameworks. Sie ist für die"
+" Registrierung der Elemente zuständig und stellt die API zur Verfügung."
+msgstr ""
+"Objeto de clase Decore es la clase principal del framework. Se encarga de "
+"registrar los elementos y proporciona la API."
+
+#: decore_Base.decore_base.decore.Decore.app:1 of
+msgid ""
+"Eine Funktion zum eröffnen einer GUI-Dashboard-Anwendung. Sie wird als "
+"\"Decorator\" verwendet."
+msgstr ""
+"Una función para abrir una aplicación de cuadro de mando GUI. Se utiliza "
+"como \"Decorador\"."
+
+#: decore_Base.decore_base.classes.decore_fields.BackrefMetaField
+#: decore_Base.decore_base.classes.decore_fields.BooleanField
+#: decore_Base.decore_base.classes.decore_fields.CharField
+#: decore_Base.decore_base.classes.decore_fields.DateField
+#: decore_Base.decore_base.classes.decore_fields.DateTimeField
+#: decore_Base.decore_base.classes.decore_fields.FloatField
+#: decore_Base.decore_base.classes.decore_fields.ForeignKeyField
+#: decore_Base.decore_base.classes.decore_fields.IntegerField
+#: decore_Base.decore_base.classes.decore_fields.ManyToManyField
+#: decore_Base.decore_base.classes.decore_fields.PasswordField
+#: decore_Base.decore_base.classes.decore_fields.TextField
+#: decore_Base.decore_base.decore.Decore.action
+#: decore_Base.decore_base.decore.Decore.app
+#: decore_Base.decore_base.decore.Decore.base
+#: decore_Base.decore_base.decore.Decore.dialog
+#: decore_Base.decore_base.decore.Decore.function
+#: decore_Base.decore_base.decore.Decore.view
+#: decore_Base.decore_base.decore.Decore.widget of
+msgid "Parámetros"
+msgstr "Parámetros"
+
+#: decore_Base.decore_base.decore.Decore.app:3 of
+msgid "Der Titel der App."
+msgstr "El título de la aplicación."
+
+#: decore_Base.decore_base.decore.Decore.app:4 of
+msgid ""
+"Gibt an, ob der Gastzugang (Anonynus) erlaubt ist. Der Wert ``True`` erlaubt"
+" den automatischen Login als Gast. Der Wert ``False`` verweigert das senden "
+"der Metadaten an das Frontend und verweist auf die Login-Seite."
+msgstr ""
+"Especifica si se permite el acceso de invitados (anonynus). El valor "
+"``True`` permite el inicio de sesión automático como invitado. El valor "
+"``False`` rechaza enviar los metadatos al frontend y remite a la página de "
+"inicio de sesión."
+
+#: decore_Base.decore_base.decore.Decore.base:1 of
+msgid ""
+"Eine Funktion zum registrieren einer Basis in der GUI-Dashboard-Anwendung. "
+"Sie wird als \"Decorator\" verwendet."
+msgstr ""
+"Una función para registrar una base en la aplicación GUI dashboard. Se "
+"utiliza como un \"Decorador\"."
+
+#: decore_Base.decore_base.decore.Decore.base:3 of
+msgid ""
+"Die Basis ist das Trägerelement für die Ansicht und die Vorlage für die "
+"Datenquelle im Frontend."
+msgstr ""
+"La base es el elemento portador para la vista y la plantilla para la fuente "
+"de datos en el front-end."
+
+#: decore_Base.decore_base.decore.Decore.base:5 of
+msgid "Das Symbol der Basis."
+msgstr "El símbolo de la base."
+
+#: decore_Base.decore_base.decore.Decore.base:6 of
+msgid "Der Titel der Basis."
+msgstr "El título de la base."
+
+#: decore_Base.decore_base.decore.Decore.base:7 of
+msgid "Die Beschreibung der Basis."
+msgstr "La descripción de la base."
+
+#: decore_Base.decore_base.decore.Decore.base:8 of
+msgid "Das Datenmodell der Basis."
+msgstr "El modelo de datos de la base."
+
+#: decore_Base.decore_base.decore.Decore.view:1 of
+msgid ""
+"Eine Funktion zur Registrierung einer Ansicht. Sie wird als \"Decorator\" "
+"verwendet."
+msgstr "Una función para registrar una vista. Se utiliza como \"Decorador\"."
+
+#: decore_Base.decore_base.decore.Decore.view:3 of
+msgid "Eine Ansicht ist ein Container für die Anzeige von Daten."
+msgstr "Una vista es un contenedor para mostrar datos."
+
+#: decore_Base.decore_base.decore.Decore.view:5 of
+msgid ""
+"Die ID des übergeordneten Elements. Nur zu setzen, wenn die Ansicht in einer"
+" anderen Basis gerendert werden soll."
+msgstr ""
+"El ID del elemento padre. Sólo debe establecerse si la vista se va a "
+"renderizar en una base diferente."
+
+#: decore_Base.decore_base.decore.Decore.view:6 of
+msgid "Das Symbol der Ansicht."
+msgstr "El símbolo de la vista."
+
+#: decore_Base.decore_base.decore.Decore.view:7 of
+msgid "Der Titel der Ansicht."
+msgstr "El título de la vista."
+
+#: decore_Base.decore_base.decore.Decore.view:8 of
+msgid "Die Beschreibung der Ansicht."
+msgstr "La descripción de la vista."
+
+#: decore_Base.decore_base.decore.Decore.view:9 of
+msgid ""
+"Gibt an wie die Datensätze angezeigt werden. Der Wert ``table`` stellt die "
+"Datensätze in einer Tabelle dar."
+msgstr ""
+"Especifica cómo se muestran los registros de datos. El valor ``table`` "
+"representa los registros de datos en una tabla."
+
+#: decore_Base.decore_base.decore.Decore.view:11 of
+msgid "Die Felder, die in der Ansicht angezeigt werden."
+msgstr "Los campos que se muestran en la vista."
+
+#: decore_Base.decore_base.decore.Decore.view:12 of
+msgid "Die Filter, die in der Ansicht angezeigt werden."
+msgstr "Los filtros que se muestran en la vista."
+
+#: decore_Base.decore_base.decore.Decore.view:13 of
+msgid "Die Abfrage, die in der Ansicht angezeigt wird."
+msgstr "La consulta que se muestra en la vista."
+
+#: decore_Base.decore_base.decore.Decore.view:14 of
+msgid ""
+"Wählt die Methode wie die Datensätze der View geladen werden. Der Wert "
+"``client`` lädt alle Datensätze auf einmal und überlässt den Seitenaufbau "
+"dem Frontend."
+msgstr ""
+"Selecciona el método para cargar los registros de datos de la vista. El "
+"valor ``client`` carga todos los registros de datos a la vez y deja la "
+"estructura de la página al frontend."
+
+#: decore_Base.decore_base.decore.Decore.view:16 of
+msgid ""
+"Gibt an wieviele Datensätze auf einer Seite der Ansicht angezeigt werden "
+"sollen. ``16`` ist die Standardeinstellung."
+msgstr ""
+"Especifica cuántos registros de datos deben mostrarse en una página de la "
+"vista. ``16`` es el valor predeterminado."
+
+#: decore_Base.decore_base.decore.Decore.dialog:1 of
+msgid ""
+"Eine Funktion zur Registrierung eines Dialogs. Sie wird als \"Decorator\" "
+"verwendet."
+msgstr "Función para registrar un diálogo. Se utiliza como \"Decorador\"."
+
+#: decore_Base.decore_base.decore.Decore.dialog:3 of
+msgid "Der Dialog ist das Trägerelement für Widgets"
+msgstr "El diálogo es el elemento portador de los widgets"
+
+#: decore_Base.decore_base.decore.Decore.dialog:5 of
+msgid ""
+"Die ID des übergeordneten Elements. Nur zu setzen, wenn der Dialog in einer "
+"Ansicht einer anderen Basis gerendert werden soll."
+msgstr ""
+"El ID del elemento padre. Sólo debe establecerse si el diálogo se va a "
+"representar en una vista de otra base."
+
+#: decore_Base.decore_base.decore.Decore.dialog:6 of
+msgid "Das Symbol des Dialogs."
+msgstr "El símbolo del diálogo."
+
+#: decore_Base.decore_base.decore.Decore.dialog:7 of
+msgid "Der Titel des Dialogs."
+msgstr "El título del diálogo."
+
+#: decore_Base.decore_base.decore.Decore.dialog:8 of
+msgid "Die Beschreibung des Dialogs."
+msgstr "La descripción del diálogo."
+
+#: decore_Base.decore_base.decore.Decore.dialog:9 of
+msgid ""
+"Gibt an wie der Dialog die Widgets darstellen wird. Der Wert ``standard`` "
+"stellt die untergeordneten Widgets und Sub-Widgets untereinander dar."
+msgstr ""
+"Especifica cómo mostrará el diálogo los widgets. El valor ``estándar`` "
+"muestra los widgets y sub-widgets subordinados uno debajo de otro."
+
+#: decore_Base.decore_base.decore.Decore.dialog:11 of
+msgid "Der Anzeigetyp des Dialogs. Standardwert ist ``draw-half``."
+msgstr ""
+"Tipo de visualización del diálogo. El valor por defecto es ``draw-half``."
+
+#: decore_Base.decore_base.decore.Decore.dialog:13 of
+msgid ""
+"Der Aktivatortyp des Dialogs. Über den Wert ``none`` wird der Dialog sofort "
+"beim OnLoad Ereignis der View angezeigt. Der Wert ``default`` stellt den "
+"Dialog im Top-Menu der View dar. Der Wert ``context`` stellt den Dialog im "
+"Kontextmenü eines Items der View dar. Der Wert ``click`` zeigt den Dialog "
+"dann an wenn man einen Datensatz anklickt."
+msgstr ""
+"El tipo de activador del diálogo. Con el valor ``none`` el diálogo se "
+"muestra inmediatamente en el evento OnLoad de la vista. El valor ``default``"
+" muestra el diálogo en el menú superior de la vista. El valor ``context`` "
+"representa el diálogo en el menú contextual de un elemento de la vista. El "
+"valor ``click`` muestra el diálogo cuando se hace clic sobre un registro de "
+"datos."
+
+#: decore_Base.decore_base.decore.Decore.widget:1 of
+msgid ""
+"Eine Funktion zur Registrierung eines Widgets. Sie wird als \"Decorator\" "
+"verwendet."
+msgstr "Una función para registrar un widget. Se utiliza como \"Decorador\"."
+
+#: decore_Base.decore_base.decore.Decore.widget:3 of
+msgid ""
+"Ein Widget dient zur Darstellung und Interaktion mit dem Datensatz. Es "
+"erhält die Daten, die der Dialog-Aktivator vorgibt. Der Wert ``none`` "
+"übergibt den letzten Datensatz der Datenbanktabelle. Der Wert ``default`` "
+"übergibt einen nur mit Default-Werten gefüllten Datensatz. Beim Wert "
+"``context`` übergibt es den Datensatz, der im Kontextmenü der Ansicht "
+"ausgewählt wurde. Und ``click`` übergibt den Datensatz, der angeklickt "
+"wurde."
+msgstr ""
+"Un widget se utiliza para mostrar e interactuar con el conjunto de datos. "
+"Recibe los datos especificados por el activador del diálogo. El valor "
+"``none`` transfiere el último registro de datos de la tabla de la base de "
+"datos. El valor ``default`` transfiere un registro de datos rellenado sólo "
+"con valores por defecto. El valor ``context`` transfiere el registro de "
+"datos seleccionado en el menú contextual de la vista. Y ``click`` transfiere"
+" el registro de datos sobre el que se ha hecho clic."
+
+#: decore_Base.decore_base.decore.Decore.widget:5 of
+msgid ""
+"Widgets, welche aus einer fremden Basis einem Dialog zugeordnet werden, "
+"ergänzen die relationalen Felder eines Default-Items der fremden Datenquelle"
+" mit den Daten des aktivierten Items. (Der Satz ist Scheiße zu verstehen, "
+"aber er trifft genau das, was es tut). In der Sample Anwendung verwende ich "
+"das beim Zuweisen von \"Contracts\" zu einer \"Person\"."
+msgstr ""
+"Los widgets, que se asignan a un diálogo desde una base ajena, complementan "
+"los campos relacionales de un elemento predeterminado de la fuente de datos "
+"ajena con los datos del elemento activado. (La frase es una mierda de "
+"entender, pero hace exactamente lo que hace). En la aplicación de ejemplo, "
+"utilizo esto al asignar \"Contratos\" a una \"Persona\"."
+
+#: decore_Base.decore_base.decore.Decore.widget:7 of
+msgid ""
+"Es gibt aber auch Widgets, die mehrere Datensätze darstellen können, wie im "
+"Beispiel davor werden hier auch die Relationen verwendet, um nur Daten "
+"abzubilden, die etwas mit dem gewählten Item zu tun haben."
+msgstr ""
+"Sin embargo, también hay widgets que pueden mostrar varios registros de "
+"datos. Como en el ejemplo anterior, aquí también se utilizan las relaciones "
+"para mostrar sólo los datos que tienen algo que ver con el elemento "
+"seleccionado."
+
+#: decore_Base.decore_base.decore.Decore.widget:9 of
+msgid ""
+"Die ID des übergeordneten Elements. Nur zu setzen, wenn das Widget in einem "
+"Dialog einer anderen Basis gerendert werden soll."
+msgstr ""
+"El ID del elemento padre. Sólo debe establecerse si el widget se va a "
+"renderizar en un diálogo de otra base."
+
+#: decore_Base.decore_base.decore.Decore.widget:10 of
+msgid "Das Symbol des Widgets."
+msgstr "El icono del widget."
+
+#: decore_Base.decore_base.decore.Decore.widget:11 of
+msgid "Der Titel des Widgets."
+msgstr "El título del widget."
+
+#: decore_Base.decore_base.decore.Decore.widget:12 of
+msgid "Die Beschreibung des Widgets."
+msgstr "La descripción del widget."
+
+#: decore_Base.decore_base.decore.Decore.widget:13 of
+msgid ""
+"Gibt an wie das Widget die Daten darstellen wird. Standardwert ist "
+"``default``."
+msgstr ""
+"Especifica cómo mostrará los datos el widget. El valor por defecto es "
+"``default``."
+
+#: decore_Base.decore_base.decore.Decore.widget:15 of
+msgid "Die Felder, die in dem Widget angezeigt werden."
+msgstr "Los campos que se muestran en el widget."
+
+#: decore_Base.decore_base.decore.Decore.action:1 of
+msgid ""
+"Eine Funktion zur Registrierung einer Aktion. Sie wird als \"Decorator\" "
+"verwendet."
+msgstr "Una función para registrar una acción. Se utiliza como \"Decorador\"."
+
+#: decore_Base.decore_base.decore.Decore.action:3 of
+msgid ""
+"Eine Aktion ist die tatsächliche Interaktion zwischen dem Benutzer und dem "
+"Backend."
+msgstr "Una acción es la interacción real entre el usuario y el backend."
+
+#: decore_Base.decore_base.decore.Decore.action:5 of
+msgid ""
+"Die ID des übergeordneten Elements. Nur zu setzen, wenn die Aktion in einem "
+"Widget einer anderen Basis gerendert werden soll."
+msgstr ""
+"El ID del elemento padre. Solo debe establecerse si la acción se va a "
+"renderizar en un widget de otra base."
+
+#: decore_Base.decore_base.decore.Decore.action:6 of
+msgid "Das Symbol der Aktion."
+msgstr "El símbolo de la acción."
+
+#: decore_Base.decore_base.decore.Decore.action:7 of
+msgid "Der Titel der Aktion."
+msgstr "El título de la campaña."
+
+#: decore_Base.decore_base.decore.Decore.action:8 of
+msgid "Die Beschreibung der Aktion."
+msgstr "La descripción de la acción."
+
+#: decore_Base.decore_base.decore.Decore.action:9 of
+msgid "Gibt an was die Aktion kann. Standardwert ist ``standard``."
+msgstr ""
+"Especifica lo que puede hacer la acción. El valor por defecto es "
+"``standard``."
+
+#: decore_Base.decore_base.decore.Decore.action:11 of
+msgid "Gib an, wie die Aktion ausgelöst wird."
+msgstr "Especifique cómo se desencadena la acción."
+
+#: decore_Base.decore_base.decore.Decore.action:13 of
+msgid ""
+"Gibt an, ob die Aktion Validierungsfehler zurückgeben kann. Standardwert ist"
+" ``True``. (Im Augenblick wirkt sich das nur auf den Typen ``submit`` aus.)"
+msgstr ""
+"Especifica si la acción puede devolver errores de validación. El valor por "
+"defecto es ``True``. (Por el momento, esto sólo afecta al tipo ``submit``)."
+
+#: decore_Base.decore_base.decore.Decore.action:21 of
+msgid ""
+"Die Aktionen durchlaufen ein Modul, welches die erhaltenen Daten aufbereitet"
+" und als Keyword-Parameter an die dekorierte Funktion übergibt. Es ist alles"
+" in den ``kwargs`` zu finden und man macht sich diese einfach verfügbar. Der"
+" Parameter ``item`` ist ein Beispiel dafür und repräsentiert den vom "
+"Frontend zurückgegebenen Datensatz. Um herauszufinden, was alles noch in den"
+" ``kwargs`` steckt, bitte den Debugger benutzen."
+msgstr ""
+"Las acciones se ejecutan a través de un módulo que prepara los datos "
+"recibidos y los pasa a la función decorada como parámetros de palabra clave."
+" Todo se encuentra en los ``kwargs`` y simplemente hay que ponerlos a "
+"disposición. El parámetro ``item`` es un ejemplo de esto y representa el "
+"conjunto de datos devueltos por el frontend. Para saber qué más hay en los "
+"``kwargs``, utiliza el depurador."
+
+#: decore_Base.decore_base.decore.Decore.function:1 of
+msgid ""
+"Eine Funktion zur Registrierung einer Funktion in der übergeordneten Base. "
+"Sie wird als \"Decorator\" verwendet."
+msgstr ""
+"Una función para registrar una función en la base padre. Se utiliza como "
+"\"Decorador\"."
+
+#: decore_Base.decore_base.decore.Decore.function:3 of
+msgid ""
+"Eine Funktion wird direkt nach der Zusammenstellung des Metadaten-Pool "
+"ausgeführt. Mit Funktionen kann man die Logik erweitern, Dinge vorbereiten "
+"oder Hintergrundaufgaben erledigen. Sie agieren als Instanzmethoden der "
+"Basis und erhalten damit den objektorientierten Ansatz."
+msgstr ""
+"Una función se ejecuta directamente después de compilar el conjunto de "
+"metadatos. Las funciones pueden utilizarse para ampliar la lógica, preparar "
+"cosas o realizar tareas en segundo plano. Actúan como métodos de instancia "
+"de la base y mantienen así el enfoque orientado a objetos."
+
+#: decore_Base.decore_base.decore.Decore.function:5 of
+msgid ""
+"Gibt an wie eine Funktion ausgeführt wird. Mit dem Wert ``shot`` wird sie "
+"nur einmal ausgeführt. Der Wert ``work`` wird in einem Thread ausgeführt und"
+" kann somit Schleifen abarbeiten die niemals enden bis der Main-Thread "
+"endet."
+msgstr ""
+"Especifica cómo se ejecuta una función. Con el valor ``shot`` sólo se "
+"ejecuta una vez. El valor ``work`` se ejecuta en un hilo y por lo tanto "
+"puede procesar bucles que nunca terminan hasta que el hilo principal "
+"termina."
+
+#: ../documentation/fields.rst:2
+msgid "Felder"
+msgstr "Campos"
+
+#: decore_Base.decore_base.classes.decore_fields.BackrefMetaField:1 of
+msgid ""
+"The BackRefMetaField's name must match the name of the specified backref in "
+"the ForeignKey or ManyToMany field in the reference model."
+msgstr ""
+"El nombre del BackRefMetaField debe coincidir con el nombre del backref "
+"especificado en el campo ForeignKey o ManyToMany del modelo de referencia."
+
+#: decore_Base.decore_base.classes.decore_fields.BackrefMetaField:3 of
+msgid ""
+"The BackRefMetaField is used by the user to represent relationships in the "
+"**decore Front** application. For example, it can be assigned to the filter "
+"or to a form. It is a MetaField and does not get a column in the database."
+msgstr ""
+"El BackRefMetaField es utilizado por el usuario para representar relaciones "
+"en la aplicación **decore Front**. Por ejemplo, se puede asignar al filtro o"
+" a un formulario. Es un MetaField y no obtiene una columna en la base de "
+"datos."
+
+#: decore_Base.decore_base.classes.decore_fields.BackrefMetaField:5
+#: decore_Base.decore_base.classes.decore_fields.BooleanField:6
+#: decore_Base.decore_base.classes.decore_fields.CharField:7
+#: decore_Base.decore_base.classes.decore_fields.DateField:6
+#: decore_Base.decore_base.classes.decore_fields.DateTimeField:6
+#: decore_Base.decore_base.classes.decore_fields.FloatField:6
+#: decore_Base.decore_base.classes.decore_fields.ForeignKeyField:6
+#: decore_Base.decore_base.classes.decore_fields.IntegerField:6
+#: decore_Base.decore_base.classes.decore_fields.ManyToManyField:6
+#: decore_Base.decore_base.classes.decore_fields.PasswordField:8
+#: decore_Base.decore_base.classes.decore_fields.TextField:6 of
+msgid "A human-readable name for the field."
+msgstr "Un nombre legible para el campo."
+
+#: decore_Base.decore_base.classes.decore_fields.BackrefMetaField:6
+#: decore_Base.decore_base.classes.decore_fields.BooleanField:5
+#: decore_Base.decore_base.classes.decore_fields.CharField:6
+#: decore_Base.decore_base.classes.decore_fields.DateField:5
+#: decore_Base.decore_base.classes.decore_fields.DateTimeField:5
+#: decore_Base.decore_base.classes.decore_fields.FloatField:5
+#: decore_Base.decore_base.classes.decore_fields.ForeignKeyField:7
+#: decore_Base.decore_base.classes.decore_fields.IntegerField:5
+#: decore_Base.decore_base.classes.decore_fields.ManyToManyField:7
+#: decore_Base.decore_base.classes.decore_fields.PasswordField:7
+#: decore_Base.decore_base.classes.decore_fields.TextField:5 of
+msgid "Additional text to be displayed in **decore Front**."
+msgstr "Texto adicional que debe aparecer en **decore Front**."
+
+#: decore_Base.decore_base.classes.decore_fields.BackrefMetaField:7
+#: decore_Base.decore_base.classes.decore_fields.ForeignKeyField:8
+#: decore_Base.decore_base.classes.decore_fields.ManyToManyField:8 of
+msgid ""
+"A List of type string. Only the speciefied fields will be displayed in the "
+"filter. If None, all fields will be displayed."
+msgstr ""
+"Una lista de tipo cadena. Sólo se mostrarán en el filtro los campos "
+"especificados. Si es Ninguno, se mostrarán todos los campos."
+
+#: decore_Base.decore_base.classes.decore_fields.BackrefMetaField:8 of
+msgid ""
+"A dictonary containing a query to be used when querying options (e.g. in "
+"selection fields in the frontend). The query always refers to the reference "
+"model."
+msgstr ""
+"Un diccionario que contiene una consulta que se utilizará al consultar "
+"opciones (por ejemplo, en los campos de selección del frontend). La consulta"
+" siempre hace referencia al modelo de referencia."
+
+#: decore_Base.decore_base.classes.decore_fields.BooleanField:1 of
+msgid "A field to store boolean values."
+msgstr "Un campo para almacenar valores booleanos."
+
+#: decore_Base.decore_base.classes.decore_fields.BooleanField:3
+#: decore_Base.decore_base.classes.decore_fields.CharField:3
+#: decore_Base.decore_base.classes.decore_fields.DateField:3
+#: decore_Base.decore_base.classes.decore_fields.DateTimeField:3
+#: decore_Base.decore_base.classes.decore_fields.FloatField:3
+#: decore_Base.decore_base.classes.decore_fields.ForeignKeyField:5
+#: decore_Base.decore_base.classes.decore_fields.IntegerField:3
+#: decore_Base.decore_base.classes.decore_fields.ManyToManyField:5
+#: decore_Base.decore_base.classes.decore_fields.PasswordField:6
+#: decore_Base.decore_base.classes.decore_fields.TextField:3 of
+msgid "If True, the field is allowed to be null. Defaults to False."
+msgstr "Si es True, se permite que el campo sea nulo. Por defecto es False."
+
+#: decore_Base.decore_base.classes.decore_fields.BooleanField:4
+#: decore_Base.decore_base.classes.decore_fields.CharField:5
+#: decore_Base.decore_base.classes.decore_fields.DateField:4
+#: decore_Base.decore_base.classes.decore_fields.DateTimeField:4
+#: decore_Base.decore_base.classes.decore_fields.FloatField:4
+#: decore_Base.decore_base.classes.decore_fields.IntegerField:4
+#: decore_Base.decore_base.classes.decore_fields.TextField:4 of
+msgid "The default value for the field. Defaults to None."
+msgstr "Valor por defecto del campo. Por defecto es Ninguno."
+
+#: decore_Base.decore_base.classes.decore_fields.CharField:1 of
+msgid "A field to store char values."
+msgstr "Un campo para almacenar valores char."
+
+#: decore_Base.decore_base.classes.decore_fields.CharField:4 of
+msgid ""
+"If True, the field must be unique in database table. Defaults to False."
+msgstr ""
+"Si es True, el campo debe ser único en la tabla de la base de datos. Por "
+"defecto es False."
+
+#: decore_Base.decore_base.classes.decore_fields.DateField:1 of
+msgid "A field to store date values."
+msgstr "Un campo para almacenar valores de fecha."
+
+#: decore_Base.decore_base.classes.decore_fields.DateTimeField:1 of
+msgid "A field to store datetime values."
+msgstr "Un campo para almacenar valores de fecha y hora."
+
+#: decore_Base.decore_base.classes.decore_fields.FloatField:1 of
+msgid "A field to store float values."
+msgstr "Un campo para almacenar valores flotantes."
+
+#: decore_Base.decore_base.classes.decore_fields.ForeignKeyField:1 of
+msgid "A field to represent a one-to-many relationship between two models."
+msgstr "Campo que representa una relación uno a muchos entre dos modelos."
+
+#: decore_Base.decore_base.classes.decore_fields.ForeignKeyField:3
+#: decore_Base.decore_base.classes.decore_fields.ManyToManyField:3 of
+msgid "The model to which the relationship is to be established."
+msgstr "El modelo con el que se establecerá la relación."
+
+#: decore_Base.decore_base.classes.decore_fields.ForeignKeyField:4
+#: decore_Base.decore_base.classes.decore_fields.ManyToManyField:4 of
+msgid ""
+"The name of the field in the reference model that represents the "
+"relationship to the model."
+msgstr ""
+"Nombre del campo del modelo de referencia que representa la relación con el "
+"modelo."
+
+#: decore_Base.decore_base.classes.decore_fields.ForeignKeyField:9
+#: decore_Base.decore_base.classes.decore_fields.ManyToManyField:9 of
+msgid ""
+"A dictonary containing a query to be used when querying choices (e.g. in "
+"selection fields in the frontend). The query always refers to the reference "
+"model."
+msgstr ""
+"Un diccionario que contiene una consulta que se utilizará al consultar las "
+"opciones (por ejemplo, en los campos de selección del frontend). La consulta"
+" siempre hace referencia al modelo de referencia."
+
+#: decore_Base.decore_base.classes.decore_fields.IntegerField:1 of
+msgid "A field to store integer values."
+msgstr "Un campo para almacenar valores enteros."
+
+#: decore_Base.decore_base.classes.decore_fields.ManyToManyField:1 of
+msgid ""
+"A field to represent a many-to-many relationship between two models. It is a"
+" MetaField and does not get a column in the database. However, a through "
+"model is created by decore Base, which represents the relationship between "
+"the two models."
+msgstr ""
+"Un campo para representar una relación muchos-a-muchos entre dos modelos. Es"
+" un MetaField y no obtiene una columna en la base de datos. Sin embargo, se "
+"crea un modelo a través de decore Base, que representa la relación entre los"
+" dos modelos."
+
+#: decore_Base.decore_base.classes.decore_fields.PasswordField:2 of
+msgid ""
+"The keybase is a KeePass file and should be protected by setting the correct"
+" access rights (ACL)."
+msgstr ""
+"La base de claves es un archivo KeePass y debe protegerse estableciendo los "
+"derechos de acceso correctos (ACL)."
+
+#: decore_Base.decore_base.classes.decore_fields.PasswordField:4 of
+msgid "A field to store passwords in the keybase and to use them again."
+msgstr ""
+"Un campo para almacenar contraseñas en la base de claves y volver a "
+"utilizarlas."
+
+#: decore_Base.decore_base.classes.decore_fields.TextField:1 of
+msgid "A field to store text values."
+msgstr "Un campo para almacenar valores de texto."
+
+#: ../documentation/getstarted.rst:-1 ../index.rst:-1
+msgid "create dashbord with python fastly"
+msgstr "crear dashbord con python fastly"
+
+#: ../documentation/getstarted.rst:-1 ../index.rst:-1
+msgid ""
+"python gui, decore, python database, python dashboard, python orm, python "
+"ui, dashboard creation, python application, ui framework, ui toolkit"
+msgstr ""
+"python gui, decore, python database, python dashboard, python orm, python "
+"ui, creación dashboard, python application, ui framework, ui toolkit"
+
+#: ../documentation/getstarted.rst:6
+msgid "Erste Schritte"
+msgstr "Primeros pasos"
+
+#: ../documentation/getstarted.rst:7
+msgid ""
+"Um die schnelle GUI-Dashboard-Erstellung, mit decore Base in Python, zu "
+"veranschaulichen werden wir nun gemeinsam eine kleine UI in Form einer "
+"Webanwendung erstellen."
+msgstr ""
+"Para ilustrar la rápida creación de cuadros de mando GUI con decore Base en "
+"Python, vamos a crear juntos una pequeña UI en forma de aplicación web."
+
+#: ../documentation/getstarted.rst:9
+msgid ""
+"Die dekorierten Funktionen dienen, in allererster Linie, der Erstellung von "
+"Metainformationen für die spätere Auswertung im Frontend der Anwendung und "
+"sind nichts, wovor man sich fürchten muss."
+msgstr ""
+"Las funciones decoradas se utilizan principalmente para crear "
+"metainformación para su posterior evaluación en el front-end de la "
+"aplicación y no son nada que temer."
+
+#: ../documentation/getstarted.rst:11
+msgid "*Es ist wirklich einfach, bitte folgen Sie mir!*"
+msgstr "*Es muy sencillo, ¡por favor sígueme!"
+
+#: ../documentation/getstarted.rst:14
+msgid "Installation"
+msgstr "Instalación"
+
+#: ../documentation/getstarted.rst:15
+msgid ""
+"Erstellen Sie zunächst ein leeres Python-Projekt in Ihrem gewünschten "
+"Verzeichnis."
+msgstr "Primero crea un proyecto Python vacío en el directorio que desees."
+
+#: ../documentation/getstarted.rst:17
+msgid ""
+"Um decore Base zu installieren, führen wir den folgenden Befehl im "
+"Stammverzeichnis des Projekts aus. Verwenden wir das Terminal in vscode."
+msgstr ""
+"Para instalar decore Base, ejecutamos el siguiente comando en el directorio "
+"raíz del proyecto. Vamos a utilizar el terminal en vscode."
+
+#: ../documentation/getstarted.rst:23
+msgid ""
+"Dies erfordert eine aktivierte Python-Umgebung! Um mehr darüber zu erfahren,"
+" besuchen Sie `Python-Umgebungen in VS Code "
+"<https://code.visualstudio.com/docs/python/environments>`_."
+msgstr ""
+"Esto requiere un entorno Python activado. Para saber más sobre esto, visita "
+"`Entornos Python en VS Code "
+"<https://code.visualstudio.com/docs/python/environments>`_."
+
+#: ../documentation/getstarted.rst:26
+msgid "Vorbereitung"
+msgstr "Preparación"
+
+#: ../documentation/getstarted.rst:28
+msgid ""
+"Um für unsere zukünftige Python GUI-Dashboard-Anwendung alles nötige an "
+"Pfaden und Einstellungen zu erhalten, müssen wir noch die Vorbereitung "
+"durchführen."
+msgstr ""
+"Con el fin de obtener todas las rutas y configuraciones necesarias para "
+"nuestra futura aplicación Python GUI dashboard, todavía tenemos que llevar a"
+" cabo la preparación."
+
+#: ../documentation/getstarted.rst:30
+msgid ""
+"Erstellen wir nun eine neue Datei mit dem Namen **app.py** im "
+"Hauptverzeichnis des Projekts."
+msgstr ""
+"Creemos ahora un nuevo archivo con el nombre **app.py** en el directorio "
+"principal del proyecto."
+
+#: ../documentation/getstarted.rst:32
+msgid ""
+"Um decore zu verwenden, importieren wir es zunächst in das Modul **app.py**."
+msgstr "Para utilizar decore, primero lo importamos en el módulo **app.py**."
+
+#: ../documentation/getstarted.rst:38
+msgid ""
+"Dann verwenden wir den Befehl ``prepare``, um alle erforderlichen "
+"Hilfsdateien im Stammverzeichnis des Projekts zu erstellen."
+msgstr ""
+"A continuación, utilizamos el comando ``prepare`` para crear todos los "
+"archivos auxiliares necesarios en el directorio raíz del proyecto."
+
+#: ../documentation/getstarted.rst:40
+msgid ""
+"Um nun die Anwendung tatsächlich vorzubereiten, führen wir den Befehl "
+"``python app.py --prepare`` im Terminal aus. Der Pfad muss im "
+"Hauptverzeichnis des Projekts liegen, also dort wo sich die **app.py** "
+"befindet."
+msgstr ""
+"Para preparar realmente la aplicación, ejecutamos el comando ``python app.py"
+" --prepare`` en el terminal. La ruta debe estar en el directorio raíz del "
+"proyecto, es decir, donde se encuentra el **app.py**."
+
+#: ../documentation/getstarted.rst:43
+msgid "Verwendung"
+msgstr "Utilización"
+
+#: ../documentation/getstarted.rst:44
+msgid ""
+"Damit der Python-Interpreter die zukünftigen Basisklassen verarbeiten kann, "
+"fügen wir den folgenden Import hinzu."
+msgstr ""
+"Para que el intérprete de Python pueda procesar las futuras clases base, "
+"añadimos el siguiente import."
+
+#: ../documentation/getstarted.rst:50
+msgid ""
+"Normalerweise enthält ein Python-Hauptmodul eine Abfrage, die prüft, ob es "
+"das Hauptmodul ist, so dass wir anschließend die Funktion ``main`` aufrufen "
+"können."
+msgstr ""
+"Normalmente, un módulo principal de Python contiene una consulta que "
+"comprueba si es el módulo principal para que luego podamos llamar a la "
+"función ``main``."
+
+#: ../documentation/getstarted.rst:52
+msgid ""
+"Als nächstes erstellen wir eine Zeile ``if __name__ == '__main__':`` in der "
+"**app.py** Datei."
+msgstr ""
+"A continuación, creamos una línea ``if __name__ == '__main__':`` en el "
+"archivo **app.py**."
+
+#: ../documentation/getstarted.rst:54
+msgid ""
+"Um eine neue \"decore\" Anwendungsinstanz zu erstellen, benutzen wir eine "
+"mit ``@decore.app`` dekorierte ``main()`` Funktion in der **app.py** Datei, "
+"direkt unter der Zeile: ``if __name__ == '__main__':``."
+msgstr ""
+"Para crear una nueva instancia de aplicación \"decore\", utilizamos una "
+"función ``main()`` decorada con ``@decore.app`` en el archivo **app.py**, "
+"justo debajo de la línea: ``if __name__ == '__main__':``."
+
+#: ../documentation/getstarted.rst:67
+msgid "Model"
+msgstr "Modelo"
+
+#: ../documentation/getstarted.rst:68
+msgid ""
+"In einem Modell legen wir die Datenfelder fest, die später einer Basis "
+"zugeordnet werden muss. Es dient als Datenbankschnittstelle zu den "
+"Datenbanktreibern wie SQLite, MySQL, PostgreSQL, etc."
+msgstr ""
+"En un modelo se definen los campos de datos que posteriormente deben "
+"asignarse a una base. Sirve de interfaz de base de datos para los "
+"controladores de bases de datos como SQLite, MySQL, PostgreSQL, etc."
+
+#: ../documentation/getstarted.rst:70
+msgid ""
+"Wir erstellen nun die Datei first_model.py im Verzeichnis **models** und "
+"fügen den folgenden Code ein:"
+msgstr ""
+"Ahora creamos el archivo first_model.py en el directorio **models** e "
+"insertamos el siguiente código:"
+
+#: ../documentation/getstarted.rst:73
+msgid ""
+"Es muss nicht für jede Basis ein Modell angelegt werden aber es muss jedes "
+"zu verwenden Modell eine Basis haben, die über die Datei **__init__.py**, "
+"importiert werden muss. Nur so werden Rellationen zwischen den Modellen auch"
+" im Frontend ausgewertet und dargestellt."
+msgstr ""
+"No es necesario crear un modelo para cada base, pero cada modelo a utilizar "
+"debe tener una base, que debe ser importada a través del fichero "
+"**__init__.py**. Esta es la única manera de evaluar y mostrar las "
+"rellaciones entre los modelos en el frontend."
+
+#: ../documentation/getstarted.rst:76
+msgid ""
+"Um mögliche zirkuläre Importe zu vermeiden, legen wir die Modellklassen in "
+"einem eigenen Verzeichnis **models** in unserem Projektstammverzeichnis an. "
+"Das Verzeichnis **models** wurde durch den zuvor ausgeführten Befehl "
+"``python app.py --prepare`` erstellt."
+msgstr ""
+"Para evitar posibles importaciones circulares, creamos las clases modelo en "
+"un directorio **models** separado en el directorio raíz de nuestro proyecto."
+" El directorio **models** fue creado por el comando ``python app.py "
+"--prepare`` ejecutado previamente."
+
+#: ../documentation/getstarted.rst:88
+msgid ""
+"In dem hier gezeigten Beispiel importieren wir aus der **uniform library** "
+"die Klasse Conform_model und erweitern sie um die Felder Vorname und "
+"Nachname."
+msgstr ""
+"En el ejemplo que se muestra aquí, importamos la clase Conform_model de la "
+"**biblioteca uniforme** y la ampliamos con los campos nombre y apellidos."
+
+#: ../documentation/getstarted.rst:90
+msgid ""
+"Die Modelle in **decore Base** basieren auf dem großartigen Peewee ORM. Um "
+"mehr über Peewee zu erfahren, besuchen Sie `Peewee ORM <http://docs.peewee-"
+"orm.com/en/latest/>`_."
+msgstr ""
+"Los modelos de **decore Base** se basan en el gran Peewee ORM. Para saber "
+"más sobre Peewee, visita `Peewee ORM <http://docs.peewee-"
+"orm.com/en/latest/>`_."
+
+#: ../documentation/getstarted.rst:93
+msgid ""
+"Beim Importieren ist zu beachten, dass wir alles (*) aus dem conform_model "
+"Namespace importieren, um auch die Feldklassen zu erhalten."
+msgstr ""
+"Al importar, tenga en cuenta que importamos todo (*) del espacio de nombres "
+"conform_model para obtener también las clases de campo."
+
+#: ../documentation/getstarted.rst:97
+msgid ""
+"Die Basisklassen dienen der decore-Anwendung als Trägerelement für die View-"
+"Komponenten, pflegen das Datenmodell ein und gelten damit auch als "
+"Datenquelle für die Auswertung im Frontend des Dashboards."
+msgstr ""
+"Las clases base sirven a la aplicación decore como elemento portador de los "
+"componentes de la vista, mantienen el modelo de datos y, por tanto, son "
+"también la fuente de datos para el análisis en el front-end del cuadro de "
+"mando."
+
+#: ../documentation/getstarted.rst:99
+msgid ""
+"Nun müssen wir ein neues Python-Modul erstellen, das z.B. eine Basisklasse "
+"enthält: **first_base.py**, im Verzeichnis **bases** in unserem "
+"Projektstammverzeichnis. Das Verzeichnis **bases** wurde durch den zuvor "
+"ausgeführten Befehl ``python app.py --prepare`` miterzeugt."
+msgstr ""
+"Ahora necesitamos crear un nuevo módulo Python que contenga una clase base, "
+"por ejemplo: **primera_base.py**, en el directorio **bases** del directorio "
+"raíz de nuestro proyecto. El directorio **bases** fue creado por el comando "
+"``python app.py --prepare`` ejecutado previamente."
+
+#: ../documentation/getstarted.rst:112
+msgid ""
+"Um das zuvor erstellte Modell zu verwenden, importieren wir es in die Base-"
+"Klasse und übergeben es an den Parameter ``model``."
+msgstr ""
+"Para utilizar el modelo creado previamente, lo importamos a la clase Base y "
+"lo pasamos al parámetro ``model``."
+
+#: ../documentation/getstarted.rst:115
+msgid ""
+"In order for the Python interpreter to be able to process the base classes, "
+"we have to import them into the __init__.py file in the **bases** directory."
+" The order of the individual imports also determines the order in **decore "
+"Front**."
+msgstr ""
+"Para que el intérprete de Python pueda procesar las clases base, tenemos que"
+" importarlas en el archivo __init__.py en el directorio **bases**. El orden "
+"de las importaciones individuales también determina el orden en **decore "
+"Front**."
+
+#: ../documentation/getstarted.rst:117
+msgid "We edit the **__init__.py** file and insert the following code:"
+msgstr "Editamos el fichero **__init__.py** e insertamos el siguiente código:"
+
+#: ../documentation/getstarted.rst:125
+msgid ""
+"Views werden von der decore-Anwendung verwendet, um die Datensätze im "
+"Frontend der Webanwendung zu präsentieren."
+msgstr ""
+"Las vistas son utilizadas por la aplicación decore para presentar los "
+"registros de datos en el front-end de la aplicación web."
+
+#: ../documentation/getstarted.rst:127
+msgid ""
+"Mit dem View-Decorator können wir nun eine Ansichts-Komponente erstellen und"
+" sie, unter der zuvor erstellten Basisklasse, einhängen."
+msgstr ""
+"Con el decorador de vista, ahora podemos crear un componente de vista y "
+"adjuntarlo bajo la clase base creada anteriormente."
+
+#: ../documentation/getstarted.rst:129
+msgid ""
+"Wir bearbeiten nun die Datei **first_base.py** erneut und erweitern den Code"
+" wie folgt:"
+msgstr ""
+"Ahora editamos de nuevo el archivo **first_base.py** y ampliamos el código "
+"de la siguiente manera:"
+
+#: ../documentation/getstarted.rst:146
+msgid ""
+"Dialoge sind die unterstützenden Elemente für Widgets im Frontend der "
+"Webanwendung. Sie können Ansichten aber auch untergeordneten Widgets "
+"hinzugefügt werden und steuern die Sichtbarkeit und den Anzeigestil von "
+"Kindelementen. Dialoge erhalten auch die Kontrolle über die Sendefunktionen "
+"der Widgets."
+msgstr ""
+"Los diálogos son los elementos de soporte para los widgets en el front-end "
+"de la aplicación web. Pueden añadirse tanto a las vistas como a los widgets "
+"subordinados y controlan la visibilidad y el estilo de visualización de los "
+"elementos hijos. Los diálogos también tienen control sobre las funciones de "
+"envío de los widgets."
+
+#: ../documentation/getstarted.rst:148
+msgid ""
+"In unserem Fall erstellen wir einen Dialog, um eine neue Person mit Vornamen"
+" und Nachnamen anzulegen."
+msgstr ""
+"En nuestro caso, creamos un diálogo para crear una nueva persona con nombre "
+"y apellidos."
+
+#: ../documentation/getstarted.rst:150
+msgid ""
+"Hier gehen wir ... wieder die Datei **first_base.py** und erweitern den Code"
+" wie folgt:"
+msgstr ""
+"Aquí vamos ... el archivo **first_base.py** de nuevo y ampliar el código de "
+"la siguiente manera:"
+
+#: ../documentation/getstarted.rst:169
+msgid ""
+"Widgets sind Komponenten, mit denen wir Interaktionen mit dem einzelnen "
+"Datensatz durchführen können. Sie können nur zu Dialogen hinzugefügt werden "
+"und sind stapelbar."
+msgstr ""
+"Los widgets son componentes con los que podemos interactuar con el conjunto "
+"de datos individuales. Sólo se pueden añadir a los diálogos y son apilables."
+
+#: ../documentation/getstarted.rst:171
+msgid ""
+"Was wir jetzt brauchen, ist ein Eingabeformular, um die Daten für die neue "
+"Person einzugeben."
+msgstr ""
+"Lo que necesitamos ahora es un formulario de entrada para introducir los "
+"datos de la nueva persona."
+
+#: ../documentation/getstarted.rst:192
+msgid ""
+"Actions sind Methoden, mit das Frontend mit **decore Base** kommunizieren "
+"kann. Sie können zu View und Widgets hinzugefügt werden und sind die "
+"einzigen echten Klassenmethoden und werden direkt in der Basis aufgerufen."
+msgstr ""
+"Las acciones son métodos con los que el frontend puede comunicarse con "
+"**decore Base**. Se pueden añadir a las vistas y widgets y son los únicos "
+"métodos reales de la clase y se llaman directamente en la base."
+
+#: ../documentation/getstarted.rst:194
+msgid ""
+"Wir brauchen nun eine Aktion, um die Daten der neuen Person zu speichern und"
+" erweitern den Code in **first_base.py** wie folgt:"
+msgstr ""
+"Ahora necesitamos una acción para guardar los datos de la nueva persona y "
+"ampliar el código en **first_base.py** de la siguiente manera:"
+
+#: ../documentation/getstarted.rst:221
+msgid ""
+"Um einen Datensatz mit decore Base zu erstellen, müssen wir eine Instanz des"
+" Modells erstellen. In unserem Fall **First_model**. Die Instanz wird mit "
+"den Daten aus dem Formular gefüllt und dann gespeichert."
+msgstr ""
+"Para crear un conjunto de datos con decore Base, necesitamos crear una "
+"instancia del modelo. En nuestro caso **Primer_modelo**. La instancia se "
+"rellena con los datos del formulario y luego se guarda."
+
+#: ../documentation/getstarted.rst:223
+msgid ""
+"Die ID, in Form einer UUID im Textformat, wird automatisch generiert und "
+"muss nicht gesondert angegeben werden."
+msgstr ""
+"El ID, en forma de UUID en formato de texto, se genera automáticamente y no "
+"es necesario especificarlo por separado."
+
+#: ../documentation/getstarted.rst:226
+msgid ""
+"Das Feld **titel** muss bei jeder Datensatzerstellung verwendet werden. "
+"Andernfalls wird das Element die Validierung nicht bestehen. Es sollte "
+"ausserdem immer eindeutig sein, also keine gleichen Titel in der Datenbank "
+"geben."
+msgstr ""
+"El campo **título** debe utilizarse cada vez que se cree un registro de "
+"datos. De lo contrario, el elemento no pasará la validación. También debe "
+"ser siempre único, es decir, no debe haber títulos idénticos en la base de "
+"datos."
+
+#: ../documentation/getstarted.rst:229
+msgid "Ausführung, Entwicklung und Erstellung"
+msgstr "Ejecución, desarrollo y creación"
+
+#: ../documentation/getstarted.rst:231
+msgid "Ausführung"
+msgstr "Ejecución"
+
+#: ../documentation/getstarted.rst:232
+msgid ""
+"Um Ihre Anwendung zu starten, führen Sie ``python app.py`` in Ihrem Projekt-"
+"Stammverzeichnis aus. Verwenden Sie das Terminal in vscode."
+msgstr ""
+"Para iniciar su aplicación, ejecute ``python app.py`` en el directorio raíz "
+"de su proyecto. Utilice el terminal en vscode."
+
+#: ../documentation/getstarted.rst:234 ../documentation/getstarted.rst:240
+msgid "Öffnen Sie den Browser und geben Sie ``http://localhost:5555`` ein."
+msgstr "Abra el navegador e introduzca ``http://localhost:5555``."
+
+#: ../documentation/getstarted.rst:237
+msgid "Entwicklung"
+msgstr "Desarrollo"
+
+#: ../documentation/getstarted.rst:238
+msgid ""
+"Um Ihre Anwendung zu entwickeln, verwenden Sie Ihren Debugger mit dem Profil"
+" ``[dev] decore base development`` in vscode."
+msgstr ""
+"Para desarrollar su aplicación, utilice su depurador con el perfil ``[dev] "
+"decore base development`` en vscode."
+
+#: ../documentation/getstarted.rst:243
+msgid "Erstellung"
+msgstr "Creación"
+
+#: ../documentation/getstarted.rst:244
+msgid ""
+"Um Ihre Anwendung zu erstellen, führen Sie ``python app.py --build`` in "
+"Ihrem Projekt-Stammverzeichnis aus. Verwenden Sie das Terminal in vscode."
+msgstr ""
+"Para construir su aplicación, ejecute ``python app.py --build`` en el "
+"directorio raíz de su proyecto. Utilice el terminal en vscode."
+
+#: ../documentation/types.rst:2
+msgid "Typen"
+msgstr "Tipos"
+
+#: ../documentation/types.rst:4
+msgid "Ansicht"
+msgstr "Ver"
+
+#: ../documentation/types.rst:6
+msgid "Tabelle"
+msgstr "Cuadro"
+
+#: ../documentation/types.rst:11
+msgid ""
+"Der Ansichtstyp Tabelle dient der tabellarischen Darstellung von Daten."
+msgstr ""
+"El tipo de vista Tabla se utiliza para mostrar datos en forma de tabla."
+
+#: ../features.rst:2 ../index.rst:50
+msgid "Features"
+msgstr "Características"
+
+#: ../features.rst:4
+msgid ""
+"Decore ist eine Biblitothek zur Erstellung von Gui-Dashboard-Anwendungen in "
+"Python die ein vielzahl an Eigenschaften hervorbringt und auch in zukunft "
+"stetig erweitert wird."
+msgstr ""
+"Decore es una librería para la creación de aplicaciones Gui dashboard en "
+"Python que proporciona una gran variedad de funcionalidades y que será "
+"ampliada continuamente en el futuro."
+
+#: ../features.rst:6
+msgid ""
+"Durch die Verbindung einiger wirklich guter Python-Pakete war die Arbeit an "
+"decore überhaupt erst möglich. Daher möchte ich mich an dieser Stelle bei "
+"den Entwicklern der folgenden Pakete bedanken:"
+msgstr ""
+"Trabajar en decore sólo ha sido posible gracias a la combinación de algunos "
+"paquetes de Python realmente buenos. Por ello, me gustaría aprovechar esta "
+"oportunidad para dar las gracias a los desarrolladores de los siguientes "
+"paquetes:"
+
+#: ../features.rst:8
+msgid ""
+"**Peewee** - Ein einfaches, aber leistungsstarkes ORM, das eine flexible "
+"Datenbankanbindung für Python bietet. http://docs.peewee-"
+"orm.com/en/latest/index.html"
+msgstr ""
+"**Peewee** - Un ORM sencillo pero potente que proporciona una conexión "
+"flexible a bases de datos para Python. http://docs.peewee-"
+"orm.com/en/latest/index.html"
+
+#: ../features.rst:9
+msgid ""
+"**Flask** - Ein Microframework für Python basierend auf Werkzeug, Jinja 2 "
+"und guter Absichten. http://flask.pocoo.org/"
+msgstr ""
+"**Flask** - Un microframework para Python basado en Werkzeug, Jinja 2 y "
+"buenas intenciones. http://flask.pocoo.org/"
+
+#: ../features.rst:10
+msgid ""
+"**Quasar** - Ein Vue.js basiertes Frontend-Framework. https://quasar-"
+"framework.org/"
+msgstr ""
+"**Quasar** - Un marco frontend basado en Vue.js. https://quasar-"
+"framework.org/"
+
+#: ../features.rst:11
+msgid ""
+"**Vue.js** - Ein progressiver, inkrementeller JavaScript-Framework für die "
+"Entwicklung von Benutzeroberflächen. https://vuejs.org/"
+msgstr ""
+"**Vue.js** - Un marco JavaScript progresivo e incremental para el desarrollo"
+" de interfaces de usuario. https://vuejs.org/"
+
+#: ../features.rst:12
+msgid ""
+"**Cerberus** - Eine Validierungs-Bibliothek für Python-Datenstrukturen. "
+"http://docs.python-cerberus.org/en/stable/"
+msgstr ""
+"**Cerberus** - Biblioteca de validación de estructuras de datos en Python. "
+"http://docs.python-cerberus.org/en/stable/"
+
+#: ../features.rst:13
+msgid ""
+"**pykeepass** - Eine Bibliothek zum interagieren von KeePass 1.x und 2.x "
+"Datenbanken. http://pykeepass.readthedocs.io/en/latest/"
+msgstr ""
+"**pykeepass** - Una biblioteca para interactuar con las bases de datos "
+"KeePass 1.x y 2.x. http://pykeepass.readthedocs.io/en/latest/"
+
+#: ../features.rst:21
+msgid ""
+"Die nun folgenden Feature- und Änderungs-Aufzählungen sind in decore Base "
+"enthalten."
+msgstr ""
+"Las siguientes listas de características y cambios se encuentran en decore "
+"Base."
+
+#: ../features.rst:24
+msgid "Management & Backend-Anwendung"
+msgstr "Gestión y aplicación backend"
+
+#: ../features.rst:25
+msgid ""
+"schnelle und einfache GUI-Dashboard-Anwendungs Entwicklung mittels Python "
+"Decorators."
+msgstr ""
+"Desarrollo rápido y sencillo de aplicaciones GUI para cuadros de mando "
+"utilizando decoradores de Python."
+
+#: ../features.rst:26
+msgid ""
+"Erhaltung des Objekt-Orientierten Programmierstils in den Basisklassen, "
+"durch Aktionsufruf als Instanzmethoden."
+msgstr ""
+"Preservación del estilo de programación orientado a objetos en las clases "
+"base, llamando a las acciones como métodos de instancia."
+
+#: ../features.rst:27
+msgid ""
+"Speichung von wiederverwendbaren Kennwörtern (**keine Benutzerkennwörter**) "
+"in einer KeePass-Datenbank (**Hier wird noch ein Sicherheitsleitfaden "
+"erstellt**)."
+msgstr ""
+"Almacenamiento de contraseñas reutilizables (**no contraseñas de usuario**) "
+"en una base de datos KeePass (**aquí aún se está creando una guía de "
+"seguridad**)."
+
+#: ../features.rst:28
+msgid "Fortschrittsmitteilung an das Frontend durch das Actor-Modul."
+msgstr "Notificación de progreso al front end por parte del módulo actor."
+
+#: ../features.rst:31
+msgid "ORM Erweiterung & Datenbankanbindung"
+msgstr "Extensión ORM y conexión a bases de datos"
+
+#: ../features.rst:32
+msgid ""
+"Einfache Datensatzereugung mit angepasster aber vereinfachter Peewee-"
+"Integration."
+msgstr ""
+"Creación sencilla de registros de datos con integración personalizada pero "
+"simplificada de Peewee."
+
+#: ../features.rst:33
+msgid ""
+"Derzeit Mögliche Datenbank-Schnittstellen: SQLite ... (**Hier kommt schon "
+"bald mehr** )."
+msgstr ""
+"Interfaces de base de datos posibles actualmente: SQLite ... (**más en "
+"breve** )."
+
+#: ../features.rst:34
+msgid ""
+"Relationale Datenbank-Abfragen mit einer eigenen ``query`` Methode in im "
+"decore Model."
+msgstr ""
+"Consultas a bases de datos relacionales con un método ``query`` "
+"independiente en el modelo decore."
+
+#: ../features.rst:35
+msgid ""
+"Semi-Automatische Datensatzerstellung bei Aktionsverwendung durch das Actor-"
+"Modul."
+msgstr ""
+"Creación semiautomática de registros de datos cuando el módulo Actor utiliza"
+" acciones."
+
+#: ../features.rst:36
+msgid ""
+"Intergrierte Feldattribut definierte Standard-Validierung beim speichern "
+"eines Datensatzes."
+msgstr ""
+"Validación estándar definida por atributo de campo integrada al guardar un "
+"registro de datos."
+
+#: ../features.rst:39
+msgid "Webanwendung (SPA)"
+msgstr "Aplicación web (SPA)"
+
+#: ../features.rst:40
+msgid ""
+"Automatische und generische Erzeugung der GUI-Dashboard-Komponenten anhand "
+"der erfassten Metadaten."
+msgstr ""
+"Generación automática y genérica de los componentes del cuadro de mandos de "
+"la interfaz gráfica de usuario a partir de los metadatos recopilados."
+
+#: ../features.rst:41
+msgid ""
+"Vorgefertigtes Layout, reagierende Navigationsleiste und Basisbreich für die"
+" Ansicht-Komponenten."
+msgstr ""
+"Diseño prefabricado, barra de navegación responsiva y área básica para los "
+"componentes de la vista."
+
+#: ../features.rst:42
+msgid "Dialogsteuerung durch URL-Navigation"
+msgstr "Control del diálogo mediante navegación por URL"
+
+#: ../features.rst:43
+msgid ""
+"Erzeugung eines relationalen Datensatzes für die weiterverwenung im Widget."
+msgstr ""
+"Creación de un conjunto de datos relacionales para su uso posterior en el "
+"widget."
+
+#: ../index.rst:50
+msgid "Sample"
+msgstr "Muestra"
+
+#: ../index.rst:-1 ../index.rst:12
+msgid "decore Base | UI fastly"
+msgstr "decore Base | UI fastly"
+
+#: ../index.rst:-1
+msgid "index, follow"
+msgstr "índice, siga"
+
+#: ../index.rst:14
+msgid "Einleitung"
+msgstr "Introducción"
+
+#: ../index.rst:15
+msgid ""
+"decore Base ist ein out-of-the-box \"Python to Vue.js\" Datenanwendungs-"
+"Dashboard, das Ihnen hilft, in wenigen einfachen Schritten von der Idee zur "
+"Ansicht zu gelangen. Es richtet sich an diejenigen, die sich auf die "
+"Ergebnisse ihrer Algorithmen konzentrieren wollen, wissenschaftliche Arbeit "
+"leisten oder Lehr- und Lernfunktionen ausführen wollen."
+msgstr ""
+"decore Base es un panel de aplicaciones de datos \"Python to Vue.js\" listo "
+"para usar que te ayuda a pasar de la idea a la vista en unos sencillos "
+"pasos. Está dirigido a quienes desean centrarse en los resultados de sus "
+"algoritmos, realizar trabajos científicos o desempeñar funciones de "
+"enseñanza y aprendizaje."
+
+#: ../index.rst:18
+msgid ""
+"**decore Base ist derzeit in Arbeit, nur lokal bereitstellbar, nur für "
+"Windows verfügbar und noch nicht produktionsbereit**."
+msgstr ""
+"**decore Base es actualmente un trabajo en curso, sólo disponible a nivel "
+"local, sólo disponible para Windows y aún no está listo para la "
+"producción**."
+
+#: ../index.rst:20
+msgid ""
+"Die empfohlene IDE ist Visual Studio Code und alle Kommentare, "
+"Beschreibungen und Dokumentationen beziehen sich vorerst auch nur auf "
+"vscode."
+msgstr ""
+"El IDE recomendado es Visual Studio Code y todos los comentarios, "
+"descripciones y documentación se refieren sólo a vscode por el momento."
+
+#: ../index.rst:23
+msgid "Entwicklungsphasen & Vorteile"
+msgstr "Fases de desarrollo y ventajas"
+
+#: ../index.rst:24
+msgid ""
+"decore Base wurde entworfen um den Entwicklungsprozess deiner Anwendung in "
+"seinen verschiedenen Phasen optimal zu unterstützen."
+msgstr ""
+"decore Base se ha diseñado para apoyar de forma óptima el proceso de "
+"desarrollo de su aplicación en sus distintas fases."
+
+#: ../index.rst:40
+msgid ""
+"** Einige der hier genannten Funktionen sind derzeit noch in direkter "
+"Entwicklung und werden in Kürze verfügbar sein."
+msgstr ""
+"** Algunas de las funciones aquí mencionadas están aún en desarrollo directo"
+" y estarán disponibles en breve."
+
+#: ../index.rst:43
+msgid "Beteiligung & Unterstützung"
+msgstr "Participación y apoyo"
+
+#: ../index.rst:44
+msgid ""
+"Die größte Hilfe, die ich im Moment bekommen kann, ist, wenn Sie einen Blick"
+" auf das Projekt werfen und mir sagen, was Sie davon halten. Ich bin für "
+"jede Kritik dankbar."
+msgstr ""
+"La mayor ayuda que puedo recibir en este momento es que eches un vistazo al "
+"proyecto y me digas qué te parece. Agradezco cualquier crítica."
+
+#: ../index.rst:46
+msgid ""
+"Sollte bei Entwickeln etwas nicht wie erwartet funktionieren oder "
+"Unklarheiten in der Dokumentation auftauchen, lassen Sie es mich bitte "
+"wissen."
+msgstr ""
+"Si algo no funciona como se esperaba durante el desarrollo o si hay alguna "
+"ambigüedad en la documentación, hágamelo saber."
+
+#: ../index.rst:48
+msgid ""
+"Bitte benutzen Sie dazu den Problembereich im Repository. "
+"`<https://github.com/KemoPanzah/decore_Base/issues>`_"
+msgstr ""
+"Por favor, utilice el área de problemas en el repositorio. "
+"`<https://github.com/KemoPanzah/decore_Base/issues>`_"
+
+#: ../sample.rst:2
+msgid "Sample application"
+msgstr "Ejemplo de solicitud"
+
+#: ../sample.rst:3
+msgid ""
+"To better understand how decore base works, it is best to look at the sample"
+" application. The application represents my continuous development of decore"
+" base."
+msgstr ""
+"Para entender mejor cómo funciona decore base, lo mejor es echar un vistazo "
+"a la aplicación de ejemplo. La aplicación representa mi desarrollo continuo "
+"de decore base."
+
+#: ../sample.rst:5
+msgid "https://github.com/KemoPanzah/decore_Sample"
+msgstr "https://github.com/KemoPanzah/decore_Sample"

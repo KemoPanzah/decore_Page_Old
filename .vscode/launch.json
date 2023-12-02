@@ -10,7 +10,34 @@
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "program": ".venv/Scripts/sphinx-build.exe",
-      "args": ["-b", "gettext", "source", "source/_text", "-a", "-E", "-D", "language=en"],
+      "args": [
+        "-b",
+        "gettext",
+        "source",
+        "source/_text",
+        "-a",
+        "-E",
+        "-D",
+        "language=en"
+      ],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Sphinx Make Translate (es)",
+      "type": "python",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "program": ".venv/Scripts/sphinx-build.exe",
+      "args": [
+        "-b",
+        "gettext",
+        "source",
+        "source/_text",
+        "-a",
+        "-E",
+        "-D",
+        "language=es"
+      ],
       "console": "integratedTerminal"
     },
     {
@@ -19,7 +46,16 @@
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "program": ".venv/Scripts/sphinx-build.exe",
-      "args": ["-b", "html", "source", "dev_docs/de", "-a", "-E", "-D", "language=de"],
+      "args": [
+        "-b",
+        "html",
+        "source",
+        "dev_docs/de",
+        "-a",
+        "-E",
+        "-D",
+        "language=de"
+      ],
       "console": "integratedTerminal"
     },
     {
@@ -28,7 +64,34 @@
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "program": ".venv/Scripts/sphinx-build.exe",
-      "args": ["-b", "html", "source", "dev_docs/en", "-a", "-E", "-D", "language=en"],
+      "args": [
+        "-b",
+        "html",
+        "source",
+        "dev_docs/en",
+        "-a",
+        "-E",
+        "-D",
+        "language=en"
+      ],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Sphinx Make Dev (es)",
+      "type": "python",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "program": ".venv/Scripts/sphinx-build.exe",
+      "args": [
+        "-b",
+        "html",
+        "source",
+        "dev_docs/es",
+        "-a",
+        "-E",
+        "-D",
+        "language=es"
+      ],
       "console": "integratedTerminal"
     },
     {
@@ -40,20 +103,18 @@
       "args": ["-b", "html", "source", "docs", "-a", "-E"],
       "console": "integratedTerminal"
     },
-    {
-      "name": "Sphinx Make Readme",
-      "type": "python",
-      "request": "launch",
-      "cwd": "${workspaceFolder}",
-      "program": ".venv/Scripts/sphinx-build.exe",
-      "args": ["-b", "rst", "source", "readme", "-a", "-E"],
-      "console": "integratedTerminal"
-    }
   ],
   "compounds": [
     {
-        "name": "Sphinx Make Dev (all)",
-        "configurations": ["Sphinx Make Dev (de)", "Sphinx Make Dev (en)"]
+      "name": "Sphinx Make Translate (all)",
+      "configurations": [
+        "Sphinx Make Translate (en)",
+        "Sphinx Make Translate (es)"
+      ]
+    },
+    {
+      "name": "Sphinx Make Dev (all)",
+      "configurations": ["Sphinx Make Dev (de)", "Sphinx Make Dev (en)", "Sphinx Make Dev (es)"]
     }
-]
+  ]
 }
