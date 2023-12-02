@@ -59,21 +59,22 @@ class Localizer(Translator):
 
     def get_gloss(self):
         t_glossary = None
-        for i_glossary in self.list_glossaries():
-            if i_glossary.name == self.target_lang:
-                if self.get_glossary_entries(i_glossary) != entries[self.target_lang]:
-                    self.delete_glossary(i_glossary)
-                    t_glossary = None
-                else:
-                    t_glossary = i_glossary
+        if self.source_lang != self.target_lang:
+            for i_glossary in self.list_glossaries():
+                if i_glossary.name == self.target_lang:
+                    if self.get_glossary_entries(i_glossary) != entries[self.target_lang]:
+                        self.delete_glossary(i_glossary)
+                        t_glossary = None
+                    else:
+                        t_glossary = i_glossary
 
-        if not t_glossary:
-            self.glossary = self.create_glossary(
-                self.target_lang,
-                source_lang=self.source_lang,
-                target_lang=self.target_lang,
-                entries=entries[self.target_lang],
-            )
+            if not t_glossary:
+                self.glossary = self.create_glossary(
+                    self.target_lang,
+                    source_lang=self.source_lang,
+                    target_lang=self.target_lang,
+                    entries=entries[self.target_lang],
+                )
 
         return t_glossary
 
@@ -89,6 +90,9 @@ class Localizer(Translator):
         if not p_text in self.__data__:
             self.__data__[p_text] = {}
         if not self.target_lang in self.__data__[p_text]:
-            self.__data__[p_text][self.target_lang] = self.translate_text_with_glossary(p_text, self.gloss, target_lang=self.target_lang).text
+            if self.source_lang != self.target_lang:
+                self.__data__[p_text][self.target_lang] = self.translate_text_with_glossary(p_text, self.gloss, target_lang=self.target_lang).text
+            else:
+                self.__data__[p_text][self.target_lang] = p_text
             self.save_data()
         return self.__data__[p_text][self.target_lang]
