@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: decore Base \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-22 20:27+0100\n"
+"POT-Creation-Date: 2023-12-02 07:26+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../documentation.rst:2
-#: ../index.rst:42
+#: ../index.rst:50
 msgid "Dokumentation"
 msgstr ""
 
@@ -848,7 +848,7 @@ msgid "Der Ansichtstyp Tabelle dient der tabellarischen Darstellung von Daten."
 msgstr ""
 
 #: ../features.rst:2
-#: ../index.rst:42
+#: ../index.rst:50
 msgid "Features"
 msgstr ""
 
@@ -952,8 +952,8 @@ msgstr ""
 msgid "Erzeugung eines relationalen Datensatzes für die weiterverwenung im Widget."
 msgstr ""
 
-#: ../index.rst:42
-msgid "Beispiel"
+#: ../index.rst:50
+msgid "Sample"
 msgstr ""
 
 #: ../index.rst:-1
@@ -965,11 +965,11 @@ msgstr ""
 msgid "index, follow"
 msgstr ""
 
-#: ../index.rst:15
+#: ../index.rst:14
 msgid "Einleitung"
 msgstr ""
 
-#: ../index.rst:16
+#: ../index.rst:15
 msgid "decore Base ist ein out-of-the-box \"Python to Vue.js\" Datenanwendungs-Dashboard, das Ihnen hilft, in wenigen einfachen Schritten von der Idee zur Ansicht zu gelangen. Es richtet sich an diejenigen, die sich auf die Ergebnisse ihrer Algorithmen konzentrieren wollen, wissenschaftliche Arbeit leisten oder Lehr- und Lernfunktionen ausführen wollen."
 msgstr ""
 
@@ -978,55 +978,35 @@ msgid "**decore Base ist derzeit in Arbeit, nur lokal bereitstellbar, nur für W
 msgstr ""
 
 #: ../index.rst:20
-msgid "Die empfohlene IDE ist Visual Studio Code und alle meine Kommentare und Dokumentationen hier beziehen sich auch nur auf vscode."
+msgid "Die empfohlene IDE ist Visual Studio Code und alle Kommentare, Beschreibungen und Dokumentationen beziehen sich vorerst auch nur auf vscode."
 msgstr ""
 
 #: ../index.rst:23
-msgid "Funktionen und Integrationen"
+msgid "Entwicklungsphasen & Vorteile"
 msgstr ""
 
 #: ../index.rst:24
-msgid "Fertige SPA (Single Page Application) mit Vue.js unter Verwendung des Quasar Frameworks (https://github.com/quasarframework/quasar)"
-msgstr ""
-
-#: ../index.rst:25
-msgid "Vordefinierte Webapi für Metadaten und Aktionen mit Flask (https://github.com/pallets/flask)"
-msgstr ""
-
-#: ../index.rst:26
-msgid "Integriertes ORM für Datenmanagement und Datenbankschnittstellen (SQLite) powered by the great Peewee (https://github.com/coleifer/peewee)"
-msgstr ""
-
-#: ../index.rst:27
-msgid "Datensatz-Validierung mit Cerberus (https://github.com/pyeve/cerberus)"
-msgstr ""
-
-#: ../index.rst:28
-msgid "Passwortverwaltung mit pykeepass (https://github.com/libkeepass/pykeepass)"
-msgstr ""
-
-#: ../index.rst:30
-msgid "Bitte unterstützen Sie diese großartigen Projekte!"
-msgstr ""
-
-#: ../index.rst:33
-msgid "Contribution"
-msgstr ""
-
-#: ../index.rst:34
-msgid "Die größte Hilfe, die ich im Moment bekommen kann, ist, wenn Sie einen Blick auf das Projekt werfen und mir sagen, was Sie davon halten. Ich bin für jede Kritik dankbar."
-msgstr ""
-
-#: ../index.rst:36
-msgid "Wenn Sie etwas in der Dokumentation in Bezug auf Funktionen, Fehler oder Unklarheiten finden, lassen Sie es mich bitte wissen. Bitte benutzen Sie dazu den Problembereich im Repository. `<https://github.com/KemoPanzah/decore_Base/issues>`_"
-msgstr ""
-
-#: ../index.rst:39
-msgid "Notes"
+msgid "decore Base wurde entworfen um den Entwicklungsprozess deiner Anwendung in seinen verschiedenen Phasen optimal zu unterstützen."
 msgstr ""
 
 #: ../index.rst:40
-msgid "Diese Dokumentation wurde mit Deepl vom Deutschen ins Englische übersetzt."
+msgid "** Einige der hier genannten Funktionen sind derzeit noch in direkter Entwicklung und werden in Kürze verfügbar sein."
+msgstr ""
+
+#: ../index.rst:43
+msgid "Beteiligung & Unterstützung"
+msgstr ""
+
+#: ../index.rst:44
+msgid "Die größte Hilfe, die ich im Moment bekommen kann, ist, wenn Sie einen Blick auf das Projekt werfen und mir sagen, was Sie davon halten. Ich bin für jede Kritik dankbar."
+msgstr ""
+
+#: ../index.rst:46
+msgid "Sollte bei Entwickeln etwas nicht wie erwartet funktionieren oder Unklarheiten in der Dokumentation auftauchen, lassen Sie es mich bitte wissen."
+msgstr ""
+
+#: ../index.rst:48
+msgid "Bitte benutzen Sie dazu den Problembereich im Repository. `<https://github.com/KemoPanzah/decore_Base/issues>`_"
 msgstr ""
 
 #: ../sample.rst:2

@@ -1,0 +1,752 @@
+{
+    "Dokumentation": {
+        "EN-US": "Documentation"
+    },
+    "Um mit decore Base eine lauff\u00e4hige GUI-Dashboard-Anwendung zu erstellen, sind vergleichsweise wenige Schritte notwendig. Im Wesentlichen besteht der Aufbau aus der Definition der Meta-Instanzen und der Definition des Datenmodells. Die Metadaten werden vom Interpreter durch Einlesen von dekorierten Funktionen zusammengestellt und als Instanzen im Pool gespeichert.": {
+        "EN-US": "To create an executable GUI dashboard application with decore Base, comparatively few steps are necessary. Essentially, the structure consists of defining the meta instances and defining the data model. The metadata is compiled by the interpreter by reading in decorated functions and stored as instances in the pool."
+    },
+    "Beschreibung der Meta-Instanzen": {
+        "EN-US": "Description of the meta instances"
+    },
+    "Meta-Instanzen entahlten die ben\u00f6tigten Typen und Attribute f\u00fcr die Erstellung der GUI-Elemente. Die Meta-Instanzen werden in der Regel durch dekorierte Funktionen erstellt.": {
+        "EN-US": "Meta instances contain the types and attributes required to Build the GUI elements. The meta instances are usually built using decorated functions."
+    },
+    "App": {
+        "EN-US": "App"
+    },
+    "Die Application-Instanz liefert die Metadaten f\u00fcr den Anwendung. Sie ist die Wurzel f\u00fcr alles kommende und nimmt nur Basen auf. Die App-Instanz wird durch den \"Decorator\" :meth:`app() <decore_Base.decore_base.decore.Decore.app>` erstellt.": {
+        "EN-US": "The application instance provides the metadata for the application. It is the root for everything to come and only accepts Bases. The app instance is built by the \"Decorator\" :meth:`app() <decore_Base.decore_base.decore.Decore.app>`."
+    },
+    "Base": {
+        "EN-US": "Base"
+    },
+    "Die Base-Instanz liefert die Metadaten f\u00fcr die Basis. Sie ist das Tr\u00e4gerelement f\u00fcr die Ansichten. Die Base-Instanz wird durch den \"Decorator\" :meth:`base() <decore_Base.decore_base.decore.Decore.base>` erstellt.": {
+        "EN-US": "The Base instance provides the metadata for the Base. It is the carrier element for the Views. The base instance is built by the \"Decorator\" :meth:`base() <decore_Base.decore_base.decore.Decore.base>`."
+    },
+    "**Darstellung im Frontend**": {
+        "EN-US": "**Display in the frontend**"
+    },
+    "Die Basis ist im Grunde die freie Fl\u00e4che die f\u00fcr die Ansichten zur Verf\u00fcgung steht.": {
+        "EN-US": "The Base is basically the free area available for the Views."
+    },
+    "In der Navigation wird sie direkt unter Wurzel gelistet sobald sie mehr als eine Ansicht erh\u00e4lt.": {
+        "EN-US": "It is listed directly under Root in the navigation as soon as it receives more than one View."
+    },
+    "View": {
+        "EN-US": "View"
+    },
+    "Die View-Instanz liefert die Metadaten f\u00fcr die Ansicht. Ihr k\u00f6nnen Aktionen und Dialoge untergeordnet werden. Die View-Instanz wird durch den \"Decorator\" :meth:`view() <decore_Base.decore_base.decore.Decore.view>` erstellt.": {
+        "EN-US": "The View instance provides the metadata for the View. Actions and dialogs can be subordinated to it. The view instance is built by the \"Decorator\" :meth:`view() <decore_Base.decore_base.decore.Decore.view>`."
+    },
+    "Die unterschiedlichen Ansichts-Typen werden im Bereich :doc:`Typen<documentation/types>` n\u00e4her beschrieben.": {
+        "EN-US": "The different View types are described in more detail in the :doc:`Types<documentation/types>` section."
+    },
+    "Die Ansicht wird in der Navigation unter der Basis gelistet.": {
+        "EN-US": "The View is listed in the navigation under Base."
+    },
+    "Die Ansicht wird im Ansichtsbereich der Basis gerendert.": {
+        "EN-US": "The View is rendered in the Base view area."
+    },
+    "Dialog": {
+        "EN-US": "Dialog"
+    },
+    "Die Dialog-Instanz liefert die Metadaten f\u00fcr den Dialog. Ihr k\u00f6nnen weitere Dialoge untergeordnet werden die dann in Tabs dargetellt werden. Haupts\u00e4chlich dienen diese aber zum tragen der Widgets. Die Dialog-Instanz wird durch den \"Decorator\" :meth:`dialog() <decore_Base.decore_base.decore.Decore.dialog>` erstellt.": {
+        "EN-US": "The dialog instance provides the metadata for the dialog. Further dialogs can be subordinated to it, which are then displayed in tabs. However, these are mainly used to carry the widgets. The dialog instance is built by the \"Decorator\" :meth:`dialog() <decore_Base.decore_base.decore.Decore.dialog>`."
+    },
+    "Auch hier gibt es verschiedene Dialog-Typen die im Bereich :doc:`Typen<documentation/types>` n\u00e4her beschrieben werden.": {
+        "EN-US": "Here, too, there are various dialog types which are described in more detail in the :doc:`Types<documentation/types>` section."
+    },
+    "Der Dialog kann in unterschiedlichen Display-Modis dargestellt werden. Zum Beispiel als Side-Drawer oder als modales Fenster.": {
+        "EN-US": "The dialog can be shown in different display modes. For example, as a side-drawer or as a modal window."
+    },
+    "Dieser wird durch die mit dem Aktivator-Attribut bestimmten Postionen oder Ereignisse aufgerufen.": {
+        "EN-US": "This is called up by the positions or events defined with the activator attribute."
+    },
+    "Widget": {
+        "EN-US": "Widget"
+    },
+    "Die Widget-Instanz liefert die Metadaten f\u00fcr das Widget. Ihr k\u00f6nnen weitere Widgets untergeordnet werden die dann gestapelt dargetellt werden. Ein Widget wird f\u00fcr die Manipulation des Datensatzes oder Datens\u00e4tze ben\u00f6tigt. Die Widget-Instanz wird durch den \"Decorator\" :meth:`widget() <decore_Base.decore_base.decore.Decore.widget>` erstellt.": {
+        "EN-US": "The widget instance provides the metadata for the widget. Further widgets can be subordinated to it, which are then displayed in a stack. A widget is required for manipulating the data set or data sets. The widget instance is built by the \"Decorator\" :meth:`widget() <decore_Base.decore_base.decore.Decore.widget>`."
+    },
+    "Widgets k\u00f6nnen beispielsweise ein Editor ein Viewer, Listen, oder Diagramme sein. Die unterschiedlichen Widget-Typen werden im Bereich :doc:`Typen<documentation/types>` n\u00e4her beschrieben.": {
+        "EN-US": "Widgets can be, for example, an editor, a viewer, lists or diagrams. The different widget types are described in more detail in the :doc:`Types<documentation/types>` section."
+    },
+    "Das Widget wird im Content-Bereich des Dialoges dargestellt.": {
+        "EN-US": "The widget is displayed in the content area of the dialog."
+    },
+    "Action": {
+        "EN-US": "Action"
+    },
+    "Die Action-Instanz liefert die Metadaten f\u00fcr die Aktion. Sie ist das Schlu\u00dflicht in der Prozesskette der Meta-Abarbeitung und dient zum \u00fcbermitteln der Manipulationen und der Ausf\u00fchrung von Aktionen im Backend. Die Action-Instanz wird durch den \"Decorator\" :meth:`action() <decore_Base.decore_base.decore.Decore.action>` erstellt.": {
+        "EN-US": "The action instance provides the metadata for the action. It is the last link in the meta processing chain and is used to transmit the manipulations and Run actions in the backend. The action instance is built by the \"Decorator\" :meth:`action() <decore_Base.decore_base.decore.Decore.action>`."
+    },
+    "Auch Aktionen haben Typen die im Bereich :doc:`Typen<documentation/types>` n\u00e4her beschrieben werden. Ein Besispiel w\u00e4re der Typ ``submit`` der bestimmte Daten (z.B. Item, Selektierte Items oder Strukturen) an das Backend \u00fcbermittelt.": {
+        "EN-US": "Actions also have types that are described in more detail in the :doc:`Types<documentation/types>` section. An example would be the type ``submit`` which transmits certain data (e.g. item, selected items or structures) to the backend."
+    },
+    "Aktionen k\u00f6nnen durch das Aktivator-Attribut an unterschiedlichen Stellen im Frontend positioniert werden, haben aber keine tat\u00e4chliche Darstellung sondern nur Schaltfl\u00e4chen- oder Ereignisgesteuerte Trigger.": {
+        "EN-US": "Actions can be positioned in different places in the frontend using the activator attribute, but have no actual display, only button or event-controlled triggers."
+    },
+    "Function": {
+        "EN-US": "Function"
+    },
+    "Die Function-Instanz liefert die Metadaten f\u00fcr Funktionen die nach dem Init des Pools direkt in der Base als Instanz-Methoden ausgef\u00fchrt werden. Die Function-Instanz wird durch den \"Decorator\" :meth:`function() <decore_Base.decore_base.decore.Decore.function>` erstellt.": {
+        "EN-US": "The function instance provides the metadata for functions that are run directly in the base as instance methods after the pool init. The function instance is built by the \"Decorator\" :meth:`function() <decore_Base.decore_base.decore.Decore.function>`."
+    },
+    "Funktionen werden nicht im Frontend dargestellt oder aufgearbeitet.": {
+        "EN-US": "Functions are not displayed or processed in the front end."
+    },
+    "Abarbeitungsreihenfolge im Frontend": {
+        "EN-US": "Processing sequence in the frontend"
+    },
+    "Nach dem \u00d6ffnen einer Anwendung, dem Anlegen der Base und dem Anlegen weiterer Childs laufen alle Pfade auf die Action zu, die schlie\u00dflich wieder mit dem Backend kommuniziert, um die Manipulation der Daten zu erm\u00f6glichen. Nicht jedes Komponentenobjekt kann einem anderen beliebig zugeordnet werden. Das Frontend arbeitet die einzelnen Objekte nur in einer festen Reihenfolge ab.": {
+        "EN-US": "After opening an application, creating the base and creating further children, all paths lead to the action, which then communicates with the backend again to enable the data to be manipulated. Not every component object can be arbitrarily assigned to another. The frontend only processes the individual objects in a fixed order."
+    },
+    "Diese \u00dcbersicht stellt den Prozess dieser Abarbeitung dar.": {
+        "EN-US": "This overview shows the process of this processing."
+    },
+    "Relationale Datenverarbeitung im Widget": {
+        "EN-US": "Relational data processing in the widget"
+    },
+    "Die Datenverarbeitung und Datensatzgenerierung in den Widgets ist ein wichtiger Bestandteil der Anwendung und wird hier als Relationale-Datenverarbeitung bezeichnet. Diese Generierung des bearbeitbaren Datensatzes, wird erstens durch den Aktivator und zweitens durch die Datenquelle der Ansicht in Beziehung zur Datenquelle des Widgets gesteuert. Damit wird erm\u00f6glicht, einen Dialog mit weiter im Kontext der eigentlichen Selektion zu erweitern und detailreicher zu gestalten.": {
+        "EN-US": "Data processing and data set generation in the widgets is an important part of the application and is referred to here as relational data processing. This generation of the editable data set is controlled firstly by the activator and secondly by the data source of the View in relation to the data source of the widget. This makes it possible to extend a dialog with further in the context of the actual selection and to make it more detailed."
+    },
+    "Folgender Chart beschreibt diesen Prozess.": {
+        "EN-US": "The following chart describes this process."
+    },
+    "Legende:": {
+        "EN-US": "Legend:"
+    },
+    "**Item**": {
+        "EN-US": "**Item**"
+    },
+    "empty = ein leerer Datensatz wird generiert. (keine Default-Werte).": {
+        "EN-US": "empty = an empty data record is generated. (no default values)."
+    },
+    "first = der erste Datensatz der Widget-Quelle wird als Datensatz geladen.": {
+        "EN-US": "first = the first data record of the widget source is loaded as a data record."
+    },
+    "last = der letzte Datensatz der Widget-Quelle wird als Datensatz geladen.": {
+        "EN-US": "last = the last data record of the widget source is loaded as a data record."
+    },
+    "default = ein neuer Datensatz mit Default-Werten der Widget-Quelle wird als Datensatz geladen.": {
+        "EN-US": "default = a new data set with default values from the widget source is loaded as a data set."
+    },
+    "item_by_id = ein Datensatz mit einer definierten ID aus der Widget-Quelle wird als Datensatz geladen.": {
+        "EN-US": "item_by_id = a data record with a defined ID from the widget source is loaded as a data record."
+    },
+    "**Query**": {
+        "EN-US": "**Query**"
+    },
+    "True = Alle vorkommenden Backref-Namen und die ID des selektierten Datensatzes der Ansichts-Quelle wird genutzt, um die Query des Widgets zu erweitern.": {
+        "EN-US": "True = All occurring backref names and the ID of the selected data set of the View source are used to expand the widget's query."
+    },
+    "False = Die ID des selektierten Datensatzes wird nicht als Query-Attribut f\u00fcr den Datenabruf verwendet.": {
+        "EN-US": "False = The ID of the selected data record is not used as a query attribute for the data retrieval."
+    },
+    "**Extend**": {
+        "EN-US": "**Extend**"
+    },
+    "True = automatische Bef\u00fcllung der relationalen Felder des Ziel-Datensatzes, mit dem Ansichts-Datensatz. Zum Beispiel: Ein ForeignKey-Feld des Ziel-Datanstaz wird mit dem Ansichst-Datenstaz bef\u00fcllt.": {
+        "EN-US": "True = automatic filling of the relational fields of the target data set with the View data set. For example: A ForeignKey field of the target dataset is filled with the view dataset."
+    },
+    "False = keine automatische Bef\u00fcllung des Datensatzes.": {
+        "EN-US": "False = no automatic filling of the data record."
+    },
+    "Decorators": {
+        "EN-US": "Decorators"
+    },
+    "Objekt der Klasse Decore ist die Hauptklasse des Frameworks. Sie ist f\u00fcr die Registrierung der Elemente zust\u00e4ndig und stellt die API zur Verf\u00fcgung.": {
+        "EN-US": "Object of class Decore is the main class of the framework. It is responsible for registering the elements and provides the API."
+    },
+    "Eine Funktion zum er\u00f6ffnen einer GUI-Dashboard-Anwendung. Sie wird als \"Decorator\" verwendet.": {
+        "EN-US": "A function for opening a GUI dashboard application. It is used as a \"Decorator\"."
+    },
+    "Parameters": {
+        "EN-US": "Parameters"
+    },
+    "Der Titel der App.": {
+        "EN-US": "The title of the app."
+    },
+    "Gibt an, ob der Gastzugang (Anonynus) erlaubt ist. Der Wert ``True`` erlaubt den automatischen Login als Gast. Der Wert ``False`` verweigert das senden der Metadaten an das Frontend und verweist auf die Login-Seite.": {
+        "EN-US": "Specifies whether guest access (anonynus) is permitted. The value ``True`` allows automatic login as a guest. The value ``False`` refuses to send the metadata to the frontend and refers to the login page."
+    },
+    "Eine Funktion zum registrieren einer Basis in der GUI-Dashboard-Anwendung. Sie wird als \"Decorator\" verwendet.": {
+        "EN-US": "A function for registering a Base in the GUI dashboard application. It is used as a \"Decorator\"."
+    },
+    "Die Basis ist das Tr\u00e4gerelement f\u00fcr die Ansicht und die Vorlage f\u00fcr die Datenquelle im Frontend.": {
+        "EN-US": "Base is the carrier element for the View and the template for the data source in the frontend."
+    },
+    "Das Symbol der Basis.": {
+        "EN-US": "The symbol of the Base."
+    },
+    "Der Titel der Basis.": {
+        "EN-US": "The Base title."
+    },
+    "Die Beschreibung der Basis.": {
+        "EN-US": "The description of the Base."
+    },
+    "Das Datenmodell der Basis.": {
+        "EN-US": "The Base data model."
+    },
+    "Eine Funktion zur Registrierung einer Ansicht. Sie wird als \"Decorator\" verwendet.": {
+        "EN-US": "A function for registering a View. It is used as a \"Decorator\"."
+    },
+    "Eine Ansicht ist ein Container f\u00fcr die Anzeige von Daten.": {
+        "EN-US": "A View is a container for displaying data."
+    },
+    "Die ID des \u00fcbergeordneten Elements. Nur zu setzen, wenn die Ansicht in einer anderen Basis gerendert werden soll.": {
+        "EN-US": "The ID of the parent element. Only to be set if the View is to be rendered in a different Base."
+    },
+    "Das Symbol der Ansicht.": {
+        "EN-US": "The View icon."
+    },
+    "Der Titel der Ansicht.": {
+        "EN-US": "The title of the View."
+    },
+    "Die Beschreibung der Ansicht.": {
+        "EN-US": "The description of the View."
+    },
+    "Gibt an wie die Datens\u00e4tze angezeigt werden. Der Wert ``table`` stellt die Datens\u00e4tze in einer Tabelle dar.": {
+        "EN-US": "Specifies how the data records are displayed. The value ``table`` represents the data records in a table."
+    },
+    "Die Felder, die in der Ansicht angezeigt werden.": {
+        "EN-US": "The fields that are displayed in the View."
+    },
+    "Die Filter, die in der Ansicht angezeigt werden.": {
+        "EN-US": "The filters that are displayed in the View."
+    },
+    "Die Abfrage, die in der Ansicht angezeigt wird.": {
+        "EN-US": "The query that is displayed in the View."
+    },
+    "W\u00e4hlt die Methode wie die Datens\u00e4tze der View geladen werden. Der Wert ``client`` l\u00e4dt alle Datens\u00e4tze auf einmal und \u00fcberl\u00e4sst den Seitenaufbau dem Frontend.": {
+        "EN-US": "Selects the method how the data records of the view are loaded. The value ``client`` loads all data records at once and leaves the page structure to the frontend."
+    },
+    "Gibt an wieviele Datens\u00e4tze auf einer Seite der Ansicht angezeigt werden sollen. ``16`` ist die Standardeinstellung.": {
+        "EN-US": "Specifies how many data records should be displayed on one page of the View. ``16`` is the default setting."
+    },
+    "Eine Funktion zur Registrierung eines Dialogs. Sie wird als \"Decorator\" verwendet.": {
+        "EN-US": "A function for registering a dialog. It is used as a \"Decorator\"."
+    },
+    "Der Dialog ist das Tr\u00e4gerelement f\u00fcr Widgets": {
+        "EN-US": "The dialog is the carrier element for widgets"
+    },
+    "Die ID des \u00fcbergeordneten Elements. Nur zu setzen, wenn der Dialog in einer Ansicht einer anderen Basis gerendert werden soll.": {
+        "EN-US": "The ID of the parent element. Only to be set if the dialog is to be rendered in a View of another Base."
+    },
+    "Das Symbol des Dialogs.": {
+        "EN-US": "The symbol of dialog."
+    },
+    "Der Titel des Dialogs.": {
+        "EN-US": "The title of the dialog."
+    },
+    "Die Beschreibung des Dialogs.": {
+        "EN-US": "The description of the dialog."
+    },
+    "Gibt an wie der Dialog die Widgets darstellen wird. Der Wert ``standard`` stellt die untergeordneten Widgets und Sub-Widgets untereinander dar.": {
+        "EN-US": "Specifies how the dialog will display the widgets. The ``standard`` value displays the subordinate widgets and sub-widgets one below the other."
+    },
+    "Der Anzeigetyp des Dialogs. Standardwert ist ``draw-half``.": {
+        "EN-US": "The display type of the dialog. The default value is ``draw-half``."
+    },
+    "Der Aktivatortyp des Dialogs. \u00dcber den Wert ``none`` wird der Dialog sofort beim OnLoad Ereignis der View angezeigt. Der Wert ``default`` stellt den Dialog im Top-Menu der View dar. Der Wert ``context`` stellt den Dialog im Kontextmen\u00fc eines Items der View dar. Der Wert ``click`` zeigt den Dialog dann an wenn man einen Datensatz anklickt.": {
+        "EN-US": "The activator type of the dialog. With the value ``none`` the dialog is displayed immediately at the OnLoad event of the view. The value ``default`` displays the dialog in the top menu of the view. The value ``context`` represents the dialog in the context menu of an item in the view. The value ``click`` displays the dialog when you click on a data record."
+    },
+    "Eine Funktion zur Registrierung eines Widgets. Sie wird als \"Decorator\" verwendet.": {
+        "EN-US": "A function for registering a widget. It is used as a \"Decorator\"."
+    },
+    "Ein Widget dient zur Darstellung und Interaktion mit dem Datensatz. Es erh\u00e4lt die Daten, die der Dialog-Aktivator vorgibt. Der Wert ``none`` \u00fcbergibt den letzten Datensatz der Datenbanktabelle. Der Wert ``default`` \u00fcbergibt einen nur mit Default-Werten gef\u00fcllten Datensatz. Beim Wert ``context`` \u00fcbergibt es den Datensatz, der im Kontextmen\u00fc der Ansicht ausgew\u00e4hlt wurde. Und ``click`` \u00fcbergibt den Datensatz, der angeklickt wurde.": {
+        "EN-US": "A widget is used to display and interact with the data set. It receives the data specified by the dialog activator. The value ``none`` transfers the last data record of the database table. The value ``default`` transfers a data record filled only with default values. The value ``context`` transfers the data record that was selected in the context menu of the View. And ``click`` transfers the data record that was clicked on."
+    },
+    "Widgets, welche aus einer fremden Basis einem Dialog zugeordnet werden, erg\u00e4nzen die relationalen Felder eines Default-Items der fremden Datenquelle mit den Daten des aktivierten Items. (Der Satz ist Schei\u00dfe zu verstehen, aber er trifft genau das, was es tut). In der Sample Anwendung verwende ich das beim Zuweisen von \"Contracts\" zu einer \"Person\".": {
+        "EN-US": "Widgets, which are assigned to a dialog from a foreign Base, supplement the relational fields of a default item of the foreign data source with the data of the activated item. (The sentence is crap to understand, but it does exactly what it does). In the sample application, I use this when assigning \"Contracts\" to a \"Person\"."
+    },
+    "Es gibt aber auch Widgets, die mehrere Datens\u00e4tze darstellen k\u00f6nnen, wie im Beispiel davor werden hier auch die Relationen verwendet, um nur Daten abzubilden, die etwas mit dem gew\u00e4hlten Item zu tun haben.": {
+        "EN-US": "However, there are also widgets that can display several data records. As in the previous example, the relations are also used here to display only data that has something to do with the selected item."
+    },
+    "Die ID des \u00fcbergeordneten Elements. Nur zu setzen, wenn das Widget in einem Dialog einer anderen Basis gerendert werden soll.": {
+        "EN-US": "The ID of the parent element. Only to be set if the widget is to be rendered in a dialog of another Base."
+    },
+    "Das Symbol des Widgets.": {
+        "EN-US": "The icon of the widget."
+    },
+    "Der Titel des Widgets.": {
+        "EN-US": "The title of the widget."
+    },
+    "Die Beschreibung des Widgets.": {
+        "EN-US": "The description of the widget."
+    },
+    "Gibt an wie das Widget die Daten darstellen wird. Standardwert ist ``default``.": {
+        "EN-US": "Specifies how the widget will display the data. The default value is ``default``."
+    },
+    "Die Felder, die in dem Widget angezeigt werden.": {
+        "EN-US": "The fields that are displayed in the widget."
+    },
+    "Eine Funktion zur Registrierung einer Aktion. Sie wird als \"Decorator\" verwendet.": {
+        "EN-US": "A function for registering an action. It is used as a \"Decorator\"."
+    },
+    "Eine Aktion ist die tats\u00e4chliche Interaktion zwischen dem Benutzer und dem Backend.": {
+        "EN-US": "An action is the actual interaction between the user and the backend."
+    },
+    "Die ID des \u00fcbergeordneten Elements. Nur zu setzen, wenn die Aktion in einem Widget einer anderen Basis gerendert werden soll.": {
+        "EN-US": "The ID of the parent element. Only to be set if the action is to be rendered in a widget of another Base."
+    },
+    "Das Symbol der Aktion.": {
+        "EN-US": "The symbol of action."
+    },
+    "Der Titel der Aktion.": {
+        "EN-US": "The title of the campaign."
+    },
+    "Die Beschreibung der Aktion.": {
+        "EN-US": "The description of the action."
+    },
+    "Gibt an was die Aktion kann. Standardwert ist ``standard``.": {
+        "EN-US": "Specifies what the action can do. The default value is ``standard``."
+    },
+    "Gib an, wie die Aktion ausgel\u00f6st wird.": {
+        "EN-US": "Specify how the action is triggered."
+    },
+    "Gibt an, ob die Aktion Validierungsfehler zur\u00fcckgeben kann. Standardwert ist ``True``. (Im Augenblick wirkt sich das nur auf den Typen ``submit`` aus.)": {
+        "EN-US": "Specifies whether the action can return validation errors. The default value is ``True``. (At the moment, this only affects the ``submit`` type)."
+    },
+    "Die Aktionen durchlaufen ein Modul, welches die erhaltenen Daten aufbereitet und als Keyword-Parameter an die dekorierte Funktion \u00fcbergibt. Es ist alles in den ``kwargs`` zu finden und man macht sich diese einfach verf\u00fcgbar. Der Parameter ``item`` ist ein Beispiel daf\u00fcr und repr\u00e4sentiert den vom Frontend zur\u00fcckgegebenen Datensatz. Um herauszufinden, was alles noch in den ``kwargs`` steckt, bitte den Debugger benutzen.": {
+        "EN-US": "The actions run through a module that processes the data received and passes it to the decorated function as a keyword parameter. Everything can be found in the ``kwargs`` and you simply make them available. The ``item`` parameter is an example of this and represents the data set returned by the frontend. To find out what else is in the ``kwargs``, please use the debugger."
+    },
+    "Eine Funktion zur Registrierung einer Funktion in der \u00fcbergeordneten Base. Sie wird als \"Decorator\" verwendet.": {
+        "EN-US": "A function for registering a function in the parent base. It is used as a \"Decorator\"."
+    },
+    "Eine Funktion wird direkt nach der Zusammenstellung des Metadaten-Pool ausgef\u00fchrt. Mit Funktionen kann man die Logik erweitern, Dinge vorbereiten oder Hintergrundaufgaben erledigen. Sie agieren als Instanzmethoden der Basis und erhalten damit den objektorientierten Ansatz.": {
+        "EN-US": "A function is run directly after the metadata pool has been compiled. Functions can be used to extend the logic, prepare things or perform background tasks. They act as instance methods of the Base and thus maintain the object-oriented approach."
+    },
+    "Gibt an wie eine Funktion ausgef\u00fchrt wird. Mit dem Wert ``shot`` wird sie nur einmal ausgef\u00fchrt. Der Wert ``work`` wird in einem Thread ausgef\u00fchrt und kann somit Schleifen abarbeiten die niemals enden bis der Main-Thread endet.": {
+        "EN-US": "Specifies how a function is run. With the value ``shot`` it is only run once. The value ``work`` is run in a thread and can therefore process loops that never end until the main thread ends."
+    },
+    "Felder": {
+        "EN-US": "Fields"
+    },
+    "The BackRefMetaField's name must match the name of the specified backref in the ForeignKey or ManyToMany field in the reference model.": {
+        "EN-US": "The BackRefMetaField's name must match the name of the specified backref in the ForeignKey or ManyToMany field in the reference model."
+    },
+    "The BackRefMetaField is used by the user to represent relationships in the **decore Front** application. For example, it can be assigned to the filter or to a form. It is a MetaField and does not get a column in the database.": {
+        "EN-US": "The BackRefMetaField is used by the user to represent relationships in the **decore Front** application. For example, it can be assigned to the filter or to a form. It is a MetaField and does not get a column in the database."
+    },
+    "A human-readable name for the field.": {
+        "EN-US": "A human-readable name for the field."
+    },
+    "Additional text to be displayed in **decore Front**.": {
+        "EN-US": "Additional text to be displayed in **decore Front**."
+    },
+    "A List of type string. Only the speciefied fields will be displayed in the filter. If None, all fields will be displayed.": {
+        "EN-US": "A List of type string. Only the speciefied fields will be displayed in the filter. If None, all fields will be displayed."
+    },
+    "A dictonary containing a query to be used when querying options (e.g. in selection fields in the frontend). The query always refers to the reference model.": {
+        "EN-US": "A dictonary containing a query to be used when querying options (e.g. in selection fields in the frontend). The query always refers to the reference model."
+    },
+    "A field to store boolean values.": {
+        "EN-US": "A field to store boolean values."
+    },
+    "If True, the field is allowed to be null. Defaults to False.": {
+        "EN-US": "If True, the field is allowed to be null. Defaults to False."
+    },
+    "The default value for the field. Defaults to None.": {
+        "EN-US": "The default value for the field. Defaults to None."
+    },
+    "A field to store char values.": {
+        "EN-US": "A field to store char values."
+    },
+    "If True, the field must be unique in database table. Defaults to False.": {
+        "EN-US": "If True, the field must be unique in database table. Defaults to False."
+    },
+    "A field to store date values.": {
+        "EN-US": "A field to store date values."
+    },
+    "A field to store datetime values.": {
+        "EN-US": "A field to store datetime values."
+    },
+    "A field to store float values.": {
+        "EN-US": "A field to store float values."
+    },
+    "A field to represent a one-to-many relationship between two models.": {
+        "EN-US": "A field to represent a one-to-many relationship between two models."
+    },
+    "The model to which the relationship is to be established.": {
+        "EN-US": "The model to which the relationship is to be established."
+    },
+    "The name of the field in the reference model that represents the relationship to the model.": {
+        "EN-US": "The name of the field in the reference model that represents the relationship to the model."
+    },
+    "A dictonary containing a query to be used when querying choices (e.g. in selection fields in the frontend). The query always refers to the reference model.": {
+        "EN-US": "A dictonary containing a query to be used when querying choices (e.g. in selection fields in the frontend). The query always refers to the reference model."
+    },
+    "A field to store integer values.": {
+        "EN-US": "A field to store integer values."
+    },
+    "A field to represent a many-to-many relationship between two models. It is a MetaField and does not get a column in the database. However, a through model is created by decore Base, which represents the relationship between the two models.": {
+        "EN-US": "A field to represent a many-to-many relationship between two models. It is a MetaField and does not get a column in the database. However, a through model is created by decore Base, which represents the relationship between the two models."
+    },
+    "The keybase is a KeePass file and should be protected by setting the correct access rights (ACL).": {
+        "EN-US": "The keybase is a KeePass file and should be protected by setting the correct access rights (ACL)."
+    },
+    "A field to store passwords in the keybase and to use them again.": {
+        "EN-US": "A field to store passwords in the keybase and to use them again."
+    },
+    "A field to store text values.": {
+        "EN-US": "A field to store text values."
+    },
+    "create dashbord with python fastly": {
+        "EN-US": "create dashbord with python fastly"
+    },
+    "python gui, decore, python database, python dashboard, python orm, python ui, dashboard creation, python application, ui framework, ui toolkit": {
+        "EN-US": "python gui, decore, python database, python dashboard, python orm, python ui, dashboard creation, python application, ui framework, ui toolkit"
+    },
+    "Erste Schritte": {
+        "EN-US": "Get started"
+    },
+    "Um die schnelle GUI-Dashboard-Erstellung, mit decore Base in Python, zu veranschaulichen werden wir nun gemeinsam eine kleine UI in Form einer Webanwendung erstellen.": {
+        "EN-US": "To illustrate the fast GUI dashboard build with decore Base in Python, we will now create a small UI in the form of a web application together."
+    },
+    "Die dekorierten Funktionen dienen, in allererster Linie, der Erstellung von Metainformationen f\u00fcr die sp\u00e4tere Auswertung im Frontend der Anwendung und sind nichts, wovor man sich f\u00fcrchten muss.": {
+        "EN-US": "The decorated functions are used, first and foremost, to build meta information for later evaluation in the front end of the application and are nothing to be afraid of."
+    },
+    "*Es ist wirklich einfach, bitte folgen Sie mir!*": {
+        "EN-US": "*It's really simple, please follow me!"
+    },
+    "Installation": {
+        "EN-US": "Installation"
+    },
+    "Erstellen Sie zun\u00e4chst ein leeres Python-Projekt in Ihrem gew\u00fcnschten Verzeichnis.": {
+        "EN-US": "First build an empty Python project in your desired directory."
+    },
+    "Um decore Base zu installieren, f\u00fchren wir den folgenden Befehl im Stammverzeichnis des Projekts aus. Verwenden wir das Terminal in vscode.": {
+        "EN-US": "To install decore Base, we run the following command in the root directory of the project. Let's use the terminal in vscode."
+    },
+    "Dies erfordert eine aktivierte Python-Umgebung! Um mehr dar\u00fcber zu erfahren, besuchen Sie `Python-Umgebungen in VS Code <https://code.visualstudio.com/docs/python/environments>`_.": {
+        "EN-US": "This requires an activated Python environment! To learn more about this, visit `Python environments in VS Code <https://code.visualstudio.com/docs/python/environments>`_."
+    },
+    "Vorbereitung": {
+        "EN-US": "Preparation"
+    },
+    "Um f\u00fcr unsere zuk\u00fcnftige Python GUI-Dashboard-Anwendung alles n\u00f6tige an Pfaden und Einstellungen zu erhalten, m\u00fcssen wir noch die Vorbereitung durchf\u00fchren.": {
+        "EN-US": "To get all the necessary paths and settings for our future Python GUI dashboard application, we still need to do the preparation."
+    },
+    "Erstellen wir nun eine neue Datei mit dem Namen **app.py** im Hauptverzeichnis des Projekts.": {
+        "EN-US": "Build a new file with the name **app.py** in the root directory of the project."
+    },
+    "Um decore zu verwenden, importieren wir es zun\u00e4chst in das Modul **app.py**.": {
+        "EN-US": "To use decore, we first import it into the **app.py** module."
+    },
+    "Dann verwenden wir den Befehl ``prepare``, um alle erforderlichen Hilfsdateien im Stammverzeichnis des Projekts zu erstellen.": {
+        "EN-US": "Then we use the ``prepare`` command to create all the necessary auxiliary files in the root directory of the project."
+    },
+    "Um nun die Anwendung tats\u00e4chlich vorzubereiten, f\u00fchren wir den Befehl ``python app.py --prepare`` im Terminal aus. Der Pfad muss im Hauptverzeichnis des Projekts liegen, also dort wo sich die **app.py** befindet.": {
+        "EN-US": "To actually prepare the application, we execute the command ``python app.py --prepare`` in the terminal. The path must be in the root directory of the project, i.e. where the **app.py** is located."
+    },
+    "Verwendung": {
+        "EN-US": "Use"
+    },
+    "Damit der Python-Interpreter die zuk\u00fcnftigen Basisklassen verarbeiten kann, f\u00fcgen wir den folgenden Import hinzu.": {
+        "EN-US": "To enable the Python interpreter to process the future base classes, we add the following import."
+    },
+    "Normalerweise enth\u00e4lt ein Python-Hauptmodul eine Abfrage, die pr\u00fcft, ob es das Hauptmodul ist, so dass wir anschlie\u00dfend die Funktion ``main`` aufrufen k\u00f6nnen.": {
+        "EN-US": "Normally, a Python main module contains a query that checks whether it is the main module so that we can then call the ``main`` function."
+    },
+    "Als n\u00e4chstes erstellen wir eine Zeile ``if __name__ == '__main__':`` in der **app.py** Datei.": {
+        "EN-US": "Next, we build a line ``if __name__ == '__main__':`` in the **app.py** file."
+    },
+    "Um eine neue \"decore\" Anwendungsinstanz zu erstellen, benutzen wir eine mit ``@decore.app`` dekorierte ``main()`` Funktion in der **app.py** Datei, direkt unter der Zeile: ``if __name__ == '__main__':``.": {
+        "EN-US": "To build a new \"decore\" application instance, we use a ``main()`` function decorated with ``@decore.app`` in the **app.py** file, just below the line: ``if __name__ == '__main__':``."
+    },
+    "Model": {
+        "EN-US": "Model"
+    },
+    "In einem Modell legen wir die Datenfelder fest, die sp\u00e4ter einer Basis zugeordnet werden muss. Es dient als Datenbankschnittstelle zu den Datenbanktreibern wie SQLite, MySQL, PostgreSQL, etc.": {
+        "EN-US": "In a Model, we define the data fields that must later be assigned to a Base. It serves as a database interface to the database drivers such as SQLite, MySQL, PostgreSQL, etc."
+    },
+    "Wir erstellen nun die Datei first_model.py im Verzeichnis **models** und f\u00fcgen den folgenden Code ein:": {
+        "EN-US": "We now build the file first_model.py in the **models** directory and add the following code:"
+    },
+    "Es muss nicht f\u00fcr jede Basis ein Modell angelegt werden aber es muss jedes zu verwenden Modell eine Basis haben, die \u00fcber die Datei **__init__.py**, importiert werden muss. Nur so werden Rellationen zwischen den Modellen auch im Frontend ausgewertet und dargestellt.": {
+        "EN-US": "It is not necessary to create a Model for each Base, but each Model to be used must have a Base, which must be imported via the file **__init__.py**. This is the only way to evaluate and display rellations between the models in the frontend."
+    },
+    "Um m\u00f6gliche zirkul\u00e4re Importe zu vermeiden, legen wir die Modellklassen in einem eigenen Verzeichnis **models** in unserem Projektstammverzeichnis an. Das Verzeichnis **models** wurde durch den zuvor ausgef\u00fchrten Befehl ``python app.py --prepare`` erstellt.": {
+        "EN-US": "To avoid possible circular imports, we create the model classes in a separate **models** directory in our project root directory. The **models** directory was built using the ``python app.py --prepare`` command executed previously."
+    },
+    "In dem hier gezeigten Beispiel importieren wir aus der **uniform library** die Klasse Conform_model und erweitern sie um die Felder Vorname und Nachname.": {
+        "EN-US": "In the example shown here, we import the Conform_model class from the **uniform library** and extend it with the first name and last name fields."
+    },
+    "Die Modelle in **decore Base** basieren auf dem gro\u00dfartigen Peewee ORM. Um mehr \u00fcber Peewee zu erfahren, besuchen Sie `Peewee ORM <http://docs.peewee-orm.com/en/latest/>`_.": {
+        "EN-US": "The models in **decore Base** are based on the great Peewee ORM. To learn more about Peewee, visit `Peewee ORM <http://docs.peewee-orm.com/en/latest/>`_."
+    },
+    "Beim Importieren ist zu beachten, dass wir alles (*) aus dem conform_model Namespace importieren, um auch die Feldklassen zu erhalten.": {
+        "EN-US": "When importing, please note that we import everything (*) from the conform_model namespace in order to obtain the field classes as well."
+    },
+    "Die Basisklassen dienen der decore-Anwendung als Tr\u00e4gerelement f\u00fcr die View-Komponenten, pflegen das Datenmodell ein und gelten damit auch als Datenquelle f\u00fcr die Auswertung im Frontend des Dashboards.": {
+        "EN-US": "The base classes serve the decore application as a carrier element for the view components, maintain the data model and are therefore also the data source for the evaluation in the front end of the dashboard."
+    },
+    "Nun m\u00fcssen wir ein neues Python-Modul erstellen, das z.B. eine Basisklasse enth\u00e4lt: **first_base.py**, im Verzeichnis **bases** in unserem Projektstammverzeichnis. Das Verzeichnis **bases** wurde durch den zuvor ausgef\u00fchrten Befehl ``python app.py --prepare`` miterzeugt.": {
+        "EN-US": "Now we need to create a new Python module containing a base class, for example: **first_base.py**, in the **bases** directory in our project root directory. The **bases** directory was created by the ``python app.py --prepare`` command executed previously."
+    },
+    "Um das zuvor erstellte Modell zu verwenden, importieren wir es in die Base-Klasse und \u00fcbergeben es an den Parameter ``model``.": {
+        "EN-US": "To use the previously built Model, we import it into the Base class and pass it to the ``model`` parameter."
+    },
+    "In order for the Python interpreter to be able to process the base classes, we have to import them into the __init__.py file in the **bases** directory. The order of the individual imports also determines the order in **decore Front**.": {
+        "EN-US": "In order for the Python interpreter to be able to process the base classes, we have to import them into the __init__.py file in the **bases** directory. The order of the individual imports also determines the order in **decore Front**."
+    },
+    "We edit the **__init__.py** file and insert the following code:": {
+        "EN-US": "We edit the **__init__.py** file and insert the following code:"
+    },
+    "Views werden von der decore-Anwendung verwendet, um die Datens\u00e4tze im Frontend der Webanwendung zu pr\u00e4sentieren.": {
+        "EN-US": "Views are used by the decore application to present the data records in the front end of the web application."
+    },
+    "Mit dem View-Decorator k\u00f6nnen wir nun eine Ansichts-Komponente erstellen und sie, unter der zuvor erstellten Basisklasse, einh\u00e4ngen.": {
+        "EN-US": "With the View decorator, we can now create a View component and mount it under the previously created base class."
+    },
+    "Wir bearbeiten nun die Datei **first_base.py** erneut und erweitern den Code wie folgt:": {
+        "EN-US": "We now edit the **first_base.py** file again and extend the code as follows:"
+    },
+    "Dialoge sind die unterst\u00fctzenden Elemente f\u00fcr Widgets im Frontend der Webanwendung. Sie k\u00f6nnen Ansichten aber auch untergeordneten Widgets hinzugef\u00fcgt werden und steuern die Sichtbarkeit und den Anzeigestil von Kindelementen. Dialoge erhalten auch die Kontrolle \u00fcber die Sendefunktionen der Widgets.": {
+        "EN-US": "Dialogs are the supporting elements for widgets in the front end of the web application. They can be added to views but also to subordinate widgets and control the visibility and display style of child elements. Dialogs are also given control over the sending functions of the widgets."
+    },
+    "In unserem Fall erstellen wir einen Dialog, um eine neue Person mit Vornamen und Nachnamen anzulegen.": {
+        "EN-US": "In our case, we build a dialog to create a new person with first name and last name."
+    },
+    "Hier gehen wir ... wieder die Datei **first_base.py** und erweitern den Code wie folgt:": {
+        "EN-US": "Here we go ... the file **first_base.py** again and extend the code as follows:"
+    },
+    "Widgets sind Komponenten, mit denen wir Interaktionen mit dem einzelnen Datensatz durchf\u00fchren k\u00f6nnen. Sie k\u00f6nnen nur zu Dialogen hinzugef\u00fcgt werden und sind stapelbar.": {
+        "EN-US": "Widgets are components with which we can perform interactions with the individual data set. They can only be added to dialogs and are stackable."
+    },
+    "Was wir jetzt brauchen, ist ein Eingabeformular, um die Daten f\u00fcr die neue Person einzugeben.": {
+        "EN-US": "What we need now is an input form to enter the data for the new person."
+    },
+    "Actions sind Methoden, mit das Frontend mit **decore Base** kommunizieren kann. Sie k\u00f6nnen zu View und Widgets hinzugef\u00fcgt werden und sind die einzigen echten Klassenmethoden und werden direkt in der Basis aufgerufen.": {
+        "EN-US": "Actions are methods with which the frontend can communicate with **decore Base**. They can be added to views and widgets and are the only real class methods and are called directly in the Base."
+    },
+    "Wir brauchen nun eine Aktion, um die Daten der neuen Person zu speichern und erweitern den Code in **first_base.py** wie folgt:": {
+        "EN-US": "We now need an action to save the new person's data and extend the code in **first_base.py** as follows:"
+    },
+    "Um einen Datensatz mit decore Base zu erstellen, m\u00fcssen wir eine Instanz des Modells erstellen. In unserem Fall **First_model**. Die Instanz wird mit den Daten aus dem Formular gef\u00fcllt und dann gespeichert.": {
+        "EN-US": "To build a dataset with decore Base, we need to create an instance of the Model. In our case **First_model**. The instance is filled with the data from the form and then saved."
+    },
+    "Die ID, in Form einer UUID im Textformat, wird automatisch generiert und muss nicht gesondert angegeben werden.": {
+        "EN-US": "The ID, in the form of a UUID in text format, is generated automatically and does not need to be specified separately."
+    },
+    "Das Feld **titel** muss bei jeder Datensatzerstellung verwendet werden. Andernfalls wird das Element die Validierung nicht bestehen. Es sollte ausserdem immer eindeutig sein, also keine gleichen Titel in der Datenbank geben.": {
+        "EN-US": "The **title** field must be used each time a data record is created. Otherwise the element will not pass validation. It should also always be unique, i.e. there should be no identical titles in the database."
+    },
+    "Ausf\u00fchrung, Entwicklung und Erstellung": {
+        "EN-US": "Run, development and build"
+    },
+    "Ausf\u00fchrung": {
+        "EN-US": "Run"
+    },
+    "Um Ihre Anwendung zu starten, f\u00fchren Sie ``python app.py`` in Ihrem Projekt-Stammverzeichnis aus. Verwenden Sie das Terminal in vscode.": {
+        "EN-US": "To start your application, run ``python app.py`` in your project root directory. Use the terminal in vscode."
+    },
+    "\u00d6ffnen Sie den Browser und geben Sie ``http://localhost:5555`` ein.": {
+        "EN-US": "Open the browser and enter ``http://localhost:5555``."
+    },
+    "Entwicklung": {
+        "EN-US": "Development"
+    },
+    "Um Ihre Anwendung zu entwickeln, verwenden Sie Ihren Debugger mit dem Profil ``[dev] decore base development`` in vscode.": {
+        "EN-US": "To develop your application, use your debugger with the profile ``[dev] decore base development`` in vscode."
+    },
+    "Erstellung": {
+        "EN-US": "Build"
+    },
+    "Um Ihre Anwendung zu erstellen, f\u00fchren Sie ``python app.py --build`` in Ihrem Projekt-Stammverzeichnis aus. Verwenden Sie das Terminal in vscode.": {
+        "EN-US": "To build your application, run ``python app.py --build`` in your project root directory. Use the terminal in vscode."
+    },
+    "Typen": {
+        "EN-US": "Types"
+    },
+    "Ansicht": {
+        "EN-US": "View"
+    },
+    "Tabelle": {
+        "EN-US": "Table"
+    },
+    "Der Ansichtstyp Tabelle dient der tabellarischen Darstellung von Daten.": {
+        "EN-US": "The Table view type is used to display data in tabular form."
+    },
+    "Features": {
+        "EN-US": "Features"
+    },
+    "Decore ist eine Biblitothek zur Erstellung von Gui-Dashboard-Anwendungen in Python die ein vielzahl an Eigenschaften hervorbringt und auch in zukunft stetig erweitert wird.": {
+        "EN-US": "Decore is a library for building gui dashboard applications in Python that provides a variety of features and will be continuously expanded in the future."
+    },
+    "Durch die Verbindung einiger wirklich guter Python-Pakete war die Arbeit an decore \u00fcberhaupt erst m\u00f6glich. Daher m\u00f6chte ich mich an dieser Stelle bei den Entwicklern der folgenden Pakete bedanken:": {
+        "EN-US": "Working on decore was only possible thanks to the combination of some really good Python packages. I would therefore like to take this opportunity to thank the developers of the following packages:"
+    },
+    "**Peewee** - Ein einfaches, aber leistungsstarkes ORM, das eine flexible Datenbankanbindung f\u00fcr Python bietet. http://docs.peewee-orm.com/en/latest/index.html": {
+        "EN-US": "**Peewee** - A simple but powerful ORM that provides a flexible database connection for Python. http://docs.peewee-orm.com/en/latest/index.html"
+    },
+    "**Flask** - Ein Microframework f\u00fcr Python basierend auf Werkzeug, Jinja 2 und guter Absichten. http://flask.pocoo.org/": {
+        "EN-US": "**Flask** - A microframework for Python based on Werkzeug, Jinja 2 and good intentions. http://flask.pocoo.org/"
+    },
+    "**Quasar** - Ein Vue.js basiertes Frontend-Framework. https://quasar-framework.org/": {
+        "EN-US": "**Quasar** - A Vue.js based frontend framework. https://quasar-framework.org/"
+    },
+    "**Vue.js** - Ein progressiver, inkrementeller JavaScript-Framework f\u00fcr die Entwicklung von Benutzeroberfl\u00e4chen. https://vuejs.org/": {
+        "EN-US": "**Vue.js** - A progressive, incremental JavaScript framework for user interface development. https://vuejs.org/"
+    },
+    "**Cerberus** - Eine Validierungs-Bibliothek f\u00fcr Python-Datenstrukturen. http://docs.python-cerberus.org/en/stable/": {
+        "EN-US": "**Cerberus** - A validation library for Python data structures. http://docs.python-cerberus.org/en/stable/"
+    },
+    "**pykeepass** - Eine Bibliothek zum interagieren von KeePass 1.x und 2.x Datenbanken. http://pykeepass.readthedocs.io/en/latest/": {
+        "EN-US": "**pykeepass** - A library for interacting with KeePass 1.x and 2.x databases. http://pykeepass.readthedocs.io/en/latest/"
+    },
+    "Die nun folgenden Feature- und \u00c4nderungs-Aufz\u00e4hlungen sind in decore Base enthalten.": {
+        "EN-US": "The following feature and change lists are contained in decore Base."
+    },
+    "Management & Backend-Anwendung": {
+        "EN-US": "Management & backend application"
+    },
+    "schnelle und einfache GUI-Dashboard-Anwendungs Entwicklung mittels Python Decorators.": {
+        "EN-US": "Fast and easy GUI dashboard application development using Python Decorators."
+    },
+    "Erhaltung des Objekt-Orientierten Programmierstils in den Basisklassen, durch Aktionsufruf als Instanzmethoden.": {
+        "EN-US": "Preservation of the object-oriented programming style in the base classes, by calling actions as instance methods."
+    },
+    "Speichung von wiederverwendbaren Kennw\u00f6rtern (**keine Benutzerkennw\u00f6rter**) in einer KeePass-Datenbank (**Hier wird noch ein Sicherheitsleitfaden erstellt**).": {
+        "EN-US": "Storage of reusable passwords (**not user passwords**) in a KeePass database (**A security guide is still being built here**)."
+    },
+    "Fortschrittsmitteilung an das Frontend durch das Actor-Modul.": {
+        "EN-US": "Progress notification to the front end by the actor module."
+    },
+    "ORM Erweiterung & Datenbankanbindung": {
+        "EN-US": "ORM extension & database connection"
+    },
+    "Einfache Datensatzereugung mit angepasster aber vereinfachter Peewee-Integration.": {
+        "EN-US": "Simple data record creation with customized but simplified Peewee integration."
+    },
+    "Derzeit M\u00f6gliche Datenbank-Schnittstellen: SQLite ... (**Hier kommt schon bald mehr** ).": {
+        "EN-US": "Currently possible database interfaces: SQLite ... (**more to come soon** )."
+    },
+    "Relationale Datenbank-Abfragen mit einer eigenen ``query`` Methode in im decore Model.": {
+        "EN-US": "Relational database queries with a separate ``query`` method in the decore model."
+    },
+    "Semi-Automatische Datensatzerstellung bei Aktionsverwendung durch das Actor-Modul.": {
+        "EN-US": "Semi-automatic data record creation when actions are used by the Actor module."
+    },
+    "Intergrierte Feldattribut definierte Standard-Validierung beim speichern eines Datensatzes.": {
+        "EN-US": "Integrated field attribute defined standard validation when saving a data record."
+    },
+    "Webanwendung (SPA)": {
+        "EN-US": "Web application (SPA)"
+    },
+    "Automatische und generische Erzeugung der GUI-Dashboard-Komponenten anhand der erfassten Metadaten.": {
+        "EN-US": "Automatic and generic generation of GUI dashboard components based on the captured metadata."
+    },
+    "Vorgefertigtes Layout, reagierende Navigationsleiste und Basisbreich f\u00fcr die Ansicht-Komponenten.": {
+        "EN-US": "Predefined layout, responsive navigation bar and basic area for View components."
+    },
+    "Dialogsteuerung durch URL-Navigation": {
+        "EN-US": "Dialog control through URL navigation"
+    },
+    "Erzeugung eines relationalen Datensatzes f\u00fcr die weiterverwenung im Widget.": {
+        "EN-US": "Creation of a relational data set for further use in the widget."
+    },
+    "Sample": {
+        "EN-US": "Sample"
+    },
+    "decore Base | UI fastly": {
+        "EN-US": "decore Base | UI fastly"
+    },
+    "index, follow": {
+        "EN-US": "index, follow"
+    },
+    "Einleitung": {
+        "EN-US": "Introduction"
+    },
+    "decore Base ist ein out-of-the-box \"Python to Vue.js\" Datenanwendungs-Dashboard, das Ihnen hilft, in wenigen einfachen Schritten von der Idee zur Ansicht zu gelangen. Es richtet sich an diejenigen, die sich auf die Ergebnisse ihrer Algorithmen konzentrieren wollen, wissenschaftliche Arbeit leisten oder Lehr- und Lernfunktionen ausf\u00fchren wollen.": {
+        "EN-US": "decore Base is an out-of-the-box \"Python to Vue.js\" data application dashboard that helps you go from Idea to View in a few simple steps. It is aimed at those who want to focus on the results of their algorithms, do scientific work or perform teaching and learning functions."
+    },
+    "**decore Base ist derzeit in Arbeit, nur lokal bereitstellbar, nur f\u00fcr Windows verf\u00fcgbar und noch nicht produktionsbereit**.": {
+        "EN-US": "**decore Base is currently a work in progress, only available locally, only available for Windows and not yet ready for production**."
+    },
+    "Die empfohlene IDE ist Visual Studio Code und alle Kommentare, Beschreibungen und Dokumentationen beziehen sich vorerst auch nur auf vscode.": {
+        "EN-US": "The recommended IDE is Visual Studio Code and all comments, descriptions and documentation refer to vscode only for the time being."
+    },
+    "Entwicklungsphasen & Vorteile": {
+        "EN-US": "Development phases & advantages"
+    },
+    "decore Base wurde entworfen um den Entwicklungsprozess deiner Anwendung in seinen verschiedenen Phasen optimal zu unterst\u00fctzen.": {
+        "EN-US": "decore Base was designed to optimally support the development process of your application in its various phases."
+    },
+    "** Einige der hier genannten Funktionen sind derzeit noch in direkter Entwicklung und werden in K\u00fcrze verf\u00fcgbar sein.": {
+        "EN-US": "** Some of the functions mentioned here are currently still under direct development and will be available shortly."
+    },
+    "Beteiligung & Unterst\u00fctzung": {
+        "EN-US": "Participation & support"
+    },
+    "Die gr\u00f6\u00dfte Hilfe, die ich im Moment bekommen kann, ist, wenn Sie einen Blick auf das Projekt werfen und mir sagen, was Sie davon halten. Ich bin f\u00fcr jede Kritik dankbar.": {
+        "EN-US": "The biggest help I can get at the moment is if you take a look at the project and tell me what you think of it. I am grateful for any criticism."
+    },
+    "Sollte bei Entwickeln etwas nicht wie erwartet funktionieren oder Unklarheiten in der Dokumentation auftauchen, lassen Sie es mich bitte wissen.": {
+        "EN-US": "If something does not work as expected during development or if there are any ambiguities in the documentation, please let me know."
+    },
+    "Bitte benutzen Sie dazu den Problembereich im Repository. `<https://github.com/KemoPanzah/decore_Base/issues>`_": {
+        "EN-US": "Please use the problem area in the repository. `<https://github.com/KemoPanzah/decore_Base/issues>`_"
+    },
+    "Sample application": {
+        "EN-US": "Sample application"
+    },
+    "To better understand how decore base works, it is best to look at the sample application. The application represents my continuous development of decore base.": {
+        "EN-US": "To better understand how decore base works, it is best to look at the sample application. The application represents my continuous development of decore base."
+    },
+    "https://github.com/KemoPanzah/decore_Sample": {
+        "EN-US": "https://github.com/KemoPanzah/decore_Sample"
+    },
+    "Schnell erstellte Gui-Dashboard-Anwendungen mit Python, die deinen Ideen mehr Freiraum geben.": {
+        "EN-US": "Build fast gui dashboard applications with Python that give your ideas more freedom."
+    },
+    "Get startet": {
+        "EN-US": "Get started"
+    },
+    "Beispiel": {
+        "EN-US": "Example"
+    },
+    "Idee & Konzept": {
+        "EN-US": "Idea & Concept"
+    },
+    "Entwicklung & Erweiterung": {
+        "EN-US": "Development & expansion"
+    },
+    "Anpassung & Design": {
+        "EN-US": "Customization & Design"
+    },
+    "Test & Stabilit\u00e4t": {
+        "EN-US": "Test & stability"
+    },
+    "Sicherheit & Compliance": {
+        "EN-US": "Security & Compliance"
+    },
+    "Bereitstellung & Ver\u00f6ffentlichung": {
+        "EN-US": "Provision & publication"
+    },
+    "Marketing & Monetarisierung": {
+        "EN-US": "Marketing & Monetization"
+    },
+    "Um deinen Ideen maximale Freiheit zu geben, ist decore Base im ersten Schritt praktisch sofort einsatzbereit. Du musst dich nicht um die GUI, Datenbankfunktionalit\u00e4ten, Sicherheitsaspekte oder viele andere Details k\u00fcmmern. Feinere Anpassungen kannst du im n\u00e4chsten Schritt entsprechend deinen Anforderungen vornehmen. Konzentriere dich vollst\u00e4ndig auf deine Ideen und die Umsetzung deiner Algorithmen.": {
+        "EN-US": "To give your ideas maximum freedom, decore Base is practically ready to use in the first step. You don't have to worry about the GUI, database functionalities, security aspects or many other details. You can make finer adjustments in the next step according to your requirements. Concentrate fully on your ideas and the implementation of your algorithms."
+    },
+    "Programmiere deine Anwendung im objektorientierten Stil, denn Benutzer-Aktionen aus dem Frontend werden in deinen Basisinstanzen ausgef\u00fchrt. Dekoriere einfach Python-Funktionen mit einer klaren Syntax und erm\u00f6gliche so das organische Wachsen deiner GUI-Anwendung. Erweitere deine Anwendung um neue Funktionen und sch\u00f6pfe dabei aus dem vollen Potenzial von Python und seinen Bibliotheken.": {
+        "EN-US": "Program your application in object-oriented style, because user actions from the frontend are executed in your base instances. Simply decorate Python functions with a clear syntax, allowing your GUI application to grow organically. Extend your application with new functions and draw on the full potential of Python and its libraries."
+    },
+    "Entdecke m\u00fchelos und z\u00fcgig den grundlegenden UI-Stil und passe ihn anschlie\u00dfend ganz nach deinen Anforderungen an. Integriere zus\u00e4tzlich Template-Code**, um sicherzustellen, dass deine Anwendung nicht nur Daten verarbeitet, sondern auch ein individuelles Erscheinungsbild annimmt. Verleihe deiner Benutzeroberfl\u00e4che deinen pers\u00f6nlichen Stil mithilfe eigener Sheets**.": {
+        "EN-US": "Easily and quickly discover the basic UI style and then customize it according to your requirements. Integrate additional template code** to ensure that your application not only processes data, but also takes on an individual appearance. Give your user interface your own personal style using your own sheets**."
+    },
+    "Gew\u00e4hrleiste die Stabilit\u00e4t und Qualit\u00e4t deiner Anwendung durch eine sorgf\u00e4ltige \u00dcberpr\u00fcfung ihrer Funktionalit\u00e4ten mithilfe eingebauter Testmethoden**. Diese Tests erm\u00f6glichen es, die erwarteten Ergebnisse sicherzustellen und die Performance der Anwendung zu optimieren.": {
+        "EN-US": "Ensure the stability and quality of your application by carefully checking its functionalities using built-in test methods**. These tests make it possible to ensure the expected results and optimize the performance of the application."
+    },
+    "Nutze das eingebaute Sitzungsmanagement und \u00fcbertrage Daten verschl\u00fcsselt** in deine Anwendung. Implementiere eigene Modelle f\u00fcr die Erfassung sensibler und pers\u00f6nlicher Benutzerdaten. Setze die integrierte Benutzerverwaltung** ein, um Rollen und Besitzrechte zu verwalten.": {
+        "EN-US": "Use the built-in session management and transfer encrypted data** to your application. Implement your own models for capturing sensitive and personal user data. Use the integrated user administration** to manage roles and ownership rights."
+    },
+    "decore Base wird auch in dieser Entwicklungsphase k\u00fcnftig unterst\u00fctzende Funktionen bieten. Bald werden Features wie die Electron-Integration** verf\u00fcgbar sein, mit der du deine Anwendung ganz einfach als Desktop-App ver\u00f6ffentlichen kannst.": {
+        "EN-US": "decore Base will also offer supporting functions in this development phase in the future. Features such as Electron integration** will soon be available, allowing you to easily publish your application as a desktop app."
+    },
+    "Gew\u00e4hrleiste die Sichtbarkeit und Auffindbarkeit deiner Anwendung durch ein SEO**-freundliches Frontend. Baldige Implemetierungen ber\u00fccksichtigen subtile und benutzerfreundliche Werbem\u00f6glichkeiten**, die nahtlos in das Anwendererlebnis integriert sind.": {
+        "EN-US": "Ensure the visibility and findability of your application through an SEO**-friendly frontend. Soon implementations will include subtle and user-friendly advertising options** that are seamlessly integrated into the user experience."
+    }
+}

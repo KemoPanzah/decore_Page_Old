@@ -10,20 +10,18 @@
 
 decore Base | UI fastly
 =======================
-
 Einleitung
 ----------
 decore Base ist ein out-of-the-box "Python to Vue.js" Datenanwendungs-Dashboard, das Ihnen hilft, in wenigen einfachen Schritten von der Idee zur Ansicht zu gelangen. Es richtet sich an diejenigen, die sich auf die Ergebnisse ihrer Algorithmen konzentrieren wollen, wissenschaftliche Arbeit leisten oder Lehr- und Lernfunktionen ausführen wollen.
 
 .. note::
    **decore Base ist derzeit in Arbeit, nur lokal bereitstellbar, nur für Windows verfügbar und noch nicht produktionsbereit**.
+   
+   Die empfohlene IDE ist Visual Studio Code und alle Kommentare, Beschreibungen und Dokumentationen beziehen sich vorerst auch nur auf vscode.
 
-Die empfohlene IDE ist Visual Studio Code und alle meine Kommentare und Dokumentationen hier beziehen sich auch nur auf vscode.
-
-Unterstützung der Entwicklungsphasen
-------------------------------------
-
-decore Base befindet sich in kontinuierlicher Weiterentwicklung und wird künftig noch mehr Funktionen integrieren, um den Entwicklungsprozess eines GUI-Dashboard-Anwendungsprogramms sowie seiner verschiedenen Phasen optimal zu unterstützen.
+Entwicklungsphasen & Vorteile
+-----------------------------
+decore Base wurde entworfen um den Entwicklungsprozess deiner Anwendung in seinen verschiedenen Phasen optimal zu unterstützen.
 
 .. page-tabs::
    :labels: Idee & Konzept; Entwicklung & Erweiterung; Anpassung & Design; Test & Stabilität; Sicherheit & Compliance; Bereitstellung & Veröffentlichung; Marketing & Monetarisierung;
@@ -38,27 +36,16 @@ decore Base befindet sich in kontinuierlicher Weiterentwicklung und wird künfti
       decore Base wird auch in dieser Entwicklungsphase künftig unterstützende Funktionen bieten. Bald werden Features wie die Electron-Integration** verfügbar sein, mit der du deine Anwendung ganz einfach als Desktop-App veröffentlichen kannst.;
       Gewährleiste die Sichtbarkeit und Auffindbarkeit deiner Anwendung durch ein SEO**-freundliches Frontend. Baldige Implemetierungen berücksichtigen subtile und benutzerfreundliche Werbemöglichkeiten**, die nahtlos in das Anwendererlebnis integriert sind.;
 
-** Einige der hier genannten Funktionen sind derzeit noch in direkter Entwicklung und werden in Kürze verfügbar sein.
+.. note::
+   ** Einige der hier genannten Funktionen sind derzeit noch in direkter Entwicklung und werden in Kürze verfügbar sein.
 
-Funktionen und Integrationen
-----------------------------
-- Fertige SPA (Single Page Application) mit Vue.js unter Verwendung des Quasar Frameworks (https://github.com/quasarframework/quasar)
-- Vordefinierte Webapi für Metadaten und Aktionen mit Flask (https://github.com/pallets/flask)
-- Integriertes ORM für Datenmanagement und Datenbankschnittstellen (SQLite) powered by the great Peewee (https://github.com/coleifer/peewee)
-- Datensatz-Validierung mit Cerberus (https://github.com/pyeve/cerberus)
-- Passwortverwaltung mit pykeepass (https://github.com/libkeepass/pykeepass)
-
-Bitte unterstützen Sie diese großartigen Projekte!
-
-Contribution
-------------
+Beteiligung & Unterstützung
+---------------------------
 Die größte Hilfe, die ich im Moment bekommen kann, ist, wenn Sie einen Blick auf das Projekt werfen und mir sagen, was Sie davon halten. Ich bin für jede Kritik dankbar.
 
-Wenn Sie etwas in der Dokumentation in Bezug auf Funktionen, Fehler oder Unklarheiten finden, lassen Sie es mich bitte wissen. Bitte benutzen Sie dazu den Problembereich im Repository. `<https://github.com/KemoPanzah/decore_Base/issues>`_
+Sollte bei Entwickeln etwas nicht wie erwartet funktionieren oder Unklarheiten in der Dokumentation auftauchen, lassen Sie es mich bitte wissen.
 
-Wenn Sie einen Fehler finden, können Sie ihn gerne beheben und einen Pull-Request erstellen. 
-
-Bitte beachten Sie, dass ich nicht alle Pull-Requests annehmen kann, da ich das Projekt in eine bestimmte Richtung lenken möchte. Wenn Sie also eine größere Änderung vornehmen möchten, lassen Sie es mich bitte wissen, bevor Sie viel Zeit investieren.
+Bitte benutzen Sie dazu den Problembereich im Repository. `<https://github.com/KemoPanzah/decore_Base/issues>`_
 
 .. toctree::
    :hidden:

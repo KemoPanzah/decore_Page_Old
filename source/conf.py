@@ -5,18 +5,19 @@ projects_path = os.path.abspath('../../')
 sys.path.append(projects_path)
 
 # fmt: off
+from decore_Page.source._classes import *
 from decore_Page.source._directives import *
 # fmt: on
 
 def on_build_finished(app, exception):
-    from decore_Page.helper import translate
     if not exception:
         if app.builder.name == 'gettext':
             cmd = ['sphinx-intl', 'update', '-p', 'source/_text', '-l', 'en']
             subprocess.run(cmd, cwd=os.path.abspath('.'), check=True)
-            translate(Path('source/_locale/en/LC_MESSAGES').joinpath('docs.po'))
+            app.config.localizer.translate_po_file(Path('source/_locale/en/LC_MESSAGES').joinpath('docs.po'))
 
 def setup(app):
+    app.config['localizer'] = Localizer(app.config.language)
     app.add_directive('html-modal-image', Html_modal_image)
     app.add_directive('html-inpage-nav', Html_inpage_nav)
     app.add_directive('page-tabs', Page_tabs)

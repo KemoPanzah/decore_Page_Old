@@ -9,6 +9,7 @@ class Directive_base(Directive):
         self.argument_dict = {}
         self.env = Environment(loader=FileSystemLoader(Path('source/_directives/templates').absolute()))
         self.parse_arguments()
+        self.translate_arguments()
 
     def parse_arguments(self):
         t_attribute = 'arg'
@@ -41,3 +42,9 @@ class Directive_base(Directive):
                 continue
 
             t_arg = t_arg + argument + ' '
+
+    def translate_arguments(self):
+        if hasattr(self, 'translate_args'):
+            for arg in self.translate_args:
+                for index, argument in enumerate(self.argument_dict[arg]):
+                    self.argument_dict[arg][index] = self.state.document.settings.env.config.localizer.translate(argument)
