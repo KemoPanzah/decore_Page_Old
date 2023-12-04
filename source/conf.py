@@ -22,6 +22,7 @@ def setup(app):
     app.add_directive('html-modal-image', Html_modal_image)
     app.add_directive('html-inpage-nav', Html_inpage_nav)
     app.add_directive('page-tabs', Page_tabs)
+    app.add_directive('page-feature-pane', Page_feature_pane)
     app.connect('build-finished', on_build_finished)
 #     from decore_Page.helper import split_rst_file
 #     print ('DECORE_BASE_PATH: '+ projects_path)
