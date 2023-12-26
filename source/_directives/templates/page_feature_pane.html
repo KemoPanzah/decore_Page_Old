@@ -1,3 +1,35 @@
 <div class="page-feature-pane">
-    TEMPLATE
+    <div class="header row">
+        {% if arg[0] %}
+        <h1>{{ arg[0] }}</h1>
+        {% endif %}
+    </div>
+
+    <div class="row">
+        {% if svg[0] is defined %}
+        <div class="col-auto d-none d-md-block position-relative">
+            <div class="svg-container svg-1">
+                {{ svg[0]| safe }}
+            </div>
+            <div class="overlay position-absolute top-0 start-0 w-100 h-100"></div>
+        </div>
+        {% endif %}
+        {% if image[0] is defined %}
+        <div class="col-auto d-none d-md-block position-relative">
+            {% if '.svg' in image[0] %}
+            <object type="image/svg+xml" data="{{ image }}" class="svg-container svg-1"></object>
+            {%else%}
+            <img src="{{ image[0] }}" alt="{{ label[0] }}">
+            {% endif %}
+            <div class="overlay position-absolute top-0 start-0 w-100 h-100"></div>
+        </div>
+        {% endif %}
+        <div class="col content">
+            <ul>
+                {%for content in contents%}
+                <li> {{ content }}</li>
+                {%endfor%}
+            </ul>
+        </div>
+    </div>
 </div>

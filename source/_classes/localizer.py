@@ -82,7 +82,7 @@ class Localizer(Translator):
         t_po_file = pofile(p_file)
         for entry in t_po_file:
             if entry.msgid and not entry.msgstr or entry.fuzzy:
-                entry.msgstr = self.translate(entry.msgid)
+                entry.msgstr = self.translate_text_with_glossary(entry.msgid, self.gloss, target_lang=self.target_lang).text
                 entry.fuzzy = False
         t_po_file.save()
 

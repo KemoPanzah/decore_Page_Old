@@ -9,6 +9,11 @@ from decore_Page.source._classes import *
 from decore_Page.source._directives import *
 # fmt: on
 
+def get_language(app):
+    html_context = {
+        'language': app.config.language,
+    }
+
 def on_build_finished(app, exception):
     if not exception:
         if app.builder.name == 'gettext':
@@ -23,6 +28,7 @@ def setup(app):
     app.add_directive('html-inpage-nav', Html_inpage_nav)
     app.add_directive('page-tabs', Page_tabs)
     app.add_directive('page-feature-pane', Page_feature_pane)
+    app.connect('builder-inited', get_language)
     app.connect('build-finished', on_build_finished)
 #     from decore_Page.helper import split_rst_file
 #     print ('DECORE_BASE_PATH: '+ projects_path)
@@ -50,7 +56,7 @@ extensions = ['sphinx.ext.autodoc', 'sphinx_copybutton', 'sphinx_favicon', "sphi
 locale_dirs = ['_locale/']
 gettext_compact = "docs"
 
-language = 'en'
+language = 'de'
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
@@ -98,10 +104,6 @@ favicons = [
 html_baseurl = 'https://www.decore.dev/'
 sitemap_filename = 'sitemap.xml'
 sitemap_url_scheme = "{link}"
-
-html_context = {
-    'get_number': 100,
-}
 
 # html5_polyglot_doctype = True
 # html5_extra_attrs = {

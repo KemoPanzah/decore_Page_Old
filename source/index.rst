@@ -34,16 +34,16 @@ decore Base wurde entworfen um den Entwicklungsprozess deiner Anwendung in seine
       Gewährleiste die Stabilität und Qualität deiner Anwendung durch eine sorgfältige Überprüfung ihrer Funktionalitäten mithilfe eingebauter Testmethoden**. Diese Tests ermöglichen es, die erwarteten Ergebnisse sicherzustellen und die Performance der Anwendung zu optimieren.;
       Nutze das eingebaute Sitzungsmanagement und übertrage Daten verschlüsselt** in deine Anwendung. Implementiere eigene Modelle für die Erfassung sensibler und persönlicher Benutzerdaten. Setze die integrierte Benutzerverwaltung** ein, um Rollen und Besitzrechte zu verwalten.; 
       decore Base wird auch in dieser Entwicklungsphase künftig unterstützende Funktionen bieten. Bald werden Features wie die Electron-Integration** verfügbar sein, mit der du deine Anwendung ganz einfach als Desktop-App veröffentlichen kannst.;
-      Gewährleiste die Sichtbarkeit und Auffindbarkeit deiner Anwendung durch ein SEO**-freundliches Frontend. Baldige Implemetierungen berücksichtigen subtile und benutzerfreundliche Werbemöglichkeiten**, die nahtlos in das Anwendererlebnis integriert sind.;
+      Gewährleiste die Sichtbarkeit und Auffindbarkeit deiner Anwendung durch ein SEO**-freundliches Frontend. Baldige Implemetierungen berücksichtigen subtile und benutzerfreundliche Werbemöglichkeiten**, die nahtlos in das Anwendererlebnis integriert sind und die Vielzahl der Anwendungsmöglichkeiten die decore Base mitbringt, bieten auch viele Möglichkeiten der Monetarisierung**.;
 
 .. note::
    ** Einige der hier genannten Funktionen sind derzeit noch in direkter Entwicklung und werden in Kürze verfügbar sein.
 
 Beteiligung & Unterstützung
 ---------------------------
-Die größte Hilfe, die ich im Moment bekommen kann, ist, wenn Sie einen Blick auf das Projekt werfen und mir sagen, was Sie davon halten. Ich bin für jede Kritik dankbar.
+Die größte Hilfe, die wir im Moment bekommen können, ist, wenn Sie einen Blick auf das Projekt werfen und uns sagen, was Sie davon halten. Wir sind für jede Kritik dankbar.
 
-Sollte bei Entwickeln etwas nicht wie erwartet funktionieren oder Unklarheiten in der Dokumentation auftauchen, lassen Sie es mich bitte wissen.
+Sollte bei Entwickeln etwas nicht wie erwartet funktionieren oder Unklarheiten in der Dokumentation auftauchen, lassen Sie es uns bitte wissen.
 
 Bitte benutzen Sie dazu den Problembereich im Repository. `<https://github.com/KemoPanzah/decore_Base/issues>`_
 
@@ -54,7 +54,14 @@ Bitte benutzen Sie dazu den Problembereich im Repository. `<https://github.com/K
    Features <features>
    Sample <sample>
    Dokumentation <documentation>
-   
+
+Footer1
+~~~~~~~
+
+:doc:`impressum`
+:doc:`policy`
+:doc:`credits`
+
 .. Indices and tables
 .. ------------------
 

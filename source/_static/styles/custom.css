@@ -77,8 +77,6 @@
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-
-
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Quicksand';
     color: #075767;
@@ -88,92 +86,6 @@ section {
     padding-top: 24px !important;
 }
 
-/* header and nav */
-
-.bd-header {
-    background: #075767 !important;
-}
-
-.bd-header p {
-    color: #ffffff !important;
-}
-
-.bd-header .nav-link {
-    color: #ffffff !important;
-}
-
-.bd-header .search-button {
-    color: #ffffff !important;
-}
-
-.bd-header .theme-switch {
-    color: #ffffff !important;
-}
-
-.navbar-brand {
-    text-decoration: none !important;
-}
-
-.bd-header .navbar-nav {
-    padding-right: 32px;
-}
-
-.bd-sub-navbar {
-    z-index: 102;
-    position: fixed;
-    top: 64px;
-    justify-content: center;
-    width: 100%;
-    height: 48px;
-    background: rgb(1 86 103 / 75%);
-}
-
-.bd-sub-navigation ul {
-    display: flex;
-    flex-direction: row !important;
-    justify-content: flex-end;
-    padding-right: 16px;
-}
-
-.bd-sub-navigation .nav-link {
-    color: #ffffff !important;
-    margin-left: 0px !important;
-    border-left: 0px !important;
-}
-
-.bd-sub-navigation .onthispage {
-    display: none;
-}
-
-.bd-sub-navigation .toc-h3 {
-    display: none;
-}
-
-.bd-sub-navigation[class*="documentation"] {
-    display: none;
-}
-
-/* .de-teaser-grid {
-    padding-left: 0px;
-    padding-right: 0px;
-}
-
-.de-teaser-grid .sd-card {
-    color: white;
-    background-color: #075767;
-}
-
-.de-teaser-grid p {
-    color: white;
-}
-
-.de-teaser-grid .sd-material-icon {
-    font-size: 24px;
-}
-
-.de-teaser-grid .sd-card-title {
-    font-size: 18px;
-} */
 
 /* directives */
 
@@ -283,6 +195,94 @@ section {
     animation: slideInFromRight 0.2s ease-out;
 }
 
+.page-feature-pane svg {
+    width: 150px;
+    height: 150px;
+}
+
+.page-feature-pane path {
+    fill: #075767;
+}
+
+.page-feature-pane {
+    margin-top: 32px;
+}
+
+section.active .page-feature-pane .svg-container {
+    overflow-x: hidden;
+    animation: slideInFromLeft 0.2s ease-out forwards;
+}
+
+section.active .page-feature-pane .content{
+    overflow-x: hidden;
+    animation: slideInFromRight 0.2s ease-out;
+}
+
+/* header and nav */
+
+.bd-header {
+    background: #075767 !important;
+}
+
+.bd-header p {
+    color: #ffffff !important;
+}
+
+.bd-header .nav-link {
+    color: #ffffff !important;
+}
+
+.bd-header .search-button {
+    color: #ffffff !important;
+}
+
+.bd-header .theme-switch {
+    color: #ffffff !important;
+}
+
+.navbar-brand {
+    text-decoration: none !important;
+}
+
+.bd-header .navbar-nav {
+    padding-right: 32px;
+}
+
+.bd-sub-navbar {
+    z-index: 102;
+    position: fixed;
+    top: 64px;
+    justify-content: center;
+    width: 100%;
+    height: 48px;
+    background: rgb(1 86 103 / 75%);
+}
+
+.bd-sub-navigation ul {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: flex-end;
+    padding-right: 16px;
+}
+
+.bd-sub-navigation .nav-link {
+    color: #ffffff !important;
+    margin-left: 0px !important;
+    border-left: 0px !important;
+}
+
+.bd-sub-navigation .onthispage {
+    display: none;
+}
+
+.bd-sub-navigation .toc-h3 {
+    display: none;
+}
+
+.bd-sub-navigation[class*="documentation"] {
+    display: none;
+}
+
 /* index*/
 
 #decore-base-ui-fastly>h1 {
@@ -307,6 +307,10 @@ h1 {
 
 /* footer */
 
+section>#footer {
+    display: none;
+}
+
 .bd-footer {
     height: 64px;
     background: #075767 !important;
@@ -314,4 +318,22 @@ h1 {
 
 .bd-footer p {
     color: #ffffff !important;
+}
+
+.bd-footer-navbar {
+    background: rgb(1 86 103 / 65%);
+    height: 48px;
+}
+
+.bd-foot-navigation ul {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: flex-start;
+    padding-left: 16px;
+}
+
+.bd-foot-navigation .nav-link {
+    color: #ffffff !important;
+    margin-left: 0px !important;
+    border-left: 0px !important;
 }
