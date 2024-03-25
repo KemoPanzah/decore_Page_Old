@@ -101,7 +101,45 @@ html_theme_options = {
             "link": "../en",  # points to ./en/ subdirectory
             "lang": "en",
         },
-    ]
+    ],
+    "palette": [
+        {
+            "media": "(prefers-color-scheme: light)",
+            "scheme": "default",
+            "primary": "light-green",
+            "accent": "light-blue",
+            "toggle": {
+                "icon": "material/lightbulb-outline",
+                "name": "Switch to dark mode",
+            },
+        },
+        {
+            "media": "(prefers-color-scheme: dark)",
+            "scheme": "slate",
+            "primary": "deep-orange",
+            "accent": "lime",
+            "toggle": {
+                "icon": "material/lightbulb",
+                "name": "Switch to light mode",
+            },
+        },
+    ],
+    "features": [
+        # "navigation.expand",
+        # "navigation.tabs",
+        # "toc.integrate",
+        # "navigation.sections",
+        # "navigation.instant",
+        # "header.autohide",
+        # "navigation.top",
+        # "navigation.tracking",
+        # "search.highlight",
+        # "search.share",
+        # "toc.follow",
+        # "toc.sticky",
+        # "content.tabs.link",
+        # "announce.dismiss",
+    ],
 }
 
 # CSS

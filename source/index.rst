@@ -1,3 +1,5 @@
+:hero: GUI Dashboard-Anwendungen in Python schnell und einfach.
+
 .. meta::
    :title: decore Base | UI fastly
    :description: create dashbord with python fastly
@@ -6,6 +8,7 @@
 
 decore Base | UI fastly
 =======================
+
 Einleitung
 ----------
 decore Base ist ein out-of-the-box "Python to Vue.js" Datenanwendungs-Dashboard, das Ihnen hilft, in wenigen einfachen Schritten von der Idee zur Ansicht zu gelangen. Es richtet sich an diejenigen, die sich auf die Ergebnisse ihrer Algorithmen konzentrieren wollen, wissenschaftliche Arbeit leisten oder Lehr- und Lernfunktionen ausführen wollen.
@@ -67,6 +70,7 @@ Bitte benutzen Sie dazu den Problembereich im Repository. `<https://github.com/K
    :hidden:
    :maxdepth: 1
 
+   Erste Schritte <getstarted>
    Features <features>
    Sample <sample>
    Dokumentation <documentation>

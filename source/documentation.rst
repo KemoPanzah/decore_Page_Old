@@ -7,7 +7,6 @@ Um mit decore Base eine lauffähige GUI-Dashboard-Anwendung zu erstellen, sind v
    :hidden:
    :maxdepth: 1
    
-   documentation/getstarted
    documentation/decore
    documentation/fields
 
