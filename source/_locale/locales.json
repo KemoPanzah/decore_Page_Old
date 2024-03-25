@@ -88,5 +88,50 @@
     },
     "Zentrale dedizierte Ablage von wiederverwendbaren oder versalzenen Kennw\u00f6rter mit integriertem Sicherheitsleitfaden**": {
         "EN-US": "Centralized dedicated storage of reusable or salted passwords with integrated security guide**"
+    },
+    "Out-of-the-box Dashboard-Anwendung die nach der Einarbeitung der Idee noch rundum angepasst werden kann.": {
+        "EN-US": "Out-of-the-box dashboard application that can be fully customized after the idea has been implemented."
+    },
+    "Schneller Einstieg in die Entwicklung und einfache Vorbereitung der Entwicklungsumgebung.": {
+        "EN-US": "Fast entry into Development and easy preparation of the development environment."
+    },
+    "Wandelbare Seitenansichten durch die M\u00f6glichkkeit HTML Templates zu verwenden**.": {
+        "EN-US": "Changeable page views thanks to the possibility of using HTML templates**."
+    },
+    "Anpassung der Darstellungen und Reihenfolgen im Layout": {
+        "EN-US": "Customization of displays and sequences in the layout"
+    },
+    "Integrierte Standard-Validierung auf Basis der Feldattribute, beim Speichern eines Datensatzes.": {
+        "EN-US": "Integrated standard validation based on the field attributes when saving a data record."
+    },
+    "Erweiterbare und benutzerdefinierte Validierungsregeln auf Basis von Cerberus-Schemata**.": {
+        "EN-US": "Extensible and user-defined validation rules based on Cerberus schemas**."
+    },
+    "Integriete Log, Test und Messfunktionialit\u00e4t**.": {
+        "EN-US": "Integral log, test and measurement functionality**."
+    },
+    "Integriertes Sitzungssystem mit vorkonfektionierter Benutzer- und Rechteverwaltung.": {
+        "EN-US": "Integrated session system with preconfigured user and rights management."
+    },
+    "Sichere \u00dcbertragung von Backend zum Frontend**.": {
+        "EN-US": "Secure transfer from backend to frontend**."
+    },
+    "Zentrale dedizierte Ablage von wiederverwendbaren oder versalzenen Kennw\u00f6rter mit integriertem Sicherheitsleitfaden**.": {
+        "EN-US": "Centralized dedicated storage of reusable or salted passwords with integrated security guide**."
+    },
+    "Der Standard-Ver\u00f6ffentlichungstyp w\u00e4hrend der Entwicklung, beim Debuggen und nach Fertigstellung ist die Browseranwendung.": {
+        "EN-US": "The default publication type during development, debugging and after completion is the browser application."
+    },
+    "M\u00f6glichkeit der Erstellung von Standalone-Desktop-Anwendungen f\u00fcr Windows mit Electron**.": {
+        "EN-US": "Ability to build standalone desktop applications for Windows with Electron**."
+    },
+    "Die Vielfalt von Anwendungsarten und -zwecken, die mit decore Base umgesetzt werden k\u00f6nnen, er\u00f6ffnen ebenso zahlreiche M\u00f6glichkeiten zur Monetarisierung.": {
+        "EN-US": "The variety of application types and purposes that can be implemented with decore Base also opens up numerous opportunities for monetization."
+    },
+    "Subtile und nahtlose M\u00f6glichkeit Werbung zu schalten**.": {
+        "EN-US": "Subtle and seamless way to advertise**."
+    },
+    "Gew\u00e4hrleiste die Sichtbarkeit und Auffindbarkeit deiner Anwendung durch ein SEO**-freundliches Frontend. Baldige Implemetierungen ber\u00fccksichtigen subtile und benutzerfreundliche Werbem\u00f6glichkeiten**, die nahtlos in das Anwendererlebnis integriert sind und die Vielzahl der Anwendungsm\u00f6glichkeiten die decore Base mitbringt, bieten auch viele M\u00f6glichkeiten der Monetarisierung**.": {
+        "EN-US": "Ensure the visibility and findability of your application through an SEO**-friendly frontend. Soon implementations will consider subtle and user-friendly advertising opportunities** that are seamlessly integrated into the user experience and the variety of application possibilities that decore Base brings also offer many opportunities for monetization**."
     }
 }

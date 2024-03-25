@@ -6,7 +6,7 @@
   "configurations": [
     {
       "name": "Sphinx Make Translate (en)",
-      "type": "python",
+      "type": "debugpy",
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "program": ".venv/Scripts/sphinx-build.exe",
@@ -24,7 +24,7 @@
     },
     {
       "name": "Sphinx Make Dev (de)",
-      "type": "python",
+      "type": "debugpy",
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "program": ".venv/Scripts/sphinx-build.exe",
@@ -42,7 +42,7 @@
     },
     {
       "name": "Sphinx Make Dev (en)",
-      "type": "python",
+      "type": "debugpy",
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "program": ".venv/Scripts/sphinx-build.exe",
@@ -59,12 +59,21 @@
       "console": "integratedTerminal"
     },
     {
-      "name": "Sphinx Make Page",
-      "type": "python",
+      "name": "Sphinx Make Doc (de)",
+      "type": "debugpy",
       "request": "launch",
       "cwd": "${workspaceFolder}",
       "program": ".venv/Scripts/sphinx-build.exe",
-      "args": ["-b", "html", "source", "docs", "-a", "-E"],
+      "args": [
+        "-b",
+        "html",
+        "source",
+        "docs/de",
+        "-a",
+        "-E",
+        "-D",
+        "language=de"
+      ],
       "console": "integratedTerminal"
     }
   ],
