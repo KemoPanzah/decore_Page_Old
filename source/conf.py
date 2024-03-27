@@ -1,6 +1,7 @@
 import os
 import sys
 import subprocess
+import shutil
 from pathlib import Path
 
 projects_path = os.path.abspath('../../')
@@ -36,6 +37,13 @@ def on_build_finished(app, exception):
             app.config.localizer.translate_po_file(
                 Path('source/_locale/'+t_lang+'/LC_MESSAGES').joinpath('docs.po'))
 
+def copy_root_files(app, exception):
+    if not exception:
+        if app.builder.name == 'html':
+            t_files = Path('source/_root').glob('*')
+            for i_file in t_files:
+                shutil.copy(i_file, Path(app.outdir).parent)
+
 
 def setup(app):
     app.config['localizer'] = Localizer(app.config.language)
@@ -47,6 +55,7 @@ def setup(app):
     app.connect('builder-inited', get_language)
     app.connect('builder-inited', set_hero_content)
     app.connect('build-finished', on_build_finished)
+    app.connect('build-finished', copy_root_files)
 
 # Configuration file for the Sphinx documentation builder.
 #
@@ -94,7 +103,7 @@ html_show_sourcelink = False
 
 # Paths
 html_static_path = ['_static']
-html_extra_path = ['_files']
+html_extra_path = ['_extra']
 
 # Theme
 html_theme = 'sphinx_immaterial'
