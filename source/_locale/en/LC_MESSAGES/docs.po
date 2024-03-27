@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: decore Base\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-27 16:37+0100\n"
+"POT-Creation-Date: 2024-03-27 16:47+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -1015,7 +1015,7 @@ msgstr "A field to store passwords in the keybase and to use them again."
 msgid "A field to store text values."
 msgstr "A field to store text values."
 
-#: ../features.rst:2
+#: ../features.rst:2 ../index.rst:66
 msgid "Besonderheiten"
 msgstr "Features"
 
@@ -1236,12 +1236,8 @@ msgid "Erste Schritte"
 msgstr "Getting started"
 
 #: ../index.rst:66
-msgid "Features"
-msgstr "Features"
-
-#: ../index.rst:66
-msgid "Sample"
-msgstr "Sample"
+msgid "Beispiel"
+msgstr "Example"
 
 #: ../index.rst:-1
 msgid "decore Base | UI fastly"
@@ -1447,18 +1443,16 @@ msgid "Datenschutzerklärung"
 msgstr "Privacy policy"
 
 #: ../sample.rst:2
-msgid "Sample application"
-msgstr "Sample application"
+msgid "Beispielanwendung"
+msgstr "Example application"
 
 #: ../sample.rst:3
 msgid ""
-"To better understand how decore base works, it is best to look at the sample"
-" application. The application represents my continuous development of decore"
-" base."
+"Um besser zu verstehen, wie decore Base funktioniert, ist es am besten, sich"
+" die Beispielanwendung anzusehen."
 msgstr ""
-"To better understand how decore base works, it is best to look at the sample"
-" application. The application represents my continuous development of decore"
-" base."
+"To better understand how decore Base works, it is best to take a look at the"
+" example application."
 
 #: ../sample.rst:5
 msgid "https://github.com/KemoPanzah/decore_Sample"
@@ -3165,3 +3159,21 @@ msgstr ""
 
 #~ msgid "Einleitung"
 #~ msgstr "Introduction"
+
+#~ msgid "Features"
+#~ msgstr "Features"
+
+#~ msgid "Sample"
+#~ msgstr "Sample"
+
+#~ msgid "Sample application"
+#~ msgstr "Sample application"
+
+#~ msgid ""
+#~ "To better understand how decore base works, it is best to look at the sample"
+#~ " application. The application represents my continuous development of decore"
+#~ " base."
+#~ msgstr ""
+#~ "To better understand how decore base works, it is best to look at the sample"
+#~ " application. The application represents my continuous development of decore"
+#~ " base."

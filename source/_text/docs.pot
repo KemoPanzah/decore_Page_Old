@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: decore Base \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-27 16:37+0100\n"
+"POT-Creation-Date: 2024-03-27 16:47+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -654,6 +654,7 @@ msgid "A field to store text values."
 msgstr ""
 
 #: ../features.rst:2
+#: ../index.rst:66
 msgid "Besonderheiten"
 msgstr ""
 
@@ -802,11 +803,7 @@ msgid "Erste Schritte"
 msgstr ""
 
 #: ../index.rst:66
-msgid "Features"
-msgstr ""
-
-#: ../index.rst:66
-msgid "Sample"
+msgid "Beispiel"
 msgstr ""
 
 #: ../index.rst:-1
@@ -904,11 +901,11 @@ msgid "Datenschutzerklärung"
 msgstr ""
 
 #: ../sample.rst:2
-msgid "Sample application"
+msgid "Beispielanwendung"
 msgstr ""
 
 #: ../sample.rst:3
-msgid "To better understand how decore base works, it is best to look at the sample application. The application represents my continuous development of decore base."
+msgid "Um besser zu verstehen, wie decore Base funktioniert, ist es am besten, sich die Beispielanwendung anzusehen."
 msgstr ""
 
 #: ../sample.rst:5

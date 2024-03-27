@@ -1,5 +1,5 @@
-Sample application
+Beispielanwendung
 ==================
-To better understand how decore base works, it is best to look at the sample application. The application represents my continuous development of decore base.
+Um besser zu verstehen, wie decore Base funktioniert, ist es am besten, sich die Beispielanwendung anzusehen.
 
 https://github.com/KemoPanzah/decore_Sample

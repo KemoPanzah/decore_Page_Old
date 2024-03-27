@@ -68,8 +68,8 @@ Bitte benutzen Sie dazu den Problembereich im Repository. `<https://github.com/K
    :maxdepth: 1
 
    Erste Schritte <start>
-   Features <features>
-   Sample <sample>
+   Besonderheiten <features>
+   Beispiel <sample>
    Dokumentation <documentation>
 
 .. Indices and tables
