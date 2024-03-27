@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: decore Base\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-27 17:37+0100\n"
+"POT-Creation-Date: 2024-03-27 18:08+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -107,7 +107,7 @@ msgstr ""
 msgid "Feature Icons | **freepik** - https://www.freepik.com"
 msgstr "Feature Icons | **freepik** - https://www.freepik.com"
 
-#: ../documentation.rst:2 ../index.rst:68
+#: ../documentation.rst:2 ../index.rst:66
 msgid "Dokumentation"
 msgstr "Documentation"
 
@@ -1015,7 +1015,7 @@ msgstr "A field to store passwords in the keybase and to use them again."
 msgid "A field to store text values."
 msgstr "A field to store text values."
 
-#: ../features.rst:2 ../index.rst:68
+#: ../features.rst:2 ../index.rst:66
 msgid "Besonderheiten"
 msgstr "Features"
 
@@ -1031,7 +1031,7 @@ msgstr ""
 "development and to design the included and upcoming features for these "
 "phases."
 
-#: ../features.rst:5 ../index.rst:15 ../index.rst:57 ../start.rst:27
+#: ../features.rst:5 ../index.rst:13 ../index.rst:55 ../start.rst:27
 #: ../start.rst:75 ../start.rst:87 ../start.rst:111 ../start.rst:220
 msgid "Note"
 msgstr "Grade"
@@ -1199,14 +1199,6 @@ msgstr ""
 msgid "Subtile und nahtlose Möglichkeit Werbung zu schalten**."
 msgstr "Subtle and seamless way to advertise**."
 
-#: ../hero.rst:1
-msgid ""
-"Schnell erstellte Gui-Dashboard-Anwendungen mit Python, die deinen Ideen "
-"mehr Freiraum geben."
-msgstr ""
-"Build fast gui dashboard applications with Python that give your ideas more "
-"freedom."
-
 #: ../impressum.rst:4
 msgid "Impressum"
 msgstr "Imprint"
@@ -1239,11 +1231,11 @@ msgstr ""
 "Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas "
 "adipiscing ante non diam sodales hendrerit."
 
-#: ../index.rst:68 ../start.rst:6
+#: ../index.rst:66 ../start.rst:6
 msgid "Erste Schritte"
 msgstr "Getting started"
 
-#: ../index.rst:68
+#: ../index.rst:66
 msgid "Beispiel"
 msgstr "Example"
 
@@ -1267,11 +1259,11 @@ msgstr ""
 msgid "index, follow"
 msgstr "index, follow"
 
-#: ../index.rst:12
+#: ../index.rst:10
 msgid "Entfesseln Sie Ihre Ideen"
 msgstr "Unleash your ideas"
 
-#: ../index.rst:13
+#: ../index.rst:11
 msgid ""
 "decore Base ist ein out-of-the-box \"Python to Vue.js\" Datenanwendungs-"
 "Dashboard, das Ihnen hilft, in wenigen einfachen Schritten von der Idee zur "
@@ -1284,7 +1276,7 @@ msgstr ""
 "aimed at those who want to focus on the results of their algorithms, do "
 "scientific work or perform teaching and learning functions."
 
-#: ../index.rst:16
+#: ../index.rst:14
 msgid ""
 "**decore Base ist derzeit in Arbeit, nur lokal bereitstellbar, nur für "
 "Windows verfügbar und noch nicht produktionsbereit**."
@@ -1292,7 +1284,7 @@ msgstr ""
 "**decore Base is currently a work in progress, only available locally, only "
 "available for Windows and not yet ready for production**."
 
-#: ../index.rst:18
+#: ../index.rst:16
 msgid ""
 "Die empfohlene IDE ist Visual Studio Code und alle Kommentare, "
 "Beschreibungen und Dokumentationen beziehen sich vorerst auch nur auf "
@@ -1301,11 +1293,11 @@ msgstr ""
 "The recommended IDE is Visual Studio Code and all comments, descriptions and"
 " documentation refer to vscode only for the time being."
 
-#: ../index.rst:21
+#: ../index.rst:19
 msgid "Entwicklungsphasen & Vorteile"
 msgstr "Development phases & advantages"
 
-#: ../index.rst:22
+#: ../index.rst:20
 msgid ""
 "decore Base wurde entworfen um den Entwicklungsprozess deiner Anwendung in "
 "seinen verschiedenen Phasen optimal zu unterstützen."
@@ -1313,7 +1305,7 @@ msgstr ""
 "decore Base was designed to optimally support the development process of "
 "your application in its various phases."
 
-#: ../index.rst:31
+#: ../index.rst:29
 msgid ""
 "Um deinen Ideen maximale Freiheit zu geben, ist decore Base im ersten "
 "Schritt praktisch sofort einsatzbereit. Du musst dich nicht um die GUI, "
@@ -1328,7 +1320,7 @@ msgstr ""
 "adjustments in the next step according to your requirements. Concentrate "
 "fully on your ideas and the implementation of your algorithms."
 
-#: ../index.rst:35
+#: ../index.rst:33
 msgid ""
 "Programmiere deine Anwendung im objektorientierten Stil, denn Benutzer-"
 "Aktionen aus dem Frontend werden in deinen Basisinstanzen ausgeführt. "
@@ -1343,7 +1335,7 @@ msgstr ""
 "organically. Extend your application with new functions and draw on the full"
 " potential of Python and its libraries."
 
-#: ../index.rst:39
+#: ../index.rst:37
 msgid ""
 "Entdecke mühelos und zügig den grundlegenden UI-Stil und passe ihn "
 "anschließend ganz nach deinen Anforderungen an. Integriere zusätzlich "
@@ -1358,7 +1350,7 @@ msgstr ""
 "individual appearance. Give your user interface your own personal style "
 "using your own sheets**."
 
-#: ../index.rst:43
+#: ../index.rst:41
 msgid ""
 "Gewährleiste die Stabilität und Qualität deiner Anwendung durch eine "
 "sorgfältige Überprüfung ihrer Funktionalitäten mithilfe eingebauter "
@@ -1370,7 +1362,7 @@ msgstr ""
 "possible to ensure the expected results and optimize the performance of the "
 "application."
 
-#: ../index.rst:47
+#: ../index.rst:45
 msgid ""
 "Nutze das eingebaute Sitzungsmanagement und übertrage Daten verschlüsselt** "
 "in deine Anwendung. Implementiere eigene Modelle für die Erfassung sensibler"
@@ -1382,7 +1374,7 @@ msgstr ""
 "user data. Use the integrated user administration** to manage roles and "
 "ownership rights."
 
-#: ../index.rst:51
+#: ../index.rst:49
 msgid ""
 "decore Base wird auch in dieser Entwicklungsphase künftig unterstützende "
 "Funktionen bieten. Bald werden Features wie die Electron-Integration** "
@@ -1393,7 +1385,7 @@ msgstr ""
 "in the future. Features such as Electron integration** will soon be "
 "available, allowing you to easily publish your application as a desktop app."
 
-#: ../index.rst:55
+#: ../index.rst:53
 msgid ""
 "Gewährleiste die Sichtbarkeit und Auffindbarkeit deiner Anwendung durch ein "
 "SEO**-freundliches Frontend. Baldige Implemetierungen berücksichtigen "
@@ -1408,7 +1400,7 @@ msgstr ""
 " user experience and the variety of application possibilities that decore "
 "Base brings also offer many opportunities for monetization**."
 
-#: ../index.rst:58
+#: ../index.rst:56
 msgid ""
 "** Einige der hier genannten Funktionen sind derzeit noch in direkter "
 "Entwicklung und werden in Kürze verfügbar sein."
@@ -1416,11 +1408,11 @@ msgstr ""
 "** Some of the functions mentioned here are currently still under direct "
 "development and will be available shortly."
 
-#: ../index.rst:61
+#: ../index.rst:59
 msgid "Beteiligung & Unterstützung"
 msgstr "Participation & support"
 
-#: ../index.rst:62
+#: ../index.rst:60
 msgid ""
 "Die größte Hilfe, die wir im Moment bekommen können, ist, wenn Sie einen "
 "Blick auf das Projekt werfen und uns sagen, was Sie davon halten. Wir sind "
@@ -1429,7 +1421,7 @@ msgstr ""
 "The biggest help we can get at the moment is if you take a look at the "
 "project and tell us what you think of it. We are grateful for any criticism."
 
-#: ../index.rst:64
+#: ../index.rst:62
 msgid ""
 "Sollte bei Entwickeln etwas nicht wie erwartet funktionieren oder "
 "Unklarheiten in der Dokumentation auftauchen, lassen Sie es uns bitte "
@@ -1438,7 +1430,7 @@ msgstr ""
 "If something does not work as expected during development or if there are "
 "any ambiguities in the documentation, please let us know."
 
-#: ../index.rst:66
+#: ../index.rst:64
 msgid ""
 "Bitte benutzen Sie dazu den Problembereich im Repository. "
 "`<https://github.com/KemoPanzah/decore_Base/issues>`_"
@@ -1487,7 +1479,7 @@ msgstr ""
 
 #: ../start.rst:11
 msgid "*Es ist wirklich einfach, bitte folgen Sie mir!*"
-msgstr "*It's really simple, please follow me!"
+msgstr "*It's really simple, please follow me!*"
 
 #: ../start.rst:14
 msgid "Installation"
@@ -1880,3 +1872,10 @@ msgstr ""
 
 #~ msgid "Hello World!"
 #~ msgstr "Hello World!"
+
+#~ msgid ""
+#~ "Schnell erstellte Gui-Dashboard-Anwendungen mit Python, die deinen Ideen "
+#~ "mehr Freiraum geben."
+#~ msgstr ""
+#~ "Build fast gui dashboard applications with Python that give your ideas more "
+#~ "freedom."

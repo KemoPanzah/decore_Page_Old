@@ -101,6 +101,10 @@
       "configurations": ["Sphinx Make Translate (en)"]
     },
     {
+      "name": "Sphinx Make Dev (all)",
+      "configurations": ["Sphinx Make Dev (de)", "Sphinx Make Dev (en)"]
+    },
+    {
       "name": "Sphinx Make Doc (all)",
       "configurations": ["Sphinx Make Doc (de)", "Sphinx Make Doc (en)"]
     }
