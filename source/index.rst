@@ -1,13 +1,11 @@
-:hero: GUI Dashboard-Anwendungen in Python schnell und einfach.
-
 .. meta::
    :title: decore Base | UI fastly
    :description: create dashbord with python fastly
    :keywords: python gui, decore, python database, python dashboard, python orm, python ui, dashboard creation, python application, ui framework, ui toolkit
    :robots: index, follow
 
-decore Base | UI fastly
-=======================
+GUI Dashboard-Anwendungen in Python schnell und einfach
+=======================================================
 
 Einleitung
 ----------
