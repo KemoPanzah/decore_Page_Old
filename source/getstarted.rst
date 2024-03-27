@@ -2,9 +2,6 @@
    :description: create dashbord with python fastly
    :keywords: python gui, decore, python database, python dashboard, python orm, python ui, dashboard creation, python application, ui framework, ui toolkit
 
-.. image:: /_static/images/howtos/getstarted/article.jpg
-   :class: article-image
-
 Erste Schritte
 --------------
 Um die schnelle GUI-Dashboard-Erstellung, mit decore Base in Python, zu veranschaulichen werden wir nun gemeinsam eine kleine UI in Form einer Webanwendung erstellen.

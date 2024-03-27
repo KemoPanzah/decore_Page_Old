@@ -55,7 +55,7 @@ author = 'Jean Rohark'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = ['sphinx.ext.autodoc', 'sphinx_sitemap',
-              'sphinxcontrib.mermaid', 'sphinx_immaterial']
+              'sphinxcontrib.mermaid', 'sphinxcontrib.jquery', 'sphinx_immaterial']
 
 locale_dirs = ['_locale/']
 gettext_compact = "docs"
