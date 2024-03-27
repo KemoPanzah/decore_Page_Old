@@ -1,4 +1,4 @@
-:hero: Schnell erstellte Gui-Dashboard-Anwendungen mit Python, die deinen Ideen mehr Freiraum geben.
+:hero: |hero_content|
 
 .. meta::
    :title: decore Base | UI fastly

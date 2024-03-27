@@ -17,7 +17,16 @@ def get_language(app):
         'language': app.config.language,
     }
 
+def set_hero_content(app):
+    if app.config.language == 'de':
+        hero_content = "Schnell erstellte Gui-Dashboard-Anwendungen mit Python, die deinen Ideen mehr Freiraum geben."
+    elif app.config.language == 'en':
+        hero_content = "Quickly created Gui dashboard applications with Python that give your ideas more freedom."
+    else:
+        hero_content = ""
 
+    app.config.rst_epilog = '.. |hero_content| replace:: %s' % hero_content
+    
 def on_build_finished(app, exception):
     if not exception:
         if app.builder.name == 'gettext':
@@ -36,6 +45,7 @@ def setup(app):
     app.add_directive('page-tabs', Page_tabs)
     app.add_directive('page-feature-pane', Page_feature_pane)
     app.connect('builder-inited', get_language)
+    app.connect('builder-inited', set_hero_content)
     app.connect('build-finished', on_build_finished)
 
 # Configuration file for the Sphinx documentation builder.
@@ -54,7 +64,7 @@ author = 'Jean Rohark'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ['sphinx.ext.autodoc', 'sphinx_sitemap',
+extensions = ['sphinx.ext.autodoc', 'sphinx.ext.ifconfig', 'sphinx_sitemap',
               'sphinxcontrib.mermaid', 'sphinxcontrib.jquery', 'sphinx_immaterial']
 
 locale_dirs = ['_locale/']

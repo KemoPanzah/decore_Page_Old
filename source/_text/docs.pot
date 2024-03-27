@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: decore Base \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-27 16:47+0100\n"
+"POT-Creation-Date: 2024-03-27 17:37+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -69,7 +69,7 @@ msgid "Feature Icons | **freepik** - https://www.freepik.com"
 msgstr ""
 
 #: ../documentation.rst:2
-#: ../index.rst:66
+#: ../index.rst:68
 msgid "Dokumentation"
 msgstr ""
 
@@ -654,7 +654,7 @@ msgid "A field to store text values."
 msgstr ""
 
 #: ../features.rst:2
-#: ../index.rst:66
+#: ../index.rst:68
 msgid "Besonderheiten"
 msgstr ""
 
@@ -663,8 +663,8 @@ msgid "decore Base soll als universelles und flexibles Werkzeug in der Anwendung
 msgstr ""
 
 #: ../features.rst:5
-#: ../index.rst:13
-#: ../index.rst:55
+#: ../index.rst:15
+#: ../index.rst:57
 #: ../start.rst:27
 #: ../start.rst:75
 #: ../start.rst:87
@@ -788,6 +788,10 @@ msgstr ""
 msgid "Subtile und nahtlose Möglichkeit Werbung zu schalten**."
 msgstr ""
 
+#: ../hero.rst:1
+msgid "Schnell erstellte Gui-Dashboard-Anwendungen mit Python, die deinen Ideen mehr Freiraum geben."
+msgstr ""
+
 #: ../impressum.rst:4
 msgid "Impressum"
 msgstr ""
@@ -797,12 +801,12 @@ msgstr ""
 msgid "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit."
 msgstr ""
 
-#: ../index.rst:66
+#: ../index.rst:68
 #: ../start.rst:6
 msgid "Erste Schritte"
 msgstr ""
 
-#: ../index.rst:66
+#: ../index.rst:68
 msgid "Beispiel"
 msgstr ""
 
@@ -824,75 +828,75 @@ msgstr ""
 msgid "index, follow"
 msgstr ""
 
-#: ../index.rst:10
+#: ../index.rst:12
 msgid "Entfesseln Sie Ihre Ideen"
 msgstr ""
 
-#: ../index.rst:11
+#: ../index.rst:13
 msgid "decore Base ist ein out-of-the-box \"Python to Vue.js\" Datenanwendungs-Dashboard, das Ihnen hilft, in wenigen einfachen Schritten von der Idee zur Ansicht zu gelangen. Es richtet sich an diejenigen, die sich auf die Ergebnisse ihrer Algorithmen konzentrieren wollen, wissenschaftliche Arbeit leisten oder Lehr- und Lernfunktionen ausführen wollen."
 msgstr ""
 
-#: ../index.rst:14
+#: ../index.rst:16
 msgid "**decore Base ist derzeit in Arbeit, nur lokal bereitstellbar, nur für Windows verfügbar und noch nicht produktionsbereit**."
 msgstr ""
 
-#: ../index.rst:16
+#: ../index.rst:18
 msgid "Die empfohlene IDE ist Visual Studio Code und alle Kommentare, Beschreibungen und Dokumentationen beziehen sich vorerst auch nur auf vscode."
 msgstr ""
 
-#: ../index.rst:19
+#: ../index.rst:21
 msgid "Entwicklungsphasen & Vorteile"
 msgstr ""
 
-#: ../index.rst:20
+#: ../index.rst:22
 msgid "decore Base wurde entworfen um den Entwicklungsprozess deiner Anwendung in seinen verschiedenen Phasen optimal zu unterstützen."
 msgstr ""
 
-#: ../index.rst:29
+#: ../index.rst:31
 msgid "Um deinen Ideen maximale Freiheit zu geben, ist decore Base im ersten Schritt praktisch sofort einsatzbereit. Du musst dich nicht um die GUI, Datenbankfunktionalitäten, Sicherheitsaspekte oder viele andere Details kümmern. Feinere Anpassungen kannst du im nächsten Schritt entsprechend deinen Anforderungen vornehmen. Konzentriere dich vollständig auf deine Ideen und die Umsetzung deiner Algorithmen."
 msgstr ""
 
-#: ../index.rst:33
+#: ../index.rst:35
 msgid "Programmiere deine Anwendung im objektorientierten Stil, denn Benutzer-Aktionen aus dem Frontend werden in deinen Basisinstanzen ausgeführt. Dekoriere einfach Python-Funktionen mit einer klaren Syntax und ermögliche so das organische Wachsen deiner GUI-Anwendung. Erweitere deine Anwendung um neue Funktionen und schöpfe dabei aus dem vollen Potenzial von Python und seinen Bibliotheken."
 msgstr ""
 
-#: ../index.rst:37
+#: ../index.rst:39
 msgid "Entdecke mühelos und zügig den grundlegenden UI-Stil und passe ihn anschließend ganz nach deinen Anforderungen an. Integriere zusätzlich Template-Code**, um sicherzustellen, dass deine Anwendung nicht nur Daten verarbeitet, sondern auch ein individuelles Erscheinungsbild annimmt. Verleihe deiner Benutzeroberfläche deinen persönlichen Stil mithilfe eigener Sheets**."
 msgstr ""
 
-#: ../index.rst:41
+#: ../index.rst:43
 msgid "Gewährleiste die Stabilität und Qualität deiner Anwendung durch eine sorgfältige Überprüfung ihrer Funktionalitäten mithilfe eingebauter Testmethoden**. Diese Tests ermöglichen es, die erwarteten Ergebnisse sicherzustellen und die Performance der Anwendung zu optimieren."
 msgstr ""
 
-#: ../index.rst:45
+#: ../index.rst:47
 msgid "Nutze das eingebaute Sitzungsmanagement und übertrage Daten verschlüsselt** in deine Anwendung. Implementiere eigene Modelle für die Erfassung sensibler und persönlicher Benutzerdaten. Setze die integrierte Benutzerverwaltung** ein, um Rollen und Besitzrechte zu verwalten."
 msgstr ""
 
-#: ../index.rst:49
+#: ../index.rst:51
 msgid "decore Base wird auch in dieser Entwicklungsphase künftig unterstützende Funktionen bieten. Bald werden Features wie die Electron-Integration** verfügbar sein, mit der du deine Anwendung ganz einfach als Desktop-App veröffentlichen kannst."
 msgstr ""
 
-#: ../index.rst:53
+#: ../index.rst:55
 msgid "Gewährleiste die Sichtbarkeit und Auffindbarkeit deiner Anwendung durch ein SEO**-freundliches Frontend. Baldige Implemetierungen berücksichtigen subtile und benutzerfreundliche Werbemöglichkeiten**, die nahtlos in das Anwendererlebnis integriert sind und die Vielzahl der Anwendungsmöglichkeiten die decore Base mitbringt, bieten auch viele Möglichkeiten der Monetarisierung**."
 msgstr ""
 
-#: ../index.rst:56
+#: ../index.rst:58
 msgid "** Einige der hier genannten Funktionen sind derzeit noch in direkter Entwicklung und werden in Kürze verfügbar sein."
 msgstr ""
 
-#: ../index.rst:59
+#: ../index.rst:61
 msgid "Beteiligung & Unterstützung"
 msgstr ""
 
-#: ../index.rst:60
+#: ../index.rst:62
 msgid "Die größte Hilfe, die wir im Moment bekommen können, ist, wenn Sie einen Blick auf das Projekt werfen und uns sagen, was Sie davon halten. Wir sind für jede Kritik dankbar."
 msgstr ""
 
-#: ../index.rst:62
+#: ../index.rst:64
 msgid "Sollte bei Entwickeln etwas nicht wie erwartet funktionieren oder Unklarheiten in der Dokumentation auftauchen, lassen Sie es uns bitte wissen."
 msgstr ""
 
-#: ../index.rst:64
+#: ../index.rst:66
 msgid "Bitte benutzen Sie dazu den Problembereich im Repository. `<https://github.com/KemoPanzah/decore_Base/issues>`_"
 msgstr ""
 
