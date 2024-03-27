@@ -3,7 +3,7 @@
 .. meta::
    :title: decore Base | UI fastly
    :description: create dashbord with python fastly
-   :keywords: python gui, decore, python database, python dashboard, python orm, python ui, dashboard creation, python application, ui framework, ui toolkit
+   :keywords: python gui, decore, python datenbank, python dashboard, python orm, python ui, dashboard erstellung, python anwendung, ui framework, ui werkzeugkasten
    :robots: index, follow
 
 Entfesseln Sie Ihre Ideen

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: decore Base \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-27 18:08+0100\n"
+"POT-Creation-Date: 2024-03-27 19:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -816,8 +816,7 @@ msgid "create dashbord with python fastly"
 msgstr ""
 
 #: ../index.rst:-1
-#: ../start.rst:-1
-msgid "python gui, decore, python database, python dashboard, python orm, python ui, dashboard creation, python application, ui framework, ui toolkit"
+msgid "python gui, decore, python datenbank, python dashboard, python orm, python ui, dashboard erstellung, python anwendung, ui framework, ui werkzeugkasten"
 msgstr ""
 
 #: ../index.rst:-1
@@ -910,6 +909,10 @@ msgstr ""
 
 #: ../sample.rst:5
 msgid "https://github.com/KemoPanzah/decore_Sample"
+msgstr ""
+
+#: ../start.rst:-1
+msgid "python gui, decore, python database, python dashboard, python orm, python ui, dashboard creation, python application, ui framework, ui toolkit"
 msgstr ""
 
 #: ../start.rst:7
