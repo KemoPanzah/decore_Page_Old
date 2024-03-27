@@ -93,12 +93,12 @@ html_theme_options = {
     "languages": [
         {
             "name": "German",
-            "link": "de/",  # points to ./de/ subdirectory
+            "link": "/de",  # points to ./de/ subdirectory
             "lang": "de",
         },
         {
             "name": "English",
-            "link": "en/",  # points to ./en/ subdirectory
+            "link": "/en",  # points to ./en/ subdirectory
             "lang": "en",
         },
     ],
