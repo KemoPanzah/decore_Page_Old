@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: decore Base\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-27 15:30+0100\n"
+"POT-Creation-Date: 2024-03-27 16:37+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -1015,8 +1015,8 @@ msgstr "A field to store passwords in the keybase and to use them again."
 msgid "A field to store text values."
 msgstr "A field to store text values."
 
-#: ../features.rst:2 ../index.rst:66
-msgid "Features"
+#: ../features.rst:2
+msgid "Besonderheiten"
 msgstr "Features"
 
 #: ../features.rst:3
@@ -1045,32 +1045,159 @@ msgstr ""
 " worked on."
 
 #: ../features.rst:9 ../index.rst
-msgid "Idee & Konzept"
-msgstr "Idea & Concept"
+msgid "Kern & Konzept"
+msgstr "Core & Concept"
 
-#: ../features.rst:19 ../index.rst
+#: ../features.rst:10
+msgid ""
+"Einfach und schnelle Umsetzung deiner Ideen und Vorstellungen, da die "
+"Kernelemente einer professionellen Dashboard-Anwendung schon integriert "
+"sind."
+msgstr ""
+"Simple and fast implementation of your ideas and concepts, as the core "
+"elements of a professional dashboard application are already integrated."
+
+#: ../features.rst:11
+msgid ""
+"Automatische relationale Aufarbeitung der darstellbaren Daten im Frontend."
+msgstr ""
+"Automatic relational processing of the displayable data in the front end."
+
+#: ../features.rst:12
+msgid "Fortschrittsübermittlung bei Aktionen an das Frontend."
+msgstr "Progress transfer for actions to the front end."
+
+#: ../features.rst:15 ../index.rst
 msgid "Entwicklung & Erweiterung"
 msgstr "Development & expansion"
 
-#: ../features.rst:32 ../index.rst
+#: ../features.rst:17
+msgid ""
+"Integriertes Datenbank-ORM (sqlite) und einfache Datensatzereugung mit "
+"angepasster und vereinfachter Peewee-Integration."
+msgstr ""
+"Integrated database ORM (sqlite) and simple data record creation with "
+"customized and simplified Peewee integration."
+
+#: ../features.rst:18
+msgid ""
+"Relationale Datenbank-Abfragen mit einer eigenen ``query`` Methode im Model."
+msgstr ""
+"Relational database queries with a separate ``query`` method in the model."
+
+#: ../features.rst:19
+msgid ""
+"Erhaltung des Objekt-Orientierten Programmierstils in den Basisklassen, "
+"durch Aktionsufruf als Instanzmethoden."
+msgstr ""
+"Preservation of the object-oriented programming style in the base classes, "
+"by calling actions as instance methods."
+
+#: ../features.rst:20
+msgid ""
+"Sofort verwendbare Daten-Instanzen im Frontend, nach dem Aktionaufruf im "
+"Backend."
+msgstr ""
+"Immediately usable data instances in the frontend, after the action call in "
+"the backend."
+
+#: ../features.rst:23 ../index.rst
 msgid "Anpassung & Design"
 msgstr "Customization & Design"
 
-#: ../features.rst:41 ../index.rst
+#: ../features.rst:25
+msgid ""
+"Wandelbare Seitenansichten durch die Möglichkkeit HTML Templates zu "
+"verwenden**."
+msgstr ""
+"Changeable page views thanks to the possibility of using HTML templates**."
+
+#: ../features.rst:26
+msgid "Anpassung der Darstellungen und Reihenfolgen im Layout"
+msgstr "Customization of displays and sequences in the layout"
+
+#: ../features.rst:29 ../index.rst
 msgid "Test & Stabilität"
 msgstr "Test & stability"
 
-#: ../features.rst:51 ../index.rst
+#: ../features.rst:31
+msgid ""
+"Integrierte Standard-Validierung auf Basis der Feldattribute, beim Speichern"
+" eines Datensatzes."
+msgstr ""
+"Integrated standard validation based on the field attributes when saving a "
+"data record."
+
+#: ../features.rst:32
+msgid ""
+"Erweiterbare und benutzerdefinierte Validierungsregeln auf Basis von "
+"Cerberus-Schemata**."
+msgstr ""
+"Extensible and user-defined validation rules based on Cerberus schemas**."
+
+#: ../features.rst:33
+msgid "Integriete Log, Test und Messfunktionialität**."
+msgstr "Integral log, test and measurement functionality**."
+
+#: ../features.rst:36 ../index.rst
 msgid "Sicherheit & Compliance"
 msgstr "Security & Compliance"
 
-#: ../features.rst:63 ../index.rst
+#: ../features.rst:38
+msgid ""
+"Integriertes Sitzungssystem mit vorkonfektionierter Benutzer- und "
+"Rechteverwaltung."
+msgstr ""
+"Integrated session system with preconfigured user and rights management."
+
+#: ../features.rst:39
+msgid "Sichere Übertragung von Backend zum Frontend**."
+msgstr "Secure transfer from backend to frontend**."
+
+#: ../features.rst:40
+msgid ""
+"Zentrale dedizierte Ablage von wiederverwendbaren oder versalzenen "
+"Kennwörter mit integriertem Sicherheitsleitfaden**."
+msgstr ""
+"Centralized dedicated storage of reusable or salted passwords with "
+"integrated security guide**."
+
+#: ../features.rst:45 ../index.rst
 msgid "Bereitstellung & Veröffentlichung"
 msgstr "Provision & publication"
 
-#: ../features.rst:72 ../index.rst
+#: ../features.rst:47
+msgid ""
+"Der Standard-Veröffentlichungstyp während der Entwicklung, beim Debuggen und"
+" nach Fertigstellung ist die Browseranwendung."
+msgstr ""
+"The default publication type during development, debugging and after "
+"completion is the browser application."
+
+#: ../features.rst:48
+msgid ""
+"Möglichkeit der Erstellung von Standalone-Desktop-Anwendungen für Windows "
+"mit Electron**."
+msgstr ""
+"Ability to build standalone desktop applications for Windows with "
+"Electron**."
+
+#: ../features.rst:51 ../index.rst
 msgid "Marketing & Monetarisierung"
 msgstr "Marketing & Monetization"
+
+#: ../features.rst:53
+msgid ""
+"Die Vielfalt von Anwendungsarten und -zwecken, die mit decore Base umgesetzt"
+" werden können, eröffnen ebenso zahlreiche Möglichkeiten zur "
+"Monetarisierung."
+msgstr ""
+"The variety of application types and purposes that can be implemented with "
+"decore Base also opens up numerous opportunities for monetization."
+
+#: ../features.rst:54
+msgid "Subtile und nahtlose Möglichkeit Werbung zu schalten**."
+msgstr "Subtle and seamless way to advertise**."
 
 #: ../impressum.rst:4
 msgid "Impressum"
@@ -1107,6 +1234,10 @@ msgstr ""
 #: ../index.rst:66 ../start.rst:6
 msgid "Erste Schritte"
 msgstr "Getting started"
+
+#: ../index.rst:66
+msgid "Features"
+msgstr "Features"
 
 #: ../index.rst:66
 msgid "Sample"

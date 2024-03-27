@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: decore Base \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-27 15:30+0100\n"
+"POT-Creation-Date: 2024-03-27 16:37+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -654,8 +654,7 @@ msgid "A field to store text values."
 msgstr ""
 
 #: ../features.rst:2
-#: ../index.rst:66
-msgid "Features"
+msgid "Besonderheiten"
 msgstr ""
 
 #: ../features.rst:3
@@ -679,37 +678,113 @@ msgstr ""
 
 #: ../features.rst:9
 #: ../index.rst:0
-msgid "Idee & Konzept"
+msgid "Kern & Konzept"
 msgstr ""
 
-#: ../features.rst:19
+#: ../features.rst:10
+msgid "Einfach und schnelle Umsetzung deiner Ideen und Vorstellungen, da die Kernelemente einer professionellen Dashboard-Anwendung schon integriert sind."
+msgstr ""
+
+#: ../features.rst:11
+msgid "Automatische relationale Aufarbeitung der darstellbaren Daten im Frontend."
+msgstr ""
+
+#: ../features.rst:12
+msgid "Fortschrittsübermittlung bei Aktionen an das Frontend."
+msgstr ""
+
+#: ../features.rst:15
 #: ../index.rst:0
 msgid "Entwicklung & Erweiterung"
 msgstr ""
 
-#: ../features.rst:32
+#: ../features.rst:17
+msgid "Integriertes Datenbank-ORM (sqlite) und einfache Datensatzereugung mit angepasster und vereinfachter Peewee-Integration."
+msgstr ""
+
+#: ../features.rst:18
+msgid "Relationale Datenbank-Abfragen mit einer eigenen ``query`` Methode im Model."
+msgstr ""
+
+#: ../features.rst:19
+msgid "Erhaltung des Objekt-Orientierten Programmierstils in den Basisklassen, durch Aktionsufruf als Instanzmethoden."
+msgstr ""
+
+#: ../features.rst:20
+msgid "Sofort verwendbare Daten-Instanzen im Frontend, nach dem Aktionaufruf im Backend."
+msgstr ""
+
+#: ../features.rst:23
 #: ../index.rst:0
 msgid "Anpassung & Design"
 msgstr ""
 
-#: ../features.rst:41
+#: ../features.rst:25
+msgid "Wandelbare Seitenansichten durch die Möglichkkeit HTML Templates zu verwenden**."
+msgstr ""
+
+#: ../features.rst:26
+msgid "Anpassung der Darstellungen und Reihenfolgen im Layout"
+msgstr ""
+
+#: ../features.rst:29
 #: ../index.rst:0
 msgid "Test & Stabilität"
 msgstr ""
 
-#: ../features.rst:51
+#: ../features.rst:31
+msgid "Integrierte Standard-Validierung auf Basis der Feldattribute, beim Speichern eines Datensatzes."
+msgstr ""
+
+#: ../features.rst:32
+msgid "Erweiterbare und benutzerdefinierte Validierungsregeln auf Basis von Cerberus-Schemata**."
+msgstr ""
+
+#: ../features.rst:33
+msgid "Integriete Log, Test und Messfunktionialität**."
+msgstr ""
+
+#: ../features.rst:36
 #: ../index.rst:0
 msgid "Sicherheit & Compliance"
 msgstr ""
 
-#: ../features.rst:63
+#: ../features.rst:38
+msgid "Integriertes Sitzungssystem mit vorkonfektionierter Benutzer- und Rechteverwaltung."
+msgstr ""
+
+#: ../features.rst:39
+msgid "Sichere Übertragung von Backend zum Frontend**."
+msgstr ""
+
+#: ../features.rst:40
+msgid "Zentrale dedizierte Ablage von wiederverwendbaren oder versalzenen Kennwörter mit integriertem Sicherheitsleitfaden**."
+msgstr ""
+
+#: ../features.rst:45
 #: ../index.rst:0
 msgid "Bereitstellung & Veröffentlichung"
 msgstr ""
 
-#: ../features.rst:72
+#: ../features.rst:47
+msgid "Der Standard-Veröffentlichungstyp während der Entwicklung, beim Debuggen und nach Fertigstellung ist die Browseranwendung."
+msgstr ""
+
+#: ../features.rst:48
+msgid "Möglichkeit der Erstellung von Standalone-Desktop-Anwendungen für Windows mit Electron**."
+msgstr ""
+
+#: ../features.rst:51
 #: ../index.rst:0
 msgid "Marketing & Monetarisierung"
+msgstr ""
+
+#: ../features.rst:53
+msgid "Die Vielfalt von Anwendungsarten und -zwecken, die mit decore Base umgesetzt werden können, eröffnen ebenso zahlreiche Möglichkeiten zur Monetarisierung."
+msgstr ""
+
+#: ../features.rst:54
+msgid "Subtile und nahtlose Möglichkeit Werbung zu schalten**."
 msgstr ""
 
 #: ../impressum.rst:4
@@ -724,6 +799,10 @@ msgstr ""
 #: ../index.rst:66
 #: ../start.rst:6
 msgid "Erste Schritte"
+msgstr ""
+
+#: ../index.rst:66
+msgid "Features"
 msgstr ""
 
 #: ../index.rst:66

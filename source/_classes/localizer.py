@@ -8,6 +8,7 @@ entries = {
         'decore Base | UI fastly': 'decore Base | UI fastly',
         'Basis': 'Base',
         'Erste Schritte': 'Getting started',
+        'Besonderheiten': 'Features',
         'Gui': 'gui',
         'Modell': 'Model',
         'schnell': 'fast',

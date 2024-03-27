@@ -23,7 +23,7 @@ decore Base wurde entworfen um den Entwicklungsprozess deiner Anwendung in seine
    :class: custom-tab-set-style
    :name: ref_this_tab_set
 
-   .. md-tab-item:: Idee & Konzept   
+   .. md-tab-item:: Kern & Konzept
       :class: custom-tab-style
 
       Um deinen Ideen maximale Freiheit zu geben, ist decore Base im ersten Schritt praktisch sofort einsatzbereit. Du musst dich nicht um die GUI, Datenbankfunktionalitäten, Sicherheitsaspekte oder viele andere Details kümmern. Feinere Anpassungen kannst du im nächsten Schritt entsprechend deinen Anforderungen vornehmen. Konzentriere dich vollständig auf deine Ideen und die Umsetzung deiner Algorithmen.
