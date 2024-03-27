@@ -1,0 +1,21 @@
+@media screen and (max-width: 76.1875em) {
+    .md-nav--primary .md-nav__title[for="__drawer"] {
+        background-color: #075767 !important;
+    }
+}
+
+.md-header {
+    background-color: #075767 !important;
+}
+
+.md-hero {
+    background-color: #075767 !important;
+}
+
+.md-logo img {
+    height: 2rem !important;
+}
+
+.md-header__title {
+    margin-left: 0px !important;
+}

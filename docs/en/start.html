@@ -1,0 +1,884 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="_static/favicon.ico">
+    
+    
+      
+        <title>Getting started - decore Base | UI fastly</title>
+      
+    
+    
+      
+        
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+        <link rel="stylesheet" type="text/css" href="_static/sphinx_immaterial_theme.359ec555e2989f00f.min.css?v=b000af5c" />
+        <link rel="stylesheet" type="text/css" href="_static/styles/custom.css?v=b0f6f0c8" />
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+      
+        <meta  content="create dashbord with python fastly"  name="description"  translated="True" >
+      
+        <meta  content="python gui, decore, python database, python dashboard, python orm, python ui, dashboard creation, python application, ui framework, ui toolkit"  name="keywords"  translated="True" >
+      
+    
+    
+
+
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="light-blue">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#installation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="index.html" title="decore Base | UI fastly" class="md-header__button md-logo" aria-label="decore Base | UI fastly" data-md-component="logo">
+      <img src="_static/logo.png" alt="logo">
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            decore Base | UI fastly
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Getting started
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="light-blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5Z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+      <div class="md-header__option">
+        <div class="md-select">
+          
+          <button class="md-header__button md-icon" aria-label="Select language">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24Z"/></svg>
+          </button>
+          <div class="md-select__inner">
+            <ul class="md-select__list">
+              
+                <li class="md-select__item">
+                  <a href="de" hreflang="de" class="md-select__link">
+                    German
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
+                  <a href="en" hreflang="en" class="md-select__link">
+                    English
+                  </a>
+                </li>
+                
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="decore Base | UI fastly" class="md-nav__button md-logo" aria-label="decore Base | UI fastly" data-md-component="logo">
+      <img src="_static/logo.png" alt="logo">
+    </a>
+    decore Base | UI fastly
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+    
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          <span class="md-ellipsis">Getting started</span>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="#" class="md-nav__link md-nav__link--active">
+        <span class="md-ellipsis">Getting started</span>
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">Installation</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vorbereitung" class="md-nav__link">
+    <span class="md-ellipsis">Preparation</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verwendung" class="md-nav__link">
+    <span class="md-ellipsis">Use</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Use">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#model" class="md-nav__link">
+    <span class="md-ellipsis">Model</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#base" class="md-nav__link">
+    <span class="md-ellipsis">Base</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#view" class="md-nav__link">
+    <span class="md-ellipsis">View</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dialog" class="md-nav__link">
+    <span class="md-ellipsis">Dialog</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#widget" class="md-nav__link">
+    <span class="md-ellipsis">Widget</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#action" class="md-nav__link">
+    <span class="md-ellipsis">Action</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ausfuhrung-entwicklung-und-erstellung" class="md-nav__link">
+    <span class="md-ellipsis">Run, development and build</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Run, development and build">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ausfuhrung" class="md-nav__link">
+    <span class="md-ellipsis">Run</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entwicklung" class="md-nav__link">
+    <span class="md-ellipsis">Development</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#erstellung" class="md-nav__link">
+    <span class="md-ellipsis">Build</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="features.html" class="md-nav__link">
+        <span class="md-ellipsis">Features</span>
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sample.html" class="md-nav__link">
+        <span class="md-ellipsis">Sample</span>
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="documentation.html" class="md-nav__link">
+        <span class="md-ellipsis">Documentation</span>
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">Installation</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vorbereitung" class="md-nav__link">
+    <span class="md-ellipsis">Preparation</span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verwendung" class="md-nav__link">
+    <span class="md-ellipsis">Use</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Use">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#model" class="md-nav__link">
+    <span class="md-ellipsis">Model</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#base" class="md-nav__link">
+    <span class="md-ellipsis">Base</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#view" class="md-nav__link">
+    <span class="md-ellipsis">View</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dialog" class="md-nav__link">
+    <span class="md-ellipsis">Dialog</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#widget" class="md-nav__link">
+    <span class="md-ellipsis">Widget</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#action" class="md-nav__link">
+    <span class="md-ellipsis">Action</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ausfuhrung-entwicklung-und-erstellung" class="md-nav__link">
+    <span class="md-ellipsis">Run, development and build</span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Run, development and build">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ausfuhrung" class="md-nav__link">
+    <span class="md-ellipsis">Run</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entwicklung" class="md-nav__link">
+    <span class="md-ellipsis">Development</span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#erstellung" class="md-nav__link">
+    <span class="md-ellipsis">Build</span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset" role="main">
+                  
+
+
+<h1 id="erste-schritte">Getting started<a class="headerlink" href="#erste-schritte" title="Link to this heading">¶</a></h1>
+<p>To illustrate the fast GUI dashboard build with decore Base in Python, we will now create a small UI in the form of a web application together.</p>
+<p>The decorated functions are used, first and foremost, to build meta information for later evaluation in the front end of the application and are nothing to be afraid of.</p>
+<p><em>It’s really simple, please follow me!</em></p>
+<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Link to this heading">¶</a></h2>
+<p>First build an empty Python project in your desired directory.</p>
+<p>To install decore Base, we run the following command in the root directory of the project. Let’s use the terminal in vscode.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="n">pip</span> <span class="n">install</span> <span class="n">decore</span><span class="o">-</span><span class="n">Base</span>
+</code></pre></div>
+</div>
+<p>This requires an activated Python environment! To learn more about this, visit <a class="reference external" href="https://code.visualstudio.com/docs/python/environments">Python environments in VS Code</a>.</p>
+<h2 id="vorbereitung">Preparation<a class="headerlink" href="#vorbereitung" title="Link to this heading">¶</a></h2>
+<div class="note admonition">
+<p class="admonition-title">Grade</p>
+<p>To get all the necessary paths and settings for our future Python GUI dashboard application, we still need to do the preparation.</p>
+</div>
+<p>Build a new file with the name <strong>app.py</strong> in the root directory of the project.</p>
+<p>To use decore, we first import it into the <strong>app.py</strong> module.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">decore_base</span> <span class="kn">import</span> <span class="n">decore</span>
+</code></pre></div>
+</div>
+<p>Then we use the <code class="docutils literal notranslate"><span class="pre">prepare</span></code> command to create all the necessary auxiliary files in the root directory of the project.</p>
+<p>To actually prepare the application, we execute the command <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">app.py</span> <span class="pre">--prepare</span></code> in the terminal. The path must be in the root directory of the project, i.e. where the <strong>app.py</strong> is located.</p>
+<h2 id="verwendung">Use<a class="headerlink" href="#verwendung" title="Link to this heading">¶</a></h2>
+<p>So that the Python interpreter can process the future base classes, we add the following import.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">bases</span> <span class="kn">import</span> <span class="o">*</span>
+</code></pre></div>
+</div>
+<p>Normally, a Python main module contains a query that checks whether it is the main module so that we can then call the <code class="docutils literal notranslate"><span class="pre">main</span></code> function.</p>
+<p>Next, we build a line <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">__name__</span> <span class="pre">==</span> <span class="pre">'__main__':</span></code> in the <strong>app.py</strong> file.</p>
+<p>To build a new “decore” application instance, we use a <code class="docutils literal notranslate"><span class="pre">main()</span></code> function decorated with <code class="docutils literal notranslate"><span class="pre">&#64;decore.app</span></code> in the <strong>app.py</strong> file, just below the line: <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">__name__</span> <span class="pre">==</span> <span class="pre">'__main__':</span></code>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">decore_base</span> <span class="kn">import</span> <span class="n">decore</span>
+<span class="kn">from</span> <span class="nn">bases</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="nd">@decore</span><span class="o">.</span><span class="n">app</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;My App&#39;</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+        <span class="k">pass</span>
+</code></pre></div>
+</div>
+<h3 id="model">Model<a class="headerlink" href="#model" title="Link to this heading">¶</a></h3>
+<p>In a Model, we define the data fields that must later be assigned to a Base. It serves as a database interface to the database drivers such as SQLite, MySQL, PostgreSQL, etc.</p>
+<p>We now build the file first_model.py in the <strong>models</strong> directory and add the following code:</p>
+<div class="warning admonition">
+<p class="admonition-title">Warning</p>
+<p>It is not necessary to create a Model for each Base, but each Model to be used must have a Base, which must be imported via the file <strong>__init__.py</strong>. This is the only way to evaluate and display rellations between the models in the frontend.</p>
+</div>
+<div class="note admonition">
+<p class="admonition-title">Grade</p>
+<p>To avoid possible circular imports, we create the model classes in a separate <strong>models</strong> directory in our project root directory. The <strong>models</strong> directory was built using the <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">app.py</span> <span class="pre">--prepare</span></code> command executed previously.</p>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">decore_base.uniform.conform_model</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="k">class</span> <span class="nc">First_model</span><span class="p">(</span><span class="n">Conform_model</span><span class="p">):</span>
+   <span class="n">firstname</span> <span class="o">=</span> <span class="n">CharField</span><span class="p">(</span><span class="n">verbose_name</span><span class="o">=</span><span class="s1">&#39;First Name&#39;</span><span class="p">)</span>
+   <span class="n">lastname</span> <span class="o">=</span> <span class="n">CharField</span><span class="p">(</span><span class="n">verbose_name</span><span class="o">=</span><span class="s1">&#39;Last Name&#39;</span><span class="p">)</span>
+</code></pre></div>
+</div>
+<div class="note admonition">
+<p class="admonition-title">Grade</p>
+<p>In the example shown here, we import the Conform_model class from the <strong>uniform library</strong> and extend it with the first name and last name fields.</p>
+<p>The models in <strong>decore Base</strong> are based on the great Peewee ORM. To learn more about Peewee, visit <a class="reference external" href="http://docs.peewee-orm.com/en/latest/">Peewee ORM</a>.</p>
+</div>
+<div class="warning admonition">
+<p class="admonition-title">Warning</p>
+<p>When importing, please note that we import everything (*) from the conform_model namespace in order to obtain the field classes as well.</p>
+</div>
+<h3 id="base">Base<a class="headerlink" href="#base" title="Link to this heading">¶</a></h3>
+<p>The base classes serve the decore application as a carrier element for the view components, maintain the data model and are therefore also the data source for the evaluation in the front end of the dashboard.</p>
+<p>Now we need to create a new Python module containing a base class, for example: <strong>first_base.py</strong>, in the <strong>bases</strong> directory in our project root directory. The <strong>bases</strong> directory was created by the <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">app.py</span> <span class="pre">--prepare</span></code> command executed previously.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">decore_base</span> <span class="kn">import</span> <span class="n">decore</span>
+<span class="kn">from</span> <span class="nn">models.first_model</span> <span class="kn">import</span> <span class="n">First_model</span>
+
+<span class="nd">@decore</span><span class="o">.</span><span class="n">base</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;First Base&#39;</span><span class="p">,</span> <span class="n">icon</span><span class="o">=</span><span class="s1">&#39;mdi-home&#39;</span><span class="p">,</span> <span class="n">model</span><span class="o">=</span><span class="n">First_model</span><span class="p">)</span>
+<span class="k">class</span> <span class="nc">First_base</span><span class="p">:</span>
+   <span class="k">pass</span>
+</code></pre></div>
+</div>
+<div class="note admonition">
+<p class="admonition-title">Grade</p>
+<p>To use the previously built Model, we import it into the Base class and pass it to the <code class="docutils literal notranslate"><span class="pre">model</span></code> parameter.</p>
+</div>
+<div class="warning admonition">
+<p class="admonition-title">Warning</p>
+<p>In order for the Python interpreter to be able to process the base classes, we have to import them into the __init__.py file in the <strong>bases</strong> directory. The order of the individual imports also determines the order in <strong>decore Front</strong>.</p>
+<p>We edit the <strong>__init__.py</strong> file and insert the following code:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">.first_base</span> <span class="kn">import</span> <span class="n">First_base</span>
+</code></pre></div>
+</div>
+</div>
+<h3 id="view">View<a class="headerlink" href="#view" title="Link to this heading">¶</a></h3>
+<p>Views are used by the decore application to present the data records in the front end of the web application.</p>
+<p>With the View decorator, we can now create a View component and mount it under the previously created base class.</p>
+<p>We now edit the <strong>first_base.py</strong> file again and extend the code as follows:</p>
+<div class="highlight-python notranslate"><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">from</span> <span class="nn">decore_base</span> <span class="kn">import</span> <span class="n">decore</span>
+<span class="kn">from</span> <span class="nn">models.first_model</span> <span class="kn">import</span> <span class="n">First_model</span>
+
+<span class="nd">@decore</span><span class="o">.</span><span class="n">base</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;First Base&#39;</span><span class="p">,</span> <span class="n">icon</span><span class="o">=</span><span class="s1">&#39;mdi-home&#39;</span><span class="p">,</span> <span class="n">model</span><span class="o">=</span><span class="n">First_model</span><span class="p">)</span>
+<span class="k">class</span> <span class="nc">First_base</span><span class="p">:</span>
+<span class="hll">   <span class="nd">@decore</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;First View&#39;</span><span class="p">,</span> <span class="n">icon</span><span class="o">=</span><span class="s1">&#39;mdi-home&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;table&#39;</span><span class="p">,</span> <span class="n">fields</span><span class="o">=</span><span class="p">[</span><span class="n">First_model</span><span class="o">.</span><span class="n">firstname</span><span class="p">,</span> <span class="n">First_model</span><span class="o">.</span><span class="n">lastname</span><span class="p">])</span>
+</span><span class="hll">   <span class="k">def</span> <span class="nf">first_view</span><span class="p">():</span>
+</span><span class="hll">      <span class="k">pass</span>
+</span></code></pre></div></td></tr></table></div>
+</div>
+<h3 id="dialog">Dialog<a class="headerlink" href="#dialog" title="Link to this heading">¶</a></h3>
+<p>Dialogs are the supporting elements for widgets in the front end of the web application. They can be added to views but also to subordinate widgets and control the visibility and display style of child elements. Dialogs are also given control over the sending functions of the widgets.</p>
+<p>In our case, we build a dialog to create a new person with first name and last name.</p>
+<p>Here we go … the file <strong>first_base.py</strong> again and extend the code as follows:</p>
+<div class="highlight-python notranslate"><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">from</span> <span class="nn">decore_base</span> <span class="kn">import</span> <span class="n">decore</span>
+<span class="kn">from</span> <span class="nn">models.first_model</span> <span class="kn">import</span> <span class="n">First_model</span>
+
+<span class="nd">@decore</span><span class="o">.</span><span class="n">base</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;My First Base&#39;</span><span class="p">,</span> <span class="n">icon</span><span class="o">=</span><span class="s1">&#39;mdi-home&#39;</span><span class="p">,</span> <span class="n">model</span><span class="o">=</span><span class="n">First_model</span><span class="p">)</span>
+<span class="k">class</span> <span class="nc">First_base</span><span class="p">:</span>
+   <span class="nd">@decore</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Person&#39;</span><span class="p">,</span> <span class="n">icon</span><span class="o">=</span><span class="s1">&#39;mdi-account&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;table&#39;</span><span class="p">,</span> <span class="n">fields</span><span class="o">=</span><span class="p">[</span><span class="n">First_model</span><span class="o">.</span><span class="n">firstname</span><span class="p">,</span> <span class="n">First_model</span><span class="o">.</span><span class="n">lastname</span><span class="p">])</span>
+   <span class="k">def</span> <span class="nf">first_view</span><span class="p">():</span>
+<span class="hll">      <span class="nd">@decore</span><span class="o">.</span><span class="n">dialog</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Add Person&#39;</span><span class="p">,</span> <span class="n">icon</span><span class="o">=</span><span class="s1">&#39;mdi-plus&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;standard&#39;</span><span class="p">,</span> <span class="n">display</span><span class="o">=</span><span class="s1">&#39;drawer&#39;</span><span class="p">,</span> <span class="n">activator</span><span class="o">=</span><span class="s1">&#39;default-menu&#39;</span><span class="p">)</span>
+</span><span class="hll">      <span class="k">def</span> <span class="nf">first_dialog</span><span class="p">():</span>
+</span><span class="hll">         <span class="k">pass</span>
+</span></code></pre></div></td></tr></table></div>
+</div>
+<h3 id="widget">Widget<a class="headerlink" href="#widget" title="Link to this heading">¶</a></h3>
+<p>Widgets are components with which we can perform interactions with the individual data set. They can only be added to dialogs and are stackable.</p>
+<p>What we need now is an input form to enter the data for the new person.</p>
+<div class="highlight-python notranslate"><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">from</span> <span class="nn">decore_base</span> <span class="kn">import</span> <span class="n">decore</span>
+<span class="kn">from</span> <span class="nn">models.first_model</span> <span class="kn">import</span> <span class="n">First_model</span>
+
+<span class="nd">@decore</span><span class="o">.</span><span class="n">base</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;My First Base&#39;</span><span class="p">,</span> <span class="n">icon</span><span class="o">=</span><span class="s1">&#39;mdi-home&#39;</span><span class="p">,</span> <span class="n">model</span><span class="o">=</span><span class="n">First_model</span><span class="p">)</span>
+<span class="k">class</span> <span class="nc">First_base</span><span class="p">:</span>
+   <span class="nd">@decore</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Person&#39;</span><span class="p">,</span> <span class="n">icon</span><span class="o">=</span><span class="s1">&#39;mdi-account&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;table&#39;</span><span class="p">,</span> <span class="n">fields</span><span class="o">=</span><span class="p">[</span><span class="n">First_model</span><span class="o">.</span><span class="n">firstname</span><span class="p">,</span> <span class="n">First_model</span><span class="o">.</span><span class="n">lastname</span><span class="p">])</span>
+   <span class="k">def</span> <span class="nf">first_view</span><span class="p">():</span>
+      <span class="nd">@decore</span><span class="o">.</span><span class="n">dialog</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Add Person&#39;</span><span class="p">,</span> <span class="n">icon</span><span class="o">=</span><span class="s1">&#39;mdi-plus&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;standard&#39;</span><span class="p">,</span> <span class="n">display</span><span class="o">=</span><span class="s1">&#39;drawer&#39;</span><span class="p">,</span> <span class="n">activator</span><span class="o">=</span><span class="s1">&#39;default-menu&#39;</span><span class="p">)</span>
+      <span class="k">def</span> <span class="nf">first_dialog</span><span class="p">():</span>
+<span class="hll">         <span class="nd">@decore</span><span class="o">.</span><span class="n">widget</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Add Person Form&#39;</span><span class="p">,</span> <span class="n">icon</span><span class="o">=</span><span class="s1">&#39;mdi-account&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;form&#39;</span><span class="p">,</span> <span class="n">fields</span><span class="o">=</span><span class="p">[</span><span class="n">First_model</span><span class="o">.</span><span class="n">firstname</span><span class="p">,</span> <span class="n">First_model</span><span class="o">.</span><span class="n">lastname</span><span class="p">])</span>
+</span><span class="hll">         <span class="k">def</span> <span class="nf">first_widget</span><span class="p">():</span>
+</span><span class="hll">            <span class="k">pass</span>
+</span></code></pre></div></td></tr></table></div>
+</div>
+<h3 id="action">Action<a class="headerlink" href="#action" title="Link to this heading">¶</a></h3>
+<p>Actions are methods with which the frontend can communicate with <strong>decore Base</strong>. They can be added to views and widgets and are the only real class methods and are called directly in the Base.</p>
+<p>We now need an action to save the new person’s data and extend the code in <strong>first_base.py</strong> as follows:</p>
+<div class="highlight-python notranslate"><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span></pre></div></td><td class="code"><div><pre><span></span><code>   <span class="kn">from</span> <span class="nn">decore_base</span> <span class="kn">import</span> <span class="n">decore</span>
+   <span class="kn">from</span> <span class="nn">models.first_model</span> <span class="kn">import</span> <span class="n">First_model</span>
+
+   <span class="nd">@decore</span><span class="o">.</span><span class="n">base</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;My First Base&#39;</span><span class="p">,</span> <span class="n">icon</span><span class="o">=</span><span class="s1">&#39;mdi-home&#39;</span><span class="p">,</span> <span class="n">model</span><span class="o">=</span><span class="n">First_model</span><span class="p">)</span>
+   <span class="k">class</span> <span class="nc">First_base</span><span class="p">:</span>
+      <span class="nd">@decore</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Person&#39;</span><span class="p">,</span> <span class="n">icon</span><span class="o">=</span><span class="s1">&#39;mdi-account&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;table&#39;</span><span class="p">,</span> <span class="n">fields</span><span class="o">=</span><span class="p">[</span><span class="n">First_model</span><span class="o">.</span><span class="n">firstname</span><span class="p">,</span> <span class="n">First_model</span><span class="o">.</span><span class="n">lastname</span><span class="p">])</span>
+      <span class="k">def</span> <span class="nf">first_view</span><span class="p">():</span>
+         <span class="nd">@decore</span><span class="o">.</span><span class="n">dialog</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Add Person&#39;</span><span class="p">,</span> <span class="n">icon</span><span class="o">=</span><span class="s1">&#39;mdi-plus&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;standard&#39;</span><span class="p">,</span> <span class="n">display</span><span class="o">=</span><span class="s1">&#39;drawer&#39;</span><span class="p">,</span> <span class="n">activator</span><span class="o">=</span><span class="s1">&#39;default-menu&#39;</span><span class="p">)</span>
+         <span class="k">def</span> <span class="nf">first_dialog</span><span class="p">():</span>
+            <span class="nd">@decore</span><span class="o">.</span><span class="n">widget</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Add Person Form&#39;</span><span class="p">,</span> <span class="n">icon</span><span class="o">=</span><span class="s1">&#39;mdi-account&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;form&#39;</span><span class="p">,</span> <span class="n">fields</span><span class="o">=</span><span class="p">[</span><span class="n">First_model</span><span class="o">.</span><span class="n">firstname</span><span class="p">,</span> <span class="n">First_model</span><span class="o">.</span><span class="n">lastname</span><span class="p">])</span>
+            <span class="k">def</span> <span class="nf">first_widget</span><span class="p">():</span>
+<span class="hll">               <span class="nd">@decore</span><span class="o">.</span><span class="n">action</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Save Person&#39;</span><span class="p">,</span> <span class="n">icon</span><span class="o">=</span><span class="s1">&#39;mdi-content-save&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;submit&#39;</span><span class="p">)</span>
+</span><span class="hll">               <span class="k">def</span> <span class="nf">first_action</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+</span><span class="hll">                  <span class="n">item</span> <span class="o">=</span> <span class="n">First_model</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+</span><span class="hll">                  <span class="n">item</span><span class="o">.</span><span class="n">title</span> <span class="o">=</span> <span class="n">item</span><span class="o">.</span><span class="n">firstname</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="n">item</span><span class="o">.</span><span class="n">lastname</span>
+</span><span class="hll">                  <span class="k">if</span> <span class="n">item</span><span class="o">.</span><span class="n">save</span><span class="p">():</span>
+</span><span class="hll">                     <span class="k">return</span> <span class="kc">True</span><span class="p">,</span> <span class="n">item</span><span class="o">.</span><span class="n">title</span> <span class="o">+</span> <span class="s1">&#39; saved successfully&#39;</span>
+</span><span class="hll">                  <span class="k">else</span><span class="p">:</span>
+</span><span class="hll">                     <span class="k">return</span> <span class="kc">False</span><span class="p">,</span> <span class="s1">&#39;Error while saving &#39;</span> <span class="o">+</span> <span class="n">item</span><span class="o">.</span><span class="n">title</span>
+</span></code></pre></div></td></tr></table></div>
+</div>
+<div class="note admonition">
+<p class="admonition-title">Grade</p>
+<p>To build a dataset with decore Base, we need to create an instance of the Model. In our case <strong>First_model</strong>. The instance is filled with the data from the form and then saved.</p>
+<p>The ID, in the form of a UUID in text format, is generated automatically and does not need to be specified separately.</p>
+</div>
+<div class="warning admonition">
+<p class="admonition-title">Warning</p>
+<p>The <strong>title</strong> field must be used each time a data record is created. Otherwise the element will not pass validation. It should also always be unique, i.e. there should be no identical titles in the database.</p>
+</div>
+<h2 id="ausfuhrung-entwicklung-und-erstellung">Run, development and build<a class="headerlink" href="#ausfuhrung-entwicklung-und-erstellung" title="Link to this heading">¶</a></h2>
+<h3 id="ausfuhrung">Run<a class="headerlink" href="#ausfuhrung" title="Link to this heading">¶</a></h3>
+<p>To start your application, run <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">app.py</span></code> in your project root directory. Use the terminal in vscode.</p>
+<p>Open the browser and enter <code class="docutils literal notranslate"><span class="pre">http://localhost:5555</span></code>.</p>
+<h3 id="entwicklung">Development<a class="headerlink" href="#entwicklung" title="Link to this heading">¶</a></h3>
+<p>To develop your application, use your debugger with the profile <code class="docutils literal notranslate"><span class="pre">[dev]</span> <span class="pre">decore</span> <span class="pre">base</span> <span class="pre">development</span></code> in vscode.</p>
+<p>Open the browser and enter <code class="docutils literal notranslate"><span class="pre">http://localhost:5555</span></code>.</p>
+<h3 id="erstellung">Build<a class="headerlink" href="#erstellung" title="Link to this heading">¶</a></h3>
+<p>To build your application, run <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">app.py</span> <span class="pre">--build</span></code> in your project root directory. Use the terminal in vscode.</p>
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="index.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Unleash your ideas" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Unleash your ideas
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="features.html" class="md-footer__link md-footer__link--next" aria-label="Next: Features" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Features
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  
+  
+  <div class="md-footer-meta md-typeset">
+    
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-footer-copyright__highlight">
+        &#169; Copyright 2023, Jean Rohark.
+        
+    </div>
+  
+    Created using
+    <a href="https://www.sphinx-doc.org/" target="_blank" rel="noopener">Sphinx</a>
+    7.2.6.
+     and
+    <a href="https://github.com/jbms/sphinx-immaterial/" target="_blank" rel="noopener">Sphinx-Immaterial</a>
+  
+</div>
+      
+    </div>
+    
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": ".", "features": [], "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+      
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/sphinx_immaterial_theme.f9d9eeeb247ace16c.min.js?v=8ec58cb5"></script>
+    
+  </body>
+</html>

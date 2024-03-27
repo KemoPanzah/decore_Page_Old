@@ -7,7 +7,7 @@ entries = {
     'EN-US': {
         'decore Base | UI fastly': 'decore Base | UI fastly',
         'Basis': 'Base',
-        'Erste Schritte': 'Get started',
+        'Erste Schritte': 'Getting started',
         'Gui': 'gui',
         'Modell': 'Model',
         'schnell': 'fast',
