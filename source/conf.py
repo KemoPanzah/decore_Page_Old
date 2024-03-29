@@ -20,11 +20,11 @@ def get_language(app):
 
 def set_hero_content(app):
     if app.config.language == 'de':
-        hero_content = "Schnell erstellte Gui-Dashboard-Anwendungen mit Python, die deinen Ideen mehr Freiraum geben."
+        hero_content = 'Schnell erstellte Gui-Dashboard-Anwendungen mit Python, die deinen Ideen mehr Freiraum geben.'
     elif app.config.language == 'en':
-        hero_content = "Quickly created Gui dashboard applications with Python that give your ideas more freedom."
+        hero_content = 'Quickly created Gui dashboard applications with Python that give your ideas more freedom.'
     else:
-        hero_content = ""
+        hero_content = ''
 
     app.config.rst_epilog = '.. |hero_content| replace:: %s' % hero_content
     
@@ -77,7 +77,7 @@ extensions = ['sphinx.ext.autodoc', 'sphinx.ext.ifconfig', 'sphinx_sitemap',
               'sphinxcontrib.mermaid', 'sphinxcontrib.jquery', 'sphinx_immaterial']
 
 locale_dirs = ['_locale/']
-gettext_compact = "docs"
+gettext_compact = 'docs'
 
 language = 'de'
 
@@ -97,8 +97,8 @@ html_title = 'decore Base | UI fastly'
 # HTML options
 html_baseurl = 'https://www.decore.dev/'
 html_directory_suffix = '/'
-html_logo = "_static/logo.png"
-html_favicon = "_static/favicon.ico"
+html_logo = '_static/logo.png'
+html_favicon = '_static/favicon.ico'
 html_show_sourcelink = False
 
 # Paths
@@ -109,53 +109,55 @@ html_extra_path = ['_extra']
 html_theme = 'sphinx_immaterial'
 
 html_theme_options = {
-    "languages": [
+    'repo_url': 'https://github.com/KemoPanzah/decore_Base/',
+    'repo_name': 'decore Base',
+    'languages': [
         {
-            "name": "German",
-            "link": "/de",  # points to ./de/ subdirectory
-            "lang": "de",
+            'name': 'German',
+            'link': '/de',  # points to ./de/ subdirectory
+            'lang': 'de',
         },
         {
-            "name": "English",
-            "link": "/en",  # points to ./en/ subdirectory
-            "lang": "en",
+            'name': 'English',
+            'link': '/en',  # points to ./en/ subdirectory
+            'lang': 'en',
         },
     ],
-    "palette": [
+    'palette': [
         {
-            "media": "(prefers-color-scheme: light)",
-            "scheme": "default",
-            "accent": "light-blue",
-            "toggle": {
-                "icon": "material/lightbulb-outline",
-                "name": "Switch to dark mode",
+            'media': '(prefers-color-scheme: light)',
+            'scheme': 'default',
+            'accent': 'light-blue',
+            'toggle': {
+                'icon': 'material/lightbulb-outline',
+                'name': 'Switch to dark mode',
             },
         },
         {
-            "media": "(prefers-color-scheme: dark)",
-            "scheme": "slate",
-            "accent": "lime",
-            "toggle": {
-                "icon": "material/lightbulb",
-                "name": "Switch to light mode",
+            'media': '(prefers-color-scheme: dark)',
+            'scheme': 'slate',
+            'accent': 'lime',
+            'toggle': {
+                'icon': 'material/lightbulb',
+                'name': 'Switch to light mode',
             },
         },
     ],
-    "features": [
-        # "navigation.expand",
-        # "navigation.tabs",
-        # "toc.integrate",
-        # "navigation.sections",
-        # "navigation.instant",
-        # "header.autohide",
-        # "navigation.top",
-        # "navigation.tracking",
-        # "search.highlight",
-        # "search.share",
-        # "toc.follow",
-        # "toc.sticky",
-        # "content.tabs.link",
-        # "announce.dismiss",
+    'features': [
+        # 'navigation.expand',
+        # 'navigation.tabs',
+        # 'toc.integrate',
+        # 'navigation.sections',
+        # 'navigation.instant',
+        # 'header.autohide',
+        # 'navigation.top',
+        # 'navigation.tracking',
+        # 'search.highlight',
+        # 'search.share',
+        # 'toc.follow',
+        # 'toc.sticky',
+        # 'content.tabs.link',
+        # 'announce.dismiss',
     ],
 }
 
@@ -165,7 +167,7 @@ html_css_files = [
 ]
 
 sitemap_filename = 'sitemap.xml'
-sitemap_url_scheme = "{link}"
+sitemap_url_scheme = '{link}'
 
 # html5_polyglot_doctype = True
 # html5_extra_attrs = {
