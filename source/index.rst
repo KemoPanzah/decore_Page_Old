@@ -19,6 +19,22 @@ Entwicklungsphasen & Vorteile
 -----------------------------
 decore Base wurde entworfen um den Entwicklungsprozess deiner Anwendung in seinen verschiedenen Phasen optimal zu unterstützen.
 
+.. grid::
+
+   .. grid-item:: 
+      :class: de-grid-item
+      :columns: auto
+
+      .. svg-container:: _static/images/livecycle/2.svg
+         :height: 100px
+
+   .. grid-item::
+      :class: de-grid-item
+      
+      Um deinen Ideen maximale Freiheit zu geben, ist decore Base im ersten Schritt praktisch sofort einsatzbereit. Du musst dich nicht um die GUI, Datenbankfunktionalitäten, Sicherheitsaspekte oder viele andere Details kümmern. Feinere Anpassungen kannst du im nächsten Schritt entsprechend deinen Anforderungen vornehmen. Konzentriere dich vollständig auf deine Ideen und die Umsetzung deiner Algorithmen.
+
+
+
 .. md-tab-set::
    :class: custom-tab-set-style
    :name: ref_this_tab_set

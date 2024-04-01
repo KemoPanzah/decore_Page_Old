@@ -47,6 +47,7 @@ def copy_root_files(app, exception):
 
 def setup(app):
     app.config['localizer'] = Localizer(app.config.language)
+    app.add_directive('svg-container', Svg_container)
     app.add_directive('html-modal-image', Html_modal_image)
     app.add_directive('page-3d-image', Page_3d_image)
     app.add_directive('html-inpage-nav', Html_inpage_nav)
@@ -73,7 +74,7 @@ author = 'Jean Rohark'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ['sphinx.ext.autodoc', 'sphinx.ext.ifconfig', 'sphinx_sitemap',
+extensions = ['sphinx.ext.autodoc', 'sphinx.ext.ifconfig', 'sphinx_sitemap', 'sphinx_design',
               'sphinxcontrib.mermaid', 'sphinxcontrib.jquery', 'sphinx_immaterial']
 
 locale_dirs = ['_locale/']
