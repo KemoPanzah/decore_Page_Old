@@ -65,7 +65,7 @@ Um eine neue "decore" Anwendungsinstanz zu erstellen, benutzen wir eine mit ``@d
 
 Model
 ~~~~~
-In einem Modell legen wir die Datenfelder fest, die später einer Basis zugeordnet werden muss. Es dient als Datenbankschnittstelle zu den Datenbanktreibern wie SQLite, MySQL, PostgreSQL, etc.
+In einem Modell legen wir die Datenfelder fest, in einer Datenbanktabelle repräsentiert werden. Es dient als Schnittstelle zu den Datenbanktreibern wie SQLite, MySQL, PostgreSQL, etc.
 
 Wir erstellen nun die Datei first_model.py im Verzeichnis **models** und fügen den folgenden Code ein:
 

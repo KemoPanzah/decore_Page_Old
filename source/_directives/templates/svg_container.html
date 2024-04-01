@@ -1,8 +1,14 @@
-<div class="svg-container {{ p_class }}">{{ p_svg | safe }}</div>
+<div class="svg-container{{ ' ' + p_class if p_class else '' }}">{{ p_svg | safe }}</div>
 
 <style>
     .svg-container {
-        position: relative;
-        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .svg-container svg{
+        height: {{ p_height if p_height else 'auto' }};
+        width: auto;
     }
 </style>
