@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: decore Base\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-27 19:58+0100\n"
+"POT-Creation-Date: 2024-10-02 12:48+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -19,6 +19,299 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.12.1\n"
+
+#: ../blog.rst:2 ../index.rst:153
+msgid "Blog"
+msgstr "Blog"
+
+#: ../blog.rst:4
+msgid ""
+"Hier im Blogbereich werden verschiedene Beiträge zu allgemeinen Themen zu "
+"finden sein, die sich nicht primär auf die Entwicklung mit decore Base "
+"beziehen. Meistens werden es aber Lösungen sein, die mich inspirieren, "
+"Anwendungsfälle mit decore in die Praxis umzusetzen."
+msgstr ""
+"Here in the blog area you will find various posts on general topics that are"
+" not primarily related to development with decore Base. Mostly, however, "
+"they will be solutions that inspire me to put use cases into practice with "
+"decore."
+
+#: ../blog.rst:7
+msgid "Themen"
+msgstr "Topics"
+
+#: ../blog/deploy_autodesk_software_powershell.rst:7
+msgid ""
+"Verteilung von Autodesk-Software mit ODIS-Installer und PowerShell unter "
+"Vermeidung des Double-Hop-Problems"
+msgstr ""
+"Distribution of Autodesk software with ODIS installer and PowerShell "
+"avoiding the double-hop problem"
+
+#: ../blog/deploy_autodesk_software_powershell.rst:9
+msgid ""
+"Seitdem Autodesk sein Deployment-System auf den ODIS-Installer umgestellt "
+"hat, laufen alle Verteilungen, die unbeaufsichtigt über den SYSTEM-Account "
+"ausgerollt werden, ohne Erfolgscode endlos weiter."
+msgstr ""
+"Since Autodesk switched its deployment system to the ODIS installer, all "
+"deployments that are rolled out unattended via the SYSTEM account continue "
+"to run endlessly without success code."
+
+#: ../blog/deploy_autodesk_software_powershell.rst:11
+msgid "Die genaue Fehlermeldung im ODIS-Log lautet:"
+msgstr "The exact error message in the ODIS log is:"
+
+#: ../blog/deploy_autodesk_software_powershell.rst:17
+msgid ""
+"Nach einer Weile scheint der Installer-Dienst auch beendet zu werden, sendet"
+" aber keinen Exit-Code mehr."
+msgstr ""
+"After a while, the installer service also appears to be terminated, but no "
+"longer sends an exit code."
+
+#: ../blog/deploy_autodesk_software_powershell.rst:19
+msgid ""
+"Ich habe viele Deployment-Suiten ausprobiert, aber das Resultat ist immer "
+"dasselbe, wenn der SYSTEM-Account zum Einsatz kommt."
+msgstr ""
+"I have tried many deployment suites, but the result is always the same when "
+"the SYSTEM account is used."
+
+#: ../blog/deploy_autodesk_software_powershell.rst:21
+msgid ""
+"Um das Problem vorübergehend zu lösen, bis Autodesk das Problem erkennt und "
+"behebt, habe ich nun Lösungsansätze entwickelt, die mir hier bei der Arbeit "
+"Abhilfe verschaffen."
+msgstr ""
+"To solve the problem temporarily until Autodesk recognizes and fixes the "
+"problem, I have now developed solutions that help me here at work."
+
+#: ../blog/deploy_autodesk_software_powershell.rst:23
+msgid ""
+"Mein geplanter Ansatz war, die Verteilung über PowerShell zu realisieren, "
+"aber dabei stieß ich erneut auf eine weitere Hürde, die die Kerberos-"
+"Authentifizierung mit sich bringt: das sogenannte Double-Hop-Problem, da "
+"meine Softwarepakete in CIFS-Freigaben lagern."
+msgstr ""
+"My planned approach was to implement the distribution via PowerShell, but in"
+" doing so I again encountered another hurdle that Kerberos authentication "
+"brings with it: the so-called double-hop problem, since my software packages"
+" are stored in CIFS shares."
+
+#: ../blog/deploy_autodesk_software_powershell.rst:25
+msgid ""
+"Kerberos lässt es nicht zu, dass nach einer Authentifizierung auf einem "
+"Remote-PC eine weitere Authentifizierung über diesen Endpunkt zu anderen "
+"entfernten Zielen durchgeführt wird. Es gibt also keinen zweiten Hop. Um das"
+" Problem zu umgehen, gibt es wenige, aber komplizierte Wege oder einen, bei "
+"dem jetzt alle sagen werden: \"Oh mein Gott, tu das nicht\", aber ich hau es"
+" einfach mal raus."
+msgstr ""
+"Kerberos does not allow further authentication to be carried out via this "
+"endpoint to other remote destinations after authentication on a remote PC. "
+"So there is no second hop. To get around the problem, there are few but "
+"complicated ways or one that everyone will now say, \"Oh my God, don't do "
+"that,\" but I'll just throw it out there."
+
+#: ../blog/deploy_autodesk_software_powershell.rst:27
+msgid ""
+"Die Lösung ist, CredSSP nur temporär als Punkt-zu-Punkt-Verbindung zu nutzen"
+" und nach dem Deployment wieder zu entschärfen. Es sollte unter keinen "
+"Umständen unternehmensweit erlaubt werden."
+msgstr ""
+"The solution is to use CredSSP only temporarily as a point-to-point "
+"connection and to deactivate it again after deployment. Under no "
+"circumstances should it be allowed company-wide."
+
+#: ../blog/deploy_autodesk_software_powershell.rst:29
+#: ../blog/deploy_autodesk_software_powershell.rst:43
+msgid "Important"
+msgstr "Important"
+
+#: ../blog/deploy_autodesk_software_powershell.rst:31
+msgid ""
+"CredSSP hat keinen Single-Hop-Zwang. Authentifizierungen können in einer "
+"CredSSP-Sitzung weiterverwendet werden. Sollte das unternehmensweit erlaubt "
+"werden, ist das Tor zur Hölle quasi offen. Schadsoftware, die eventuell "
+"sogar die Verteilung korrumpiert hat, könnte so vom Endpunkt aus auch "
+"beliebig auf weiteren Systemen Schaden anrichten."
+msgstr ""
+"CredSSP has no single-hop constraint. Authentications can continue to be "
+"used in a CredSSP session. If this is allowed company-wide, the gateway to "
+"hell is virtually open. Malware, which may even have corrupted the "
+"distribution, could thus cause damage from the endpoint to other systems at "
+"will."
+
+#: ../blog/deploy_autodesk_software_powershell.rst:33
+msgid "Hier nun das Skript für alle, die vor dem selben Problem stehen."
+msgstr "Here is the script for all those who are facing the same problem."
+
+#: ../blog/deploy_autodesk_software_powershell.rst:35
+msgid ""
+"Das hier beschriebene Skript ist bewusst flach gehalten, um es verständlich "
+"zu machen und den weiteren Ausbau durch Euch so einfach wie möglich zu "
+"gestalten."
+msgstr ""
+"The script described here is deliberately kept flat to make it easy to "
+"understand and to make further expansion by you as simple as possible."
+
+#: ../blog/deploy_autodesk_software_powershell.rst:37 ../features.rst:5
+#: ../index.rst:13 ../index.rst:142 ../start.rst:27 ../start.rst:75
+#: ../start.rst:87 ../start.rst:111 ../start.rst:220
+msgid "Note"
+msgstr "Grade"
+
+#: ../blog/deploy_autodesk_software_powershell.rst:39
+msgid ""
+"Bitte beachten Sie, dass in diesem Beispiel CredSSP nur temporär verwendet "
+"wird und nach dem Deployment wieder deaktiviert wird. Zudem wird "
+"ausschließlich der angegebene Remote-Computer delegiert und nicht das "
+"gesamte Netzwerk."
+msgstr ""
+"Please note that CredSSP is only used temporarily in this example and is "
+"deactivated again after deployment. In addition, only the specified remote "
+"computer is delegated and not the entire network."
+
+#: ../blog/deploy_autodesk_software_powershell.rst:41
+msgid ""
+"Nach gründlicher Validierung hat sich dieser Ansatz als sicherer und "
+"einfacher Weg erwiesen, um das gewünschte Ziel zu erreichen."
+msgstr ""
+"After thorough validation, this approach has proven to be a safe and simple "
+"way to achieve the desired goal."
+
+#: ../blog/deploy_autodesk_software_powershell.rst:45
+msgid ""
+"Dieses Skript muss mit administrativen Rechten ausgeführt werden, um die "
+"CredSSP-Authentifizierung zu aktivieren und zu deaktivieren."
+msgstr ""
+"This script must be run with administrative rights to enable and disable "
+"CredSSP authentication."
+
+#: ../blog/deploy_autodesk_software_powershell.rst:109
+msgid "Erklären wir nun die einzelnen Schritte des Skripts:"
+msgstr "Let us now explain the individual steps of the script:"
+
+#: ../blog/deploy_autodesk_software_powershell.rst:122
+msgid ""
+"Das Skript kann entweder mit Parametern aufgerufen werden, oder Sie tragen "
+"Ihre spezifischen Werte direkt ein. Die notwendigen Informationen für den "
+"Installer und die Argumente finden Sie nach der Image-Erstellung im "
+"entsprechenden Installations-Skript. Ein typischer Name für eine Revit-"
+"Installation könnte beispielsweise `Install Autodesk Revit 2024.bat` sein."
+msgstr ""
+"The script can either be called with parameters or you can enter your "
+"specific values directly. The necessary information for the installer and "
+"the arguments can be found in the corresponding installation script after "
+"the image has been built. A typical name for a Revit installation could be "
+"'Install Autodesk Revit 2024.bat', for example."
+
+#: ../blog/deploy_autodesk_software_powershell.rst:124
+msgid ""
+"Die Parameter für die Silent-Installation und Deinstallation sind ebenfalls "
+"dort hinterlegt. Diese Parameter ermöglichen eine unbeaufsichtigte "
+"Installation bzw. Deinstallation der Software, was besonders in großen IT-"
+"Umgebungen von Vorteil ist."
+msgstr ""
+"The parameters for silent installation and uninstallation are also stored "
+"there. These parameters enable unattended installation and uninstallation of"
+" the software, which is particularly advantageous in large IT environments."
+
+#: ../blog/deploy_autodesk_software_powershell.rst:126
+msgid ""
+"Für weitere Details und eine ausführliche Anleitung zur Bereitstellung von "
+"Autodesk-Software, besuchen Sie bitte den folgenden Artikel:"
+msgstr ""
+"For more details and a detailed guide to deploying Autodesk software, please"
+" visit the following article:"
+
+#: ../blog/deploy_autodesk_software_powershell.rst:128
+#: ../blog/deploy_autodesk_software_powershell.rst:205
+msgid ""
+"https://www.autodesk.com/support/download-install/admins/account-"
+"deploy/deploy-from-autodesk-account"
+msgstr ""
+"https://www.autodesk.com/support/download-install/admins/account-"
+"deploy/deploy-from-autodesk-account"
+
+#: ../blog/deploy_autodesk_software_powershell.rst:135
+msgid ""
+"Um eine PowerShell-Sitzung unter Verwendung von CredSSP zu starten, "
+"benötigen wir die Anmeldeinformationen eines Benutzers mit den "
+"erforderlichen Rechten zur Durchführung von Installationen. In den meisten "
+"Fällen handelt es sich dabei um den Domain-Admin. Ein Dialogfeld wird "
+"angezeigt, in dem Sie die Anmeldeinformationen eingeben können."
+msgstr ""
+"To start a PowerShell session using CredSSP, we need the credentials of a "
+"user with the necessary rights to perform installations. In most cases, this"
+" is the domain admin. A dialog box is displayed in which you can enter the "
+"credentials."
+
+#: ../blog/deploy_autodesk_software_powershell.rst:148
+msgid ""
+"Hier wird CredSSP sowohl auf dem Client als auch auf dem Server aktiviert. "
+"Es ist hilfreich, die Begriffe \"Verteiler\" (Client) und \"Empfänger\" "
+"(Server) zu verwenden, um die Rollen klarer zu definieren. Der Try-Block "
+"umfasst alle potenziell fehleranfälligen Aktionen und kann nach Belieben "
+"angepasst werden. Für den Anfang ist diese Struktur einfach und robust."
+msgstr ""
+"Here CredSSP is activated on both the client and the server. It is helpful "
+"to use the terms \"distributor\" (client) and \"recipient\" (server) to "
+"define the roles more clearly. The try block includes all potentially error-"
+"prone actions and can be customized as desired. For starters, this structure"
+" is simple and robust."
+
+#: ../blog/deploy_autodesk_software_powershell.rst:155
+msgid ""
+"Hier wird eine neue PowerShell-Sitzung mit CredSSP-Authentifizierung "
+"erstellt."
+msgstr "A new PowerShell session with CredSSP authentication is built here."
+
+#: ../blog/deploy_autodesk_software_powershell.rst:180
+msgid ""
+"Hier wird das Skript auf dem Remote-Computer ausgeführt. Der Name, der "
+"Installer und die Argumente werden als Parameter übergeben. An dieser Stelle"
+" endet der Try-Block."
+msgstr ""
+"Here the script is run on the remote computer. The name, the installer and "
+"the arguments are passed as parameters. The try block ends at this point."
+
+#: ../blog/deploy_autodesk_software_powershell.rst:199
+msgid ""
+"Im Finally-Block wird die PowerShell-Sitzung geschlossen und CredSSP auf dem"
+" Server und Client deaktiviert. Der Finally-Block wird immer ausgeführt, "
+"unabhängig davon, ob der Try-Block erfolgreich war oder nicht. Bitte "
+"beachten Sie, dass das Abfangen von Fehlern auch über einen möglichen "
+"Exception-Block erfolgen kann. Dies überlasse ich dem findigen Leser."
+msgstr ""
+"The Finally block closes the PowerShell session and deactivates CredSSP on "
+"the server and client. The Finally block is always run, regardless of "
+"whether the Try block was successful or not. Please note that errors can "
+"also be intercepted via a possible exception block. I leave this to the "
+"resourceful reader."
+
+#: ../blog/deploy_autodesk_software_powershell.rst:201
+msgid ""
+"Dieses Skript dient mir nun selbst als Grundlage für Erweiterungen. Ich "
+"werde nun daran arbeiten, ein übergeordnetes Skript zu entwickeln, um die "
+"Installationen in großen Mengen zu steuern und zu überwachen."
+msgstr ""
+"This script now serves as the basis for my own extensions. I will now work "
+"on developing a higher-level script to control and monitor the installations"
+" in large quantities."
+
+#: ../blog/deploy_autodesk_software_powershell.rst:203
+msgid "**Quellangaben**"
+msgstr "**Source information**"
+
+#: ../blog/deploy_autodesk_software_powershell.rst:206
+msgid ""
+"https://learn.microsoft.com/en-us/powershell/scripting/security/remoting/ps-"
+"remoting-second-hop?view=powershell-7.4"
+msgstr ""
+"https://learn.microsoft.com/en-us/powershell/scripting/security/remoting/ps-"
+"remoting-second-hop?view=powershell-7.4"
 
 #: ../credits.rst:4
 msgid "Danksagung"
@@ -107,342 +400,19 @@ msgstr ""
 msgid "Feature Icons | **freepik** - https://www.freepik.com"
 msgstr "Feature Icons | **freepik** - https://www.freepik.com"
 
-#: ../documentation.rst:2 ../index.rst:66
+#: ../documentation.rst:2 ../documentation_work.rst:2 ../index.rst:153
 msgid "Dokumentation"
 msgstr "Documentation"
 
-#: ../documentation.rst:3
+#: ../documentation.rst:4
 msgid ""
-"Um mit decore Base eine lauffähige GUI-Dashboard-Anwendung zu erstellen, "
-"sind vergleichsweise wenige Schritte notwendig. Im Wesentlichen besteht der "
-"Aufbau aus der Definition der Meta-Instanzen und der Definition des "
-"Datenmodells. Die Metadaten werden vom Interpreter durch Einlesen von "
-"dekorierten Funktionen zusammengestellt und als Instanzen im Pool "
-"gespeichert."
+"Die Dokumentation ist noch im Aufbau und wird derzeit erstellt. Ich werde "
+"vorerst praktische Beispiele erarbeiten, um die Nutzung ordnungsgemäß zu "
+"validieren. Bitte haben Sie noch etwas Geduld."
 msgstr ""
-"To create an executable GUI dashboard application with decore Base, "
-"comparatively few steps are necessary. Essentially, the structure consists "
-"of defining the meta instances and defining the data model. The metadata is "
-"compiled by the interpreter by reading in decorated functions and stored as "
-"instances in the pool."
-
-#: ../documentation.rst:14
-msgid "Beschreibung der Meta-Instanzen"
-msgstr "Description of the meta instances"
-
-#: ../documentation.rst:15
-msgid ""
-"Meta-Instanzen entahlten die benötigten Typen und Attribute für die "
-"Erstellung der GUI-Elemente. Die Meta-Instanzen werden in der Regel durch "
-"dekorierte Funktionen erstellt."
-msgstr ""
-"Meta instances contain the types and attributes required to Build the GUI "
-"elements. The meta instances are usually built using decorated functions."
-
-#: ../documentation.rst:18
-msgid "App"
-msgstr "App"
-
-#: ../documentation.rst:19
-msgid ""
-"Die Application-Instanz liefert die Metadaten für den Anwendung. Sie ist die"
-" Wurzel für alles kommende und nimmt nur Basen auf. Die App-Instanz wird "
-"durch den \"Decorator\" :meth:`app() "
-"<decore_Base.decore_base.decore.Decore.app>` erstellt."
-msgstr ""
-"The application instance provides the metadata for the application. It is "
-"the root for everything to come and only accepts Bases. The app instance is "
-"built by the \"Decorator\" :meth:`app() "
-"<decore_Base.decore_base.decore.Decore.app>`."
-
-#: ../documentation.rst:22 ../start.rst:96
-msgid "Base"
-msgstr "Base"
-
-#: ../documentation.rst:23
-msgid ""
-"Die Base-Instanz liefert die Metadaten für die Basis. Sie ist das "
-"Trägerelement für die Ansichten. Die Base-Instanz wird durch den "
-"\"Decorator\" :meth:`base() <decore_Base.decore_base.decore.Decore.base>` "
-"erstellt."
-msgstr ""
-"The Base instance provides the metadata for the Base. It is the carrier "
-"element for the Views. The base instance is built by the \"Decorator\" "
-":meth:`base() <decore_Base.decore_base.decore.Decore.base>`."
-
-#: ../documentation.rst:27 ../documentation.rst:35 ../documentation.rst:43
-#: ../documentation.rst:50 ../documentation.rst:57 ../documentation.rst:64
-msgid "**Darstellung im Frontend**"
-msgstr "**Display in the frontend**"
-
-#: ../documentation.rst:26
-msgid ""
-"Die Basis ist im Grunde die freie Fläche die für die Ansichten zur Verfügung"
-" steht."
-msgstr "The Base is basically the free area available for the Views."
-
-#: ../documentation.rst:27
-msgid ""
-"In der Navigation wird sie direkt unter Wurzel gelistet sobald sie mehr als "
-"eine Ansicht erhält."
-msgstr ""
-"It is listed directly under Root in the navigation as soon as it receives "
-"more than one View."
-
-#: ../documentation.rst:30 ../start.rst:124
-msgid "View"
-msgstr "View"
-
-#: ../documentation.rst:31
-msgid ""
-"Die View-Instanz liefert die Metadaten für die Ansicht. Ihr können Aktionen "
-"und Dialoge untergeordnet werden. Die View-Instanz wird durch den "
-"\"Decorator\" :meth:`view() <decore_Base.decore_base.decore.Decore.view>` "
-"erstellt."
-msgstr ""
-"The View instance provides the metadata for the View. Actions and dialogs "
-"can be subordinated to it. The view instance is built by the \"Decorator\" "
-":meth:`view() <decore_Base.decore_base.decore.Decore.view>`."
-
-#: ../documentation.rst:34
-msgid "Die Ansicht wird in der Navigation unter der Basis gelistet."
-msgstr "The View is listed in the navigation under Base."
-
-#: ../documentation.rst:35
-msgid "Die Ansicht wird im Ansichtsbereich der Basis gerendert."
-msgstr "The View is rendered in the Base view area."
-
-#: ../documentation.rst:38 ../start.rst:145
-msgid "Dialog"
-msgstr "Dialog"
-
-#: ../documentation.rst:39
-msgid ""
-"Die Dialog-Instanz liefert die Metadaten für den Dialog. Ihr können weitere "
-"Dialoge untergeordnet werden die dann in Tabs dargetellt werden. "
-"Hauptsächlich dienen diese aber zum tragen der Widgets. Die Dialog-Instanz "
-"wird durch den \"Decorator\" :meth:`dialog() "
-"<decore_Base.decore_base.decore.Decore.dialog>` erstellt."
-msgstr ""
-"The dialog instance provides the metadata for the dialog. Further dialogs "
-"can be subordinated to it, which are then displayed in tabs. However, these "
-"are mainly used to carry the widgets. The dialog instance is built by the "
-"\"Decorator\" :meth:`dialog() "
-"<decore_Base.decore_base.decore.Decore.dialog>`."
-
-#: ../documentation.rst:42
-msgid ""
-"Der Dialog kann in unterschiedlichen Display-Modis dargestellt werden. Zum "
-"Beispiel als Side-Drawer oder als modales Fenster."
-msgstr ""
-"The dialog can be shown in different display modes. For example, as a side-"
-"drawer or as a modal window."
-
-#: ../documentation.rst:43
-msgid ""
-"Dieser wird durch die mit dem Aktivator-Attribut bestimmten Postionen oder "
-"Ereignisse aufgerufen."
-msgstr ""
-"This is called up by the positions or events defined with the activator "
-"attribute."
-
-#: ../documentation.rst:46 ../start.rst:168
-msgid "Widget"
-msgstr "Widget"
-
-#: ../documentation.rst:47
-msgid ""
-"Die Widget-Instanz liefert die Metadaten für das Widget. Ihr können weitere "
-"Widgets untergeordnet werden die dann gestapelt dargetellt werden. Ein "
-"Widget wird für die Manipulation des Datensatzes oder Datensätze benötigt. "
-"Die Widget-Instanz wird durch den \"Decorator\" :meth:`widget() "
-"<decore_Base.decore_base.decore.Decore.widget>` erstellt."
-msgstr ""
-"The widget instance provides the metadata for the widget. Further widgets "
-"can be subordinated to it, which are then displayed in a stack. A widget is "
-"required for manipulating the data set or data sets. The widget instance is "
-"built by the \"Decorator\" :meth:`widget() "
-"<decore_Base.decore_base.decore.Decore.widget>`."
-
-#: ../documentation.rst:50
-msgid "Das Widget wird im Content-Bereich des Dialoges dargestellt."
-msgstr "The widget is displayed in the content area of the dialog."
-
-#: ../documentation.rst:53 ../start.rst:191
-msgid "Action"
-msgstr "Action"
-
-#: ../documentation.rst:54
-msgid ""
-"Die Action-Instanz liefert die Metadaten für die Aktion. Sie ist das "
-"Schlußlicht in der Prozesskette der Meta-Abarbeitung und dient zum "
-"übermitteln der Manipulationen und der Ausführung von Aktionen im Backend. "
-"Die Action-Instanz wird durch den \"Decorator\" :meth:`action() "
-"<decore_Base.decore_base.decore.Decore.action>` erstellt."
-msgstr ""
-"The action instance provides the metadata for the action. It is the last "
-"link in the meta processing chain and is used to transmit the manipulations "
-"and Run actions in the backend. The action instance is built by the "
-"\"Decorator\" :meth:`action() "
-"<decore_Base.decore_base.decore.Decore.action>`."
-
-#: ../documentation.rst:57
-msgid ""
-"Aktionen können durch das Aktivator-Attribut an unterschiedlichen Stellen im"
-" Frontend positioniert werden, haben aber keine tatächliche Darstellung "
-"sondern nur Schaltflächen- oder Ereignisgesteuerte Trigger."
-msgstr ""
-"Actions can be positioned in different places in the frontend using the "
-"activator attribute, but have no actual display, only button or event-"
-"controlled triggers."
-
-#: ../documentation.rst:60
-msgid "Function"
-msgstr "Function"
-
-#: ../documentation.rst:61
-msgid ""
-"Die Function-Instanz liefert die Metadaten für Funktionen die nach dem Init "
-"des Pools direkt in der Base als Instanz-Methoden ausgeführt werden. Die "
-"Function-Instanz wird durch den \"Decorator\" :meth:`function() "
-"<decore_Base.decore_base.decore.Decore.function>` erstellt."
-msgstr ""
-"The function instance provides the metadata for functions that are run "
-"directly in the base as instance methods after the pool init. The function "
-"instance is built by the \"Decorator\" :meth:`function() "
-"<decore_Base.decore_base.decore.Decore.function>`."
-
-#: ../documentation.rst:64
-msgid "Funktionen werden nicht im Frontend dargestellt oder aufgearbeitet."
-msgstr "Functions are not displayed or processed in the front end."
-
-#: ../documentation.rst:67
-msgid "Abarbeitungsreihenfolge im Frontend"
-msgstr "Processing sequence in the frontend"
-
-#: ../documentation.rst:68
-msgid ""
-"Nach dem Öffnen einer Anwendung, dem Anlegen der Base und dem Anlegen "
-"weiterer Childs laufen alle Pfade auf die Action zu, die schließlich wieder "
-"mit dem Backend kommuniziert, um die Manipulation der Daten zu ermöglichen. "
-"Nicht jedes Komponentenobjekt kann einem anderen beliebig zugeordnet werden."
-" Das Frontend arbeitet die einzelnen Objekte nur in einer festen Reihenfolge"
-" ab."
-msgstr ""
-"After opening an application, creating the base and creating further "
-"children, all paths lead to the action, which then communicates with the "
-"backend again to enable the data to be manipulated. Not every component "
-"object can be arbitrarily assigned to another. The frontend only processes "
-"the individual objects in a fixed order."
-
-#: ../documentation.rst:70
-msgid "Diese Übersicht stellt den Prozess dieser Abarbeitung dar."
-msgstr "This overview shows the process of this processing."
-
-#: ../documentation.rst:96
-msgid "Relationale Datenverarbeitung im Widget"
-msgstr "Relational data processing in the widget"
-
-#: ../documentation.rst:97
-msgid ""
-"Die Datenverarbeitung und Datensatzgenerierung in den Widgets ist ein "
-"wichtiger Bestandteil der Anwendung und wird hier als Relationale-"
-"Datenverarbeitung bezeichnet. Diese Generierung des bearbeitbaren "
-"Datensatzes, wird erstens durch den Aktivator und zweitens durch die "
-"Datenquelle der Ansicht in Beziehung zur Datenquelle des Widgets gesteuert. "
-"Damit wird ermöglicht, einen Dialog mit weiter im Kontext der eigentlichen "
-"Selektion zu erweitern und detailreicher zu gestalten."
-msgstr ""
-"Data processing and data set generation in the widgets is an important part "
-"of the application and is referred to here as relational data processing. "
-"This generation of the editable data set is controlled firstly by the "
-"activator and secondly by the data source of the View in relation to the "
-"data source of the widget. This makes it possible to extend a dialog with "
-"further in the context of the actual selection and to make it more detailed."
-
-#: ../documentation.rst:99
-msgid "Folgender Chart beschreibt diesen Prozess."
-msgstr "The following chart describes this process."
-
-#: ../documentation.rst:116
-msgid "Legende:"
-msgstr "Legend:"
-
-#: ../documentation.rst:107
-msgid "**Item**"
-msgstr "**Item**"
-
-#: ../documentation.rst:103
-msgid "empty = ein leerer Datensatz wird generiert. (keine Default-Werte)."
-msgstr "empty = an empty data record is generated. (no default values)."
-
-#: ../documentation.rst:104
-msgid ""
-"first = der erste Datensatz der Widget-Quelle wird als Datensatz geladen."
-msgstr ""
-"first = the first data record of the widget source is loaded as a data "
-"record."
-
-#: ../documentation.rst:105
-msgid ""
-"last = der letzte Datensatz der Widget-Quelle wird als Datensatz geladen."
-msgstr ""
-"last = the last data record of the widget source is loaded as a data record."
-
-#: ../documentation.rst:106
-msgid ""
-"default = ein neuer Datensatz mit Default-Werten der Widget-Quelle wird als "
-"Datensatz geladen."
-msgstr ""
-"default = a new data set with default values from the widget source is "
-"loaded as a data set."
-
-#: ../documentation.rst:107
-msgid ""
-"item_by_id = ein Datensatz mit einer definierten ID aus der Widget-Quelle "
-"wird als Datensatz geladen."
-msgstr ""
-"item_by_id = a data record with a defined ID from the widget source is "
-"loaded as a data record."
-
-#: ../documentation.rst:111
-msgid "**Query**"
-msgstr "**Query**"
-
-#: ../documentation.rst:110
-msgid ""
-"True = Alle vorkommenden Backref-Namen und die ID des selektierten "
-"Datensatzes der Ansichts-Quelle wird genutzt, um die Query des Widgets zu "
-"erweitern."
-msgstr ""
-"True = All occurring backref names and the ID of the selected data set of "
-"the View source are used to expand the widget's query."
-
-#: ../documentation.rst:111
-msgid ""
-"False = Die ID des selektierten Datensatzes wird nicht als Query-Attribut "
-"für den Datenabruf verwendet."
-msgstr ""
-"False = The ID of the selected data record is not used as a query attribute "
-"for the data retrieval."
-
-#: ../documentation.rst:116
-msgid "**Extend**"
-msgstr "**Extend**"
-
-#: ../documentation.rst:114
-msgid ""
-"True = automatische Befüllung der relationalen Felder des Ziel-Datensatzes, "
-"mit dem Ansichts-Datensatz. Zum Beispiel: Ein ForeignKey-Feld des Ziel-"
-"Datanstaz wird mit dem Ansichst-Datenstaz befüllt."
-msgstr ""
-"True = automatic filling of the relational fields of the target data set "
-"with the View data set. For example: A ForeignKey field of the target "
-"dataset is filled with the view dataset."
-
-#: ../documentation.rst:115
-msgid "False = keine automatische Befüllung des Datensatzes."
-msgstr "False = no automatic filling of the data record."
+"The documentation is still under construction and is currently being built. "
+"For the time being, I will work on practical examples to properly validate "
+"its use. Please be patient."
 
 #: ../documentation/decore.rst:2
 msgid "Dekoratoren"
@@ -480,6 +450,8 @@ msgstr ""
 #: decore_Base.decore_base.decore.Decore.base
 #: decore_Base.decore_base.decore.Decore.dialog
 #: decore_Base.decore_base.decore.Decore.function
+#: decore_Base.decore_base.decore.Decore.hook
+#: decore_Base.decore_base.decore.Decore.template
 #: decore_Base.decore_base.decore.Decore.view
 #: decore_Base.decore_base.decore.Decore.widget of
 msgid "Parameters"
@@ -488,16 +460,6 @@ msgstr "Parameters"
 #: decore_Base.decore_base.decore.Decore.app:3 of
 msgid "Der Titel der App."
 msgstr "The title of the app."
-
-#: decore_Base.decore_base.decore.Decore.app:4 of
-msgid ""
-"Gibt an, ob der Gastzugang (Anonynus) erlaubt ist. Der Wert ``True`` erlaubt"
-" den automatischen Login als Gast. Der Wert ``False`` verweigert das senden "
-"der Metadaten an das Frontend und verweist auf die Login-Seite."
-msgstr ""
-"Specifies whether guest access (anonynus) is permitted. The value ``True`` "
-"allows automatic login as a guest. The value ``False`` refuses to send the "
-"metadata to the frontend and refers to the login page."
 
 #: decore_Base.decore_base.decore.Decore.base:1 of
 msgid ""
@@ -733,6 +695,85 @@ msgstr ""
 #: decore_Base.decore_base.decore.Decore.widget:15 of
 msgid "Die Felder, die in dem Widget angezeigt werden."
 msgstr "The fields that are displayed in the widget."
+
+#: decore_Base.decore_base.decore.Decore.template:1 of
+msgid ""
+"Eine Funktion zur Registrierung einer Vorlage. Sie wird als \"Decorator\" "
+"verwendet."
+msgstr "A function for registering a template. It is used as a \"Decorator\"."
+
+#: decore_Base.decore_base.decore.Decore.template:3 of
+msgid ""
+"Eine Vorlage ist HTML-Code der im Layout der View oder des Widgets gerendert"
+" wird."
+msgstr ""
+"A template is HTML code that is rendered in the layout of the view or "
+"widget."
+
+#: decore_Base.decore_base.decore.Decore.template:5 of
+msgid ""
+"Die ID des übergeordneten Elements. Nur zu setzen, wenn die Vorlage in einem"
+" Dialog einer anderen Basis gerendert werden soll."
+msgstr ""
+"The ID of the parent element. Only to be set if the template is to be "
+"rendered in a dialog of another Base."
+
+#: decore_Base.decore_base.decore.Decore.template:6 of
+msgid "Das Symbol der Vorlage."
+msgstr "The symbol of the template."
+
+#: decore_Base.decore_base.decore.Decore.template:7 of
+msgid "Der Titel der Vorlage."
+msgstr "The title of the template."
+
+#: decore_Base.decore_base.decore.Decore.template:8 of
+msgid "Die Beschreibung der Vorlage."
+msgstr "The description of the template."
+
+#: decore_Base.decore_base.decore.Decore.template:9 of
+msgid "Der Name der Vorlage."
+msgstr "The name of the template."
+
+#: decore_Base.decore_base.decore.Decore.hook:1 of
+msgid ""
+"Eine Funktion zur Registrierung eines \"Hakens\". Sie wird als \"Decorator\""
+" verwendet."
+msgstr "A function for registering a \"tick\". It is used as a \"Decorator\"."
+
+#: decore_Base.decore_base.decore.Decore.hook:3 of
+msgid ""
+"Ein Haken ist eine Funktion zum abfangen des Load-Ereignisses der "
+"übergeordneten Komponente. Er kann dazu genutzt werden um vor dem Laden "
+"einer Komponente Bedingungen im Backend zu prüfen und gegebenenfalls den "
+"Pool zu manipulieren oder die Route zu ändern."
+msgstr ""
+"A hook is a function for intercepting the load event of the parent "
+"component. It can be used to check conditions in the backend before loading "
+"a component and, if necessary, to manipulate the pool or change the route."
+
+#: decore_Base.decore_base.decore.Decore.hook:5 of
+msgid ""
+"Die ID des übergeordneten Elements. Nur zu setzen, wenn der Haken in einem "
+"Dialog einer anderen Basis gerendert werden soll."
+msgstr ""
+"The ID of the parent element. Only to be set if the hook is to be rendered "
+"in a dialog of another Base."
+
+#: decore_Base.decore_base.decore.Decore.hook:6 of
+msgid "Das Symbol des Hakens."
+msgstr "The symbol of the hook."
+
+#: decore_Base.decore_base.decore.Decore.hook:7 of
+msgid "Der Titel des Hakens."
+msgstr "The title of the hook."
+
+#: decore_Base.decore_base.decore.Decore.hook:8 of
+msgid "Die Beschreibung des Hakens."
+msgstr "The description of the hook."
+
+#: decore_Base.decore_base.decore.Decore.hook:9 of
+msgid "Der Name des Hakens."
+msgstr "The name of the hook."
 
 #: decore_Base.decore_base.decore.Decore.action:1 of
 msgid ""
@@ -1015,7 +1056,341 @@ msgstr "A field to store passwords in the keybase and to use them again."
 msgid "A field to store text values."
 msgstr "A field to store text values."
 
-#: ../features.rst:2 ../index.rst:66
+#: ../documentation_work.rst:3
+msgid ""
+"Um mit decore Base eine lauffähige GUI-Dashboard-Anwendung zu erstellen, "
+"sind vergleichsweise wenige Schritte notwendig. Im Wesentlichen besteht der "
+"Aufbau aus der Definition der Meta-Instanzen und der Definition des "
+"Datenmodells. Die Metadaten werden vom Interpreter durch Einlesen von "
+"dekorierten Funktionen zusammengestellt und als Instanzen im Pool "
+"gespeichert."
+msgstr ""
+"To create an executable GUI dashboard application with decore Base, "
+"comparatively few steps are necessary. Essentially, the structure consists "
+"of defining the meta instances and defining the data model. The metadata is "
+"compiled by the interpreter by reading in decorated functions and stored as "
+"instances in the pool."
+
+#: ../documentation_work.rst:14
+msgid "Beschreibung der Meta-Instanzen"
+msgstr "Description of the meta instances"
+
+#: ../documentation_work.rst:15
+msgid ""
+"Meta-Instanzen entahlten die benötigten Typen und Attribute für die "
+"Erstellung der GUI-Elemente. Die Meta-Instanzen werden in der Regel durch "
+"dekorierte Funktionen erstellt."
+msgstr ""
+"Meta instances contain the types and attributes required to Build the GUI "
+"elements. The meta instances are usually built using decorated functions."
+
+#: ../documentation_work.rst:18
+msgid "App"
+msgstr "App"
+
+#: ../documentation_work.rst:19
+msgid ""
+"Die Application-Instanz liefert die Metadaten für den Anwendung. Sie ist die"
+" Wurzel für alles kommende und nimmt nur Basen auf. Die App-Instanz wird "
+"durch den \"Decorator\" :meth:`app() "
+"<decore_Base.decore_base.decore.Decore.app>` erstellt."
+msgstr ""
+"The application instance provides the metadata for the application. It is "
+"the root for everything to come and only accepts Bases. The app instance is "
+"built by the \"Decorator\" :meth:`app() "
+"<decore_Base.decore_base.decore.Decore.app>`."
+
+#: ../documentation_work.rst:22 ../start.rst:96
+msgid "Base"
+msgstr "Base"
+
+#: ../documentation_work.rst:23
+msgid ""
+"Die Base-Instanz liefert die Metadaten für die Basis. Sie ist das "
+"Trägerelement für die Ansichten. Die Base-Instanz wird durch den "
+"\"Decorator\" :meth:`base() <decore_Base.decore_base.decore.Decore.base>` "
+"erstellt."
+msgstr ""
+"The Base instance provides the metadata for the Base. It is the carrier "
+"element for the Views. The base instance is built by the \"Decorator\" "
+":meth:`base() <decore_Base.decore_base.decore.Decore.base>`."
+
+#: ../documentation_work.rst:27 ../documentation_work.rst:35
+#: ../documentation_work.rst:43 ../documentation_work.rst:50
+#: ../documentation_work.rst:57 ../documentation_work.rst:64
+msgid "**Darstellung im Frontend**"
+msgstr "**Display in the frontend**"
+
+#: ../documentation_work.rst:26
+msgid ""
+"Die Basis ist im Grunde die freie Fläche die für die Ansichten zur Verfügung"
+" steht."
+msgstr "The Base is basically the free area available for the Views."
+
+#: ../documentation_work.rst:27
+msgid ""
+"In der Navigation wird sie direkt unter Wurzel gelistet sobald sie mehr als "
+"eine Ansicht erhält."
+msgstr ""
+"It is listed directly under Root in the navigation as soon as it receives "
+"more than one View."
+
+#: ../documentation_work.rst:30 ../start.rst:124
+msgid "View"
+msgstr "View"
+
+#: ../documentation_work.rst:31
+msgid ""
+"Die View-Instanz liefert die Metadaten für die Ansicht. Ihr können Aktionen "
+"und Dialoge untergeordnet werden. Die View-Instanz wird durch den "
+"\"Decorator\" :meth:`view() <decore_Base.decore_base.decore.Decore.view>` "
+"erstellt."
+msgstr ""
+"The View instance provides the metadata for the View. Actions and dialogs "
+"can be subordinated to it. The view instance is built by the \"Decorator\" "
+":meth:`view() <decore_Base.decore_base.decore.Decore.view>`."
+
+#: ../documentation_work.rst:34
+msgid "Die Ansicht wird in der Navigation unter der Basis gelistet."
+msgstr "The View is listed in the navigation under Base."
+
+#: ../documentation_work.rst:35
+msgid "Die Ansicht wird im Ansichtsbereich der Basis gerendert."
+msgstr "The View is rendered in the Base view area."
+
+#: ../documentation_work.rst:38 ../start.rst:145
+msgid "Dialog"
+msgstr "Dialog"
+
+#: ../documentation_work.rst:39
+msgid ""
+"Die Dialog-Instanz liefert die Metadaten für den Dialog. Ihr können weitere "
+"Dialoge untergeordnet werden die dann in Tabs dargetellt werden. "
+"Hauptsächlich dienen diese aber zum tragen der Widgets. Die Dialog-Instanz "
+"wird durch den \"Decorator\" :meth:`dialog() "
+"<decore_Base.decore_base.decore.Decore.dialog>` erstellt."
+msgstr ""
+"The dialog instance provides the metadata for the dialog. Further dialogs "
+"can be subordinated to it, which are then displayed in tabs. However, these "
+"are mainly used to carry the widgets. The dialog instance is built by the "
+"\"Decorator\" :meth:`dialog() "
+"<decore_Base.decore_base.decore.Decore.dialog>`."
+
+#: ../documentation_work.rst:42
+msgid ""
+"Der Dialog kann in unterschiedlichen Display-Modis dargestellt werden. Zum "
+"Beispiel als Side-Drawer oder als modales Fenster."
+msgstr ""
+"The dialog can be shown in different display modes. For example, as a side-"
+"drawer or as a modal window."
+
+#: ../documentation_work.rst:43
+msgid ""
+"Dieser wird durch die mit dem Aktivator-Attribut bestimmten Postionen oder "
+"Ereignisse aufgerufen."
+msgstr ""
+"This is called up by the positions or events defined with the activator "
+"attribute."
+
+#: ../documentation_work.rst:46 ../start.rst:168
+msgid "Widget"
+msgstr "Widget"
+
+#: ../documentation_work.rst:47
+msgid ""
+"Die Widget-Instanz liefert die Metadaten für das Widget. Ihr können weitere "
+"Widgets untergeordnet werden die dann gestapelt dargetellt werden. Ein "
+"Widget wird für die Manipulation des Datensatzes oder Datensätze benötigt. "
+"Die Widget-Instanz wird durch den \"Decorator\" :meth:`widget() "
+"<decore_Base.decore_base.decore.Decore.widget>` erstellt."
+msgstr ""
+"The widget instance provides the metadata for the widget. Further widgets "
+"can be subordinated to it, which are then displayed in a stack. A widget is "
+"required for manipulating the data set or data sets. The widget instance is "
+"built by the \"Decorator\" :meth:`widget() "
+"<decore_Base.decore_base.decore.Decore.widget>`."
+
+#: ../documentation_work.rst:50
+msgid "Das Widget wird im Content-Bereich des Dialoges dargestellt."
+msgstr "The widget is displayed in the content area of the dialog."
+
+#: ../documentation_work.rst:53 ../start.rst:191
+msgid "Action"
+msgstr "Action"
+
+#: ../documentation_work.rst:54
+msgid ""
+"Die Action-Instanz liefert die Metadaten für die Aktion. Sie ist das "
+"Schlußlicht in der Prozesskette der Meta-Abarbeitung und dient zum "
+"übermitteln der Manipulationen und der Ausführung von Aktionen im Backend. "
+"Die Action-Instanz wird durch den \"Decorator\" :meth:`action() "
+"<decore_Base.decore_base.decore.Decore.action>` erstellt."
+msgstr ""
+"The action instance provides the metadata for the action. It is the last "
+"link in the meta processing chain and is used to transmit the manipulations "
+"and Run actions in the backend. The action instance is built by the "
+"\"Decorator\" :meth:`action() "
+"<decore_Base.decore_base.decore.Decore.action>`."
+
+#: ../documentation_work.rst:57
+msgid ""
+"Aktionen können durch das Aktivator-Attribut an unterschiedlichen Stellen im"
+" Frontend positioniert werden, haben aber keine tatächliche Darstellung "
+"sondern nur Schaltflächen- oder Ereignisgesteuerte Trigger."
+msgstr ""
+"Actions can be positioned in different places in the frontend using the "
+"activator attribute, but have no actual display, only button or event-"
+"controlled triggers."
+
+#: ../documentation_work.rst:60
+msgid "Function"
+msgstr "Function"
+
+#: ../documentation_work.rst:61
+msgid ""
+"Die Function-Instanz liefert die Metadaten für Funktionen die nach dem Init "
+"des Pools direkt in der Base als Instanz-Methoden ausgeführt werden. Die "
+"Function-Instanz wird durch den \"Decorator\" :meth:`function() "
+"<decore_Base.decore_base.decore.Decore.function>` erstellt."
+msgstr ""
+"The function instance provides the metadata for functions that are run "
+"directly in the base as instance methods after the pool init. The function "
+"instance is built by the \"Decorator\" :meth:`function() "
+"<decore_Base.decore_base.decore.Decore.function>`."
+
+#: ../documentation_work.rst:64
+msgid "Funktionen werden nicht im Frontend dargestellt oder aufgearbeitet."
+msgstr "Functions are not displayed or processed in the front end."
+
+#: ../documentation_work.rst:67
+msgid "Abarbeitungsreihenfolge im Frontend"
+msgstr "Processing sequence in the frontend"
+
+#: ../documentation_work.rst:68
+msgid ""
+"Nach dem Öffnen einer Anwendung, dem Anlegen der Base und dem Anlegen "
+"weiterer Childs laufen alle Pfade auf die Action zu, die schließlich wieder "
+"mit dem Backend kommuniziert, um die Manipulation der Daten zu ermöglichen. "
+"Nicht jedes Komponentenobjekt kann einem anderen beliebig zugeordnet werden."
+" Das Frontend arbeitet die einzelnen Objekte nur in einer festen Reihenfolge"
+" ab."
+msgstr ""
+"After opening an application, creating the base and creating further "
+"children, all paths lead to the action, which then communicates with the "
+"backend again to enable the data to be manipulated. Not every component "
+"object can be arbitrarily assigned to another. The frontend only processes "
+"the individual objects in a fixed order."
+
+#: ../documentation_work.rst:70
+msgid "Diese Übersicht stellt den Prozess dieser Abarbeitung dar."
+msgstr "This overview shows the process of this processing."
+
+#: ../documentation_work.rst:96
+msgid "Relationale Datenverarbeitung im Widget"
+msgstr "Relational data processing in the widget"
+
+#: ../documentation_work.rst:97
+msgid ""
+"Die Datenverarbeitung und Datensatzgenerierung in den Widgets ist ein "
+"wichtiger Bestandteil der Anwendung und wird hier als Relationale-"
+"Datenverarbeitung bezeichnet. Diese Generierung des bearbeitbaren "
+"Datensatzes, wird erstens durch den Aktivator und zweitens durch die "
+"Datenquelle der Ansicht in Beziehung zur Datenquelle des Widgets gesteuert. "
+"Damit wird ermöglicht, einen Dialog mit weiter im Kontext der eigentlichen "
+"Selektion zu erweitern und detailreicher zu gestalten."
+msgstr ""
+"Data processing and data set generation in the widgets is an important part "
+"of the application and is referred to here as relational data processing. "
+"This generation of the editable data set is controlled firstly by the "
+"activator and secondly by the data source of the View in relation to the "
+"data source of the widget. This makes it possible to extend a dialog with "
+"further in the context of the actual selection and to make it more detailed."
+
+#: ../documentation_work.rst:99
+msgid "Folgender Chart beschreibt diesen Prozess."
+msgstr "The following chart describes this process."
+
+#: ../documentation_work.rst:116
+msgid "Legende:"
+msgstr "Legend:"
+
+#: ../documentation_work.rst:107
+msgid "**Item**"
+msgstr "**Item**"
+
+#: ../documentation_work.rst:103
+msgid "empty = ein leerer Datensatz wird generiert. (keine Default-Werte)."
+msgstr "empty = an empty data record is generated. (no default values)."
+
+#: ../documentation_work.rst:104
+msgid ""
+"first = der erste Datensatz der Widget-Quelle wird als Datensatz geladen."
+msgstr ""
+"first = the first data record of the widget source is loaded as a data "
+"record."
+
+#: ../documentation_work.rst:105
+msgid ""
+"last = der letzte Datensatz der Widget-Quelle wird als Datensatz geladen."
+msgstr ""
+"last = the last data record of the widget source is loaded as a data record."
+
+#: ../documentation_work.rst:106
+msgid ""
+"default = ein neuer Datensatz mit Default-Werten der Widget-Quelle wird als "
+"Datensatz geladen."
+msgstr ""
+"default = a new data set with default values from the widget source is "
+"loaded as a data set."
+
+#: ../documentation_work.rst:107
+msgid ""
+"item_by_id = ein Datensatz mit einer definierten ID aus der Widget-Quelle "
+"wird als Datensatz geladen."
+msgstr ""
+"item_by_id = a data record with a defined ID from the widget source is "
+"loaded as a data record."
+
+#: ../documentation_work.rst:111
+msgid "**Query**"
+msgstr "**Query**"
+
+#: ../documentation_work.rst:110
+msgid ""
+"True = Alle vorkommenden Backref-Namen und die ID des selektierten "
+"Datensatzes der Ansichts-Quelle wird genutzt, um die Query des Widgets zu "
+"erweitern."
+msgstr ""
+"True = All occurring backref names and the ID of the selected data set of "
+"the View source are used to expand the widget's query."
+
+#: ../documentation_work.rst:111
+msgid ""
+"False = Die ID des selektierten Datensatzes wird nicht als Query-Attribut "
+"für den Datenabruf verwendet."
+msgstr ""
+"False = The ID of the selected data record is not used as a query attribute "
+"for the data retrieval."
+
+#: ../documentation_work.rst:116
+msgid "**Extend**"
+msgstr "**Extend**"
+
+#: ../documentation_work.rst:114
+msgid ""
+"True = automatische Befüllung der relationalen Felder des Ziel-Datensatzes, "
+"mit dem Ansichts-Datensatz. Zum Beispiel: Ein ForeignKey-Feld des Ziel-"
+"Datanstaz wird mit dem Ansichst-Datenstaz befüllt."
+msgstr ""
+"True = automatic filling of the relational fields of the target data set "
+"with the View data set. For example: A ForeignKey field of the target "
+"dataset is filled with the view dataset."
+
+#: ../documentation_work.rst:115
+msgid "False = keine automatische Befüllung des Datensatzes."
+msgstr "False = no automatic filling of the data record."
+
+#: ../features.rst:2 ../index.rst:153
 msgid "Besonderheiten"
 msgstr "Features"
 
@@ -1031,11 +1406,6 @@ msgstr ""
 "development and to design the included and upcoming features for these "
 "phases."
 
-#: ../features.rst:5 ../index.rst:13 ../index.rst:55 ../start.rst:27
-#: ../start.rst:75 ../start.rst:87 ../start.rst:111 ../start.rst:220
-msgid "Note"
-msgstr "Grade"
-
 #: ../features.rst:6
 msgid ""
 "Die mit ** gekennzeichneten Features sind noch nicht implementiert, sind "
@@ -1044,7 +1414,7 @@ msgstr ""
 "The features marked with ** are not yet implemented, but are currently being"
 " worked on."
 
-#: ../features.rst:9 ../index.rst
+#: ../features.rst:9 ../index.rst:23
 msgid "Kern & Konzept"
 msgstr "Core & Concept"
 
@@ -1067,7 +1437,7 @@ msgstr ""
 msgid "Fortschrittsübermittlung bei Aktionen an das Frontend."
 msgstr "Progress transfer for actions to the front end."
 
-#: ../features.rst:15 ../index.rst
+#: ../features.rst:15 ../index.rst:41
 msgid "Entwicklung & Erweiterung"
 msgstr "Development & expansion"
 
@@ -1101,7 +1471,7 @@ msgstr ""
 "Immediately usable data instances in the frontend, after the action call in "
 "the backend."
 
-#: ../features.rst:23 ../index.rst
+#: ../features.rst:23 ../index.rst:58
 msgid "Anpassung & Design"
 msgstr "Customization & Design"
 
@@ -1116,7 +1486,7 @@ msgstr ""
 msgid "Anpassung der Darstellungen und Reihenfolgen im Layout"
 msgstr "Customization of displays and sequences in the layout"
 
-#: ../features.rst:29 ../index.rst
+#: ../features.rst:29 ../index.rst:75
 msgid "Test & Stabilität"
 msgstr "Test & stability"
 
@@ -1139,7 +1509,7 @@ msgstr ""
 msgid "Integriete Log, Test und Messfunktionialität**."
 msgstr "Integral log, test and measurement functionality**."
 
-#: ../features.rst:36 ../index.rst
+#: ../features.rst:36 ../index.rst:92
 msgid "Sicherheit & Compliance"
 msgstr "Security & Compliance"
 
@@ -1162,7 +1532,7 @@ msgstr ""
 "Centralized dedicated storage of reusable or salted passwords with "
 "integrated security guide**."
 
-#: ../features.rst:45 ../index.rst
+#: ../features.rst:45 ../index.rst:109
 msgid "Bereitstellung & Veröffentlichung"
 msgstr "Provision & publication"
 
@@ -1182,7 +1552,7 @@ msgstr ""
 "Ability to build standalone desktop applications for Windows with "
 "Electron**."
 
-#: ../features.rst:51 ../index.rst
+#: ../features.rst:51 ../index.rst:126
 msgid "Marketing & Monetarisierung"
 msgstr "Marketing & Monetization"
 
@@ -1198,6 +1568,10 @@ msgstr ""
 #: ../features.rst:54
 msgid "Subtile und nahtlose Möglichkeit Werbung zu schalten**."
 msgstr "Subtle and seamless way to advertise**."
+
+#: ../howtos.rst:2 ../index.rst:153
+msgid "Anleitungen"
+msgstr "Instructions"
 
 #: ../impressum.rst:4
 msgid "Impressum"
@@ -1231,13 +1605,9 @@ msgstr ""
 "Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas "
 "adipiscing ante non diam sodales hendrerit."
 
-#: ../index.rst:66 ../start.rst:6
+#: ../index.rst:153 ../start.rst:6
 msgid "Erste Schritte"
 msgstr "Getting started"
-
-#: ../index.rst:66
-msgid "Beispiel"
-msgstr "Example"
 
 #: ../index.rst:-1
 msgid "decore Base | UI fastly"
@@ -1245,16 +1615,16 @@ msgstr "decore Base | UI fastly"
 
 #: ../index.rst:-1
 msgid ""
-"Schnell erstellte Gui-Dashboard-Anwendungen mit Python, die deinen Ideen "
-"mehr Freiraum geben."
+"Build fast gui dashboard applications with Python that give your ideas more "
+"freedom."
 msgstr ""
 "Build fast gui dashboard applications with Python that give your ideas more "
 "freedom."
 
 #: ../index.rst:-1
 msgid ""
-"python gui, decore, python database, python dashboard, python orm, python "
-"ui, dashboard build, python application, ui framework, ui toolbox"
+"python gui, decore, python datenbank, python dashboard, python orm, python "
+"ui, dashboard erstellung, python anwendung, ui framework, ui werkzeugkasten"
 msgstr ""
 "python gui, decore, python database, python dashboard, python orm, python "
 "ui, dashboard build, python application, ui framework, ui toolbox"
@@ -1309,7 +1679,7 @@ msgstr ""
 "decore Base was designed to optimally support the development process of "
 "your application in its various phases."
 
-#: ../index.rst:29
+#: ../index.rst:37
 msgid ""
 "Um deinen Ideen maximale Freiheit zu geben, ist decore Base im ersten "
 "Schritt praktisch sofort einsatzbereit. Du musst dich nicht um die GUI, "
@@ -1324,7 +1694,7 @@ msgstr ""
 "adjustments in the next step according to your requirements. Concentrate "
 "fully on your ideas and the implementation of your algorithms."
 
-#: ../index.rst:33
+#: ../index.rst:55
 msgid ""
 "Programmiere deine Anwendung im objektorientierten Stil, denn Benutzer-"
 "Aktionen aus dem Frontend werden in deinen Basisinstanzen ausgeführt. "
@@ -1339,7 +1709,7 @@ msgstr ""
 "organically. Extend your application with new functions and draw on the full"
 " potential of Python and its libraries."
 
-#: ../index.rst:37
+#: ../index.rst:72
 msgid ""
 "Entdecke mühelos und zügig den grundlegenden UI-Stil und passe ihn "
 "anschließend ganz nach deinen Anforderungen an. Integriere zusätzlich "
@@ -1354,7 +1724,7 @@ msgstr ""
 "individual appearance. Give your user interface your own personal style "
 "using your own sheets**."
 
-#: ../index.rst:41
+#: ../index.rst:89
 msgid ""
 "Gewährleiste die Stabilität und Qualität deiner Anwendung durch eine "
 "sorgfältige Überprüfung ihrer Funktionalitäten mithilfe eingebauter "
@@ -1366,7 +1736,7 @@ msgstr ""
 "possible to ensure the expected results and optimize the performance of the "
 "application."
 
-#: ../index.rst:45
+#: ../index.rst:106
 msgid ""
 "Nutze das eingebaute Sitzungsmanagement und übertrage Daten verschlüsselt** "
 "in deine Anwendung. Implementiere eigene Modelle für die Erfassung sensibler"
@@ -1378,7 +1748,7 @@ msgstr ""
 "user data. Use the integrated user administration** to manage roles and "
 "ownership rights."
 
-#: ../index.rst:49
+#: ../index.rst:123
 msgid ""
 "decore Base wird auch in dieser Entwicklungsphase künftig unterstützende "
 "Funktionen bieten. Bald werden Features wie die Electron-Integration** "
@@ -1389,7 +1759,7 @@ msgstr ""
 "in the future. Features such as Electron integration** will soon be "
 "available, allowing you to easily publish your application as a desktop app."
 
-#: ../index.rst:53
+#: ../index.rst:140
 msgid ""
 "Gewährleiste die Sichtbarkeit und Auffindbarkeit deiner Anwendung durch ein "
 "SEO**-freundliches Frontend. Baldige Implemetierungen berücksichtigen "
@@ -1404,7 +1774,7 @@ msgstr ""
 " user experience and the variety of application possibilities that decore "
 "Base brings also offer many opportunities for monetization**."
 
-#: ../index.rst:56
+#: ../index.rst:143
 msgid ""
 "** Einige der hier genannten Funktionen sind derzeit noch in direkter "
 "Entwicklung und werden in Kürze verfügbar sein."
@@ -1412,11 +1782,11 @@ msgstr ""
 "** Some of the functions mentioned here are currently still under direct "
 "development and will be available shortly."
 
-#: ../index.rst:59
+#: ../index.rst:146
 msgid "Beteiligung & Unterstützung"
 msgstr "Participation & support"
 
-#: ../index.rst:60
+#: ../index.rst:147
 msgid ""
 "Die größte Hilfe, die wir im Moment bekommen können, ist, wenn Sie einen "
 "Blick auf das Projekt werfen und uns sagen, was Sie davon halten. Wir sind "
@@ -1425,7 +1795,7 @@ msgstr ""
 "The biggest help we can get at the moment is if you take a look at the "
 "project and tell us what you think of it. We are grateful for any criticism."
 
-#: ../index.rst:62
+#: ../index.rst:149
 msgid ""
 "Sollte bei Entwickeln etwas nicht wie erwartet funktionieren oder "
 "Unklarheiten in der Dokumentation auftauchen, lassen Sie es uns bitte "
@@ -1434,7 +1804,7 @@ msgstr ""
 "If something does not work as expected during development or if there are "
 "any ambiguities in the documentation, please let us know."
 
-#: ../index.rst:64
+#: ../index.rst:151
 msgid ""
 "Bitte benutzen Sie dazu den Problembereich im Repository. "
 "`<https://github.com/KemoPanzah/decore_Base/issues>`_"
@@ -1446,11 +1816,11 @@ msgstr ""
 msgid "Datenschutzerklärung"
 msgstr "Privacy policy"
 
-#: ../sample.rst:2
+#: ../sample_remove.rst:2
 msgid "Beispielanwendung"
 msgstr "Example application"
 
-#: ../sample.rst:3
+#: ../sample_remove.rst:3
 msgid ""
 "Um besser zu verstehen, wie decore Base funktioniert, ist es am besten, sich"
 " die Beispielanwendung anzusehen."
@@ -1458,7 +1828,7 @@ msgstr ""
 "To better understand how decore Base works, it is best to take a look at the"
 " example application."
 
-#: ../sample.rst:5
+#: ../sample_remove.rst:5
 msgid "https://github.com/KemoPanzah/decore_Sample"
 msgstr "https://github.com/KemoPanzah/decore_Sample"
 
@@ -1614,13 +1984,13 @@ msgstr "Model"
 
 #: ../start.rst:68
 msgid ""
-"In einem Modell legen wir die Datenfelder fest, die später einer Basis "
-"zugeordnet werden muss. Es dient als Datenbankschnittstelle zu den "
-"Datenbanktreibern wie SQLite, MySQL, PostgreSQL, etc."
+"In einem Modell legen wir die Datenfelder fest, in einer Datenbanktabelle "
+"repräsentiert werden. Es dient als Schnittstelle zu den Datenbanktreibern "
+"wie SQLite, MySQL, PostgreSQL, etc."
 msgstr ""
-"In a Model, we define the data fields that must later be assigned to a Base."
-" It serves as a database interface to the database drivers such as SQLite, "
-"MySQL, PostgreSQL, etc."
+"In a Model we define the data fields to be represented in a database table. "
+"It serves as an interface to the database drivers such as SQLite, MySQL, "
+"PostgreSQL, etc."
 
 #: ../start.rst:70
 msgid ""
@@ -1899,6 +2269,25 @@ msgstr ""
 #~ msgid ""
 #~ "python gui, decore, python datenbank, python dashboard, python orm, python "
 #~ "ui, dashboard erstellung, python anwendung, ui framework, ui werkzeugkasten"
+#~ msgstr ""
+#~ "python gui, decore, python database, python dashboard, python orm, python "
+#~ "ui, dashboard build, python application, ui framework, ui toolbox"
+
+#~ msgid ""
+#~ "Gibt an, ob der Gastzugang (Anonynus) erlaubt ist. Der Wert ``True`` erlaubt"
+#~ " den automatischen Login als Gast. Der Wert ``False`` verweigert das senden "
+#~ "der Metadaten an das Frontend und verweist auf die Login-Seite."
+#~ msgstr ""
+#~ "Specifies whether guest access (anonynus) is permitted. The value ``True`` "
+#~ "allows automatic login as a guest. The value ``False`` refuses to send the "
+#~ "metadata to the frontend and refers to the login page."
+
+#~ msgid "Beispiel"
+#~ msgstr "Example"
+
+#~ msgid ""
+#~ "python gui, decore, python database, python dashboard, python orm, python "
+#~ "ui, dashboard build, python application, ui framework, ui toolbox"
 #~ msgstr ""
 #~ "python gui, decore, python database, python dashboard, python orm, python "
 #~ "ui, dashboard build, python application, ui framework, ui toolbox"

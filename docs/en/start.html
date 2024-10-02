@@ -33,9 +33,9 @@
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
-        <link rel="stylesheet" type="text/css" href="_static/sphinx_immaterial_theme.359ec555e2989f00f.min.css?v=b000af5c" />
-        <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
-        <link rel="stylesheet" type="text/css" href="_static/styles/custom.css?v=b0f6f0c8" />
+        <link rel="stylesheet" type="text/css" href="_static/sphinx_immaterial_theme.3394d25b557047e78.min.css" />
+        <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
+        <link rel="stylesheet" type="text/css" href="_static/styles/custom.css" />
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -43,9 +43,9 @@
     
     
       
-        <meta  content="create dashbord with python fastly"  name="description"  translated="True" >
+        <meta  content="create dashbord with python fastly"  name="description" >
       
-        <meta  content="python gui, decore, python database, python dashboard, python orm, python ui, dashboard creation, python application, ui framework, ui toolkit"  name="keywords"  translated="True" >
+        <meta  content="python gui, decore, python database, python dashboard, python orm, python ui, dashboard creation, python application, ui framework, ui toolkit"  name="keywords" >
       
     
     
@@ -428,8 +428,8 @@
   
   
     <li class="md-nav__item">
-      <a href="sample.html" class="md-nav__link">
-        <span class="md-ellipsis">Example</span>
+      <a href="documentation.html" class="md-nav__link">
+        <span class="md-ellipsis">Documentation</span>
       </a>
     </li>
   
@@ -444,8 +444,24 @@
   
   
     <li class="md-nav__item">
-      <a href="documentation.html" class="md-nav__link">
-        <span class="md-ellipsis">Documentation</span>
+      <a href="howtos.html" class="md-nav__link">
+        <span class="md-ellipsis">Instructions</span>
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="blog.html" class="md-nav__link">
+        <span class="md-ellipsis">Blog</span>
       </a>
     </li>
   
@@ -591,18 +607,18 @@
                   
 
 
-<h1 id="erste-schritte">Getting started<a class="headerlink" href="#erste-schritte" title="Link to this heading">¶</a></h1>
+<h1 id="erste-schritte">Getting started<a class="headerlink" href="#erste-schritte" title="Permalink to this heading">¶</a></h1>
 <p>To illustrate the fast GUI dashboard build with decore Base in Python, we will now create a small UI in the form of a web application together.</p>
 <p>The decorated functions are used, first and foremost, to build meta information for later evaluation in the front end of the application and are nothing to be afraid of.</p>
 <p><em>It’s really simple, please follow me!</em></p>
-<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Link to this heading">¶</a></h2>
+<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permalink to this heading">¶</a></h2>
 <p>First build an empty Python project in your desired directory.</p>
 <p>To install decore Base, we run the following command in the root directory of the project. Let’s use the terminal in vscode.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="n">pip</span> <span class="n">install</span> <span class="n">decore</span><span class="o">-</span><span class="n">Base</span>
 </code></pre></div>
 </div>
 <p>This requires an activated Python environment! To learn more about this, visit <a class="reference external" href="https://code.visualstudio.com/docs/python/environments">Python environments in VS Code</a>.</p>
-<h2 id="vorbereitung">Preparation<a class="headerlink" href="#vorbereitung" title="Link to this heading">¶</a></h2>
+<h2 id="vorbereitung">Preparation<a class="headerlink" href="#vorbereitung" title="Permalink to this heading">¶</a></h2>
 <div class="note admonition">
 <p class="admonition-title">Grade</p>
 <p>To get all the necessary paths and settings for our future Python GUI dashboard application, we still need to do the preparation.</p>
@@ -614,7 +630,7 @@
 </div>
 <p>Then we use the <code class="docutils literal notranslate"><span class="pre">prepare</span></code> command to create all the necessary auxiliary files in the root directory of the project.</p>
 <p>To actually prepare the application, we execute the command <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">app.py</span> <span class="pre">--prepare</span></code> in the terminal. The path must be in the root directory of the project, i.e. where the <strong>app.py</strong> is located.</p>
-<h2 id="verwendung">Use<a class="headerlink" href="#verwendung" title="Link to this heading">¶</a></h2>
+<h2 id="verwendung">Use<a class="headerlink" href="#verwendung" title="Permalink to this heading">¶</a></h2>
 <p>To enable the Python interpreter to process the future base classes, we add the following import.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">bases</span> <span class="kn">import</span> <span class="o">*</span>
 </code></pre></div>
@@ -631,8 +647,8 @@
         <span class="k">pass</span>
 </code></pre></div>
 </div>
-<h3 id="model">Model<a class="headerlink" href="#model" title="Link to this heading">¶</a></h3>
-<p>In einem Modell legen wir die Datenfelder fest, in einer Datenbanktabelle repräsentiert werden. Es dient als Schnittstelle zu den Datenbanktreibern wie SQLite, MySQL, PostgreSQL, etc.</p>
+<h3 id="model">Model<a class="headerlink" href="#model" title="Permalink to this heading">¶</a></h3>
+<p>In a Model we define the data fields to be represented in a database table. It serves as an interface to the database drivers such as SQLite, MySQL, PostgreSQL, etc.</p>
 <p>We now build the file first_model.py in the <strong>models</strong> directory and add the following code:</p>
 <div class="warning admonition">
 <p class="admonition-title">Warning</p>
@@ -658,7 +674,7 @@
 <p class="admonition-title">Warning</p>
 <p>When importing, please note that we import everything (*) from the conform_model namespace in order to obtain the field classes as well.</p>
 </div>
-<h3 id="base">Base<a class="headerlink" href="#base" title="Link to this heading">¶</a></h3>
+<h3 id="base">Base<a class="headerlink" href="#base" title="Permalink to this heading">¶</a></h3>
 <p>The base classes serve the decore application as a carrier element for the view components, maintain the data model and are therefore also the data source for the evaluation in the front end of the dashboard.</p>
 <p>Now we need to create a new Python module containing a base class, for example: <strong>first_base.py</strong>, in the <strong>bases</strong> directory in our project root directory. The <strong>bases</strong> directory was created by the <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">app.py</span> <span class="pre">--prepare</span></code> command executed previously.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">decore_base</span> <span class="kn">import</span> <span class="n">decore</span>
@@ -681,7 +697,7 @@
 </code></pre></div>
 </div>
 </div>
-<h3 id="view">View<a class="headerlink" href="#view" title="Link to this heading">¶</a></h3>
+<h3 id="view">View<a class="headerlink" href="#view" title="Permalink to this heading">¶</a></h3>
 <p>Views are used by the decore application to present the data records in the front end of the web application.</p>
 <p>With the View decorator, we can now create a View component and mount it under the previously created base class.</p>
 <p>We now edit the <strong>first_base.py</strong> file again and extend the code as follows:</p>
@@ -702,7 +718,7 @@
 </span><span class="hll">      <span class="k">pass</span>
 </span></code></pre></div></td></tr></table></div>
 </div>
-<h3 id="dialog">Dialog<a class="headerlink" href="#dialog" title="Link to this heading">¶</a></h3>
+<h3 id="dialog">Dialog<a class="headerlink" href="#dialog" title="Permalink to this heading">¶</a></h3>
 <p>Dialogs are the supporting elements for widgets in the front end of the web application. They can be added to views but also to subordinate widgets and control the visibility and display style of child elements. Dialogs are also given control over the sending functions of the widgets.</p>
 <p>In our case, we build a dialog to create a new person with first name and last name.</p>
 <p>Here we go … the file <strong>first_base.py</strong> again and extend the code as follows:</p>
@@ -727,7 +743,7 @@
 </span><span class="hll">         <span class="k">pass</span>
 </span></code></pre></div></td></tr></table></div>
 </div>
-<h3 id="widget">Widget<a class="headerlink" href="#widget" title="Link to this heading">¶</a></h3>
+<h3 id="widget">Widget<a class="headerlink" href="#widget" title="Permalink to this heading">¶</a></h3>
 <p>Widgets are components with which we can perform interactions with the individual data set. They can only be added to dialogs and are stackable.</p>
 <p>What we need now is an input form to enter the data for the new person.</p>
 <div class="highlight-python notranslate"><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
@@ -755,7 +771,7 @@
 </span><span class="hll">            <span class="k">pass</span>
 </span></code></pre></div></td></tr></table></div>
 </div>
-<h3 id="action">Action<a class="headerlink" href="#action" title="Link to this heading">¶</a></h3>
+<h3 id="action">Action<a class="headerlink" href="#action" title="Permalink to this heading">¶</a></h3>
 <p>Actions are methods with which the frontend can communicate with <strong>decore Base</strong>. They can be added to views and widgets and are the only real class methods and are called directly in the Base.</p>
 <p>We now need an action to save the new person’s data and extend the code in <strong>first_base.py</strong> as follows:</p>
 <div class="highlight-python notranslate"><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
@@ -806,14 +822,14 @@
 <p class="admonition-title">Warning</p>
 <p>The <strong>title</strong> field must be used each time a data record is created. Otherwise the element will not pass validation. It should also always be unique, i.e. there should be no identical titles in the database.</p>
 </div>
-<h2 id="ausfuhrung-entwicklung-und-erstellung">Run, development and build<a class="headerlink" href="#ausfuhrung-entwicklung-und-erstellung" title="Link to this heading">¶</a></h2>
-<h3 id="ausfuhrung">Run<a class="headerlink" href="#ausfuhrung" title="Link to this heading">¶</a></h3>
+<h2 id="ausfuhrung-entwicklung-und-erstellung">Run, development and build<a class="headerlink" href="#ausfuhrung-entwicklung-und-erstellung" title="Permalink to this heading">¶</a></h2>
+<h3 id="ausfuhrung">Run<a class="headerlink" href="#ausfuhrung" title="Permalink to this heading">¶</a></h3>
 <p>To start your application, run <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">app.py</span></code> in your project root directory. Use the terminal in vscode.</p>
 <p>Open the browser and enter <code class="docutils literal notranslate"><span class="pre">http://localhost:5555</span></code>.</p>
-<h3 id="entwicklung">Development<a class="headerlink" href="#entwicklung" title="Link to this heading">¶</a></h3>
+<h3 id="entwicklung">Development<a class="headerlink" href="#entwicklung" title="Permalink to this heading">¶</a></h3>
 <p>To develop your application, use your debugger with the profile <code class="docutils literal notranslate"><span class="pre">[dev]</span> <span class="pre">decore</span> <span class="pre">base</span> <span class="pre">development</span></code> in vscode.</p>
 <p>Open the browser and enter <code class="docutils literal notranslate"><span class="pre">http://localhost:5555</span></code>.</p>
-<h3 id="erstellung">Build<a class="headerlink" href="#erstellung" title="Link to this heading">¶</a></h3>
+<h3 id="erstellung">Build<a class="headerlink" href="#erstellung" title="Permalink to this heading">¶</a></h3>
 <p>To build your application, run <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">app.py</span> <span class="pre">--build</span></code> in your project root directory. Use the terminal in vscode.</p>
 
 
@@ -882,7 +898,7 @@
   
     Created using
     <a href="https://www.sphinx-doc.org/" target="_blank" rel="noopener">Sphinx</a>
-    7.2.6.
+    6.2.1.
      and
     <a href="https://github.com/jbms/sphinx-immaterial/" target="_blank" rel="noopener">Sphinx-Immaterial</a>
   
@@ -901,10 +917,8 @@
     <script id="__config" type="application/json">{"base": ".", "features": [], "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
       
-        <script src="_static/jquery.js?v=5d32c60e"></script>
-        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="_static/sphinx_immaterial_theme.f9d9eeeb247ace16c.min.js?v=8ec58cb5"></script>
-        <script src="_static/design-tabs.js?v=36754332"></script>
+        <script src="_static/sphinx_immaterial_theme.f9d9eeeb247ace16c.min.js"></script>
+        <script src="_static/design-tabs.js"></script>
     
   </body>
 </html>

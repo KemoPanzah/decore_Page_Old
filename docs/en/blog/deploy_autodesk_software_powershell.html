@@ -1,0 +1,686 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../_static/favicon.ico">
+    
+    
+      
+        <title>Distribution of Autodesk software with ODIS installer and PowerShell avoiding the double-hop problem - decore Base | UI fastly</title>
+      
+    
+    
+      
+        
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+        <link rel="stylesheet" type="text/css" href="../_static/sphinx_immaterial_theme.3394d25b557047e78.min.css" />
+        <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
+        <link rel="stylesheet" type="text/css" href="../_static/styles/custom.css" />
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+
+
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="light-blue">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../index.html" title="decore Base | UI fastly" class="md-header__button md-logo" aria-label="decore Base | UI fastly" data-md-component="logo">
+      <img src="../_static/logo.png" alt="logo">
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            decore Base | UI fastly
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Distribution of Autodesk software with ODIS installer and PowerShell avoiding the double-hop problem
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="light-blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5Z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+      <div class="md-header__option">
+        <div class="md-select">
+          
+          <button class="md-header__button md-icon" aria-label="Select language">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24Z"/></svg>
+          </button>
+          <div class="md-select__inner">
+            <ul class="md-select__list">
+              
+                <li class="md-select__item">
+                  <a href="/de" hreflang="de" class="md-select__link">
+                    German
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
+                  <a href="/en" hreflang="en" class="md-select__link">
+                    English
+                  </a>
+                </li>
+                
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/KemoPanzah/decore_Base/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    decore Base
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="decore Base | UI fastly" class="md-nav__button md-logo" aria-label="decore Base | UI fastly" data-md-component="logo">
+      <img src="../_static/logo.png" alt="logo">
+    </a>
+    decore Base | UI fastly
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/KemoPanzah/decore_Base/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    decore Base
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../start.html" class="md-nav__link">
+        <span class="md-ellipsis">Getting started</span>
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features.html" class="md-nav__link">
+        <span class="md-ellipsis">Features</span>
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../documentation.html" class="md-nav__link">
+        <span class="md-ellipsis">Documentation</span>
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../howtos.html" class="md-nav__link">
+        <span class="md-ellipsis">Instructions</span>
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../blog.html"><span class="md-ellipsis">Blog</span></a>
+          
+            <label for="__nav_5">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Blog" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Blog</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_1" type="checkbox" id="__nav_5_1" checked>
+      
+      
+      
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../blog.html#themen"><span class="md-ellipsis">Topics</span></a>
+          
+            <label for="__nav_5_1">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Topics" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_1">
+          <span class="md-nav__icon md-icon"></span>
+          <span class="md-ellipsis">Topics</span>
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      <a href="#" class="md-nav__link md-nav__link--active">
+        <span class="md-ellipsis">Distribution of Autodesk software with ODIS installer and Power<wbr>Shell avoiding the double-<wbr>hop problem</span>
+      </a>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset" role="main">
+                  
+
+
+<h1 id="verteilung-von-autodesk-software-mit-odis-installer-und-powershell-unter-vermeidung-des-double-hop-problems">Distribution of Autodesk software with ODIS installer and PowerShell avoiding the double-hop problem<a class="headerlink" href="#verteilung-von-autodesk-software-mit-odis-installer-und-powershell-unter-vermeidung-des-double-hop-problems" title="Permalink to this heading">¶</a></h1>
+<p>Since Autodesk switched its deployment system to the ODIS installer, all deployments that are rolled out unattended via the SYSTEM account continue to run endlessly without success code.</p>
+<p>The exact error message in the ODIS log is:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span><code>2023-06-15T15:17:04.012 [DDA: 2196, single] [Installer INFO] [ Autodesk::DDA::SdkAgent::Listen::&lt;lambda_8f7c2cafda285d6f3324fbe86a24bae4&gt;::operator () ] [IPC] ChannelWin::Listen: WaitForSingleObject timeout. error_code: 997, pipe_name: \\.\pipe\adsk_dda_sdk
+</code></pre></div>
+</div>
+<p>After a while, the installer service also appears to be terminated, but no longer sends an exit code.</p>
+<p>I have tried many deployment suites, but the result is always the same when the SYSTEM account is used.</p>
+<p>To solve the problem temporarily until Autodesk recognizes and fixes the problem, I have now developed solutions that help me here at work.</p>
+<p>My planned approach was to implement the distribution via PowerShell, but in doing so I again encountered another hurdle that Kerberos authentication brings with it: the so-called double-hop problem, since my software packages are stored in CIFS shares.</p>
+<p>Kerberos does not allow further authentication to be carried out via this endpoint to other remote destinations after authentication on a remote PC. So there is no second hop. To get around the problem, there are few but complicated ways or one that everyone will now say, “Oh my God, don’t do that,” but I’ll just throw it out there.</p>
+<p>The solution is to use CredSSP only temporarily as a point-to-point connection and to deactivate it again after deployment. Under no circumstances should it be allowed company-wide.</p>
+<div class="important admonition">
+<p class="admonition-title">Important</p>
+<p>CredSSP has no single-hop constraint. Authentications can continue to be used in a CredSSP session. If this is allowed company-wide, the gateway to hell is virtually open. Malware, which may even have corrupted the distribution, could thus cause damage from the endpoint to other systems at will.</p>
+</div>
+<p>Here is the script for all those who are facing the same problem.</p>
+<p>The script described here is deliberately kept flat to make it easy to understand and to make further expansion by you as simple as possible.</p>
+<div class="note admonition">
+<p class="admonition-title">Grade</p>
+<p>Please note that CredSSP is only used temporarily in this example and is deactivated again after deployment. In addition, only the specified remote computer is delegated and not the entire network.</p>
+<p>After thorough validation, this approach has proven to be a safe and simple way to achieve the desired goal.</p>
+</div>
+<div class="important admonition">
+<p class="admonition-title">Important</p>
+<p>This script must be run with administrative rights to enable and disable CredSSP authentication.</p>
+</div>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><code><span class="c"># Define the parameters with your own values</span>
+
+<span class="k">param</span> <span class="p">(</span>
+<span class="no">[string]</span><span class="nv">$Computer</span> <span class="p">=</span> <span class="s2">&quot;&lt;remote-computer&gt;&quot;</span><span class="p">,</span>
+<span class="no">[string]</span><span class="nv">$Name</span> <span class="p">=</span> <span class="s2">&quot;Autodesk Revit 2024&quot;</span><span class="p">,</span>
+<span class="no">[string]</span><span class="nv">$Installer</span> <span class="p">=</span> <span class="s1">&#39;&lt;share&gt;\Autodesk Revit 2024\image\Installer.exe&#39;</span><span class="p">,</span>
+<span class="no">[string]</span><span class="nv">$Argument</span> <span class="p">=</span> <span class="s1">&#39;&quot;&lt;share&gt;\Autodesk Revit 2024\image\Installer.exe&quot; -i deploy --offline_mode -q -o &quot;&lt;share&gt;\Autodesk Revit 2024\image\Collection.xml&quot; --installer_version &quot;2.9.0.31&quot;&#39;</span>
+<span class="p">)</span>
+
+<span class="c"># Prompt for user credentials</span>
+<span class="nv">$cred</span> <span class="p">=</span> <span class="nb">Get-Credential</span> <span class="n">-Message</span> <span class="s2">&quot;Enter your credentials&quot;</span>
+
+<span class="k">try</span> <span class="p">{</span>
+    <span class="c"># Enable CredSSP on the client</span>
+    <span class="nv">$null</span> <span class="p">=</span> <span class="nb">Enable-WSManCredSSP</span> <span class="n">-Role</span> <span class="n">Client</span> <span class="n">-DelegateComputer</span> <span class="nv">$Computer</span> <span class="n">-Force</span>
+
+    <span class="c"># Enable CredSSP on the server (if not already enabled)</span>
+    <span class="nb">Invoke-Command</span> <span class="n">-ComputerName</span> <span class="nv">$Computer</span> <span class="n">-Credential</span> <span class="nv">$cred</span> <span class="n">-ScriptBlock</span> <span class="p">{</span>
+        <span class="nv">$null</span> <span class="p">=</span> <span class="nb">Enable-WSManCredSSP</span> <span class="n">-Role</span> <span class="n">Server</span> <span class="n">-Force</span>
+    <span class="p">}</span>
+
+    <span class="c"># Create a new PSSession with CredSSP authentication</span>
+    <span class="nv">$session</span> <span class="p">=</span> <span class="nb">New-PSSession</span> <span class="n">-ComputerName</span> <span class="nv">$Computer</span> <span class="n">-Credential</span> <span class="nv">$cred</span> <span class="n">-Authentication</span> <span class="n">Credssp</span>
+
+    <span class="c"># Execute the script on the remote computer</span>
+    <span class="nb">Invoke-Command</span> <span class="n">-Session</span> <span class="nv">$session</span> <span class="n">-ScriptBlock</span> <span class="p">{</span>
+        <span class="k">param</span> <span class="p">(</span><span class="nv">$Name</span><span class="p">,</span> <span class="nv">$Installer</span><span class="p">,</span> <span class="nv">$Argument</span><span class="p">)</span>
+
+        <span class="c"># Output a message before starting the installation process</span>
+        <span class="nb">Write-Host</span> <span class="s2">&quot;$Name is being installed...&quot;</span>
+
+        <span class="c"># Start the installation process</span>
+        <span class="nv">$process</span> <span class="p">=</span> <span class="nb">Start-Process</span> <span class="n">-FilePath</span> <span class="nv">$Installer</span> <span class="n">-ArgumentList</span> <span class="nv">$Argument</span> <span class="n">-PassThru</span>
+
+        <span class="c"># Output the process ID</span>
+        <span class="nb">Write-Host</span> <span class="s2">&quot;The installation process has started. Process ID: </span><span class="p">$(</span><span class="nv">$process</span><span class="p">.</span><span class="n">Id</span><span class="p">)</span><span class="s2">&quot;</span>
+
+        <span class="c"># Wait for the installation process to complete</span>
+        <span class="nv">$process</span><span class="p">.</span><span class="n">WaitForExit</span><span class="p">()</span>
+
+        <span class="nb">Write-Host</span> <span class="s2">&quot;The installation process completed with exit code </span><span class="p">$(</span><span class="nv">$process</span><span class="p">.</span><span class="n">ExitCode</span><span class="p">)</span><span class="s2">.&quot;</span>
+
+    <span class="p">}</span> <span class="n">-ArgumentList</span> <span class="nv">$Name</span><span class="p">,</span> <span class="nv">$Installer</span><span class="p">,</span> <span class="nv">$Argument</span>
+<span class="p">}</span>
+<span class="k">finally</span> <span class="p">{</span>
+    <span class="c"># Close the PSSession</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nv">$session</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nb">Remove-PSSession</span> <span class="n">-Session</span> <span class="nv">$session</span>
+    <span class="p">}</span>
+
+    <span class="c"># Disable CredSSP on the server</span>
+    <span class="nb">Invoke-Command</span> <span class="n">-ComputerName</span> <span class="nv">$Computer</span> <span class="n">-Credential</span> <span class="nv">$cred</span> <span class="n">-ScriptBlock</span> <span class="p">{</span>
+        <span class="nb">Disable-WSManCredSSP</span> <span class="n">-Role</span> <span class="n">Server</span>
+    <span class="p">}</span>
+
+    <span class="c"># Disable CredSSP on the client</span>
+    <span class="nb">Disable-WSManCredSSP</span> <span class="n">-Role</span> <span class="n">Client</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<p>Let us now explain the individual steps of the script:</p>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><code><span class="c"># Define the parameters with your own values</span>
+
+<span class="k">param</span> <span class="p">(</span>
+<span class="no">[string]</span><span class="nv">$Computer</span> <span class="p">=</span> <span class="s2">&quot;&lt;remote-computer&gt;&quot;</span><span class="p">,</span>
+<span class="no">[string]</span><span class="nv">$Name</span> <span class="p">=</span> <span class="s2">&quot;Autodesk Revit 2024&quot;</span><span class="p">,</span>
+<span class="no">[string]</span><span class="nv">$Installer</span> <span class="p">=</span> <span class="s1">&#39;&lt;share&gt;\Autodesk Revit 2024\image\Installer.exe&#39;</span><span class="p">,</span>
+<span class="no">[string]</span><span class="nv">$Argument</span> <span class="p">=</span> <span class="s1">&#39;&quot;&lt;share&gt;\Autodesk Revit 2024\image\Installer.exe&quot; -i deploy --offline_mode -q -o &quot;&lt;share&gt;\Autodesk Revit 2024\image\Collection.xml&quot; --installer_version &quot;2.9.0.31&quot;&#39;</span>
+<span class="p">)</span>
+</code></pre></div>
+</div>
+<p>The script can either be called with parameters or you can enter your specific values directly. The necessary information for the installer and the arguments can be found in the corresponding installation script after the image has been built. A typical name for a Revit installation could be ‘Install Autodesk Revit 2024.bat’, for example.</p>
+<p>The parameters for silent installation and uninstallation are also stored there. These parameters enable unattended installation and uninstallation of the software, which is particularly advantageous in large IT environments.</p>
+<p>For more details and a detailed guide to deploying Autodesk software, please visit the following article:</p>
+<p><a class="reference external" href="https://www.autodesk.com/support/download-install/admins/account-deploy/deploy-from-autodesk-account">https://www.autodesk.com/support/download-install/admins/account-deploy/deploy-from-autodesk-account</a></p>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><code><span class="c"># Prompt for user credentials</span>
+<span class="nv">$cred</span> <span class="p">=</span> <span class="nb">Get-Credential</span> <span class="n">-Message</span> <span class="s2">&quot;Enter your credentials&quot;</span>
+</code></pre></div>
+</div>
+<p>To start a PowerShell session using CredSSP, we need the credentials of a user with the necessary rights to perform installations. In most cases, this is the domain admin. A dialog box is displayed in which you can enter the credentials.</p>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><code><span class="k">try</span> <span class="p">{</span>
+    <span class="c"># Enable CredSSP on the client</span>
+    <span class="nv">$null</span> <span class="p">=</span> <span class="nb">Enable-WSManCredSSP</span> <span class="n">-Role</span> <span class="n">Client</span> <span class="n">-DelegateComputer</span> <span class="nv">$Computer</span> <span class="n">-Force</span>
+
+    <span class="c"># Enable CredSSP on the server (if not already enabled)</span>
+    <span class="nb">Invoke-Command</span> <span class="n">-ComputerName</span> <span class="nv">$Computer</span> <span class="n">-Credential</span> <span class="nv">$cred</span> <span class="n">-ScriptBlock</span> <span class="p">{</span>
+        <span class="nv">$null</span> <span class="p">=</span> <span class="nb">Enable-WSManCredSSP</span> <span class="n">-Role</span> <span class="n">Server</span> <span class="n">-Force</span>
+    <span class="p">}</span>
+</code></pre></div>
+</div>
+<p>Here CredSSP is activated on both the client and the server. It is helpful to use the terms “distributor” (client) and “recipient” (server) to define the roles more clearly. The try block includes all potentially error-prone actions and can be customized as desired. For starters, this structure is simple and robust.</p>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><code><span class="c"># Create a new PSSession with CredSSP authentication</span>
+<span class="nv">$session</span> <span class="p">=</span> <span class="nb">New-PSSession</span> <span class="n">-ComputerName</span> <span class="nv">$Computer</span> <span class="n">-Credential</span> <span class="nv">$cred</span> <span class="n">-Authentication</span> <span class="n">Credssp</span>
+</code></pre></div>
+</div>
+<p>A new PowerShell session with CredSSP authentication is built here.</p>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><code>    <span class="c"># Execute the script on the remote computer</span>
+    <span class="nb">Invoke-Command</span> <span class="n">-Session</span> <span class="nv">$session</span> <span class="n">-ScriptBlock</span> <span class="p">{</span>
+        <span class="k">param</span> <span class="p">(</span><span class="nv">$Name</span><span class="p">,</span> <span class="nv">$Installer</span><span class="p">,</span> <span class="nv">$Argument</span><span class="p">)</span>
+
+        <span class="c"># Output a message before starting the installation process</span>
+        <span class="nb">Write-Host</span> <span class="s2">&quot;$Name is being installed...&quot;</span>
+
+        <span class="c"># Start the installation process</span>
+        <span class="nv">$process</span> <span class="p">=</span> <span class="nb">Start-Process</span> <span class="n">-FilePath</span> <span class="nv">$Installer</span> <span class="n">-ArgumentList</span> <span class="nv">$Argument</span> <span class="n">-PassThru</span>
+
+        <span class="c"># Output the process ID</span>
+        <span class="nb">Write-Host</span> <span class="s2">&quot;The installation process has started. Process ID: </span><span class="p">$(</span><span class="nv">$process</span><span class="p">.</span><span class="n">Id</span><span class="p">)</span><span class="s2">&quot;</span>
+
+        <span class="c"># Wait for the installation process to complete</span>
+        <span class="nv">$process</span><span class="p">.</span><span class="n">WaitForExit</span><span class="p">()</span>
+
+        <span class="nb">Write-Host</span> <span class="s2">&quot;The installation process completed with exit code </span><span class="p">$(</span><span class="nv">$process</span><span class="p">.</span><span class="n">ExitCode</span><span class="p">)</span><span class="s2">.&quot;</span>
+
+    <span class="p">}</span> <span class="n">-ArgumentList</span> <span class="nv">$Name</span><span class="p">,</span> <span class="nv">$Installer</span><span class="p">,</span> <span class="nv">$Argument</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<p>Here the script is run on the remote computer. The name, the installer and the arguments are passed as parameters. The try block ends at this point.</p>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><code><span class="k">finally</span> <span class="p">{</span>
+    <span class="c"># Close the PSSession</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nv">$session</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nb">Remove-PSSession</span> <span class="n">-Session</span> <span class="nv">$session</span>
+    <span class="p">}</span>
+
+    <span class="c"># Disable CredSSP on the server</span>
+    <span class="nb">Invoke-Command</span> <span class="n">-ComputerName</span> <span class="nv">$Computer</span> <span class="n">-Credential</span> <span class="nv">$cred</span> <span class="n">-ScriptBlock</span> <span class="p">{</span>
+        <span class="nb">Disable-WSManCredSSP</span> <span class="n">-Role</span> <span class="n">Server</span>
+    <span class="p">}</span>
+
+    <span class="c"># Disable CredSSP on the client</span>
+    <span class="nb">Disable-WSManCredSSP</span> <span class="n">-Role</span> <span class="n">Client</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+<p>The Finally block closes the PowerShell session and deactivates CredSSP on the server and client. The Finally block is always run, regardless of whether the Try block was successful or not. Please note that errors can also be intercepted via a possible exception block. I leave this to the resourceful reader.</p>
+<p>This script now serves as the basis for my own extensions. I will now work on developing a higher-level script to control and monitor the installations in large quantities.</p>
+<p><strong>Source information</strong></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.autodesk.com/support/download-install/admins/account-deploy/deploy-from-autodesk-account">https://www.autodesk.com/support/download-install/admins/account-deploy/deploy-from-autodesk-account</a></p></li>
+<li><p><a class="reference external" href="https://learn.microsoft.com/en-us/powershell/scripting/security/remoting/ps-remoting-second-hop?view=powershell-7.4">https://learn.microsoft.com/en-us/powershell/scripting/security/remoting/ps-remoting-second-hop?view=powershell-7.4</a></p></li>
+</ul>
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../blog.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Blog" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Blog
+            </div>
+          </div>
+        </a>
+      
+      
+    </nav>
+  
+  
+  
+  <div class="md-footer-meta md-typeset">
+    
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-footer-copyright__highlight">
+        &#169; Copyright 2023, Jean Rohark.
+        
+    </div>
+  
+    Created using
+    <a href="https://www.sphinx-doc.org/" target="_blank" rel="noopener">Sphinx</a>
+    6.2.1.
+     and
+    <a href="https://github.com/jbms/sphinx-immaterial/" target="_blank" rel="noopener">Sphinx-Immaterial</a>
+  
+</div>
+      
+    </div>
+    
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+      
+        <script src="../_static/sphinx_immaterial_theme.f9d9eeeb247ace16c.min.js"></script>
+        <script src="../_static/design-tabs.js"></script>
+    
+  </body>
+</html>

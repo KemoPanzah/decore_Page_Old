@@ -33,9 +33,9 @@
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
-        <link rel="stylesheet" type="text/css" href="_static/sphinx_immaterial_theme.359ec555e2989f00f.min.css?v=b000af5c" />
-        <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
-        <link rel="stylesheet" type="text/css" href="_static/styles/custom.css?v=b0f6f0c8" />
+        <link rel="stylesheet" type="text/css" href="_static/sphinx_immaterial_theme.3394d25b557047e78.min.css" />
+        <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
+        <link rel="stylesheet" type="text/css" href="_static/styles/custom.css" />
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -428,8 +428,8 @@
   
   
     <li class="md-nav__item">
-      <a href="sample.html" class="md-nav__link">
-        <span class="md-ellipsis">Beispiel</span>
+      <a href="documentation.html" class="md-nav__link">
+        <span class="md-ellipsis">Dokumentation</span>
       </a>
     </li>
   
@@ -444,8 +444,24 @@
   
   
     <li class="md-nav__item">
-      <a href="documentation.html" class="md-nav__link">
-        <span class="md-ellipsis">Dokumentation</span>
+      <a href="howtos.html" class="md-nav__link">
+        <span class="md-ellipsis">Anleitungen</span>
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="blog.html" class="md-nav__link">
+        <span class="md-ellipsis">Blog</span>
       </a>
     </li>
   
@@ -591,18 +607,18 @@
                   
 
 
-<h1 id="erste-schritte">Erste Schritte<a class="headerlink" href="#erste-schritte" title="Link to this heading">¶</a></h1>
+<h1 id="erste-schritte">Erste Schritte<a class="headerlink" href="#erste-schritte" title="Permalink to this heading">¶</a></h1>
 <p>Um die schnelle GUI-Dashboard-Erstellung, mit decore Base in Python, zu veranschaulichen werden wir nun gemeinsam eine kleine UI in Form einer Webanwendung erstellen.</p>
 <p>Die dekorierten Funktionen dienen, in allererster Linie, der Erstellung von Metainformationen für die spätere Auswertung im Frontend der Anwendung und sind nichts, wovor man sich fürchten muss.</p>
 <p><em>Es ist wirklich einfach, bitte folgen Sie mir!</em></p>
-<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Link to this heading">¶</a></h2>
+<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permalink to this heading">¶</a></h2>
 <p>Erstellen Sie zunächst ein leeres Python-Projekt in Ihrem gewünschten Verzeichnis.</p>
 <p>Um decore Base zu installieren, führen wir den folgenden Befehl im Stammverzeichnis des Projekts aus. Verwenden wir das Terminal in vscode.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="n">pip</span> <span class="n">install</span> <span class="n">decore</span><span class="o">-</span><span class="n">Base</span>
 </code></pre></div>
 </div>
 <p>Dies erfordert eine aktivierte Python-Umgebung! Um mehr darüber zu erfahren, besuchen Sie <a class="reference external" href="https://code.visualstudio.com/docs/python/environments">Python-Umgebungen in VS Code</a>.</p>
-<h2 id="vorbereitung">Vorbereitung<a class="headerlink" href="#vorbereitung" title="Link to this heading">¶</a></h2>
+<h2 id="vorbereitung">Vorbereitung<a class="headerlink" href="#vorbereitung" title="Permalink to this heading">¶</a></h2>
 <div class="note admonition">
 <p class="admonition-title">Bemerkung</p>
 <p>Um für unsere zukünftige Python GUI-Dashboard-Anwendung alles nötige an Pfaden und Einstellungen zu erhalten, müssen wir noch die Vorbereitung durchführen.</p>
@@ -614,7 +630,7 @@
 </div>
 <p>Dann verwenden wir den Befehl <code class="docutils literal notranslate"><span class="pre">prepare</span></code>, um alle erforderlichen Hilfsdateien im Stammverzeichnis des Projekts zu erstellen.</p>
 <p>Um nun die Anwendung tatsächlich vorzubereiten, führen wir den Befehl <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">app.py</span> <span class="pre">--prepare</span></code> im Terminal aus. Der Pfad muss im Hauptverzeichnis des Projekts liegen, also dort wo sich die <strong>app.py</strong> befindet.</p>
-<h2 id="verwendung">Verwendung<a class="headerlink" href="#verwendung" title="Link to this heading">¶</a></h2>
+<h2 id="verwendung">Verwendung<a class="headerlink" href="#verwendung" title="Permalink to this heading">¶</a></h2>
 <p>Damit der Python-Interpreter die zukünftigen Basisklassen verarbeiten kann, fügen wir den folgenden Import hinzu.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">bases</span> <span class="kn">import</span> <span class="o">*</span>
 </code></pre></div>
@@ -631,7 +647,7 @@
         <span class="k">pass</span>
 </code></pre></div>
 </div>
-<h3 id="model">Model<a class="headerlink" href="#model" title="Link to this heading">¶</a></h3>
+<h3 id="model">Model<a class="headerlink" href="#model" title="Permalink to this heading">¶</a></h3>
 <p>In einem Modell legen wir die Datenfelder fest, in einer Datenbanktabelle repräsentiert werden. Es dient als Schnittstelle zu den Datenbanktreibern wie SQLite, MySQL, PostgreSQL, etc.</p>
 <p>Wir erstellen nun die Datei first_model.py im Verzeichnis <strong>models</strong> und fügen den folgenden Code ein:</p>
 <div class="warning admonition">
@@ -658,7 +674,7 @@
 <p class="admonition-title">Warnung</p>
 <p>Beim Importieren ist zu beachten, dass wir alles (*) aus dem conform_model Namespace importieren, um auch die Feldklassen zu erhalten.</p>
 </div>
-<h3 id="base">Base<a class="headerlink" href="#base" title="Link to this heading">¶</a></h3>
+<h3 id="base">Base<a class="headerlink" href="#base" title="Permalink to this heading">¶</a></h3>
 <p>Die Basisklassen dienen der decore-Anwendung als Trägerelement für die View-Komponenten, pflegen das Datenmodell ein und gelten damit auch als Datenquelle für die Auswertung im Frontend des Dashboards.</p>
 <p>Nun müssen wir ein neues Python-Modul erstellen, das z.B. eine Basisklasse enthält: <strong>first_base.py</strong>, im Verzeichnis <strong>bases</strong> in unserem Projektstammverzeichnis.
 Das Verzeichnis <strong>bases</strong> wurde durch den zuvor ausgeführten Befehl <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">app.py</span> <span class="pre">--prepare</span></code> miterzeugt.</p>
@@ -682,7 +698,7 @@ Das Verzeichnis <strong>bases</strong> wurde durch den zuvor ausgeführten Befeh
 </code></pre></div>
 </div>
 </div>
-<h3 id="view">View<a class="headerlink" href="#view" title="Link to this heading">¶</a></h3>
+<h3 id="view">View<a class="headerlink" href="#view" title="Permalink to this heading">¶</a></h3>
 <p>Views werden von der decore-Anwendung verwendet, um die Datensätze im Frontend der Webanwendung zu präsentieren.</p>
 <p>Mit dem View-Decorator können wir nun eine Ansichts-Komponente erstellen und sie, unter der zuvor erstellten Basisklasse, einhängen.</p>
 <p>Wir bearbeiten nun die Datei <strong>first_base.py</strong> erneut und erweitern den Code wie folgt:</p>
@@ -703,7 +719,7 @@ Das Verzeichnis <strong>bases</strong> wurde durch den zuvor ausgeführten Befeh
 </span><span class="hll">      <span class="k">pass</span>
 </span></code></pre></div></td></tr></table></div>
 </div>
-<h3 id="dialog">Dialog<a class="headerlink" href="#dialog" title="Link to this heading">¶</a></h3>
+<h3 id="dialog">Dialog<a class="headerlink" href="#dialog" title="Permalink to this heading">¶</a></h3>
 <p>Dialoge sind die unterstützenden Elemente für Widgets im Frontend der Webanwendung. Sie können Ansichten aber auch untergeordneten Widgets hinzugefügt werden und steuern die Sichtbarkeit und den Anzeigestil von Kindelementen. Dialoge erhalten auch die Kontrolle über die Sendefunktionen der Widgets.</p>
 <p>In unserem Fall erstellen wir einen Dialog, um eine neue Person mit Vornamen und Nachnamen anzulegen.</p>
 <p>Hier gehen wir … wieder die Datei <strong>first_base.py</strong> und erweitern den Code wie folgt:</p>
@@ -728,7 +744,7 @@ Das Verzeichnis <strong>bases</strong> wurde durch den zuvor ausgeführten Befeh
 </span><span class="hll">         <span class="k">pass</span>
 </span></code></pre></div></td></tr></table></div>
 </div>
-<h3 id="widget">Widget<a class="headerlink" href="#widget" title="Link to this heading">¶</a></h3>
+<h3 id="widget">Widget<a class="headerlink" href="#widget" title="Permalink to this heading">¶</a></h3>
 <p>Widgets sind Komponenten, mit denen wir Interaktionen mit dem einzelnen Datensatz durchführen können. Sie können nur zu Dialogen hinzugefügt werden und sind stapelbar.</p>
 <p>Was wir jetzt brauchen, ist ein Eingabeformular, um die Daten für die neue Person einzugeben.</p>
 <div class="highlight-python notranslate"><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
@@ -756,7 +772,7 @@ Das Verzeichnis <strong>bases</strong> wurde durch den zuvor ausgeführten Befeh
 </span><span class="hll">            <span class="k">pass</span>
 </span></code></pre></div></td></tr></table></div>
 </div>
-<h3 id="action">Action<a class="headerlink" href="#action" title="Link to this heading">¶</a></h3>
+<h3 id="action">Action<a class="headerlink" href="#action" title="Permalink to this heading">¶</a></h3>
 <p>Actions sind Methoden, mit das Frontend mit <strong>decore Base</strong> kommunizieren kann. Sie können zu View und Widgets hinzugefügt werden und sind die einzigen echten Klassenmethoden und werden direkt in der Basis aufgerufen.</p>
 <p>Wir brauchen nun eine Aktion, um die Daten der neuen Person zu speichern und erweitern den Code in <strong>first_base.py</strong> wie folgt:</p>
 <div class="highlight-python notranslate"><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
@@ -807,14 +823,14 @@ Das Verzeichnis <strong>bases</strong> wurde durch den zuvor ausgeführten Befeh
 <p class="admonition-title">Warnung</p>
 <p>Das Feld <strong>titel</strong> muss bei jeder Datensatzerstellung verwendet werden. Andernfalls wird das Element die Validierung nicht bestehen. Es sollte ausserdem immer eindeutig sein, also keine gleichen Titel in der Datenbank geben.</p>
 </div>
-<h2 id="ausfuhrung-entwicklung-und-erstellung">Ausführung, Entwicklung und Erstellung<a class="headerlink" href="#ausfuhrung-entwicklung-und-erstellung" title="Link to this heading">¶</a></h2>
-<h3 id="ausfuhrung">Ausführung<a class="headerlink" href="#ausfuhrung" title="Link to this heading">¶</a></h3>
+<h2 id="ausfuhrung-entwicklung-und-erstellung">Ausführung, Entwicklung und Erstellung<a class="headerlink" href="#ausfuhrung-entwicklung-und-erstellung" title="Permalink to this heading">¶</a></h2>
+<h3 id="ausfuhrung">Ausführung<a class="headerlink" href="#ausfuhrung" title="Permalink to this heading">¶</a></h3>
 <p>Um Ihre Anwendung zu starten, führen Sie <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">app.py</span></code> in Ihrem Projekt-Stammverzeichnis aus. Verwenden Sie das Terminal in vscode.</p>
 <p>Öffnen Sie den Browser und geben Sie <code class="docutils literal notranslate"><span class="pre">http://localhost:5555</span></code> ein.</p>
-<h3 id="entwicklung">Entwicklung<a class="headerlink" href="#entwicklung" title="Link to this heading">¶</a></h3>
+<h3 id="entwicklung">Entwicklung<a class="headerlink" href="#entwicklung" title="Permalink to this heading">¶</a></h3>
 <p>Um Ihre Anwendung zu entwickeln, verwenden Sie Ihren Debugger mit dem Profil <code class="docutils literal notranslate"><span class="pre">[dev]</span> <span class="pre">decore</span> <span class="pre">base</span> <span class="pre">development</span></code> in vscode.</p>
 <p>Öffnen Sie den Browser und geben Sie <code class="docutils literal notranslate"><span class="pre">http://localhost:5555</span></code> ein.</p>
-<h3 id="erstellung">Erstellung<a class="headerlink" href="#erstellung" title="Link to this heading">¶</a></h3>
+<h3 id="erstellung">Erstellung<a class="headerlink" href="#erstellung" title="Permalink to this heading">¶</a></h3>
 <p>Um Ihre Anwendung zu erstellen, führen Sie <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">app.py</span> <span class="pre">--build</span></code> in Ihrem Projekt-Stammverzeichnis aus. Verwenden Sie das Terminal in vscode.</p>
 
 
@@ -883,7 +899,7 @@ Das Verzeichnis <strong>bases</strong> wurde durch den zuvor ausgeführten Befeh
   
     Created using
     <a href="https://www.sphinx-doc.org/" target="_blank" rel="noopener">Sphinx</a>
-    7.2.6.
+    6.2.1.
      and
     <a href="https://github.com/jbms/sphinx-immaterial/" target="_blank" rel="noopener">Sphinx-Immaterial</a>
   
@@ -902,11 +918,9 @@ Das Verzeichnis <strong>bases</strong> wurde durch den zuvor ausgeführten Befeh
     <script id="__config" type="application/json">{"base": ".", "features": [], "translations": {"clipboard.copied": "In Zwischenablage kopiert", "clipboard.copy": "In Zwischenablage kopieren", "search.config.lang": "de", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Suche", "search.result.more.one": "1 weiteres Suchergebnis auf dieser Seite", "search.result.more.other": "# weitere Suchergebnisse auf dieser Seite", "search.result.none": "Keine Suchergebnisse", "search.result.one": "1 Suchergebnis", "search.result.other": "# Suchergebnisse", "search.result.placeholder": "Suchbegriff eingeben", "search.result.term.missing": "Es fehlt", "select.version.title": "Version ausw\u00e4hlen"}}</script>
     
       
-        <script src="_static/jquery.js?v=5d32c60e"></script>
-        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="_static/sphinx_immaterial_theme.f9d9eeeb247ace16c.min.js?v=8ec58cb5"></script>
-        <script src="_static/translations.js?v=70a09b52"></script>
-        <script src="_static/design-tabs.js?v=36754332"></script>
+        <script src="_static/sphinx_immaterial_theme.f9d9eeeb247ace16c.min.js"></script>
+        <script src="_static/translations.js"></script>
+        <script src="_static/design-tabs.js"></script>
     
   </body>
 </html>

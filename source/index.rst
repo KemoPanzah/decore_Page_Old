@@ -156,8 +156,9 @@ Bitte benutzen Sie dazu den Problembereich im Repository. `<https://github.com/K
 
    Erste Schritte <start>
    Besonderheiten <features>
-   Beispiel <sample>
    Dokumentation <documentation>
+   Anleitungen <howtos>
+   Blog <blog>
 
 .. Indices and tables
 .. ------------------
