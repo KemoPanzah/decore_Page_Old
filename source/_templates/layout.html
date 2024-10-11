@@ -6,3 +6,8 @@
 {# Call the parent block #}
 {{ super() }}
 {%- endblock %}
+
+{%- block content %}
+{{ super() }}
+{% include "giscus.html" %}
+{%- endblock %}
