@@ -152,7 +152,7 @@ Bitte benutzen Sie dazu den Problembereich im Repository. `<https://github.com/K
 
 .. toctree::
    :hidden:
-   :maxdepth: 1
+   :maxdepth: 0
 
    Erste Schritte <start>
    Besonderheiten <features>

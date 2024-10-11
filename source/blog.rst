@@ -5,10 +5,4 @@ Hier im Blogbereich werden verschiedene Beiträge zu allgemeinen Themen zu finde
 
 Powershell
 ----------
-
-.. toctree::
-    :glob:
-    :maxdepth: 0
-
-    blog/deploy_autodesk_software_powershell
-
+- :doc:`blog/deploy_autodesk_software_powershell`
