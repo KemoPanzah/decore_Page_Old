@@ -3,6 +3,8 @@
 :category: Deployment
 :tags: Autodesk, ODIS-Installer, PowerShell, CredSSP, Double-Hop-Problem, Kerberos, Deployment
 
+:orphan:
+
 Verteilung von Autodesk-Software mit ODIS-Installer und PowerShell unter Vermeidung des Double-Hop-Problems
 ===========================================================================================================
 

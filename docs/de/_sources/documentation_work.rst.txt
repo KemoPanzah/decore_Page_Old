@@ -1,3 +1,5 @@
+:orphan:
+
 Dokumentation
 =============
 Um mit decore Base eine lauffähige GUI-Dashboard-Anwendung zu erstellen, sind vergleichsweise wenige Schritte notwendig. Im Wesentlichen besteht der Aufbau aus der Definition der Meta-Instanzen und der Definition des Datenmodells. Die Metadaten werden vom Interpreter durch Einlesen von dekorierten Funktionen zusammengestellt und als Instanzen im Pool gespeichert.
