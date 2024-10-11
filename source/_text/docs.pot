@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: decore Base \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-11 09:18+0200\n"
+"POT-Creation-Date: 2024-10-11 09:43+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,7 @@ msgid "Hier im Blogbereich werden verschiedene Beiträge zu allgemeinen Themen z
 msgstr ""
 
 #: ../blog.rst:7
-msgid "Deployment"
+msgid "Powershell"
 msgstr ""
 
 #: ../blog/deploy_autodesk_software_powershell.rst:7
@@ -1003,11 +1003,11 @@ msgid "decore Base | UI fastly"
 msgstr ""
 
 #: ../index.rst:-1
-msgid "Schnell erstellte Gui-Dashboard-Anwendungen mit Python, die deinen Ideen mehr Freiraum geben."
+msgid "Build fast gui dashboard applications with Python that give your ideas more freedom."
 msgstr ""
 
 #: ../index.rst:-1
-msgid "python gui, decore, python database, python dashboard, python orm, python ui, dashboard build, python application, ui framework, ui toolbox"
+msgid "python gui, decore, python datenbank, python dashboard, python orm, python ui, dashboard erstellung, python anwendung, ui framework, ui werkzeugkasten"
 msgstr ""
 
 #: ../index.rst:-1
