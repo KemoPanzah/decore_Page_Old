@@ -28,7 +28,7 @@ Die Lösung ist, CredSSP nur temporär als Punkt-zu-Punkt-Verbindung zu nutzen u
 
 .. important::
 
-    CredSSP hat keinen Single-Hop-Zwang. Authentifizierungen können in einer CredSSP-Sitzung weiterverwendet werden. Sollte das unternehmensweit erlaubt werden, ist das Tor zur Hölle quasi offen. Schadsoftware, die eventuell sogar die Verteilung korrumpiert hat, könnte so vom Endpunkt aus auch beliebig auf weiteren Systemen Schaden anrichten.
+    CredSSP hat keinen Single-Hop-Zwang. Authentifizierungen können in einer CredSSP-Sitzung weiterverwendet werden. Sollte das unternehmensweit und dauerhaft erlaubt werden, kann das zu erheblichen Sicherheitsproblemen führen.
 
 Hier nun das Skript für alle, die vor dem selben Problem stehen.
 
