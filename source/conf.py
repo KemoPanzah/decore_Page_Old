@@ -124,26 +124,26 @@ html_theme_options = {
             'lang': 'en',
         },
     ],
-    # 'palette': [
-    #     {
-    #         'media': '(prefers-color-scheme: light)',
-    #         'scheme': 'default',
-    #         'accent': 'light-blue',
-    #         'toggle': {
-    #             'icon': 'material/lightbulb-outline',
-    #             'name': 'Switch to dark mode',
-    #         },
-    #     },
-    #     {
-    #         'media': '(prefers-color-scheme: dark)',
-    #         'scheme': 'slate',
-    #         'accent': 'lime',
-    #         'toggle': {
-    #             'icon': 'material/lightbulb',
-    #             'name': 'Switch to light mode',
-    #         },
-    #     },
-    # ],
+    'palette': [
+        {
+            'media': '(prefers-color-scheme: light)',
+            'scheme': 'default',
+            'accent': 'light-blue',
+            # 'toggle': {
+            #     'icon': 'material/lightbulb-outline',
+            #     'name': 'Switch to dark mode',
+            # },
+        },
+        # {
+        #     'media': '(prefers-color-scheme: dark)',
+        #     'scheme': 'slate',
+        #     'accent': 'lime',
+        #     'toggle': {
+        #         'icon': 'material/lightbulb',
+        #         'name': 'Switch to light mode',
+        #     },
+        # },
+    ],
     'features': [
         # 'navigation.expand',
         # 'navigation.tabs',

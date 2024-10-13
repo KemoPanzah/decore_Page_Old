@@ -19,6 +19,9 @@
     
     
       
+        
+        
+      
       
 
     
@@ -30,9 +33,9 @@
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
-        <link rel="stylesheet" type="text/css" href="_static/sphinx_immaterial_theme.c4c2a4c11ed03d3e7.min.css" />
-        <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
-        <link rel="stylesheet" type="text/css" href="_static/styles/custom.css" />
+        <link rel="stylesheet" type="text/css" href="_static/sphinx_immaterial_theme.359ec555e2989f00f.min.css?v=b000af5c" />
+        <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+        <link rel="stylesheet" type="text/css" href="_static/styles/custom.css?v=b0f6f0c8" />
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -46,7 +49,14 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="light-blue">
   
     
     
@@ -91,6 +101,11 @@
     </div>
     
       <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="light-blue"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+          
         
       </form>
     
@@ -224,7 +239,7 @@
   
     <li class="md-nav__item">
       <a href="start.html" class="md-nav__link">
-        <span class="md-ellipsis">Getting started</span>
+        <span class="md-ellipsis">Erste Schritte</span>
       </a>
     </li>
   
@@ -240,7 +255,7 @@
   
     <li class="md-nav__item">
       <a href="features.html" class="md-nav__link">
-        <span class="md-ellipsis">Features</span>
+        <span class="md-ellipsis">Besonderheiten</span>
       </a>
     </li>
   
@@ -256,7 +271,7 @@
   
     <li class="md-nav__item">
       <a href="documentation.html" class="md-nav__link">
-        <span class="md-ellipsis">Documentation</span>
+        <span class="md-ellipsis">Dokumentation</span>
       </a>
     </li>
   
@@ -272,7 +287,7 @@
   
     <li class="md-nav__item">
       <a href="howtos.html" class="md-nav__link">
-        <span class="md-ellipsis">Instructions</span>
+        <span class="md-ellipsis">Anleitungen</span>
       </a>
     </li>
   
@@ -324,15 +339,15 @@
                   
 
 
-<h1 id="dokumentation">Documentation<a class="headerlink" href="#dokumentation" title="Permalink to this heading">¶</a></h1>
+<h1 id="dokumentation">Documentation<a class="headerlink" href="#dokumentation" title="Link to this heading">¶</a></h1>
 <p>To create an executable GUI dashboard application with decore Base, comparatively few steps are necessary. Essentially, the structure consists of defining the meta instances and defining the data model. The metadata is compiled by the interpreter by reading in decorated functions and stored as instances in the pool.</p>
 <div class="toctree-wrapper compound">
 </div>
-<h2 id="beschreibung-der-meta-instanzen">Description of the meta instances<a class="headerlink" href="#beschreibung-der-meta-instanzen" title="Permalink to this heading">¶</a></h2>
+<h2 id="beschreibung-der-meta-instanzen">Description of the meta instances<a class="headerlink" href="#beschreibung-der-meta-instanzen" title="Link to this heading">¶</a></h2>
 <p>Meta instances contain the types and attributes required to Build the GUI elements. The meta instances are usually built using decorated functions.</p>
-<h3 id="app">App<a class="headerlink" href="#app" title="Permalink to this heading">¶</a></h3>
+<h3 id="app">App<a class="headerlink" href="#app" title="Link to this heading">¶</a></h3>
 <p>The application instance provides the metadata for the application. It is the root for everything to come and only accepts Bases. The app instance is built by the “Decorator” <a class="reference internal" href="documentation/decore.html#decore_Base.decore_base.decore.Decore.app" title="decore_Base.decore_base.decore.Decore.app (Python method) — Eine Funktion zum eröffnen einer GUI-Dashboard-Anwendung. Sie wird als &quot;Decorator&quot; verwendet."><code class="xref py py-meth docutils literal notranslate"><span class="pre">app()</span></code></a>.</p>
-<h3 id="base">Base<a class="headerlink" href="#base" title="Permalink to this heading">¶</a></h3>
+<h3 id="base">Base<a class="headerlink" href="#base" title="Link to this heading">¶</a></h3>
 <p>The Base instance provides the metadata for the Base. It is the carrier element for the Views. The base instance is built by the “Decorator” <a class="reference internal" href="documentation/decore.html#decore_Base.decore_base.decore.Decore.base" title="decore_Base.decore_base.decore.Decore.base (Python method) — Eine Funktion zum registrieren einer Basis in der GUI-Dashboard-Anwendung. Sie wird als &quot;Decorator&quot; verwendet."><code class="xref py py-meth docutils literal notranslate"><span class="pre">base()</span></code></a>.</p>
 <dl class="simple">
 <dt><strong>Display in the frontend</strong></dt><dd><ul class="simple">
@@ -341,7 +356,7 @@
 </ul>
 </dd>
 </dl>
-<h3 id="view">View<a class="headerlink" href="#view" title="Permalink to this heading">¶</a></h3>
+<h3 id="view">View<a class="headerlink" href="#view" title="Link to this heading">¶</a></h3>
 <p>The View instance provides the metadata for the View. Actions and dialogs can be subordinated to it. The view instance is built by the “Decorator” <a class="reference internal" href="documentation/decore.html#decore_Base.decore_base.decore.Decore.view" title="decore_Base.decore_base.decore.Decore.view (Python method) — Eine Funktion zur Registrierung einer Ansicht. Sie wird als &quot;Decorator&quot; verwendet."><code class="xref py py-meth docutils literal notranslate"><span class="pre">view()</span></code></a>.</p>
 <dl class="simple">
 <dt><strong>Display in the frontend</strong></dt><dd><ul class="simple">
@@ -350,7 +365,7 @@
 </ul>
 </dd>
 </dl>
-<h3 id="dialog">Dialog<a class="headerlink" href="#dialog" title="Permalink to this heading">¶</a></h3>
+<h3 id="dialog">Dialog<a class="headerlink" href="#dialog" title="Link to this heading">¶</a></h3>
 <p>The dialog instance provides the metadata for the dialog. Further dialogs can be subordinated to it, which are then displayed in tabs. However, these are mainly used to carry the widgets. The dialog instance is built by the “Decorator” <a class="reference internal" href="documentation/decore.html#decore_Base.decore_base.decore.Decore.dialog" title="decore_Base.decore_base.decore.Decore.dialog (Python method) — Eine Funktion zur Registrierung eines Dialogs. Sie wird als &quot;Decorator&quot; verwendet."><code class="xref py py-meth docutils literal notranslate"><span class="pre">dialog()</span></code></a>.</p>
 <dl class="simple">
 <dt><strong>Display in the frontend</strong></dt><dd><ul class="simple">
@@ -359,7 +374,7 @@
 </ul>
 </dd>
 </dl>
-<h3 id="widget">Widget<a class="headerlink" href="#widget" title="Permalink to this heading">¶</a></h3>
+<h3 id="widget">Widget<a class="headerlink" href="#widget" title="Link to this heading">¶</a></h3>
 <p>The widget instance provides the metadata for the widget. Further widgets can be subordinated to it, which are then displayed in a stack. A widget is required for manipulating the data set or data sets. The widget instance is built by the “Decorator” <a class="reference internal" href="documentation/decore.html#decore_Base.decore_base.decore.Decore.widget" title="decore_Base.decore_base.decore.Decore.widget (Python method) — Eine Funktion zur Registrierung eines Widgets. Sie wird als &quot;Decorator&quot; verwendet."><code class="xref py py-meth docutils literal notranslate"><span class="pre">widget()</span></code></a>.</p>
 <dl class="simple">
 <dt><strong>Display in the frontend</strong></dt><dd><ul class="simple">
@@ -367,7 +382,7 @@
 </ul>
 </dd>
 </dl>
-<h3 id="action">Action<a class="headerlink" href="#action" title="Permalink to this heading">¶</a></h3>
+<h3 id="action">Action<a class="headerlink" href="#action" title="Link to this heading">¶</a></h3>
 <p>The action instance provides the metadata for the action. It is the last link in the meta processing chain and is used to transmit the manipulations and Run actions in the backend. The action instance is built by the “Decorator” <a class="reference internal" href="documentation/decore.html#decore_Base.decore_base.decore.Decore.action" title="decore_Base.decore_base.decore.Decore.action (Python method) — Eine Funktion zur Registrierung einer Aktion. Sie wird als &quot;Decorator&quot; verwendet."><code class="xref py py-meth docutils literal notranslate"><span class="pre">action()</span></code></a>.</p>
 <dl class="simple">
 <dt><strong>Display in the frontend</strong></dt><dd><ul class="simple">
@@ -375,7 +390,7 @@
 </ul>
 </dd>
 </dl>
-<h3 id="function">Function<a class="headerlink" href="#function" title="Permalink to this heading">¶</a></h3>
+<h3 id="function">Function<a class="headerlink" href="#function" title="Link to this heading">¶</a></h3>
 <p>The function instance provides the metadata for functions that are run directly in the base as instance methods after the pool init. The function instance is built by the “Decorator” <a class="reference internal" href="documentation/decore.html#decore_Base.decore_base.decore.Decore.function" title="decore_Base.decore_base.decore.Decore.function (Python method) — Eine Funktion zur Registrierung einer Funktion in der übergeordneten Base. Sie wird als &quot;Decorator&quot; verwendet."><code class="xref py py-meth docutils literal notranslate"><span class="pre">function()</span></code></a>.</p>
 <dl class="simple">
 <dt><strong>Display in the frontend</strong></dt><dd><ul class="simple">
@@ -383,7 +398,7 @@
 </ul>
 </dd>
 </dl>
-<h2 id="abarbeitungsreihenfolge-im-frontend">Processing sequence in the frontend<a class="headerlink" href="#abarbeitungsreihenfolge-im-frontend" title="Permalink to this heading">¶</a></h2>
+<h2 id="abarbeitungsreihenfolge-im-frontend">Processing sequence in the frontend<a class="headerlink" href="#abarbeitungsreihenfolge-im-frontend" title="Link to this heading">¶</a></h2>
 <p>After opening an application, creating the base and creating further children, all paths lead to the action, which then communicates with the backend again to enable the data to be manipulated. Not every component object can be arbitrarily assigned to another. The frontend only processes the individual objects in a fixed order.</p>
 <p>This overview shows the process of this processing.</p>
 <div align="center" class="mermaid align-center">
@@ -407,7 +422,7 @@ subgraph Sub-Widget;
    First-Sub-Widget--&gt;Stacked-Sub-Widget;
 end
         </div>
-        <h2 id="relationale-datenverarbeitung-im-widget">Relational data processing in the widget<a class="headerlink" href="#relationale-datenverarbeitung-im-widget" title="Permalink to this heading">¶</a></h2>
+        <h2 id="relationale-datenverarbeitung-im-widget">Relational data processing in the widget<a class="headerlink" href="#relationale-datenverarbeitung-im-widget" title="Link to this heading">¶</a></h2>
 <p>Data processing and data set generation in the widgets is an important part of the application and is referred to here as relational data processing. This generation of the editable data set is controlled firstly by the activator and secondly by the data source of the View in relation to the data source of the widget. This makes it possible to extend a dialog with further in the context of the actual selection and to make it more detailed.</p>
 <p>The following chart describes this process.</p>
 <dl class="simple">
@@ -502,7 +517,7 @@ end
   
     Created using
     <a href="https://www.sphinx-doc.org/" target="_blank" rel="noopener">Sphinx</a>
-    6.2.1.
+    7.2.6.
      and
     <a href="https://github.com/jbms/sphinx-immaterial/" target="_blank" rel="noopener">Sphinx-Immaterial</a>
   
@@ -521,8 +536,10 @@ end
     <script id="__config" type="application/json">{"base": ".", "features": [], "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
       
-        <script src="_static/sphinx_immaterial_theme.f9d9eeeb247ace16c.min.js"></script>
-        <script src="_static/design-tabs.js"></script>
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/sphinx_immaterial_theme.f9d9eeeb247ace16c.min.js?v=8ec58cb5"></script>
+        <script src="_static/design-tabs.js?v=36754332"></script>
         <script src="https://unpkg.com/mermaid@10.2.0/dist/mermaid.min.js"></script>
         <script>mermaid.initialize({startOnLoad:true});</script>
     

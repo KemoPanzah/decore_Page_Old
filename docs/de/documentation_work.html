@@ -19,6 +19,9 @@
     
     
       
+        
+        
+      
       
 
     
@@ -30,9 +33,9 @@
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
-        <link rel="stylesheet" type="text/css" href="_static/sphinx_immaterial_theme.c4c2a4c11ed03d3e7.min.css" />
-        <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
-        <link rel="stylesheet" type="text/css" href="_static/styles/custom.css" />
+        <link rel="stylesheet" type="text/css" href="_static/sphinx_immaterial_theme.359ec555e2989f00f.min.css?v=b000af5c" />
+        <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+        <link rel="stylesheet" type="text/css" href="_static/styles/custom.css?v=b0f6f0c8" />
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -46,7 +49,14 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="light-blue">
   
     
     
@@ -91,6 +101,11 @@
     </div>
     
       <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="light-blue"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+          
         
       </form>
     
@@ -324,15 +339,15 @@
                   
 
 
-<h1 id="dokumentation">Dokumentation<a class="headerlink" href="#dokumentation" title="Permalink to this heading">¶</a></h1>
+<h1 id="dokumentation">Dokumentation<a class="headerlink" href="#dokumentation" title="Link to this heading">¶</a></h1>
 <p>Um mit decore Base eine lauffähige GUI-Dashboard-Anwendung zu erstellen, sind vergleichsweise wenige Schritte notwendig. Im Wesentlichen besteht der Aufbau aus der Definition der Meta-Instanzen und der Definition des Datenmodells. Die Metadaten werden vom Interpreter durch Einlesen von dekorierten Funktionen zusammengestellt und als Instanzen im Pool gespeichert.</p>
 <div class="toctree-wrapper compound">
 </div>
-<h2 id="beschreibung-der-meta-instanzen">Beschreibung der Meta-Instanzen<a class="headerlink" href="#beschreibung-der-meta-instanzen" title="Permalink to this heading">¶</a></h2>
+<h2 id="beschreibung-der-meta-instanzen">Beschreibung der Meta-Instanzen<a class="headerlink" href="#beschreibung-der-meta-instanzen" title="Link to this heading">¶</a></h2>
 <p>Meta-Instanzen entahlten die benötigten Typen und Attribute für die Erstellung der GUI-Elemente. Die Meta-Instanzen werden in der Regel durch dekorierte Funktionen erstellt.</p>
-<h3 id="app">App<a class="headerlink" href="#app" title="Permalink to this heading">¶</a></h3>
+<h3 id="app">App<a class="headerlink" href="#app" title="Link to this heading">¶</a></h3>
 <p>Die Application-Instanz liefert die Metadaten für den Anwendung. Sie ist die Wurzel für alles kommende und nimmt nur Basen auf. Die App-Instanz wird durch den „Decorator“ <a class="reference internal" href="documentation/decore.html#decore_Base.decore_base.decore.Decore.app" title="decore_Base.decore_base.decore.Decore.app (Python-Methode) — Eine Funktion zum eröffnen einer GUI-Dashboard-Anwendung. Sie wird als &quot;Decorator&quot; verwendet."><code class="xref py py-meth docutils literal notranslate"><span class="pre">app()</span></code></a> erstellt.</p>
-<h3 id="base">Base<a class="headerlink" href="#base" title="Permalink to this heading">¶</a></h3>
+<h3 id="base">Base<a class="headerlink" href="#base" title="Link to this heading">¶</a></h3>
 <p>Die Base-Instanz liefert die Metadaten für die Basis. Sie ist das Trägerelement für die Ansichten. Die Base-Instanz wird durch den „Decorator“ <a class="reference internal" href="documentation/decore.html#decore_Base.decore_base.decore.Decore.base" title="decore_Base.decore_base.decore.Decore.base (Python-Methode) — Eine Funktion zum registrieren einer Basis in der GUI-Dashboard-Anwendung. Sie wird als &quot;Decorator&quot; verwendet."><code class="xref py py-meth docutils literal notranslate"><span class="pre">base()</span></code></a> erstellt.</p>
 <dl class="simple">
 <dt><strong>Darstellung im Frontend</strong></dt><dd><ul class="simple">
@@ -341,7 +356,7 @@
 </ul>
 </dd>
 </dl>
-<h3 id="view">View<a class="headerlink" href="#view" title="Permalink to this heading">¶</a></h3>
+<h3 id="view">View<a class="headerlink" href="#view" title="Link to this heading">¶</a></h3>
 <p>Die View-Instanz liefert die Metadaten für die Ansicht. Ihr können Aktionen und Dialoge untergeordnet werden. Die View-Instanz wird durch den „Decorator“ <a class="reference internal" href="documentation/decore.html#decore_Base.decore_base.decore.Decore.view" title="decore_Base.decore_base.decore.Decore.view (Python-Methode) — Eine Funktion zur Registrierung einer Ansicht. Sie wird als &quot;Decorator&quot; verwendet."><code class="xref py py-meth docutils literal notranslate"><span class="pre">view()</span></code></a> erstellt.</p>
 <dl class="simple">
 <dt><strong>Darstellung im Frontend</strong></dt><dd><ul class="simple">
@@ -350,7 +365,7 @@
 </ul>
 </dd>
 </dl>
-<h3 id="dialog">Dialog<a class="headerlink" href="#dialog" title="Permalink to this heading">¶</a></h3>
+<h3 id="dialog">Dialog<a class="headerlink" href="#dialog" title="Link to this heading">¶</a></h3>
 <p>Die Dialog-Instanz liefert die Metadaten für den Dialog. Ihr können weitere Dialoge untergeordnet werden die dann in Tabs dargetellt werden. Hauptsächlich dienen diese aber zum tragen der Widgets. Die Dialog-Instanz wird durch den „Decorator“ <a class="reference internal" href="documentation/decore.html#decore_Base.decore_base.decore.Decore.dialog" title="decore_Base.decore_base.decore.Decore.dialog (Python-Methode) — Eine Funktion zur Registrierung eines Dialogs. Sie wird als &quot;Decorator&quot; verwendet."><code class="xref py py-meth docutils literal notranslate"><span class="pre">dialog()</span></code></a> erstellt.</p>
 <dl class="simple">
 <dt><strong>Darstellung im Frontend</strong></dt><dd><ul class="simple">
@@ -359,7 +374,7 @@
 </ul>
 </dd>
 </dl>
-<h3 id="widget">Widget<a class="headerlink" href="#widget" title="Permalink to this heading">¶</a></h3>
+<h3 id="widget">Widget<a class="headerlink" href="#widget" title="Link to this heading">¶</a></h3>
 <p>Die Widget-Instanz liefert die Metadaten für das Widget. Ihr können weitere Widgets untergeordnet werden die dann gestapelt dargetellt werden. Ein Widget wird für die Manipulation des Datensatzes oder Datensätze benötigt. Die Widget-Instanz wird durch den „Decorator“ <a class="reference internal" href="documentation/decore.html#decore_Base.decore_base.decore.Decore.widget" title="decore_Base.decore_base.decore.Decore.widget (Python-Methode) — Eine Funktion zur Registrierung eines Widgets. Sie wird als &quot;Decorator&quot; verwendet."><code class="xref py py-meth docutils literal notranslate"><span class="pre">widget()</span></code></a> erstellt.</p>
 <dl class="simple">
 <dt><strong>Darstellung im Frontend</strong></dt><dd><ul class="simple">
@@ -367,7 +382,7 @@
 </ul>
 </dd>
 </dl>
-<h3 id="action">Action<a class="headerlink" href="#action" title="Permalink to this heading">¶</a></h3>
+<h3 id="action">Action<a class="headerlink" href="#action" title="Link to this heading">¶</a></h3>
 <p>Die Action-Instanz liefert die Metadaten für die Aktion. Sie ist das Schlußlicht in der Prozesskette der Meta-Abarbeitung und dient zum übermitteln der Manipulationen und der Ausführung von Aktionen im Backend. Die Action-Instanz wird durch den „Decorator“ <a class="reference internal" href="documentation/decore.html#decore_Base.decore_base.decore.Decore.action" title="decore_Base.decore_base.decore.Decore.action (Python-Methode) — Eine Funktion zur Registrierung einer Aktion. Sie wird als &quot;Decorator&quot; verwendet."><code class="xref py py-meth docutils literal notranslate"><span class="pre">action()</span></code></a> erstellt.</p>
 <dl class="simple">
 <dt><strong>Darstellung im Frontend</strong></dt><dd><ul class="simple">
@@ -375,7 +390,7 @@
 </ul>
 </dd>
 </dl>
-<h3 id="function">Function<a class="headerlink" href="#function" title="Permalink to this heading">¶</a></h3>
+<h3 id="function">Function<a class="headerlink" href="#function" title="Link to this heading">¶</a></h3>
 <p>Die Function-Instanz liefert die Metadaten für Funktionen die nach dem Init des Pools direkt in der Base als Instanz-Methoden ausgeführt werden. Die Function-Instanz wird durch den „Decorator“ <a class="reference internal" href="documentation/decore.html#decore_Base.decore_base.decore.Decore.function" title="decore_Base.decore_base.decore.Decore.function (Python-Methode) — Eine Funktion zur Registrierung einer Funktion in der übergeordneten Base. Sie wird als &quot;Decorator&quot; verwendet."><code class="xref py py-meth docutils literal notranslate"><span class="pre">function()</span></code></a> erstellt.</p>
 <dl class="simple">
 <dt><strong>Darstellung im Frontend</strong></dt><dd><ul class="simple">
@@ -383,7 +398,7 @@
 </ul>
 </dd>
 </dl>
-<h2 id="abarbeitungsreihenfolge-im-frontend">Abarbeitungsreihenfolge im Frontend<a class="headerlink" href="#abarbeitungsreihenfolge-im-frontend" title="Permalink to this heading">¶</a></h2>
+<h2 id="abarbeitungsreihenfolge-im-frontend">Abarbeitungsreihenfolge im Frontend<a class="headerlink" href="#abarbeitungsreihenfolge-im-frontend" title="Link to this heading">¶</a></h2>
 <p>Nach dem Öffnen einer Anwendung, dem Anlegen der Base und dem Anlegen weiterer Childs laufen alle Pfade auf die Action zu, die schließlich wieder mit dem Backend kommuniziert, um die Manipulation der Daten zu ermöglichen. Nicht jedes Komponentenobjekt kann einem anderen beliebig zugeordnet werden. Das Frontend arbeitet die einzelnen Objekte nur in einer festen Reihenfolge ab.</p>
 <p>Diese Übersicht stellt den Prozess dieser Abarbeitung dar.</p>
 <div align="center" class="mermaid align-center">
@@ -407,7 +422,7 @@ subgraph Sub-Widget;
    First-Sub-Widget--&gt;Stacked-Sub-Widget;
 end
         </div>
-        <h2 id="relationale-datenverarbeitung-im-widget">Relationale Datenverarbeitung im Widget<a class="headerlink" href="#relationale-datenverarbeitung-im-widget" title="Permalink to this heading">¶</a></h2>
+        <h2 id="relationale-datenverarbeitung-im-widget">Relationale Datenverarbeitung im Widget<a class="headerlink" href="#relationale-datenverarbeitung-im-widget" title="Link to this heading">¶</a></h2>
 <p>Die Datenverarbeitung und Datensatzgenerierung in den Widgets ist ein wichtiger Bestandteil der Anwendung und wird hier als Relationale-Datenverarbeitung bezeichnet. Diese Generierung des bearbeitbaren Datensatzes, wird erstens durch den Aktivator und zweitens durch die Datenquelle der Ansicht in Beziehung zur Datenquelle des Widgets gesteuert. Damit wird ermöglicht, einen Dialog mit weiter im Kontext der eigentlichen Selektion zu erweitern und detailreicher zu gestalten.</p>
 <p>Folgender Chart beschreibt diesen Prozess.</p>
 <dl class="simple">
@@ -502,7 +517,7 @@ end
   
     Created using
     <a href="https://www.sphinx-doc.org/" target="_blank" rel="noopener">Sphinx</a>
-    6.2.1.
+    7.2.6.
      and
     <a href="https://github.com/jbms/sphinx-immaterial/" target="_blank" rel="noopener">Sphinx-Immaterial</a>
   
@@ -521,9 +536,11 @@ end
     <script id="__config" type="application/json">{"base": ".", "features": [], "translations": {"clipboard.copied": "In Zwischenablage kopiert", "clipboard.copy": "In Zwischenablage kopieren", "search.config.lang": "de", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Suche", "search.result.more.one": "1 weiteres Suchergebnis auf dieser Seite", "search.result.more.other": "# weitere Suchergebnisse auf dieser Seite", "search.result.none": "Keine Suchergebnisse", "search.result.one": "1 Suchergebnis", "search.result.other": "# Suchergebnisse", "search.result.placeholder": "Suchbegriff eingeben", "search.result.term.missing": "Es fehlt", "select.version.title": "Version ausw\u00e4hlen"}}</script>
     
       
-        <script src="_static/sphinx_immaterial_theme.f9d9eeeb247ace16c.min.js"></script>
-        <script src="_static/translations.js"></script>
-        <script src="_static/design-tabs.js"></script>
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/sphinx_immaterial_theme.f9d9eeeb247ace16c.min.js?v=8ec58cb5"></script>
+        <script src="_static/translations.js?v=70a09b52"></script>
+        <script src="_static/design-tabs.js?v=36754332"></script>
         <script src="https://unpkg.com/mermaid@10.2.0/dist/mermaid.min.js"></script>
         <script>mermaid.initialize({startOnLoad:true});</script>
     
